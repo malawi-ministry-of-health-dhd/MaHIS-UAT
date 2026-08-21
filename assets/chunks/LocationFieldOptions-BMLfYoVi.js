@@ -1,0 +1,1 @@
+import{L as o}from"./location_service-BO19js0f.js";import{l as r}from"./lodash-DyrGR4_s.js";async function c(i=""){const a=await o.getFacilities({name:i}),t=a?.data||a?.records||(Array.isArray(a)?a:[]);return console.log("Fetched facilitiess:",t),(t||[]).filter(e=>!r.isEmpty(e)&&e.name.trim()!="").map(e=>({label:e.name,value:e.location_id,other:e}))}export{c as g};
