@@ -1,0 +1,1 @@
+function n(i){const e=String(i??"").trim();if(!e)return{prefix:"",number:""};const r=e.lastIndexOf(" ");if(r>=0)return{prefix:e.slice(0,r).trim(),number:e.slice(r+1).trim()};const t=e.match(/\d+$/)?.[0]??"";return{prefix:e.slice(0,e.length-t.length).trim(),number:t}}export{n as s};
