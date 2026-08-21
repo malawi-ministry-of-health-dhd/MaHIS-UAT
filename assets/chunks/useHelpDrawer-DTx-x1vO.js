@@ -1,0 +1,1 @@
+import{f as r}from"../index-C9PslajR.js";const e=r(!1),n=r("");function s(){function u(o){n.value=o,e.value=!0}function l(){e.value=!1}return{isOpen:e,currentHelpId:n,openHelp:u,closeHelp:l}}export{s as u};
