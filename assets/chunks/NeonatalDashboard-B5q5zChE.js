@@ -1,0 +1,1 @@
+import{d as a,z as e,B as o,E as t,b as r,D as s,K as n}from"../index-C0nokmv1.js";import{L as _}from"./LandingPage-C7zy26Mo.js";import{_ as c}from"./_plugin-vue_export-helper-DlAUqK2U.js";const f=a({__name:"NeonatalDashboard",setup(p){return(d,m)=>(e(),o(s(n),{fullscreen:!0},{default:t(()=>[r(_)]),_:1}))}}),h=c(f,[["__scopeId","data-v-050fef7a"]]);export{h as default};
