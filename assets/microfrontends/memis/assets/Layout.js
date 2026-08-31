@@ -8338,7 +8338,7 @@ const dataSetsInit = async (forceRefresh = false) => {
     );
     return null;
   } catch (error) {
-    console.error("dataSets initialization failed:", error);
+    console.log("dataSets initialization failed:", error);
     return error;
   }
 };
@@ -8479,7 +8479,7 @@ const MainLayout = ({ menuItems, children }) => {
       setUnReadNotifications(unread);
       setMessageCount(unread.length);
     } catch (err) {
-      console.error("getMessages error", err);
+      console.log("getMessages error", err);
     }
   };
   const handleNotificationClick = async (notif) => {
@@ -8517,7 +8517,7 @@ const MainLayout = ({ menuItems, children }) => {
       });
       await getMessages();
     } catch (err) {
-      console.error("Error handling notification click", err);
+      console.log("Error handling notification click", err);
     }
   };
   useEffect$1E(() => {
@@ -8554,7 +8554,7 @@ const MainLayout = ({ menuItems, children }) => {
       }
       bridgeSessionExpired();
     } catch (err) {
-      console.error("getUser failed:", err);
+      console.log("getUser failed:", err);
       bridgeSessionExpired();
     }
   };
@@ -20694,7 +20694,7 @@ const EquipmentStats = {
       
       return res;
     } catch (error) {
-      console.error("Error fetching equipment data:", error);
+      console.log("Error fetching equipment data:", error);
       return []; // Return empty array on error to prevent crashes
     }
   },
@@ -20703,7 +20703,7 @@ const EquipmentStats = {
       const total = data?.length || 0;
       return total;
     } catch (error) {
-      console.error("Error calculating total equipment:", error);
+      console.log("Error calculating total equipment:", error);
 
       return 0;
     }
@@ -20743,7 +20743,7 @@ const EquipmentStats = {
       });
       return statusCounts;
     } catch (error) {
-      console.error("Error calculating equipment by status:", error);
+      console.log("Error calculating equipment by status:", error);
       return {};
     }
   },
@@ -20828,7 +20828,7 @@ const EquipmentStats = {
   //       };
   //     });
   //   } catch (error) {
-  //     console.error("Error calculating equipment by maintenance type:", error);
+  //     console.log("Error calculating equipment by maintenance type:", error);
   //     return [];
   //   }
   // },
@@ -20907,7 +20907,7 @@ const EquipmentStats = {
         };
       });
     } catch (error) {
-      console.error("Error getting overdue maintenance by type:", error);
+      console.log("Error getting overdue maintenance by type:", error);
 
       return [];
     }
@@ -20964,7 +20964,7 @@ const EquipmentStats = {
         };
       });
     } catch (error) {
-      console.error("Error calculating requisition status stats:", error);
+      console.log("Error calculating requisition status stats:", error);
 
       return [];
     }
@@ -21027,7 +21027,7 @@ const EquipmentStats = {
         };
       });
     } catch (error) {
-      console.error("Error calculating maintenance performance stats:", error);
+      console.log("Error calculating maintenance performance stats:", error);
 
       return [];
     }
@@ -21197,7 +21197,7 @@ const Dashboard = () => {
         data?.data?.trackedEntities,
         [
           { key: "FULLY_FUNCTIONAL", attribute: "KFZ35H4ZHrk" },
-          { key: "MAINTENANCE", attribute: "rXIdO0bLQvD" },
+          { key: "UNDER_REPAIR", attribute: "KFZ35H4ZHrk" },
           { key: "NON_FUNCTIONAL", attribute: "KFZ35H4ZHrk" }
         ]
       );
@@ -21397,12 +21397,12 @@ const Dashboard = () => {
         },
         {
           title: "Under Maintenance",
-          total: EquipmentStats.compressTotalValue(byStatus?.MAINTENANCE || 0),
-          subtitle: `${totalEquipment ? (byStatus?.MAINTENANCE / totalEquipment * 100).toFixed(1) : 0}% of total`,
-          percentage: totalEquipment ? (byStatus?.MAINTENANCE / totalEquipment * 100).toFixed(1) : 0,
+          total: EquipmentStats.compressTotalValue(byStatus?.UNDER_REPAIR || 0),
+          subtitle: `${totalEquipment ? (byStatus?.UNDER_REPAIR / totalEquipment * 100).toFixed(1) : 0}% of total`,
+          percentage: totalEquipment ? (byStatus?.UNDER_REPAIR / totalEquipment * 100).toFixed(1) : 0,
           color: "#d89b00",
           icon: constructOutline,
-          link: "/memis/program/X8V6omQYuW0?status=MAINTENANCE"
+          link: "/memis/program/X8V6omQYuW0?status=UNDER_REPAIR"
         },
         {
           title: "Not Functional",
@@ -21544,7 +21544,7 @@ function OrganisationUnitsWidget({
         });
       });
     } catch (error) {
-      console.error("Failed to fetch TEI data:", error);
+      console.log("Failed to fetch TEI data:", error);
     }
   };
   useEffect$1w(() => {
@@ -21765,7 +21765,7 @@ function useSectionVisibilityConfig(programId) {
                 const data = await dataStore.get("dataStore/memis/enrollmentFormSectionVisibilityConfig");
                 if (mounted) setConfig(data);
             } catch (e) {
-                console.error("Error fetching section visibility config:", e);
+                console.log("Error fetching section visibility config:", e);
                 if (mounted) setConfig(null);
             }
         };
@@ -21800,7 +21800,7 @@ function useSectionVisibilityConfig(programId) {
                     const parsed = JSON.parse(config);
                     sectionsArray = parsed?.data?.formSectionVisibility || parsed.formSectionVisibility || parsed || [];
                 } catch (e) {
-                    console.error("Failed to parse config string");
+                    console.log("Failed to parse config string");
                 }
             }
 
@@ -21825,7 +21825,7 @@ function useSectionVisibilityConfig(programId) {
 
             return {conditionallyHidden, alwaysHidden};
         } catch (e) {
-            console.error("Error computing section visibility:", e);
+            console.log("Error computing section visibility:", e);
             return null;
         }
     }, [programId, config, tick]);
@@ -22297,7 +22297,7 @@ function useTransferOrganisationUnitOptions({
                         return list;
                     })
                     .catch((err) => {
-                        console.error("Failed to load facility organisation unit group", err);
+                        console.log("Failed to load facility organisation unit group", err);
                         return [];
                     });
 
@@ -22595,7 +22595,7 @@ async function getSkipLogicConfig(programId) {
 
     return { skipLogicMap, defaultHidden, dependencies, linkedFieldGroups };
   } catch (err) {
-    console.error("[getSkipLogicConfig] Failed to read skip logic from LocalForage:", err);
+    console.log("[getSkipLogicConfig] Failed to read skip logic from LocalForage:", err);
     return null;
   }
 }
@@ -22682,7 +22682,7 @@ async function getEquipmentListOnTransferOutside(event) {
             equipment: available
         };
     } catch (error) {
-        console.error("Error in fetching equipment on Transfer Outside: ", error);
+        console.log("Error in fetching equipment on Transfer Outside: ", error);
     }
 }
 
@@ -23210,7 +23210,7 @@ const fetchOtherFieldMappings = async () => {
     cachedConfig = responseData.otherFieldMappings || {};
     return cachedConfig;
   } catch (error) {
-    console.error("Failed to fetch other fields config:", error);
+    console.log("Failed to fetch other fields config:", error);
     return {};
   }
 };
@@ -23512,7 +23512,7 @@ function useTaskPrefillLogic({
                 );
 
                 if (!fieldConfig) {
-                    console.error("No valid prefilled field configuration found.");
+                    console.log("No valid prefilled field configuration found.");
                     return;
                 }
 
@@ -23544,7 +23544,7 @@ function useTaskPrefillLogic({
                     }
                 }
             } catch (err) {
-                console.error("Failed to load task prefill", err);
+                console.log("Failed to load task prefill", err);
             } finally {
                 setFormLoading(false);
             }
@@ -23561,10 +23561,10 @@ function useTaskPrefillLogic({
                     return response?.data.value;
                 }
 
-                console.error("No value found for sourceId:", sourceId);
+                console.log("No value found for sourceId:", sourceId);
                 return null;
             } catch (err) {
-                console.error("Failed to fetch source value from API", err);
+                console.log("Failed to fetch source value from API", err);
                 return null;
             }
         };
@@ -23843,7 +23843,7 @@ function useEquipmentContext({
           setAvailableEquipment(equipment);
         }
       } catch (err) {
-        console.error("Failed to load equipment context:", err);
+        console.log("Failed to load equipment context:", err);
         setError(err.message);
       } finally {
         setLoading(false);
@@ -23992,7 +23992,7 @@ function useEquipmentContext({
       );
       return transformedEquipment;
     } catch (err) {
-      console.error("Failed to fetch available equipment:", err);
+      console.log("Failed to fetch available equipment:", err);
       setError(err.message);
       return [];
     } finally {
@@ -24067,7 +24067,7 @@ function useSparePartLookup({ programId, setFormData, isCheckingRegistration, se
                 trackedEntityId: null,
             };
         } catch (error) {
-            console.error("Error checking spare part registration:", error);
+            console.log("Error checking spare part registration:", error);
             return null;
         } finally {
             setIsCheckingRegistration(false);
@@ -24202,7 +24202,7 @@ function useCustomMandatoryFields({
                     setIsLoading(false);
                 }
             } catch (error) {
-                console.error("Error loading custom mandatory config:", error);
+                console.log("Error loading custom mandatory config:", error);
                 if (mounted) {
                     setCustomConfig([]);
                     setIsLoading(false);
@@ -24323,7 +24323,7 @@ function useStepNavigation({
         );
       }
     } catch (error) {
-      console.error("Error setting step index:", error);
+      console.log("Error setting step index:", error);
     }
   };
 
@@ -24563,7 +24563,7 @@ const triggerNotifications = async ({
       );
     }
   } catch (err) {
-    console.error("Failed to trigger notifications", err);
+    console.log("Failed to trigger notifications", err);
   }
 };
 
@@ -24696,7 +24696,7 @@ function useApprovalNotifications({
                 });
             } catch (error) {
                 lastApproverNotificationRef.current = null;
-                console.error("Failed to send approver notification", error);
+                console.log("Failed to send approver notification", error);
             }
         };
 
@@ -25466,7 +25466,7 @@ function FilePreviewModal({
       setMimeType(contentType);
       setLoading(false);
     } catch (err) {
-      console.error("File fetch error:", err);
+      console.log("File fetch error:", err);
       setError(err.message || "Failed to load file");
       showToast(err.message || "Failed to load file", "error");
       setLoading(false);
@@ -25498,7 +25498,7 @@ function FilePreviewModal({
             });
             showToast("File saved successfully to Documents", "success");
           } catch (e) {
-            console.error("Native save error:", e);
+            console.log("Native save error:", e);
             showToast("Failed to save file on device", "danger");
           } finally {
             setDownloading(false);
@@ -25523,7 +25523,7 @@ function FilePreviewModal({
         setDownloading(false);
       }
     } catch (error2) {
-      console.error("Download error:", error2);
+      console.log("Download error:", error2);
       showToast("An error occurred during download", "danger");
       setDownloading(false);
     }
@@ -25853,7 +25853,7 @@ function useParticipantsPerWardConfig(programId) {
                     });
                 }
             } catch (err) {
-                console.error("[useParticipantsPerWardConfig] Failed to load config:", err);
+                console.log("[useParticipantsPerWardConfig] Failed to load config:", err);
                 if (!cancelled) {
                     setConfig({ wardsField: null, participantsPerWardField: null, totalParticipantsField: null, ready: true });
                 }
@@ -25934,7 +25934,7 @@ function useSparePartsQuantityConfig(programId) {
                     });
                 }
             } catch (err) {
-                console.error("[useSparePartsQuantityConfig] Failed to load config:", err);
+                console.log("[useSparePartsQuantityConfig] Failed to load config:", err);
                 if (!cancelled) setConfig(empty);
             }
         };
@@ -26401,7 +26401,7 @@ function PreventiveMaintenanceScheduleModal({
         }
       }
     } catch (error) {
-      console.error(
+      console.log(
         "Failed to load maintenance schedule:",
         error
       );
@@ -26441,18 +26441,20 @@ function PreventiveMaintenanceScheduleModal({
         equipmentId,
         frequency,
         dates,
-        updatedAt: (/* @__PURE__ */ new Date()).toISOString()
+        updatedAt: (/* @__PURE__ */ new Date()).toISOString(),
+        dateScheduledDE: "vXT4KkXeRus"
       };
       sessionStorage.setItem(
         "preventiveMaintenanceSchedule",
         JSON.stringify(schedule)
       );
       if (onSave) {
+        console.log({ schedule });
         await onSave(schedule);
       }
       onClose();
     } catch (error) {
-      console.error(
+      console.log(
         "Failed to save maintenance schedule:",
         error
       );
@@ -26979,7 +26981,7 @@ function ConfigurableForm({
         );
       }
     } catch (error) {
-      console.error(
+      console.log(
         "Failed to load maintenance schedule:",
         error
       );
@@ -28137,7 +28139,7 @@ function ConfigurableForm({
           setWslConfig(config);
         }
       } catch (error) {
-        console.error("Failed to load WSL config", error);
+        console.log("Failed to load WSL config", error);
       }
     };
     if (programId && selectedStage) {
@@ -28189,7 +28191,7 @@ function ConfigurableForm({
         setPrefilledValues(values);
         setTaskAvailableInQuery("taskId");
       } catch (err) {
-        console.error("Failed to load task prefill", err);
+        console.log("Failed to load task prefill", err);
       } finally {
         setFormLoading(false);
       }
@@ -28787,7 +28789,7 @@ const getUsers$l = async ({ targetOrgUnitId, userRoleId, username }) => {
       );
     }
   } catch (e) {
-    console.error("User role/orgUnit search failed:", e);
+    console.log("User role/orgUnit search failed:", e);
   }
 
   return usersResp?.data?.users?.map((u) => ({ id: u.id })) || [];
@@ -29008,7 +29010,7 @@ const getUsers$k = async ({ targetOrgUnitId, userRoleId, username }) => {
       );
     }
   } catch (e) {
-    console.error("User role/orgUnit search failed:", e);
+    console.log("User role/orgUnit search failed:", e);
   }
 
   return usersResp?.data?.users?.map((u) => ({ id: u.id })) || [];
@@ -29096,7 +29098,7 @@ const getUsers$j = async ({ targetOrgUnitId, userRoleId, username }) => {
       );
     }
   } catch (e) {
-    console.error("User role/orgUnit search failed:", e);
+    console.log("User role/orgUnit search failed:", e);
   }
 
   return usersResp?.data?.users?.map((u) => ({ id: u.id })) || [];
@@ -29200,7 +29202,7 @@ const getUsers$i = async ({ targetOrgUnitId, userRoleId }) => {
       );
     }
   } catch (e) {
-    console.error("User role/orgUnit search failed:", e);
+    console.log("User role/orgUnit search failed:", e);
   }
 
   return usersResp?.data?.users?.map((u) => ({ id: u.id })) || [];
@@ -29265,7 +29267,7 @@ const getUsers$h = async ({ targetOrgUnitId, userRoleId }) => {
       );
     }
   } catch (e) {
-    console.error("User role/orgUnit search failed:", e);
+    console.log("User role/orgUnit search failed:", e);
   }
 
   return usersResp?.data?.users?.map((u) => ({ id: u.id })) || [];
@@ -29339,7 +29341,7 @@ const getUsers$g = async ({ targetOrgUnitId, userRoleId, mode }) => {
       );
     }
   } catch (e) {
-    console.error("User role/orgUnit search failed:", e);
+    console.log("User role/orgUnit search failed:", e);
   }
 
   return usersResp?.data?.users?.map((u) => ({ id: u.id })) || [];
@@ -29423,7 +29425,7 @@ const getUsers$f = async ({ targetOrgUnitId, userRoleId }) => {
       );
     }
   } catch (e) {
-    console.error("User role/orgUnit search failed:", e);
+    console.log("User role/orgUnit search failed:", e);
   }
 
   return usersResp?.data?.users?.map((u) => ({ id: u.id })) || [];
@@ -29538,7 +29540,7 @@ const getUsers$e = async ({ targetOrgUnitId, userRoleId, username }) => {
       );
     }
   } catch (e) {
-    console.error("User role/orgUnit search failed:", e);
+    console.log("User role/orgUnit search failed:", e);
   }
 
   return usersResp?.data?.users?.map((u) => ({ id: u.id })) || [];
@@ -29626,7 +29628,7 @@ const getUsers$d = async ({ userRoleId, facilityLevel }) => {
       );
     }
   } catch (e) {
-    console.error("User role search failed:", e);
+    console.log("User role search failed:", e);
   }
 
   return usersResp?.data?.users?.map((u) => ({ id: u.id })) || [];
@@ -29694,7 +29696,7 @@ const equipmentTransferOutsideSubmitNotification = async (config, options) => {
 
     sendNotificationHandler(subject, body, usersId);
   } catch (error) {
-    console.error("Outside transfer submit notification error:", error);
+    console.log("Outside transfer submit notification error:", error);
   }
 };
 
@@ -29718,7 +29720,7 @@ const getUsers$c = async ({ targetOrgUnitId, userRoleId, isPermanent, facilityLe
       );
     }
   } catch (e) {
-    console.error("User role/orgUnit search failed:", e);
+    console.log("User role/orgUnit search failed:", e);
   }
 
   return usersResp?.data?.users?.map((u) => ({ id: u.id })) || [];
@@ -29849,7 +29851,7 @@ const getUsers$b = async ({ targetOrgUnitId, userRoleId, facilityLevel }) => {
       );
     }
   } catch (e) {
-    console.error("User role/orgUnit search failed:", e);
+    console.log("User role/orgUnit search failed:", e);
   }
 
   return usersResp?.data?.users?.map((u) => ({ id: u.id })) || [];
@@ -29967,7 +29969,7 @@ const equipmentTransferOutsideApprovalNotification = async (config, options) => 
 
     sendNotificationHandler(subject, body, usersId);
   } catch (error) {
-    console.error("Outside transfer approval notification error:", error);
+    console.log("Outside transfer approval notification error:", error);
   }
 };
 
@@ -29985,7 +29987,7 @@ const getUsers$a = async ({ targetOrgUnitId, userRoleId }) => {
       );
     }
   } catch (e) {
-    console.error("User role/orgUnit search failed:", e);
+    console.log("User role/orgUnit search failed:", e);
   }
 
   return usersResp?.data?.users?.map((u) => ({ id: u.id })) || [];
@@ -30109,7 +30111,7 @@ const equipmentTransferApprovalNotification = async (config, options) => {
     const usersId = users?.map((id) => id?.id);
     sendNotificationHandler(subject, body, usersId);
   } catch (error) {
-    console.error("Transfer approval notification error:", error);
+    console.log("Transfer approval notification error:", error);
   }
 };
 
@@ -30129,7 +30131,7 @@ const getUsers$9 = async ({ targetOrgUnitId, userRoleId, facilityLevel }) => {
       );
     }
   } catch (e) {
-    console.error("User role/orgUnit search failed:", e);
+    console.log("User role/orgUnit search failed:", e);
   }
 
   return usersResp?.data?.users?.map((u) => ({ id: u.id })) || [];
@@ -30218,7 +30220,7 @@ const equipmentTransferOutsideAcknowledgmentNotification = async (config, option
     sendNotificationHandler(subject, body, usersId);
   } catch (error) {
 
-    console.error("Outside transfer acknowledgment notification error:", error);
+    console.log("Outside transfer acknowledgment notification error:", error);
   }
 };
 
@@ -30235,7 +30237,7 @@ const getUsers$8 = async ({ targetOrgUnitId, userRoleId }) => {
       );
     }
   } catch (e) {
-    console.error("User role/orgUnit search failed:", e);
+    console.log("User role/orgUnit search failed:", e);
   }
 
   return usersResp?.data?.users?.map((u) => ({ id: u.id })) || [];
@@ -30334,7 +30336,7 @@ const equipmentTransferAcknowledgmentNotification = async (config, options) => {
     const usersId = users?.map((id) => id?.id);
     sendNotificationHandler(subject, body, usersId);
   } catch (error) {
-    console.error("Transfer acknowledgment notification error:", error);
+    console.log("Transfer acknowledgment notification error:", error);
   }
 };
 
@@ -30361,7 +30363,7 @@ const getUsers$7 = async ({ targetOrgUnitId, userRoleId, mode }) => {
       );
     }
   } catch (e) {
-    console.error("User role/orgUnit search failed:", e);
+    console.log("User role/orgUnit search failed:", e);
   }
   return usersResp?.data?.users?.map((u) => ({ id: u.id })) || [];
 };
@@ -30428,7 +30430,7 @@ const managingUserTrainingNotification = async (config, options) => {
               users.push(...wardUsers);
             }
           } catch (wardError) {
-            console.error(`Failed to find ward users for ${wardName}:`, wardError);
+            console.log(`Failed to find ward users for ${wardName}:`, wardError);
           }
         }
       }
@@ -30482,7 +30484,7 @@ const getUsers$6 = async ({ targetOrgUnitId, userRoleId }) => {
       );
     }
   } catch (e) {
-    console.error("User role/orgUnit search failed:", e);
+    console.log("User role/orgUnit search failed:", e);
   }
 
   return usersResp?.data?.users?.map((u) => ({ id: u.id })) || [];
@@ -30720,7 +30722,7 @@ const maintenanceAssignNotification = async (config, options) => {
           engineerUserId = user.id;
         }
       } catch (error) {
-        console.error(`Failed to resolve engineer ${engineerCode}:`, error);
+        console.log(`Failed to resolve engineer ${engineerCode}:`, error);
       }
     }
 
@@ -30760,7 +30762,7 @@ const maintenanceAssignNotification = async (config, options) => {
         serialNumber = serialNumberAttr.value;
       }
     } catch (error) {
-      console.error("Failed to fetch equipment details:", error);
+      console.log("Failed to fetch equipment details:", error);
     }
 
     // Get ward from event data (where the request was made)
@@ -30776,7 +30778,7 @@ const maintenanceAssignNotification = async (config, options) => {
         );
         wardName = wardData?.data?.name || wardName;
       } catch (error) {
-        console.error("Failed to fetch ward details:", error);
+        console.log("Failed to fetch ward details:", error);
       }
     }
 
@@ -30805,7 +30807,7 @@ const maintenanceAssignNotification = async (config, options) => {
     }
 
   } catch (error) {
-    console.error("Maintenance assignment notification failed:", error);
+    console.log("Maintenance assignment notification failed:", error);
   }
 };
 
@@ -30871,7 +30873,7 @@ const maintenanceScheduleNotification = async (config, options) => {
         serialNumber = serialNumberAttr.value;
       }
     } catch (error) {
-      console.error("Failed to fetch equipment details:", error);
+      console.log("Failed to fetch equipment details:", error);
     }
 
     // Format the date for display
@@ -30895,7 +30897,7 @@ const maintenanceScheduleNotification = async (config, options) => {
     // Send notification to creator (ward incharge)
     await sendNotificationHandler(subject, body, [creatorUserId]);
   } catch (error) {
-    console.error("Maintenance schedule notification failed:", error);
+    console.log("Maintenance schedule notification failed:", error);
   }
 };
 
@@ -30924,7 +30926,7 @@ const getUsers$5 = async ({ targetOrgUnitId, userRoleId, mode }) => {
       );
     }
   } catch (e) {
-    console.error("User role/orgUnit search failed:", e);
+    console.log("User role/orgUnit search failed:", e);
   }
 
   return usersResp?.data?.users?.map((u) => ({ id: u.id })) || [];
@@ -30979,7 +30981,7 @@ const getUsers$4 = async ({ targetOrgUnitId, userRoleId }) => {
       );
     }
   } catch (e) {
-    console.error("User role/orgUnit search failed:", e);
+    console.log("User role/orgUnit search failed:", e);
   }
 
   return usersResp?.data?.users?.map((u) => ({ id: u.id })) || [];
@@ -31169,7 +31171,7 @@ const getUsers$3 = async ({ targetOrgUnitId, userRoleId, username }) => {
       );
     }
   } catch (e) {
-    console.error("User role/orgUnit search failed:", e);
+    console.log("User role/orgUnit search failed:", e);
   }
 
   return usersResp?.data?.users?.map((u) => ({ id: u.id })) || [];
@@ -31275,7 +31277,7 @@ const getUsers$2 = async ({ targetOrgUnitId, userRoleId, username }) => {
       );
     }
   } catch (e) {
-    console.error("User role/orgUnit search failed:", e);
+    console.log("User role/orgUnit search failed:", e);
   }
 
   return usersResp?.data?.users?.map((u) => ({ id: u.id })) || [];
@@ -31426,7 +31428,7 @@ const getUsers$1 = async ({ targetOrgUnitId, userRoleId }) => {
       );
     }
   } catch (e) {
-    console.error("User role/orgUnit search failed:", e);
+    console.log("User role/orgUnit search failed:", e);
   }
 
   return usersResp?.data?.users?.map((u) => ({ id: u.id })) || [];
@@ -31496,7 +31498,7 @@ const trainingFeedbackNotification = async (config, options) => {
               });
               users.push(...wardUsers);
             } catch (wardError) {
-              console.error(
+              console.log(
                 `Failed to find ward users for ${wardId}:`,
                 wardError
               );
@@ -31729,7 +31731,7 @@ async function resolveEquipmentStateMaintenance(
     );
     console.log({ result });
   } catch (error) {
-    console.error("resolveEquipmentStateMaintenance error:", error);
+    console.log("resolveEquipmentStateMaintenance error:", error);
     return null;
   }
 }
@@ -32013,7 +32015,7 @@ async function registerMultipleTEI(
     }
     return response;
   } catch (error) {
-    console.error("Error registering multiple TEIs:", error);
+    console.log("Error registering multiple TEIs:", error);
   }
 }
 
@@ -32143,7 +32145,7 @@ async function programWithRegistrationEvent(
   isEdit = false,
   existingEventId = null,
   options = {},
-  sectionData = ""
+  sectionData
 ) {
   try {
 
@@ -32176,6 +32178,8 @@ async function programWithRegistrationEvent(
 
       // Create new event
       let buildMaintenanceSchedulePayload = null;
+      console.log({ programStage, sectionData });
+
       if (programStage === "VlwQGgBvd9i" && sectionData === "EAfmOCCCBwY") {
         buildMaintenanceSchedulePayload = ({
           equipmentDetails,
@@ -32222,19 +32226,14 @@ async function programWithRegistrationEvent(
                   program?.id,
 
                 orgUnit:
-                  selectedOrgUnit || null,
+                  selectedOrgUnit,
 
                 status: "SCHEDULE",
 
                 scheduledAt:
                   item.date,
 
-                dataValues: [
-                  //   {
-                  //   dataElement: item?.dateScheduledDE,
-                  //   value: item.date
-                  // }
-                ],
+                dataValues: [],
               }));
 
           return {
@@ -32345,6 +32344,8 @@ async function programWithRegistrationEvent(
       }
     }
     if (programStage === "VlwQGgBvd9i" && sectionData === "EAfmOCCCBwY") {
+      console.log({ programStage, sectionData });
+
       sessionStorage.removeItem("preventiveMaintenanceSchedule");
     }
     return response;
@@ -32680,7 +32681,7 @@ ${lines.join("\n")}`,
         navigate(window.location.pathname, { replace: true });
       }
     } catch (err) {
-      console.error("Batch submit error:", err);
+      console.log("Batch submit error:", err);
       showToast("Failed to save", "warning");
     } finally {
       setLoading(false);
@@ -33245,7 +33246,7 @@ const calculateDeregistrationAutofill = async (teiAttributes, isolationDate = nu
         );
         fieldLockingConfig = deregistrationConfig?.lockingRules || [];
     } catch (error) {
-        console.error("Error loading field locking configuration:", error);
+        console.log("Error loading field locking configuration:", error);
         fieldLockingConfig = [];
     }
 
@@ -33472,7 +33473,7 @@ function useFacilityAutoFill(
 
         setAutoFilledOrgUnit(orgUnitId);
       } catch (error) {
-        console.error("Error loading facility auto-fill config:", error);
+        console.log("Error loading facility auto-fill config:", error);
         setAutoFilledOrgUnit(null);
       } finally {
         setLoading(false);
@@ -33704,7 +33705,7 @@ const getUsers = async ({ targetOrgUnitId, userRoleId, mode }) => {
       );
     }
   } catch (e) {
-    console.error("User role/orgUnit search failed:", e);
+    console.log("User role/orgUnit search failed:", e);
   }
 
   return usersResp?.data?.users?.map((u) => ({ id: u.id })) || [];
@@ -34338,6 +34339,7 @@ function FormComponent({
     Math.random().toString(36).substring(2, 10).toUpperCase()
   );
   const [triggerAt, setTriggerAt] = useState$19(queryParams.get("triggerAt"));
+  const [sectionIdData, setSectionIdData] = useState$19(queryParams.get("sectionId"));
   const [loading, setLoading] = useState$19(false);
   const [eventDate, setEventDate] = useState$19((/* @__PURE__ */ new Date()).toISOString());
   const navigate = useNavigate();
@@ -34403,7 +34405,7 @@ function FormComponent({
         }
       });
     } catch (error) {
-      console.error("Failed to fetch deregistration autofill rules:", error);
+      console.log("Failed to fetch deregistration autofill rules:", error);
     }
   };
   useEffect$16(() => {
@@ -34470,7 +34472,7 @@ function FormComponent({
         }
       }
     } catch (err) {
-      console.error("Failed to fetch warrant data:", err);
+      console.log("Failed to fetch warrant data:", err);
     }
   };
   useEffect$16(() => {
@@ -34752,7 +34754,7 @@ function FormComponent({
             (de?.valueType || "").toUpperCase()
           )
         ).map((de) => de?.id) || [];
-        console.log({ query, queryParams, programKey });
+        const sectionId = queryParams?.get("sectionId");
         response = await CreateDataItemsController.programWithRegistrationEvent(
           selectedData,
           fileDataElements,
@@ -34764,7 +34766,8 @@ function FormComponent({
           enrollment,
           isEditMode2,
           editData?.event || editData?.id,
-          queryParams.get("sectionId")
+          {},
+          sectionIdData || sectionId
         );
         saveKind = isEditMode2 ? "tracker-event-update" : "tracker-event-create";
       } else {
@@ -34884,7 +34887,7 @@ function FormComponent({
           if (fetchTask?.task?.programTrigger === program?.id) {
             const task = queryDataTaskId.split(".")[1];
             const fetchEvent = await dataStore.get(
-              `tracker/events/${task}.json`
+              `tracker/events/${task}.json?program=${fetchEvent?.data?.program}`
             );
             const payload = {
               event: fetchEvent?.data?.event,
@@ -35069,7 +35072,7 @@ function FormComponent({
             }
           }
         } catch (error) {
-          console.error("Error prefilling deregistration form:", error);
+          console.log("Error prefilling deregistration form:", error);
         }
       };
       fetchEquipmentDataAndPrefill();
@@ -63083,7 +63086,7 @@ const Tracker = ({ id }) => {
         const sorted = Array.isArray(orgUnits) ? orgUnits.sort((a, b) => a?.level - b?.level) : [];
         setOrganisationUnits(sorted);
       } catch (e) {
-        console.error("Failed to load organisation units:", e);
+        console.log("Failed to load organisation units:", e);
         setOrganisationUnits([]);
       }
     };
@@ -63235,7 +63238,7 @@ const Tracker = ({ id }) => {
       }
       console.warn("Use in-app scanner UI for web");
     } catch (err) {
-      console.error("QR Scan failed:", err);
+      console.log("QR Scan failed:", err);
     }
   };
   useEffect$13(() => {
@@ -64517,7 +64520,7 @@ function ItemSearch({
         const res = await dataStore.get(`programs/${programId}.json?fields=programType`);
         setProgramType(res?.data?.programType);
       } catch (e) {
-        console.error("[DEBUG] Failed to fetch program type", e);
+        console.log("[DEBUG] Failed to fetch program type", e);
       }
     };
     fetchProgramType();
@@ -64568,7 +64571,7 @@ function ItemSearch({
         });
         return attributeMap;
       } catch (err) {
-        console.error("Error fetching TEI attributes:", err);
+        console.log("Error fetching TEI attributes:", err);
         return {};
       }
     };
@@ -64673,7 +64676,7 @@ function ItemSearch({
           await runTei();
         }
       } catch (err) {
-        console.error("[DEBUG] run() Error:", err);
+        console.log("[DEBUG] run() Error:", err);
       } finally {
         if (!cancelled && mountedRef.current) {
           onLoadingRef.current?.(false);
@@ -65089,7 +65092,7 @@ function StageEvents({
         const firstStageId = meta?.data?.programStages?.[0]?.id || null;
         if (firstStageId) setFallbackStageId(firstStageId);
       } catch (error) {
-        console.error(
+        console.log(
           "[MEMIS] Failed to resolve program stage from metadata:",
           error
         );
@@ -65181,7 +65184,7 @@ function StageEvents({
       setAllColumnsOrdered(sortedData);
       setVisibleColumnKeys(new Set(sortedData.map((c) => c.key)));
     } catch (error) {
-      console.error("[MEMIS] Failed to fetch Program DE:", error);
+      console.log("[MEMIS] Failed to fetch Program DE:", error);
       showToast("Failed to load program details. Please try again.", "error");
     } finally {
       setLoadingColumns(false);
@@ -65272,7 +65275,7 @@ function StageEvents({
             teiAttributeMap[tei.trackedEntity] = tei.attributes || [];
           });
         } catch (err) {
-          console.error(
+          console.log(
             "[MEMIS] Failed to fetch TEI attributes in getEvents:",
             err
           );
@@ -65381,7 +65384,7 @@ function StageEvents({
         onClick(list);
       }
     } catch (error) {
-      console.error("[MEMIS] getEvents failed:", error);
+      console.log("[MEMIS] getEvents failed:", error);
     } finally {
       setLoading(false);
     }
@@ -65667,7 +65670,7 @@ function StageSectionsEvents({
         const firstStageId = meta?.data?.programStages?.[0]?.id || null;
         if (firstStageId) setFallbackStageId(firstStageId);
       } catch (error) {
-        console.error(
+        console.log(
           "[MEMIS] Failed to resolve program stage from metadata:",
           error
         );
@@ -65720,7 +65723,7 @@ function StageSectionsEvents({
       setAllColumnsOrdered(sortedData || []);
       setVisibleColumnKeys(new Set(sortedData?.map((c) => c?.key)));
     } catch (error) {
-      console.error("[MEMIS] Failed to fetch Program DE:", error);
+      console.log("[MEMIS] Failed to fetch Program DE:", error);
     } finally {
       setLoadingColumns(false);
     }
@@ -65954,7 +65957,7 @@ function StageSectionsEvents({
       const sorted = sortRowsByApproval(filteredRows, keyFromConfig);
       setRows(sorted);
     } catch (error) {
-      console.error("[MEMIS] getEvents failed:", error);
+      console.log("[MEMIS] getEvents failed:", error);
     } finally {
       setLoading(false);
     }
@@ -66183,7 +66186,7 @@ function EquipmentPicker({
       const secondaryAttrId = stageCfg.displayFields?.find((f) => f.secondary)?.attributeId || config?.displayFields?.find((f) => f.secondary)?.attributeId;
       const statusAttrId = stageCfg.equipmentFilter?.attributes?.statusAttribute || config?.equipmentFilter?.attributes?.statusAttribute;
       if (!allocationStageId || !wardFieldId || !equipmentProgramId) {
-        console.error(
+        console.log(
           "[EquipmentPicker] Missing config — allocationStageId, wardFieldId or equipmentProgramId not found in datastore"
         );
         setAvailableEquipment([]);
@@ -66211,7 +66214,7 @@ function EquipmentPicker({
         return rawValue;
       };
       const evRes = await dataStore.get(
-        `tracker/events?programStage=${allocationStageId}&filter=${wardFieldId}:eq:${ward.id}&fields=trackedEntity,occurredAt,createdAt,updatedAt,&order=occurredAt:desc`
+        `tracker/events?program=${equipmentProgramId}&programStage=${allocationStageId}&filter=${wardFieldId}:eq:${ward.id}&fields=trackedEntity,occurredAt,createdAt,updatedAt,&order=occurredAt:desc`
       );
       const teiList = [
         ...new Set(
@@ -66257,7 +66260,7 @@ function EquipmentPicker({
       setAvailableEquipment(formattedEquipment);
       setSelectedWard(ward);
     } catch (error2) {
-      console.error("[EquipmentPicker] Error fetching ward equipment:", error2);
+      console.log("[EquipmentPicker] Error fetching ward equipment:", error2);
     } finally {
       setLoading(false);
     }
@@ -67148,7 +67151,7 @@ function MaintenanceEvents({
         throw new Error("Failed to create maintenance activity");
       }
       const eventRes = await dataStore.get(
-        `tracker/events/${createdEventId}?fields=event,enrollment,occurredAt,orgUnit,trackedEntity,program,programStage,status,dataValues[dataElement,value]`
+        `tracker/events/${createdEventId}?program=${program}&fields=event,enrollment,occurredAt,orgUnit,trackedEntity,program,programStage,status,dataValues[dataElement,value]`
       );
       const createdEvent = eventRes?.data || eventRes;
       if (!createdEvent?.event) {
@@ -67162,7 +67165,7 @@ function MaintenanceEvents({
       setSelected(createdEvent);
       showToast("Standalone maintenance activity created.", "success");
     } catch (error) {
-      console.error(error);
+      console.log(error);
       showToast(
         error?.message || "Failed to generate job card without maintenance activity.",
         "danger"
@@ -67186,7 +67189,7 @@ function MaintenanceEvents({
     setLoading(true);
     setLoadingMessage("Saving job card");
     try {
-      if (!selected) return console.error("Event data missing");
+      if (!selected) return console.log("Event data missing");
       const baseValues = new Map(
         (selected?.dataValues || []).map((item) => [
           item.dataElement,
@@ -70929,7 +70932,7 @@ function MarkMaintenanceDoneModal({
         completionStatus
       });
     } catch (error) {
-      console.error(
+      console.log(
         "Failed to mark preventive maintenance as done:",
         error
       );
@@ -70995,7 +70998,7 @@ function MarkMaintenanceDoneModal({
             },
             children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx(IonSpinner, { name: "crescent" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { color: "medium", children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { style: { margin: 0 }, children: "Recording maintenance completion..." }) })
+              /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { color: "medium", children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { style: { margin: 0 }, children: "Recording maintenance activation..." }) })
             ]
           }
         ),
@@ -71024,7 +71027,7 @@ function MarkMaintenanceDoneModal({
                 }
               ),
               /* @__PURE__ */ jsxRuntimeExports.jsxs(IonText, { children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "Has this maintenance activity been done?" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "Has this maintenance activity started?" }),
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
                   "p",
                   {
@@ -71033,7 +71036,7 @@ function MarkMaintenanceDoneModal({
                       fontSize: 13,
                       lineHeight: 1.5
                     },
-                    children: "Only mark this schedule as done if the required preventive maintenance has actually been performed."
+                    children: "Only mark this schedule as activated if the required preventive maintenance activity has started."
                   }
                 )
               ] })
@@ -71277,17 +71280,35 @@ function PreventiveMaintenanceView({
       ]
     };
     try {
-      await dataStore.post(
+      const result = await dataStore.post(
         "tracker?async=false&importStrategy=UPDATE",
         payload
       );
+      if (result?.status === 200) {
+        await dataStore.post("tracker?async=false&importStrategy=UPDATE", {
+          trackedEntities: [
+            {
+              trackedEntity: data?.equipment,
+              trackedEntityType: "Pfts5eJeX1M",
+              orgUnit: data?.orgUnit,
+              attributes: [
+                {
+                  //TEA for Equipment status
+                  attribute: "KFZ35H4ZHrk",
+                  value: "UNDER_REPAIR"
+                }
+              ]
+            }
+          ]
+        });
+      }
       setShowMarkDoneModal(false);
       setSelectedMaintenance(null);
       setRefreshKey(
         (previous) => previous + 1
       );
     } catch (error) {
-      console.error(
+      console.log(
         "Failed to mark maintenance as done:",
         error
       );
@@ -71471,6 +71492,7 @@ function ActiveMaintenances({
 }) {
   const [equipment, setEquipment] = useState$Y([]);
   const [loading, setLoading] = useState$Y(false);
+  const [search, setSearch] = useState$Y("");
   const [expanded, setExpanded] = useState$Y({});
   useEffect$U(() => {
     let mounted = true;
@@ -71506,7 +71528,7 @@ function ActiveMaintenances({
           )
         );
       } catch (error) {
-        console.error(
+        console.log(
           "Failed to load active maintenance:",
           error
         );
@@ -71531,6 +71553,19 @@ function ActiveMaintenances({
       [key]: !prev[key]
     }));
   };
+  const filteredEquipment = equipment.filter(
+    (item) => {
+      const query = search.trim().toLowerCase();
+      if (!query) {
+        return true;
+      }
+      const searchableText = [
+        item.equipmentName,
+        item.serialNumber
+      ].filter(Boolean).join(" ").toLowerCase();
+      return searchableText.includes(query);
+    }
+  );
   if (loading) {
     return /* @__PURE__ */ jsxRuntimeExports.jsx(
       LoadingState,
@@ -71549,19 +71584,40 @@ function ActiveMaintenances({
       }
     );
   }
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: equipment.map((item) => {
-    const key = item.enrollment || item.trackedEntity;
-    return /* @__PURE__ */ jsxRuntimeExports.jsx(
-      ActiveMaintenanceCard,
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mb-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+      IonSearchbar,
       {
-        equipment: item,
-        expanded: expanded[key],
-        onToggle: () => toggle(key),
-        onView
-      },
-      key
-    );
-  }) });
+        value: search,
+        placeholder: "Search equipment...",
+        debounce: 300,
+        onIonInput: (event) => setSearch(
+          event.detail.value || ""
+        ),
+        onIonClear: () => setSearch("")
+      }
+    ) }),
+    !filteredEquipment.length ? /* @__PURE__ */ jsxRuntimeExports.jsx(
+      EmptyState,
+      {
+        icon: constructOutline,
+        title: "No equipment found",
+        message: `No active maintenance equipment matches "${search}".`
+      }
+    ) : filteredEquipment.map((item) => {
+      const key = item.enrollment || item.trackedEntity;
+      return /* @__PURE__ */ jsxRuntimeExports.jsx(
+        ActiveMaintenanceCard,
+        {
+          equipment: item,
+          expanded: expanded[key],
+          onToggle: () => toggle(key),
+          onView
+        },
+        key
+      );
+    })
+  ] });
 }
 function ActiveMaintenanceCard({
   equipment,
@@ -71790,7 +71846,7 @@ function ActiveMaintenanceRow({
           {
             size: "small",
             fill: "solid",
-            color: "success",
+            color: "light",
             onClick: (data) => onView(event),
             children: "View"
           }
@@ -71812,6 +71868,7 @@ function ScheduleMaintenances({
 }) {
   const [equipment, setEquipment] = useState$Y([]);
   const [loading, setLoading] = useState$Y(false);
+  const [search, setSearch] = useState$Y("");
   const [expanded, setExpanded] = useState$Y({});
   useEffect$U(() => {
     let mounted = true;
@@ -71891,7 +71948,7 @@ function ScheduleMaintenances({
           )
         );
       } catch (error) {
-        console.error(
+        console.log(
           "Failed to load scheduled maintenance:",
           error
         );
@@ -71916,6 +71973,26 @@ function ScheduleMaintenances({
       [key]: !prev[key]
     }));
   };
+  const filteredEquipment = equipment.filter((item) => {
+    const query = search.trim().toLowerCase();
+    if (!query) {
+      return true;
+    }
+    const searchableText = [
+      item.equipmentName,
+      item.serialNumber,
+      item.equipmentId,
+      item.trackedEntity,
+      item.enrollment
+    ].filter(
+      (value) => value !== null && value !== void 0
+    ).map(
+      (value) => String(value).toLowerCase()
+    ).join(" ");
+    return searchableText.includes(
+      query
+    );
+  });
   if (loading) {
     return /* @__PURE__ */ jsxRuntimeExports.jsx(
       LoadingState,
@@ -71943,6 +72020,29 @@ function ScheduleMaintenances({
     0
   );
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mb-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+      IonSearchbar,
+      {
+        value: search,
+        onIonInput: (event) => setSearch(
+          event.detail.value || ""
+        ),
+        placeholder: "Search equipment...",
+        debounce: 200,
+        showClearButton: "focus"
+      }
+    ) }),
+    search.trim() && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "px-2 pb-3 text-sm text-muted-foreground", children: [
+      "Showing",
+      " ",
+      /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: filteredEquipment.length }),
+      " ",
+      "of",
+      " ",
+      /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: equipment.length }),
+      " ",
+      "scheduled equipment"
+    ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs(
       "div",
       {
@@ -71991,19 +72091,31 @@ function ScheduleMaintenances({
         ]
       }
     ),
-    equipment.map((item) => {
-      const key = item.enrollment || item.trackedEntity;
-      return /* @__PURE__ */ jsxRuntimeExports.jsx(
-        ScheduleEquipmentCard,
-        {
-          equipment: item,
-          expanded: expanded[key],
-          onToggle: () => toggle(key),
-          onMarkAsDone
-        },
-        key
-      );
-    })
+    !filteredEquipment.length ? /* @__PURE__ */ jsxRuntimeExports.jsx(
+      EmptyState,
+      {
+        icon: calendarOutline,
+        title: "No matching schedules",
+        message: `No scheduled maintenance matches "${search}". Try searching by equipment name or serial number.`
+      }
+    ) : (
+      /* ================================================================ */
+      /* EQUIPMENT                                                        */
+      /* ================================================================ */
+      filteredEquipment.map((item) => {
+        const key = item.enrollment || item.trackedEntity;
+        return /* @__PURE__ */ jsxRuntimeExports.jsx(
+          ScheduleEquipmentCard,
+          {
+            equipment: item,
+            expanded: expanded[key],
+            onToggle: () => toggle(key),
+            onMarkAsDone
+          },
+          key
+        );
+      })
+    )
   ] });
 }
 function ScheduleEquipmentCard({
@@ -72375,7 +72487,7 @@ function ScheduleRow({
             fill: "outline",
             color: "success",
             onClick: () => onMarkAsDone({ ...event, data }),
-            children: "Mark as Done"
+            children: "Activate Maintenance"
           }
         )
       ]
@@ -72641,9 +72753,7 @@ function buildEquipment(trackedEntities = [], {
     if (!trackedEntity) {
       return;
     }
-    let equipment = equipmentMap.get(
-      trackedEntity
-    );
+    let equipment = equipmentMap.get(trackedEntity);
     if (!equipment) {
       const serialNumber = getAttributeValue(
         tei?.attributes,
@@ -72658,28 +72768,26 @@ function buildEquipment(trackedEntities = [], {
       ) : null) || "Unnamed Equipment";
       equipment = {
         trackedEntity,
+        // Enrollment UID
         enrollment: enrollment.enrollment,
         equipmentId,
-        event: enrollment?.event,
         equipmentName,
-        programStage: enrollment?.programStage,
-        program: enrollment?.program,
         serialNumber: serialNumber || "-",
         frequency,
+        program: enrollment?.program,
+        programStage: enrollment?.programStage,
+        // Store all events here
         events: [],
         thisMonthDates: [],
         upcomingDates: [],
         nextDate: null,
         thisMonthCount: 0
       };
-      equipmentMap.set(
-        trackedEntity,
-        equipment
-      );
     }
-    const events = enrollment?.events || [];
+    equipmentMap.set(trackedEntity, equipment);
+    const events = enrollment?.events ?? [];
     events.forEach((event) => {
-      if (!event?.event || !event?.scheduledAt) {
+      if (!event?.event) {
         return;
       }
       if (event.status !== eventType) {
@@ -72693,9 +72801,9 @@ function buildEquipment(trackedEntities = [], {
       }
       equipment.events.push({
         program: event?.program,
-        trackedEntity: event?.trackedEntity,
+        trackedEntity: event?.trackedEntity || trackedEntity,
         event: event.event,
-        date: event.scheduledAt,
+        date: event.scheduledAt || event?.updatedAt,
         status: event.status,
         programStage: event.programStage,
         orgUnit: event.orgUnit
@@ -72705,9 +72813,7 @@ function buildEquipment(trackedEntities = [], {
       (a, b) => eventType === "SCHEDULE" ? new Date(a.date) - new Date(b.date) : new Date(b.date) - new Date(a.date)
     );
   });
-  return Array.from(
-    equipmentMap.values()
-  );
+  return Array.from(equipmentMap.values());
 }
 function getAttributeValue(attributes = [], attributeId) {
   if (!attributeId) {
@@ -73251,7 +73357,6 @@ function GeneralComponent({ programProp }) {
       return /* @__PURE__ */ jsxRuntimeExports.jsx(StageEvents, { ...commonProps, id: program._stageId });
     }
     if (program?._isSection) {
-      console.log({ program });
       if (program?._sectionId === "EAfmOCCCBwY") return /* @__PURE__ */ jsxRuntimeExports.jsx(PreventiveMaintenanceView, { ...commonProps, programId: program?.id, id: program?._sectionId, stageId: program?._dependentStage });
       return /* @__PURE__ */ jsxRuntimeExports.jsx(StageSectionsEvents, { ...commonProps, id: program._sectionId });
     }
@@ -74085,7 +74190,7 @@ function DeregistrationStage({
       );
       setEquipmentState(stateAttribute?.value || null);
     } catch (error) {
-      console.error("Error fetching equipment state:", error);
+      console.log("Error fetching equipment state:", error);
       setEquipmentState(null);
     }
   };
@@ -97902,7 +98007,7 @@ function TrackerPgStages() {
       }
       return JSON.stringify(payload);
     } catch (e) {
-      console.error("Config/payload failed:", e?.response?.status, e?.message);
+      console.log("Config/payload failed:", e?.response?.status, e?.message);
       showToast("Failed to prepare QR code.", "error");
       return null;
     }
@@ -97972,7 +98077,7 @@ function TrackerPgStages() {
         showToast("QR code downloaded.", "success");
       }
     } catch (e) {
-      console.error("download failed:", e);
+      console.log("download failed:", e);
       const message = String(e?.message || "").toLowerCase();
       if (message.includes("storage permission denied")) {
         showToast("Storage permission denied. QR was not saved.", "warning");
@@ -97997,7 +98102,7 @@ function TrackerPgStages() {
       setQrDataUrl(dataUrl);
       setPrintOpen(true);
     } catch (e) {
-      console.error(" preview failed:", e);
+      console.log(" preview failed:", e);
       showToast("Failed to open QR preview.", "error");
     } finally {
       setQrBusy(false);
@@ -98668,7 +98773,7 @@ const printJobCard = async ({ maintenanceCfg, programId, event, title = "Mainten
     };
     if (doc.readyState === "complete") onReady(); else iframe.onload = onReady;
   } catch (e) {
-    console.error("[MEMIS] printJobCard failed:", e);
+    console.log("[MEMIS] printJobCard failed:", e);
     window.print?.();
   }
 };
@@ -98892,7 +98997,7 @@ function ApproveModal({
                 optionSet: optionSet || field.optionSet
               };
             } catch (err) {
-              console.error(
+              console.log(
                 `Failed to load optionSet ${field.optionSet.id}:`,
                 err
               );
@@ -99007,7 +99112,7 @@ function ApproveModal({
               });
             }
           } catch (notificationError) {
-            console.error("Failed to send notification:", notificationError);
+            console.log("Failed to send notification:", notificationError);
           }
           handleCloseModal();
           await getEventDetails(event?.event);
@@ -99176,7 +99281,7 @@ function ApproveModal({
         showToast("Failed to update approval. Please try again.", "danger");
       }
     } catch (err) {
-      console.error("Failed to update event:", err);
+      console.log("Failed to update event:", err);
       showToast(
         "Something went wrong while saving the approval.",
         "danger"
@@ -100769,7 +100874,7 @@ function CollectionModal({
         setFormData(initial);
         setSparePartSelectedId(null);
       } catch (err) {
-        console.error(err);
+        console.log(err);
         setError("Failed to prepare form.");
       } finally {
         setLoading(false);
@@ -101093,7 +101198,7 @@ function CollectionModal({
               payload: event
             });
           } catch (notificationError) {
-            console.error(
+            console.log(
               "Equipment transfer acknowledgment notification failed:",
               notificationError
             );
@@ -144151,7 +144256,7 @@ const ReportExportButtons = ({
           setReportRequiresApproval(false);
         }
       } catch (error2) {
-        console.error("Error checking report approval requirement:", error2);
+        console.log("Error checking report approval requirement:", error2);
         setReportRequiresApproval(false);
       }
     };
@@ -145833,7 +145938,7 @@ const ReportExportButtons = ({
         printWindow.close();
       }
     } catch (err) {
-      console.error("Print failed:", err);
+      console.log("Print failed:", err);
     }
   };
   const exportToExcelXlsx = async () => {
@@ -146742,7 +146847,7 @@ function useEventSectionVisibility(programId) {
                     setConfig(visibilityConfig);
                 }
             } catch (e) {
-                console.error("Error fetching event section visibility config:", e);
+                console.log("Error fetching event section visibility config:", e);
                 if (mounted) {
                     setConfig(null);
                 }
@@ -146768,7 +146873,7 @@ function useEventSectionVisibility(programId) {
             
             return programConfig?.rules || [];
         } catch (e) {
-            console.error("Error computing section visibility rules:", e);
+            console.log("Error computing section visibility rules:", e);
             return [];
         }
     }, [programId, config, tick]);
@@ -147119,7 +147224,7 @@ function EventPage() {
           });
         }
       } catch (e) {
-        console.error("Failed to resolve ORGANISATION_UNIT values", e);
+        console.log("Failed to resolve ORGANISATION_UNIT values", e);
       }
       const names = buildFieldNames(result);
       setFieldNames(names);
@@ -147204,7 +147309,7 @@ function EventPage() {
       }
       setIsApproved(!!approvedYes2);
     } catch (err) {
-      console.error("Error fetching event details:", err);
+      console.log("Error fetching event details:", err);
       setError("Failed to load event details. Please try again later.");
     } finally {
       setLoading(false);
@@ -148365,7 +148470,7 @@ const ViewProgramSectionsAccess = ({ onEdit }) => {
       ) || [];
       setSharingSettings(rows);
     } catch (e) {
-      console.error(e);
+      console.log(e);
       setSharingSettings([]);
     } finally {
       setLoading(false);
@@ -148399,7 +148504,7 @@ const ViewProgramSectionsAccess = ({ onEdit }) => {
       await LocalForageServiceInstance.setItem("dataStore", dd, "dataStore");
       await getSharingSettings();
     } catch (err) {
-      console.error(err);
+      console.log(err);
       showToast("An error occurred while deleting", "error");
     } finally {
       setDeleting(false);
@@ -148681,7 +148786,7 @@ function SectionAccessUserRoles() {
         );
         if (res) showToast(isUpdate ? "Access rights updated successfully" : "Access rights saved successfully", "success");
       } catch (err) {
-        console.error("Error saving sharing settings: ", err);
+        console.log("Error saving sharing settings: ", err);
         showToast(isUpdate ? "Failed to update access rights" : "Failed to save access rights", "error");
       } finally {
         setFormActive(false);
@@ -148693,7 +148798,7 @@ function SectionAccessUserRoles() {
         setSelectedRights([]);
       }
     } catch (error) {
-      console.error("Error updating datastore: ", error);
+      console.log("Error updating datastore: ", error);
       showToast("Error updating DataStore", "error");
     } finally {
       setIsLoading(false);
@@ -149182,7 +149287,7 @@ function EnrollmentAccessSettings() {
       showToast("Refreshed", "success");
       broadcastChange(remote);
     } catch (e) {
-      console.error(e);
+      console.log(e);
       showToast("Failed to refresh", "error");
     } finally {
       setLoading(false);
@@ -149222,7 +149327,7 @@ function EnrollmentAccessSettings() {
       showToast("Enrollment access saved", "success");
       broadcastChange(next);
     } catch (e) {
-      console.error(e);
+      console.log(e);
       showToast("Failed to save enrollment access", "error");
     } finally {
       setEditorOpen(false);
@@ -149242,7 +149347,7 @@ function EnrollmentAccessSettings() {
       showToast("Enrollment access deleted", "success");
       broadcastChange(next);
     } catch (e) {
-      console.error(e);
+      console.log(e);
       showToast("Failed to delete", "error");
     } finally {
       setConfirmIdx(null);
@@ -149492,7 +149597,7 @@ const WardsSettings = () => {
       setAvailableFacilities(available);
       setWards(userFacilities);
     } catch (error) {
-      console.error("Error fetching organisation units:", error);
+      console.log("Error fetching organisation units:", error);
     } finally {
       setIsLoading(false);
     }
@@ -149621,7 +149726,7 @@ const WardsSettings = () => {
         showToast("Ward reassigned successfully", "success");
       }
     } catch (error) {
-      console.error(error);
+      console.log(error);
       showToast("Failed to update ward assignment", "error");
     } finally {
       setOpenModal(false);
@@ -149682,7 +149787,7 @@ const WardsSettings = () => {
         longitude: String(lng)
       }));
     } catch (error) {
-      console.error("Location error:", error);
+      console.log("Location error:", error);
     } finally {
       setLocating(false);
     }
@@ -149866,7 +149971,7 @@ const WardsSettings = () => {
       );
       setWardUsers(orgUnit?.data?.users ?? []);
     } catch (error) {
-      console.error("Failed to load ward users:", error);
+      console.log("Failed to load ward users:", error);
       setWardUsers([]);
     }
   };
@@ -150716,7 +150821,7 @@ const MetadataSettings = () => {
         setOptionSets([]);
       }
     } catch (error) {
-      console.error("Error loading metadata:", error);
+      console.log("Error loading metadata:", error);
     } finally {
       setIsLoading(false);
     }
@@ -150728,7 +150833,7 @@ const MetadataSettings = () => {
     try {
       await LocalForageServiceInstance.setItem("optionSets", data, "metadata");
     } catch (error) {
-      console.error("Error saving metadata:", error);
+      console.log("Error saving metadata:", error);
       showToast("Failed to save metadata", "danger");
     }
   };
@@ -150808,7 +150913,7 @@ const MetadataSettings = () => {
       setShowAddModal(false);
       showToast("Option added successfully");
     } catch (error) {
-      console.error(error);
+      console.log(error);
       showToast("Failed to add option", "danger");
     } finally {
       setIsSubmitting(false);
@@ -151558,7 +151663,7 @@ const StockThresholdSettings = () => {
       setUserFacility(user?.organisationUnits || []);
       setDataSets(data || []);
     } catch (e) {
-      console.error("Failed to load stock threshold data", e);
+      console.log("Failed to load stock threshold data", e);
       showToast("Failed to load datasets", "danger");
     } finally {
       setLoading(false);
@@ -151759,7 +151864,7 @@ const UsersSettings = () => {
       const roleFromQuery = queryParams.get("role");
       setSelectedRoleId(roleFromQuery || roles?.[0]?.id || null);
     } catch (error) {
-      console.error("Error loading users:", error);
+      console.log("Error loading users:", error);
     } finally {
       setIsLoading(false);
     }
@@ -151851,7 +151956,7 @@ const UsersSettings = () => {
         showToast("Failed to update user", "warning");
       }
     } catch (error) {
-      console.error(error);
+      console.log(error);
       showToast("Failed to assign transfer access", "danger");
     }
   };
@@ -152214,7 +152319,7 @@ function UpdateCollectionStatus({
         const parsedUser = JSON.parse(userData);
         setCurrentUsername(parsedUser?.username || "");
       } catch (err) {
-        console.error("Error parsing user data:", err);
+        console.log("Error parsing user data:", err);
       }
     }
   }, []);
@@ -152254,7 +152359,7 @@ function UpdateCollectionStatus({
   const handleSubmit = async () => {
     setSaving(true);
     try {
-      if (!evnt) return console.error("Event data missing");
+      if (!evnt) return console.log("Event data missing");
       const values = formData ? Object.keys(formData).map((key) => ({
         dataElement: key,
         value: formData[key]
@@ -152298,7 +152403,7 @@ function UpdateCollectionStatus({
         showToast("Save failed", "danger");
       }
     } catch (err) {
-      console.error("Failed to update event:", err);
+      console.log("Failed to update event:", err);
       showToast("Error occurred while saving", "danger");
     } finally {
       setSaving(false);
@@ -152317,7 +152422,7 @@ function UpdateCollectionStatus({
       setProgramDataTEI(result?.data?.trackedEntities || []);
       return result?.data?.trackedEntities || [];
     } catch (error2) {
-      console.error("Error fetching equipment:", error2);
+      console.log("Error fetching equipment:", error2);
       return [];
     }
   };
@@ -152680,7 +152785,7 @@ function AcknowledgeCollectionStatus({
     setSaving(true);
     try {
       if (!event) {
-        console.error("Event data missing");
+        console.log("Event data missing");
         return;
       }
       const values = formData ? Object.keys(formData).map((key) => ({
@@ -152722,7 +152827,7 @@ function AcknowledgeCollectionStatus({
         showToast("Save failed", "danger");
       }
     } catch (err) {
-      console.error("Failed to update event:", err);
+      console.log("Failed to update event:", err);
       showToast("Error occurred while saving", "danger");
     } finally {
       setSaving(false);
@@ -152741,7 +152846,7 @@ function AcknowledgeCollectionStatus({
       setProgramDataTEI(result?.data?.trackedEntities || []);
       return result?.data?.trackedEntities || [];
     } catch (error2) {
-      console.error("Error fetching equipment:", error2);
+      console.log("Error fetching equipment:", error2);
       return [];
     }
   };
@@ -153012,12 +153117,12 @@ function DeregistrationEventView() {
         return [...prev, ...filtered];
       });
     } catch (error) {
-      console.error("Error building breadcrumbs:", error);
+      console.log("Error building breadcrumbs:", error);
     }
   };
   const getEventDetails = async (id, stage2) => {
     try {
-      const progEvent = await dataStore.get(`tracker/events/${id}`);
+      const progEvent = await dataStore.get(`tracker/events/${id}?program=${program}`);
       const progEventOrg = userOrganisationUnits?.find((org) => org?.id === progEvent?.data?.orgUnit);
       setEvent(progEvent?.data);
       setOu(progEventOrg);
@@ -153031,7 +153136,7 @@ function DeregistrationEventView() {
         ref: `/memis/program/${program}/${tei}/${stage2}/${evnt}`
       });
     } catch (error) {
-      console.error("Error fetching event details:", error);
+      console.log("Error fetching event details:", error);
     }
   };
   const getVal = (id, dataElement) => {
@@ -153075,7 +153180,7 @@ function DeregistrationEventView() {
             const res = await dataStore.get(`organisationUnits/${ouId}`);
             setName(res?.data?.name);
           } catch (e) {
-            console.error(e);
+            console.log(e);
           }
         }
       }
@@ -153086,14 +153191,14 @@ function DeregistrationEventView() {
       const me = await dataStore.get(`me?fields=id,username,firstName,surname,userRoles[id,name]`);
       setCurrentUser(me?.data);
     } catch (error) {
-      console.error("Error fetching current user:", error);
+      console.log("Error fetching current user:", error);
       try {
         const localUserData = JSON.parse(localStorage.getItem("memisCredentials") || "{}");
         if (localUserData.username) {
           setCurrentUser({ username: localUserData.username });
         }
       } catch (localError) {
-        console.error("Error getting user from localStorage:", localError);
+        console.log("Error getting user from localStorage:", localError);
       }
     }
   };
@@ -153295,7 +153400,7 @@ function DeregistrationEventView() {
                 showToast("Equipment state updated to DEREGISTERED", "success");
               }
             } catch (stateError) {
-              console.error("Failed to update equipment state:", stateError);
+              console.log("Failed to update equipment state:", stateError);
               showToast("Approval saved but failed to update equipment state", "warning");
             }
           } else if (isDeclined && currentState === DEREGISTRATION_CONFIG.DEREGISTERED_STATE) {
@@ -153323,7 +153428,7 @@ function DeregistrationEventView() {
                 showToast("Approval declined. Equipment state reverted to LOCKED", "info");
               }
             } catch (stateError) {
-              console.error("Failed to revert equipment state:", stateError);
+              console.log("Failed to revert equipment state:", stateError);
               showToast("Approval saved but failed to revert equipment state", "warning");
             }
           } else {
@@ -153337,7 +153442,7 @@ function DeregistrationEventView() {
         throw new Error("Failed to save data");
       }
     } catch (error) {
-      console.error("Error saving section data:", error);
+      console.log("Error saving section data:", error);
       alert("Failed to save data. Please try again.");
     } finally {
       setSavingSectionData(false);
@@ -153506,7 +153611,7 @@ function DeregistrationEventView() {
       );
       setEquipmentState(stateAttribute?.value || null);
     } catch (error) {
-      console.error("Error fetching equipment state:", error);
+      console.log("Error fetching equipment state:", error);
       setEquipmentState(null);
     }
   };
@@ -153540,7 +153645,7 @@ function DeregistrationEventView() {
         throw new Error("Failed to update equipment state");
       }
     } catch (error) {
-      console.error("Error confirming completion:", error);
+      console.log("Error confirming completion:", error);
       let errorMessage = "Failed to confirm completion. Please try again.";
       if (error?.response?.data?.message) {
         errorMessage = `Error: ${error.response.data.message}`;
@@ -154006,7 +154111,7 @@ function ConfirmMaintenanceModal({ program, event, section, getEventDetails, but
         await printJobCard({ maintenanceCfg, programId: program?.id, event: mergedEvent });
       }
     } catch (e) {
-      console.error(e);
+      console.log(e);
       showToast("Error while saving", "danger");
     } finally {
       setSaving(false);
@@ -154175,7 +154280,7 @@ function Asseng({
   const handleSubmit = async () => {
     setSaving(true);
     try {
-      if (!event) return console.error("Event data missing");
+      if (!event) return console.log("Event data missing");
       const values = formData ? Object.keys(formData).map((key) => ({
         dataElement: key,
         value: formData[key]
@@ -154212,7 +154317,7 @@ function Asseng({
             });
           }
         } catch (notifError) {
-          console.error("Notification error:", notifError);
+          console.log("Notification error:", notifError);
         }
         setOpenModal(false);
         getEventDetails(event?.event, event?.programStage);
@@ -154392,7 +154497,7 @@ function Schedule({
   const handleSubmit = async () => {
     setSaving(true);
     try {
-      if (!event) return console.error("Event data missing");
+      if (!event) return console.log("Event data missing");
       const values = formData ? Object.keys(formData).map((key) => ({ dataElement: key, value: formData[key] })) : [];
       const payload = {
         event: event?.event,
@@ -154424,7 +154529,7 @@ function Schedule({
             console.log("MAINTENANCE_SCHEDULE event not found in datastore");
           }
         } catch (notifError) {
-          console.error("Notification error:", notifError);
+          console.log("Notification error:", notifError);
         }
         setOpenModal(false);
         getEventDetails(event?.event, event?.programStage);
@@ -154519,7 +154624,7 @@ function JobCardGenerate({
     setSaving(true);
     try {
       if (!event) {
-        console.error("Event data missing");
+        console.log("Event data missing");
         return;
       }
       const values = formData ? Object.keys(formData).map((key) => ({ dataElement: key, value: formData[key] })) : [];
@@ -154663,7 +154768,7 @@ function Approve({
   const handleSubmit = async () => {
     setSaving(true);
     try {
-      if (!event) return console.error("Event data missing");
+      if (!event) return console.log("Event data missing");
       const values = formData ? Object.keys(formData).map((key) => ({ dataElement: key, value: formData[key] })) : [];
       const payload = {
         event: event?.event,
@@ -154697,7 +154802,7 @@ function Approve({
             console.warn("REFERRAL_MAINTENANCE_APPROVAL config not found in datastore");
           }
         } catch (notifError) {
-          console.error("Failed to send approval notification:", notifError);
+          console.log("Failed to send approval notification:", notifError);
         }
         setOpenModal(false);
         getEventDetails(event?.event, event?.programStage);
@@ -154788,7 +154893,7 @@ function ConfirmMaintenance({
   const handleSubmit = async () => {
     setSaving(true);
     try {
-      if (!event) return console.error("Event data missing");
+      if (!event) return console.log("Event data missing");
       const values = formData ? Object.keys(formData).map((key) => ({ dataElement: key, value: formData[key] })) : [];
       const payload = {
         event: event?.event,
@@ -268878,7 +268983,7 @@ function PrintJobCard({ event, section, elements }) {
         position: "bottom"
       });
     } catch (err) {
-      console.error("Job card download failed", err);
+      console.log("Job card download failed", err);
       presentToast({
         message: "Download failed. Please try again.",
         duration: 3e3,
@@ -269194,7 +269299,7 @@ function TeiEvents() {
               newOuValues[de2.id] = res?.data?.name || ouId;
             }
           } catch (e) {
-            console.error(e);
+            console.log(e);
             newOuValues[de2.id] = ouId;
           }
         }
@@ -269643,7 +269748,7 @@ const MessageView = () => {
       });
       setMessages(sortedConversations);
     } catch (err) {
-      console.error("Error fetching messages:", err);
+      console.log("Error fetching messages:", err);
       setError("Failed to load messages");
     } finally {
       setLoading(false);
@@ -269673,7 +269778,7 @@ const MessageView = () => {
       }
       await fetchMessages();
     } catch (err) {
-      console.error("Error marking notification:", err);
+      console.log("Error marking notification:", err);
     }
   };
   const filteredMessages = messages.filter((conv) => {
@@ -273097,7 +273202,7 @@ const ViewWardSettingsDetails = () => {
         longitude: String(lng)
       }));
     } catch (error) {
-      console.error("Location error:", error);
+      console.log("Location error:", error);
     } finally {
       setLocating(false);
     }

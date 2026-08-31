@@ -39346,7 +39346,7 @@ const dataStoreInit = async (forceRefresh = false) => {
     console.log("DataStore initialized but 'memis' namespace missing");
     return null;
   } catch (error) {
-    console.error("DataStore initialization failed:", error);
+    console.log("DataStore initialization failed:", error);
     return error;
   }
 };
@@ -39384,7 +39384,7 @@ const metadataInit = async (forceRefresh = false) => {
     return null;
 
   } catch (error) {
-    console.error("Metadata initialization failed:", error);
+    console.log("Metadata initialization failed:", error);
     return error;
   }
 };
@@ -39436,7 +39436,7 @@ const programsMetadata = async (forceRefresh = false) => {
     return null;
 
   } catch (error) {
-    console.error("Metadata initialization failed:", error);
+    console.log("Metadata initialization failed:", error);
     return error;
   }
 };
@@ -39474,7 +39474,7 @@ const optionsGroupsInit = async (forceRefresh = false) => {
     return null;
 
   } catch (error) {
-    console.error("optionGroups initialization failed:", error);
+    console.log("optionGroups initialization failed:", error);
     return error;
   }
 };
@@ -39530,7 +39530,7 @@ const orgUnitGroupsInit = async (forceRefresh = false) => {
     );
     return null;
   } catch (error) {
-    console.error("orgUnitGroups initialization failed:", error);
+    console.log("orgUnitGroups initialization failed:", error);
     return error;
   }
 };
@@ -39605,7 +39605,7 @@ function DataStoreProvider({ children }) {
         window.dispatchEvent(new CustomEvent("memis:datastore-ready"));
       }
     } catch (err) {
-      console.error("Initialization error:", err);
+      console.log("Initialization error:", err);
       setError(err);
       setIsReady(false);
     } finally {
@@ -39939,7 +39939,7 @@ const sendNotification = async (
           );
         }
       } catch (e) {
-        console.error("User role/orgUnit search failed:", e);
+        console.log("User role/orgUnit search failed:", e);
       }
 
       userIds = usersResp?.users?.map((u) => ({ id: u.id })) || [];
