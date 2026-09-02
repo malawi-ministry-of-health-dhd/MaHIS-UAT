@@ -1,1 +1,0 @@
-import{a6 as e}from"../index--QhlviWV.js";const s=e("medicationsStore",{state:()=>({medications:[],current_patient:{}}),actions:{setMedications(t){this.medications=t},setCurrentPatient(t){this.current_patient=t}},persist:!0});export{s as u};
