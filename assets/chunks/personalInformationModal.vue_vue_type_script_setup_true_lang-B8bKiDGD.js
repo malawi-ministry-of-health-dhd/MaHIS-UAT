@@ -1,0 +1,1 @@
+import{R as o}from"./Registration-C-Cxov4Z.js";import{d as e,j as r,q as t}from"../index-BDj_gkEx.js";const c=e({__name:"personalInformationModal",setup(a){return(n,s)=>(r(),t(o,{editMode:!0}))}});export{c as _};
