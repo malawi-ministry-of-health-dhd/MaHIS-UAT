@@ -1,9 +1,9 @@
 {
   "variant": "public",
-  "mode": "uat",
+  "mode": "test",
   "provider": "github",
   "github": {
     "owner": "malawi-ministry-of-health-dhd",
-    "repository": "MaHIS-UAT"
+    "repository": "MaHIS-Test"
   }
 }
