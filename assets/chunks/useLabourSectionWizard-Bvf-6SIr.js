@@ -1,0 +1,1 @@
+import{u as t}from"./useAncSectionWizard-C-UGGvh1.js";function r(e){return t({...e,homeButtonText:e.homeButtonText??"Return to Labour Home",reviewOnlyWhenSaved:e.reviewOnlyWhenSaved??!0,allowSavedSectionEdit:e.allowSavedSectionEdit??!1})}export{r as u};

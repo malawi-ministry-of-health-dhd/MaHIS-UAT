@@ -1,6 +1,6 @@
 const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/LocalForageService.js","assets/_commonjsHelpers.js","assets/index2.js","assets/index.es.js"])))=>i.map(i=>d[i]);
 import { importShared } from './__federation_fn_import.js';
-import { u as useLocation, g as useNavigate, i as icons, j as jsxRuntimeExports, I as IonMenuToggle, h as IonItem, k as IonIcon, l as IonLabel, _ as __vitePreload, m as IonRefresher, n as IonRefresherContent, o as isPlatform, M as MEMISContext, p as IonMenu, q as IonHeader, t as IonToolbar, v as IonTitle, L as Link$1, w as IonContent, x as IonList, y as home, z as IonAccordionGroup, A as IonAccordion, C as albumsOutline, e as setActiveProgramCookie, E as IonButtons, F as IonMenuButton, G as IonButton, H as mailOutline, J as notificationsOutline, K as IonBadge, N as personCircleOutline, Q as logOutOutline, R as showToast, V as Outlet, f as clearMemisStorage, W as closeOutline, X as chevronDownOutline, Y as searchOutline, Z as checkmarkOutline, $ as closeCircle, a0 as IonGrid, a1 as IonRow, a2 as IonCol, a3 as chevronUpOutline, a4 as IonInput, a5 as IonRadioGroup, a6 as IonRadio, a7 as IonCard, a8 as IonCardContent, a9 as warningOutline, aa as constructOutline, ab as arrowForward, ac as chevronForwardOutline, ad as IonPage, S as SuspenseLoader, ae as metadataInit, r as renderListByUserRole, af as hardwareChipOutline, ag as settingsOutline, ah as addOutline, ai as y$3, s as sendNotification, aj as IonSpinner, ak as close, d as documentText, al as imageOutline, am as document$1, an as IonText, ao as alertCircleOutline, ap as arrowBackCircleOutline, aq as chevronBackOutline, ar as saveOutline, as as IonLoading, at as IonCheckbox, au as IonPopover, av as IonDatetime, aw as IonTextarea, ax as IonCardHeader, ay as IonCardTitle, az as useSearchParams, aA as ellipsisVertical, aB as arrowUp, aC as arrowDown, aD as removeOutline, aE as IonSearchbar, aF as filterOutline, aG as qrCodeOutline, aH as IonModal, aI as IonSelect, aJ as IonSelectOption, aK as api, aL as businessOutline, aM as calendarOutline, aN as locationOutline, aO as timeOutline, aP as usePermissions, aQ as removeCircleOutline, aR as addCircleOutline, aS as useDataStore, aT as IonInputPasswordToggle, aU as checkmarkDoneOutline, aV as createOutline, aW as IonBreadcrumbs, aX as IonBreadcrumb, aY as chevronForward, aZ as useParams, a_ as IonAvatar, a$ as IonActionSheet, P as PROGRAMS_FIELDS, b0 as IonFooter, b1 as downloadOutline, b2 as eyeOutline, b3 as printOutline, b4 as IonCardSubtitle, b5 as PROGRAM_STAGES_FIELDS, b6 as informationCircleOutline, b7 as homeOutline, b8 as arrowBackOutline, b9 as trash, ba as IonAlert, bb as addCircle, bc as refresh, bd as orgUnitGroupsInit, be as useIonToast, bf as IonToggle, bg as IonTabs, bh as IonTabBar, bi as IonTabButton, bj as settings, bk as lockClosed, bl as documentLock, bm as business, bn as informationCircle, bo as barChart, bp as IonTab, bq as checkmarkCircleOutline, br as chatbubbleOutline, bs as analyticsOutline, bt as lockClosedOutline, bu as refreshOutline, bv as peopleOutline, bw as add$1, bx as IonToast, by as Routes, bz as Route, bA as Navigate } from './breadCrumb.js';
+import { u as useLocation, g as useNavigate, i as icons, j as jsxRuntimeExports, I as IonMenuToggle, h as IonItem, k as IonIcon, l as IonLabel, _ as __vitePreload, m as IonRefresher, n as IonRefresherContent, o as isPlatform, M as MEMISContext, p as IonMenu, q as IonHeader, t as IonToolbar, v as IonTitle, L as Link$1, w as IonContent, x as IonList, y as home, z as IonAccordionGroup, A as IonAccordion, C as albumsOutline, e as setActiveProgramCookie, E as IonButtons, F as IonMenuButton, G as IonButton, H as mailOutline, J as notificationsOutline, K as IonBadge, N as personCircleOutline, Q as logOutOutline, R as showToast, V as Outlet, f as clearMemisStorage, W as closeOutline, X as chevronDownOutline, Y as searchOutline, Z as checkmarkOutline, $ as closeCircle, a0 as IonGrid, a1 as IonRow, a2 as IonCol, a3 as chevronUpOutline, a4 as IonInput, a5 as IonRadioGroup, a6 as IonRadio, a7 as IonCard, a8 as IonCardContent, a9 as warningOutline, aa as constructOutline, ab as arrowForward, ac as chevronForwardOutline, ad as IonPage, S as SuspenseLoader, ae as metadataInit, r as renderListByUserRole, af as hardwareChipOutline, ag as settingsOutline, ah as addOutline, ai as y$3, s as sendNotification, aj as IonSpinner, ak as close, d as documentText, al as imageOutline, am as document$1, an as IonText, ao as alertCircleOutline, ap as arrowBackCircleOutline, aq as chevronBackOutline, ar as saveOutline, as as IonLoading, at as IonCheckbox, au as IonPopover, av as IonDatetime, aw as IonTextarea, ax as IonCardHeader, ay as IonCardTitle, az as useSearchParams, aA as ellipsisVertical, aB as arrowUp, aC as arrowDown, aD as removeOutline, aE as IonSearchbar, aF as filterOutline, aG as qrCodeOutline, aH as IonModal, aI as IonSelect, aJ as IonSelectOption, aK as api, aL as businessOutline, aM as getAllOptionSetsFromCache, aN as calendarOutline, aO as locationOutline, aP as timeOutline, aQ as usePermissions, aR as removeCircleOutline, aS as addCircleOutline, aT as useDataStore, aU as IonInputPasswordToggle, aV as checkmarkDoneOutline, aW as createOutline, aX as IonBreadcrumbs, aY as IonBreadcrumb, aZ as chevronForward, a_ as useParams, a$ as IonAvatar, b0 as IonActionSheet, P as PROGRAMS_FIELDS, b1 as IonFooter, b2 as downloadOutline, b3 as eyeOutline, b4 as printOutline, b5 as IonCardSubtitle, b6 as PROGRAM_STAGES_FIELDS, b7 as informationCircleOutline, b8 as homeOutline, b9 as arrowBackOutline, ba as trash, bb as IonAlert, bc as addCircle, bd as refresh, be as orgUnitGroupsInit, bf as useIonToast, bg as IonToggle, bh as IonTabs, bi as IonTabBar, bj as IonTabButton, bk as settings, bl as lockClosed, bm as documentLock, bn as business, bo as informationCircle, bp as barChart, bq as IonTab, br as checkmarkCircleOutline, bs as chatbubbleOutline, bt as analyticsOutline, bu as lockClosedOutline, bv as refreshOutline, bw as peopleOutline, bx as add$1, by as IonToast, bz as Routes, bA as Route, bB as Navigate } from './breadCrumb.js';
 import dataStore, { qrConfigService } from './index2.js';
 import { c as commonjsRequire$1, L as LocalForageServiceInstance } from './LocalForageService.js';
 import { a as getAugmentedNamespace$2, c as commonjsGlobal$2, g as getDefaultExportFromCjs$3 } from './_commonjsHelpers.js';
@@ -734,7 +734,7 @@ registerPlugin('App', {
     web: () => __vitePreload(() => import('./web.js'),true              ?[]:void 0).then(m => new m.AppWeb()),
 });
 
-const {useEffect: useEffect$1F} = await importShared('react');
+const {useEffect: useEffect$1G} = await importShared('react');
 
 await importShared('react');
 const RefresherWrapper = ({ onRefresh, children }) => {
@@ -8344,22 +8344,22 @@ const dataSetsInit = async (forceRefresh = false) => {
 };
 
 const React$Y = await importShared('react');
-const {useContext: useContext$J,useEffect: useEffect$1E,useRef: useRef$u,useState: useState$1D,useMemo: useMemo$Y,Suspense} = React$Y;
+const {useContext: useContext$J,useEffect: useEffect$1F,useRef: useRef$u,useState: useState$1E,useMemo: useMemo$Y,Suspense} = React$Y;
 const MainLayout = ({ menuItems, children }) => {
   const navigate = useNavigate();
-  const [hasAccess, setHasAccess] = useState$1D(null);
+  const [hasAccess, setHasAccess] = useState$1E(null);
   Capacitor.isNativePlatform();
   const isMobile = isPlatform("ios") || isPlatform("android");
   const isWeb = isPlatform("mobileweb") || isPlatform("desktop");
-  const [user, setUser] = useState$1D(null);
+  const [user, setUser] = useState$1E(null);
   const { search } = useLocation();
-  const [superuser, setSuperUser] = useState$1D(null);
-  const [showNotifications, setShowNotifications] = useState$1D(false);
-  const [notifications, setNotifications] = useState$1D([]);
-  const [unReadNotifications, setUnReadNotifications] = useState$1D([]);
-  const [messageCount, setMessageCount] = useState$1D(0);
-  const [showDropdown, setShowDropdown] = useState$1D(false);
-  const [userOrgUnit, setUserOrgUnits] = useState$1D("");
+  const [superuser, setSuperUser] = useState$1E(null);
+  const [showNotifications, setShowNotifications] = useState$1E(false);
+  const [notifications, setNotifications] = useState$1E([]);
+  const [unReadNotifications, setUnReadNotifications] = useState$1E([]);
+  const [messageCount, setMessageCount] = useState$1E(0);
+  const [showDropdown, setShowDropdown] = useState$1E(false);
+  const [userOrgUnit, setUserOrgUnits] = useState$1E("");
   const notificationsRef = useRef$u(null);
   const dropdownRef = useRef$u(null);
   function bridgeSessionExpired() {
@@ -8520,7 +8520,7 @@ const MainLayout = ({ menuItems, children }) => {
       console.log("Error handling notification click", err);
     }
   };
-  useEffect$1E(() => {
+  useEffect$1F(() => {
     const handleOutside = (e) => {
       if (notificationsRef.current && !notificationsRef.current.contains(e.target))
         setShowNotifications(false);
@@ -8558,10 +8558,10 @@ const MainLayout = ({ menuItems, children }) => {
       bridgeSessionExpired();
     }
   };
-  useEffect$1E(() => {
+  useEffect$1F(() => {
     getUser();
   }, []);
-  useEffect$1E(() => {
+  useEffect$1F(() => {
     const intervalId = setInterval(() => {
       getMessages();
     }, 6e4);
@@ -8583,7 +8583,7 @@ const MainLayout = ({ menuItems, children }) => {
       }
     }
   }
-  useEffect$1E(() => {
+  useEffect$1F(() => {
     const loadUser = async () => {
       try {
         await dataSetsInit();
@@ -8600,7 +8600,7 @@ const MainLayout = ({ menuItems, children }) => {
     };
     loadUser();
   }, []);
-  useEffect$1E(() => {
+  useEffect$1F(() => {
     const loadAccess = async () => {
       try {
         const res = await canAccessSettings();
@@ -8899,7 +8899,7 @@ const MainLayout = ({ menuItems, children }) => {
 };
 
 const React$X = await importShared('react');
-const {useContext: useContext$I,useEffect: useEffect$1D,useMemo: useMemo$X} = React$X;
+const {useContext: useContext$I,useEffect: useEffect$1E,useMemo: useMemo$X} = React$X;
 const WithRoleBasedLayout = () => {
   const { menuModel, loading } = useContext$I(MEMISContext.MenuContext);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(MainLayout, { menuItems: menuModel, children: [
@@ -19242,7 +19242,7 @@ class TimeSeriesScale extends TimeScale {
     }
 }
 
-const {forwardRef: forwardRef$1,useRef: useRef$t,useEffect: useEffect$1C} = await importShared('react');
+const {forwardRef: forwardRef$1,useRef: useRef$t,useEffect: useEffect$1D} = await importShared('react');
 
 const defaultDatasetIdKey = 'label';
 function reforwardRef(ref, value) {
@@ -19310,7 +19310,7 @@ function ChartComponent(props, ref) {
             chartRef.current = null;
         }
     };
-    useEffect$1C(()=>{
+    useEffect$1D(()=>{
         if (!redraw && chartRef.current && options) {
             setOptions(chartRef.current, options);
         }
@@ -19318,7 +19318,7 @@ function ChartComponent(props, ref) {
         redraw,
         options
     ]);
-    useEffect$1C(()=>{
+    useEffect$1D(()=>{
         if (!redraw && chartRef.current) {
             setLabels(chartRef.current.config.data, data.labels);
         }
@@ -19326,7 +19326,7 @@ function ChartComponent(props, ref) {
         redraw,
         data.labels
     ]);
-    useEffect$1C(()=>{
+    useEffect$1D(()=>{
         if (!redraw && chartRef.current && data.datasets) {
             setDatasets(chartRef.current.config.data, data.datasets, datasetIdKey);
         }
@@ -19334,7 +19334,7 @@ function ChartComponent(props, ref) {
         redraw,
         data.datasets
     ]);
-    useEffect$1C(()=>{
+    useEffect$1D(()=>{
         if (!chartRef.current) return;
         if (redraw) {
             destroyChart();
@@ -19349,14 +19349,14 @@ function ChartComponent(props, ref) {
         data.datasets,
         updateMode
     ]);
-    useEffect$1C(()=>{
+    useEffect$1D(()=>{
         if (!chartRef.current) return;
         destroyChart();
         setTimeout(renderChart);
     }, [
         type
     ]);
-    useEffect$1C(()=>{
+    useEffect$1D(()=>{
         renderChart();
         return ()=>destroyChart();
     }, []);
@@ -19385,13 +19385,13 @@ await importShared('react');
 Chart$1.register(ArcElement, plugin_tooltip, plugin_legend);
 
 const React$W = await importShared('react');
-const {useContext: useContext$H,useEffect: useEffect$1B,useState: useState$1C} = React$W;
+const {useContext: useContext$H,useEffect: useEffect$1C,useState: useState$1D} = React$W;
 
 const React$V = await importShared('react');
-const {useEffect: useEffect$1A} = React$V;
+const {useEffect: useEffect$1B} = React$V;
 
 const React$U = await importShared('react');
-const {useState: useState$1B,useEffect: useEffect$1z,useMemo: useMemo$W,useCallback: useCallback$q} = React$U;
+const {useState: useState$1C,useEffect: useEffect$1A,useMemo: useMemo$W,useCallback: useCallback$q} = React$U;
 
 const {createPortal: createPortal$4} = await importShared('react-dom');
 const CHIP_OVERFLOW_THRESHOLD = 3;
@@ -19408,10 +19408,10 @@ const SearchableSelect = ({
   closeOnSignal,
   maxSelections
 }) => {
-  const [isOpen, setIsOpen] = useState$1B(false);
-  const [searchTerm, setSearchTerm] = useState$1B("");
-  const [selectedItems, setSelectedItems] = useState$1B([]);
-  useEffect$1z(() => {
+  const [isOpen, setIsOpen] = useState$1C(false);
+  const [searchTerm, setSearchTerm] = useState$1C("");
+  const [selectedItems, setSelectedItems] = useState$1C([]);
+  useEffect$1A(() => {
     const load = () => {
       try {
         if (value == null) {
@@ -19435,7 +19435,7 @@ const SearchableSelect = ({
     };
     load();
   }, [value, multiple, itemValueField, data, selectedItems]);
-  useEffect$1z(() => {
+  useEffect$1A(() => {
     if (closeOnSignal) {
       setIsOpen(false);
       setSearchTerm("");
@@ -20091,7 +20091,7 @@ const getDateRangeFromPeriod = (period) => {
   }
 };
 
-const {useEffect: useEffect$1y,useMemo: useMemo$V,useState: useState$1A} = await importShared('react');
+const {useEffect: useEffect$1z,useMemo: useMemo$V,useState: useState$1B} = await importShared('react');
 const RELATIVE_PERIODS = [
   { id: "THIS_MONTH", label: "This Month" },
   { id: "LAST_MONTH", label: "Last Month" },
@@ -20108,17 +20108,17 @@ const FilterFields = ({
   onClear,
   setIsLoading
 }) => {
-  const [departments, setDepartments] = useState$1A([]);
-  const [equipmentList, setEquipmentList] = useState$1A([]);
-  const [showFacilityFility, setShowFacilityFilter] = useState$1A(true);
-  const [showPeriodModal, setShowPeriodModal] = useState$1A(false);
-  const [periodTab, setPeriodTab] = useState$1A("RELATIVE");
-  const [tempPeriod, setTempPeriod] = useState$1A(filters.period);
-  const [tempStartDate, setTempStartDate] = useState$1A(filters.startDate);
-  const [tempEndDate, setTempEndDate] = useState$1A(filters.endDate);
-  const [isMobile, setIsMobile] = useState$1A(window.innerWidth < 768);
-  const [showMobileFilters, setShowMobileFilters] = useState$1A(false);
-  useEffect$1y(() => {
+  const [departments, setDepartments] = useState$1B([]);
+  const [equipmentList, setEquipmentList] = useState$1B([]);
+  const [showFacilityFility, setShowFacilityFilter] = useState$1B(true);
+  const [showPeriodModal, setShowPeriodModal] = useState$1B(false);
+  const [periodTab, setPeriodTab] = useState$1B("RELATIVE");
+  const [tempPeriod, setTempPeriod] = useState$1B(filters.period);
+  const [tempStartDate, setTempStartDate] = useState$1B(filters.startDate);
+  const [tempEndDate, setTempEndDate] = useState$1B(filters.endDate);
+  const [isMobile, setIsMobile] = useState$1B(window.innerWidth < 768);
+  const [showMobileFilters, setShowMobileFilters] = useState$1B(false);
+  useEffect$1z(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
@@ -20127,7 +20127,7 @@ const FilterFields = ({
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  useEffect$1y(() => {
+  useEffect$1z(() => {
     const load = async () => {
       const [orgUnits, optionSets] = await Promise.all([
         LocalForageServiceInstance.getItem("userOrganisationUnits", "userOrgUnits"),
@@ -20160,7 +20160,7 @@ const FilterFields = ({
   const hasActiveFilters = useMemo$V(() => {
     return filters.equipment !== "" || filters.department !== defaultDepartment || filters.period !== "NONE";
   }, [filters, defaultDepartment]);
-  useEffect$1y(() => {
+  useEffect$1z(() => {
     if (showPeriodModal) {
       setTempPeriod(filters.period);
       setTempStartDate(filters.startDate);
@@ -20175,6 +20175,8 @@ const FilterFields = ({
         {
           expand: "block",
           fill: "outline",
+          color: "primary",
+          className: "dashboard-mobile-filter-toggle",
           onClick: () => setShowMobileFilters((prev) => !prev),
           children: [
             showMobileFilters ? "Hide Filters" : "Show Filters",
@@ -20300,6 +20302,7 @@ const FilterFields = ({
               IonButton,
               {
                 expand: "block",
+                color: "primary",
                 fill: periodTab === "RELATIVE" ? "solid" : "outline",
                 onClick: () => setPeriodTab("RELATIVE"),
                 children: "Relative"
@@ -20309,6 +20312,7 @@ const FilterFields = ({
               IonButton,
               {
                 expand: "block",
+                color: "primary",
                 fill: periodTab === "FIXED" ? "solid" : "outline",
                 onClick: () => setPeriodTab("FIXED"),
                 children: "Fixed"
@@ -21034,7 +21038,7 @@ const EquipmentStats = {
   },
 };
 
-const {useContext: useContext$G,useEffect: useEffect$1x,useMemo: useMemo$U,useState: useState$1z} = await importShared('react');
+const {useContext: useContext$G,useEffect: useEffect$1y,useMemo: useMemo$U,useState: useState$1A} = await importShared('react');
 const DEFAULT_FILTERS = {
   startDate: "",
   endDate: "",
@@ -21058,11 +21062,11 @@ const Dashboard = () => {
     loading: programsLoading = false,
     refresh: refreshPrograms
   } = useContext$G(MEMISContext.ProgramContext) || {};
-  const [isLoadingFromFilters, setIsLoadingFromFilters] = useState$1z(false);
-  const [defaultDepartment, setDefaultDepartment] = useState$1z("");
-  const [dashboardData, setDashboardData] = useState$1z({});
-  const [selectedFilters, setSelectedFilters] = useState$1z(DEFAULT_FILTERS);
-  useEffect$1x(() => {
+  const [isLoadingFromFilters, setIsLoadingFromFilters] = useState$1A(false);
+  const [defaultDepartment, setDefaultDepartment] = useState$1A("");
+  const [dashboardData, setDashboardData] = useState$1A({});
+  const [selectedFilters, setSelectedFilters] = useState$1A(DEFAULT_FILTERS);
+  useEffect$1y(() => {
     const loadDefaultDepartment = async () => {
       const orgUnits = await LocalForageServiceInstance.getItem(
         "userOrganisationUnits",
@@ -21123,7 +21127,7 @@ const Dashboard = () => {
       )
     );
   }, [dashboardConfigs, user]);
-  useEffect$1x(() => {
+  useEffect$1y(() => {
     setIsLoadingFromFilters(true);
     setTimeout(() => {
       setIsLoadingFromFilters(false);
@@ -21439,7 +21443,7 @@ const Dashboard = () => {
       setIsLoading(false);
     }
   };
-  useEffect$1x(() => {
+  useEffect$1y(() => {
     const today = /* @__PURE__ */ new Date();
     const format = (date) => date.toISOString().split("T")[0];
     const defaultStart = new Date(today.getFullYear(), today.getMonth(), 1);
@@ -21516,7 +21520,7 @@ const getUsersForAssignment = async () => {
 };
 
 const React$T = await importShared('react');
-const {useEffect: useEffect$1w,useState: useState$1y} = React$T;
+const {useEffect: useEffect$1x,useState: useState$1z} = React$T;
 function OrganisationUnitsWidget({
   programOrgUnits = [],
   selectedOrganisationUnit,
@@ -21531,8 +21535,8 @@ function OrganisationUnitsWidget({
   searchParams.get("q");
   searchParams.get("stage");
   searchParams.get("equipmentId");
-  const [facility, setFacility] = useState$1y("Facility");
-  const [orgUnitName, setOrgUnitName] = useState$1y("");
+  const [facility, setFacility] = useState$1z("Facility");
+  const [orgUnitName, setOrgUnitName] = useState$1z("");
   const getTEI = async (teiOu2) => {
     try {
       await dataStore.get(`tracker/trackedEntities/${teiOu2}`).then(async (res) => {
@@ -21547,7 +21551,7 @@ function OrganisationUnitsWidget({
       console.log("Failed to fetch TEI data:", error);
     }
   };
-  useEffect$1w(() => {
+  useEffect$1x(() => {
     if (!Array.isArray(programOrgUnits) || programOrgUnits?.length === 0 || !dataStoreData) {
       return;
     }
@@ -21744,21 +21748,21 @@ const ComponentsField = ({
   ] });
 };
 
-const {useEffect: useEffect$1v,useMemo: useMemo$T,useState: useState$1x} = await importShared('react');
+const {useEffect: useEffect$1w,useMemo: useMemo$T,useState: useState$1y} = await importShared('react');
 
 function useSectionVisibilityConfig(programId) {
-    const [tick, setTick] = useState$1x(0);
-    const [config, setConfig] = useState$1x(null);
+    const [tick, setTick] = useState$1y(0);
+    const [config, setConfig] = useState$1y(null);
 
     // Listen for external updates
-    useEffect$1v(() => {
+    useEffect$1w(() => {
         const onUpdate = () => setTick((n) => n + 1);
         window.addEventListener("memis:sectionVisibility:updated", onUpdate);
         return () => window.removeEventListener("memis:sectionVisibility:updated", onUpdate);
     }, []);
 
     // Fetch data asynchronously
-    useEffect$1v(() => {
+    useEffect$1w(() => {
         let mounted = true;
         const fetchConfig = async () => {
             try {
@@ -22084,7 +22088,7 @@ const DE_TRANSFER_TO_LOCATION = "Hk2JSouuvga";
 const DE_TRANSFER_EQUIPMENT_NAME = "wObkfr29dtK";
 const DE_TRANSFER_EQUIPMENT_TO_BE_TRANSFERRED = "oIEtXbVslFN";
 
-const {useEffect: useEffect$1u,useRef: useRef$s,useState: useState$1w} = await importShared('react');
+const {useEffect: useEffect$1v,useRef: useRef$s,useState: useState$1x} = await importShared('react');
 
 const NO_WARD_ALLOCATED_MESSAGE = "THE USER HAS NO WARD ALLOCATED";
 let facilityOrgUnitsCache = null;
@@ -22174,7 +22178,7 @@ function useTransferDefaults({
 
     const transferLocationValue = formData?.[DE_TRANSFER_LOCATION_TYPE];
 
-    useEffect$1u(() => {
+    useEffect$1v(() => {
         if (transferLocationDefaultAppliedRef.current) return;
         if (!isWardInChargeForTransfer && !isHospitalAdminForTransfer) return;
         if (isEdit) return;
@@ -22207,7 +22211,7 @@ function useTransferDefaults({
         setFormData,
     ]);
 
-    useEffect$1u(() => {
+    useEffect$1v(() => {
         const shouldPrefill =
             isWardInChargeForTransfer || isHospitalAdminForTransfer;
         if (!shouldPrefill) return;
@@ -22259,8 +22263,8 @@ function useTransferOrganisationUnitOptions({
     isHospitalAdminForTransfer,
     transferLocationValue,
 }) {
-    const [facilityOrgUnits, setFacilityOrgUnits] = useState$1w([]);
-    const [facilityOrgUnitsLoading, setFacilityOrgUnitsLoading] = useState$1w(false);
+    const [facilityOrgUnits, setFacilityOrgUnits] = useState$1x([]);
+    const [facilityOrgUnitsLoading, setFacilityOrgUnitsLoading] = useState$1x(false);
     const facilityOrgUnitsLoadedRef = useRef$s(false);
 
     const shouldUseFacilityGroup =
@@ -22268,7 +22272,7 @@ function useTransferOrganisationUnitOptions({
         transferLocationValue &&
         String(transferLocationValue).trim() === OPTION_CODE_OUTSIDE_FACILITY;
 
-    useEffect$1u(() => {
+    useEffect$1v(() => {
         if (!shouldUseFacilityGroup) return;
         if (facilityOrgUnitsLoadedRef.current) return;
 
@@ -22686,7 +22690,7 @@ async function getEquipmentListOnTransferOutside(event) {
     }
 }
 
-const {useState: useState$1v,useEffect: useEffect$1t,useRef: useRef$r} = await importShared('react');
+const {useState: useState$1w,useEffect: useEffect$1u,useRef: useRef$r} = await importShared('react');
 
 const ATTR$1 = ATTRIBUTE_FOR_EQUIPMENT_LOOKUP;
 
@@ -22702,8 +22706,8 @@ function useEquipmentOptions(
   event = null,
 ) {
   const equipmentCacheRef = useRef$r(new Map());
-  const [equipmentOptions, setEquipmentOptions] = useState$1v([]);
-  const [equipmentLoading, setEquipmentLoading] = useState$1v(false);
+  const [equipmentOptions, setEquipmentOptions] = useState$1w([]);
+  const [equipmentLoading, setEquipmentLoading] = useState$1w(false);
 
   /* ---------------------------------------------------------
        Determine whether outside-facility logic should apply
@@ -22848,7 +22852,7 @@ function useEquipmentOptions(
   /* ---------------------------------------------------------
        Effect trigger
        --------------------------------------------------------- */
-  useEffect$1t(() => {
+  useEffect$1u(() => {
     let active = true;
 
     const run = async () => {
@@ -22879,18 +22883,18 @@ function useEquipmentOptions(
   };
 }
 
-const {useState: useState$1u,useEffect: useEffect$1s,useRef: useRef$q} = await importShared('react');
+const {useState: useState$1v,useEffect: useEffect$1t,useRef: useRef$q} = await importShared('react');
 
 /**
  * Custom hook to manage status field initialization and tracking
  * Encapsulates status-related state logic
  */
 function useStatusField({ programObj, programKey, selectedStageId, isEdit, formData, setFormData }) {
-    const [statusFieldId, setStatusFieldId] = useState$1u(null);
-    const [statusOptionCodes, setStatusOptionCodes] = useState$1u({});
+    const [statusFieldId, setStatusFieldId] = useState$1v(null);
+    const [statusOptionCodes, setStatusOptionCodes] = useState$1v({});
     const lastApproverNotificationRef = useRef$q(null);
 
-    useEffect$1s(() => {
+    useEffect$1t(() => {
         if (!programObj || isEdit) return;
 
         let statusDE = null;
@@ -22945,7 +22949,7 @@ function useStatusField({ programObj, programKey, selectedStageId, isEdit, formD
     };
 }
 
-const {useState: useState$1t} = await importShared('react');
+const {useState: useState$1u} = await importShared('react');
 
 
 /**
@@ -22953,8 +22957,8 @@ const {useState: useState$1t} = await importShared('react');
  * Consolidates image-related state
  */
 function useImageState() {
-    const [imageUrls, setImageUrls] = useState$1t({});
-    const [imageLoading, setImageLoading] = useState$1t({});
+    const [imageUrls, setImageUrls] = useState$1u({});
+    const [imageLoading, setImageLoading] = useState$1u({});
 
     return {
         imageUrls,
@@ -22964,7 +22968,7 @@ function useImageState() {
     };
 }
 
-const {useState: useState$1s} = await importShared('react');
+const {useState: useState$1t} = await importShared('react');
 
 
 /**
@@ -22972,7 +22976,7 @@ const {useState: useState$1s} = await importShared('react');
  * Consolidates date picker UI state
  */
 function useDateRangePopover() {
-    const [dateRangePopover, setDateRangePopover] = useState$1s({
+    const [dateRangePopover, setDateRangePopover] = useState$1t({
         from: false,
         to: false,
         fieldId: null,
@@ -23065,7 +23069,7 @@ function useSections({ programObj, stageObj, programKey, selectedStageId }) {
     }, [programObj, stageObj, programKey, selectedStageId]);
 }
 
-const {useMemo: useMemo$P,useEffect: useEffect$1r,useState: useState$1r} = await importShared('react');
+const {useMemo: useMemo$P,useEffect: useEffect$1s,useState: useState$1s} = await importShared('react');
 
 function useSectionsList({
   sections,
@@ -23074,10 +23078,10 @@ function useSectionsList({
   user,
   formData,
 }) {
-  const [sectionAccessMap, setSectionAccessMap] = useState$1r(null);
+  const [sectionAccessMap, setSectionAccessMap] = useState$1s(null);
 
   // 🔹 1. Load section access asynchronously
-  useEffect$1r(() => {
+  useEffect$1s(() => {
 
     if (!sections || !user || !programId) return;
 
@@ -23257,7 +23261,7 @@ const applyOtherFieldRules = ({
   });
 };
 
-const {useState: useState$1q,useEffect: useEffect$1q,useMemo: useMemo$O,useRef: useRef$p} = await importShared('react');
+const {useState: useState$1r,useEffect: useEffect$1r,useMemo: useMemo$O,useRef: useRef$p} = await importShared('react');
 
 /**
  * Hook to manage field visibility based on skip logic and OTHER field rules
@@ -23274,11 +23278,11 @@ function useHiddenFields({
   activeSection,
   setStepIndex,
 }) {
-  const [skipLogicMap, setSkipLogicMap] = useState$1q({});
-  const [defaultHidden, setDefaultHidden] = useState$1q(new Set());
+  const [skipLogicMap, setSkipLogicMap] = useState$1r({});
+  const [defaultHidden, setDefaultHidden] = useState$1r(new Set());
 
   // Load skip logic config from LocalForage whenever programId changes
-  useEffect$1q(() => {
+  useEffect$1r(() => {
     if (!programId) return;
 
     let cancelled = false;
@@ -23312,17 +23316,17 @@ function useHiddenFields({
     return hidden;
   }, [selectedStage, isEdit, otherFieldMappings, defaultHidden]);
 
-  const [hiddenFields, setHiddenFields] = useState$1q(initialHiddenFields);
+  const [hiddenFields, setHiddenFields] = useState$1r(initialHiddenFields);
   const hiddenFieldsRef = useRef$p(hiddenFields);
 
   // Re-seed hiddenFields whenever initialHiddenFields changes
-  useEffect$1q(() => {
+  useEffect$1r(() => {
     hiddenFieldsRef.current = initialHiddenFields;
     setHiddenFields(initialHiddenFields);
   }, [initialHiddenFields]);
 
   // Apply skip-logic whenever relevant formData or skipLogicMap changes
-  useEffect$1q(() => {
+  useEffect$1r(() => {
     const newHidden = new Set(defaultHidden);
 
     // Seed with OTHER fields hidden by default in create mode
@@ -23450,7 +23454,7 @@ function useHiddenFields({
   };
 }
 
-const {useState: useState$1p} = await importShared('react');
+const {useState: useState$1q} = await importShared('react');
 
 
 /**
@@ -23458,10 +23462,10 @@ const {useState: useState$1p} = await importShared('react');
  * Handles loading state for task-based form prefilling
  */
 function useTaskPrefill() {
-    const [taskAvailableInQuery, setTaskAvailableInQuery] = useState$1p(null);
-    const [prefilledValues, setPrefilledValues] = useState$1p([]);
-    const [isCheckingRegistration, setIsCheckingRegistration] = useState$1p(false);
-    const [formLoading, setFormLoading] = useState$1p(false);
+    const [taskAvailableInQuery, setTaskAvailableInQuery] = useState$1q(null);
+    const [prefilledValues, setPrefilledValues] = useState$1q([]);
+    const [isCheckingRegistration, setIsCheckingRegistration] = useState$1q(false);
+    const [formLoading, setFormLoading] = useState$1q(false);
 
     return {
         taskAvailableInQuery,
@@ -23475,7 +23479,7 @@ function useTaskPrefill() {
     };
 }
 
-const {useEffect: useEffect$1p} = await importShared('react');
+const {useEffect: useEffect$1q} = await importShared('react');
 
 /**
  * Hook to handle task prefill logic
@@ -23487,7 +23491,7 @@ function useTaskPrefillLogic({
     setFormLoading,
     setFormData,
 }) {
-    useEffect$1p(() => {
+    useEffect$1q(() => {
         const loadTaskPrefill = async () => {
             const taskId = queryParams.get("taskId");
             if (!taskId) return;
@@ -23574,14 +23578,14 @@ function useTaskPrefillLogic({
     }, []);
 }
 
-const {useState: useState$1o} = await importShared('react');
+const {useState: useState$1p} = await importShared('react');
 
 
 /**
  * Hook to manage simple popover visibility state
  */
 function usePopoverState(initialState = false) {
-    const [showPopover, setShowPopover] = useState$1o(initialState);
+    const [showPopover, setShowPopover] = useState$1p(initialState);
 
     return {
         showPopover,
@@ -23589,7 +23593,7 @@ function usePopoverState(initialState = false) {
     };
 }
 
-const {useState: useState$1n,useEffect: useEffect$1o} = await importShared('react');
+const {useState: useState$1o,useEffect: useEffect$1p} = await importShared('react');
 
 
 /**
@@ -23597,14 +23601,14 @@ const {useState: useState$1n,useEffect: useEffect$1o} = await importShared('reac
  */
 function useViewport() {
     // Initialize with actual window width to prevent flash
-    const [isMobile, setIsMobile] = useState$1n(() => {
+    const [isMobile, setIsMobile] = useState$1o(() => {
         if (typeof window !== 'undefined') {
             return window.innerWidth <= 600;
         }
         return false;
     });
 
-    useEffect$1o(() => {
+    useEffect$1p(() => {
         const handleResize = () => setIsMobile(window.innerWidth <= 600);
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
@@ -23613,18 +23617,18 @@ function useViewport() {
     return { isMobile };
 }
 
-const {useState: useState$1m,useEffect: useEffect$1n} = await importShared('react');
+const {useState: useState$1n,useEffect: useEffect$1o} = await importShared('react');
 
 /**
  * Hook to manage OTHER field configuration and mappings
  * Handles showing/hiding "Other" text fields based on dropdown selections
  */
 function useOtherFieldLogic({ selectedStageId, programObj }) {
-  const [otherFieldConfig, setOtherFieldConfig] = useState$1m({});
-  const [otherFieldMappings, setOtherFieldMappings] = useState$1m([]);
+  const [otherFieldConfig, setOtherFieldConfig] = useState$1n({});
+  const [otherFieldMappings, setOtherFieldMappings] = useState$1n([]);
 
   // Fetch OTHER field configuration on mount
-  useEffect$1n(() => {
+  useEffect$1o(() => {
     let mounted = true;
 
     const loadConfig = async () => {
@@ -23641,7 +23645,7 @@ function useOtherFieldLogic({ selectedStageId, programObj }) {
   }, []);
 
   // Load OTHER field mappings when stage/program changes
-  useEffect$1n(() => {
+  useEffect$1o(() => {
     const stageIdFromProgram =
       !selectedStageId && Array.isArray(programObj?.programStages) && programObj.programStages.length > 0
         ? programObj.programStages[0]?.id
@@ -23669,9 +23673,9 @@ function useOtherFieldLogic({ selectedStageId, programObj }) {
   };
 }
 
-const {useState: useState$1l,useEffect: useEffect$1m} = await importShared('react');
+const {useState: useState$1m,useEffect: useEffect$1n} = await importShared('react');
 
-const {useEffect: useEffect$1l} = await importShared('react');
+const {useEffect: useEffect$1m} = await importShared('react');
 
 /**
  * Hook to load image URLs for IMAGE type fields when editing
@@ -23720,7 +23724,7 @@ function useImageLoader({
     /**
      * When editing a TEI, load existing IMAGE values for data elements so they can be previewed.
      */
-    useEffect$1l(() => {
+    useEffect$1m(() => {
         const load = async () => {
             if (!trackedEntityUID || !programId) return;
 
@@ -23773,7 +23777,7 @@ function useImageLoader({
     }, [trackedEntityUID, programId, programObj, stageObj, selectedStageId]);
 }
 
-const {useState: useState$1k,useEffect: useEffect$1k} = await importShared('react');
+const {useState: useState$1l,useEffect: useEffect$1l} = await importShared('react');
 
 /**
  * Resolves the equipment program ID and stage configs from the datastore cache.
@@ -23798,16 +23802,16 @@ function useEquipmentContext({
   routeEquipmentId,
   resetTrigger,
 }) {
-  const [contextConfig, setContextConfig] = useState$1k(null);
-  const [selectedEquipment, setSelectedEquipment] = useState$1k(null);
-  const [availableEquipment, setAvailableEquipment] = useState$1k([]);
-  const [showEquipmentPicker, setShowEquipmentPicker] = useState$1k(false);
-  const [loading, setLoading] = useState$1k(false);
-  const [error, setError] = useState$1k(null);
-  const [configLoaded, setConfigLoaded] = useState$1k(false);
+  const [contextConfig, setContextConfig] = useState$1l(null);
+  const [selectedEquipment, setSelectedEquipment] = useState$1l(null);
+  const [availableEquipment, setAvailableEquipment] = useState$1l([]);
+  const [showEquipmentPicker, setShowEquipmentPicker] = useState$1l(false);
+  const [loading, setLoading] = useState$1l(false);
+  const [error, setError] = useState$1l(null);
+  const [configLoaded, setConfigLoaded] = useState$1l(false);
 
   // Reset state when stage/program changes OR when resetTrigger changes (new action)
-  useEffect$1k(() => {
+  useEffect$1l(() => {
     setContextConfig(null);
     setSelectedEquipment(null);
     setAvailableEquipment([]);
@@ -24166,7 +24170,7 @@ function useRequiredFields({
     return { requiredById };
 }
 
-const {useMemo: useMemo$M,useEffect: useEffect$1j,useState: useState$1j} = await importShared('react');
+const {useMemo: useMemo$M,useEffect: useEffect$1k,useState: useState$1k} = await importShared('react');
 
 /**
  * Hook to load custom mandatory fields from datastore and merge with native DHIS2 mandatory
@@ -24185,11 +24189,11 @@ function useCustomMandatoryFields({
     stageObj,
     nativeRequiredById = {},
 }) {
-    const [customConfig, setCustomConfig] = useState$1j([]);
-    const [isLoading, setIsLoading] = useState$1j(true);
+    const [customConfig, setCustomConfig] = useState$1k([]);
+    const [isLoading, setIsLoading] = useState$1k(true);
 
     // Load custom mandatory configuration from datastore
-    useEffect$1j(() => {
+    useEffect$1k(() => {
         let mounted = true;
 
         const loadCustomConfig = async () => {
@@ -24266,7 +24270,7 @@ function useCustomMandatoryFields({
     };
 }
 
-const {useState: useState$1i,useEffect: useEffect$1i,useMemo: useMemo$L} = await importShared('react');
+const {useState: useState$1j,useEffect: useEffect$1j,useMemo: useMemo$L} = await importShared('react');
 
 /**
  * Hook to manage multi-step wizard navigation
@@ -24279,7 +24283,7 @@ function useStepNavigation({
   sectionsList,
   reviewNavigationLocked,
 }) {
-  const [internalStep, setInternalStep] = useState$1i(0);
+  const [internalStep, setInternalStep] = useState$1j(0);
 
   const stepIndex =
     typeof currentStep === "number" ? currentStep : internalStep;
@@ -24328,7 +24332,7 @@ function useStepNavigation({
   };
 
   // Update current section when active section changes
-  useEffect$1i(() => {
+  useEffect$1j(() => {
     if (typeof setCurrentSection === "function" && activeSection) {
       setCurrentSection(activeSection);
     }
@@ -24567,7 +24571,7 @@ const triggerNotifications = async ({
   }
 };
 
-const {useEffect: useEffect$1h} = await importShared('react');
+const {useEffect: useEffect$1i} = await importShared('react');
 
 /**
  * Hook to manage approval officer assignment and notifications
@@ -24624,7 +24628,7 @@ function useApprovalNotifications({
      * Ensure the "approving officer" TEI is set:
      *   - On new forms when navigation is locked for review.
      */
-    useEffect$1h(() => {
+    useEffect$1i(() => {
         if (!isAddFlow || !approvingOfficerFieldId) return;
 
         setFormData((prev) => {
@@ -24660,7 +24664,7 @@ function useApprovalNotifications({
      *   - On new forms when navigation is locked for review.
      *   - On edits when status transitions to "Feedback required".
      */
-    useEffect$1h(() => {
+    useEffect$1i(() => {
         if (!programObj?.id) return;
         if (!assignedApprover || !approvingOfficerFieldId || !approvingSectionId)
             return;
@@ -24726,7 +24730,7 @@ function useApprovalNotifications({
     };
 }
 
-const {useState: useState$1h,useEffect: useEffect$1g,useRef: useRef$o} = await importShared('react');
+const {useState: useState$1i,useEffect: useEffect$1h,useRef: useRef$o} = await importShared('react');
 
 /**
  * useFilteredOptionSet
@@ -24750,10 +24754,10 @@ const {useState: useState$1h,useEffect: useEffect$1g,useRef: useRef$o} = await i
  * }
  */
 function useFilteredOptionSet(programId) {
-  const [filteredCodesMap, setFilteredCodesMap] = useState$1h({});
+  const [filteredCodesMap, setFilteredCodesMap] = useState$1i({});
   const fetchedRef = useRef$o(false);
 
-  useEffect$1g(() => {
+  useEffect$1h(() => {
     if (!programId || fetchedRef.current) return;
 
     let cancelled = false;
@@ -25389,7 +25393,7 @@ const exportBlobWithHostBridge = async (blob, filename) => {
     });
 };
 
-const {useEffect: useEffect$1f,useState: useState$1g} = await importShared('react');
+const {useEffect: useEffect$1g,useState: useState$1h} = await importShared('react');
 function FilePreviewModal({
   isOpen,
   onClose,
@@ -25402,13 +25406,13 @@ function FilePreviewModal({
   dataElementId,
   programId
 }) {
-  const [loading, setLoading] = useState$1g(true);
-  const [imageUrl, setImageUrl] = useState$1g(null);
-  const [fileData, setFileData] = useState$1g(null);
-  const [error, setError] = useState$1g(null);
-  const [mimeType, setMimeType] = useState$1g("application/octet-stream");
-  const [downloading, setDownloading] = useState$1g(false);
-  useEffect$1f(() => {
+  const [loading, setLoading] = useState$1h(true);
+  const [imageUrl, setImageUrl] = useState$1h(null);
+  const [fileData, setFileData] = useState$1h(null);
+  const [error, setError] = useState$1h(null);
+  const [mimeType, setMimeType] = useState$1h("application/octet-stream");
+  const [downloading, setDownloading] = useState$1h(false);
+  useEffect$1g(() => {
     if (isOpen && fileId && (teiId && attributeId || eventId && dataElementId)) {
       fetchFile();
     } else if (!isOpen) {
@@ -25783,7 +25787,7 @@ function validateProgramField(programId, fieldId, formData = {}, validationConfi
   }, []);
 }
 
-const {useState: useState$1f,useEffect: useEffect$1e} = await importShared('react');
+const {useState: useState$1g,useEffect: useEffect$1f} = await importShared('react');
 
 /**
  * useParticipantsPerWardConfig
@@ -25817,14 +25821,14 @@ const {useState: useState$1f,useEffect: useEffect$1e} = await importShared('reac
  * participantsPerWardField === null.
  */
 function useParticipantsPerWardConfig(programId) {
-    const [config, setConfig] = useState$1f({
+    const [config, setConfig] = useState$1g({
         wardsField: null,
         participantsPerWardField: null,
         totalParticipantsField: null,
         ready: false,
     });
 
-    useEffect$1e(() => {
+    useEffect$1f(() => {
         if (!programId) {
             setConfig({ wardsField: null, participantsPerWardField: null, totalParticipantsField: null, ready: true });
             return;
@@ -25867,7 +25871,7 @@ function useParticipantsPerWardConfig(programId) {
     return config;
 }
 
-const {useState: useState$1e,useEffect: useEffect$1d} = await importShared('react');
+const {useState: useState$1f,useEffect: useEffect$1e} = await importShared('react');
 
 /**
  * useSparePartsQuantityConfig
@@ -25896,14 +25900,14 @@ const {useState: useState$1e,useEffect: useEffect$1d} = await importShared('reac
  * }
  */
 function useSparePartsQuantityConfig(programId) {
-    const [config, setConfig] = useState$1e({
+    const [config, setConfig] = useState$1f({
         sparePartsField: null,
         quantityPerPartField: null,
         totalQuantityField: null,
         ready: false,
     });
 
-    useEffect$1d(() => {
+    useEffect$1e(() => {
         const empty = { sparePartsField: null, quantityPerPartField: null, totalQuantityField: null, ready: true };
 
         if (!programId) {
@@ -26017,7 +26021,7 @@ function getSectionFormNameOverride(dataStoreData, context = {}) {
   return match?.overrideText || null;
 }
 
-const {useEffect: useEffect$1c,useMemo: useMemo$K,useRef: useRef$n} = await importShared('react');
+const {useEffect: useEffect$1d,useMemo: useMemo$K,useRef: useRef$n} = await importShared('react');
 function ParticipantsPerWardField({
   value,
   wards = [],
@@ -26035,7 +26039,7 @@ function ParticipantsPerWardField({
       return {};
     }
   }, [value]);
-  useEffect$1c(() => {
+  useEffect$1d(() => {
     const total2 = wards.reduce((sum, ward) => {
       const n = Number(parsed[ward] ?? 0);
       return sum + (isNaN(n) ? 0 : n);
@@ -26168,7 +26172,7 @@ const styles$2 = {
   }
 };
 
-const {useEffect: useEffect$1b,useMemo: useMemo$J,useRef: useRef$m} = await importShared('react');
+const {useEffect: useEffect$1c,useMemo: useMemo$J,useRef: useRef$m} = await importShared('react');
 function SparePartsQuantityField({
   value,
   parts = [],
@@ -26186,7 +26190,7 @@ function SparePartsQuantityField({
       return {};
     }
   }, [value]);
-  useEffect$1b(() => {
+  useEffect$1c(() => {
     const total2 = parts.reduce((sum, { name }) => {
       const n = Number(parsed[name] ?? 0);
       return sum + (isNaN(n) ? 0 : n);
@@ -26313,7 +26317,7 @@ const styles$1 = {
 };
 
 const React$S = await importShared('react');
-const {useEffect: useEffect$1a,useMemo: useMemo$I,useState: useState$1d} = React$S;
+const {useEffect: useEffect$1b,useMemo: useMemo$I,useState: useState$1e} = React$S;
 const FREQUENCY_INTERVALS = {
   MONTHLY: 1,
   BIMONTHLY: 2,
@@ -26372,8 +26376,8 @@ function PreventiveMaintenanceScheduleModal({
   onSave,
   equipmentId
 }) {
-  const [dates, setDates] = useState$1d([]);
-  const [saving, setSaving] = useState$1d(false);
+  const [dates, setDates] = useState$1e([]);
+  const [saving, setSaving] = useState$1e(false);
   const params = useMemo$I(() => {
     return new URLSearchParams(
       window.location.search
@@ -26383,7 +26387,7 @@ function PreventiveMaintenanceScheduleModal({
     "routineMaintenanceSchedule"
   ) || "").toUpperCase();
   const frequencyLabel = FREQUENCY_LABELS[frequency] || frequency;
-  useEffect$1a(() => {
+  useEffect$1b(() => {
     if (!isOpen || !initialDate) {
       return;
     }
@@ -26480,6 +26484,7 @@ function PreventiveMaintenanceScheduleModal({
         IonContent,
         {
           className: "ion-padding",
+          style: { position: "relative", minHeight: 300 },
           children: [
             /* @__PURE__ */ jsxRuntimeExports.jsxs(
               "div",
@@ -26547,7 +26552,7 @@ function PreventiveMaintenanceScheduleModal({
   );
 }
 
-const {useCallback: useCallback$p,useContext: useContext$F,useEffect: useEffect$19,useMemo: useMemo$H,useState: useState$1c} = await importShared('react');
+const {useCallback: useCallback$p,useContext: useContext$F,useEffect: useEffect$1a,useMemo: useMemo$H,useState: useState$1d} = await importShared('react');
 function ConfigurableForm({
   handleSubmit,
   handleCancel,
@@ -26581,21 +26586,21 @@ function ConfigurableForm({
   autoFillFacilityLoading = false,
   lockedFields = /* @__PURE__ */ new Set()
 }) {
-  const [wardData, setWardData] = useState$1c(null);
+  const [wardData, setWardData] = useState$1d(null);
   const location = useLocation();
   const { userOrganisationUnits } = useContext$F(MEMISContext.UserContext);
   const { user } = useContext$F(MEMISContext.UserRolesContext) || {};
-  const [futureDateFields, setFutureDateFields] = useState$1c([]);
-  const [dataStoreData, setDataStoreData] = useState$1c({});
-  const [validationErrors, setValidationErrors] = useState$1c({});
-  const [firstStageDe, setfirstDE] = useState$1c([]);
+  const [futureDateFields, setFutureDateFields] = useState$1d([]);
+  const [dataStoreData, setDataStoreData] = useState$1d({});
+  const [validationErrors, setValidationErrors] = useState$1d({});
+  const [firstStageDe, setfirstDE] = useState$1d([]);
   const validationConfig = dataStoreData?.formValidations;
-  const [canSave, setCanSave] = useState$1c(false);
-  const [orgUnitsByLevel, setOrgUnitsByLevel] = useState$1c({});
-  const [facilityUsers, setFacilityUsers] = useState$1c([]);
-  const [showMaintenanceSchedule, setShowMaintenanceSchedule] = useState$1c(false);
-  const [maintenanceSchedule, setMaintenanceSchedule] = useState$1c(null);
-  useEffect$19(() => {
+  const [canSave, setCanSave] = useState$1d(false);
+  const [orgUnitsByLevel, setOrgUnitsByLevel] = useState$1d({});
+  const [facilityUsers, setFacilityUsers] = useState$1d([]);
+  const [showMaintenanceSchedule, setShowMaintenanceSchedule] = useState$1d(false);
+  const [maintenanceSchedule, setMaintenanceSchedule] = useState$1d(null);
+  useEffect$1a(() => {
     const loadOrgUnitGroupFields = async () => {
       try {
         const ds = await LocalForageServiceInstance.getItem(
@@ -26629,7 +26634,7 @@ function ConfigurableForm({
     };
     loadOrgUnitGroupFields();
   }, [programId]);
-  useEffect$19(() => {
+  useEffect$1a(() => {
     const load = async () => {
       try {
         const res = await getUsersForAssignment();
@@ -26639,13 +26644,13 @@ function ConfigurableForm({
     };
     load();
   }, [programId]);
-  const [wslConfig, setWslConfig] = useState$1c(null);
-  const [componentInputs, setComponentInputs] = useState$1c({});
+  const [wslConfig, setWslConfig] = useState$1d(null);
+  const [componentInputs, setComponentInputs] = useState$1d({});
   const { showPopover, setShowPopover } = usePopoverState();
   const { setDateRangePopover } = useDateRangePopover();
   const { imageUrls, setImageUrls, imageLoading, setImageLoading } = useImageState();
   const { isMobile } = useViewport();
-  const [previewModal, setPreviewModal] = useState$1c({
+  const [previewModal, setPreviewModal] = useState$1d({
     isOpen: false,
     fileId: null,
     fileName: null,
@@ -26970,7 +26975,7 @@ function ConfigurableForm({
       return "";
     }
   };
-  useEffect$19(() => {
+  useEffect$1a(() => {
     try {
       const stored = sessionStorage.getItem(
         "preventiveMaintenanceSchedule"
@@ -28124,7 +28129,7 @@ function ConfigurableForm({
       console.log({ error });
     }
   };
-  useEffect$19(() => {
+  useEffect$1a(() => {
     let cancelled = false;
     const fetchWslConfig = async () => {
       try {
@@ -28149,7 +28154,7 @@ function ConfigurableForm({
       cancelled = true;
     };
   }, [programId, selectedStage]);
-  useEffect$19(() => {
+  useEffect$1a(() => {
     const loadTaskPrefill = async () => {
       const taskId = queryParams.get("taskId");
       if (!taskId) return;
@@ -28199,7 +28204,7 @@ function ConfigurableForm({
     loadTaskPrefill();
     prefillWard();
   }, [programObj]);
-  useEffect$19(() => {
+  useEffect$1a(() => {
     if (!wardData?.use || !wardData?.field) return;
     const targetId = wardData.field;
     setFormData((prev) => {
@@ -28212,7 +28217,7 @@ function ConfigurableForm({
       };
     });
   }, [wardData, setFormData]);
-  useEffect$19(() => {
+  useEffect$1a(() => {
     let mounted = true;
     const loadFutureDateConfig = async () => {
       const dataStore2 = await LocalForageServiceInstance.getItem(
@@ -28227,7 +28232,7 @@ function ConfigurableForm({
       mounted = false;
     };
   }, [programObj, sectionsList]);
-  useEffect$19(() => {
+  useEffect$1a(() => {
     let mounted = true;
     const loadFutureDateConfig = async () => {
       const dataStore2 = await LocalForageServiceInstance.getItem(
@@ -28251,7 +28256,7 @@ function ConfigurableForm({
     stageObj,
     activeSection
   ]);
-  useEffect$19(() => {
+  useEffect$1a(() => {
     let cancelled = false;
     const loadFutureDateConfig = async () => {
       try {
@@ -28284,7 +28289,7 @@ function ConfigurableForm({
       cancelled = true;
     };
   }, [programId, selectedStage, formData]);
-  useEffect$19(() => {
+  useEffect$1a(() => {
     let mounted = true;
     if (mounted) {
       const config = dataStoreData?.reportGenerationDatePrefill?.configurations;
@@ -28329,7 +28334,7 @@ function ConfigurableForm({
     const selectedSection = result?.sections?.find((s) => s.id === actSect);
     setCanSave(selectedSection?.canSave ?? false);
   };
-  useEffect$19(() => {
+  useEffect$1a(() => {
     if (!workflow) return;
     const wf = workflow?.workflows?.find((e) => e.value === pM);
     const w = wf?.firstStage;
@@ -28339,7 +28344,7 @@ function ConfigurableForm({
       getDe(j);
     }
   }, [workflow, pM]);
-  useEffect$19(() => {
+  useEffect$1a(() => {
     const loadUser = async () => {
       const us = await LocalForageServiceInstance.getItem("userRes", "user");
       const { userShowOrgUnit } = await LocalForageServiceInstance.getItem(
@@ -28364,7 +28369,7 @@ function ConfigurableForm({
     };
     loadUser();
   }, [user, selectedOrganisationUnit]);
-  useEffect$19(() => {
+  useEffect$1a(() => {
     if (activeSection?.id) {
       getActiveSectionCanSave(activeSection?.id, programId);
     }
@@ -32362,7 +32367,7 @@ const CreateDataItemsController = {
 };
 
 const React$R = await importShared('react');
-const {useContext: useContext$E,useEffect: useEffect$18,useMemo: useMemo$G,useState: useState$1b} = React$R;
+const {useContext: useContext$E,useEffect: useEffect$19,useMemo: useMemo$G,useState: useState$1c} = React$R;
 const A$9 = (x) => Array.isArray(x) ? x : [];
 function MultiEntryForm({
   dataElements = null,
@@ -32372,16 +32377,16 @@ function MultiEntryForm({
   worklow,
   onClose
 }) {
-  const [numEntries, setNumEntries] = useState$1b(2);
-  const [step, setStep] = useState$1b("count");
-  const [commonData, setCommonData] = useState$1b({});
-  const [entries, setEntries] = useState$1b([]);
-  const [loading, setLoading] = useState$1b(false);
-  const [selectedCommonFields, setSelectedCommonFields] = useState$1b([]);
-  const [showPopover, setShowPopover] = useState$1b(false);
-  const [imageUrls, setImageUrls] = useState$1b({});
-  const [imageLoading, setImageLoading] = useState$1b({});
-  const [componentInputs, setComponentInputs] = useState$1b({});
+  const [numEntries, setNumEntries] = useState$1c(2);
+  const [step, setStep] = useState$1c("count");
+  const [commonData, setCommonData] = useState$1c({});
+  const [entries, setEntries] = useState$1c([]);
+  const [loading, setLoading] = useState$1c(false);
+  const [selectedCommonFields, setSelectedCommonFields] = useState$1c([]);
+  const [showPopover, setShowPopover] = useState$1c(false);
+  const [imageUrls, setImageUrls] = useState$1c({});
+  const [imageLoading, setImageLoading] = useState$1c({});
+  const [componentInputs, setComponentInputs] = useState$1c({});
   const navigate = useNavigate();
   const { userOrganisationUnits } = useContext$E(MEMISContext.UserContext);
   const { user } = useContext$E(MEMISContext.UserRolesContext);
@@ -32405,11 +32410,11 @@ function MultiEntryForm({
     stageObj: null,
     nativeRequiredById
   });
-  const [skipLogicMap, setSkipLogicMap] = useState$1b({});
-  const [defaultHiddenFields, setDefaultHiddenFields] = useState$1b(/* @__PURE__ */ new Set());
-  const [linkedFieldGroups, setLinkedFieldGroups] = useState$1b([]);
-  const [otherFieldMappings, setOtherFieldMappings] = useState$1b([]);
-  useEffect$18(() => {
+  const [skipLogicMap, setSkipLogicMap] = useState$1c({});
+  const [defaultHiddenFields, setDefaultHiddenFields] = useState$1c(/* @__PURE__ */ new Set());
+  const [linkedFieldGroups, setLinkedFieldGroups] = useState$1c([]);
+  const [otherFieldMappings, setOtherFieldMappings] = useState$1c([]);
+  useEffect$19(() => {
     if (!program?.id) return;
     getSkipLogicConfig(program.id).then((cfg) => {
       if (cfg) {
@@ -32687,7 +32692,7 @@ ${lines.join("\n")}`,
       setLoading(false);
     }
   };
-  useEffect$18(() => {
+  useEffect$19(() => {
     console.log(worklow);
   }, []);
   const renderInput = (el, canAddUpdateSection, idx, isCommonField) => {
@@ -33316,7 +33321,7 @@ const calculateDeregistrationAutofill = async (teiAttributes, isolationDate = nu
     return autofillValues;
 };
 
-const {useState: useState$1a,useEffect: useEffect$17,useContext: useContext$D,useMemo: useMemo$F,useRef: useRef$l} = await importShared('react');
+const {useState: useState$1b,useEffect: useEffect$18,useContext: useContext$D,useMemo: useMemo$F,useRef: useRef$l} = await importShared('react');
 
 /**
  * Hook to automatically fill facility/org unit based on DataStore configuration
@@ -33336,8 +33341,8 @@ function useFacilityAutoFill(
   const { userOrganisationUnits } = useContext$D(MEMISContext.UserContext);
   const { user } = useContext$D(MEMISContext.UserRolesContext) || {};
 
-  const [autoFilledOrgUnit, setAutoFilledOrgUnit] = useState$1a(null);
-  const [loading, setLoading] = useState$1a(false);
+  const [autoFilledOrgUnit, setAutoFilledOrgUnit] = useState$1b(null);
+  const [loading, setLoading] = useState$1b(false);
 
   // Track if we've already loaded to prevent re-fetching
   const hasLoadedRef = useRef$l(false);
@@ -33353,7 +33358,7 @@ function useFacilityAutoFill(
     return user?.id || "";
   }, [user?.id]);
 
-  useEffect$17(() => {
+  useEffect$18(() => {
     // Skip if we're in edit mode
     if (isEdit) {
       setAutoFilledOrgUnit(null);
@@ -34080,7 +34085,7 @@ async function getOptionSetIdFromDataElement(deId) {
 }
 
 /** Resolve an option value using the optionSet map */
-async function resolveOptionValue(optionSetId, value) {
+async function resolveOptionValue$1(optionSetId, value) {
     if (!value && value !== false && value !== 0) return value;
     const map = await getOptionSetMap(optionSetId);
     if (!map) return value;
@@ -34150,7 +34155,7 @@ async function enrichTransferRows(rows, columns = [], cfg = {}) {
 
                 for (const [dataElement, optionSetId] of Object.entries(optionSetByKey)) {
                     if (enriched[dataElement] != null) {
-                        enriched[dataElement] = await resolveOptionValue(optionSetId, enriched[dataElement]);
+                        enriched[dataElement] = await resolveOptionValue$1(optionSetId, enriched[dataElement]);
                     }
                 }
 
@@ -34282,7 +34287,7 @@ const generateUniquePamAssetNumber = async ({
   throw new Error("PAM_GENERATION_EXHAUSTED");
 };
 
-const {useContext: useContext$C,useEffect: useEffect$16,useState: useState$19,useMemo: useMemo$E,useRef: useRef$k} = await importShared('react');
+const {useContext: useContext$C,useEffect: useEffect$17,useState: useState$1a,useMemo: useMemo$E,useRef: useRef$k} = await importShared('react');
 const A$8 = (x) => Array.isArray(x) ? x : [];
 function collectBundleUids(value, seen = /* @__PURE__ */ new Set()) {
   if (!value || typeof value !== "object") return [];
@@ -34325,38 +34330,38 @@ function FormComponent({
   editData,
   onSaveSuccess
 }) {
-  const [isMultiple, setIsMultiple] = useState$19(false);
+  const [isMultiple, setIsMultiple] = useState$1a(false);
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
-  const [query, setQuery] = useState$19(queryParams.get("query") || "");
-  const [formData, setFormData] = useState$19({});
-  const [maintainanceTye, setMaintenancetype] = useState$19();
-  const [currentSection, setCurrentSection] = useState$19(0);
-  const [fieldMultiText, setFieldMultiText] = useState$19([]);
-  const [lockedFields, setLockedFields] = useState$19(/* @__PURE__ */ new Set());
-  const [pM, setPM] = useState$19();
-  const [ranKey, setKey] = useState$19(
+  const [query, setQuery] = useState$1a(queryParams.get("query") || "");
+  const [formData, setFormData] = useState$1a({});
+  const [maintainanceTye, setMaintenancetype] = useState$1a();
+  const [currentSection, setCurrentSection] = useState$1a(0);
+  const [fieldMultiText, setFieldMultiText] = useState$1a([]);
+  const [lockedFields, setLockedFields] = useState$1a(/* @__PURE__ */ new Set());
+  const [pM, setPM] = useState$1a();
+  const [ranKey, setKey] = useState$1a(
     Math.random().toString(36).substring(2, 10).toUpperCase()
   );
-  const [triggerAt, setTriggerAt] = useState$19(queryParams.get("triggerAt"));
-  const [sectionIdData, setSectionIdData] = useState$19(queryParams.get("sectionId"));
-  const [loading, setLoading] = useState$19(false);
-  const [eventDate, setEventDate] = useState$19((/* @__PURE__ */ new Date()).toISOString());
+  const [triggerAt, setTriggerAt] = useState$1a(queryParams.get("triggerAt"));
+  const [sectionIdData, setSectionIdData] = useState$1a(queryParams.get("sectionId"));
+  const [loading, setLoading] = useState$1a(false);
+  const [eventDate, setEventDate] = useState$1a((/* @__PURE__ */ new Date()).toISOString());
   const navigate = useNavigate();
   const { user } = useContext$C(MEMISContext.UserRolesContext);
-  const [pgRules, setRule] = useState$19([]);
-  const [selectedOrganisationUnit, setSelectedOrganisationUnit] = useState$19(null);
-  const [equip, setEquipment] = useState$19();
-  const [enrollmentDate, setEnrollmentDate] = useState$19(
+  const [pgRules, setRule] = useState$1a([]);
+  const [selectedOrganisationUnit, setSelectedOrganisationUnit] = useState$1a(null);
+  const [equip, setEquipment] = useState$1a();
+  const [enrollmentDate, setEnrollmentDate] = useState$1a(
     editData?.enrollmentDate || Date.now()
   );
-  const [incidentDate, setIncidentDate] = useState$19(
+  const [incidentDate, setIncidentDate] = useState$1a(
     editData?.incidentDate || Date.now()
   );
-  const [entityId, setEntityId] = useState$19(
+  const [entityId, setEntityId] = useState$1a(
     editData?.trackedEntity || editData?.id || null
   );
-  const [ackModalOpen, setAckModalOpen] = useState$19(false);
+  const [ackModalOpen, setAckModalOpen] = useState$1a(false);
   const autoFillFacilityAppliedRef = useRef$k(false);
   const isEditMode = useMemo$E(() => {
     return query === "edit" || !!editData;
@@ -34408,7 +34413,7 @@ function FormComponent({
       console.log("Failed to fetch deregistration autofill rules:", error);
     }
   };
-  useEffect$16(() => {
+  useEffect$17(() => {
     if (autoFillFacilityAppliedRef.current) return;
     if (isEditMode) return;
     if (!autoFilledOrgUnit) return;
@@ -34416,7 +34421,7 @@ function FormComponent({
     if (autoFillLoading) return;
     autoFillFacilityAppliedRef.current = true;
   }, [autoFilledOrgUnit, autoFillLoading, isEditMode]);
-  useEffect$16(() => {
+  useEffect$17(() => {
     autoFillFacilityAppliedRef.current = false;
     getRules();
   }, [program?.id]);
@@ -34475,7 +34480,7 @@ function FormComponent({
       console.log("Failed to fetch warrant data:", err);
     }
   };
-  useEffect$16(() => {
+  useEffect$17(() => {
     getRules();
     const q = queryParams.get("triggerAt");
     if (q === "Corrective Maintenance") {
@@ -34879,32 +34884,60 @@ function FormComponent({
       const okLike = rawStatus === "OK" || rawStatus === "ok" || rawStatus === 200 || rawStatus === 201 || rawStatus === "200" || rawStatus === "201";
       if (okLike) {
         if (queryDataTaskId) {
-          const resu = await LocalForageServiceInstance.getItem(
-            "dataStore",
-            "dataStore"
-          );
-          const fetchTask = resu?.registrationTaskStatusUpdate;
-          if (fetchTask?.task?.programTrigger === program?.id) {
-            const task = queryDataTaskId.split(".")[1];
-            const fetchEvent = await dataStore.get(
-              `tracker/events/${task}.json?program=${fetchEvent?.data?.program}`
+          try {
+            const dataStoreConfig = await LocalForageServiceInstance.getItem(
+              "dataStore",
+              "dataStore"
             );
-            const payload = {
-              event: fetchEvent?.data?.event,
-              orgUnit: fetchEvent?.data?.orgUnit,
-              program: fetchEvent?.data?.program,
-              occurredAt: fetchEvent?.data?.occurredAt,
-              dataValues: [
-                {
-                  dataElement: fetchTask.task.onSuccess.fieldToUpdate,
-                  value: fetchTask.task.onSuccess.value
-                }
-              ]
-            };
-            const importStrategy = "UPDATE";
-            await dataStore.post(
-              `tracker?async=false&importStrategy=${importStrategy}`,
-              { events: [payload] }
+            const taskStatusUpdateConfig = dataStoreConfig?.registrationTaskStatusUpdate?.task;
+            const taskProgramTrigger = taskStatusUpdateConfig?.programTrigger;
+            const taskProgramId = taskStatusUpdateConfig?.programId || queryDataTaskId.split(".")[0];
+            const taskEventId = queryDataTaskId.split(".")[1];
+            const fieldToUpdate = taskStatusUpdateConfig?.onSuccess?.fieldToUpdate;
+            const valueToSet = taskStatusUpdateConfig?.onSuccess?.value;
+            const shouldUpdateTaskStatus = taskProgramTrigger === program?.id && taskProgramId && taskEventId && fieldToUpdate && valueToSet;
+            if (shouldUpdateTaskStatus) {
+              const fetchEvent = await dataStore.get(
+                `tracker/events/${taskEventId}.json?program=${taskProgramId}`
+              );
+              const taskEvent = fetchEvent?.data || fetchEvent;
+              if (!taskEvent?.event) {
+                throw new Error("Assigned registration task event was not found.");
+              }
+              const payload = {
+                event: taskEvent.event,
+                enrollment: taskEvent.enrollment || null,
+                programStage: taskEvent.programStage,
+                program: taskEvent.program || taskProgramId,
+                orgUnit: taskEvent.orgUnit,
+                occurredAt: taskEvent.occurredAt,
+                scheduledAt: taskEvent.scheduledAt,
+                trackedEntity: taskEvent.trackedEntity,
+                status: taskEvent.status || "ACTIVE",
+                dataValues: [
+                  {
+                    dataElement: fieldToUpdate,
+                    value: valueToSet
+                  }
+                ]
+              };
+              const taskStatusUpdateResponse = await dataStore.post(
+                "tracker?async=false&importStrategy=UPDATE",
+                { events: [payload] }
+              );
+              const taskStatusUpdateOk = taskStatusUpdateResponse?.status === 200 || taskStatusUpdateResponse?.status === 201 || taskStatusUpdateResponse?.data?.status === "OK" || taskStatusUpdateResponse?.data?.status === "ok";
+              if (taskStatusUpdateOk) {
+                showToast("Assigned task status updated successfully.", "success");
+              }
+            }
+          } catch (taskStatusUpdateError) {
+            console.log(
+              "Equipment registered, but task status update failed:",
+              taskStatusUpdateError
+            );
+            showToast(
+              "Equipment was registered, but the assigned task status could not be updated.",
+              "warning"
             );
           }
         }
@@ -34929,7 +34962,7 @@ function FormComponent({
     onClose?.();
     navigate(window.location.pathname, { replace: true });
   };
-  useEffect$16(() => {
+  useEffect$17(() => {
     if (editData && Object.keys(editData).length > 0 && program) {
       setQuery("edit");
       const getFieldMetadata = (fieldId) => {
@@ -35032,7 +35065,7 @@ function FormComponent({
     const name = await resolveEquipmentName(id);
     setEquipment(name);
   };
-  useEffect$16(() => {
+  useEffect$17(() => {
     const queryParams2 = new URLSearchParams(location.search);
     const equipmentId = trackedEntity || queryParams2.get("equipmentId");
     getEquip(equipmentId);
@@ -35078,7 +35111,7 @@ function FormComponent({
       fetchEquipmentDataAndPrefill();
     }
   }, [selectedStage, trackedEntity, program, editData, user, location.search]);
-  useEffect$16(() => {
+  useEffect$17(() => {
     const queryId = queryParams.get("q");
     if (queryId === "add") {
       const taskId = queryParams.get("taskId");
@@ -35108,7 +35141,7 @@ function FormComponent({
       getEquipmentAddParam();
     }
   }, [program, user, location.search]);
-  useEffect$16(() => {
+  useEffect$17(() => {
   }, [location]);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(IonPage, { children: [
     !ackModalOpen && /* @__PURE__ */ jsxRuntimeExports.jsxs(IonContent, { className: "ion-padding", fullscreen: true, children: [
@@ -35648,7 +35681,7 @@ const dateTime = {
     FORMAT_PRESETS,
 };
 
-const {useState: useState$18,useMemo: useMemo$D,useEffect: useEffect$15} = await importShared('react');
+const {useState: useState$19,useMemo: useMemo$D,useEffect: useEffect$16} = await importShared('react');
 const DataTable = ({
   columns,
   rows,
@@ -35675,15 +35708,15 @@ const DataTable = ({
   priorities,
   approvalStatusColors
 }) => {
-  const [localSortKey, setLocalSortKey] = useState$18("");
-  const [localSortOrder, setLocalSortOrder] = useState$18("asc");
-  const [isMobile, setIsMobile] = useState$18(() => {
+  const [localSortKey, setLocalSortKey] = useState$19("");
+  const [localSortOrder, setLocalSortOrder] = useState$19("asc");
+  const [isMobile, setIsMobile] = useState$19(() => {
     if (typeof window !== "undefined") {
       return window.innerWidth < 768;
     }
     return false;
   });
-  const [resolvedRows, setResolvedRows] = useState$18(rows);
+  const [resolvedRows, setResolvedRows] = useState$19(rows);
   const correctedColumns = useMemo$D(() => {
     if (!Array.isArray(columns)) return [];
     const keyCorrections = {
@@ -35709,13 +35742,13 @@ const DataTable = ({
       return correctedKey !== col.key ? { ...col, key: correctedKey } : col;
     });
   }, [columns]);
-  useEffect$15(() => {
+  useEffect$16(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
     checkMobile();
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
-  useEffect$15(() => {
+  useEffect$16(() => {
     let mounted = true;
     (async () => {
       try {
@@ -36054,86 +36087,100 @@ const DataTable = ({
               );
             })
           ] }),
-          !loading && displayRows?.length > 0 && /* @__PURE__ */ jsxRuntimeExports.jsx(IonToolbar, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { style: { padding: "8px 16px" }, children: [
-            selectable && selectedIds.size > 0 && /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              IonText,
-              {
-                className: "text-sm",
-                color: "primary",
-                style: {
-                  display: "block",
-                  marginBottom: "8px",
-                  textAlign: "center"
-                },
-                children: [
-                  selectedIds.size,
-                  " selected"
-                ]
-              }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "div",
-              {
-                style: {
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  marginBottom: "8px"
-                },
-                children: /* @__PURE__ */ jsxRuntimeExports.jsxs(IonText, { style: { fontSize: "13px" }, children: [
-                  "Page",
-                  " ",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { style: { color: "var(--ion-color-primary)" }, children: page }),
-                  " ",
-                  "of ",
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: pageCount }),
-                  totalCount && ` (${totalCount})`
-                ] })
-              }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              "div",
-              {
-                style: {
-                  display: "flex",
-                  gap: "8px",
-                  justifyContent: "center"
-                },
-                children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    IonButton,
-                    {
-                      fill: "outline",
-                      size: "small",
-                      color: "primary",
-                      disabled: page === 1,
-                      onClick: () => {
-                        if (prev) prev();
-                        else if (onPageChange) onPageChange(page - 1);
-                      },
-                      style: { flex: 1 },
-                      children: "Previous"
-                    }
-                  ),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    IonButton,
-                    {
-                      fill: "outline",
-                      size: "small",
-                      color: "primary",
-                      disabled: page === pageCount,
-                      onClick: () => {
-                        if (next) next();
-                        else if (onPageChange) onPageChange(page + 1);
-                      },
-                      style: { flex: 1 },
-                      children: "Next"
-                    }
-                  )
-                ]
-              }
-            )
-          ] }) })
+          !loading && displayRows?.length > 0 && /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "div",
+            {
+              className: "datatable-pagination-toolbar datatable-mobile-pagination",
+              style: {
+                padding: "12px 16px",
+                backgroundColor: "#ffffff",
+                color: "#1f2937",
+                borderTop: "1px solid #e5e7eb"
+              },
+              children: [
+                selectable && selectedIds.size > 0 && /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  IonText,
+                  {
+                    className: "text-sm",
+                    color: "primary",
+                    style: {
+                      display: "block",
+                      marginBottom: "8px",
+                      textAlign: "center"
+                    },
+                    children: [
+                      selectedIds.size,
+                      " selected"
+                    ]
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "div",
+                  {
+                    style: {
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                      marginBottom: "8px"
+                    },
+                    children: /* @__PURE__ */ jsxRuntimeExports.jsxs(IonText, { style: { fontSize: "13px", color: "#1f2937" }, children: [
+                      "Page",
+                      " ",
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { className: "text-primary pagination-current-page", children: page }),
+                      " ",
+                      "of ",
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: pageCount }),
+                      totalCount && ` (${totalCount})`
+                    ] })
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "div",
+                  {
+                    style: {
+                      display: "flex",
+                      gap: "8px",
+                      justifyContent: "center"
+                    },
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        IonButton,
+                        {
+                          fill: "outline",
+                          size: "small",
+                          color: "primary",
+                          className: "pagination-btn pagination-btn-outline",
+                          disabled: page === 1,
+                          onClick: () => {
+                            if (prev) prev();
+                            else if (onPageChange) onPageChange(page - 1);
+                          },
+                          style: { flex: 1 },
+                          children: "Previous"
+                        }
+                      ),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        IonButton,
+                        {
+                          fill: "outline",
+                          size: "small",
+                          color: "primary",
+                          className: "pagination-btn pagination-btn-outline",
+                          disabled: page === pageCount,
+                          onClick: () => {
+                            if (next) next();
+                            else if (onPageChange) onPageChange(page + 1);
+                          },
+                          style: { flex: 1 },
+                          children: "Next"
+                        }
+                      )
+                    ]
+                  }
+                )
+              ]
+            }
+          )
         ]
       }
     );
@@ -36323,50 +36370,55 @@ const DataTable = ({
         ]
       }
     ),
-    !loading && displayRows?.length > 0 && /* @__PURE__ */ jsxRuntimeExports.jsx(
-      IonToolbar,
+    !loading && displayRows?.length > 0 && /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      "div",
       {
-        className: "ion-padding-vertical custom-toolbar-data",
-        style: { backgroundColor: "#fff" },
-        children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          "div",
-          {
-            style: {
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              width: "100%",
-              flexWrap: "wrap",
-              gap: "10px",
-              padding: "0 16px",
-              backgroundColor: "#fff"
-            },
-            children: [
-              selectable && selectedIds.size > 0 && /* @__PURE__ */ jsxRuntimeExports.jsxs(IonText, { className: "text-sm", color: "primary", children: [
-                selectedIds.size,
-                " selected"
-              ] }),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                IonText,
-                {
-                  className: "text-sm",
-                  style: { flex: 1, textAlign: "center" },
-                  children: [
-                    "Page ",
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { className: "text-primary", children: page }),
-                    " of",
-                    " ",
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: pageCount }),
-                    totalCount && ` (${totalCount} total)`
-                  ]
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs(IonButtons, { children: [
+        className: "datatable-pagination-toolbar datatable-desktop-pagination",
+        style: {
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          width: "100%",
+          flexWrap: "wrap",
+          gap: "10px",
+          padding: "12px 16px",
+          backgroundColor: "#ffffff",
+          color: "#1f2937",
+          borderTop: "1px solid #e5e7eb"
+        },
+        children: [
+          selectable && selectedIds.size > 0 && /* @__PURE__ */ jsxRuntimeExports.jsxs(IonText, { className: "text-sm", color: "primary", children: [
+            selectedIds.size,
+            " selected"
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            IonText,
+            {
+              className: "text-sm pagination-page-info",
+              style: { flex: 1, textAlign: "center", color: "#1f2937" },
+              children: [
+                "Page",
+                " ",
+                /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { className: "text-primary pagination-current-page", children: page }),
+                " ",
+                "of ",
+                /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: pageCount }),
+                totalCount && ` (${totalCount} total)`
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "div",
+            {
+              className: "datatable-pagination-buttons",
+              style: { display: "flex", gap: "8px", alignItems: "center" },
+              children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
                   IonButton,
                   {
                     fill: "clear",
                     color: "primary",
+                    className: "pagination-btn pagination-btn-clear",
                     disabled: page === 1,
                     onClick: () => {
                       if (prev) prev();
@@ -36380,6 +36432,7 @@ const DataTable = ({
                   {
                     fill: "clear",
                     color: "primary",
+                    className: "pagination-btn pagination-btn-clear",
                     disabled: page === pageCount,
                     onClick: () => {
                       if (next) next();
@@ -36388,42 +36441,42 @@ const DataTable = ({
                     children: "Next"
                   }
                 )
-              ] })
-            ]
-          }
-        )
+              ]
+            }
+          )
+        ]
       }
     )
   ] });
 };
 
 const React$Q = await importShared('react');
-const {useCallback: useCallback$o,useContext: useContext$B,useEffect: useEffect$14,useRef: useRef$j,useState: useState$17} = React$Q;
+const {useCallback: useCallback$o,useContext: useContext$B,useEffect: useEffect$15,useRef: useRef$j,useState: useState$18} = React$Q;
 function Event({ id }) {
   const { eventsList, reload, isLoading, columns, pagination } = useContext$B(
     MEMISContext.EventsContext
   );
   const { user } = useContext$B(MEMISContext.UserRolesContext) || {};
   const navigate = useNavigate();
-  const [rows, setRows] = useState$17([]);
-  const [searchValue, setSearchValue] = useState$17("");
-  const [search, setSearch] = useState$17("");
-  const [organisationUnits, setOrganisationUnits] = useState$17([]);
-  const [selectedLocation, setSelectedLocation] = useState$17("");
-  const [optionFilters, setOptionFilters] = useState$17([]);
-  const [showSearchField, setShowSearchField] = useState$17(false);
-  const [optionSets, setOptionSets] = useState$17([]);
-  const [filterType, setFilterType] = useState$17([]);
-  const [filterValue, setFilterValue] = useState$17([]);
-  const [filterOpen, setFilterOpen] = useState$17(false);
-  const [filterValueOpen, setFilterValueOpen] = useState$17(null);
-  const [activePicker, setActivePicker] = useState$17(null);
+  const [rows, setRows] = useState$18([]);
+  const [searchValue, setSearchValue] = useState$18("");
+  const [search, setSearch] = useState$18("");
+  const [organisationUnits, setOrganisationUnits] = useState$18([]);
+  const [selectedLocation, setSelectedLocation] = useState$18("");
+  const [optionFilters, setOptionFilters] = useState$18([]);
+  const [showSearchField, setShowSearchField] = useState$18(false);
+  const [optionSets, setOptionSets] = useState$18([]);
+  const [filterType, setFilterType] = useState$18([]);
+  const [filterValue, setFilterValue] = useState$18([]);
+  const [filterOpen, setFilterOpen] = useState$18(false);
+  const [filterValueOpen, setFilterValueOpen] = useState$18(null);
+  const [activePicker, setActivePicker] = useState$18(null);
   const locationRef = useRef$j("");
   const filterValueRef = useRef$j([]);
   const filterTypesRef = useRef$j([]);
   const optionFiltersRef = useRef$j([]);
   const runQueryRef = useRef$j(null);
-  useEffect$14(() => {
+  useEffect$15(() => {
     filterValueRef.current = filterValue;
     filterTypesRef.current = filterType;
     optionFiltersRef.current = optionFilters;
@@ -36446,10 +36499,10 @@ function Event({ id }) {
     },
     [id, reload, buildOptions]
   );
-  useEffect$14(() => {
+  useEffect$15(() => {
     runQueryRef.current = runQuery;
   }, [runQuery]);
-  useEffect$14(() => {
+  useEffect$15(() => {
     const load = async () => {
       try {
         const orgs = await LocalForageServiceInstance.getItem(
@@ -36465,7 +36518,7 @@ function Event({ id }) {
     load();
   }, []);
   const userIdRef = useRef$j(null);
-  useEffect$14(() => {
+  useEffect$15(() => {
     if (!user?.userRoles?.length) return;
     const userId = user?.id || user?.username || JSON.stringify(user?.userRoles?.map((r) => r.id).sort());
     if (userIdRef.current === userId) return;
@@ -36493,7 +36546,7 @@ function Event({ id }) {
     };
     resolveLocation();
   }, [id, user]);
-  useEffect$14(() => {
+  useEffect$15(() => {
     const load = async () => {
       const dataStore = await LocalForageServiceInstance.getItem(
         "dataStore",
@@ -36512,13 +36565,13 @@ function Event({ id }) {
     };
     load();
   }, [id]);
-  useEffect$14(() => {
+  useEffect$15(() => {
     if (id && selectedLocation) runQueryRef.current?.();
   }, [id]);
-  useEffect$14(() => {
+  useEffect$15(() => {
     setRows(eventsList || []);
   }, [eventsList]);
-  useEffect$14(() => {
+  useEffect$15(() => {
     const timer = setTimeout(() => {
       if (id && searchValue.trim() !== search.trim()) {
         const trimmed = searchValue.trim();
@@ -36529,14 +36582,14 @@ function Event({ id }) {
     }, 400);
     return () => clearTimeout(timer);
   }, [searchValue, id, search]);
-  const [isSearching, setIsSearching] = useState$17(false);
-  useEffect$14(() => {
+  const [isSearching, setIsSearching] = useState$18(false);
+  useEffect$15(() => {
     if (id && search.trim()) {
       setIsSearching(true);
       runQueryRef.current?.();
     }
   }, [search, id]);
-  useEffect$14(() => {
+  useEffect$15(() => {
     if (!isLoading) {
       setIsSearching(false);
     }
@@ -36582,7 +36635,7 @@ function Event({ id }) {
     });
     setFilterOpen(false);
   };
-  useEffect$14(() => {
+  useEffect$15(() => {
     const handleClick = (e) => {
       const path = e.composedPath?.() || [];
       for (let el of path) {
@@ -62975,7 +63028,7 @@ class CapacitorBarcodeScanner {
 }
 
 const React$P = await importShared('react');
-const {useEffect: useEffect$13,useContext: useContext$A,useState: useState$16,useCallback: useCallback$n} = React$P;
+const {useEffect: useEffect$14,useContext: useContext$A,useState: useState$17,useCallback: useCallback$n} = React$P;
 const Tracker = ({ id }) => {
   const {
     equipmentList,
@@ -62988,21 +63041,21 @@ const Tracker = ({ id }) => {
   const { user } = useContext$A(MEMISContext.UserRolesContext) || {};
   const location = useLocation();
   const navigate = useNavigate();
-  const [rows, setRows] = useState$16([]);
-  const [search, setSearch] = useState$16("");
-  const [searchValue, setSearchValue] = useState$16("");
-  const [organisationUnits, setOrganisationUnits] = useState$16([]);
-  const [equipmentNamesOptions, setEquipmentNamesOptions] = useState$16([]);
-  const [selectedLocation, setSelectedLocation] = useState$16("");
-  const [optionFilters, setOptionFilters] = useState$16([]);
-  const [searchFilter, setSearchFilter] = useState$16(null);
-  const [filterType, setFilterType] = useState$16("");
-  const [filterValue, setFilterValue] = useState$16("");
-  const [appliedFilter, setAppliedFilter] = useState$16({
+  const [rows, setRows] = useState$17([]);
+  const [search, setSearch] = useState$17("");
+  const [searchValue, setSearchValue] = useState$17("");
+  const [organisationUnits, setOrganisationUnits] = useState$17([]);
+  const [equipmentNamesOptions, setEquipmentNamesOptions] = useState$17([]);
+  const [selectedLocation, setSelectedLocation] = useState$17("");
+  const [optionFilters, setOptionFilters] = useState$17([]);
+  const [searchFilter, setSearchFilter] = useState$17(null);
+  const [filterType, setFilterType] = useState$17("");
+  const [filterValue, setFilterValue] = useState$17("");
+  const [appliedFilter, setAppliedFilter] = useState$17({
     type: null,
     value: null
   });
-  const [filterOpen, setFilterOpen] = useState$16(false);
+  const [filterOpen, setFilterOpen] = useState$17(false);
   const filterRef = React$P.useRef({
     type: "",
     value: ""
@@ -63018,7 +63071,7 @@ const Tracker = ({ id }) => {
     const equipmentOptions = options?.find((opt) => opt?.id === "VuKFOqg584G") || [];
     return equipmentOptions?.options || [];
   });
-  useEffect$13(() => {
+  useEffect$14(() => {
     const loadOptions = async () => {
       const options = await getEquipmentNamesOptions();
       setEquipmentNamesOptions(options || []);
@@ -63073,10 +63126,10 @@ const Tracker = ({ id }) => {
     [id, reload, buildOptions]
   );
   const runQueryRef = React$P.useRef(runQuery);
-  useEffect$13(() => {
+  useEffect$14(() => {
     runQueryRef.current = runQuery;
   }, [runQuery]);
-  useEffect$13(() => {
+  useEffect$14(() => {
     const loadOrgUnits = async () => {
       try {
         const orgUnits = await LocalForageServiceInstance.getItem(
@@ -63092,7 +63145,7 @@ const Tracker = ({ id }) => {
     };
     loadOrgUnits();
   }, []);
-  useEffect$13(() => {
+  useEffect$14(() => {
     if (!organisationUnits.length || !user?.userRoles?.length) return;
     const resolveDefaultLocation = async () => {
       try {
@@ -63123,10 +63176,10 @@ const Tracker = ({ id }) => {
     };
     resolveDefaultLocation();
   }, [organisationUnits, id, user]);
-  useEffect$13(() => {
+  useEffect$14(() => {
     setRows(equipmentList || []);
   }, [equipmentList]);
-  useEffect$13(() => {
+  useEffect$14(() => {
     const timeout = setTimeout(() => {
       if (id && searchValue.trim() !== search.trim()) {
         const trimmed = searchValue.trim();
@@ -63137,14 +63190,14 @@ const Tracker = ({ id }) => {
     }, 400);
     return () => clearTimeout(timeout);
   }, [searchValue, id, search]);
-  const [isSearching, setIsSearching] = useState$16(false);
-  useEffect$13(() => {
+  const [isSearching, setIsSearching] = useState$17(false);
+  useEffect$14(() => {
     if (id && search.trim()) {
       setIsSearching(true);
       runQueryRef.current();
     }
   }, [search, id]);
-  useEffect$13(() => {
+  useEffect$14(() => {
     if (!isLoading) {
       setIsSearching(false);
     }
@@ -63241,7 +63294,7 @@ const Tracker = ({ id }) => {
       console.log("QR Scan failed:", err);
     }
   };
-  useEffect$13(() => {
+  useEffect$14(() => {
     const load = async () => {
       const programAttributesResult = await LocalForageServiceInstance.getItem(
         "dataStore",
@@ -63260,7 +63313,7 @@ const Tracker = ({ id }) => {
     };
     load();
   }, [id]);
-  useEffect$13(() => {
+  useEffect$14(() => {
     optionFiltersRef.current = optionFilters || [];
     searchFiltersRef.current = searchFilter || null;
   }, [optionFilters, searchFilter]);
@@ -63419,7 +63472,7 @@ const Tracker = ({ id }) => {
   ] });
 };
 
-const {useEffect: useEffect$12,useRef: useRef$i} = await importShared('react');
+const {useEffect: useEffect$13,useRef: useRef$i} = await importShared('react');
 
 const GeneralCustomModal = ({
   isOpen,
@@ -63435,7 +63488,7 @@ const GeneralCustomModal = ({
   showCloseButton = true,
   onDidDismiss
 }) => {
-  useEffect$12(() => {
+  useEffect$13(() => {
     const handleClick = (e) => {
       const path = e.composedPath?.() || [];
       for (let el of path) {
@@ -63514,7 +63567,7 @@ const GeneralCustomModal = ({
 };
 
 const React$O = await importShared('react');
-const {useState: useState$15,useEffect: useEffect$11,useMemo: useMemo$C,useRef: useRef$h,useCallback: useCallback$m} = React$O;
+const {useState: useState$16,useEffect: useEffect$12,useMemo: useMemo$C,useRef: useRef$h,useCallback: useCallback$m} = React$O;
 const SearchFilterCard = ({
   children,
   searchText,
@@ -63535,29 +63588,29 @@ const SearchFilterCard = ({
   onScanSearch,
   programId
 }) => {
-  const [popoverEvent, setPopoverEvent] = useState$15(null);
-  const [filterPopoverEvent, setFilterPopoverEvent] = useState$15(null);
-  const [localApproval, setLocalApproval] = useState$15(
+  const [popoverEvent, setPopoverEvent] = useState$16(null);
+  const [filterPopoverEvent, setFilterPopoverEvent] = useState$16(null);
+  const [localApproval, setLocalApproval] = useState$16(
     filterOptions?.approval ?? ""
   );
   const lastExternalApprovalRef = useRef$h(filterOptions?.approval ?? "");
-  const [scanOpen, setScanOpen] = useState$15(false);
-  const [scanError, setScanError] = useState$15("");
+  const [scanOpen, setScanOpen] = useState$16(false);
+  const [scanError, setScanError] = useState$16("");
   const videoRef = useRef$h(null);
   const streamRef = useRef$h(null);
   const rafRef = useRef$h(null);
   const detectorRef = useRef$h(null);
-  const [optionFilters, setOptionFilters] = useState$15([]);
-  const [searchFilter, setSearchFilter] = useState$15(null);
-  const [organisationUnits, setOrganisationUnits] = useState$15([]);
-  const [selectedLocation, setSelectedLocation] = useState$15("");
-  const [filterType, setFilterType] = useState$15("");
-  const [filterValue, setFilterValue] = useState$15("");
-  const [appliedFilter, setAppliedFilter] = useState$15({
+  const [optionFilters, setOptionFilters] = useState$16([]);
+  const [searchFilter, setSearchFilter] = useState$16(null);
+  const [organisationUnits, setOrganisationUnits] = useState$16([]);
+  const [selectedLocation, setSelectedLocation] = useState$16("");
+  const [filterType, setFilterType] = useState$16("");
+  const [filterValue, setFilterValue] = useState$16("");
+  const [appliedFilter, setAppliedFilter] = useState$16({
     type: null,
     value: null
   });
-  const [filterOpen, setFilterOpen] = useState$15(false);
+  const [filterOpen, setFilterOpen] = useState$16(false);
   const filterRef = React$O.useRef({
     type: "",
     value: ""
@@ -63576,7 +63629,7 @@ const SearchFilterCard = ({
     },
     [isScanDebug]
   );
-  useEffect$11(() => {
+  useEffect$12(() => {
     const onUnhandledRejection = (event) => {
       const reason = String(
         event?.reason?.message || event?.reason || ""
@@ -63610,7 +63663,7 @@ const SearchFilterCard = ({
     const shownWords = labels.slice(0, max).join(", ");
     return `Search by ${shownWords}${labels.length > max ? "..." : ""}`;
   }, [searchPlaceholder, filterColumns]);
-  useEffect$11(() => {
+  useEffect$12(() => {
     const external = filterOptions?.approval ?? "";
     if (lastExternalApprovalRef.current !== external) {
       lastExternalApprovalRef.current = external;
@@ -63648,7 +63701,7 @@ const SearchFilterCard = ({
       setTimeout(finish, 600);
     });
   }, []);
-  useEffect$11(() => {
+  useEffect$12(() => {
     return () => {
       stopScanner();
     };
@@ -63775,7 +63828,7 @@ const SearchFilterCard = ({
     setScanOpen(false);
     stopScanner();
   }, [stopScanner]);
-  useEffect$11(() => {
+  useEffect$12(() => {
     if (!scanOpen) return;
     let cancelled = false;
     const start = async () => {
@@ -63870,7 +63923,7 @@ const SearchFilterCard = ({
   };
   const resetFilters = () => {
   };
-  useEffect$11(() => {
+  useEffect$12(() => {
     const load = async () => {
       const programAttributesResult = await LocalForageServiceInstance.getItem(
         "dataStore",
@@ -63891,7 +63944,7 @@ const SearchFilterCard = ({
     };
     load();
   }, [programId]);
-  useEffect$11(() => {
+  useEffect$12(() => {
     optionFiltersRef.current = optionFilters || [];
     searchFiltersRef.current = searchFilter || null;
   }, [optionFilters, searchFilter]);
@@ -64386,7 +64439,7 @@ const eventSearchFilter = async (programId, data) => {
   return { filter: "&filter=" + filterString };
 };
 
-const {useCallback: useCallback$k,useEffect: useEffect$10,useMemo: useMemo$A,useRef: useRef$g,useState: useState$14} = await importShared('react');
+const {useCallback: useCallback$k,useEffect: useEffect$11,useMemo: useMemo$A,useRef: useRef$g,useState: useState$15} = await importShared('react');
 function ItemSearch({
   programId,
   programStageId,
@@ -64400,15 +64453,15 @@ function ItemSearch({
   onResults,
   onLoadingChange
 }) {
-  const [debounced, setDebounced] = useState$14((searchText || "").trim());
-  const [programType, setProgramType] = useState$14(null);
+  const [debounced, setDebounced] = useState$15((searchText || "").trim());
+  const [programType, setProgramType] = useState$15(null);
   const mountedRef = useRef$g(true);
   const onResultsRef = useRef$g(onResults);
   const onLoadingRef = useRef$g(onLoadingChange);
-  useEffect$10(() => {
+  useEffect$11(() => {
     onResultsRef.current = onResults;
   }, [onResults]);
-  useEffect$10(() => {
+  useEffect$11(() => {
     onLoadingRef.current = onLoadingChange;
   }, [onLoadingChange]);
   const keySet = useMemo$A(
@@ -64434,7 +64487,7 @@ function ItemSearch({
     () => (orgUnits || []).map((o) => o.id).join(","),
     [orgUnits]
   );
-  const [searchSets, setSearchSets] = useState$14({ equipment: [], spare: [] });
+  const [searchSets, setSearchSets] = useState$15({ equipment: [], spare: [] });
   const EQUIP_SET = useMemo$A(() => searchSets?.equipment || [], [searchSets]);
   const SPARE_SET = useMemo$A(() => searchSets?.spare || [], [searchSets]);
   const teiSearch = useTeiSearch(visibleColumns);
@@ -64503,17 +64556,17 @@ function ItemSearch({
     },
     [colKeys]
   );
-  useEffect$10(() => {
+  useEffect$11(() => {
     mountedRef.current = true;
     return () => {
       mountedRef.current = false;
     };
   }, []);
-  useEffect$10(() => {
+  useEffect$11(() => {
     const t = setTimeout(() => setDebounced((searchText || "").trim()), 250);
     return () => clearTimeout(t);
   }, [searchText]);
-  useEffect$10(() => {
+  useEffect$11(() => {
     if (!programId) return;
     const fetchProgramType = async () => {
       try {
@@ -64525,7 +64578,7 @@ function ItemSearch({
     };
     fetchProgramType();
   }, [programId]);
-  useEffect$10(() => {
+  useEffect$11(() => {
     let cancelled = false;
     (async () => {
       const sets = await getSearchAttributeSets(programId);
@@ -64537,7 +64590,7 @@ function ItemSearch({
       cancelled = true;
     };
   }, [programId]);
-  useEffect$10(() => {
+  useEffect$11(() => {
     let cancelled = false;
     const runTei = async () => {
       const attributeUids = pickTeiScope();
@@ -64896,16 +64949,16 @@ const sortRowsByApproval = (rows, approvalFieldKey) => {
   return copy;
 };
 
-const {useEffect: useEffect$$,useState: useState$13} = await importShared('react');
+const {useEffect: useEffect$10,useState: useState$14} = await importShared('react');
 
 function useQrScanEnabled({
   menuItems,
   currentNavigationId,
   scanProgramId,
 }) {
-  const [qrScanEnabled, setQrScanEnabled] = useState$13(false);
+  const [qrScanEnabled, setQrScanEnabled] = useState$14(false);
 
-  useEffect$$(() => {
+  useEffect$10(() => {
     let cancelled = false;
 
     (async () => {
@@ -65011,7 +65064,7 @@ function getBlankPlaceholderForDataElement(dataElements = [], deId) {
   );
 }
 
-const {useCallback: useCallback$j,useContext: useContext$z,useEffect: useEffect$_,useMemo: useMemo$z,useRef: useRef$f,useState: useState$12} = await importShared('react');
+const {useCallback: useCallback$j,useContext: useContext$z,useEffect: useEffect$$,useMemo: useMemo$z,useRef: useRef$f,useState: useState$13} = await importShared('react');
 function StageEvents({
   id,
   programId: programIdProp,
@@ -65023,19 +65076,19 @@ function StageEvents({
   const location = useLocation();
   const { user } = useContext$z(MEMISContext.UserRolesContext);
   const { menuItems } = useContext$z(MEMISContext.MenuContext);
-  const [rows, setRows] = useState$12([]);
-  const [priorities, setPriorities] = useState$12(null);
-  const [loading, setLoading] = useState$12(false);
-  const [loadingColumns, setLoadingColumns] = useState$12(false);
-  const [loadingRows, setLoadingRows] = useState$12(false);
-  const [searchText, setSearchText] = useState$12("");
-  const [rawRows, setRawRows] = useState$12([]);
-  const [filterOptions, setFilterOptions] = useState$12({ approval: null });
-  const [approvalFieldKey, setApprovalFieldKey] = useState$12(null);
-  const [approvalConfig, setApprovalConfig] = useState$12(null);
+  const [rows, setRows] = useState$13([]);
+  const [priorities, setPriorities] = useState$13(null);
+  const [loading, setLoading] = useState$13(false);
+  const [loadingColumns, setLoadingColumns] = useState$13(false);
+  const [loadingRows, setLoadingRows] = useState$13(false);
+  const [searchText, setSearchText] = useState$13("");
+  const [rawRows, setRawRows] = useState$13([]);
+  const [filterOptions, setFilterOptions] = useState$13({ approval: null });
+  const [approvalFieldKey, setApprovalFieldKey] = useState$13(null);
+  const [approvalConfig, setApprovalConfig] = useState$13(null);
   const orgUnitCacheRef = useRef$f(/* @__PURE__ */ new Map());
-  const [allColumnsOrdered, setAllColumnsOrdered] = useState$12([]);
-  const [visibleColumnKeys, setVisibleColumnKeys] = useState$12(/* @__PURE__ */ new Set());
+  const [allColumnsOrdered, setAllColumnsOrdered] = useState$13([]);
+  const [visibleColumnKeys, setVisibleColumnKeys] = useState$13(/* @__PURE__ */ new Set());
   const visibleColumns = useMemo$z(
     () => allColumnsOrdered.filter((c) => visibleColumnKeys.has(c.key)),
     [allColumnsOrdered, visibleColumnKeys]
@@ -65047,12 +65100,12 @@ function StageEvents({
     const shown = labels.slice(0, max).join(", ");
     return `Search by ${shown}${labels.length > max ? "..." : ""}`;
   }, [visibleColumns]);
-  const [selectedRow, setSelectedRow] = useState$12(null);
-  const [selectedRowId, setSelectedRowId] = useState$12(null);
-  const [showActions, setShowActions] = useState$12(false);
-  const [pendingDelete, setPendingDelete] = useState$12(null);
-  const [deletingId, setDeletingId] = useState$12(null);
-  const [fallbackStageId, setFallbackStageId] = useState$12(null);
+  const [selectedRow, setSelectedRow] = useState$13(null);
+  const [selectedRowId, setSelectedRowId] = useState$13(null);
+  const [showActions, setShowActions] = useState$13(false);
+  const [pendingDelete, setPendingDelete] = useState$13(null);
+  const [deletingId, setDeletingId] = useState$13(null);
+  const [fallbackStageId, setFallbackStageId] = useState$13(null);
   const getRowId = (row) => row?.id || row?.event || row?.enrollment || row?.trackedEntity || null;
   const { resolvedProgramId, resolvedStageId } = useMemo$z(() => {
     const match = menuItems?.find((m) => m?.id === (stageIdProp || id)) || null;
@@ -65078,10 +65131,10 @@ function StageEvents({
     if (fallbackStageId) return fallbackStageId;
     return rawStage || null;
   }, [stageIdProp, resolvedStageId, fallbackStageId, effectiveProgramId]);
-  useEffect$_(() => {
+  useEffect$$(() => {
     setFallbackStageId(null);
   }, [effectiveProgramId, stageIdProp, resolvedStageId]);
-  useEffect$_(() => {
+  useEffect$$(() => {
     const needsLookup = !effectiveStageId || effectiveProgramId && effectiveStageId === effectiveProgramId;
     if (!effectiveProgramId || !needsLookup) return;
     (async () => {
@@ -65190,7 +65243,7 @@ function StageEvents({
       setLoadingColumns(false);
     }
   };
-  const [pagination, setPagination] = useState$12({
+  const [pagination, setPagination] = useState$13({
     page: 1,
     pageCount: 1,
     pageSize: 100,
@@ -65417,7 +65470,7 @@ function StageEvents({
     );
     setPriorities(res);
   };
-  useEffect$_(() => {
+  useEffect$$(() => {
     setAllColumnsOrdered([]);
     setVisibleColumnKeys(/* @__PURE__ */ new Set());
     setRawRows([]);
@@ -65438,7 +65491,7 @@ function StageEvents({
       setPagination((prev) => ({ ...prev, page: 1 }));
     }
   }, [user, effectiveProgramId, effectiveStageId, location.pathname]);
-  useEffect$_(() => {
+  useEffect$$(() => {
     const filtered = filterRowsByApproval(
       rawRows,
       filterOptions.approval,
@@ -65451,7 +65504,7 @@ function StageEvents({
     const v = value || null;
     setFilterOptions((prev) => ({ ...prev, approval: v }));
   };
-  useEffect$_(() => {
+  useEffect$$(() => {
     if (!effectiveProgramId || !effectiveStageId || !user?.organisationUnits || allColumnsOrdered.length === 0)
       return;
     if ((searchText ?? "").trim().length < 2) {
@@ -65588,7 +65641,7 @@ function StageEvents({
   ] });
 }
 
-const {useCallback: useCallback$i,useContext: useContext$y,useEffect: useEffect$Z,useMemo: useMemo$y,useRef: useRef$e,useState: useState$11} = await importShared('react');
+const {useCallback: useCallback$i,useContext: useContext$y,useEffect: useEffect$_,useMemo: useMemo$y,useRef: useRef$e,useState: useState$12} = await importShared('react');
 function StageSectionsEvents({
   id,
   programId: programIdProp,
@@ -65601,19 +65654,19 @@ function StageSectionsEvents({
   const { user } = useContext$y(MEMISContext.UserRolesContext);
   const { menuItems } = useContext$y(MEMISContext.MenuContext);
   const queryParams = new URLSearchParams(location.search);
-  const [rows, setRows] = useState$11([]);
-  const [priorities, setPriorities] = useState$11(null);
-  const [loading, setLoading] = useState$11(false);
-  const [loadingColumns, setLoadingColumns] = useState$11(false);
-  const [loadingRows, setLoadingRows] = useState$11(false);
-  const [searchText, setSearchText] = useState$11("");
-  const [rawRows, setRawRows] = useState$11([]);
-  const [filterOptions, setFilterOptions] = useState$11({ approval: null });
-  const [approvalFieldKey, setApprovalFieldKey] = useState$11(null);
-  const [approvalConfig, setApprovalConfig] = useState$11(null);
+  const [rows, setRows] = useState$12([]);
+  const [priorities, setPriorities] = useState$12(null);
+  const [loading, setLoading] = useState$12(false);
+  const [loadingColumns, setLoadingColumns] = useState$12(false);
+  const [loadingRows, setLoadingRows] = useState$12(false);
+  const [searchText, setSearchText] = useState$12("");
+  const [rawRows, setRawRows] = useState$12([]);
+  const [filterOptions, setFilterOptions] = useState$12({ approval: null });
+  const [approvalFieldKey, setApprovalFieldKey] = useState$12(null);
+  const [approvalConfig, setApprovalConfig] = useState$12(null);
   const orgUnitCacheRef = useRef$e(/* @__PURE__ */ new Map());
-  const [allColumnsOrdered, setAllColumnsOrdered] = useState$11([]);
-  const [visibleColumnKeys, setVisibleColumnKeys] = useState$11(/* @__PURE__ */ new Set());
+  const [allColumnsOrdered, setAllColumnsOrdered] = useState$12([]);
+  const [visibleColumnKeys, setVisibleColumnKeys] = useState$12(/* @__PURE__ */ new Set());
   const visibleColumns = useMemo$y(
     () => allColumnsOrdered?.filter((c) => visibleColumnKeys?.has(c?.key)),
     [allColumnsOrdered, visibleColumnKeys]
@@ -65625,12 +65678,12 @@ function StageSectionsEvents({
     const shown = labels.slice(0, max).join(", ");
     return `Search by ${shown}${labels.length > max ? "..." : ""}`;
   }, [visibleColumns]);
-  const [selectedRow, setSelectedRow] = useState$11(null);
-  const [selectedRowId, setSelectedRowId] = useState$11(null);
-  const [showActions, setShowActions] = useState$11(false);
-  const [pendingDelete, setPendingDelete] = useState$11(null);
-  const [deletingId, setDeletingId] = useState$11(null);
-  const [fallbackStageId, setFallbackStageId] = useState$11(null);
+  const [selectedRow, setSelectedRow] = useState$12(null);
+  const [selectedRowId, setSelectedRowId] = useState$12(null);
+  const [showActions, setShowActions] = useState$12(false);
+  const [pendingDelete, setPendingDelete] = useState$12(null);
+  const [deletingId, setDeletingId] = useState$12(null);
+  const [fallbackStageId, setFallbackStageId] = useState$12(null);
   const getRowId = (row) => row?.id || row?.event || row?.enrollment || row?.trackedEntity || null;
   const { resolvedProgramId, resolvedStageId } = useMemo$y(() => {
     const match = menuItems?.find((m) => m?.id === (stageIdProp || id)) || null;
@@ -65656,10 +65709,10 @@ function StageSectionsEvents({
     if (fallbackStageId) return fallbackStageId;
     return rawStage || null;
   }, [stageIdProp, resolvedStageId, fallbackStageId, effectiveProgramId]);
-  useEffect$Z(() => {
+  useEffect$_(() => {
     setFallbackStageId(null);
   }, [effectiveProgramId, stageIdProp, resolvedStageId]);
-  useEffect$Z(() => {
+  useEffect$_(() => {
     const needsLookup = !effectiveStageId || effectiveProgramId && effectiveStageId === effectiveProgramId;
     if (!effectiveProgramId || !needsLookup) return;
     (async () => {
@@ -65728,7 +65781,7 @@ function StageSectionsEvents({
       setLoadingColumns(false);
     }
   };
-  const [pagination, setPagination] = useState$11({
+  const [pagination, setPagination] = useState$12({
     page: 1,
     pageCount: 1,
     pageSize: 50,
@@ -65990,7 +66043,7 @@ function StageSectionsEvents({
     );
     setPriorities(res);
   };
-  useEffect$Z(() => {
+  useEffect$_(() => {
     if (effectiveProgramId && effectiveStageId) {
       getProgramDE(effectiveProgramId, effectiveStageId);
       getPriorityColors(effectiveProgramId);
@@ -66009,7 +66062,7 @@ function StageSectionsEvents({
     const v = value || null;
     setFilterOptions((prev) => ({ ...prev, approval: v }));
   };
-  useEffect$Z(() => {
+  useEffect$_(() => {
     if (!effectiveProgramId || !effectiveStageId || !user?.organisationUnits || allColumnsOrdered.length === 0)
       return;
     if ((searchText ?? "").trim().length < 2) {
@@ -66117,7 +66170,7 @@ function StageSectionsEvents({
 }
 
 const React$N = await importShared('react');
-const {useState: useState$10,useMemo: useMemo$x,useEffect: useEffect$Y} = React$N;
+const {useState: useState$11,useMemo: useMemo$x,useEffect: useEffect$Z} = React$N;
 
 const {createPortal: createPortal$3} = await importShared('react-dom');
 function EquipmentPicker({
@@ -66130,12 +66183,12 @@ function EquipmentPicker({
   loading = false,
   error = null
 }) {
-  const [searchTerm, setSearchTerm] = useState$10("");
-  const [selectedItem, setSelectedItem] = useState$10(null);
-  const [wardsList, setWardsList] = useState$10([]);
-  const [selectedWard, setSelectedWard] = useState$10(null);
-  const [isLoading, setLoading] = useState$10(loading);
-  const [avEquipment, setAvailableEquipment] = useState$10(availableEquipment);
+  const [searchTerm, setSearchTerm] = useState$11("");
+  const [selectedItem, setSelectedItem] = useState$11(null);
+  const [wardsList, setWardsList] = useState$11([]);
+  const [selectedWard, setSelectedWard] = useState$11(null);
+  const [isLoading, setLoading] = useState$11(loading);
+  const [avEquipment, setAvailableEquipment] = useState$11(availableEquipment);
   const filteredEquipment = useMemo$x(() => {
     if (!searchTerm.trim()) return avEquipment;
     const term = searchTerm.toLowerCase();
@@ -66265,14 +66318,14 @@ function EquipmentPicker({
       setLoading(false);
     }
   };
-  useEffect$Y(() => {
+  useEffect$Z(() => {
     getWards();
   }, []);
-  useEffect$Y(() => {
+  useEffect$Z(() => {
     setLoading(loading);
     console.log({ availableEquipment });
   }, [loading]);
-  useEffect$Y(() => {
+  useEffect$Z(() => {
     setAvailableEquipment(availableEquipment);
     console.log({ availableEquipment });
   }, [availableEquipment]);
@@ -66804,7 +66857,7 @@ function EquipmentPicker({
   );
 }
 
-const {useEffect: useEffect$X,useState: useState$$} = await importShared('react');
+const {useEffect: useEffect$Y,useState: useState$10} = await importShared('react');
 
 const A$7 = (x) => Array.isArray(x) ? x : [];
 const RequiredLabel = ({ label, required }) => /* @__PURE__ */ jsxRuntimeExports.jsxs(IonLabel, { position: "stacked", className: "ion-text-wrap", children: [
@@ -66817,8 +66870,8 @@ function RenderField({ field, required, missing, formData, handleChange, getVal,
   const type = field?.valueType;
   const value = formData?.[field?.id] || getVal(field?.id) || "";
   const label = field?.formName || field?.name || field?.id;
-  const [options, setOptions] = useState$$([]);
-  useEffect$X(() => {
+  const [options, setOptions] = useState$10([]);
+  useEffect$Y(() => {
     if (!field?.optionSet) return;
     setOptions(field?.optionSet?.options || []);
   }, []);
@@ -66908,7 +66961,7 @@ function RenderField({ field, required, missing, formData, handleChange, getVal,
   }
 }
 
-const {useCallback: useCallback$h,useEffect: useEffect$W,useRef: useRef$d,useState: useState$_} = await importShared('react');
+const {useCallback: useCallback$h,useEffect: useEffect$X,useRef: useRef$d,useState: useState$$} = await importShared('react');
 const JOB_CARD_SOURCE_DE_ID = "GeM9XLFWC7d";
 const MAINTENANCE_TYPE_DE_ID = "EbJI5Loxjbl";
 const REQUESTER_DE_ID$1 = "M074NJAYjb6";
@@ -66926,19 +66979,19 @@ function MaintenanceEvents({
   program,
   user
 }) {
-  const [loading, setLoading] = useState$_(false);
-  const [loadingMessage, setLoadingMessage] = useState$_(
+  const [loading, setLoading] = useState$$(false);
+  const [loadingMessage, setLoadingMessage] = useState$$(
     "Fetching maintenance activities"
   );
-  const [events, setEvents] = useState$_([]);
-  const [page, setPage] = useState$_(1);
-  const [rows, setRows] = useState$_([]);
-  const [formData, setFormData] = useState$_();
-  const [tei, setTei] = useState$_([]);
-  const [selected, setSelected] = useState$_();
-  const [section, setSection] = useState$_();
-  const [programMeta, setProgramMeta] = useState$_({ id: program, name: "" });
-  const [standaloneRequest, setStandaloneRequest] = useState$_(null);
+  const [events, setEvents] = useState$$([]);
+  const [page, setPage] = useState$$(1);
+  const [rows, setRows] = useState$$([]);
+  const [formData, setFormData] = useState$$();
+  const [tei, setTei] = useState$$([]);
+  const [selected, setSelected] = useState$$();
+  const [section, setSection] = useState$$();
+  const [programMeta, setProgramMeta] = useState$$({ id: program, name: "" });
+  const [standaloneRequest, setStandaloneRequest] = useState$$(null);
   const standaloneCreateRef = useRef$d(null);
   const {
     contextConfig,
@@ -67207,45 +67260,76 @@ function MaintenanceEvents({
           value
         })
       );
+      const teiId = typeof selected?.trackedEntity === "object" ? selected?.trackedEntity?.id || selected?.trackedEntity?.trackedEntity : selected?.trackedEntity;
+      const orgUnitId = typeof selected?.orgUnit === "object" ? selected?.orgUnit?.id : selected?.orgUnit;
       const payload = {
         event: selected?.event,
         enrollment: selected?.enrollment || null,
         programStage: selected?.programStage,
         program: selected?.program,
-        orgUnit: selected?.orgUnit,
+        orgUnit: orgUnitId,
         eventDate: selected?.occurredAt,
         occurredAt: selected?.occurredAt,
-        trackedEntity: selected?.trackedEntity,
+        trackedEntity: teiId,
         status: "ACTIVE",
         dataValues: values
       };
-      await dataStore.post("tracker?async=false&importStrategy=UPDATE", {
+      const res = await dataStore.post("tracker?async=false&importStrategy=UPDATE", {
         events: [payload]
-      }).then(async (res) => {
-        if (res?.status === 200) {
-          const JOB_CARD_FUNCTION = "GzItPqhKIUO";
-          if (baseValues.get(JOB_CARD_FUNCTION) === "true") {
-            await dataStore.post("tracker?async=false&importStrategy=UPDATE", {
-              trackedEntities: [
-                {
-                  trackedEntity: selected?.trackedEntity,
-                  trackedEntityType: "Pfts5eJeX1M",
-                  // Medical equipment
-                  orgUnit: selected?.orgUnit,
-                  attributes: [
-                    {
-                      //TEA for Equipment status
-                      attribute: "KFZ35H4ZHrk",
-                      value: "FULLY_FUNCTIONAL"
-                    }
-                  ]
-                }
-              ]
+      });
+      if (res?.status === 200 || res?.status === "OK" || res?.data?.status === "OK" || res?.status >= 200 && res?.status < 300) {
+        const JOB_CARD_FUNCTION = "GzItPqhKIUO";
+        const functionVal = String(
+          baseValues.get(JOB_CARD_FUNCTION) ?? ""
+        ).trim().toLowerCase();
+        const isFunctional = functionVal === "true" || functionVal === "yes" || functionVal === "1" || baseValues.get(JOB_CARD_FUNCTION) === true;
+        if (isFunctional) {
+          const teiRes = await dataStore.get(
+            `tracker/trackedEntities/${teiId}?program=${selected?.program}&fields=trackedEntityType,orgUnit,attributes[*]`
+          );
+          const {
+            trackedEntityType,
+            orgUnit,
+            attributes: existingAttributes = []
+          } = teiRes?.data || {};
+          const updatedAttributes = [...existingAttributes];
+          const attrIndex = updatedAttributes.findIndex(
+            (a) => a.attribute === "KFZ35H4ZHrk"
+          );
+          if (attrIndex !== -1) {
+            updatedAttributes[attrIndex] = {
+              ...updatedAttributes[attrIndex],
+              value: "FULLY_FUNCTIONAL"
+            };
+          } else {
+            updatedAttributes.push({
+              attribute: "KFZ35H4ZHrk",
+              value: "FULLY_FUNCTIONAL"
             });
           }
-          showToast("Saved", "success");
+          const tePayload = {
+            trackedEntities: [
+              {
+                trackedEntity: teiId,
+                trackedEntityType,
+                orgUnit,
+                attributes: updatedAttributes
+              }
+            ]
+          };
+          const teUpdateRes = await dataStore.post(
+            "tracker?async=false&importStrategy=UPDATE",
+            tePayload
+          );
+          if (teUpdateRes?.status === 200 || teUpdateRes?.status === "OK" || teUpdateRes?.data?.status === "OK" || teUpdateRes?.status >= 200 && teUpdateRes?.status < 300) {
+          } else {
+            showToast("Failed to update equipment status", "danger");
+          }
         }
-      });
+        showToast("Saved", "success");
+      } else {
+        showToast("Failed to save job card", "danger");
+      }
       setLoading(false);
       onClose();
     } catch (err) {
@@ -67270,12 +67354,12 @@ function MaintenanceEvents({
     setStandaloneRequest(null);
     handlePickerCancel();
   };
-  useEffect$W(() => {
+  useEffect$X(() => {
     getMetadata();
     getEvents();
     getProgramMeta();
   }, [getEvents, getMetadata, getProgramMeta, page]);
-  useEffect$W(() => {
+  useEffect$X(() => {
     if (!selectedEquipment || !standaloneRequest) return;
     createStandaloneEvent(selectedEquipment);
   }, [createStandaloneEvent, selectedEquipment, standaloneRequest]);
@@ -67301,6 +67385,7 @@ function MaintenanceEvents({
         height: "70%",
         width: "70%",
         showFooter: false,
+        title: "Generate Job Card",
         onSave: () => {
           if (selected && formData) {
             handleSubmit();
@@ -67319,7 +67404,9 @@ function MaintenanceEvents({
               justifyContent: "center",
               alignItems: "center",
               height: "100%",
-              textAlign: "center"
+              textAlign: "center",
+              position: "relative",
+              minHeight: 300
             },
             children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx(IonSpinner, { name: "lines-sharp", color: "success" }),
@@ -67387,11 +67474,16 @@ function MaintenanceEvents({
               maxHeight: "85vh",
               height: "100%",
               display: "flex",
-              flexDirection: "column"
+              flexDirection: "column",
+              position: "relative",
+              minHeight: 300
             },
             onClick: (e) => e.stopPropagation(),
             children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { style: { marginBottom: 16 }, children: /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { style: { margin: 0 }, children: "Select Maintenance activity" }) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { style: {
+                marginBottom: 16,
+                marginLeft: 16
+              }, children: /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { style: { margin: 0 }, children: "Select Maintenance activity" }) }),
               /* @__PURE__ */ jsxRuntimeExports.jsx(
                 "div",
                 {
@@ -67424,7 +67516,7 @@ function MaintenanceEvents({
                   },
                   children: [
                     /* @__PURE__ */ jsxRuntimeExports.jsx(IonButton, { fill: "clear", color: "medium", onClick: onClose, children: "Cancel" }),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(IonButton, { fill: "outline", onClick: handleStandaloneJobCard, children: "Generate without maintenance activity" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(IonButton, { fill: "outline", onClick: handleStandaloneJobCard, children: "Generate with no maintenance activity" }),
                     /* @__PURE__ */ jsxRuntimeExports.jsx(
                       IonButton,
                       {
@@ -70864,6 +70956,55 @@ function toLowerLabel(label) {
   return raw ? raw.toLowerCase() : DEFAULT_ENTITY_LABEL.toLowerCase();
 }
 
+// src/hooks/useOptionSets.js
+const {useState: useState$_,useEffect: useEffect$W} = await importShared('react');
+
+/**
+ * Hook to get all optionSets from cache
+ * @returns {object} { optionSets, loading, error }
+ */
+const useAllOptionSets = () => {
+  const [optionSets, setOptionSets] = useState$_([]);
+  const [loading, setLoading] = useState$_(true);
+  const [error, setError] = useState$_(null);
+
+  useEffect$W(() => {
+    const fetchAllOptionSets = async () => {
+      setLoading(true);
+      try {
+        const cached = await getAllOptionSetsFromCache();
+        setOptionSets(cached);
+        setError(null);
+      } catch (err) {
+        setError(err);
+        setOptionSets([]);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchAllOptionSets();
+  }, []);
+
+  return { optionSets, loading, error };
+};
+
+/**
+ * Resolve optionSet value (code) to display name
+ * @param {object} optionSet - The optionSet object with options array
+ * @param {string} value - The code/id to resolve
+ * @returns {string} The display name or original value if not found
+ */
+const resolveOptionValue = (optionSet, value) => {
+  if (!optionSet?.options || !value) return value;
+
+  const option = optionSet.options.find(
+    opt => opt.code === value || opt.id === value || opt.name === value
+  );
+
+  return option?.name || value;
+};
+
 const React$M = await importShared('react');
 const {useEffect: useEffect$V,useState: useState$Z} = React$M;
 const todayYMD$1 = () => {
@@ -70981,230 +71122,237 @@ function MarkMaintenanceDoneModal({
       disabledPositiveButtonController: saving || !completionDate,
       height: "60%",
       width: "40%",
-      children: /* @__PURE__ */ jsxRuntimeExports.jsxs(IonContent, { className: "ion-padding", children: [
-        saving && /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          "div",
-          {
-            style: {
-              position: "absolute",
-              inset: 0,
-              zIndex: 100,
-              background: "rgba(255, 255, 255, 0.85)",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              gap: 12
-            },
-            children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(IonSpinner, { name: "crescent" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { color: "medium", children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { style: { margin: 0 }, children: "Recording maintenance activation..." }) })
-            ]
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          "div",
-          {
-            style: {
-              display: "flex",
-              alignItems: "flex-start",
-              gap: 10,
-              padding: 14,
-              marginBottom: 20,
-              borderRadius: 8,
-              background: "var(--ion-color-warning-tint)"
-            },
-            children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                IonIcon,
-                {
-                  icon: warningOutline,
-                  color: "warning",
-                  style: {
-                    fontSize: 22,
-                    marginTop: 2
-                  }
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs(IonText, { children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "Has this maintenance activity started?" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "p",
-                  {
-                    style: {
-                      margin: "5px 0 0",
-                      fontSize: 13,
-                      lineHeight: 1.5
-                    },
-                    children: "Only mark this schedule as activated if the required preventive maintenance activity has started."
-                  }
-                )
-              ] })
-            ]
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          "div",
-          {
-            style: {
-              border: "1px solid var(--ion-color-light-shade)",
-              borderRadius: 10,
-              padding: 16,
-              marginBottom: 20
-            },
-            children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { color: "medium", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "p",
-                {
-                  style: {
-                    margin: "0 0 12px",
-                    fontSize: 12,
-                    fontWeight: 600,
-                    textTransform: "uppercase",
-                    letterSpacing: 0.5
-                  },
-                  children: "Maintenance Details"
-                }
-              ) }),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                "div",
-                {
-                  style: {
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 12,
-                    marginBottom: 14
-                  },
-                  children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      IonIcon,
-                      {
-                        icon: constructOutline,
-                        color: "primary",
-                        style: { fontSize: 21 }
+      children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        IonContent,
+        {
+          className: "ion-padding",
+          style: { position: "relative", minHeight: 300 },
+          children: [
+            saving && /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "div",
+              {
+                style: {
+                  position: "absolute",
+                  inset: 0,
+                  zIndex: 100,
+                  background: "rgba(255, 255, 255, 0.85)",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: 12
+                },
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(IonSpinner, { name: "crescent" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { color: "medium", children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { style: { margin: 0 }, children: "Recording maintenance activation..." }) })
+                ]
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "div",
+              {
+                style: {
+                  display: "flex",
+                  alignItems: "flex-start",
+                  gap: 10,
+                  padding: 14,
+                  marginBottom: 20,
+                  borderRadius: 8,
+                  background: "var(--ion-color-warning-tint)"
+                },
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    IonIcon,
+                    {
+                      icon: warningOutline,
+                      color: "warning",
+                      style: {
+                        fontSize: 22,
+                        marginTop: 2
                       }
-                    ),
-                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { color: "medium", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { style: { fontSize: 12 }, children: "Equipment" }) }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        "div",
-                        {
-                          style: {
-                            fontSize: 15,
-                            fontWeight: 600
-                          },
-                          children: consolidatedName
-                        }
-                      ) })
-                    ] })
-                  ]
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                "div",
-                {
-                  style: {
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 12,
-                    marginBottom: 14
-                  },
-                  children: [
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(IonText, { children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "Has this maintenance activity started?" }),
                     /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      IonIcon,
+                      "p",
                       {
-                        icon: constructOutline,
-                        color: "primary",
-                        style: { fontSize: 21 }
+                        style: {
+                          margin: "5px 0 0",
+                          fontSize: 13,
+                          lineHeight: 1.5
+                        },
+                        children: "Only mark this schedule as activated if the required preventive maintenance activity has started."
                       }
-                    ),
-                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { color: "medium", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { style: { fontSize: 12 }, children: "Maintenance Type" }) }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        "div",
-                        {
-                          style: {
-                            fontSize: 15,
-                            fontWeight: 500
-                          },
-                          children: maintenanceType
-                        }
-                      ) })
-                    ] })
-                  ]
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                "div",
-                {
-                  style: {
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 12,
-                    marginBottom: 14
-                  },
-                  children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      IonIcon,
-                      {
-                        icon: calendarOutline,
-                        color: "primary",
-                        style: { fontSize: 21 }
-                      }
-                    ),
-                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { color: "medium", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { style: { fontSize: 12 }, children: "Scheduled Date" }) }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        "div",
-                        {
-                          style: {
-                            fontSize: 15,
-                            fontWeight: 500
-                          },
-                          children: formatDate$1(scheduledDate)
-                        }
-                      ) })
-                    ] })
-                  ]
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                "div",
-                {
-                  style: {
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 12
-                  },
-                  children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      IonIcon,
-                      {
-                        icon: locationOutline,
-                        color: "primary",
-                        style: { fontSize: 21 }
-                      }
-                    ),
-                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { color: "medium", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { style: { fontSize: 12 }, children: "Location" }) }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        "div",
-                        {
-                          style: {
-                            fontSize: 15,
-                            fontWeight: 500
-                          },
-                          children: orgUnitName
-                        }
-                      ) })
-                    ] })
-                  ]
-                }
-              )
-            ]
-          }
-        )
-      ] })
+                    )
+                  ] })
+                ]
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "div",
+              {
+                style: {
+                  border: "1px solid var(--ion-color-light-shade)",
+                  borderRadius: 10,
+                  padding: 16,
+                  marginBottom: 20
+                },
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { color: "medium", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "p",
+                    {
+                      style: {
+                        margin: "0 0 12px",
+                        fontSize: 12,
+                        fontWeight: 600,
+                        textTransform: "uppercase",
+                        letterSpacing: 0.5
+                      },
+                      children: "Maintenance Details"
+                    }
+                  ) }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "div",
+                    {
+                      style: {
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 12,
+                        marginBottom: 14
+                      },
+                      children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(
+                          IonIcon,
+                          {
+                            icon: constructOutline,
+                            color: "primary",
+                            style: { fontSize: 21 }
+                          }
+                        ),
+                        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { color: "medium", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { style: { fontSize: 12 }, children: "Equipment" }) }),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "div",
+                            {
+                              style: {
+                                fontSize: 15,
+                                fontWeight: 600
+                              },
+                              children: consolidatedName
+                            }
+                          ) })
+                        ] })
+                      ]
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "div",
+                    {
+                      style: {
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 12,
+                        marginBottom: 14
+                      },
+                      children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(
+                          IonIcon,
+                          {
+                            icon: constructOutline,
+                            color: "primary",
+                            style: { fontSize: 21 }
+                          }
+                        ),
+                        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { color: "medium", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { style: { fontSize: 12 }, children: "Maintenance Type" }) }),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "div",
+                            {
+                              style: {
+                                fontSize: 15,
+                                fontWeight: 500
+                              },
+                              children: maintenanceType
+                            }
+                          ) })
+                        ] })
+                      ]
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "div",
+                    {
+                      style: {
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 12,
+                        marginBottom: 14
+                      },
+                      children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(
+                          IonIcon,
+                          {
+                            icon: calendarOutline,
+                            color: "primary",
+                            style: { fontSize: 21 }
+                          }
+                        ),
+                        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { color: "medium", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { style: { fontSize: 12 }, children: "Scheduled Date" }) }),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "div",
+                            {
+                              style: {
+                                fontSize: 15,
+                                fontWeight: 500
+                              },
+                              children: formatDate$1(scheduledDate)
+                            }
+                          ) })
+                        ] })
+                      ]
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "div",
+                    {
+                      style: {
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 12
+                      },
+                      children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(
+                          IonIcon,
+                          {
+                            icon: locationOutline,
+                            color: "primary",
+                            style: { fontSize: 21 }
+                          }
+                        ),
+                        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { color: "medium", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { style: { fontSize: 12 }, children: "Location" }) }),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "div",
+                            {
+                              style: {
+                                fontSize: 15,
+                                fontWeight: 500
+                              },
+                              children: orgUnitName
+                            }
+                          ) })
+                        ] })
+                      ]
+                    }
+                  )
+                ]
+              }
+            )
+          ]
+        }
+      )
     }
   );
 }
@@ -71227,6 +71375,11 @@ function PreventiveMaintenanceView({
   const [activeTab, setActiveTab] = useState$Y("maintenance");
   const [showMarkDoneModal, setShowMarkDoneModal] = useState$Y(false);
   const [selectedMaintenance, setSelectedMaintenance] = useState$Y(null);
+  const { optionSets } = useAllOptionSets();
+  const equipmentOptionSet = useMemo$w(
+    () => optionSets?.find((os) => os.id === "VuKFOqg584G"),
+    [optionSets]
+  );
   const [refreshKey, setRefreshKey] = useState$Y(0);
   const queryParams = useMemo$w(
     () => new URLSearchParams(location.search),
@@ -71375,6 +71528,7 @@ function PreventiveMaintenanceView({
           onView(data, c);
         },
         requestKey,
+        equipmentOptionSet,
         onMarkAsDone: (data) => {
           setSelectedMaintenance(data);
           setShowMarkDoneModal(true);
@@ -71409,7 +71563,8 @@ function MaintenanceTabs({
   serialNumberAttributeId,
   requestKey,
   onMarkAsDone,
-  onView
+  onView,
+  equipmentOptionSet
 }) {
   const [scheduleCount, setScheduleCount] = useState$Y(0);
   const [activeCount, setActiveCount] = useState$Y(0);
@@ -71457,6 +71612,7 @@ function MaintenanceTabs({
         equipmentId,
         equipmentAttributeId,
         serialNumberAttributeId,
+        equipmentOptionSet,
         requestKey,
         onCountChange: setActiveCount,
         onView
@@ -71472,6 +71628,7 @@ function MaintenanceTabs({
         equipmentId,
         equipmentAttributeId,
         serialNumberAttributeId,
+        equipmentOptionSet,
         requestKey,
         onMarkAsDone,
         onCountChange: setScheduleCount
@@ -71486,6 +71643,7 @@ function ActiveMaintenances({
   equipmentId,
   equipmentAttributeId,
   serialNumberAttributeId,
+  equipmentOptionSet,
   requestKey,
   onView,
   onCountChange
@@ -71516,7 +71674,8 @@ function ActiveMaintenances({
             equipmentId,
             equipmentAttributeId,
             serialNumberAttributeId,
-            frequency
+            frequency,
+            equipmentOptionSet
           },
           "ACTIVE"
         );
@@ -71862,6 +72021,7 @@ function ScheduleMaintenances({
   equipmentId,
   equipmentAttributeId,
   serialNumberAttributeId,
+  equipmentOptionSet,
   requestKey,
   onMarkAsDone,
   onCountChange
@@ -71894,7 +72054,8 @@ function ScheduleMaintenances({
             equipmentId,
             equipmentAttributeId,
             serialNumberAttributeId,
-            frequency
+            frequency,
+            equipmentOptionSet
           },
           "SCHEDULE"
         );
@@ -72741,7 +72902,8 @@ function buildEquipment(trackedEntities = [], {
   equipmentId,
   equipmentAttributeId,
   serialNumberAttributeId,
-  frequency
+  frequency,
+  equipmentOptionSet
 }, eventType) {
   const equipmentMap = /* @__PURE__ */ new Map();
   trackedEntities.forEach((tei) => {
@@ -72759,9 +72921,12 @@ function buildEquipment(trackedEntities = [], {
         tei?.attributes,
         serialNumberAttributeId
       );
-      const equipmentName = getAttributeValue(
-        tei?.attributes,
-        equipmentAttributeId
+      const equipmentName = resolveOptionValue(
+        equipmentOptionSet,
+        getAttributeValue(
+          tei?.attributes,
+          equipmentAttributeId
+        )
       ) || (equipmentId ? getAttributeValue(
         tei?.attributes,
         equipmentId
@@ -148637,15 +148802,29 @@ const ViewProgramSectionsAccess = ({ onEdit }) => {
       },
       item.key || `${item.id}-${idx}`
     )) }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(IonToolbar, { className: "ion-padding-vertical", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { style: { display: "flex", justifyContent: "center", width: "100%" }, children: /* @__PURE__ */ jsxRuntimeExports.jsxs(IonButtons, { style: { flexWrap: "wrap" }, children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs(IonText, { className: "ion-text-center mx-4 text-lg font-medium", children: [
-        "Page ",
-        /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { className: "text-primary", children: "1" })
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(IonButton, { fill: "clear", color: "primary", children: "Previous" }),
-      "|",
-      /* @__PURE__ */ jsxRuntimeExports.jsx(IonButton, { fill: "clear", color: "primary", children: "Next" })
-    ] }) }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "div",
+      {
+        className: "datatable-pagination-toolbar ion-padding-vertical",
+        style: {
+          display: "flex",
+          justifyContent: "center",
+          width: "100%",
+          backgroundColor: "#ffffff",
+          padding: "12px 16px",
+          borderTop: "1px solid #e5e7eb"
+        },
+        children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { style: { display: "flex", justifyContent: "center", alignItems: "center", width: "100%", flexWrap: "wrap", gap: "8px" }, children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(IonText, { className: "ion-text-center mx-4 text-lg font-medium", style: { color: "#1f2937" }, children: [
+            "Page ",
+            /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { className: "text-primary pagination-current-page", children: "1" })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(IonButton, { fill: "clear", color: "primary", className: "pagination-btn pagination-btn-clear", children: "Previous" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { style: { color: "#d1d5db" }, children: "|" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(IonButton, { fill: "clear", color: "primary", className: "pagination-btn pagination-btn-clear", children: "Next" })
+        ] })
+      }
+    ),
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       IonAlert,
       {
@@ -154640,16 +154819,40 @@ function JobCardGenerate({
         status: "ACTIVE",
         dataValues: values
       };
-      await dataStore.post("tracker?async=false&importStrategy=UPDATE", { events: [payload] }).then(async (res) => {
-        if (res?.status === 200) {
-          getEventDetails(event?.event, event?.programStage);
-          showToast("Saved", "success");
-          setOpenModal(false);
+      const res = await dataStore.post("tracker?async=false&importStrategy=UPDATE", { events: [payload] });
+      if (res?.status === 200 || res?.status === "OK" || res?.data?.status === "OK") {
+        getEventDetails(event?.event, event?.programStage);
+        const JOB_CARD_FUNCTION = "GzItPqhKIUO";
+        const functionVal = String(formData[JOB_CARD_FUNCTION] || getVal(JOB_CARD_FUNCTION) || "").trim().toLowerCase();
+        const isFunctional = functionVal === "true" || functionVal === "yes" || functionVal === "1" || formData[JOB_CARD_FUNCTION] === true;
+        if (isFunctional) {
+          const teiRes = await dataStore.get(`tracker/trackedEntities/${event.trackedEntity}?program=${event.program}&fields=trackedEntityType,orgUnit,attributes[*]`);
+          if (teiRes?.data) {
+            const { trackedEntityType, orgUnit, attributes: existingAttributes = [] } = teiRes.data;
+            const updatedAttributes = [...existingAttributes];
+            const attrIndex = updatedAttributes.findIndex((a) => a.attribute === "KFZ35H4ZHrk");
+            if (attrIndex !== -1) {
+              updatedAttributes[attrIndex] = { ...updatedAttributes[attrIndex], value: "FULLY_FUNCTIONAL" };
+            } else {
+              updatedAttributes.push({ attribute: "KFZ35H4ZHrk", value: "FULLY_FUNCTIONAL" });
+            }
+            const tePayload = {
+              trackedEntities: [{
+                trackedEntity: event.trackedEntity,
+                trackedEntityType,
+                orgUnit,
+                attributes: updatedAttributes
+              }]
+            };
+            const teUpdateRes = await dataStore.post("tracker?async=false&importStrategy=UPDATE", tePayload);
+          }
         }
-      });
-      {
-        setSaving(false);
+        showToast("Saved", "success");
+        setOpenModal(false);
+      } else {
+        showToast("Failed to save job card", "danger");
       }
+      setSaving(false);
     } catch (err) {
       setError(err.message || "An error occurred");
       showToast(err.message || "An error occurred", "danger");

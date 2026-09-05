@@ -1678,6 +1678,19 @@ ion-toolbar.custom-toolbar {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
+ion-toolbar.custom-toolbar ion-button {
+  --color: var(--ion-color-primary, #006401);
+  --border-color: var(--ion-color-primary, #006401);
+}
+
+.dashboard-mobile-filter-toggle {
+  --color: var(--ion-color-primary, #006401) !important;
+  --border-color: var(--ion-color-primary, #006401) !important;
+  --color-hover: var(--ion-color-primary, #006401) !important;
+  --border-width: 1px !important;
+  font-weight: 500;
+}
+
 ion-header.custom-header {
   box-shadow: none;
   border-bottom: 1px solid #ddd;
@@ -1689,6 +1702,38 @@ ion-title.custom-title{
 ion-toolbar.custom-toolbar-data {
   --background: #ffffff !important;
   --color: #000000 !important; /* fix contrast */
+}
+
+ion-toolbar.custom-toolbar-data ion-button {
+  --color: var(--ion-color-primary, #006401);
+  --border-color: var(--ion-color-primary, #006401);
+}
+
+/* DataTable & general pagination styling for standalone & microfrontend host */
+.datatable-pagination-toolbar {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  color: #1f2937 !important;
+  box-sizing: border-box;
+}
+
+.text-primary,
+.pagination-current-page {
+  color: var(--ion-color-primary, #006401) !important;
+  font-weight: 700;
+}
+
+.datatable-pagination-toolbar .pagination-btn {
+  --color: var(--ion-color-primary, #006401) !important;
+  --border-color: var(--ion-color-primary, #006401) !important;
+  font-weight: 500;
+}
+
+.datatable-pagination-toolbar .pagination-btn[disabled],
+.datatable-pagination-toolbar .pagination-btn.button-disabled {
+  --color: var(--ion-color-medium, #92949c) !important;
+  --border-color: #d1d5db !important;
+  opacity: 0.5 !important;
 }
 
 .custom-margin{
@@ -2705,4 +2750,31 @@ body {
   }
 }.tab-content-wrapper {
     padding: 10px;
+}
+.dashboard-filter-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-filter-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.clear-filters-btn {
+  background-color: #eeebeb;
+  padding: 4px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.dashboard-mobile-filter-toggle {
+  --color: var(--ion-color-primary, #006401) !important;
+  --border-color: var(--ion-color-primary, #006401) !important;
+  --color-hover: var(--ion-color-primary, #006401) !important;
+  --border-width: 1px !important;
+  font-weight: 500;
 }
