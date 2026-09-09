@@ -1,0 +1,1 @@
+const n=new Set(["obsValueType","obsParentConcept","obsBodyPartPrefix","__babyCards","__sectionSaved"]);function s(e){return e==null||e===""||e===!1?!0:Array.isArray(e)?e.length===0:typeof e=="object"?Object.keys(e).length===0:!1}function o(e){return e?Object.entries(e).some(([r,t])=>!n.has(r)&&!s(t)):!1}export{o as h,s as i};
