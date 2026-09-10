@@ -1,1 +1,0 @@
-import t from"./LabOrdersList-Jsw67Ikn.js";import{d as e,j as o,q as r}from"../index-B4wfGMph.js";const d=e({__name:"ImpowLabOrders",setup(s){return(a,n)=>(o(),r(t,{"show-add-test-button":!0,"show-send-to-lab-button":!1}))}});export{d as default};
