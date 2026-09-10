@@ -1,1 +1,0 @@
-import{R as o}from"./Registration-Bj6dfUim.js";import{d as e,j as r,q as t}from"../index-Ju8S2j6V.js";const c=e({__name:"personalInformationModal",setup(a){return(n,s)=>(r(),t(o,{editMode:!0}))}});export{c as _};
