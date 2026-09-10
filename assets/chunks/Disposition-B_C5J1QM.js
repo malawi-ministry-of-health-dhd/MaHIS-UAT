@@ -1,0 +1,1 @@
+import o from"./Disposition-D1CENA-a.js";import{d as t,q as i,j as s}from"../index-Ju8S2j6V.js";const c=t({__name:"Disposition",setup(e){return(p,n)=>(s(),i(o,{"completion-route":"/ipd/disposition-list","show-specialty-option":!1}))}});export{c as default};
