@@ -1,0 +1,1 @@
+import{R as o}from"./Registration-DUnxSbv8.js";import{d as e,j as r,q as t}from"../index-CIT-7-LI.js";const c=e({__name:"personalInformationModal",setup(a){return(n,s)=>(r(),t(o,{editMode:!0}))}});export{c as _};

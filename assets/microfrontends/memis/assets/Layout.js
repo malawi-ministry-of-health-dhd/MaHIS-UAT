@@ -1,6 +1,6 @@
 const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/LocalForageService.js","assets/_commonjsHelpers.js","assets/index2.js","assets/index.es.js"])))=>i.map(i=>d[i]);
 import { importShared } from './__federation_fn_import.js';
-import { u as useLocation, g as useNavigate, i as icons, j as jsxRuntimeExports, I as IonMenuToggle, h as IonItem, k as IonIcon, l as IonLabel, _ as __vitePreload, m as IonRefresher, n as IonRefresherContent, o as isPlatform, M as MEMISContext, p as IonMenu, q as IonHeader, t as IonToolbar, v as IonTitle, L as Link$1, w as IonContent, x as IonList, y as home, z as IonAccordionGroup, A as IonAccordion, C as albumsOutline, e as setActiveProgramCookie, E as IonButtons, F as IonMenuButton, G as IonButton, H as mailOutline, J as notificationsOutline, K as IonBadge, N as personCircleOutline, Q as logOutOutline, R as showToast, V as Outlet, f as clearMemisStorage, W as closeOutline, X as chevronDownOutline, Y as searchOutline, Z as checkmarkOutline, $ as closeCircle, a0 as IonGrid, a1 as IonRow, a2 as IonCol, a3 as chevronUpOutline, a4 as IonInput, a5 as IonRadioGroup, a6 as IonRadio, a7 as IonCard, a8 as IonCardContent, a9 as warningOutline, aa as constructOutline, ab as arrowForward, ac as chevronForwardOutline, ad as IonPage, S as SuspenseLoader, ae as metadataInit, r as renderListByUserRole, af as hardwareChipOutline, ag as settingsOutline, ah as addOutline, ai as y$3, s as sendNotification, aj as IonSpinner, ak as close, d as documentText, al as imageOutline, am as document$1, an as IonText, ao as alertCircleOutline, ap as arrowBackCircleOutline, aq as chevronBackOutline, ar as saveOutline, as as IonLoading, at as IonCheckbox, au as IonPopover, av as IonDatetime, aw as IonTextarea, ax as IonCardHeader, ay as IonCardTitle, az as useSearchParams, aA as ellipsisVertical, aB as arrowUp, aC as arrowDown, aD as removeOutline, aE as IonSearchbar, aF as filterOutline, aG as qrCodeOutline, aH as IonModal, aI as IonSelect, aJ as IonSelectOption, aK as api, aL as businessOutline, aM as getAllOptionSetsFromCache, aN as calendarOutline, aO as locationOutline, aP as timeOutline, aQ as usePermissions, aR as removeCircleOutline, aS as addCircleOutline, aT as useDataStore, aU as IonInputPasswordToggle, aV as checkmarkDoneOutline, aW as createOutline, aX as IonBreadcrumbs, aY as IonBreadcrumb, aZ as chevronForward, a_ as useParams, a$ as IonAvatar, b0 as IonActionSheet, P as PROGRAMS_FIELDS, b1 as IonFooter, b2 as downloadOutline, b3 as eyeOutline, b4 as printOutline, b5 as IonCardSubtitle, b6 as PROGRAM_STAGES_FIELDS, b7 as informationCircleOutline, b8 as homeOutline, b9 as arrowBackOutline, ba as trash, bb as IonAlert, bc as addCircle, bd as refresh, be as orgUnitGroupsInit, bf as useIonToast, bg as IonToggle, bh as IonTabs, bi as IonTabBar, bj as IonTabButton, bk as settings, bl as lockClosed, bm as documentLock, bn as business, bo as informationCircle, bp as barChart, bq as IonTab, br as checkmarkCircleOutline, bs as chatbubbleOutline, bt as analyticsOutline, bu as lockClosedOutline, bv as refreshOutline, bw as peopleOutline, bx as add$1, by as IonToast, bz as Routes, bA as Route, bB as Navigate } from './breadCrumb.js';
+import { u as useLocation, g as useNavigate, i as icons, j as jsxRuntimeExports, I as IonMenuToggle, h as IonItem, k as IonIcon, l as IonLabel, _ as __vitePreload, m as IonRefresher, n as IonRefresherContent, o as isPlatform, M as MEMISContext, p as IonMenu, q as IonHeader, t as IonToolbar, v as IonTitle, L as Link$1, w as IonContent, x as IonList, y as home, z as IonAccordionGroup, A as IonAccordion, C as albumsOutline, e as setActiveProgramCookie, E as IonButtons, F as IonMenuButton, G as IonButton, H as mailOutline, J as notificationsOutline, K as IonBadge, N as personCircleOutline, Q as logOutOutline, R as showToast, V as Outlet, f as clearMemisStorage, W as closeOutline, X as chevronDownOutline, Y as searchOutline, Z as checkmarkOutline, $ as closeCircle, a0 as IonGrid, a1 as IonRow, a2 as IonCol, a3 as chevronUpOutline, a4 as IonInput, a5 as IonRadioGroup, a6 as IonRadio, a7 as IonCard, a8 as IonCardContent, a9 as warningOutline, aa as constructOutline, ab as arrowForward, ac as chevronForwardOutline, ad as IonPage, S as SuspenseLoader, ae as metadataInit, r as renderListByUserRole, af as hardwareChipOutline, ag as settingsOutline, ah as addOutline, ai as y$3, s as sendNotification, aj as IonSpinner, ak as close, d as documentText, al as imageOutline, am as document$1, an as IonText, ao as alertCircleOutline, ap as arrowBackCircleOutline, aq as chevronBackOutline, ar as saveOutline, as as IonLoading, at as IonCheckbox, au as IonPopover, av as IonDatetime, aw as IonTextarea, ax as IonCardHeader, ay as IonCardTitle, az as useSearchParams, aA as ellipsisVertical, aB as arrowUp, aC as arrowDown, aD as removeOutline, aE as IonSearchbar, aF as filterOutline, aG as qrCodeOutline, aH as IonModal, aI as IonSelect, aJ as IonSelectOption, aK as api, aL as businessOutline, aM as getAllOptionSetsFromCache, aN as calendarOutline, aO as locationOutline, aP as personOutline, aQ as timeOutline, aR as usePermissions, aS as removeCircleOutline, aT as addCircleOutline, aU as useDataStore, aV as IonInputPasswordToggle, aW as checkmarkDoneOutline, aX as createOutline, aY as IonBreadcrumbs, aZ as IonBreadcrumb, a_ as chevronForward, a$ as useParams, b0 as IonAvatar, b1 as IonActionSheet, P as PROGRAMS_FIELDS, b2 as IonFooter, b3 as downloadOutline, b4 as eyeOutline, b5 as printOutline, b6 as IonCardSubtitle, b7 as PROGRAM_STAGES_FIELDS, b8 as informationCircleOutline, b9 as homeOutline, ba as arrowBackOutline, bb as trash, bc as IonAlert, bd as addCircle, be as refresh, bf as orgUnitGroupsInit, bg as useIonToast, bh as IonToggle, bi as IonTabs, bj as IonTabBar, bk as IonTabButton, bl as settings, bm as lockClosed, bn as documentLock, bo as business, bp as informationCircle, bq as barChart, br as IonTab, bs as checkmarkCircleOutline, bt as chatbubbleOutline, bu as analyticsOutline, bv as lockClosedOutline, bw as refreshOutline, bx as peopleOutline, by as add$1, bz as IonToast, bA as Routes, bB as Route, bC as Navigate } from './breadCrumb.js';
 import dataStore, { qrConfigService } from './index2.js';
 import { c as commonjsRequire$1, L as LocalForageServiceInstance } from './LocalForageService.js';
 import { a as getAugmentedNamespace$2, c as commonjsGlobal$2, g as getDefaultExportFromCjs$3 } from './_commonjsHelpers.js';
@@ -19931,7 +19931,7 @@ const CustomModal = ({
                     style: {
                       flex: "1 1 auto",
                       overflowY: "auto",
-                      minHeight: 0
+                      minHeight: 300
                     },
                     children
                   }
@@ -20174,7 +20174,6 @@ const FilterFields = ({
         IonButton,
         {
           expand: "block",
-          fill: "outline",
           color: "primary",
           className: "dashboard-mobile-filter-toggle",
           onClick: () => setShowMobileFilters((prev) => !prev),
@@ -20191,7 +20190,7 @@ const FilterFields = ({
         }
       ) }) }),
       (!isMobile || showMobileFilters) && /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
-        hasActiveFilters && /* @__PURE__ */ jsxRuntimeExports.jsx(IonRow, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(IonCol, { size: "12", children: /* @__PURE__ */ jsxRuntimeExports.jsx(IonButton, { size: "small", onClick: clearFilters, children: "Clear filters" }) }) }),
+        hasActiveFilters && /* @__PURE__ */ jsxRuntimeExports.jsx(IonRow, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(IonCol, { size: "12", children: /* @__PURE__ */ jsxRuntimeExports.jsx(IonButton, { size: "small", onClick: clearFilters, color: "primary", children: "Clear filters" }) }) }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs(IonRow, { children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(IonCol, { size: "12", sizeMd: "4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { style: { marginTop: 10 }, children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(IonLabel, { children: "Period" }),
@@ -20199,6 +20198,7 @@ const FilterFields = ({
               IonButton,
               {
                 expand: "full",
+                color: "primary",
                 onClick: () => setShowPeriodModal(true),
                 children: filters.startDate && filters.endDate ? `${new Date(
                   filters.startDate
@@ -26453,7 +26453,6 @@ function PreventiveMaintenanceScheduleModal({
         JSON.stringify(schedule)
       );
       if (onSave) {
-        console.log({ schedule });
         await onSave(schedule);
       }
       onClose();
@@ -32692,9 +32691,6 @@ ${lines.join("\n")}`,
       setLoading(false);
     }
   };
-  useEffect$19(() => {
-    console.log(worklow);
-  }, []);
   const renderInput = (el, canAddUpdateSection, idx, isCommonField) => {
     const vt = (el?.valueType || "").toUpperCase();
     const value = isCommonField ? commonData[el.id] : entries[idx]?.[el.id] ?? "";
@@ -67038,13 +67034,17 @@ function MaintenanceEvents({
       programStage: stage,
       totalPages: true,
       orgUnitMode: "DESCENDANTS",
+      status: "ACTIVE",
       fields: "event,enrollment,occurredAt,orgUnit,trackedEntity[id,attributes[*]],program,programStage,dataValues[dataElement,value]",
       orgUnit: sortedOrgUnits[0]?.id
     });
     await dataStore.get(`tracker/events?${params}`).then(async (res) => {
       const teiIds = res.data.events.map((ev) => ev.trackedEntity);
       const filteredEv = res.data.events.filter(
-        (e) => e.dataValues.some((dv) => dv.dataElement === "YjhRG2PMTMG") && !e.dataValues.some((dv) => dv.dataElement === JOB_CARD_NUMBER_DE_ID)
+        (e) => (
+          // e.dataValues.some((dv) => dv.dataElement === "YjhRG2PMTMG") && //only needed when agreed to confirm before job card
+          !e.dataValues.some((dv) => dv.dataElement === JOB_CARD_NUMBER_DE_ID)
+        )
       );
       setEvents(filteredEv);
       const uniq = [...new Set(teiIds)].join(",");
@@ -71041,6 +71041,12 @@ function MarkMaintenanceDoneModal({
   const [completionStatus, setCompletionStatus] = useState$Z("YES");
   const [consolidatedName, setConsolidatedName] = useState$Z(null);
   const [orgUnitName, setOrgUnitName] = useState$Z(null);
+  const [users, setUsers] = useState$Z([]);
+  const [selectedUser, setSelectedUser] = useState$Z(null);
+  const [ward, setWard] = useState$Z(null);
+  const allocationStage = "X3yNvXvB14A";
+  const allocationProgram = "X8V6omQYuW0";
+  const wardDataElementId = "PpO3Iz7xRFR";
   useEffect$V(() => {
     if (isOpen) {
       setCompletionDate(todayYMD$1());
@@ -71052,14 +71058,21 @@ function MarkMaintenanceDoneModal({
     if (!equipment || !event) {
       showToast(
         "Unable to identify the maintenance schedule.",
-        "danger"
+        "warning"
       );
       return;
     }
     if (!completionDate) {
       showToast(
         "Please select the maintenance completion date.",
-        "danger"
+        "warning"
+      );
+      return;
+    }
+    if (!selectedUser) {
+      showToast(
+        "Please select the responsible engineer.",
+        "warning"
       );
       return;
     }
@@ -71070,13 +71083,11 @@ function MarkMaintenanceDoneModal({
         enrollment: data?.enrollment,
         ...event,
         completionDate,
-        completionStatus
+        completionStatus,
+        responsibleEngineer: selectedUser,
+        ward: ward?.name
       });
     } catch (error) {
-      console.log(
-        "Failed to mark preventive maintenance as done:",
-        error
-      );
       showToast(
         "Failed to mark preventive maintenance as completed.",
         "danger"
@@ -71091,6 +71102,22 @@ function MarkMaintenanceDoneModal({
     setRemarks("");
     onClose();
   };
+  const getUsers = async () => {
+    if (!isOpen) return;
+    try {
+      const resp = await dataStore.get(
+        `users?fields=*&ou=${data?.event?.orgUnit}&includeChildren=true&paging=false`
+      );
+      const organisedUsers = resp?.data?.users && resp?.data?.users?.map((uss) => ({
+        ...uss,
+        name: `${uss?.name}(${uss?.username})`,
+        id: uss?.id
+      }));
+      setUsers(organisedUsers || []);
+    } catch (error) {
+      console.log({ error });
+    }
+  };
   data?.name || "Unknown equipment";
   equipment?.orgUnit?.name || equipment?.location?.name || event?.orgUnitName || event?.orgUnit || "Not specified";
   const scheduledDate = event?.date || event?.scheduledDate || event?.dueDate;
@@ -71101,14 +71128,41 @@ function MarkMaintenanceDoneModal({
     const actualNAme = equip?.options?.find((opt) => opt?.code === data?.name);
     setConsolidatedName(actualNAme?.name);
   };
-  const getOrgUnitName = async () => {
+  const getOrgUnitName = async (org) => {
     const dStore = await LocalForageServiceInstance.getItem("organisationUnits", "organisationUnits");
+    if (org) {
+      const orgUnit2 = dStore?.find((ds) => ds?.id === org);
+      return orgUnit2;
+    }
     const orgUnit = dStore?.find((ds) => ds?.id === event?.orgUnit);
     setOrgUnitName(orgUnit?.name);
   };
+  const getWardAllocated = async () => {
+    if (!isOpen || !event?.trackedEntity) return;
+    try {
+      const resp = await dataStore.get(
+        `tracker/events?trackedEntity=${event.trackedEntity}&program=${allocationProgram}&programStage=${allocationStage}&order=occurredAt:desc&fields=*&paging=false`
+      );
+      const events = resp?.data?.events || [];
+      if (events.length === 0) {
+        setWard(null);
+        return;
+      }
+      const latestEvent = events[0];
+      const wardDataValue = latestEvent?.dataValues?.find(
+        (dv) => dv.dataElement === wardDataElementId
+      );
+      const wardData = await getOrgUnitName(wardDataValue?.value);
+      setWard(wardData || null);
+    } catch (error) {
+      console.log({ error });
+    }
+  };
   useEffect$V(() => {
+    getWardAllocated();
     getEquipmentName();
     getOrgUnitName();
+    getUsers();
   }, [isOpen]);
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     CustomModal,
@@ -71120,8 +71174,8 @@ function MarkMaintenanceDoneModal({
       positiveButtonText: saving ? "Saving..." : "Save",
       cancelButton: "Cancel",
       disabledPositiveButtonController: saving || !completionDate,
-      height: "60%",
-      width: "40%",
+      height: "70%",
+      width: "50%",
       children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
         IonContent,
         {
@@ -71320,7 +71374,8 @@ function MarkMaintenanceDoneModal({
                       style: {
                         display: "flex",
                         alignItems: "center",
-                        gap: 12
+                        gap: 12,
+                        marginBottom: 14
                       },
                       children: [
                         /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -71333,20 +71388,60 @@ function MarkMaintenanceDoneModal({
                         ),
                         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
                           /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { color: "medium", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { style: { fontSize: 12 }, children: "Location" }) }),
-                          /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
                             "div",
                             {
                               style: {
                                 fontSize: 15,
                                 fontWeight: 500
                               },
-                              children: orgUnitName
+                              children: [
+                                orgUnitName,
+                                " - ",
+                                ward && ward?.name
+                              ]
                             }
                           ) })
                         ] })
                       ]
                     }
-                  )
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                      "div",
+                      {
+                        className: "",
+                        style: {
+                          display: "flex",
+                          alignItems: "center",
+                          gap: 12
+                        },
+                        children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            IonIcon,
+                            {
+                              icon: personOutline,
+                              color: "primary",
+                              style: { fontSize: 21 }
+                            }
+                          ),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { color: "medium", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { style: { fontSize: 12 }, children: "Responsible Engineer" }) })
+                        ]
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      SearchableSelect,
+                      {
+                        title: "User",
+                        placeholder: "Select user",
+                        itemTextField: "name",
+                        itemValueField: "username",
+                        data: users,
+                        value: selectedUser,
+                        onChange: (e) => setSelectedUser(Array.isArray(e) && e.length > 0 ? e[0]?.username : null)
+                      }
+                    )
+                  ] })
                 ]
               }
             )
@@ -71423,6 +71518,19 @@ function PreventiveMaintenanceView({
             {
               dataElement: ppmDateScheduled,
               value: data?.date
+            },
+            {
+              dataElement: "EbJI5Loxjbl",
+              value: "Preventive_maintenance"
+            },
+            {
+              dataElement: "rq944zY0g89",
+              value: data?.responsibleEngineer
+            },
+            {
+              dataElement: "bGiXZlgMgQU",
+              //ward
+              value: data?.ward
             },
             {
               dataElement: ppmDone,
@@ -71568,6 +71676,24 @@ function MaintenanceTabs({
 }) {
   const [scheduleCount, setScheduleCount] = useState$Y(0);
   const [activeCount, setActiveCount] = useState$Y(0);
+  const [isIncharge, setIsIncharge] = useState$Y(false);
+  const [ward, setWard] = useState$Y(null);
+  const getIncharge = async () => {
+    try {
+      const dStore = await LocalForageServiceInstance.getItem("userRes", "user");
+      const incharge = dStore?.userRoles?.find((ds) => ds?.id === "Ec6TZ5N1QeF");
+      if (incharge) {
+        const w = dStore?.organisationUnits?.length > 1 ? dStore?.organisationUnits[1] : dStore?.organisationUnits[0];
+        setWard(w);
+        setIsIncharge(true);
+      }
+      return incharge;
+    } catch (error) {
+    }
+  };
+  useEffect$U(() => {
+    getIncharge();
+  }, [activeTab]);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs(
       "div",
@@ -71615,7 +71741,10 @@ function MaintenanceTabs({
         equipmentOptionSet,
         requestKey,
         onCountChange: setActiveCount,
-        onView
+        onView,
+        isIncharge,
+        ward,
+        activeTab
       }
     ),
     activeTab === "schedule" && /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -71631,7 +71760,10 @@ function MaintenanceTabs({
         equipmentOptionSet,
         requestKey,
         onMarkAsDone,
-        onCountChange: setScheduleCount
+        onCountChange: setScheduleCount,
+        isIncharge,
+        ward,
+        isIncharge
       }
     )
   ] });
@@ -71646,16 +71778,21 @@ function ActiveMaintenances({
   equipmentOptionSet,
   requestKey,
   onView,
-  onCountChange
+  onCountChange,
+  programStageId,
+  isIncharge,
+  ward,
+  activeTab
 }) {
   const [equipment, setEquipment] = useState$Y([]);
   const [loading, setLoading] = useState$Y(false);
   const [search, setSearch] = useState$Y("");
   const [expanded, setExpanded] = useState$Y({});
+  const wardDataElementId = "PpO3Iz7xRFR";
   useEffect$U(() => {
     let mounted = true;
     const loadActiveMaintenances = async () => {
-      if (!programId || !orgUnit) {
+      if (!programId || !orgUnit || !programStageId) {
         return;
       }
       setLoading(true);
@@ -71664,12 +71801,39 @@ function ActiveMaintenances({
         const eventOccurredAfter = `${currentYear}-01-01`;
         const eventOccurredBefore = `${currentYear}-12-31`;
         const response = await dataStore.get(
-          `tracker/trackedEntities?orgUnit=${orgUnit}&program=${programId}&fields=trackedEntity,attributes,program,enrollments[enrollment,events[event,trackedEntity,programStage,orgUnit,program,updatedAt,createdAt,scheduledAt,status]]&eventStatus=ACTIVE&eventOccurredAfter=${eventOccurredAfter}&eventOccurredBefore=${eventOccurredBefore}`
+          `tracker/trackedEntities?orgUnits=${orgUnit}&program=${programId}&programStage=${programStageId}&fields=trackedEntity,attributes,enrollments[enrollment,events[event,dataValues,trackedEntity,programStage,orgUnit,program,updatedAt,createdAt,scheduledAt,status]]&eventStatus=ACTIVE&eventOccurredAfter=${eventOccurredAfter}&eventOccurredBefore=${eventOccurredBefore}`
         );
         if (!mounted) return;
-        const trackedEntities = response?.data?.trackedEntities || [];
+        const trackedEntities = (response?.data?.trackedEntities || []).map((te) => ({
+          ...te,
+          enrollments: te.enrollments?.map((enrollment) => ({
+            ...enrollment,
+            events: enrollment.events?.filter(
+              (event) => event.programStage === programStageId
+            ) || []
+          })) || []
+        }));
+        const allocatedTrackedEntities = (response?.data?.trackedEntities || []).filter(
+          (te) => te?.enrollments?.some(
+            (en) => en?.events?.some(
+              (event) => event?.dataValues?.some(
+                (dv) => dv?.dataElement == wardDataElementId && dv?.value !== null && dv?.value !== void 0
+              )
+            )
+          )
+        );
+        const allocated = allocatedTrackedEntities?.filter(
+          (te) => te?.enrollments?.some(
+            (en) => en?.events?.some(
+              (event) => event?.dataValues?.some(
+                (dv) => dv?.dataElement == wardDataElementId && dv?.value === ward?.id
+              )
+            )
+          )
+        );
+        const listItems = isIncharge ? trackedEntities?.filter((tei) => allocated?.some((t) => t?.trackedEntity === tei?.trackedEntity)) : trackedEntities;
         const grouped = buildEquipment(
-          trackedEntities,
+          listItems,
           {
             equipmentId,
             equipmentAttributeId,
@@ -71705,7 +71869,7 @@ function ActiveMaintenances({
     return () => {
       mounted = false;
     };
-  }, [requestKey]);
+  }, [requestKey, activeTab]);
   const toggle = (key) => {
     setExpanded((prev) => ({
       ...prev,
@@ -71771,7 +71935,8 @@ function ActiveMaintenances({
           equipment: item,
           expanded: expanded[key],
           onToggle: () => toggle(key),
-          onView
+          onView,
+          isIncharge
         },
         key
       );
@@ -71782,7 +71947,8 @@ function ActiveMaintenanceCard({
   equipment,
   expanded,
   onToggle,
-  onView
+  onView,
+  isIncharge
 }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "div",
@@ -71925,21 +72091,16 @@ function ActiveMaintenanceCard({
                   ]
                 }
               ),
-              equipment.events.map(
-                (event, index) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  ActiveMaintenanceRow,
-                  {
-                    event,
-                    isLast: index === equipment.events.length - 1,
-                    onView: (d) => onView(
-                      equipment,
-                      event,
-                      d
-                    )
-                  },
-                  event.event
-                )
-              )
+              [...equipment.events ?? []].sort((a, b) => b.date - a.date).map((event, index, events) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+                ActiveMaintenanceRow,
+                {
+                  event,
+                  isLast: index === events.length - 1,
+                  onView: (d) => onView(equipment, event, d),
+                  isIncharge
+                },
+                event.event
+              ))
             ]
           }
         )
@@ -71993,13 +72154,13 @@ function ActiveMaintenanceRow({
                   style: {
                     fontSize: 12
                   },
-                  children: "Preventive maintenance"
+                  children: "Maintenance"
                 }
               ) })
             ]
           }
         ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(IonBadge, { color: "primary", children: "Active" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(IonBadge, { color: "primary", children: event?.status }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           IonButton,
           {
@@ -72024,12 +72185,15 @@ function ScheduleMaintenances({
   equipmentOptionSet,
   requestKey,
   onMarkAsDone,
-  onCountChange
+  onCountChange,
+  isIncharge,
+  ward
 }) {
   const [equipment, setEquipment] = useState$Y([]);
   const [loading, setLoading] = useState$Y(false);
   const [search, setSearch] = useState$Y("");
   const [expanded, setExpanded] = useState$Y({});
+  const wardDataElementId = "PpO3Iz7xRFR";
   useEffect$U(() => {
     let mounted = true;
     const loadSchedules = async () => {
@@ -72044,10 +72208,36 @@ function ScheduleMaintenances({
         const eventOccurredAfter = `${currentYear}-01-01`;
         const eventOccurredBefore = `${currentYear}-12-31`;
         const response = await dataStore.get(
-          `tracker/trackedEntities?orgUnit=${orgUnit}&program=${programId}&fields=trackedEntity,program,attributes,enrollments[enrollment,events[event,programStage,orgUnit,scheduledAt,status]]&eventStatus=SCHEDULE&eventOccurredAfter=${eventOccurredAfter}&eventOccurredBefore=${eventOccurredBefore}`
+          `tracker/trackedEntities?orgUnit=${orgUnit}&program=${programId}&fields=trackedEntity,program,attributes,enrollments[enrollment,events[event,dataValues,programStage,orgUnit,scheduledAt,status]]&eventStatus=SCHEDULE&eventOccurredAfter=${eventOccurredAfter}&eventOccurredBefore=${eventOccurredBefore}`
         );
         if (!mounted) return;
         const trackedEntities = response?.data?.trackedEntities || [];
+        const allocatedTrackedEntities = (trackedEntities || []).filter(
+          (te) => te?.enrollments?.some(
+            (en) => en?.events?.some(
+              (event) => (
+                // event?.dataValues?.some(
+                //   (dv) =>
+                //     dv?.dataElement == wardDataElementId &&
+                //     dv?.value !== null &&
+                //     dv?.value !== undefined
+                // ) && 
+                event?.status === "ACTIVE"
+              )
+            )
+          )
+        );
+        const allocated = allocatedTrackedEntities?.filter(
+          (te) => te?.enrollments?.some(
+            (en) => en?.events?.some(
+              (event) => event?.dataValues?.some(
+                (dv) => dv?.dataElement == wardDataElementId && dv?.value === ward?.id
+              )
+            )
+          )
+        );
+        const listItems = isIncharge ? trackedEntities?.filter((tei) => allocated?.some((t) => t?.trackedEntity === tei?.trackedEntity)) : trackedEntities;
+        console.log({ ward, wardDataElementId, listItems, trackedEntities, allocated, allocatedTrackedEntities });
         const grouped = buildEquipment(
           trackedEntities,
           {
@@ -72271,7 +72461,8 @@ function ScheduleMaintenances({
             equipment: item,
             expanded: expanded[key],
             onToggle: () => toggle(key),
-            onMarkAsDone
+            onMarkAsDone,
+            isIncharge
           },
           key
         );
@@ -72283,7 +72474,8 @@ function ScheduleEquipmentCard({
   equipment,
   expanded,
   onToggle,
-  onMarkAsDone
+  onMarkAsDone,
+  isIncharge
 }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "div",
@@ -72419,6 +72611,7 @@ function ScheduleEquipmentCard({
                       }
                     );
                   },
+                  isIncharge,
                   thisMonth: true
                 }
               ),
@@ -72437,6 +72630,7 @@ function ScheduleEquipmentCard({
                     }
                   ),
                   thisMonth: false,
+                  isIncharge,
                   showTopBorder: equipment.thisMonthDates.length > 0
                 }
               )
@@ -72529,7 +72723,8 @@ function ScheduleSection({
   dates,
   onMarkAsDone,
   thisMonth,
-  showTopBorder = false
+  showTopBorder = false,
+  isIncharge
 }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "div",
@@ -72578,7 +72773,8 @@ function ScheduleSection({
               event,
               isLast: index === dates.length - 1,
               thisMonth,
-              onMarkAsDone: (data) => onMarkAsDone({ data, event })
+              onMarkAsDone: (data) => onMarkAsDone({ data, event }),
+              isIncharge
             },
             event.event
           )
@@ -72592,7 +72788,8 @@ function ScheduleRow({
   isLast,
   thisMonth,
   onMarkAsDone,
-  data
+  data,
+  isIncharge
 }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "div",
@@ -72641,7 +72838,7 @@ function ScheduleRow({
             children: thisMonth ? "This Month" : "Scheduled"
           }
         ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
+        !isIncharge && /* @__PURE__ */ jsxRuntimeExports.jsx(
           IonButton,
           {
             size: "small",
@@ -72967,8 +73164,8 @@ function buildEquipment(trackedEntities = [], {
       equipment.events.push({
         program: event?.program,
         trackedEntity: event?.trackedEntity || trackedEntity,
-        event: event.event,
-        date: event.scheduledAt || event?.updatedAt,
+        event: event?.event,
+        date: event.status === "ACTIVE" ? event?.createdAt || event.updatedAt : event?.scheduledAt,
         status: event.status,
         programStage: event.programStage,
         orgUnit: event.orgUnit
@@ -99205,7 +99402,6 @@ function ApproveModal({
         return;
       }
       const me = await LocalForageServiceInstance.getItem("userRes", "user");
-      console.log({ me });
       const currentUsername = String(me?.username || "").toLowerCase();
       const requesterCandidates = [
         event?.storedBy,
@@ -99266,7 +99462,6 @@ function ApproveModal({
           try {
             const programId = program?.id || event?.program;
             const configData = await getNotificationEvent(programId, "APPROVAL");
-            console.log({ configData });
             if (configData?.event) {
               await notificationSendTrigger(configData.event, {
                 orgUnit: event.orgUnit,
@@ -149466,7 +149661,6 @@ function EnrollmentAccessSettings() {
       showToast("Refreshed", "success");
       broadcastChange(remote);
     } catch (e) {
-      console.log(e);
       showToast("Failed to refresh", "error");
     } finally {
       setLoading(false);
@@ -154985,7 +155179,6 @@ function Approve({
         status: "ACTIVE",
         dataValues: values
       };
-      console.log("Payload to be sent:", payload);
       const result = await dataStore.post("tracker?async=false&importStrategy=UPDATE", { events: [payload] });
       if (result?.status === 200) {
         showToast("Saved", "success");
@@ -155124,7 +155317,7 @@ function ConfirmMaintenance({
     }
   };
   useEffect$a(() => {
-    setDataElements(section?.dataElements.filter((de) => elements.some((el) => el === de.id)));
+    setDataElements(section?.dataElements?.filter((de) => elements?.some((el) => el === de?.id)));
   }, [openModal]);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(IonButton, { onClick: () => setOpenModal(true), children: "Confirm Maintenance" }),
@@ -269323,6 +269516,7 @@ function TeiEvents() {
     const targetOrgId = event?.dataValues?.find(
       (dv) => dv?.dataElement === "mxqD92TfUg8"
     )?.value;
+    console.log({ orgUnits, event, targetOrgId });
     const hasRoleAccess = userRoles.some(
       (role) => buttons.some(
         (button) => button?.sectionId === sect && (button?.rolesAllowed || []).some(
@@ -269455,6 +269649,7 @@ function TeiEvents() {
     try {
       const val = event?.dataValues?.filter((d) => d?.dataElement === id);
       const value = val[0]?.value;
+      console.log({ id, value });
       if (value === "true") return "Yes";
       if (value === "false") return "No";
       if (dataElement?.optionSet?.options && value) {
@@ -269831,7 +270026,8 @@ function TeiEvents() {
                     getVal
                   }
                 ),
-                getValForButtonGuard() && getVal("AnJ695Tt41W") && section?.id === "fdK9OHcaIcV" && userCanConfirmMaintenance(section?.id)?.authorise && /* @__PURE__ */ jsxRuntimeExports.jsx(
+                getValForButtonGuard() && getVal("AnJ695Tt41W") && // section?.id === "fdK9OHcaIcV" &&
+                userCanConfirmMaintenance(section?.id)?.authorise && /* @__PURE__ */ jsxRuntimeExports.jsx(
                   ConfirmMaintenance,
                   {
                     event,
@@ -274203,7 +274399,6 @@ function ImportExportDetailPage() {
         params.append("programStage", prog.stage);
       }
       const res = await dataStore.get(`tracker/events?${params.toString()}`);
-      console.log({ res });
       const events = res?.data?.events || [];
       const elementMap = Object.fromEntries(
         (prog?.stageDataElements || []).map((item) => [
