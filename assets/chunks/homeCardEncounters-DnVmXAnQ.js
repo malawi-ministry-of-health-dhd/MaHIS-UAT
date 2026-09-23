@@ -1,1 +1,0 @@
-import{E as _}from"./encounter_type-C5qpsqWy.js";const E=[_.OBSTETRIC_HISTORY,_.LABOUR_AND_DELIVERY_VISIT,_.POSTNATAL_DETAILS],I=[_.VITALS,_.PNC_WARD_MONITORING_MOTHER],P=[_.PNC_WARD_MONITORING_BABY],T=[_.PNC_VISIT,_.POSTNATAL_VISIT],R=T,O=[_.PNC_VISIT];export{I as P,R as a,P as b,O as c,E as d};

@@ -8577,7 +8577,7 @@ const MainLayout = ({ menuItems, children }) => {
       window.dispatchEvent(new CustomEvent("mfe:logout-success"));
       if (!window.__MEMIS_EMBEDDED__) {
         setTimeout(() => {
-          window.location.replace("https://mahistest.health.gov.mw/logout");
+          window.location.replace("https://mahis.health.gov.mw/logout");
           window.location.reload();
         }, 300);
       }
