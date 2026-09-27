@@ -1,8 +1,8 @@
 const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/LocalForageService.js","assets/_commonjsHelpers.js","assets/index2.js","assets/index.es.js"])))=>i.map(i=>d[i]);
 import { importShared } from './__federation_fn_import.js';
-import { u as useLocation, g as useNavigate, i as icons, j as jsxRuntimeExports, I as IonMenuToggle, h as IonItem, k as IonIcon, l as IonLabel, _ as __vitePreload, m as IonRefresher, n as IonRefresherContent, o as isPlatform, M as MEMISContext, p as IonMenu, q as IonHeader, t as IonToolbar, v as IonTitle, L as Link$1, w as IonContent, x as IonList, y as home, z as IonAccordionGroup, A as IonAccordion, C as albumsOutline, e as setActiveProgramCookie, E as IonButtons, F as IonMenuButton, G as IonButton, H as mailOutline, J as notificationsOutline, K as IonBadge, N as personCircleOutline, Q as logOutOutline, R as showToast, V as Outlet, f as clearMemisStorage, W as closeOutline, X as chevronDownOutline, Y as searchOutline, Z as checkmarkOutline, $ as closeCircle, a0 as IonGrid, a1 as IonRow, a2 as IonCol, a3 as chevronUpOutline, a4 as IonInput, a5 as IonRadioGroup, a6 as IonRadio, a7 as IonCard, a8 as IonCardContent, a9 as warningOutline, aa as constructOutline, ab as arrowForward, ac as chevronForwardOutline, ad as IonPage, S as SuspenseLoader, ae as metadataInit, r as renderListByUserRole, af as hardwareChipOutline, ag as settingsOutline, ah as addOutline, ai as y$3, s as sendNotification, aj as IonSpinner, ak as close, d as documentText, al as imageOutline, am as document$1, an as IonText, ao as alertCircleOutline, ap as arrowBackCircleOutline, aq as chevronBackOutline, ar as saveOutline, as as IonLoading, at as IonCheckbox, au as IonPopover, av as IonDatetime, aw as IonTextarea, ax as IonCardHeader, ay as IonCardTitle, az as useSearchParams, aA as ellipsisVertical, aB as arrowUp, aC as arrowDown, aD as removeOutline, aE as IonSearchbar, aF as filterOutline, aG as qrCodeOutline, aH as IonModal, aI as IonSelect, aJ as IonSelectOption, aK as api, aL as businessOutline, aM as getAllOptionSetsFromCache, aN as calendarOutline, aO as locationOutline, aP as personOutline, aQ as timeOutline, aR as usePermissions, aS as removeCircleOutline, aT as addCircleOutline, aU as useDataStore, aV as IonInputPasswordToggle, aW as checkmarkDoneOutline, aX as createOutline, aY as IonBreadcrumbs, aZ as IonBreadcrumb, a_ as chevronForward, a$ as useParams, b0 as IonAvatar, b1 as IonActionSheet, P as PROGRAMS_FIELDS, b2 as IonFooter, b3 as downloadOutline, b4 as eyeOutline, b5 as printOutline, b6 as IonCardSubtitle, b7 as PROGRAM_STAGES_FIELDS, b8 as informationCircleOutline, b9 as homeOutline, ba as arrowBackOutline, bb as trash, bc as IonAlert, bd as addCircle, be as refresh, bf as orgUnitGroupsInit, bg as useIonToast, bh as IonToggle, bi as IonTabs, bj as IonTabBar, bk as IonTabButton, bl as settings, bm as lockClosed, bn as documentLock, bo as business, bp as informationCircle, bq as barChart, br as IonTab, bs as checkmarkCircleOutline, bt as chatbubbleOutline, bu as analyticsOutline, bv as lockClosedOutline, bw as refreshOutline, bx as peopleOutline, by as add$1, bz as IonToast, bA as Routes, bB as Route, bC as Navigate } from './breadCrumb.js';
+import { u as useLocation, g as useNavigate, i as icons, j as jsxRuntimeExports, I as IonMenuToggle, h as IonItem, k as IonIcon, l as IonLabel, _ as __vitePreload, m as IonRefresher, n as IonRefresherContent, o as isPlatform, M as MEMISContext, p as IonMenu, q as IonHeader, t as IonToolbar, v as IonTitle, L as Link$1, w as IonContent, x as IonList, y as home, z as IonAccordionGroup, A as IonAccordion, C as albumsOutline, e as setActiveProgramCookie, E as IonButtons, F as IonMenuButton, G as IonButton, H as mailOutline, J as notificationsOutline, K as IonBadge, N as personCircleOutline, Q as reloadCircle, R as logOutOutline, V as showToast, W as Outlet, f as clearMemisStorage, X as closeOutline, Y as chevronDownOutline, Z as searchOutline, $ as checkmarkOutline, a0 as closeCircle, a1 as IonGrid, a2 as IonRow, a3 as IonCol, a4 as chevronUpOutline, a5 as IonInput, a6 as IonRadioGroup, a7 as IonRadio, O as ORGANISATION_UNITS_DESCENDANTS, a8 as IonCard, a9 as IonCardContent, aa as warningOutline, ab as constructOutline, ac as arrowForward, ad as chevronForwardOutline, ae as IonPage, S as SuspenseLoader, af as metadataInit, r as renderListByUserRole, ag as hardwareChipOutline, ah as settingsOutline, ai as addOutline, aj as y$3, s as sendNotification, ak as IonSpinner, al as close, d as documentText, am as imageOutline, an as document$1, ao as IonText, ap as alertCircleOutline, aq as arrowBackCircleOutline, ar as chevronBackOutline, as as saveOutline, at as IonLoading, au as IonCheckbox, av as IonPopover, aw as IonDatetime, ax as IonTextarea, ay as IonCardHeader, az as IonCardTitle, aA as useSearchParams, aB as createOutline, aC as ellipsisVertical, aD as arrowUp, aE as arrowDown, aF as removeOutline, aG as IonSearchbar, aH as filterOutline, aI as qrCodeOutline, aJ as IonModal, aK as IonSelect, aL as IonSelectOption, aM as api, aN as businessOutline, aO as getAllOptionSetsFromCache, aP as calendarOutline, aQ as locationOutline, aR as personOutline, aS as timeOutline, aT as usePermissions, aU as removeCircleOutline, aV as addCircleOutline, aW as useDataStore, aX as IonInputPasswordToggle, aY as checkmarkDoneOutline, aZ as IonBreadcrumbs, a_ as IonBreadcrumb, a$ as chevronForward, b0 as useParams, b1 as IonAvatar, b2 as IonActionSheet, P as PROGRAMS_FIELDS, b3 as IonFooter, b4 as downloadOutline, b5 as eyeOutline, b6 as printOutline, b7 as IonCardSubtitle, b8 as PROGRAM_STAGES_FIELDS, b9 as informationCircleOutline, ba as homeOutline, bb as arrowBackOutline, bc as trash, bd as IonAlert, be as addCircle, bf as refresh, bg as orgUnitGroupsInit, bh as useIonToast, bi as IonToggle, bj as IonTabs, bk as IonTabBar, bl as IonTabButton, bm as settings, bn as lockClosed, bo as documentLock, bp as business, bq as informationCircle, br as barChart, bs as IonTab, bt as checkmarkCircleOutline, bu as chatbubbleOutline, bv as analyticsOutline, bw as lockClosedOutline, bx as refreshOutline, by as peopleOutline, bz as add$1, bA as IonToast, bB as archiveOutline, bC as closeCircleOutline, bD as IonBackButton, bE as documentTextOutline, bF as layersOutline, bG as Routes, bH as Route, bI as Navigate } from './breadCrumb.js';
 import dataStore, { qrConfigService } from './index2.js';
-import { c as commonjsRequire$1, L as LocalForageServiceInstance } from './LocalForageService.js';
+import { c as commonjsRequire$1, L as LocalForageService } from './LocalForageService.js';
 import { a as getAugmentedNamespace$2, c as commonjsGlobal$2, g as getDefaultExportFromCjs$3 } from './_commonjsHelpers.js';
 
 function _mergeNamespaces(n, m) {
@@ -734,7 +734,7 @@ registerPlugin('App', {
     web: () => __vitePreload(() => import('./web.js'),true              ?[]:void 0).then(m => new m.AppWeb()),
 });
 
-const {useEffect: useEffect$1G} = await importShared('react');
+const {useEffect: useEffect$1M} = await importShared('react');
 
 await importShared('react');
 const RefresherWrapper = ({ onRefresh, children }) => {
@@ -8278,9 +8278,9 @@ const CryptoJS = /*@__PURE__*/getDefaultExportFromCjs$3(cryptoJsExports);
 
 const canAccessSettings = async () => {
   try {
-    const user = await LocalForageServiceInstance.getItem("userRes", "user");
+    const user = await LocalForageService.getItem("userRes", "user");
 
-    const settings = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+    const settings = await LocalForageService.getItem("dataStore", "dataStore");
     const settingsUserRoles = settings?.settingsUserRoles?.userRoles;
     const hasAccess = user?.userRoles.some((userRole) =>
       settingsUserRoles.some((role) => role?.id === userRole?.id),
@@ -8301,7 +8301,7 @@ const dataSetsInit = async (forceRefresh = false) => {
   try {
     // Check if we already have cached dataSets (unless forcing refresh)
     if (!forceRefresh) {
-      const cachedDataSets = await LocalForageServiceInstance.getItem(
+      const cachedDataSets = await LocalForageService.getItem(
         "dataSets",
         "dataSets",
       );
@@ -8329,7 +8329,7 @@ const dataSetsInit = async (forceRefresh = false) => {
     const dataSets = dataSetsResponse?.data?.dataSets || [];
 
     // Cache dataSets
-    await LocalForageServiceInstance.setItem("dataSets", dataSets, "dataSets");
+    await LocalForageService.setItem("dataSets", dataSets, "dataSets");
 
     console.log(
       "dataSets initialized and cached:",
@@ -8343,25 +8343,25 @@ const dataSetsInit = async (forceRefresh = false) => {
   }
 };
 
-const React$Y = await importShared('react');
-const {useContext: useContext$J,useEffect: useEffect$1F,useRef: useRef$u,useState: useState$1E,useMemo: useMemo$Y,Suspense} = React$Y;
+const React$11 = await importShared('react');
+const {useContext: useContext$M,useEffect: useEffect$1L,useRef: useRef$v,useState: useState$1I,useMemo: useMemo$$,Suspense} = React$11;
 const MainLayout = ({ menuItems, children }) => {
   const navigate = useNavigate();
-  const [hasAccess, setHasAccess] = useState$1E(null);
+  const [hasAccess, setHasAccess] = useState$1I(null);
   Capacitor.isNativePlatform();
   const isMobile = isPlatform("ios") || isPlatform("android");
   const isWeb = isPlatform("mobileweb") || isPlatform("desktop");
-  const [user, setUser] = useState$1E(null);
+  const [user, setUser] = useState$1I(null);
   const { search } = useLocation();
-  const [superuser, setSuperUser] = useState$1E(null);
-  const [showNotifications, setShowNotifications] = useState$1E(false);
-  const [notifications, setNotifications] = useState$1E([]);
-  const [unReadNotifications, setUnReadNotifications] = useState$1E([]);
-  const [messageCount, setMessageCount] = useState$1E(0);
-  const [showDropdown, setShowDropdown] = useState$1E(false);
-  const [userOrgUnit, setUserOrgUnits] = useState$1E("");
-  const notificationsRef = useRef$u(null);
-  const dropdownRef = useRef$u(null);
+  const [superuser, setSuperUser] = useState$1I(null);
+  const [showNotifications, setShowNotifications] = useState$1I(false);
+  const [notifications, setNotifications] = useState$1I([]);
+  const [unReadNotifications, setUnReadNotifications] = useState$1I([]);
+  const [messageCount, setMessageCount] = useState$1I(0);
+  const [showDropdown, setShowDropdown] = useState$1I(false);
+  const [userOrgUnit, setUserOrgUnits] = useState$1I("");
+  const notificationsRef = useRef$v(null);
+  const dropdownRef = useRef$v(null);
   function bridgeSessionExpired() {
     window.location.replace("/memis/login");
   }
@@ -8458,13 +8458,13 @@ const MainLayout = ({ menuItems, children }) => {
     loading: menuLoading = false,
     refresh: refreshMenu,
     menuError
-  } = useContext$J(MEMISContext.MenuContext) || {};
-  const { isLoading } = useContext$J(MEMISContext.DashboardContext);
+  } = useContext$M(MEMISContext.MenuContext) || {};
+  const { isLoading } = useContext$M(MEMISContext.DashboardContext);
   const {
     programs = [],
     loading: programsLoading = false,
     refresh: refreshPrograms
-  } = useContext$J(MEMISContext.ProgramContext) || {};
+  } = useContext$M(MEMISContext.ProgramContext) || {};
   const getMessages = async () => {
     try {
       const data = await dataStore.get(
@@ -8520,7 +8520,7 @@ const MainLayout = ({ menuItems, children }) => {
       console.log("Error handling notification click", err);
     }
   };
-  useEffect$1F(() => {
+  useEffect$1L(() => {
     const handleOutside = (e) => {
       if (notificationsRef.current && !notificationsRef.current.contains(e.target))
         setShowNotifications(false);
@@ -8558,10 +8558,10 @@ const MainLayout = ({ menuItems, children }) => {
       bridgeSessionExpired();
     }
   };
-  useEffect$1F(() => {
+  useEffect$1L(() => {
     getUser();
   }, []);
-  useEffect$1F(() => {
+  useEffect$1L(() => {
     const intervalId = setInterval(() => {
       getMessages();
     }, 6e4);
@@ -8577,17 +8577,17 @@ const MainLayout = ({ menuItems, children }) => {
       window.dispatchEvent(new CustomEvent("mfe:logout-success"));
       if (!window.__MEMIS_EMBEDDED__) {
         setTimeout(() => {
-          window.location.replace("https://mahis.health.gov.mw/logout");
+          window.location.replace("https://mahistest.health.gov.mw/logout");
           window.location.reload();
         }, 300);
       }
     }
   }
-  useEffect$1F(() => {
+  useEffect$1L(() => {
     const loadUser = async () => {
       try {
         await dataSetsInit();
-        const us = await LocalForageServiceInstance.getItem("userRes", "user");
+        const us = await LocalForageService.getItem("userRes", "user");
         const orgUnit = us?.organisationUnits;
         if (orgUnit && orgUnit?.length > 1) {
           orgUnit?.sort((a, b) => a?.level - b?.level);
@@ -8600,7 +8600,7 @@ const MainLayout = ({ menuItems, children }) => {
     };
     loadUser();
   }, []);
-  useEffect$1F(() => {
+  useEffect$1L(() => {
     const loadAccess = async () => {
       try {
         const res = await canAccessSettings();
@@ -8870,6 +8870,20 @@ const MainLayout = ({ menuItems, children }) => {
                   button: true,
                   lines: "none",
                   onClick: async () => {
+                    window.location.reload();
+                  },
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(IonIcon, { icon: reloadCircle, slot: "start" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(IonLabel, { children: "Reload App" })
+                  ]
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                IonItem,
+                {
+                  button: true,
+                  lines: "none",
+                  onClick: async () => {
                     try {
                       await logoutAndBroadcast();
                     } catch (err) {
@@ -8898,10 +8912,10 @@ const MainLayout = ({ menuItems, children }) => {
   ] });
 };
 
-const React$X = await importShared('react');
-const {useContext: useContext$I,useEffect: useEffect$1E,useMemo: useMemo$X} = React$X;
+const React$10 = await importShared('react');
+const {useContext: useContext$L,useEffect: useEffect$1K,useMemo: useMemo$_} = React$10;
 const WithRoleBasedLayout = () => {
-  const { menuModel, loading } = useContext$I(MEMISContext.MenuContext);
+  const { menuModel, loading } = useContext$L(MEMISContext.MenuContext);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(MainLayout, { menuItems: menuModel, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(Outlet, {}),
     " "
@@ -19242,7 +19256,7 @@ class TimeSeriesScale extends TimeScale {
     }
 }
 
-const {forwardRef: forwardRef$1,useRef: useRef$t,useEffect: useEffect$1D} = await importShared('react');
+const {forwardRef: forwardRef$1,useRef: useRef$u,useEffect: useEffect$1J} = await importShared('react');
 
 const defaultDatasetIdKey = 'label';
 function reforwardRef(ref, value) {
@@ -19289,8 +19303,8 @@ function cloneData(data, datasetIdKey = defaultDatasetIdKey) {
 
 function ChartComponent(props, ref) {
     const { height = 150, width = 300, redraw = false, datasetIdKey, type, data, options, plugins = [], fallbackContent, updateMode, ...canvasProps } = props;
-    const canvasRef = useRef$t(null);
-    const chartRef = useRef$t(null);
+    const canvasRef = useRef$u(null);
+    const chartRef = useRef$u(null);
     const renderChart = ()=>{
         if (!canvasRef.current) return;
         chartRef.current = new Chart$1(canvasRef.current, {
@@ -19310,7 +19324,7 @@ function ChartComponent(props, ref) {
             chartRef.current = null;
         }
     };
-    useEffect$1D(()=>{
+    useEffect$1J(()=>{
         if (!redraw && chartRef.current && options) {
             setOptions(chartRef.current, options);
         }
@@ -19318,7 +19332,7 @@ function ChartComponent(props, ref) {
         redraw,
         options
     ]);
-    useEffect$1D(()=>{
+    useEffect$1J(()=>{
         if (!redraw && chartRef.current) {
             setLabels(chartRef.current.config.data, data.labels);
         }
@@ -19326,7 +19340,7 @@ function ChartComponent(props, ref) {
         redraw,
         data.labels
     ]);
-    useEffect$1D(()=>{
+    useEffect$1J(()=>{
         if (!redraw && chartRef.current && data.datasets) {
             setDatasets(chartRef.current.config.data, data.datasets, datasetIdKey);
         }
@@ -19334,7 +19348,7 @@ function ChartComponent(props, ref) {
         redraw,
         data.datasets
     ]);
-    useEffect$1D(()=>{
+    useEffect$1J(()=>{
         if (!chartRef.current) return;
         if (redraw) {
             destroyChart();
@@ -19349,14 +19363,14 @@ function ChartComponent(props, ref) {
         data.datasets,
         updateMode
     ]);
-    useEffect$1D(()=>{
+    useEffect$1J(()=>{
         if (!chartRef.current) return;
         destroyChart();
         setTimeout(renderChart);
     }, [
         type
     ]);
-    useEffect$1D(()=>{
+    useEffect$1J(()=>{
         renderChart();
         return ()=>destroyChart();
     }, []);
@@ -19384,14 +19398,14 @@ const Doughnut = /* #__PURE__ */ createTypedChart('doughnut', DoughnutController
 await importShared('react');
 Chart$1.register(ArcElement, plugin_tooltip, plugin_legend);
 
-const React$W = await importShared('react');
-const {useContext: useContext$H,useEffect: useEffect$1C,useState: useState$1D} = React$W;
+const React$$ = await importShared('react');
+const {useContext: useContext$K,useEffect: useEffect$1I,useState: useState$1H} = React$$;
 
-const React$V = await importShared('react');
-const {useEffect: useEffect$1B} = React$V;
+const React$_ = await importShared('react');
+const {useEffect: useEffect$1H} = React$_;
 
-const React$U = await importShared('react');
-const {useState: useState$1C,useEffect: useEffect$1A,useMemo: useMemo$W,useCallback: useCallback$q} = React$U;
+const React$Z = await importShared('react');
+const {useState: useState$1G,useEffect: useEffect$1G,useMemo: useMemo$Z,useCallback: useCallback$s} = React$Z;
 
 const {createPortal: createPortal$4} = await importShared('react-dom');
 const CHIP_OVERFLOW_THRESHOLD = 3;
@@ -19408,10 +19422,10 @@ const SearchableSelect = ({
   closeOnSignal,
   maxSelections
 }) => {
-  const [isOpen, setIsOpen] = useState$1C(false);
-  const [searchTerm, setSearchTerm] = useState$1C("");
-  const [selectedItems, setSelectedItems] = useState$1C([]);
-  useEffect$1A(() => {
+  const [isOpen, setIsOpen] = useState$1G(false);
+  const [searchTerm, setSearchTerm] = useState$1G("");
+  const [selectedItems, setSelectedItems] = useState$1G([]);
+  useEffect$1G(() => {
     const load = () => {
       try {
         if (value == null) {
@@ -19435,13 +19449,13 @@ const SearchableSelect = ({
     };
     load();
   }, [value, multiple, itemValueField, data, selectedItems]);
-  useEffect$1A(() => {
+  useEffect$1G(() => {
     if (closeOnSignal) {
       setIsOpen(false);
       setSearchTerm("");
     }
   }, [closeOnSignal]);
-  const filteredData = useMemo$W(() => {
+  const filteredData = useMemo$Z(() => {
     try {
       const term = searchTerm?.toLowerCase();
       return data?.filter(
@@ -19451,13 +19465,13 @@ const SearchableSelect = ({
       return [];
     }
   }, [data, searchTerm, itemTextField]);
-  const isItemSelected = useCallback$q(
+  const isItemSelected = useCallback$s(
     (item) => selectedItems?.some(
       (sel) => sel[itemValueField] === item[itemValueField]
     ),
     [selectedItems, itemValueField]
   );
-  const handleSelect = useCallback$q(
+  const handleSelect = useCallback$s(
     (item) => {
       let newSelection;
       if (multiple) {
@@ -20091,7 +20105,7 @@ const getDateRangeFromPeriod = (period) => {
   }
 };
 
-const {useEffect: useEffect$1z,useMemo: useMemo$V,useState: useState$1B} = await importShared('react');
+const {useEffect: useEffect$1F,useMemo: useMemo$Y,useState: useState$1F} = await importShared('react');
 const RELATIVE_PERIODS = [
   { id: "THIS_MONTH", label: "This Month" },
   { id: "LAST_MONTH", label: "Last Month" },
@@ -20108,17 +20122,17 @@ const FilterFields = ({
   onClear,
   setIsLoading
 }) => {
-  const [departments, setDepartments] = useState$1B([]);
-  const [equipmentList, setEquipmentList] = useState$1B([]);
-  const [showFacilityFility, setShowFacilityFilter] = useState$1B(true);
-  const [showPeriodModal, setShowPeriodModal] = useState$1B(false);
-  const [periodTab, setPeriodTab] = useState$1B("RELATIVE");
-  const [tempPeriod, setTempPeriod] = useState$1B(filters.period);
-  const [tempStartDate, setTempStartDate] = useState$1B(filters.startDate);
-  const [tempEndDate, setTempEndDate] = useState$1B(filters.endDate);
-  const [isMobile, setIsMobile] = useState$1B(window.innerWidth < 768);
-  const [showMobileFilters, setShowMobileFilters] = useState$1B(false);
-  useEffect$1z(() => {
+  const [departments, setDepartments] = useState$1F([]);
+  const [equipmentList, setEquipmentList] = useState$1F([]);
+  const [showFacilityFility, setShowFacilityFilter] = useState$1F(true);
+  const [showPeriodModal, setShowPeriodModal] = useState$1F(false);
+  const [periodTab, setPeriodTab] = useState$1F("RELATIVE");
+  const [tempPeriod, setTempPeriod] = useState$1F(filters.period);
+  const [tempStartDate, setTempStartDate] = useState$1F(filters.startDate);
+  const [tempEndDate, setTempEndDate] = useState$1F(filters.endDate);
+  const [isMobile, setIsMobile] = useState$1F(window.innerWidth < 768);
+  const [showMobileFilters, setShowMobileFilters] = useState$1F(false);
+  useEffect$1F(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
@@ -20127,25 +20141,48 @@ const FilterFields = ({
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  useEffect$1z(() => {
+  useEffect$1F(() => {
     const load = async () => {
-      const [orgUnits, optionSets] = await Promise.all([
-        LocalForageServiceInstance.getItem("userOrganisationUnits", "userOrgUnits"),
-        LocalForageServiceInstance.getItem("optionSets", "metadata")
+      const [orgUnits, optionSets, userData, store] = await Promise.all([
+        LocalForageService.getItem("userOrganisationUnits", "userOrgUnits"),
+        LocalForageService.getItem("optionSets", "metadata"),
+        LocalForageService.getItem(
+          "userRes",
+          "user"
+        ),
+        LocalForageService.getItem(
+          "dataStore",
+          "dataStore"
+        )
       ]);
-      const sortedUnits = [...orgUnits || []].sort(
-        (a, b) => a?.level - b?.level
+      let sortedUnits = [];
+      const isHospAdmin = store?.dashboardFilters?.configurations?.useChildrenOrgs?.some(
+        (ff) => ff?.userLowerOrg && ff?.role?.some(
+          (role) => userData?.userRoles?.some(
+            (ur) => ur?.id === role?.id
+          )
+        )
       );
+      const orgUnit = userData?.organisationUnits?.sort((a, b) => a?.level - b?.level);
+      const hAdmin = orgUnit?.[1]?.id || "";
+      if (isHospAdmin !== null || isHospAdmin !== void 0) {
+        const descendants = await dataStore.get(
+          `organisationUnits/${hAdmin}/descendants?${ORGANISATION_UNITS_DESCENDANTS}`
+        );
+        sortedUnits = [...descendants?.data?.organisationUnits || []].sort(
+          (a, b) => a?.level - b?.level
+        );
+        setDepartments(sortedUnits);
+      } else {
+        sortedUnits = [...orgUnits || []].sort(
+          (a, b) => a?.level - b?.level
+        );
+      }
       setDepartments(sortedUnits);
       const equipmentOptions = optionSets?.find(
         (opt) => opt?.id === "VuKFOqg584G"
       );
-      const dataStore = await LocalForageServiceInstance.getItem(
-        "dataStore",
-        "dataStore"
-      );
-      const userData = await LocalForageServiceInstance.getItem("userRes", "user");
-      const hideFacility = dataStore?.dashboardFilters?.configurations?.facility?.find(
+      const hideFacility = store?.dashboardFilters?.configurations?.facility?.find(
         (ff) => userData?.userRoles?.some((ur) => ur?.id === ff?.role?.id)
       );
       const showFilter = hideFacility === null || hideFacility === void 0 ? true : hideFacility?.showFilter;
@@ -20157,10 +20194,10 @@ const FilterFields = ({
   const clearFilters = () => {
     if (onClear) onClear();
   };
-  const hasActiveFilters = useMemo$V(() => {
+  const hasActiveFilters = useMemo$Y(() => {
     return filters.equipment !== "" || filters.department !== defaultDepartment || filters.period !== "NONE";
   }, [filters, defaultDepartment]);
-  useEffect$1z(() => {
+  useEffect$1F(() => {
     if (showPeriodModal) {
       setTempPeriod(filters.period);
       setTempStartDate(filters.startDate);
@@ -20517,7 +20554,8 @@ const DonutChartTemplate = ({
   );
 };
 
-await importShared('react');
+const React$Y = await importShared('react');
+const {useEffect: useEffect$1E} = React$Y;
 function GeneralDashboard({ dashboardData, selectedFilters }) {
   const navigate = useNavigate();
   return /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "dashboard-layout", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "dashboard-main", children: [
@@ -21038,7 +21076,7 @@ const EquipmentStats = {
   },
 };
 
-const {useContext: useContext$G,useEffect: useEffect$1y,useMemo: useMemo$U,useState: useState$1A} = await importShared('react');
+const {useContext: useContext$J,useEffect: useEffect$1D,useMemo: useMemo$X,useState: useState$1E} = await importShared('react');
 const DEFAULT_FILTERS = {
   startDate: "",
   endDate: "",
@@ -21047,32 +21085,36 @@ const DEFAULT_FILTERS = {
   period: "NONE"
 };
 const Dashboard = () => {
-  const { dashboardConfigs, isLoading, reload, setIsLoading } = useContext$G(
+  const { dashboardConfigs, isLoading, reload, setIsLoading } = useContext$J(
     MEMISContext.DashboardContext
   );
-  const { user } = useContext$G(MEMISContext.UserRolesContext);
+  const { user } = useContext$J(MEMISContext.UserRolesContext);
   const {
     setActiveLink,
     loading: menuLoading = false,
     refresh: refreshMenu,
     menuError
-  } = useContext$G(MEMISContext.MenuContext) || {};
+  } = useContext$J(MEMISContext.MenuContext) || {};
   const {
     programs = [],
     loading: programsLoading = false,
     refresh: refreshPrograms
-  } = useContext$G(MEMISContext.ProgramContext) || {};
-  const [isLoadingFromFilters, setIsLoadingFromFilters] = useState$1A(false);
-  const [defaultDepartment, setDefaultDepartment] = useState$1A("");
-  const [dashboardData, setDashboardData] = useState$1A({});
-  const [selectedFilters, setSelectedFilters] = useState$1A(DEFAULT_FILTERS);
-  useEffect$1y(() => {
+  } = useContext$J(MEMISContext.ProgramContext) || {};
+  const [isLoadingFromFilters, setIsLoadingFromFilters] = useState$1E(false);
+  const [defaultDepartment, setDefaultDepartment] = useState$1E("");
+  const [dashboardData, setDashboardData] = useState$1E({});
+  const [selectedFilters, setSelectedFilters] = useState$1E(DEFAULT_FILTERS);
+  useEffect$1D(() => {
     const loadDefaultDepartment = async () => {
-      const orgUnits = await LocalForageServiceInstance.getItem(
+      const orgUnits = await LocalForageService.getItem(
         "userOrganisationUnits",
         "userOrgUnits"
       );
-      const optionSets = await LocalForageServiceInstance.getItem(
+      const userData = await LocalForageService.getItem(
+        "userRes",
+        "user"
+      );
+      const optionSets = await LocalForageService.getItem(
         "optionSets",
         "metadata"
       );
@@ -21080,15 +21122,22 @@ const Dashboard = () => {
         await metadataInit(true);
       }
       const sorted = [...orgUnits || []].sort((a, b) => a.level - b.level);
+      const isHospAdmin = userData?.userRoles?.find((role) => role?.id === "lZf03hJRqlC");
+      const orgUnit = userData?.organisationUnits?.sort((a, b) => a?.level - b?.level);
       const dept = sorted?.[0]?.id || "";
-      setDefaultDepartment(dept);
+      const hAdmin = orgUnit?.[1]?.id || "";
+      if (isHospAdmin !== null) {
+        setDefaultDepartment(hAdmin);
+      } else {
+        setDefaultDepartment(dept);
+      }
       if (selectedFilters?.period && (!selectedFilters.startDate || !selectedFilters.endDate)) {
         const range = getDateRangeFromPeriod(selectedFilters.period);
         setSelectedFilters((prev) => ({
           ...prev,
           startDate: range?.startDate,
           endDate: range?.endDate,
-          department: dept
+          department: isHospAdmin !== null ? hAdmin : dept
         }));
       } else {
         setSelectedFilters({ ...DEFAULT_FILTERS, department: dept });
@@ -21120,14 +21169,14 @@ const Dashboard = () => {
       period: "NONE"
     });
   };
-  useMemo$U(() => {
+  useMemo$X(() => {
     return dashboardConfigs?.some(
       (d) => d.access?.some(
         (acc) => user?.userRoles?.some((ur) => ur?.id === acc?.id)
       )
     );
   }, [dashboardConfigs, user]);
-  useEffect$1y(() => {
+  useEffect$1D(() => {
     setIsLoadingFromFilters(true);
     setTimeout(() => {
       setIsLoadingFromFilters(false);
@@ -21136,7 +21185,7 @@ const Dashboard = () => {
   const getDashboardData = async (sf) => {
     setIsLoading(true);
     try {
-      const ou = await LocalForageServiceInstance.getItem(
+      const ou = await LocalForageService.getItem(
         "userOnlyOrgUnits",
         "userOnlyOrgUnits"
       );
@@ -21150,7 +21199,7 @@ const Dashboard = () => {
         filters.push(`RiiMQRa0S8v:like:${equipment}`);
       }
       let data = null;
-      const loggedInUser = await LocalForageServiceInstance.getItem("userRes", "user");
+      const loggedInUser = await LocalForageService.getItem("userRes", "user");
       const useAllocated = loggedInUser.userRoles?.some(
         (role) => role?.id === "Ec6TZ5N1QeF"
       );
@@ -21176,7 +21225,7 @@ const Dashboard = () => {
         }
         if (sf?.startDate) newParams.append("updatedAfter", sf?.startDate);
         if (sf?.endDate) newParams.append("updatedBefore", sf?.endDate);
-        const user2 = await LocalForageServiceInstance.getItem("userRes", "user");
+        const user2 = await LocalForageService.getItem("userRes", "user");
         data = await renderListByUserRole({
           user: user2,
           programId: "X8V6omQYuW0",
@@ -21201,7 +21250,7 @@ const Dashboard = () => {
         data?.data?.trackedEntities,
         [
           { key: "FULLY_FUNCTIONAL", attribute: "KFZ35H4ZHrk" },
-          { key: "UNDER_REPAIR", attribute: "KFZ35H4ZHrk" },
+          { key: "UNDER_REPAIR", attribute: "rXIdO0bLQvD" },
           { key: "NON_FUNCTIONAL", attribute: "KFZ35H4ZHrk" }
         ]
       );
@@ -21397,7 +21446,7 @@ const Dashboard = () => {
           percentage: totalEquipment ? (byStatus?.FULLY_FUNCTIONAL / totalEquipment * 100).toFixed(1) : 0,
           color: "#138a36",
           icon: checkmarkOutline,
-          link: "/memis/program/X8V6omQYuW0?status=FULLY_FUNCTIONAL"
+          link: "/memis/program/X8V6omQYuW0?status=FULLY_FUNCTIONAL&statusKey=KFZ35H4ZHrk"
         },
         {
           title: "Under Maintenance",
@@ -21406,7 +21455,7 @@ const Dashboard = () => {
           percentage: totalEquipment ? (byStatus?.UNDER_REPAIR / totalEquipment * 100).toFixed(1) : 0,
           color: "#d89b00",
           icon: constructOutline,
-          link: "/memis/program/X8V6omQYuW0?status=UNDER_REPAIR"
+          link: "/memis/program/X8V6omQYuW0?status=UNDER_REPAIR&statusKey=rXIdO0bLQvD"
         },
         {
           title: "Not Functional",
@@ -21417,7 +21466,7 @@ const Dashboard = () => {
           percentage: totalEquipment ? (byStatus?.NON_FUNCTIONAL / totalEquipment * 100).toFixed(1) : 0,
           color: "#df3b2f",
           icon: closeOutline,
-          link: "/memis/program/X8V6omQYuW0?status=NON_FUNCTIONAL"
+          link: "/memis/program/X8V6omQYuW0?status=NON_FUNCTIONAL&statusKey=KFZ35H4ZHrk"
         },
         {
           title: "Spare Parts",
@@ -21443,7 +21492,7 @@ const Dashboard = () => {
       setIsLoading(false);
     }
   };
-  useEffect$1y(() => {
+  useEffect$1D(() => {
     const today = /* @__PURE__ */ new Date();
     const format = (date) => date.toISOString().split("T")[0];
     const defaultStart = new Date(today.getFullYear(), today.getMonth(), 1);
@@ -21495,9 +21544,39 @@ const Dashboard = () => {
   ] });
 };
 
-const getUsersForAssignment = async () => {
+/**
+ * Resolves role IDs for a given field from the userPickerRoleFilter datastore key.
+ * Returns an array of role ID strings, or an empty array if the field has no config.
+ *
+ * The key structure is:
+ *   roles: { <roleName>: { id, name } }
+ *   fields: { <dataElementId>: { label, roles: [<roleName>, ...] } }
+ */
+async function resolveRoleIdsForField(fieldId) {
   try {
-    const org = await LocalForageServiceInstance.getItem("userRes", "user");
+    const ds = await LocalForageService.getItem("dataStore", "dataStore");
+    const cfg = ds?.userPickerRoleFilter || {};
+    const roles = cfg.roles || {};
+    const fieldCfg = cfg.fields?.[fieldId];
+    if (!fieldCfg?.roles?.length) return [];
+    return fieldCfg.roles
+      .map((roleName) => roles[roleName]?.id)
+      .filter(Boolean);
+  } catch {
+    return [];
+  }
+}
+
+/**
+ * Fetches users at the current user's facility for assignment dropdowns.
+ *
+ * @param {string[]} [roleIds] - Optional list of role IDs to filter by.
+ *   When provided, only users who have at least one of these roles are returned.
+ *   When omitted, all users at the facility are returned.
+ */
+const getUsersForAssignment = async (roleIds) => {
+  try {
+    const org = await LocalForageService.getItem("userRes", "user");
     const units =
       org?.organisationUnits?.length > 1
         ? org?.organisationUnits.sort((a, b) => a?.level - b?.level)
@@ -21507,20 +21586,27 @@ const getUsersForAssignment = async () => {
     const params = `fields=name,id,username,firstName,surname,organisationUnits,userRoles[id,name]&ou=${ouId}&includeChildren=true&paging=false`;
     const userResponse = await dataStore?.get(`users?${params}`);
 
-    const usersConsolidated = userResponse?.data?.users?.map((user) => ({
+    const allUsers = userResponse?.data?.users || [];
+
+    const filtered =
+      Array.isArray(roleIds) && roleIds.length > 0
+        ? allUsers.filter((user) =>
+            (user.userRoles || []).some((r) => roleIds.includes(r.id))
+          )
+        : allUsers;
+
+    return filtered.map((user) => ({
       ...user,
       name: `${user?.name}-(${user?.username})`,
     }));
-
-    return usersConsolidated || [];
   } catch (error) {
     console.log({ error });
     return [];
   }
 };
 
-const React$T = await importShared('react');
-const {useEffect: useEffect$1x,useState: useState$1z} = React$T;
+const React$X = await importShared('react');
+const {useEffect: useEffect$1C,useState: useState$1D} = React$X;
 function OrganisationUnitsWidget({
   programOrgUnits = [],
   selectedOrganisationUnit,
@@ -21535,12 +21621,12 @@ function OrganisationUnitsWidget({
   searchParams.get("q");
   searchParams.get("stage");
   searchParams.get("equipmentId");
-  const [facility, setFacility] = useState$1z("Facility");
-  const [orgUnitName, setOrgUnitName] = useState$1z("");
+  const [facility, setFacility] = useState$1D("Facility");
+  const [orgUnitName, setOrgUnitName] = useState$1D("");
   const getTEI = async (teiOu2) => {
     try {
       await dataStore.get(`tracker/trackedEntities/${teiOu2}`).then(async (res) => {
-        await LocalForageServiceInstance.getItem("userOrganisationUnits", "userOrgUnits").then((orgRes) => {
+        await LocalForageService.getItem("userOrganisationUnits", "userOrgUnits").then((orgRes) => {
           const orgUint = orgRes?.find((org) => org?.id === res?.data?.orgUnit);
           setOrgUnitName(orgUint?.name || "");
           setSelectedOrganisationUnit(res?.data?.orgUnit);
@@ -21551,7 +21637,7 @@ function OrganisationUnitsWidget({
       console.log("Failed to fetch TEI data:", error);
     }
   };
-  useEffect$1x(() => {
+  useEffect$1C(() => {
     if (!Array.isArray(programOrgUnits) || programOrgUnits?.length === 0 || !dataStoreData) {
       return;
     }
@@ -21748,21 +21834,21 @@ const ComponentsField = ({
   ] });
 };
 
-const {useEffect: useEffect$1w,useMemo: useMemo$T,useState: useState$1y} = await importShared('react');
+const {useEffect: useEffect$1B,useMemo: useMemo$W,useState: useState$1C} = await importShared('react');
 
 function useSectionVisibilityConfig(programId) {
-    const [tick, setTick] = useState$1y(0);
-    const [config, setConfig] = useState$1y(null);
+    const [tick, setTick] = useState$1C(0);
+    const [config, setConfig] = useState$1C(null);
 
     // Listen for external updates
-    useEffect$1w(() => {
+    useEffect$1B(() => {
         const onUpdate = () => setTick((n) => n + 1);
         window.addEventListener("memis:sectionVisibility:updated", onUpdate);
         return () => window.removeEventListener("memis:sectionVisibility:updated", onUpdate);
     }, []);
 
     // Fetch data asynchronously
-    useEffect$1w(() => {
+    useEffect$1B(() => {
         let mounted = true;
         const fetchConfig = async () => {
             try {
@@ -21780,7 +21866,7 @@ function useSectionVisibilityConfig(programId) {
     }, [tick]);
 
     // Derive visibility rules for the current program
-    const visibilityRules = useMemo$T(() => {
+    const visibilityRules = useMemo$W(() => {
         if (!programId || !config) return null;
 
         try {
@@ -21836,7 +21922,7 @@ function useSectionVisibilityConfig(programId) {
     return visibilityRules;
 }
 
-const {useMemo: useMemo$S} = await importShared('react');
+const {useMemo: useMemo$V} = await importShared('react');
 
 
 const A$b = (x) => (Array.isArray(x) ? x : []);
@@ -21916,20 +22002,20 @@ function useProgramRules({
     formData = {},
     isAddFlow = false,
 }) {
-    const isReportsProgram = useMemo$S(() => {
+    const isReportsProgram = useMemo$V(() => {
         if (!program) return false;
         const programId = program?.id || "";
         const name = normalizeText(program?.name || program?.displayName);
         return programId === "C0ZvPkEFpLt" || name === "reports";
     }, [program]);
 
-    const programRulesList = useMemo$S(() => {
+    const programRulesList = useMemo$V(() => {
         if (Array.isArray(externalRules) && externalRules.length) return externalRules;
         if (Array.isArray(program?.programRules)) return program.programRules;
         return [];
     }, [externalRules, program]);
 
-    const programRuleVariables = useMemo$S(
+    const programRuleVariables = useMemo$V(
         () => A$b(program?.programRuleVariables),
         [program]
     );
@@ -21941,7 +22027,7 @@ function useProgramRules({
         return normalizeText(rule.program.name) === normalizeText(program.name);
     };
 
-    const reviewRule = useMemo$S(
+    const reviewRule = useMemo$V(
         () =>
             programRulesList.find((rule) => {
                 if (!matchesProgram(rule)) return false;
@@ -21954,7 +22040,7 @@ function useProgramRules({
         [programRulesList, program]
     );
 
-    const assignRule = useMemo$S(
+    const assignRule = useMemo$V(
         () =>
             programRulesList.find((rule) => {
                 if (!matchesProgram(rule)) return false;
@@ -21967,12 +22053,12 @@ function useProgramRules({
         [programRulesList, program]
     );
 
-    const fieldMetaById = useMemo$S(
+    const fieldMetaById = useMemo$V(
         () => buildFieldMetaById(sections),
         [sections]
     );
 
-    const referencedVariableNames = useMemo$S(() => {
+    const referencedVariableNames = useMemo$V(() => {
         const names = new Set();
         [reviewRule, assignRule].forEach((rule) => {
             extractVariableNames(rule?.condition).forEach((name) =>
@@ -21982,7 +22068,7 @@ function useProgramRules({
         return Array.from(names);
     }, [reviewRule, assignRule]);
 
-    const reportTypeVariable = useMemo$S(
+    const reportTypeVariable = useMemo$V(
         () =>
             referencedVariableNames
                 .map((name) =>
@@ -22005,14 +22091,14 @@ function useProgramRules({
         : undefined;
     const normalizedReportType = normalizeText(reportTypeLabel || reportTypeValue);
 
-    const reviewTriggerSet = useMemo$S(
+    const reviewTriggerSet = useMemo$V(
         () => (reviewRule?.condition ? extractComparisonValues(reviewRule.condition) : new Set()),
         [reviewRule]
     );
 
     const requiresReview = Boolean(normalizedReportType) && reviewTriggerSet.has(normalizedReportType) && isReportsProgram;
 
-    const approverAssignments = useMemo$S(
+    const approverAssignments = useMemo$V(
         () => (assignRule?.condition ? parseAssignPairs(assignRule.condition) : {}),
         [assignRule]
     );
@@ -22021,12 +22107,12 @@ function useProgramRules({
         ? approverAssignments[normalizedReportType]
         : undefined;
 
-    const autoAssignedApprovers = useMemo$S(
+    const autoAssignedApprovers = useMemo$V(
         () => new Set(Object.values(approverAssignments).filter(Boolean)),
         [approverAssignments]
     );
 
-    const assignAction = useMemo$S(() => {
+    const assignAction = useMemo$V(() => {
         if (!assignRule) return null;
         return (
             A$b(assignRule.programRuleActions).find(
@@ -22039,7 +22125,7 @@ function useProgramRules({
 
     const approvingOfficerFieldId = assignAction?.dataElement?.id || null;
 
-    const approvingSectionId = useMemo$S(() => {
+    const approvingSectionId = useMemo$V(() => {
         if (!approvingOfficerFieldId) return null;
         for (const section of sections) {
             const hasField = A$b(section?.fields).some((field) => {
@@ -22088,7 +22174,7 @@ const DE_TRANSFER_TO_LOCATION = "Hk2JSouuvga";
 const DE_TRANSFER_EQUIPMENT_NAME = "wObkfr29dtK";
 const DE_TRANSFER_EQUIPMENT_TO_BE_TRANSFERRED = "oIEtXbVslFN";
 
-const {useEffect: useEffect$1v,useRef: useRef$s,useState: useState$1x} = await importShared('react');
+const {useEffect: useEffect$1A,useRef: useRef$t,useState: useState$1B} = await importShared('react');
 
 const NO_WARD_ALLOCATED_MESSAGE = "THE USER HAS NO WARD ALLOCATED";
 let facilityOrgUnitsCache = null;
@@ -22141,8 +22227,8 @@ function useTransferDefaults({
     setFormData,
     userOrganisationUnits,
 }) {
-    const transferLocationDefaultAppliedRef = useRef$s(false);
-    const transferToLocationDefaultAppliedRef = useRef$s(false);
+    const transferLocationDefaultAppliedRef = useRef$t(false);
+    const transferToLocationDefaultAppliedRef = useRef$t(false);
 
     const isWardInChargeForTransfer =
         user &&
@@ -22178,7 +22264,7 @@ function useTransferDefaults({
 
     const transferLocationValue = formData?.[DE_TRANSFER_LOCATION_TYPE];
 
-    useEffect$1v(() => {
+    useEffect$1A(() => {
         if (transferLocationDefaultAppliedRef.current) return;
         if (!isWardInChargeForTransfer && !isHospitalAdminForTransfer) return;
         if (isEdit) return;
@@ -22211,7 +22297,7 @@ function useTransferDefaults({
         setFormData,
     ]);
 
-    useEffect$1v(() => {
+    useEffect$1A(() => {
         const shouldPrefill =
             isWardInChargeForTransfer || isHospitalAdminForTransfer;
         if (!shouldPrefill) return;
@@ -22263,16 +22349,16 @@ function useTransferOrganisationUnitOptions({
     isHospitalAdminForTransfer,
     transferLocationValue,
 }) {
-    const [facilityOrgUnits, setFacilityOrgUnits] = useState$1x([]);
-    const [facilityOrgUnitsLoading, setFacilityOrgUnitsLoading] = useState$1x(false);
-    const facilityOrgUnitsLoadedRef = useRef$s(false);
+    const [facilityOrgUnits, setFacilityOrgUnits] = useState$1B([]);
+    const [facilityOrgUnitsLoading, setFacilityOrgUnitsLoading] = useState$1B(false);
+    const facilityOrgUnitsLoadedRef = useRef$t(false);
 
     const shouldUseFacilityGroup =
         isHospitalAdminForTransfer &&
         transferLocationValue &&
         String(transferLocationValue).trim() === OPTION_CODE_OUTSIDE_FACILITY;
 
-    useEffect$1v(() => {
+    useEffect$1A(() => {
         if (!shouldUseFacilityGroup) return;
         if (facilityOrgUnitsLoadedRef.current) return;
 
@@ -22406,7 +22492,7 @@ const getAttributeValue$1 = (attributes, attributeId) =>
  */
 async function getSectionAccess(sectionId, programId, user) {
   try {
-    const ds = await LocalForageServiceInstance.getItem(
+    const ds = await LocalForageService.getItem(
       "dataStore",
       "dataStore"
     );
@@ -22539,7 +22625,7 @@ async function getSkipLogicConfig(programId) {
   if (!programId) return null;
 
   try {
-    const ds = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+    const ds = await LocalForageService.getItem("dataStore", "dataStore");
     const skipLogic = ds?.skipLogic;
 
     if (!skipLogic) return null;
@@ -22604,7 +22690,7 @@ async function getSkipLogicConfig(programId) {
   }
 }
 
-const {useMemo: useMemo$R} = await importShared('react');
+const {useMemo: useMemo$U} = await importShared('react');
 
 /**
  * Hook: compute the primary button label from:
@@ -22625,7 +22711,7 @@ function usePrimaryButtonLabel({
 }) {
     // const cfg = getButtonTextConfig(dataStore);
 
-    return useMemo$R(() => {
+    return useMemo$U(() => {
         if (loading) return "Saving…";
 
         // Always show "Submit" on last step to make UX explicit.
@@ -22647,7 +22733,7 @@ function usePrimaryButtonLabel({
 
 async function getEquipmentListOnTransferOutside(event) {
     try {
-        const config = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+        const config = await LocalForageService.getItem("dataStore", "dataStore");
         const equipmentConfiguration =
             config?.showEquipmentBasedOnPAMLevelOnTransferOutside?.configurations?.find(configItem => configItem?.programId === event?.program);
 
@@ -22690,7 +22776,7 @@ async function getEquipmentListOnTransferOutside(event) {
     }
 }
 
-const {useState: useState$1w,useEffect: useEffect$1u,useRef: useRef$r} = await importShared('react');
+const {useState: useState$1A,useEffect: useEffect$1z,useRef: useRef$s} = await importShared('react');
 
 const ATTR$1 = ATTRIBUTE_FOR_EQUIPMENT_LOOKUP;
 
@@ -22705,9 +22791,9 @@ function useEquipmentOptions(
   selectedOrganisationUnit = null,
   event = null,
 ) {
-  const equipmentCacheRef = useRef$r(new Map());
-  const [equipmentOptions, setEquipmentOptions] = useState$1w([]);
-  const [equipmentLoading, setEquipmentLoading] = useState$1w(false);
+  const equipmentCacheRef = useRef$s(new Map());
+  const [equipmentOptions, setEquipmentOptions] = useState$1A([]);
+  const [equipmentLoading, setEquipmentLoading] = useState$1A(false);
 
   /* ---------------------------------------------------------
        Determine whether outside-facility logic should apply
@@ -22715,7 +22801,7 @@ function useEquipmentOptions(
   const shouldApplyOutsideFacilityLogic = async (event) => {
     if (!event?.program) return false;
 
-    const store = await LocalForageServiceInstance.getItem(
+    const store = await LocalForageService.getItem(
       "dataStore",
       "dataStore",
     );
@@ -22760,7 +22846,7 @@ function useEquipmentOptions(
         fields:
           "trackedEntity,orgUnit,attributes,enrollments[events,program,orgUnit]", // Get all necessary fields
       });
-      const user = await LocalForageServiceInstance.getItem("userRes", "user");
+      const user = await LocalForageService.getItem("userRes", "user");
       const res = await renderListByUserRole({
         user,
         programId,
@@ -22852,7 +22938,7 @@ function useEquipmentOptions(
   /* ---------------------------------------------------------
        Effect trigger
        --------------------------------------------------------- */
-  useEffect$1u(() => {
+  useEffect$1z(() => {
     let active = true;
 
     const run = async () => {
@@ -22883,18 +22969,18 @@ function useEquipmentOptions(
   };
 }
 
-const {useState: useState$1v,useEffect: useEffect$1t,useRef: useRef$q} = await importShared('react');
+const {useState: useState$1z,useEffect: useEffect$1y,useRef: useRef$r} = await importShared('react');
 
 /**
  * Custom hook to manage status field initialization and tracking
  * Encapsulates status-related state logic
  */
 function useStatusField({ programObj, programKey, selectedStageId, isEdit, formData, setFormData }) {
-    const [statusFieldId, setStatusFieldId] = useState$1v(null);
-    const [statusOptionCodes, setStatusOptionCodes] = useState$1v({});
-    const lastApproverNotificationRef = useRef$q(null);
+    const [statusFieldId, setStatusFieldId] = useState$1z(null);
+    const [statusOptionCodes, setStatusOptionCodes] = useState$1z({});
+    const lastApproverNotificationRef = useRef$r(null);
 
-    useEffect$1t(() => {
+    useEffect$1y(() => {
         if (!programObj || isEdit) return;
 
         let statusDE = null;
@@ -22949,7 +23035,7 @@ function useStatusField({ programObj, programKey, selectedStageId, isEdit, formD
     };
 }
 
-const {useState: useState$1u} = await importShared('react');
+const {useState: useState$1y} = await importShared('react');
 
 
 /**
@@ -22957,8 +23043,8 @@ const {useState: useState$1u} = await importShared('react');
  * Consolidates image-related state
  */
 function useImageState() {
-    const [imageUrls, setImageUrls] = useState$1u({});
-    const [imageLoading, setImageLoading] = useState$1u({});
+    const [imageUrls, setImageUrls] = useState$1y({});
+    const [imageLoading, setImageLoading] = useState$1y({});
 
     return {
         imageUrls,
@@ -22968,7 +23054,7 @@ function useImageState() {
     };
 }
 
-const {useState: useState$1t} = await importShared('react');
+const {useState: useState$1x} = await importShared('react');
 
 
 /**
@@ -22976,7 +23062,7 @@ const {useState: useState$1t} = await importShared('react');
  * Consolidates date picker UI state
  */
 function useDateRangePopover() {
-    const [dateRangePopover, setDateRangePopover] = useState$1t({
+    const [dateRangePopover, setDateRangePopover] = useState$1x({
         from: false,
         to: false,
         fieldId: null,
@@ -22988,14 +23074,14 @@ function useDateRangePopover() {
     };
 }
 
-const {useMemo: useMemo$Q} = await importShared('react');
+const {useMemo: useMemo$T} = await importShared('react');
 
 /**
  * Custom hook to compute sections from program/stage metadata
  * Shape: [{ id, name, fields:[dataElement|trackedEntityAttribute] }]
  */
 function useSections({ programObj, stageObj, programKey, selectedStageId }) {
-    return useMemo$Q(() => {
+    return useMemo$T(() => {
         const mapSectionId = (section) => {
             const sectionName = (section.name || section.formName || "").toLowerCase();
 
@@ -23069,7 +23155,7 @@ function useSections({ programObj, stageObj, programKey, selectedStageId }) {
     }, [programObj, stageObj, programKey, selectedStageId]);
 }
 
-const {useMemo: useMemo$P,useEffect: useEffect$1s,useState: useState$1s} = await importShared('react');
+const {useMemo: useMemo$S,useEffect: useEffect$1x,useState: useState$1w} = await importShared('react');
 
 function useSectionsList({
   sections,
@@ -23078,10 +23164,10 @@ function useSectionsList({
   user,
   formData,
 }) {
-  const [sectionAccessMap, setSectionAccessMap] = useState$1s(null);
+  const [sectionAccessMap, setSectionAccessMap] = useState$1w(null);
 
   // 🔹 1. Load section access asynchronously
-  useEffect$1s(() => {
+  useEffect$1x(() => {
 
     if (!sections || !user || !programId) return;
 
@@ -23103,7 +23189,7 @@ function useSectionsList({
   }, [sections, programId, user]);
 
   // 🔹 2. Compute final visible sections
-  const sectionsList = useMemo$P(() => {
+  const sectionsList = useMemo$S(() => {
     if (!sections || !sectionAccessMap) return [];
 
     // Filter writable sections
@@ -23261,7 +23347,7 @@ const applyOtherFieldRules = ({
   });
 };
 
-const {useState: useState$1r,useEffect: useEffect$1r,useMemo: useMemo$O,useRef: useRef$p} = await importShared('react');
+const {useState: useState$1v,useEffect: useEffect$1w,useMemo: useMemo$R,useRef: useRef$q} = await importShared('react');
 
 /**
  * Hook to manage field visibility based on skip logic and OTHER field rules
@@ -23278,11 +23364,11 @@ function useHiddenFields({
   activeSection,
   setStepIndex,
 }) {
-  const [skipLogicMap, setSkipLogicMap] = useState$1r({});
-  const [defaultHidden, setDefaultHidden] = useState$1r(new Set());
+  const [skipLogicMap, setSkipLogicMap] = useState$1v({});
+  const [defaultHidden, setDefaultHidden] = useState$1v(new Set());
 
   // Load skip logic config from LocalForage whenever programId changes
-  useEffect$1r(() => {
+  useEffect$1w(() => {
     if (!programId) return;
 
     let cancelled = false;
@@ -23304,7 +23390,7 @@ function useHiddenFields({
   }, [programId]);
 
   // Initial hidden fields: Hide OTHER text fields by default in create mode
-  const initialHiddenFields = useMemo$O(() => {
+  const initialHiddenFields = useMemo$R(() => {
     const hidden = new Set(defaultHidden);
 
     if (!isEdit && Array.isArray(otherFieldMappings) && otherFieldMappings.length > 0) {
@@ -23316,17 +23402,17 @@ function useHiddenFields({
     return hidden;
   }, [selectedStage, isEdit, otherFieldMappings, defaultHidden]);
 
-  const [hiddenFields, setHiddenFields] = useState$1r(initialHiddenFields);
-  const hiddenFieldsRef = useRef$p(hiddenFields);
+  const [hiddenFields, setHiddenFields] = useState$1v(initialHiddenFields);
+  const hiddenFieldsRef = useRef$q(hiddenFields);
 
   // Re-seed hiddenFields whenever initialHiddenFields changes
-  useEffect$1r(() => {
+  useEffect$1w(() => {
     hiddenFieldsRef.current = initialHiddenFields;
     setHiddenFields(initialHiddenFields);
   }, [initialHiddenFields]);
 
   // Apply skip-logic whenever relevant formData or skipLogicMap changes
-  useEffect$1r(() => {
+  useEffect$1w(() => {
     const newHidden = new Set(defaultHidden);
 
     // Seed with OTHER fields hidden by default in create mode
@@ -23454,7 +23540,7 @@ function useHiddenFields({
   };
 }
 
-const {useState: useState$1q} = await importShared('react');
+const {useState: useState$1u} = await importShared('react');
 
 
 /**
@@ -23462,10 +23548,10 @@ const {useState: useState$1q} = await importShared('react');
  * Handles loading state for task-based form prefilling
  */
 function useTaskPrefill() {
-    const [taskAvailableInQuery, setTaskAvailableInQuery] = useState$1q(null);
-    const [prefilledValues, setPrefilledValues] = useState$1q([]);
-    const [isCheckingRegistration, setIsCheckingRegistration] = useState$1q(false);
-    const [formLoading, setFormLoading] = useState$1q(false);
+    const [taskAvailableInQuery, setTaskAvailableInQuery] = useState$1u(null);
+    const [prefilledValues, setPrefilledValues] = useState$1u([]);
+    const [isCheckingRegistration, setIsCheckingRegistration] = useState$1u(false);
+    const [formLoading, setFormLoading] = useState$1u(false);
 
     return {
         taskAvailableInQuery,
@@ -23479,7 +23565,7 @@ function useTaskPrefill() {
     };
 }
 
-const {useEffect: useEffect$1q} = await importShared('react');
+const {useEffect: useEffect$1v} = await importShared('react');
 
 /**
  * Hook to handle task prefill logic
@@ -23491,7 +23577,7 @@ function useTaskPrefillLogic({
     setFormLoading,
     setFormData,
 }) {
-    useEffect$1q(() => {
+    useEffect$1v(() => {
         const loadTaskPrefill = async () => {
             const taskId = queryParams.get("taskId");
             if (!taskId) return;
@@ -23578,14 +23664,14 @@ function useTaskPrefillLogic({
     }, []);
 }
 
-const {useState: useState$1p} = await importShared('react');
+const {useState: useState$1t} = await importShared('react');
 
 
 /**
  * Hook to manage simple popover visibility state
  */
 function usePopoverState(initialState = false) {
-    const [showPopover, setShowPopover] = useState$1p(initialState);
+    const [showPopover, setShowPopover] = useState$1t(initialState);
 
     return {
         showPopover,
@@ -23593,7 +23679,7 @@ function usePopoverState(initialState = false) {
     };
 }
 
-const {useState: useState$1o,useEffect: useEffect$1p} = await importShared('react');
+const {useState: useState$1s,useEffect: useEffect$1u} = await importShared('react');
 
 
 /**
@@ -23601,14 +23687,14 @@ const {useState: useState$1o,useEffect: useEffect$1p} = await importShared('reac
  */
 function useViewport() {
     // Initialize with actual window width to prevent flash
-    const [isMobile, setIsMobile] = useState$1o(() => {
+    const [isMobile, setIsMobile] = useState$1s(() => {
         if (typeof window !== 'undefined') {
             return window.innerWidth <= 600;
         }
         return false;
     });
 
-    useEffect$1p(() => {
+    useEffect$1u(() => {
         const handleResize = () => setIsMobile(window.innerWidth <= 600);
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
@@ -23617,18 +23703,18 @@ function useViewport() {
     return { isMobile };
 }
 
-const {useState: useState$1n,useEffect: useEffect$1o} = await importShared('react');
+const {useState: useState$1r,useEffect: useEffect$1t} = await importShared('react');
 
 /**
  * Hook to manage OTHER field configuration and mappings
  * Handles showing/hiding "Other" text fields based on dropdown selections
  */
 function useOtherFieldLogic({ selectedStageId, programObj }) {
-  const [otherFieldConfig, setOtherFieldConfig] = useState$1n({});
-  const [otherFieldMappings, setOtherFieldMappings] = useState$1n([]);
+  const [otherFieldConfig, setOtherFieldConfig] = useState$1r({});
+  const [otherFieldMappings, setOtherFieldMappings] = useState$1r([]);
 
   // Fetch OTHER field configuration on mount
-  useEffect$1o(() => {
+  useEffect$1t(() => {
     let mounted = true;
 
     const loadConfig = async () => {
@@ -23645,7 +23731,7 @@ function useOtherFieldLogic({ selectedStageId, programObj }) {
   }, []);
 
   // Load OTHER field mappings when stage/program changes
-  useEffect$1o(() => {
+  useEffect$1t(() => {
     const stageIdFromProgram =
       !selectedStageId && Array.isArray(programObj?.programStages) && programObj.programStages.length > 0
         ? programObj.programStages[0]?.id
@@ -23673,9 +23759,9 @@ function useOtherFieldLogic({ selectedStageId, programObj }) {
   };
 }
 
-const {useState: useState$1m,useEffect: useEffect$1n} = await importShared('react');
+const {useState: useState$1q,useEffect: useEffect$1s} = await importShared('react');
 
-const {useEffect: useEffect$1m} = await importShared('react');
+const {useEffect: useEffect$1r} = await importShared('react');
 
 /**
  * Hook to load image URLs for IMAGE type fields when editing
@@ -23724,7 +23810,7 @@ function useImageLoader({
     /**
      * When editing a TEI, load existing IMAGE values for data elements so they can be previewed.
      */
-    useEffect$1m(() => {
+    useEffect$1r(() => {
         const load = async () => {
             if (!trackedEntityUID || !programId) return;
 
@@ -23777,14 +23863,14 @@ function useImageLoader({
     }, [trackedEntityUID, programId, programObj, stageObj, selectedStageId]);
 }
 
-const {useState: useState$1l,useEffect: useEffect$1l} = await importShared('react');
+const {useState: useState$1p,useEffect: useEffect$1q} = await importShared('react');
 
 /**
  * Resolves the equipment program ID and stage configs from the datastore cache.
  * Source: equipmentContextConfig.globalSettings.equipmentProgramId
  */
 async function resolveEquipmentContextConfig() {
-  const ds = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+  const ds = await LocalForageService.getItem("dataStore", "dataStore");
   const cfg = ds?.equipmentContextConfig || {};
   return {
     equipmentProgramId: cfg.globalSettings?.equipmentProgramId || null,
@@ -23802,16 +23888,16 @@ function useEquipmentContext({
   routeEquipmentId,
   resetTrigger,
 }) {
-  const [contextConfig, setContextConfig] = useState$1l(null);
-  const [selectedEquipment, setSelectedEquipment] = useState$1l(null);
-  const [availableEquipment, setAvailableEquipment] = useState$1l([]);
-  const [showEquipmentPicker, setShowEquipmentPicker] = useState$1l(false);
-  const [loading, setLoading] = useState$1l(false);
-  const [error, setError] = useState$1l(null);
-  const [configLoaded, setConfigLoaded] = useState$1l(false);
+  const [contextConfig, setContextConfig] = useState$1p(null);
+  const [selectedEquipment, setSelectedEquipment] = useState$1p(null);
+  const [availableEquipment, setAvailableEquipment] = useState$1p([]);
+  const [showEquipmentPicker, setShowEquipmentPicker] = useState$1p(false);
+  const [loading, setLoading] = useState$1p(false);
+  const [error, setError] = useState$1p(null);
+  const [configLoaded, setConfigLoaded] = useState$1p(false);
 
   // Reset state when stage/program changes OR when resetTrigger changes (new action)
-  useEffect$1l(() => {
+  useEffect$1q(() => {
     setContextConfig(null);
     setSelectedEquipment(null);
     setAvailableEquipment([]);
@@ -23857,27 +23943,28 @@ function useEquipmentContext({
     loadConfigAndShowPicker();
   }
 
-  // Fetch available equipment scoped to the user's org units
+  // Fetch available equipment — two paths:
+  //   wardScopedLookup: true  → scope by allocation event ward field (corrective maintenance)
+  //   wardScopedLookup: false → scope by user org unit (all other stages)
   const fetchAvailableEquipment = async (config) => {
     try {
       setLoading(true);
       setError(null);
 
-      const { equipmentProgramId } = await resolveEquipmentContextConfig();
+      const ds = await LocalForageService.getItem("dataStore", "dataStore");
+      const equipmentProgramId =
+        ds?.equipmentContextConfig?.globalSettings?.equipmentProgramId || null;
       if (!equipmentProgramId)
         throw new Error("equipmentProgramId not configured in datastore");
 
       // Get current user's org units
-      const currentUser = await LocalForageServiceInstance.getItem(
-        "userRes",
-        "user",
-      );
+      const currentUser = await LocalForageService.getItem("userRes", "user");
       const userData = currentUser?.data || currentUser;
-      const orgUnits = userData?.organisationUnits?.map((ou) => ou.id) || [];
+      const orgUnits = userData?.organisationUnits || [];
       if (orgUnits.length === 0)
         throw new Error("No organization units found for current user");
 
-      // Resolve display field attribute IDs from config
+      // Resolve display/status attribute IDs from config
       const primaryAttrId =
         config.displayFields?.find((f) => f.primary)?.attributeId || null;
       const secondaryAttrId =
@@ -23885,98 +23972,41 @@ function useEquipmentContext({
       const statusAttrId =
         config.equipmentFilter?.attributes?.statusAttribute || null;
 
-      // Fetch program metadata for optionset resolution
-      const programMetadata = await dataStore.get(
-        `programs/${equipmentProgramId}?fields=programTrackedEntityAttributes[trackedEntityAttribute[id,name,valueType,optionSet[id,options[id,code,name]]]]`,
-      );
-      const attrMap = new Map();
-      (programMetadata?.data?.programTrackedEntityAttributes || []).forEach(
-        (ptea) => {
-          const attr = ptea?.trackedEntityAttribute;
-          if (attr?.id) attrMap.set(attr.id, attr);
-        },
-      );
-
-      // Build server-side filters from config
-      const includeStatuses = config.equipmentFilter?.includeStatuses || [];
-      const excludeStatuses = Array.isArray(
-        config.equipmentFilter?.excludeStatuses,
-      )
+      const excludeStatuses = Array.isArray(config.equipmentFilter?.excludeStatuses)
         ? config.equipmentFilter.excludeStatuses
         : config.equipmentFilter?.excludeStatuses
           ? [config.equipmentFilter.excludeStatuses]
           : [];
 
-      const queryParams = new URLSearchParams({
-        program: equipmentProgramId,
-        fields:
-          "trackedEntity,createdAt,orgUnit,attributes[attribute,value,createdAt],enrollments[enrollment,program]",
-        orgUnits: orgUnits.join(","),
-        order: "createdAt:desc",
-        orgUnitMode: "SELECTED",
-        skipPaging: "true",
-      });
-
-      // Server-side include filter (e.g. ALLOCATED only for maintenance)
-      if (statusAttrId && includeStatuses.length > 0) {
-        queryParams.append(
-          "filter",
-          `${statusAttrId}:in:${includeStatuses.join(";")}`,
-        );
-      }
-
-      const response = await dataStore.get(
-        `tracker/trackedEntities?${queryParams.toString()}`,
+      // Fetch program metadata for optionset label resolution
+      const programMetadata = await dataStore.get(
+        `programs/${equipmentProgramId}?fields=programTrackedEntityAttributes[trackedEntityAttribute[id,name,valueType,optionSet[id,options[id,code,name]]]]`,
       );
-      const allEquipment =
-        response?.data?.trackedEntities || response?.data?.instances || [];
-
-      // Client-side exclusion safety net
-      const filteredEquipment = allEquipment.filter((equipment) => {
-        if (excludeStatuses.length === 0) return true;
-        const state = equipment.attributes?.find(
-          (a) => a.attribute === statusAttrId,
-        )?.value;
-        if (!state) return true;
-        return !excludeStatuses.includes(state);
+      const attrMap = new Map();
+      (programMetadata?.data?.programTrackedEntityAttributes || []).forEach((ptea) => {
+        const attr = ptea?.trackedEntityAttribute;
+        if (attr?.id) attrMap.set(attr.id, attr);
       });
 
-      // Resolve optionset display value
       const resolveOptionSetValue = (attributeId, rawValue) => {
         const field = attrMap.get(attributeId);
-        if (
-          field &&
-          rawValue != null &&
-          rawValue !== "" &&
-          field.optionSet?.options
-        ) {
+        if (field && rawValue != null && rawValue !== "" && field.optionSet?.options) {
           const match = field.optionSet.options.find(
-            (opt) =>
-              opt.code === rawValue ||
-              opt.id === rawValue ||
-              opt.name === rawValue,
+            (opt) => opt.code === rawValue || opt.id === rawValue || opt.name === rawValue,
           );
           return match?.name || rawValue;
         }
         return rawValue;
       };
 
-      // Transform for display
-      const transformedEquipment = filteredEquipment.map((equipment) => {
+      const transformTei = (equipment) => {
         const getAttr = (id) =>
           equipment.attributes?.find((a) => a.attribute === id)?.value || "";
-
         const nameRaw = primaryAttrId ? getAttr(primaryAttrId) : "";
-        const serial = secondaryAttrId ? getAttr(secondaryAttrId) : "N/A";
+        const serial   = secondaryAttrId ? getAttr(secondaryAttrId) : "N/A";
         const stateRaw = statusAttrId ? getAttr(statusAttrId) : "";
-
-        const name = primaryAttrId
-          ? resolveOptionSetValue(primaryAttrId, nameRaw)
-          : nameRaw;
-        const state = statusAttrId
-          ? resolveOptionSetValue(statusAttrId, stateRaw)
-          : stateRaw;
-
+        const name  = primaryAttrId ? resolveOptionSetValue(primaryAttrId, nameRaw) : nameRaw;
+        const state = statusAttrId  ? resolveOptionSetValue(statusAttrId, stateRaw) : stateRaw;
         return {
           id: equipment.trackedEntity,
           orgUnit: equipment.orgUnit,
@@ -23989,8 +24019,125 @@ function useEquipmentContext({
             ? `${name} (${serial})`
             : `Equipment ${equipment.trackedEntity.substring(0, 8)} (${serial})`,
         };
+      };
+
+      // ─── PATH A: ward-scoped lookup via allocation events ──────────────────
+      // Used for corrective maintenance (wardScopedLookup: true in config).
+      // Finds every TEI that was allocated to ANY of the user's wards, then
+      // filters out equipment already being handled (MAINTENANCE / UNDER_REPAIR /
+      // DEREGISTERED).  This is the only way to correctly scope equipment to a
+      // specific ward because TEIs are always enrolled at the facility level —
+      // the ward assignment lives inside the allocation event data element.
+      if (config.wardScopedLookup === true) {
+        const allocationProcesses = ds?.allocationProcesses?.programAllocationFields || [];
+        const allocEntry = allocationProcesses.find(
+          (f) => f?.targetProgramType === "WITH_REGISTRATION",
+        );
+        const allocationStageId = allocEntry?.stage?.id;
+        const wardFieldId = allocEntry?.stage?.fields?.find(
+          (f) => f.valueType === "ORGANISATION_UNIT",
+        )?.id;
+
+        if (!allocationStageId || !wardFieldId) {
+          throw new Error(
+            "wardScopedLookup requires allocationProcesses to contain a WITH_REGISTRATION entry with an ORGANISATION_UNIT field",
+          );
+        }
+
+        const teiIdSet = new Set();
+        for (const ou of orgUnits) {
+          let page = 1;
+          let hasMore = true;
+          while (hasMore) {
+            const evRes = await dataStore.get(
+              `tracker/events?program=${equipmentProgramId}&programStage=${allocationStageId}` +
+              `&filter=${wardFieldId}:eq:${ou.id}&fields=trackedEntity` +
+              `&order=occurredAt:desc&pageSize=100&page=${page}`,
+            );
+            const events = evRes?.data?.events || [];
+            events.forEach((ev) => {
+              if (ev.trackedEntity) teiIdSet.add(ev.trackedEntity);
+            });
+            hasMore = !!evRes?.data?.pager?.nextPage && events.length === 100;
+            page++;
+          }
+        }
+
+        if (teiIdSet.size === 0) return [];
+
+        const teiIds = [...teiIdSet];
+        const BATCH = 50;
+        const allTeis = [];
+        for (let i = 0; i < teiIds.length; i += BATCH) {
+          const batch = teiIds.slice(i, i + BATCH);
+          const teiParams = batch.map((id) => `trackedEntities=${id}`).join("&");
+          const teiRes = await dataStore.get(
+            `tracker/trackedEntities?${teiParams}&program=${equipmentProgramId}` +
+            `&order=createdAt:desc&fields=trackedEntity,orgUnit,attributes[attribute,value],enrollments[enrollment,program]`,
+          );
+          const batch_teis =
+            teiRes?.data?.trackedEntities || teiRes?.data?.instances || [];
+          allTeis.push(...batch_teis);
+        }
+
+        const filtered = allTeis.filter((equipment) => {
+          if (!statusAttrId || excludeStatuses.length === 0) return true;
+          const state = equipment.attributes?.find(
+            (a) => a.attribute === statusAttrId,
+          )?.value;
+          return !state || !excludeStatuses.includes(state);
+        });
+
+        return filtered.map(transformTei);
+      }
+
+      // ─── PATH B: org-unit scoped TEI query (all other stages) ──────────────
+      // Fetches all equipment TEIs visible to the user's org units, with an
+      // optional server-side include-status filter and a client-side exclude
+      // safety net.  Paginates manually because skipPaging is ignored by the
+      // server.
+      const includeStatuses = config.equipmentFilter?.includeStatuses || [];
+      const ouIds = orgUnits.map((ou) => ou.id);
+
+      const baseParams = new URLSearchParams({
+        program: equipmentProgramId,
+        fields:
+          "trackedEntity,createdAt,orgUnit,attributes[attribute,value,createdAt],enrollments[enrollment,program]",
+        orgUnits: ouIds.join(","),
+        order: "createdAt:desc",
+        orgUnitMode: "SELECTED",
+        pageSize: "100",
       });
 
+      if (statusAttrId && includeStatuses.length > 0) {
+        baseParams.append("filter", `${statusAttrId}:in:${includeStatuses.join(";")}`);
+      }
+
+      const allEquipment = [];
+      let page = 1;
+      let hasMore = true;
+      while (hasMore) {
+        baseParams.set("page", String(page));
+        const response = await dataStore.get(
+          `tracker/trackedEntities?${baseParams.toString()}`,
+        );
+        const batch =
+          response?.data?.trackedEntities || response?.data?.instances || [];
+        allEquipment.push(...batch);
+        hasMore = !!response?.data?.pager?.nextPage && batch.length === 100;
+        page++;
+      }
+
+      const filteredEquipment = allEquipment.filter((equipment) => {
+        if (excludeStatuses.length === 0) return true;
+        const state = equipment.attributes?.find(
+          (a) => a.attribute === statusAttrId,
+        )?.value;
+        if (!state) return true;
+        return !excludeStatuses.includes(state);
+      });
+
+      const transformedEquipment = filteredEquipment.map(transformTei);
       transformedEquipment.sort(
         (a, b) => new Date(b.createdAt) - new Date(a.createdAt),
       );
@@ -24117,7 +24264,7 @@ function useSparePartLookup({ programId, setFormData, isCheckingRegistration, se
     };
 }
 
-const {useMemo: useMemo$N} = await importShared('react');
+const {useMemo: useMemo$Q} = await importShared('react');
 
 /**
  * Hook to compute required fields from program metadata
@@ -24129,7 +24276,7 @@ function useRequiredFields({
     programKey,
     selectedStageId,
 }) {
-    const requiredById = useMemo$N(() => {
+    const requiredById = useMemo$Q(() => {
         const out = {};
 
         if (programObj?.programType === "WITH_REGISTRATION") {
@@ -24170,7 +24317,7 @@ function useRequiredFields({
     return { requiredById };
 }
 
-const {useMemo: useMemo$M,useEffect: useEffect$1k,useState: useState$1k} = await importShared('react');
+const {useMemo: useMemo$P,useEffect: useEffect$1p,useState: useState$1o} = await importShared('react');
 
 /**
  * Hook to load custom mandatory fields from datastore and merge with native DHIS2 mandatory
@@ -24180,6 +24327,9 @@ const {useMemo: useMemo$M,useEffect: useEffect$1k,useState: useState$1k} = await
  * @param {string} params.selectedStageId - Current stage ID (for tracker programs)
  * @param {Object} params.stageObj - Stage object (for event programs)
  * @param {Object} params.nativeRequiredById - Native DHIS2 required fields
+ * @param {string} [params.maintenanceType] - Active maintenance workflow type (e.g. "Corrective_maintenance").
+ *   When a config entry declares a `maintenanceTypes` array, it is only applied when the current
+ *   maintenanceType is included in that array. Entries without `maintenanceTypes` apply unconditionally.
  * @returns {Object} { requiredById, isLoading }
  */
 function useCustomMandatoryFields({
@@ -24188,17 +24338,18 @@ function useCustomMandatoryFields({
     selectedStageId,
     stageObj,
     nativeRequiredById = {},
+    maintenanceType = null,
 }) {
-    const [customConfig, setCustomConfig] = useState$1k([]);
-    const [isLoading, setIsLoading] = useState$1k(true);
+    const [customConfig, setCustomConfig] = useState$1o([]);
+    const [isLoading, setIsLoading] = useState$1o(true);
 
     // Load custom mandatory configuration from datastore
-    useEffect$1k(() => {
+    useEffect$1p(() => {
         let mounted = true;
 
         const loadCustomConfig = async () => {
             try {
-                const dataStore = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+                const dataStore = await LocalForageService.getItem("dataStore", "dataStore");
                 const mandatoryConfig = dataStore?.mandatoryFields?.configurations || [];
                 
                 if (mounted) {
@@ -24222,7 +24373,7 @@ function useCustomMandatoryFields({
     }, []);
 
     // Compute custom mandatory fields
-    const customRequiredById = useMemo$M(() => {
+    const customRequiredById = useMemo$P(() => {
         if (!customConfig.length) return {};
 
         const out = {};
@@ -24246,6 +24397,12 @@ function useCustomMandatoryFields({
                 if (config.stageId) continue;
             }
 
+            // If the config entry declares maintenanceTypes, only apply when the current
+            // maintenanceType matches one of them. Entries without maintenanceTypes apply always.
+            if (Array.isArray(config.maintenanceTypes) && config.maintenanceTypes.length > 0) {
+                if (!maintenanceType || !config.maintenanceTypes.includes(maintenanceType)) continue;
+            }
+
             // Add required fields
             const fieldIds = config.requiredFieldIds || [];
             for (const fieldId of fieldIds) {
@@ -24254,10 +24411,10 @@ function useCustomMandatoryFields({
         }
 
         return out;
-    }, [customConfig, programObj, selectedStageId, stageObj, programKey]);
+    }, [customConfig, programObj, selectedStageId, stageObj, programKey, maintenanceType]);
 
     // Merge native and custom mandatory fields
-    const requiredById = useMemo$M(() => {
+    const requiredById = useMemo$P(() => {
         return {
             ...nativeRequiredById,
             ...customRequiredById,
@@ -24270,7 +24427,7 @@ function useCustomMandatoryFields({
     };
 }
 
-const {useState: useState$1j,useEffect: useEffect$1j,useMemo: useMemo$L} = await importShared('react');
+const {useState: useState$1n,useEffect: useEffect$1o,useMemo: useMemo$O} = await importShared('react');
 
 /**
  * Hook to manage multi-step wizard navigation
@@ -24283,12 +24440,12 @@ function useStepNavigation({
   sectionsList,
   reviewNavigationLocked,
 }) {
-  const [internalStep, setInternalStep] = useState$1j(0);
+  const [internalStep, setInternalStep] = useState$1n(0);
 
   const stepIndex =
     typeof currentStep === "number" ? currentStep : internalStep;
 
-  const activeSection = useMemo$L(() => {
+  const activeSection = useMemo$O(() => {
     const res = sectionsList[stepIndex] || {
       id: "default",
       name: "Form",
@@ -24332,7 +24489,7 @@ function useStepNavigation({
   };
 
   // Update current section when active section changes
-  useEffect$1j(() => {
+  useEffect$1o(() => {
     if (typeof setCurrentSection === "function" && activeSection) {
       setCurrentSection(activeSection);
     }
@@ -24571,7 +24728,7 @@ const triggerNotifications = async ({
   }
 };
 
-const {useEffect: useEffect$1i} = await importShared('react');
+const {useEffect: useEffect$1n} = await importShared('react');
 
 /**
  * Hook to manage approval officer assignment and notifications
@@ -24628,7 +24785,7 @@ function useApprovalNotifications({
      * Ensure the "approving officer" TEI is set:
      *   - On new forms when navigation is locked for review.
      */
-    useEffect$1i(() => {
+    useEffect$1n(() => {
         if (!isAddFlow || !approvingOfficerFieldId) return;
 
         setFormData((prev) => {
@@ -24664,7 +24821,7 @@ function useApprovalNotifications({
      *   - On new forms when navigation is locked for review.
      *   - On edits when status transitions to "Feedback required".
      */
-    useEffect$1i(() => {
+    useEffect$1n(() => {
         if (!programObj?.id) return;
         if (!assignedApprover || !approvingOfficerFieldId || !approvingSectionId)
             return;
@@ -24730,7 +24887,7 @@ function useApprovalNotifications({
     };
 }
 
-const {useState: useState$1i,useEffect: useEffect$1h,useRef: useRef$o} = await importShared('react');
+const {useState: useState$1m,useEffect: useEffect$1m,useRef: useRef$p} = await importShared('react');
 
 /**
  * useFilteredOptionSet
@@ -24754,17 +24911,17 @@ const {useState: useState$1i,useEffect: useEffect$1h,useRef: useRef$o} = await i
  * }
  */
 function useFilteredOptionSet(programId) {
-  const [filteredCodesMap, setFilteredCodesMap] = useState$1i({});
-  const fetchedRef = useRef$o(false);
+  const [filteredCodesMap, setFilteredCodesMap] = useState$1m({});
+  const fetchedRef = useRef$p(false);
 
-  useEffect$1h(() => {
+  useEffect$1m(() => {
     if (!programId || fetchedRef.current) return;
 
     let cancelled = false;
 
     const run = async () => {
       try {
-        const ds = await LocalForageServiceInstance.getItem(
+        const ds = await LocalForageService.getItem(
           "dataStore",
           "dataStore",
         );
@@ -24967,7 +25124,7 @@ function formatValidationErrors(errors) {
 
 async function assignWard(program, orgUnits, key, el) {
     // Load stored config
-    const res = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+    const res = await LocalForageService.getItem("dataStore", "dataStore");
 
     // Extract config for this program + key
     const config = res?.prefillWard?.configurations?.find(
@@ -25120,7 +25277,7 @@ const formatMultiOrgUnitValue = (selectedItems) => {
 };
 
 const wslDurationAutoFill = async (program, stage, formData) => {
-    const dataStore = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+    const dataStore = await LocalForageService.getItem("dataStore", "dataStore");
 
     const wsl = dataStore?.wslDurationAutoFill?.configuration?.find(
         config => config?.program === program && config?.stage === stage
@@ -25393,7 +25550,7 @@ const exportBlobWithHostBridge = async (blob, filename) => {
     });
 };
 
-const {useEffect: useEffect$1g,useState: useState$1h} = await importShared('react');
+const {useEffect: useEffect$1l,useState: useState$1l} = await importShared('react');
 function FilePreviewModal({
   isOpen,
   onClose,
@@ -25406,13 +25563,13 @@ function FilePreviewModal({
   dataElementId,
   programId
 }) {
-  const [loading, setLoading] = useState$1h(true);
-  const [imageUrl, setImageUrl] = useState$1h(null);
-  const [fileData, setFileData] = useState$1h(null);
-  const [error, setError] = useState$1h(null);
-  const [mimeType, setMimeType] = useState$1h("application/octet-stream");
-  const [downloading, setDownloading] = useState$1h(false);
-  useEffect$1g(() => {
+  const [loading, setLoading] = useState$1l(true);
+  const [imageUrl, setImageUrl] = useState$1l(null);
+  const [fileData, setFileData] = useState$1l(null);
+  const [error, setError] = useState$1l(null);
+  const [mimeType, setMimeType] = useState$1l("application/octet-stream");
+  const [downloading, setDownloading] = useState$1l(false);
+  useEffect$1l(() => {
     if (isOpen && fileId && (teiId && attributeId || eventId && dataElementId)) {
       fetchFile();
     } else if (!isOpen) {
@@ -25787,7 +25944,7 @@ function validateProgramField(programId, fieldId, formData = {}, validationConfi
   }, []);
 }
 
-const {useState: useState$1g,useEffect: useEffect$1f} = await importShared('react');
+const {useState: useState$1k,useEffect: useEffect$1k} = await importShared('react');
 
 /**
  * useParticipantsPerWardConfig
@@ -25821,14 +25978,14 @@ const {useState: useState$1g,useEffect: useEffect$1f} = await importShared('reac
  * participantsPerWardField === null.
  */
 function useParticipantsPerWardConfig(programId) {
-    const [config, setConfig] = useState$1g({
+    const [config, setConfig] = useState$1k({
         wardsField: null,
         participantsPerWardField: null,
         totalParticipantsField: null,
         ready: false,
     });
 
-    useEffect$1f(() => {
+    useEffect$1k(() => {
         if (!programId) {
             setConfig({ wardsField: null, participantsPerWardField: null, totalParticipantsField: null, ready: true });
             return;
@@ -25838,7 +25995,7 @@ function useParticipantsPerWardConfig(programId) {
 
         const load = async () => {
             try {
-                const ds = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+                const ds = await LocalForageService.getItem("dataStore", "dataStore");
                 const mappings = ds?.skipLogic?.fieldMappings;
 
                 if (!Array.isArray(mappings)) {
@@ -25871,7 +26028,7 @@ function useParticipantsPerWardConfig(programId) {
     return config;
 }
 
-const {useState: useState$1f,useEffect: useEffect$1e} = await importShared('react');
+const {useState: useState$1j,useEffect: useEffect$1j} = await importShared('react');
 
 /**
  * useSparePartsQuantityConfig
@@ -25900,14 +26057,14 @@ const {useState: useState$1f,useEffect: useEffect$1e} = await importShared('reac
  * }
  */
 function useSparePartsQuantityConfig(programId) {
-    const [config, setConfig] = useState$1f({
+    const [config, setConfig] = useState$1j({
         sparePartsField: null,
         quantityPerPartField: null,
         totalQuantityField: null,
         ready: false,
     });
 
-    useEffect$1e(() => {
+    useEffect$1j(() => {
         const empty = { sparePartsField: null, quantityPerPartField: null, totalQuantityField: null, ready: true };
 
         if (!programId) {
@@ -25919,7 +26076,7 @@ function useSparePartsQuantityConfig(programId) {
 
         const load = async () => {
             try {
-                const ds = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+                const ds = await LocalForageService.getItem("dataStore", "dataStore");
                 const mappings = ds?.skipLogic?.sparePartsFieldMappings;
 
                 if (!Array.isArray(mappings)) {
@@ -26021,7 +26178,7 @@ function getSectionFormNameOverride(dataStoreData, context = {}) {
   return match?.overrideText || null;
 }
 
-const {useEffect: useEffect$1d,useMemo: useMemo$K,useRef: useRef$n} = await importShared('react');
+const {useEffect: useEffect$1i,useMemo: useMemo$N,useRef: useRef$o} = await importShared('react');
 function ParticipantsPerWardField({
   value,
   wards = [],
@@ -26029,8 +26186,8 @@ function ParticipantsPerWardField({
   onTotalChange,
   disabled = false
 }) {
-  const lastEmittedTotal = useRef$n(void 0);
-  const parsed = useMemo$K(() => {
+  const lastEmittedTotal = useRef$o(void 0);
+  const parsed = useMemo$N(() => {
     if (!value) return {};
     try {
       const obj = JSON.parse(value);
@@ -26039,7 +26196,7 @@ function ParticipantsPerWardField({
       return {};
     }
   }, [value]);
-  useEffect$1d(() => {
+  useEffect$1i(() => {
     const total2 = wards.reduce((sum, ward) => {
       const n = Number(parsed[ward] ?? 0);
       return sum + (isNaN(n) ? 0 : n);
@@ -26172,7 +26329,7 @@ const styles$2 = {
   }
 };
 
-const {useEffect: useEffect$1c,useMemo: useMemo$J,useRef: useRef$m} = await importShared('react');
+const {useEffect: useEffect$1h,useMemo: useMemo$M,useRef: useRef$n} = await importShared('react');
 function SparePartsQuantityField({
   value,
   parts = [],
@@ -26180,8 +26337,8 @@ function SparePartsQuantityField({
   onTotalChange,
   disabled = false
 }) {
-  const lastEmittedTotal = useRef$m(void 0);
-  const parsed = useMemo$J(() => {
+  const lastEmittedTotal = useRef$n(void 0);
+  const parsed = useMemo$M(() => {
     if (!value) return {};
     try {
       const obj = JSON.parse(value);
@@ -26190,7 +26347,7 @@ function SparePartsQuantityField({
       return {};
     }
   }, [value]);
-  useEffect$1c(() => {
+  useEffect$1h(() => {
     const total2 = parts.reduce((sum, { name }) => {
       const n = Number(parsed[name] ?? 0);
       return sum + (isNaN(n) ? 0 : n);
@@ -26316,54 +26473,147 @@ const styles$1 = {
   }
 };
 
-const React$S = await importShared('react');
-const {useEffect: useEffect$1b,useMemo: useMemo$I,useState: useState$1e} = React$S;
-const FREQUENCY_INTERVALS = {
-  MONTHLY: 1,
-  BIMONTHLY: 2,
-  SIXMONTHLY: 6,
-  YEARLY: 12
-};
-const FREQUENCY_LABELS = {
-  MONTHLY: "Monthly",
-  BIMONTHLY: "Bimonthly",
-  SIXMONTHLY: "Six Monthly",
-  YEARLY: "Yearly"
+const React$W = await importShared('react');
+const {useEffect: useEffect$1g,useMemo: useMemo$L,useState: useState$1i} = React$W;
+const FREQUENCY_CONFIG = {
+  WEEKLY: {
+    label: "Weekly",
+    periods: 52,
+    unit: "weeks",
+    interval: 1
+  },
+  MONTHLY: {
+    label: "Monthly",
+    periods: 12,
+    unit: "months",
+    interval: 1
+  },
+  BIMONTHLY: {
+    label: "Bimonthly",
+    periods: 6,
+    unit: "months",
+    interval: 2
+  },
+  QUARTERLY: {
+    label: "Quarterly",
+    periods: 4,
+    unit: "months",
+    interval: 3
+  },
+  SIXMONTHLY: {
+    label: "Six Monthly",
+    periods: 2,
+    unit: "months",
+    interval: 6
+  },
+  YEARLY: {
+    label: "Yearly",
+    periods: 1,
+    unit: "months",
+    interval: 12
+  }
 };
 const toYMD = (date) => {
   const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, "0");
-  const day = String(date.getDate()).padStart(2, "0");
+  const month = String(
+    date.getMonth() + 1
+  ).padStart(2, "0");
+  const day = String(
+    date.getDate()
+  ).padStart(2, "0");
   return `${year}-${month}-${day}`;
 };
+const addDays = (dateString, days) => {
+  const date = /* @__PURE__ */ new Date(
+    `${dateString}T00:00:00`
+  );
+  date.setDate(
+    date.getDate() + days
+  );
+  return toYMD(date);
+};
 const addMonths = (dateString, months) => {
-  const date = /* @__PURE__ */ new Date(`${dateString}T00:00:00`);
+  const date = /* @__PURE__ */ new Date(
+    `${dateString}T00:00:00`
+  );
   const originalDay = date.getDate();
   date.setDate(1);
-  date.setMonth(date.getMonth() + months);
+  date.setMonth(
+    date.getMonth() + months
+  );
   const lastDayOfMonth = new Date(
     date.getFullYear(),
     date.getMonth() + 1,
     0
   ).getDate();
   date.setDate(
-    Math.min(originalDay, lastDayOfMonth)
+    Math.min(
+      originalDay,
+      lastDayOfMonth
+    )
   );
   return toYMD(date);
 };
+const formatDate$4 = (dateString) => {
+  if (!dateString) {
+    return "";
+  }
+  const date = /* @__PURE__ */ new Date(
+    `${dateString}T00:00:00`
+  );
+  return date.toLocaleDateString(
+    "en-GB",
+    {
+      day: "2-digit",
+      month: "long",
+      year: "numeric"
+    }
+  );
+};
 const generateSchedule = (initialDate, frequency) => {
-  const interval = FREQUENCY_INTERVALS[frequency];
-  if (!initialDate || !interval) {
+  if (!initialDate || !frequency) {
+    return [];
+  }
+  const config = FREQUENCY_CONFIG[frequency];
+  if (!config) {
     return [];
   }
   const dates = [];
-  for (let month = interval; month <= 12; month += interval) {
+  if (frequency === "WEEKLY") {
+    for (let period = 1; period <= 52; period++) {
+      const weeks = period;
+      dates.push({
+        id: `maintenance-${period}`,
+        sequence: period,
+        period,
+        periodLabel: `Week ${period}`,
+        date: addDays(
+          initialDate,
+          weeks * 7
+        )
+      });
+    }
+    return dates;
+  }
+  for (let period = 1; period <= config.periods; period++) {
+    const startMonth = (period - 1) * config.interval + 1;
+    const endMonth = period * config.interval;
+    let periodLabel;
+    if (config.interval === 1) {
+      periodLabel = `Month ${startMonth}`;
+    } else {
+      periodLabel = `Months ${startMonth}-${endMonth}`;
+    }
     dates.push({
-      id: `maintenance-${month}`,
-      sequence: dates.length + 1,
+      id: `maintenance-${period}`,
+      sequence: period,
+      period,
+      periodLabel,
+      startMonth,
+      endMonth,
       date: addMonths(
         initialDate,
-        month
+        endMonth
       )
     });
   }
@@ -26376,9 +26626,9 @@ function PreventiveMaintenanceScheduleModal({
   onSave,
   equipmentId
 }) {
-  const [dates, setDates] = useState$1e([]);
-  const [saving, setSaving] = useState$1e(false);
-  const params = useMemo$I(() => {
+  const [dates, setDates] = useState$1i([]);
+  const [saving, setSaving] = useState$1i(false);
+  const params = useMemo$L(() => {
     return new URLSearchParams(
       window.location.search
     );
@@ -26386,8 +26636,9 @@ function PreventiveMaintenanceScheduleModal({
   const frequency = (params.get(
     "routineMaintenanceSchedule"
   ) || "").toUpperCase();
-  const frequencyLabel = FREQUENCY_LABELS[frequency] || frequency;
-  useEffect$1b(() => {
+  const frequencyConfig = FREQUENCY_CONFIG[frequency];
+  const frequencyLabel = frequencyConfig?.label || frequency;
+  useEffect$1g(() => {
     if (!isOpen || !initialDate) {
       return;
     }
@@ -26396,11 +26647,15 @@ function PreventiveMaintenanceScheduleModal({
         "preventiveMaintenanceSchedule"
       );
       if (stored) {
-        const parsed = JSON.parse(stored);
+        const parsed = JSON.parse(
+          stored
+        );
         if (parsed?.equipmentId === equipmentId && parsed?.frequency === frequency && Array.isArray(
           parsed?.dates
         )) {
-          setDates(parsed.dates);
+          setDates(
+            parsed.dates
+          );
           return;
         }
       }
@@ -26450,10 +26705,14 @@ function PreventiveMaintenanceScheduleModal({
       };
       sessionStorage.setItem(
         "preventiveMaintenanceSchedule",
-        JSON.stringify(schedule)
+        JSON.stringify(
+          schedule
+        )
       );
       if (onSave) {
-        await onSave(schedule);
+        await onSave(
+          schedule
+        );
       }
       onClose();
     } catch (error) {
@@ -26483,13 +26742,16 @@ function PreventiveMaintenanceScheduleModal({
         IonContent,
         {
           className: "ion-padding",
-          style: { position: "relative", minHeight: 300 },
+          style: {
+            position: "relative",
+            minHeight: 300
+          },
           children: [
             /* @__PURE__ */ jsxRuntimeExports.jsxs(
               "div",
               {
                 style: {
-                  marginBottom: 10
+                  marginBottom: 15
                 },
                 children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
@@ -26500,7 +26762,8 @@ function PreventiveMaintenanceScheduleModal({
                       },
                       children: [
                         frequencyLabel,
-                        " Maintenance"
+                        " ",
+                        "Maintenance"
                       ]
                     }
                   ) }),
@@ -26519,9 +26782,22 @@ function PreventiveMaintenanceScheduleModal({
                       {
                         position: "stacked",
                         children: [
-                          "Maintenance",
-                          " ",
-                          item.sequence
+                          /* @__PURE__ */ jsxRuntimeExports.jsxs("strong", { children: [
+                            "Period",
+                            " ",
+                            item.period
+                          ] }),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "div",
+                            {
+                              style: {
+                                marginTop: 4,
+                                marginBottom: 8,
+                                fontSize: 13
+                              },
+                              children: item.periodLabel
+                            }
+                          )
                         ]
                       }
                     ),
@@ -26537,6 +26813,25 @@ function PreventiveMaintenanceScheduleModal({
                           e.detail.value
                         )
                       }
+                    ),
+                    item.date && /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                      IonText,
+                      {
+                        color: "medium",
+                        style: {
+                          display: "block",
+                          marginTop: 6,
+                          marginBottom: 8,
+                          fontSize: 13
+                        },
+                        children: [
+                          "Scheduled for:",
+                          " ",
+                          formatDate$4(
+                            item.date
+                          )
+                        ]
+                      }
                     )
                   ]
                 },
@@ -26551,7 +26846,7 @@ function PreventiveMaintenanceScheduleModal({
   );
 }
 
-const {useCallback: useCallback$p,useContext: useContext$F,useEffect: useEffect$1a,useMemo: useMemo$H,useState: useState$1d} = await importShared('react');
+const {useCallback: useCallback$r,useContext: useContext$I,useEffect: useEffect$1f,useMemo: useMemo$K,useState: useState$1h} = await importShared('react');
 function ConfigurableForm({
   handleSubmit,
   handleCancel,
@@ -26585,24 +26880,24 @@ function ConfigurableForm({
   autoFillFacilityLoading = false,
   lockedFields = /* @__PURE__ */ new Set()
 }) {
-  const [wardData, setWardData] = useState$1d(null);
+  const [wardData, setWardData] = useState$1h(null);
   const location = useLocation();
-  const { userOrganisationUnits } = useContext$F(MEMISContext.UserContext);
-  const { user } = useContext$F(MEMISContext.UserRolesContext) || {};
-  const [futureDateFields, setFutureDateFields] = useState$1d([]);
-  const [dataStoreData, setDataStoreData] = useState$1d({});
-  const [validationErrors, setValidationErrors] = useState$1d({});
-  const [firstStageDe, setfirstDE] = useState$1d([]);
+  const { userOrganisationUnits } = useContext$I(MEMISContext.UserContext);
+  const { user } = useContext$I(MEMISContext.UserRolesContext) || {};
+  const [futureDateFields, setFutureDateFields] = useState$1h([]);
+  const [dataStoreData, setDataStoreData] = useState$1h({});
+  const [validationErrors, setValidationErrors] = useState$1h({});
+  const [firstStageDe, setfirstDE] = useState$1h([]);
   const validationConfig = dataStoreData?.formValidations;
-  const [canSave, setCanSave] = useState$1d(false);
-  const [orgUnitsByLevel, setOrgUnitsByLevel] = useState$1d({});
-  const [facilityUsers, setFacilityUsers] = useState$1d([]);
-  const [showMaintenanceSchedule, setShowMaintenanceSchedule] = useState$1d(false);
-  const [maintenanceSchedule, setMaintenanceSchedule] = useState$1d(null);
-  useEffect$1a(() => {
+  const [canSave, setCanSave] = useState$1h(false);
+  const [orgUnitsByLevel, setOrgUnitsByLevel] = useState$1h({});
+  const [facilityUsers, setFacilityUsers] = useState$1h([]);
+  const [showMaintenanceSchedule, setShowMaintenanceSchedule] = useState$1h(false);
+  const [maintenanceSchedule, setMaintenanceSchedule] = useState$1h(null);
+  useEffect$1f(() => {
     const loadOrgUnitGroupFields = async () => {
       try {
-        const ds = await LocalForageServiceInstance.getItem(
+        const ds = await LocalForageService.getItem(
           "dataStore",
           "dataStore"
         );
@@ -26633,7 +26928,7 @@ function ConfigurableForm({
     };
     loadOrgUnitGroupFields();
   }, [programId]);
-  useEffect$1a(() => {
+  useEffect$1f(() => {
     const load = async () => {
       try {
         const res = await getUsersForAssignment();
@@ -26643,13 +26938,13 @@ function ConfigurableForm({
     };
     load();
   }, [programId]);
-  const [wslConfig, setWslConfig] = useState$1d(null);
-  const [componentInputs, setComponentInputs] = useState$1d({});
+  const [wslConfig, setWslConfig] = useState$1h(null);
+  const [componentInputs, setComponentInputs] = useState$1h({});
   const { showPopover, setShowPopover } = usePopoverState();
   const { setDateRangePopover } = useDateRangePopover();
   const { imageUrls, setImageUrls, imageLoading, setImageLoading } = useImageState();
   const { isMobile } = useViewport();
-  const [previewModal, setPreviewModal] = useState$1d({
+  const [previewModal, setPreviewModal] = useState$1h({
     isOpen: false,
     fileId: null,
     fileName: null,
@@ -26686,8 +26981,8 @@ function ConfigurableForm({
   );
   const { getOptions: getFilteredOptions } = useFilteredOptionSet(programId);
   const sectionVisibilityRules = useSectionVisibilityConfig(programId);
-  const { programs } = useContext$F(MEMISContext.ProgramContext);
-  const programObj = useMemo$H(() => {
+  const { programs } = useContext$I(MEMISContext.ProgramContext);
+  const programObj = useMemo$K(() => {
     if (!programId) return null;
     const list = Array.isArray(programs) ? programs : programs?.programs || [];
     return list.find((p) => p?.id === programId) || null;
@@ -26793,7 +27088,8 @@ function ConfigurableForm({
     programKey,
     selectedStageId,
     stageObj,
-    nativeRequiredById
+    nativeRequiredById,
+    maintenanceType: pM ?? null
   });
   const {
     wardsField,
@@ -26974,7 +27270,7 @@ function ConfigurableForm({
       return "";
     }
   };
-  useEffect$1a(() => {
+  useEffect$1f(() => {
     try {
       const stored = sessionStorage.getItem(
         "preventiveMaintenanceSchedule"
@@ -28091,11 +28387,11 @@ function ConfigurableForm({
     isLast: isFinalStep,
     dataStore: dataStoreData
   });
-  useMemo$H(
+  useMemo$K(
     () => sections?.map((s) => s.id).join(","),
     [sections]
   );
-  const getDisplayedSectionName = useCallback$p(
+  const getDisplayedSectionName = useCallback$r(
     (section) => {
       const override = getSectionFormNameOverride(dataStoreData, {
         programId,
@@ -28128,11 +28424,11 @@ function ConfigurableForm({
       console.log({ error });
     }
   };
-  useEffect$1a(() => {
+  useEffect$1f(() => {
     let cancelled = false;
     const fetchWslConfig = async () => {
       try {
-        const dataStore2 = await LocalForageServiceInstance.getItem(
+        const dataStore2 = await LocalForageService.getItem(
           "dataStore",
           "dataStore"
         );
@@ -28153,7 +28449,7 @@ function ConfigurableForm({
       cancelled = true;
     };
   }, [programId, selectedStage]);
-  useEffect$1a(() => {
+  useEffect$1f(() => {
     const loadTaskPrefill = async () => {
       const taskId = queryParams.get("taskId");
       if (!taskId) return;
@@ -28164,7 +28460,7 @@ function ConfigurableForm({
         let eventData = await dataStore.get(
           `tracker/events/${task[1]}.json?program=${task[0]}`
         );
-        let result = await LocalForageServiceInstance?.getItem(
+        let result = await LocalForageService?.getItem(
           "dataStore",
           "dataStore"
         );
@@ -28203,7 +28499,7 @@ function ConfigurableForm({
     loadTaskPrefill();
     prefillWard();
   }, [programObj]);
-  useEffect$1a(() => {
+  useEffect$1f(() => {
     if (!wardData?.use || !wardData?.field) return;
     const targetId = wardData.field;
     setFormData((prev) => {
@@ -28216,10 +28512,10 @@ function ConfigurableForm({
       };
     });
   }, [wardData, setFormData]);
-  useEffect$1a(() => {
+  useEffect$1f(() => {
     let mounted = true;
     const loadFutureDateConfig = async () => {
-      const dataStore2 = await LocalForageServiceInstance.getItem(
+      const dataStore2 = await LocalForageService.getItem(
         "dataStore",
         "dataStore"
       );
@@ -28231,10 +28527,10 @@ function ConfigurableForm({
       mounted = false;
     };
   }, [programObj, sectionsList]);
-  useEffect$1a(() => {
+  useEffect$1f(() => {
     let mounted = true;
     const loadFutureDateConfig = async () => {
-      const dataStore2 = await LocalForageServiceInstance.getItem(
+      const dataStore2 = await LocalForageService.getItem(
         "dataStore",
         "dataStore"
       );
@@ -28255,7 +28551,7 @@ function ConfigurableForm({
     stageObj,
     activeSection
   ]);
-  useEffect$1a(() => {
+  useEffect$1f(() => {
     let cancelled = false;
     const loadFutureDateConfig = async () => {
       try {
@@ -28288,7 +28584,7 @@ function ConfigurableForm({
       cancelled = true;
     };
   }, [programId, selectedStage, formData]);
-  useEffect$1a(() => {
+  useEffect$1f(() => {
     let mounted = true;
     if (mounted) {
       const config = dataStoreData?.reportGenerationDatePrefill?.configurations;
@@ -28307,7 +28603,7 @@ function ConfigurableForm({
       mounted = false;
     };
   }, [dataStoreData, programId]);
-  const isInitiallyLoading = useMemo$H(
+  const isInitiallyLoading = useMemo$K(
     () => formLoading || autoFillFacilityLoading,
     [formLoading, autoFillFacilityLoading]
   );
@@ -28323,7 +28619,7 @@ function ConfigurableForm({
   };
   const getActiveSectionCanSave = async (actSect, pId) => {
     if (pId === void 0) return;
-    const dStore = await LocalForageServiceInstance.getItem(
+    const dStore = await LocalForageService.getItem(
       "dataStore",
       "dataStore"
     );
@@ -28333,7 +28629,7 @@ function ConfigurableForm({
     const selectedSection = result?.sections?.find((s) => s.id === actSect);
     setCanSave(selectedSection?.canSave ?? false);
   };
-  useEffect$1a(() => {
+  useEffect$1f(() => {
     if (!workflow) return;
     const wf = workflow?.workflows?.find((e) => e.value === pM);
     const w = wf?.firstStage;
@@ -28343,10 +28639,10 @@ function ConfigurableForm({
       getDe(j);
     }
   }, [workflow, pM]);
-  useEffect$1a(() => {
+  useEffect$1f(() => {
     const loadUser = async () => {
-      const us = await LocalForageServiceInstance.getItem("userRes", "user");
-      const { userShowOrgUnit } = await LocalForageServiceInstance.getItem(
+      const us = await LocalForageService.getItem("userRes", "user");
+      const { userShowOrgUnit } = await LocalForageService.getItem(
         "dataStore",
         "dataStore"
       );
@@ -28368,7 +28664,7 @@ function ConfigurableForm({
     };
     loadUser();
   }, [user, selectedOrganisationUnit]);
-  useEffect$1a(() => {
+  useEffect$1f(() => {
     if (activeSection?.id) {
       getActiveSectionCanSave(activeSection?.id, programId);
     }
@@ -28721,7 +29017,7 @@ function ConfigurableForm({
 const getNotificationEvent = async (program, key, stage) => {
   try {
 
-    const response = await LocalForageServiceInstance.getItem(
+    const response = await LocalForageService.getItem(
       "dataStore", "dataStore"
     );
 
@@ -28810,7 +29106,7 @@ const equipmentAllocation = async (config, options) => {
     }
 
     let ou = null;
-    const ouData = await LocalForageServiceInstance.getItem("userOrganisationUnits","userOrgUnits");
+    const ouData = await LocalForageService.getItem("userOrganisationUnits","userOrgUnits");
     ou = ouData?.find(org=>org?.id===events[0]?.event?.orgUnit);
     
     let requestedWard = options?.event?.dataValues.find(
@@ -28869,7 +29165,7 @@ const equipmentAllocation = async (config, options) => {
     const equipmentName = equipmentData
       ?.flatMap((eq) => eq.attributes)
       ?.find((f) => f?.attribute === config?.equipment?.equipmentAttribute);
-    const equipData = await LocalForageServiceInstance.getItem("optionSets", "metadata");
+    const equipData = await LocalForageService.getItem("optionSets", "metadata");
     const equip = equipData?.find(opt => opt?.id === config?.equipment?.optionSetId);
 
     const subject = `${equip?.options.find((eq) => eq?.code === equipmentName?.value)?.name ||
@@ -29236,12 +29532,12 @@ const equipmentRegistrationNotification = async (config, options) => {
       );
       let option;
       if (config?.equipment?.isOptionCode) {
-        const optionData = await LocalForageServiceInstance.getItem("optionSets", "metadata");
+        const optionData = await LocalForageService.getItem("optionSets", "metadata");
 
         option = optionData?.find(opt => opt?.id === config?.equipment?.optionSetId);
       }
 
-      const ouData = await LocalForageServiceInstance.getItem("userOrganisationUnits", "userOrgUnits");
+      const ouData = await LocalForageService.getItem("userOrganisationUnits", "userOrgUnits");
       
       const ou = ouData?.find(org => org?.id === data?.data.orgUnit);
       const optionName = option?.options.find(
@@ -29378,7 +29674,7 @@ const equipmentRequisitionNotification = async (config, options) => {
     let optionData;
     let option;
     if (config.equipment.isOptionCode) {
-      optionData = await LocalForageServiceInstance.getItem("optionSets", "metadata");
+      optionData = await LocalForageService.getItem("optionSets", "metadata");
       option = optionData?.find(op => op?.id === config?.equipment?.optionSetId);
     }
     let equipment;
@@ -29389,7 +29685,7 @@ const equipmentRequisitionNotification = async (config, options) => {
       equipment = optionData?.find(op => op?.id === config?.equipment?.equipmentOptionSetId);
     }
 
-    let ou = await LocalForageServiceInstance.getItem("organisationUnits", "userOrgUnits");
+    let ou = await LocalForageService.getItem("organisationUnits", "userOrgUnits");
     ou = ou?.find(org => org?.id === data?.data.orgUnit);
 
     const optionName = option?.options?.find(
@@ -30510,7 +30806,7 @@ const trainingRequestNotificationApproval = async (config, options) => {
     // const userRoles = config?.userRoles?.find(
     //   (roles) => roles.accepted === dataElement?.value
     // );
-    const orgUnits = await LocalForageServiceInstance.getItem("userOrganisationUnits", "userOrgUnits");
+    const orgUnits = await LocalForageService.getItem("userOrganisationUnits", "userOrgUnits");
     const ou = orgUnits?.find(org => org?.id === data?.data?.orgUnit);
 
     let users = [];
@@ -30544,7 +30840,7 @@ const trainingRequestNotificationApproval = async (config, options) => {
     let option;
     let optionName;
     if (config.equipment.isOptionCode) {
-      option = await LocalForageServiceInstance.getItem("optionSets", "metadata");
+      option = await LocalForageService.getItem("optionSets", "metadata");
       option = option?.find(op => op?.id === config?.equipment?.optionSetId);
 
       const messageDE = data?.dataValues?.find(
@@ -30621,7 +30917,7 @@ const referralMaintenanceApprovalNotification = async (config, options) => {
 
     let equipmentLabel = "Equipment";
     if (equipmentNameAttr?.value && config?.equipment?.optionSetId) {
-      const optionSets = await LocalForageServiceInstance.getItem("optionSets", "metadata");
+      const optionSets = await LocalForageService.getItem("optionSets", "metadata");
       const equip = optionSets?.find((opt) => opt?.id === config?.equipment?.optionSetId);
       const equipmentOption = equip?.options?.find((eq) => eq?.code === equipmentNameAttr.value);
       if (equipmentOption?.name) equipmentLabel = equipmentOption.name;
@@ -30629,7 +30925,7 @@ const referralMaintenanceApprovalNotification = async (config, options) => {
 
     const serialLabel = serialNumber ? ` (Serial: ${serialNumber})` : "";
 
-    const ouData = await LocalForageServiceInstance.getItem("organisationUnits", "organisationUnits");
+    const ouData = await LocalForageService.getItem("organisationUnits", "organisationUnits");
     const ou = ouData?.find((org) => org?.id === eventData?.data?.orgUnit);
 
     // Build subject and body
@@ -30912,7 +31208,7 @@ const getUsers$5 = async ({ targetOrgUnitId, userRoleId, mode }) => {
       // const org = await dataStore.get(
       //   `organisationUnits/${targetOrgUnitId}.json?fields=id,name,code,level,parent(id,name,code,level)`
       // );
-      const ouData = await LocalForageServiceInstance.getItem("organisationUnits", "organisationUnits");
+      const ouData = await LocalForageService.getItem("organisationUnits", "organisationUnits");
       const org = ouData.find(org => org?.id === targetOrgUnitId);
 
       usersResp = await dataStore.get(
@@ -30940,7 +31236,7 @@ const reportCreationNotification = async (config, options) => {
   console.log({config, options});
   try {
     
-    const loggedInUser = await LocalForageServiceInstance.getItem("userRes", "user");
+    const loggedInUser = await LocalForageService.getItem("userRes", "user");
     const userRole = loggedInUser?.userRoles.find(us => us?.id === config?.userAtLowerLevel?.id);
     let users = [];
     for (let index = 0; index < config?.userRoles.length; index++) {
@@ -30960,7 +31256,7 @@ const reportCreationNotification = async (config, options) => {
     // const ou = await dataStore.get(
     //   `organisationUnits/${data?.data?.orgUnit}?fields=name,id`
     // );
-    const ouData = await LocalForageServiceInstance.getItem("organisationUnits", "organisationUnits");
+    const ouData = await LocalForageService.getItem("organisationUnits", "organisationUnits");
     const ou = ouData.find(org => org?.id === data?.data?.orgUnit);
     const subject = `New report has been generated. Waiting for your review. | ${options?.program
       }.${options?.teiId}`;
@@ -31010,7 +31306,7 @@ const reportCreationNotificationApproval = async (config, options) => {
     if (config?.userSource?.createdBy) {
       users.push({ id: data?.data?.createdBy?.uid });
     }
-    const oUnits = await LocalForageServiceInstance.getItem("userOrganisationUnits", "userOrgUnit");
+    const oUnits = await LocalForageService.getItem("userOrganisationUnits", "userOrgUnit");
     const ou = oUnits?.find(org => org?.id === data?.data?.orgUnit);
 
     // If approved, also notify engineers/stores clerk
@@ -31051,7 +31347,7 @@ const reportCreationNotificationApproval = async (config, options) => {
     let optionName;
 
     if (config.equipment.isOptionCode) {
-      const options = await LocalForageServiceInstance.getItem("optionSets", "metadata");
+      const options = await LocalForageService.getItem("optionSets", "metadata");
       option = options?.find(opt => opt?.id === config?.equipment?.optionSetId);
 
       const messageDE = data?.data?.dataValues?.find(
@@ -31194,7 +31490,7 @@ const equipmentAllocationDefault = async (config, options) => {
     // }
 
     let ou = null;
-    const ouData = await LocalForageServiceInstance.getItem("userOrganisationUnits", "userOrgUnits");
+    const ouData = await LocalForageService.getItem("userOrganisationUnits", "userOrgUnits");
     ou = ouData?.find(org => org?.id === options?.orgUnit);
     const equipmentDetails = await dataStore.get("tracker/trackedEntities/" + options?.trackedEntity + "?fields=*");
     let wardAllocated = equipmentDetails?.data?.enrollments?.flatMap(enr => enr?.events);
@@ -31241,7 +31537,7 @@ const equipmentAllocationDefault = async (config, options) => {
 
     const equipmentName = equipmentDetails?.data?.attributes?.find((f) => f?.attribute === config?.equipment?.equipmentAttribute);
 
-    const equipData = await LocalForageServiceInstance.getItem("optionSets", "metadata");
+    const equipData = await LocalForageService.getItem("optionSets", "metadata");
     const equip = equipData?.find(opt => opt?.id === config?.equipment?.optionSetId);
     const ward = requestedWard?.dataValues?.find(
       (de) => de?.dataElement === config?.userRoles?.find((er) => er?.ward)?.ward
@@ -31307,7 +31603,7 @@ const maintencaaneCreateNotification = async (config, options) => {
     // For demo purposes, sending to a static user
 
     let ou = null;
-    const ouData = await LocalForageServiceInstance.getItem(
+    const ouData = await LocalForageService.getItem(
       "userOrganisationUnits",
       "userOrgUnits",
     );
@@ -31354,7 +31650,7 @@ const maintencaaneCreateNotification = async (config, options) => {
       (f) => f?.attribute === config?.equipment?.equipmentAttribute,
     );
 
-    const equipData = await LocalForageServiceInstance.getItem(
+    const equipData = await LocalForageService.getItem(
       "optionSets",
       "metadata",
     );
@@ -31527,7 +31823,7 @@ const trainingFeedbackNotification = async (config, options) => {
 const notificationSendTrigger = async (event, options) => {
   try {
 
-    const configs = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+    const configs = await LocalForageService.getItem("dataStore", "dataStore");
     const config = configs?.notificationEvents?.events?.find((c) => c?.event === event);
 
     switch (event) {
@@ -31642,7 +31938,7 @@ const notificationSendTrigger = async (event, options) => {
  *   - equipmentProgramId (targetProgramId on the programAllocationFields entry)
  */
 async function resolveEquipmentStateConfig() {
-  const ds = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+  const ds = await LocalForageService.getItem("dataStore", "dataStore");
   const entry = (ds?.allocationProcesses?.programAllocationFields || []).find(
     (f) => f?.targetProgramType === "WITH_REGISTRATION",
   );
@@ -31668,7 +31964,7 @@ async function resolveEquipmentStateMaintenance(
     let resolvedOrgUnit = orgUnit;
 
     // Load config
-    const ds = await LocalForageServiceInstance.getItem(
+    const ds = await LocalForageService.getItem(
       "dataStore",
       "dataStore",
     );
@@ -31721,8 +32017,8 @@ async function resolveEquipmentStateMaintenance(
             orgUnit: resolvedOrgUnit,
             attributes: [
               {
-                attribute: entry.assignTo,
-                value: state,
+                attribute: entry.equipState,
+                value: entry?.equipStateValue,
               },
               {
                 attribute: entry.equipStatusId,
@@ -32070,7 +32366,7 @@ async function programWithoutRegistration(
       importStrategy = "UPDATE";
     } else {
       // Create new event
-      const taskStatus = await LocalForageServiceInstance.getItem(
+      const taskStatus = await LocalForageService.getItem(
         "dataStore",
         "dataStore",
       );
@@ -32108,7 +32404,7 @@ async function programWithoutRegistration(
 
       // Check if this is the reports program — if so, skip creation notification.
       // Reports send their notification on "Submit for Review" (Draft → Under Review) instead.
-      const dataStoreData = await LocalForageServiceInstance.getItem(
+      const dataStoreData = await LocalForageService.getItem(
         "dataStore",
         "dataStore",
       );
@@ -32182,7 +32478,6 @@ async function programWithRegistrationEvent(
 
       // Create new event
       let buildMaintenanceSchedulePayload = null;
-      console.log({ programStage, sectionData });
 
       if (programStage === "VlwQGgBvd9i" && sectionData === "EAfmOCCCBwY") {
         buildMaintenanceSchedulePayload = ({
@@ -32253,7 +32548,6 @@ async function programWithRegistrationEvent(
           });
         payload = schedulePayload;
       } else {
-
         payload = {
           events: [{
             enrollment: equipmentDetails?.data?.enrollments?.[0]?.enrollment,
@@ -32348,8 +32642,6 @@ async function programWithRegistrationEvent(
       }
     }
     if (programStage === "VlwQGgBvd9i" && sectionData === "EAfmOCCCBwY") {
-      console.log({ programStage, sectionData });
-
       sessionStorage.removeItem("preventiveMaintenanceSchedule");
     }
     return response;
@@ -32365,8 +32657,8 @@ const CreateDataItemsController = {
   programWithRegistrationEvent,
 };
 
-const React$R = await importShared('react');
-const {useContext: useContext$E,useEffect: useEffect$19,useMemo: useMemo$G,useState: useState$1c} = React$R;
+const React$V = await importShared('react');
+const {useContext: useContext$H,useEffect: useEffect$1e,useMemo: useMemo$J,useState: useState$1g} = React$V;
 const A$9 = (x) => Array.isArray(x) ? x : [];
 function MultiEntryForm({
   dataElements = null,
@@ -32376,19 +32668,19 @@ function MultiEntryForm({
   worklow,
   onClose
 }) {
-  const [numEntries, setNumEntries] = useState$1c(2);
-  const [step, setStep] = useState$1c("count");
-  const [commonData, setCommonData] = useState$1c({});
-  const [entries, setEntries] = useState$1c([]);
-  const [loading, setLoading] = useState$1c(false);
-  const [selectedCommonFields, setSelectedCommonFields] = useState$1c([]);
-  const [showPopover, setShowPopover] = useState$1c(false);
-  const [imageUrls, setImageUrls] = useState$1c({});
-  const [imageLoading, setImageLoading] = useState$1c({});
-  const [componentInputs, setComponentInputs] = useState$1c({});
+  const [numEntries, setNumEntries] = useState$1g(2);
+  const [step, setStep] = useState$1g("count");
+  const [commonData, setCommonData] = useState$1g({});
+  const [entries, setEntries] = useState$1g([]);
+  const [loading, setLoading] = useState$1g(false);
+  const [selectedCommonFields, setSelectedCommonFields] = useState$1g([]);
+  const [showPopover, setShowPopover] = useState$1g(false);
+  const [imageUrls, setImageUrls] = useState$1g({});
+  const [imageLoading, setImageLoading] = useState$1g({});
+  const [componentInputs, setComponentInputs] = useState$1g({});
   const navigate = useNavigate();
-  const { userOrganisationUnits } = useContext$E(MEMISContext.UserContext);
-  const { user } = useContext$E(MEMISContext.UserRolesContext);
+  const { userOrganisationUnits } = useContext$H(MEMISContext.UserContext);
+  const { user } = useContext$H(MEMISContext.UserRolesContext);
   const {
     sparePartsField,
     quantityPerPartField,
@@ -32409,11 +32701,11 @@ function MultiEntryForm({
     stageObj: null,
     nativeRequiredById
   });
-  const [skipLogicMap, setSkipLogicMap] = useState$1c({});
-  const [defaultHiddenFields, setDefaultHiddenFields] = useState$1c(/* @__PURE__ */ new Set());
-  const [linkedFieldGroups, setLinkedFieldGroups] = useState$1c([]);
-  const [otherFieldMappings, setOtherFieldMappings] = useState$1c([]);
-  useEffect$19(() => {
+  const [skipLogicMap, setSkipLogicMap] = useState$1g({});
+  const [defaultHiddenFields, setDefaultHiddenFields] = useState$1g(/* @__PURE__ */ new Set());
+  const [linkedFieldGroups, setLinkedFieldGroups] = useState$1g([]);
+  const [otherFieldMappings, setOtherFieldMappings] = useState$1g([]);
+  useEffect$1e(() => {
     if (!program?.id) return;
     getSkipLogicConfig(program.id).then((cfg) => {
       if (cfg) {
@@ -32505,7 +32797,7 @@ function MultiEntryForm({
     if (partners.length === 0) return null;
     return `linked with: ${partners.join(", ")}`;
   };
-  const commonFields = useMemo$G(() => {
+  const commonFields = useMemo$J(() => {
     if (!dataElements) return [];
     const program2 = dataElements?.program;
     if (!program2) return [];
@@ -32514,7 +32806,7 @@ function MultiEntryForm({
     }
     return [];
   }, [dataElements]);
-  const entryFields = useMemo$G(() => {
+  const entryFields = useMemo$J(() => {
     if (!commonFields?.length) return [];
     return commonFields.filter((f) => !selectedCommonFields.includes(f.id));
   }, [commonFields, selectedCommonFields]);
@@ -33317,7 +33609,7 @@ const calculateDeregistrationAutofill = async (teiAttributes, isolationDate = nu
     return autofillValues;
 };
 
-const {useState: useState$1b,useEffect: useEffect$18,useContext: useContext$D,useMemo: useMemo$F,useRef: useRef$l} = await importShared('react');
+const {useState: useState$1f,useEffect: useEffect$1d,useContext: useContext$G,useMemo: useMemo$I,useRef: useRef$m} = await importShared('react');
 
 /**
  * Hook to automatically fill facility/org unit based on DataStore configuration
@@ -33334,27 +33626,27 @@ function useFacilityAutoFill(
   isEdit,
 ) {
   const location = useLocation();
-  const { userOrganisationUnits } = useContext$D(MEMISContext.UserContext);
-  const { user } = useContext$D(MEMISContext.UserRolesContext) || {};
+  const { userOrganisationUnits } = useContext$G(MEMISContext.UserContext);
+  const { user } = useContext$G(MEMISContext.UserRolesContext) || {};
 
-  const [autoFilledOrgUnit, setAutoFilledOrgUnit] = useState$1b(null);
-  const [loading, setLoading] = useState$1b(false);
+  const [autoFilledOrgUnit, setAutoFilledOrgUnit] = useState$1f(null);
+  const [loading, setLoading] = useState$1f(false);
 
   // Track if we've already loaded to prevent re-fetching
-  const hasLoadedRef = useRef$l(false);
-  const configCacheRef = useRef$l(null);
+  const hasLoadedRef = useRef$m(false);
+  const configCacheRef = useRef$m(null);
 
   // Stable reference to user org units
-  useMemo$F(() => {
+  useMemo$I(() => {
     return JSON.stringify(userOrganisationUnits?.map((ou) => ou.id) || []);
   }, [userOrganisationUnits]);
 
   // Stable reference to user info
-  useMemo$F(() => {
+  useMemo$I(() => {
     return user?.id || "";
   }, [user?.id]);
 
-  useEffect$18(() => {
+  useEffect$1d(() => {
     // Skip if we're in edit mode
     if (isEdit) {
       setAutoFilledOrgUnit(null);
@@ -33381,7 +33673,7 @@ function useFacilityAutoFill(
         console.log("Loading auto-fill config for program:", programId);
 
         // Fetch configuration from DataStore
-        let config = await LocalForageServiceInstance.getItem(
+        let config = await LocalForageService.getItem(
           "dataStore",
           "dataStore",
         );
@@ -33688,7 +33980,7 @@ const getUsers = async ({ targetOrgUnitId, userRoleId, mode }) => {
   let usersResp = null;
   try {
     if (targetOrgUnitId) {
-      const ouData = await LocalForageServiceInstance.getItem("organisationUnits", "organisationUnits");
+      const ouData = await LocalForageService.getItem("organisationUnits", "organisationUnits");
       const org = ouData.find(org => org?.id === targetOrgUnitId);
 
       usersResp = await dataStore.get(
@@ -33714,7 +34006,7 @@ const getUsers = async ({ targetOrgUnitId, userRoleId, mode }) => {
 
 const referralApprovalNotification = async (config, options) => {
   try {
-    const loggedInUser = await LocalForageServiceInstance.getItem("userRes", "user");
+    const loggedInUser = await LocalForageService.getItem("userRes", "user");
     const userRole = loggedInUser?.userRoles.find(us => us?.id === config?.userAtLowerLevel?.id);
     let users = [];
     for (let index = 0; index < config?.userRoles.length; index++) {
@@ -33731,9 +34023,9 @@ const referralApprovalNotification = async (config, options) => {
       `tracker/trackedEntities/${options?.teiId}?program=${options?.programId}&fields=*`
     );
 
-    const ouData = await LocalForageServiceInstance.getItem("organisationUnits", "organisationUnits");
+    const ouData = await LocalForageService.getItem("organisationUnits", "organisationUnits");
     const ou = ouData.find(org => org?.id === data?.data?.orgUnit);
-    const optionSets = await LocalForageServiceInstance.getItem("optionSets", "metadata"
+    const optionSets = await LocalForageService.getItem("optionSets", "metadata"
     );
     const equip = optionSets?.find(opt => opt?.id === config?.equipment?.optionSetId);
 
@@ -33928,7 +34220,7 @@ async function resolveOrgUnitName$1(id) {
     if (cache$1.orgUnits.has(id)) return cache$1.orgUnits.get(id);
 
     try {
-        const org = await LocalForageServiceInstance.getItem("organisationUnits", "organisationUnits");
+        const org = await LocalForageService.getItem("organisationUnits", "organisationUnits");
 
         const data = org?.find(orgUint => orgUint?.id === id);
 
@@ -33965,7 +34257,7 @@ async function resolveEquipmentName(teiId) {
         let name = nameRaw;
         if (nameRaw && nameRaw !== "Unknown") {
             try {
-                const optionSetsData = await LocalForageServiceInstance.getItem("optionSets", "metadata");
+                const optionSetsData = await LocalForageService.getItem("optionSets", "metadata");
                 const equipmentOptionSet = optionSetsData?.find(opt => opt?.id === "VuKFOqg584G");
                 if (equipmentOptionSet?.options) {
                     const matchedOption = equipmentOptionSet.options.find(option => 
@@ -33997,7 +34289,7 @@ async function getOptionSetMap(optionSetId) {
     if (cache$1.optionSets.has(optionSetId)) return cache$1.optionSets.get(optionSetId);
 
     try {
-        const options = await LocalForageServiceInstance.getItem("optionSets", "metadata");
+        const options = await LocalForageService.getItem("optionSets", "metadata");
         const res = options?.find(op => op?.id === optionSetId);
 
         if (!res?.options?.length) return null;
@@ -34028,7 +34320,7 @@ async function loadDataElementIdSet() {
 
     dataElementIdSetLoading = (async () => {
         try {
-            const programs = await LocalForageServiceInstance.getItem("programs", "programs");
+            const programs = await LocalForageService.getItem("programs", "programs");
             const set = new Set();
             (programs || []).forEach((p) => {
                 (p?.programStages || []).forEach((stage) => {
@@ -34225,7 +34517,7 @@ const findPamAttributeIdByName = (programMeta) => {
 const resolvePamAssetAttributeId = async (programId) => {
   if (!programId) return "";
   try {
-    const store = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+    const store = await LocalForageService.getItem("dataStore", "dataStore");
     const fromConfig = pickFromPamConfig(store, programId);
     if (fromConfig) return fromConfig;
   } catch (_) {}
@@ -34283,7 +34575,7 @@ const generateUniquePamAssetNumber = async ({
   throw new Error("PAM_GENERATION_EXHAUSTED");
 };
 
-const {useContext: useContext$C,useEffect: useEffect$17,useState: useState$1a,useMemo: useMemo$E,useRef: useRef$k} = await importShared('react');
+const {useContext: useContext$F,useEffect: useEffect$1c,useState: useState$1e,useMemo: useMemo$H,useRef: useRef$l} = await importShared('react');
 const A$8 = (x) => Array.isArray(x) ? x : [];
 function collectBundleUids(value, seen = /* @__PURE__ */ new Set()) {
   if (!value || typeof value !== "object") return [];
@@ -34326,40 +34618,40 @@ function FormComponent({
   editData,
   onSaveSuccess
 }) {
-  const [isMultiple, setIsMultiple] = useState$1a(false);
+  const [isMultiple, setIsMultiple] = useState$1e(false);
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
-  const [query, setQuery] = useState$1a(queryParams.get("query") || "");
-  const [formData, setFormData] = useState$1a({});
-  const [maintainanceTye, setMaintenancetype] = useState$1a();
-  const [currentSection, setCurrentSection] = useState$1a(0);
-  const [fieldMultiText, setFieldMultiText] = useState$1a([]);
-  const [lockedFields, setLockedFields] = useState$1a(/* @__PURE__ */ new Set());
-  const [pM, setPM] = useState$1a();
-  const [ranKey, setKey] = useState$1a(
+  const [query, setQuery] = useState$1e(queryParams.get("query") || "");
+  const [formData, setFormData] = useState$1e({});
+  const [maintainanceTye, setMaintenancetype] = useState$1e();
+  const [currentSection, setCurrentSection] = useState$1e(0);
+  const [fieldMultiText, setFieldMultiText] = useState$1e([]);
+  const [lockedFields, setLockedFields] = useState$1e(/* @__PURE__ */ new Set());
+  const [pM, setPM] = useState$1e();
+  const [ranKey, setKey] = useState$1e(
     Math.random().toString(36).substring(2, 10).toUpperCase()
   );
-  const [triggerAt, setTriggerAt] = useState$1a(queryParams.get("triggerAt"));
-  const [sectionIdData, setSectionIdData] = useState$1a(queryParams.get("sectionId"));
-  const [loading, setLoading] = useState$1a(false);
-  const [eventDate, setEventDate] = useState$1a((/* @__PURE__ */ new Date()).toISOString());
+  const [triggerAt, setTriggerAt] = useState$1e(queryParams.get("triggerAt"));
+  const [sectionIdData, setSectionIdData] = useState$1e(queryParams.get("sectionId"));
+  const [loading, setLoading] = useState$1e(false);
+  const [eventDate, setEventDate] = useState$1e((/* @__PURE__ */ new Date()).toISOString());
   const navigate = useNavigate();
-  const { user } = useContext$C(MEMISContext.UserRolesContext);
-  const [pgRules, setRule] = useState$1a([]);
-  const [selectedOrganisationUnit, setSelectedOrganisationUnit] = useState$1a(null);
-  const [equip, setEquipment] = useState$1a();
-  const [enrollmentDate, setEnrollmentDate] = useState$1a(
+  const { user } = useContext$F(MEMISContext.UserRolesContext);
+  const [pgRules, setRule] = useState$1e([]);
+  const [selectedOrganisationUnit, setSelectedOrganisationUnit] = useState$1e(null);
+  const [equip, setEquipment] = useState$1e();
+  const [enrollmentDate, setEnrollmentDate] = useState$1e(
     editData?.enrollmentDate || Date.now()
   );
-  const [incidentDate, setIncidentDate] = useState$1a(
+  const [incidentDate, setIncidentDate] = useState$1e(
     editData?.incidentDate || Date.now()
   );
-  const [entityId, setEntityId] = useState$1a(
+  const [entityId, setEntityId] = useState$1e(
     editData?.trackedEntity || editData?.id || null
   );
-  const [ackModalOpen, setAckModalOpen] = useState$1a(false);
-  const autoFillFacilityAppliedRef = useRef$k(false);
-  const isEditMode = useMemo$E(() => {
+  const [ackModalOpen, setAckModalOpen] = useState$1e(false);
+  const autoFillFacilityAppliedRef = useRef$l(false);
+  const isEditMode = useMemo$H(() => {
     return query === "edit" || !!editData;
   }, [query, editData]);
   const { autoFilledOrgUnit, loading: autoFillLoading } = useFacilityAutoFill(
@@ -34409,7 +34701,7 @@ function FormComponent({
       console.log("Failed to fetch deregistration autofill rules:", error);
     }
   };
-  useEffect$17(() => {
+  useEffect$1c(() => {
     if (autoFillFacilityAppliedRef.current) return;
     if (isEditMode) return;
     if (!autoFilledOrgUnit) return;
@@ -34417,7 +34709,7 @@ function FormComponent({
     if (autoFillLoading) return;
     autoFillFacilityAppliedRef.current = true;
   }, [autoFilledOrgUnit, autoFillLoading, isEditMode]);
-  useEffect$17(() => {
+  useEffect$1c(() => {
     autoFillFacilityAppliedRef.current = false;
     getRules();
   }, [program?.id]);
@@ -34476,7 +34768,7 @@ function FormComponent({
       console.log("Failed to fetch warrant data:", err);
     }
   };
-  useEffect$17(() => {
+  useEffect$1c(() => {
     getRules();
     const q = queryParams.get("triggerAt");
     if (q === "Corrective Maintenance") {
@@ -34548,7 +34840,7 @@ function FormComponent({
     if (v instanceof File) return false;
     return v == null || typeof v === "string" && v.trim() === "";
   };
-  const requiredTrackerAttrIds = useMemo$E(() => {
+  const requiredTrackerAttrIds = useMemo$H(() => {
     if (!program) return [];
     const progReq = program?.programTrackedEntityAttributes?.filter((ptea) => ptea?.mandatory)?.map(
       (ptea) => ptea?.trackedEntityAttribute?.id || ptea?.trackedEntityAttribute
@@ -34558,7 +34850,7 @@ function FormComponent({
     ) || [];
     return Array.from(/* @__PURE__ */ new Set([...progReq || [], ...tetReq || []]));
   }, [program]);
-  const requiredTrackerAttrNames = useMemo$E(() => {
+  const requiredTrackerAttrNames = useMemo$H(() => {
     if (!program) return {};
     const map = {};
     (program?.programTrackedEntityAttributes || []).forEach((ptea) => {
@@ -34881,7 +35173,7 @@ function FormComponent({
       if (okLike) {
         if (queryDataTaskId) {
           try {
-            const dataStoreConfig = await LocalForageServiceInstance.getItem(
+            const dataStoreConfig = await LocalForageService.getItem(
               "dataStore",
               "dataStore"
             );
@@ -34958,7 +35250,7 @@ function FormComponent({
     onClose?.();
     navigate(window.location.pathname, { replace: true });
   };
-  useEffect$17(() => {
+  useEffect$1c(() => {
     if (editData && Object.keys(editData).length > 0 && program) {
       setQuery("edit");
       const getFieldMetadata = (fieldId) => {
@@ -35061,7 +35353,7 @@ function FormComponent({
     const name = await resolveEquipmentName(id);
     setEquipment(name);
   };
-  useEffect$17(() => {
+  useEffect$1c(() => {
     const queryParams2 = new URLSearchParams(location.search);
     const equipmentId = trackedEntity || queryParams2.get("equipmentId");
     getEquip(equipmentId);
@@ -35107,12 +35399,12 @@ function FormComponent({
       fetchEquipmentDataAndPrefill();
     }
   }, [selectedStage, trackedEntity, program, editData, user, location.search]);
-  useEffect$17(() => {
+  useEffect$1c(() => {
     const queryId = queryParams.get("q");
     if (queryId === "add") {
       const taskId = queryParams.get("taskId");
       const getEquipmentAddParam = async () => {
-        const dStore = await LocalForageServiceInstance.getItem(
+        const dStore = await LocalForageService.getItem(
           "dataStore",
           "dataStore"
         );
@@ -35137,7 +35429,7 @@ function FormComponent({
       getEquipmentAddParam();
     }
   }, [program, user, location.search]);
-  useEffect$17(() => {
+  useEffect$1c(() => {
   }, [location]);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(IonPage, { children: [
     !ackModalOpen && /* @__PURE__ */ jsxRuntimeExports.jsxs(IonContent, { className: "ion-padding", fullscreen: true, children: [
@@ -35610,7 +35902,7 @@ const createFormatter = (date = null, timezone = null) => {
     return new DateTimeFormatter(date, timezone);
 };
 
-const formatDate$2 = (date, pattern = 'date', timezone = null) => {
+const formatDate$3 = (date, pattern = 'date', timezone = null) => {
     return createFormatter(date, timezone).format(pattern);
 };
 
@@ -35664,7 +35956,7 @@ const now = (timezone = null) => {
 
 const dateTime = {
     create: createFormatter,
-    format: formatDate$2,
+    format: formatDate$3,
     formatRelative,
     parse: parseDate$2,
     getDuration,
@@ -35677,12 +35969,13 @@ const dateTime = {
     FORMAT_PRESETS,
 };
 
-const {useState: useState$19,useMemo: useMemo$D,useEffect: useEffect$16} = await importShared('react');
+const {useState: useState$1d,useMemo: useMemo$G,useEffect: useEffect$1b} = await importShared('react');
 const DataTable = ({
   columns,
   rows,
   rowClick,
   onOpenRowActions,
+  onEditRow,
   loading = false,
   page = 1,
   pageCount = 1,
@@ -35702,18 +35995,19 @@ const DataTable = ({
   onSelectionChange,
   getRowId = (item) => item.id || item.event || item.enrollment || item.trackedEntity,
   priorities,
-  approvalStatusColors
+  approvalStatusColors,
+  showActions = true
 }) => {
-  const [localSortKey, setLocalSortKey] = useState$19("");
-  const [localSortOrder, setLocalSortOrder] = useState$19("asc");
-  const [isMobile, setIsMobile] = useState$19(() => {
+  const [localSortKey, setLocalSortKey] = useState$1d("");
+  const [localSortOrder, setLocalSortOrder] = useState$1d("asc");
+  const [isMobile, setIsMobile] = useState$1d(() => {
     if (typeof window !== "undefined") {
       return window.innerWidth < 768;
     }
     return false;
   });
-  const [resolvedRows, setResolvedRows] = useState$19(rows);
-  const correctedColumns = useMemo$D(() => {
+  const [resolvedRows, setResolvedRows] = useState$1d(rows);
+  const correctedColumns = useMemo$G(() => {
     if (!Array.isArray(columns)) return [];
     const keyCorrections = {
       // Transfer Type
@@ -35738,13 +36032,13 @@ const DataTable = ({
       return correctedKey !== col.key ? { ...col, key: correctedKey } : col;
     });
   }, [columns]);
-  useEffect$16(() => {
+  useEffect$1b(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
     checkMobile();
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
-  useEffect$16(() => {
+  useEffect$1b(() => {
     let mounted = true;
     (async () => {
       try {
@@ -35776,7 +36070,7 @@ const DataTable = ({
       setLocalSortOrder(newOrder);
     }
   };
-  const sortedRows = useMemo$D(() => {
+  const sortedRows = useMemo$G(() => {
     if (!clientSideSort || !localSortKey) return resolvedRows;
     return [...resolvedRows].sort((a, b) => {
       const aVal = a[localSortKey];
@@ -35807,7 +36101,11 @@ const DataTable = ({
   const handleDotsClick = (e, row) => {
     e.preventDefault?.();
     e.stopPropagation?.();
-    onOpenRowActions?.(row);
+    if (onEditRow) {
+      onEditRow(row);
+    } else {
+      onOpenRowActions?.(row);
+    }
   };
   const handleRowClick = (item) => {
     if (selectable) handleSelectRow(item, !selectedIds.has(getRowId(item)));
@@ -36024,10 +36322,10 @@ const DataTable = ({
                             {
                               fill: "clear",
                               size: "small",
-                              "aria-label": "Row actions",
+                              "aria-label": onEditRow ? "Update record" : "Row actions",
                               onClick: (e) => handleDotsClick(e, item),
                               style: { minWidth: 32, margin: 0 },
-                              children: /* @__PURE__ */ jsxRuntimeExports.jsx(IonIcon, { icon: ellipsisVertical, slot: "icon-only" })
+                              children: /* @__PURE__ */ jsxRuntimeExports.jsx(IonIcon, { icon: onEditRow ? createOutline : ellipsisVertical, slot: "icon-only" })
                             }
                           )
                         ]
@@ -36251,7 +36549,7 @@ const DataTable = ({
                   },
                   idx
                 )),
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                showActions && /* @__PURE__ */ jsxRuntimeExports.jsx(
                   IonCol,
                   {
                     size: "auto",
@@ -36332,7 +36630,7 @@ const DataTable = ({
                       cIdx
                     );
                   }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  showActions && /* @__PURE__ */ jsxRuntimeExports.jsx(
                     IonCol,
                     {
                       size: "auto",
@@ -36350,10 +36648,10 @@ const DataTable = ({
                         {
                           fill: "clear",
                           size: "small",
-                          "aria-label": "Row actions",
+                          "aria-label": onEditRow ? "Update record" : "Row actions",
                           onClick: (e) => handleDotsClick(e, item),
                           style: { minWidth: 32 },
-                          children: /* @__PURE__ */ jsxRuntimeExports.jsx(IonIcon, { icon: ellipsisVertical, slot: "icon-only" })
+                          children: /* @__PURE__ */ jsxRuntimeExports.jsx(IonIcon, { icon: onEditRow ? createOutline : ellipsisVertical, slot: "icon-only" })
                         }
                       )
                     }
@@ -36446,38 +36744,38 @@ const DataTable = ({
   ] });
 };
 
-const React$Q = await importShared('react');
-const {useCallback: useCallback$o,useContext: useContext$B,useEffect: useEffect$15,useRef: useRef$j,useState: useState$18} = React$Q;
+const React$U = await importShared('react');
+const {useCallback: useCallback$q,useContext: useContext$E,useEffect: useEffect$1a,useRef: useRef$k,useState: useState$1c} = React$U;
 function Event({ id }) {
-  const { eventsList, reload, isLoading, columns, pagination } = useContext$B(
+  const { eventsList, reload, isLoading, columns, pagination } = useContext$E(
     MEMISContext.EventsContext
   );
-  const { user } = useContext$B(MEMISContext.UserRolesContext) || {};
+  const { user } = useContext$E(MEMISContext.UserRolesContext) || {};
   const navigate = useNavigate();
-  const [rows, setRows] = useState$18([]);
-  const [searchValue, setSearchValue] = useState$18("");
-  const [search, setSearch] = useState$18("");
-  const [organisationUnits, setOrganisationUnits] = useState$18([]);
-  const [selectedLocation, setSelectedLocation] = useState$18("");
-  const [optionFilters, setOptionFilters] = useState$18([]);
-  const [showSearchField, setShowSearchField] = useState$18(false);
-  const [optionSets, setOptionSets] = useState$18([]);
-  const [filterType, setFilterType] = useState$18([]);
-  const [filterValue, setFilterValue] = useState$18([]);
-  const [filterOpen, setFilterOpen] = useState$18(false);
-  const [filterValueOpen, setFilterValueOpen] = useState$18(null);
-  const [activePicker, setActivePicker] = useState$18(null);
-  const locationRef = useRef$j("");
-  const filterValueRef = useRef$j([]);
-  const filterTypesRef = useRef$j([]);
-  const optionFiltersRef = useRef$j([]);
-  const runQueryRef = useRef$j(null);
-  useEffect$15(() => {
+  const [rows, setRows] = useState$1c([]);
+  const [searchValue, setSearchValue] = useState$1c("");
+  const [search, setSearch] = useState$1c("");
+  const [organisationUnits, setOrganisationUnits] = useState$1c([]);
+  const [selectedLocation, setSelectedLocation] = useState$1c("");
+  const [optionFilters, setOptionFilters] = useState$1c([]);
+  const [showSearchField, setShowSearchField] = useState$1c(false);
+  const [optionSets, setOptionSets] = useState$1c([]);
+  const [filterType, setFilterType] = useState$1c([]);
+  const [filterValue, setFilterValue] = useState$1c([]);
+  const [filterOpen, setFilterOpen] = useState$1c(false);
+  const [filterValueOpen, setFilterValueOpen] = useState$1c(null);
+  const [activePicker, setActivePicker] = useState$1c(null);
+  const locationRef = useRef$k("");
+  const filterValueRef = useRef$k([]);
+  const filterTypesRef = useRef$k([]);
+  const optionFiltersRef = useRef$k([]);
+  const runQueryRef = useRef$k(null);
+  useEffect$1a(() => {
     filterValueRef.current = filterValue;
     filterTypesRef.current = filterType;
     optionFiltersRef.current = optionFilters;
   }, [filterValue, filterType]);
-  const buildOptions = useCallback$o(
+  const buildOptions = useCallback$q(
     (overrides = {}) => ({
       searchWithSerialNumber: search?.trim() || null,
       orgUnit: selectedLocation || null,
@@ -36486,7 +36784,7 @@ function Event({ id }) {
     }),
     [search, selectedLocation]
   );
-  const runQuery = useCallback$o(
+  const runQuery = useCallback$q(
     (overrides = {}) => {
       reload({
         programId: id,
@@ -36495,13 +36793,13 @@ function Event({ id }) {
     },
     [id, reload, buildOptions]
   );
-  useEffect$15(() => {
+  useEffect$1a(() => {
     runQueryRef.current = runQuery;
   }, [runQuery]);
-  useEffect$15(() => {
+  useEffect$1a(() => {
     const load = async () => {
       try {
-        const orgs = await LocalForageServiceInstance.getItem(
+        const orgs = await LocalForageService.getItem(
           "userOrganisationUnits",
           "userOrgUnits"
         );
@@ -36513,15 +36811,15 @@ function Event({ id }) {
     };
     load();
   }, []);
-  const userIdRef = useRef$j(null);
-  useEffect$15(() => {
+  const userIdRef = useRef$k(null);
+  useEffect$1a(() => {
     if (!user?.userRoles?.length) return;
     const userId = user?.id || user?.username || JSON.stringify(user?.userRoles?.map((r) => r.id).sort());
     if (userIdRef.current === userId) return;
     userIdRef.current = userId;
     const resolveLocation = async () => {
       try {
-        const ds = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+        const ds = await LocalForageService.getItem("dataStore", "dataStore");
         const navCfg = ds?.navigationLayout?.configuration?.find((c) => c.id === id);
         const userRoleIds = (user?.userRoles || []).map((r) => r.id);
         const accessFilter = navCfg?.viewAccessFilter?.find(
@@ -36532,7 +36830,7 @@ function Event({ id }) {
         if (defaultOu) {
           setSelectedLocation(defaultOu.id);
           locationRef.current = defaultOu.id;
-          const orgs = await LocalForageServiceInstance.getItem("userOrganisationUnits", "userOrgUnits");
+          const orgs = await LocalForageService.getItem("userOrganisationUnits", "userOrgUnits");
           const sorted = Array.isArray(orgs) ? orgs.sort((a, b) => a.level - b.level) : [];
           setOrganisationUnits(sorted);
           reload({ programId: id, options: { orgUnit: defaultOu.id } });
@@ -36542,13 +36840,13 @@ function Event({ id }) {
     };
     resolveLocation();
   }, [id, user]);
-  useEffect$15(() => {
+  useEffect$1a(() => {
     const load = async () => {
-      const dataStore = await LocalForageServiceInstance.getItem(
+      const dataStore = await LocalForageService.getItem(
         "dataStore",
         "dataStore"
       );
-      const options = await LocalForageServiceInstance.getItem(
+      const options = await LocalForageService.getItem(
         "optionSets",
         "metadata"
       );
@@ -36561,13 +36859,13 @@ function Event({ id }) {
     };
     load();
   }, [id]);
-  useEffect$15(() => {
+  useEffect$1a(() => {
     if (id && selectedLocation) runQueryRef.current?.();
   }, [id]);
-  useEffect$15(() => {
+  useEffect$1a(() => {
     setRows(eventsList || []);
   }, [eventsList]);
-  useEffect$15(() => {
+  useEffect$1a(() => {
     const timer = setTimeout(() => {
       if (id && searchValue.trim() !== search.trim()) {
         const trimmed = searchValue.trim();
@@ -36578,14 +36876,14 @@ function Event({ id }) {
     }, 400);
     return () => clearTimeout(timer);
   }, [searchValue, id, search]);
-  const [isSearching, setIsSearching] = useState$18(false);
-  useEffect$15(() => {
+  const [isSearching, setIsSearching] = useState$1c(false);
+  useEffect$1a(() => {
     if (id && search.trim()) {
       setIsSearching(true);
       runQueryRef.current?.();
     }
   }, [search, id]);
-  useEffect$15(() => {
+  useEffect$1a(() => {
     if (!isLoading) {
       setIsSearching(false);
     }
@@ -36631,7 +36929,7 @@ function Event({ id }) {
     });
     setFilterOpen(false);
   };
-  useEffect$15(() => {
+  useEffect$1a(() => {
     const handleClick = (e) => {
       const path = e.composedPath?.() || [];
       for (let el of path) {
@@ -36854,7 +37152,7 @@ const resolveQrSearchQuery = async ({ rawScannedValue, programId }) => {
   if (!decoded) return "";
 
   try {
-    const store = await LocalForageServiceInstance.getItem(
+    const store = await LocalForageService.getItem(
       "dataStore",
       "dataStore"
     );
@@ -36870,7 +37168,7 @@ const resolveQrSearchQuery = async ({ rawScannedValue, programId }) => {
 const hasQrSearchConfigForProgram = async (programId) => {
   if (!programId) return false;
   try {
-    const store = await LocalForageServiceInstance.getItem(
+    const store = await LocalForageService.getItem(
       "dataStore",
       "dataStore"
     );
@@ -36905,6 +37203,83 @@ const isInventoryNavigationContext = (menuItems = [], currentId = "") => {
   const byBase = list.find((item) => baseId(item?.id) === currentBase);
   return isInventoryNavigationItem(byBase);
 };
+
+const {useEffect: useEffect$19,useState: useState$1b,useContext: useContext$D,useMemo: useMemo$F} = await importShared('react');
+
+/**
+ * Determines whether the current user can update rows inline on a listing page
+ * for the given program.
+ *
+ * Reads the `listingUpdateConfig` datastore key, shape:
+ *   { configurations: [{ programId, enabled, roles: [{ userRoleId }] }] }
+ *
+ * Returns `true` only when:
+ *   - a configuration entry exists for the programId
+ *   - `enabled` is true on that entry
+ *   - the current user holds at least one of the listed role IDs
+ *
+ * @param {string} programId - DHIS2 program UID
+ * @returns {{ canUpdate: boolean, loading: boolean }}
+ */
+function useListingUpdateConfig(programId) {
+  const { user } = useContext$D(MEMISContext.UserRolesContext) || {};
+  const [config, setConfig] = useState$1b(null);
+  const [loading, setLoading] = useState$1b(true);
+
+  // Reload when external settings change (e.g. settings page saves)
+  useEffect$19(() => {
+    const onUpdate = () => {
+      setLoading(true);
+      LocalForageService.getItem("dataStore", "dataStore")
+        .then((ds) => setConfig(ds?.listingUpdateConfig ?? null))
+        .catch(() => setConfig(null))
+        .finally(() => setLoading(false));
+    };
+
+    window.addEventListener("memis:listingUpdateConfig:updated", onUpdate);
+    return () =>
+      window.removeEventListener("memis:listingUpdateConfig:updated", onUpdate);
+  }, []);
+
+  // Initial load
+  useEffect$19(() => {
+    let mounted = true;
+    setLoading(true);
+
+    (async () => {
+      try {
+        const ds = await LocalForageService.getItem(
+          "dataStore",
+          "dataStore",
+        );
+        if (mounted) setConfig(ds?.listingUpdateConfig ?? null);
+      } catch {
+        if (mounted) setConfig(null);
+      } finally {
+        if (mounted) setLoading(false);
+      }
+    })();
+
+    return () => {
+      mounted = false;
+    };
+  }, [programId]);
+
+  const canUpdate = useMemo$F(() => {
+    if (!programId || !config || !user) return false;
+
+    const entry = (config.configurations || []).find(
+      (c) => c.programId === programId,
+    );
+
+    if (!entry || !entry.enabled) return false;
+
+    const userRoleIds = new Set((user.userRoles || []).map((r) => r.id));
+    return (entry.roles || []).some((r) => userRoleIds.has(r.userRoleId));
+  }, [config, programId, user]);
+
+  return { canUpdate, loading };
+}
 
 var Html5QrcodeSupportedFormats;
 (function (Html5QrcodeSupportedFormats) {
@@ -63023,9 +63398,9 @@ class CapacitorBarcodeScanner {
     }
 }
 
-const React$P = await importShared('react');
-const {useEffect: useEffect$14,useContext: useContext$A,useState: useState$17,useCallback: useCallback$n} = React$P;
-const Tracker = ({ id }) => {
+const React$T = await importShared('react');
+const {useEffect: useEffect$18,useContext: useContext$C,useState: useState$1a,useCallback: useCallback$p} = React$T;
+const Tracker = ({ id, onEdit }) => {
   const {
     equipmentList,
     reload,
@@ -63033,41 +63408,42 @@ const Tracker = ({ id }) => {
     columns,
     pagination,
     setPagination
-  } = useContext$A(MEMISContext.TrackedEntitiesContext);
-  const { user } = useContext$A(MEMISContext.UserRolesContext) || {};
+  } = useContext$C(MEMISContext.TrackedEntitiesContext);
+  const { user } = useContext$C(MEMISContext.UserRolesContext) || {};
   const location = useLocation();
   const navigate = useNavigate();
-  const [rows, setRows] = useState$17([]);
-  const [search, setSearch] = useState$17("");
-  const [searchValue, setSearchValue] = useState$17("");
-  const [organisationUnits, setOrganisationUnits] = useState$17([]);
-  const [equipmentNamesOptions, setEquipmentNamesOptions] = useState$17([]);
-  const [selectedLocation, setSelectedLocation] = useState$17("");
-  const [optionFilters, setOptionFilters] = useState$17([]);
-  const [searchFilter, setSearchFilter] = useState$17(null);
-  const [filterType, setFilterType] = useState$17("");
-  const [filterValue, setFilterValue] = useState$17("");
-  const [appliedFilter, setAppliedFilter] = useState$17({
+  const { canUpdate } = useListingUpdateConfig(id);
+  const [rows, setRows] = useState$1a([]);
+  const [search, setSearch] = useState$1a("");
+  const [searchValue, setSearchValue] = useState$1a("");
+  const [organisationUnits, setOrganisationUnits] = useState$1a([]);
+  const [equipmentNamesOptions, setEquipmentNamesOptions] = useState$1a([]);
+  const [selectedLocation, setSelectedLocation] = useState$1a("");
+  const [optionFilters, setOptionFilters] = useState$1a([]);
+  const [searchFilter, setSearchFilter] = useState$1a(null);
+  const [filterType, setFilterType] = useState$1a("");
+  const [filterValue, setFilterValue] = useState$1a("");
+  const [appliedFilter, setAppliedFilter] = useState$1a({
     type: null,
     value: null
   });
-  const [filterOpen, setFilterOpen] = useState$17(false);
-  const filterRef = React$P.useRef({
+  const [filterOpen, setFilterOpen] = useState$1a(false);
+  const filterRef = React$T.useRef({
     type: "",
     value: ""
   });
-  const filterByLocationRef = React$P.useRef({
+  const filterByLocationRef = React$T.useRef({
     type: "",
     value: ""
   });
-  const optionFiltersRef = React$P.useRef([]);
-  const searchFiltersRef = React$P.useRef([]);
-  const getEquipmentNamesOptions = useCallback$n(async () => {
-    const options = await LocalForageServiceInstance.getItem("optionSets", "metadata");
+  const optionFiltersRef = React$T.useRef([]);
+  const searchFiltersRef = React$T.useRef([]);
+  const getEquipmentNamesOptions = useCallback$p(async () => {
+    const options = await LocalForageService.getItem("optionSets", "metadata");
     const equipmentOptions = options?.find((opt) => opt?.id === "VuKFOqg584G") || [];
     return equipmentOptions?.options || [];
   });
-  useEffect$14(() => {
+  useEffect$18(() => {
     const loadOptions = async () => {
       const options = await getEquipmentNamesOptions();
       setEquipmentNamesOptions(options || []);
@@ -63094,7 +63470,7 @@ const Tracker = ({ id }) => {
       });
     }
   };
-  const buildOptions = useCallback$n(
+  const buildOptions = useCallback$p(
     (overrides = {}) => {
       const hasValidFilter = appliedFilter.type && appliedFilter.value;
       searchFiltersRef?.current;
@@ -63112,7 +63488,7 @@ const Tracker = ({ id }) => {
     },
     [search, appliedFilter]
   );
-  const runQuery = useCallback$n(
+  const runQuery = useCallback$p(
     (overrides = {}) => {
       reload({
         programId: id,
@@ -63121,14 +63497,14 @@ const Tracker = ({ id }) => {
     },
     [id, reload, buildOptions]
   );
-  const runQueryRef = React$P.useRef(runQuery);
-  useEffect$14(() => {
+  const runQueryRef = React$T.useRef(runQuery);
+  useEffect$18(() => {
     runQueryRef.current = runQuery;
   }, [runQuery]);
-  useEffect$14(() => {
+  useEffect$18(() => {
     const loadOrgUnits = async () => {
       try {
-        const orgUnits = await LocalForageServiceInstance.getItem(
+        const orgUnits = await LocalForageService.getItem(
           "userOrganisationUnits",
           "userOrgUnits"
         );
@@ -63141,11 +63517,11 @@ const Tracker = ({ id }) => {
     };
     loadOrgUnits();
   }, []);
-  useEffect$14(() => {
+  useEffect$18(() => {
     if (!organisationUnits.length || !user?.userRoles?.length) return;
     const resolveDefaultLocation = async () => {
       try {
-        const ds = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+        const ds = await LocalForageService.getItem("dataStore", "dataStore");
         const navCfg = ds?.navigationLayout?.configuration?.find(
           (c) => c.id === id
         );
@@ -63172,10 +63548,10 @@ const Tracker = ({ id }) => {
     };
     resolveDefaultLocation();
   }, [organisationUnits, id, user]);
-  useEffect$14(() => {
+  useEffect$18(() => {
     setRows(equipmentList || []);
   }, [equipmentList]);
-  useEffect$14(() => {
+  useEffect$18(() => {
     const timeout = setTimeout(() => {
       if (id && searchValue.trim() !== search.trim()) {
         const trimmed = searchValue.trim();
@@ -63186,14 +63562,14 @@ const Tracker = ({ id }) => {
     }, 400);
     return () => clearTimeout(timeout);
   }, [searchValue, id, search]);
-  const [isSearching, setIsSearching] = useState$17(false);
-  useEffect$14(() => {
+  const [isSearching, setIsSearching] = useState$1a(false);
+  useEffect$18(() => {
     if (id && search.trim()) {
       setIsSearching(true);
       runQueryRef.current();
     }
   }, [search, id]);
-  useEffect$14(() => {
+  useEffect$18(() => {
     if (!isLoading) {
       setIsSearching(false);
     }
@@ -63290,9 +63666,9 @@ const Tracker = ({ id }) => {
       console.log("QR Scan failed:", err);
     }
   };
-  useEffect$14(() => {
+  useEffect$18(() => {
     const load = async () => {
-      const programAttributesResult = await LocalForageServiceInstance.getItem(
+      const programAttributesResult = await LocalForageService.getItem(
         "dataStore",
         "dataStore"
       );
@@ -63309,7 +63685,7 @@ const Tracker = ({ id }) => {
     };
     load();
   }, [id]);
-  useEffect$14(() => {
+  useEffect$18(() => {
     optionFiltersRef.current = optionFilters || [];
     searchFiltersRef.current = searchFilter || null;
   }, [optionFilters, searchFilter]);
@@ -63365,7 +63741,8 @@ const Tracker = ({ id }) => {
         rows,
         columns,
         loading: isLoading,
-        rowClick: (row) => navigate(`/memis/program/${id}/${row?.trackedentity}`)
+        rowClick: (row) => navigate(`/memis/program/${id}/${row?.trackedentity}`),
+        onEditRow: canUpdate && onEdit ? (row) => onEdit("edit", row?.trackedentity) : void 0
       }
     ) }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs(
@@ -63468,7 +63845,7 @@ const Tracker = ({ id }) => {
   ] });
 };
 
-const {useEffect: useEffect$13,useRef: useRef$i} = await importShared('react');
+const {useEffect: useEffect$17,useRef: useRef$j} = await importShared('react');
 
 const GeneralCustomModal = ({
   isOpen,
@@ -63484,7 +63861,7 @@ const GeneralCustomModal = ({
   showCloseButton = true,
   onDidDismiss
 }) => {
-  useEffect$13(() => {
+  useEffect$17(() => {
     const handleClick = (e) => {
       const path = e.composedPath?.() || [];
       for (let el of path) {
@@ -63562,8 +63939,8 @@ const GeneralCustomModal = ({
   );
 };
 
-const React$O = await importShared('react');
-const {useState: useState$16,useEffect: useEffect$12,useMemo: useMemo$C,useRef: useRef$h,useCallback: useCallback$m} = React$O;
+const React$S = await importShared('react');
+const {useState: useState$19,useEffect: useEffect$16,useMemo: useMemo$E,useRef: useRef$i,useCallback: useCallback$o} = React$S;
 const SearchFilterCard = ({
   children,
   searchText,
@@ -63584,48 +63961,48 @@ const SearchFilterCard = ({
   onScanSearch,
   programId
 }) => {
-  const [popoverEvent, setPopoverEvent] = useState$16(null);
-  const [filterPopoverEvent, setFilterPopoverEvent] = useState$16(null);
-  const [localApproval, setLocalApproval] = useState$16(
+  const [popoverEvent, setPopoverEvent] = useState$19(null);
+  const [filterPopoverEvent, setFilterPopoverEvent] = useState$19(null);
+  const [localApproval, setLocalApproval] = useState$19(
     filterOptions?.approval ?? ""
   );
-  const lastExternalApprovalRef = useRef$h(filterOptions?.approval ?? "");
-  const [scanOpen, setScanOpen] = useState$16(false);
-  const [scanError, setScanError] = useState$16("");
-  const videoRef = useRef$h(null);
-  const streamRef = useRef$h(null);
-  const rafRef = useRef$h(null);
-  const detectorRef = useRef$h(null);
-  const [optionFilters, setOptionFilters] = useState$16([]);
-  const [searchFilter, setSearchFilter] = useState$16(null);
-  const [organisationUnits, setOrganisationUnits] = useState$16([]);
-  const [selectedLocation, setSelectedLocation] = useState$16("");
-  const [filterType, setFilterType] = useState$16("");
-  const [filterValue, setFilterValue] = useState$16("");
-  const [appliedFilter, setAppliedFilter] = useState$16({
+  const lastExternalApprovalRef = useRef$i(filterOptions?.approval ?? "");
+  const [scanOpen, setScanOpen] = useState$19(false);
+  const [scanError, setScanError] = useState$19("");
+  const videoRef = useRef$i(null);
+  const streamRef = useRef$i(null);
+  const rafRef = useRef$i(null);
+  const detectorRef = useRef$i(null);
+  const [optionFilters, setOptionFilters] = useState$19([]);
+  const [searchFilter, setSearchFilter] = useState$19(null);
+  const [organisationUnits, setOrganisationUnits] = useState$19([]);
+  const [selectedLocation, setSelectedLocation] = useState$19("");
+  const [filterType, setFilterType] = useState$19("");
+  const [filterValue, setFilterValue] = useState$19("");
+  const [appliedFilter, setAppliedFilter] = useState$19({
     type: null,
     value: null
   });
-  const [filterOpen, setFilterOpen] = useState$16(false);
-  const filterRef = React$O.useRef({
+  const [filterOpen, setFilterOpen] = useState$19(false);
+  const filterRef = React$S.useRef({
     type: "",
     value: ""
   });
-  const filterByLocationRef = React$O.useRef({
+  const filterByLocationRef = React$S.useRef({
     type: "",
     value: ""
   });
-  const optionFiltersRef = React$O.useRef([]);
-  const searchFiltersRef = React$O.useRef([]);
+  const optionFiltersRef = React$S.useRef([]);
+  const searchFiltersRef = React$S.useRef([]);
   const isScanDebug = typeof window !== "undefined" && (window.localStorage?.getItem("memis_qr_scan_debug") === "1" || window.__MEMIS_QR_SCAN_DEBUG__ === true) || false;
-  const scanDebug = useCallback$m(
+  const scanDebug = useCallback$o(
     (...args) => {
       if (!isScanDebug) return;
       console.log("[MEMIS][QR_SCAN]", ...args);
     },
     [isScanDebug]
   );
-  useEffect$12(() => {
+  useEffect$16(() => {
     const onUnhandledRejection = (event) => {
       const reason = String(
         event?.reason?.message || event?.reason || ""
@@ -63651,7 +64028,7 @@ const SearchFilterCard = ({
       window.removeEventListener("error", onWindowError);
     };
   }, [scanDebug]);
-  const placeHolder = useMemo$C(() => {
+  const placeHolder = useMemo$E(() => {
     if (searchPlaceholder) return searchPlaceholder;
     const labels = (filterColumns || []).map((c) => c.label).filter(Boolean);
     if (!labels.length) return "Search...";
@@ -63659,14 +64036,14 @@ const SearchFilterCard = ({
     const shownWords = labels.slice(0, max).join(", ");
     return `Search by ${shownWords}${labels.length > max ? "..." : ""}`;
   }, [searchPlaceholder, filterColumns]);
-  useEffect$12(() => {
+  useEffect$16(() => {
     const external = filterOptions?.approval ?? "";
     if (lastExternalApprovalRef.current !== external) {
       lastExternalApprovalRef.current = external;
       setLocalApproval(external);
     }
   }, [filterOptions?.approval]);
-  const stopScanner = useCallback$m(() => {
+  const stopScanner = useCallback$o(() => {
     if (rafRef.current) {
       cancelAnimationFrame(rafRef.current);
       rafRef.current = null;
@@ -63680,7 +64057,7 @@ const SearchFilterCard = ({
       videoRef.current.srcObject = null;
     }
   }, []);
-  const waitForVideoReady = useCallback$m(async (videoEl) => {
+  const waitForVideoReady = useCallback$o(async (videoEl) => {
     if (!videoEl) return;
     if (videoEl.readyState >= 2) return;
     await new Promise((resolve) => {
@@ -63697,12 +64074,12 @@ const SearchFilterCard = ({
       setTimeout(finish, 600);
     });
   }, []);
-  useEffect$12(() => {
+  useEffect$16(() => {
     return () => {
       stopScanner();
     };
   }, [stopScanner]);
-  const handleScannedValue = useCallback$m(
+  const handleScannedValue = useCallback$o(
     async (rawValue) => {
       const incoming = String(rawValue || "").trim();
       if (!incoming) return;
@@ -63718,7 +64095,7 @@ const SearchFilterCard = ({
     [onScanSearch, onSearchChange]
   );
   const isNativePlatform = typeof Capacitor?.isNativePlatform === "function" ? Capacitor.isNativePlatform() : ["android", "ios"].includes(Capacitor?.getPlatform?.());
-  const mapScannerError = useCallback$m((error, { native = false } = {}) => {
+  const mapScannerError = useCallback$o((error, { native = false } = {}) => {
     const name = String(error?.name || "").trim();
     const message = String(error?.message || "").toLowerCase();
     if (name === "NotAllowedError" || name === "SecurityError" || message.includes("permission") || message.includes("denied")) {
@@ -63756,7 +64133,7 @@ const SearchFilterCard = ({
       message: native ? "Unable to scan QR code on this device right now." : "Unable to start browser QR scanner right now."
     };
   }, []);
-  const runNativePluginScan = useCallback$m(async () => {
+  const runNativePluginScan = useCallback$o(async () => {
     try {
       scanDebug("path=native-mobile:start");
       const result = await CapacitorBarcodeScanner.scanBarcode({
@@ -63784,7 +64161,7 @@ const SearchFilterCard = ({
       return { ok: false, ...mapped };
     }
   }, [handleScannedValue, mapScannerError, scanDebug]);
-  const openScanner = useCallback$m(async () => {
+  const openScanner = useCallback$o(async () => {
     try {
       if (!enableQrScan) return;
       setScanError("");
@@ -63820,11 +64197,11 @@ const SearchFilterCard = ({
     runNativePluginScan,
     scanDebug
   ]);
-  const closeScanner = useCallback$m(() => {
+  const closeScanner = useCallback$o(() => {
     setScanOpen(false);
     stopScanner();
   }, [stopScanner]);
-  useEffect$12(() => {
+  useEffect$16(() => {
     if (!scanOpen) return;
     let cancelled = false;
     const start = async () => {
@@ -63919,9 +64296,9 @@ const SearchFilterCard = ({
   };
   const resetFilters = () => {
   };
-  useEffect$12(() => {
+  useEffect$16(() => {
     const load = async () => {
-      const programAttributesResult = await LocalForageServiceInstance.getItem(
+      const programAttributesResult = await LocalForageService.getItem(
         "dataStore",
         "dataStore"
       );
@@ -63940,7 +64317,7 @@ const SearchFilterCard = ({
     };
     load();
   }, [programId]);
-  useEffect$12(() => {
+  useEffect$16(() => {
     optionFiltersRef.current = optionFilters || [];
     searchFiltersRef.current = searchFilter || null;
   }, [optionFilters, searchFilter]);
@@ -64164,13 +64541,13 @@ const SearchFilterCard = ({
   ] });
 };
 
-const {useCallback: useCallback$l,useMemo: useMemo$B} = await importShared('react');
+const {useCallback: useCallback$n,useMemo: useMemo$D} = await importShared('react');
 
 const unwrap = (res) => res?.data ?? res;
 
 function useTeiSearch(columns = []) {
  
-  const colKeySet = useMemo$B(() => {
+  const colKeySet = useMemo$D(() => {
     return new Set((columns || []).map((c) => c.key));
   }, [columns]);
 
@@ -64212,7 +64589,7 @@ function useTeiSearch(columns = []) {
     return rawValue;
   };
 
-  const search = useCallback$l(
+  const search = useCallback$n(
     async ({ programId, orgUnits, query, attributeUids, pageSize = 25, page = 1 }) => {
       if (!programId || !query || !attributeUids?.length) {
           return {
@@ -64355,7 +64732,7 @@ const resolveFromConfig = (config, programId) => {
 
 const getSearchAttributeSets = async (programId) => {
   try {
-    const store = await LocalForageServiceInstance.getItem(
+    const store = await LocalForageService.getItem(
       "dataStore",
       "dataStore"
     );
@@ -64386,7 +64763,7 @@ const getSearchAttributeSets = async (programId) => {
 };
 
 const eventSearchFilter = async (programId, data) => {
-  const user = await LocalForageServiceInstance.getItem("userRes", "user");
+  const user = await LocalForageService.getItem("userRes", "user");
 
   if (!data) return null;
 
@@ -64435,7 +64812,7 @@ const eventSearchFilter = async (programId, data) => {
   return { filter: "&filter=" + filterString };
 };
 
-const {useCallback: useCallback$k,useEffect: useEffect$11,useMemo: useMemo$A,useRef: useRef$g,useState: useState$15} = await importShared('react');
+const {useCallback: useCallback$m,useEffect: useEffect$15,useMemo: useMemo$C,useRef: useRef$h,useState: useState$18} = await importShared('react');
 function ItemSearch({
   programId,
   programStageId,
@@ -64449,23 +64826,23 @@ function ItemSearch({
   onResults,
   onLoadingChange
 }) {
-  const [debounced, setDebounced] = useState$15((searchText || "").trim());
-  const [programType, setProgramType] = useState$15(null);
-  const mountedRef = useRef$g(true);
-  const onResultsRef = useRef$g(onResults);
-  const onLoadingRef = useRef$g(onLoadingChange);
-  useEffect$11(() => {
+  const [debounced, setDebounced] = useState$18((searchText || "").trim());
+  const [programType, setProgramType] = useState$18(null);
+  const mountedRef = useRef$h(true);
+  const onResultsRef = useRef$h(onResults);
+  const onLoadingRef = useRef$h(onLoadingChange);
+  useEffect$15(() => {
     onResultsRef.current = onResults;
   }, [onResults]);
-  useEffect$11(() => {
+  useEffect$15(() => {
     onLoadingRef.current = onLoadingChange;
   }, [onLoadingChange]);
-  const keySet = useMemo$A(
+  const keySet = useMemo$C(
     () => new Set((visibleColumns || []).map((c) => c.key)),
     [visibleColumns]
   );
-  const colKeys = useMemo$A(() => Array.from(keySet), [keySet]);
-  const eventSearchKeys = useMemo$A(() => {
+  const colKeys = useMemo$C(() => Array.from(keySet), [keySet]);
+  const eventSearchKeys = useMemo$C(() => {
     const nonEventKeys = /* @__PURE__ */ new Set([
       "id",
       "event",
@@ -64478,16 +64855,16 @@ function ItemSearch({
     ]);
     return colKeys.filter((k) => !nonEventKeys.has(k));
   }, [colKeys]);
-  const colKeysKey = useMemo$A(() => colKeys.join(","), [colKeys]);
-  const orgUnitsKey = useMemo$A(
+  const colKeysKey = useMemo$C(() => colKeys.join(","), [colKeys]);
+  const orgUnitsKey = useMemo$C(
     () => (orgUnits || []).map((o) => o.id).join(","),
     [orgUnits]
   );
-  const [searchSets, setSearchSets] = useState$15({ equipment: [], spare: [] });
-  const EQUIP_SET = useMemo$A(() => searchSets?.equipment || [], [searchSets]);
-  const SPARE_SET = useMemo$A(() => searchSets?.spare || [], [searchSets]);
+  const [searchSets, setSearchSets] = useState$18({ equipment: [], spare: [] });
+  const EQUIP_SET = useMemo$C(() => searchSets?.equipment || [], [searchSets]);
+  const SPARE_SET = useMemo$C(() => searchSets?.spare || [], [searchSets]);
   const teiSearch = useTeiSearch(visibleColumns);
-  const eventFieldMapRef = useRef$g({ key: null, map: /* @__PURE__ */ new Map() });
+  const eventFieldMapRef = useRef$h({ key: null, map: /* @__PURE__ */ new Map() });
   const resolveDisplayValue = (field, rawValue) => {
     if (!field || rawValue == null || rawValue === "") return rawValue;
     const valueType = String(field.valueType || "").toUpperCase();
@@ -64515,7 +64892,7 @@ function ItemSearch({
     }
     return rawValue;
   };
-  const getEventFieldMap = useCallback$k(async () => {
+  const getEventFieldMap = useCallback$m(async () => {
     if (!programId) return /* @__PURE__ */ new Map();
     const cacheKey = `${programId}:${programStageId || ""}`;
     if (eventFieldMapRef.current.key === cacheKey) return eventFieldMapRef.current.map;
@@ -64533,13 +64910,13 @@ function ItemSearch({
     eventFieldMapRef.current = { key: cacheKey, map };
     return map;
   }, [programId, programStageId]);
-  const pickTeiScope = useCallback$k(() => {
+  const pickTeiScope = useCallback$m(() => {
     const hasAny = (uids) => uids.some((u) => keySet.has(u));
     if (hasAny(EQUIP_SET)) return EQUIP_SET;
     if (hasAny(SPARE_SET)) return SPARE_SET;
     return EQUIP_SET;
   }, [keySet, EQUIP_SET, SPARE_SET]);
-  const shapeEventRows = useCallback$k(
+  const shapeEventRows = useCallback$m(
     (events) => {
       const allowed = new Set(colKeys);
       return (events || []).map((ev) => {
@@ -64552,17 +64929,17 @@ function ItemSearch({
     },
     [colKeys]
   );
-  useEffect$11(() => {
+  useEffect$15(() => {
     mountedRef.current = true;
     return () => {
       mountedRef.current = false;
     };
   }, []);
-  useEffect$11(() => {
+  useEffect$15(() => {
     const t = setTimeout(() => setDebounced((searchText || "").trim()), 250);
     return () => clearTimeout(t);
   }, [searchText]);
-  useEffect$11(() => {
+  useEffect$15(() => {
     if (!programId) return;
     const fetchProgramType = async () => {
       try {
@@ -64574,7 +64951,7 @@ function ItemSearch({
     };
     fetchProgramType();
   }, [programId]);
-  useEffect$11(() => {
+  useEffect$15(() => {
     let cancelled = false;
     (async () => {
       const sets = await getSearchAttributeSets(programId);
@@ -64586,7 +64963,7 @@ function ItemSearch({
       cancelled = true;
     };
   }, [programId]);
-  useEffect$11(() => {
+  useEffect$15(() => {
     let cancelled = false;
     const runTei = async () => {
       const attributeUids = pickTeiScope();
@@ -64632,7 +65009,7 @@ function ItemSearch({
       }
       const fieldMap = await getEventFieldMap();
       (visibleColumns || []).forEach((c) => fieldMap.set(c.key, c));
-      const viewAccess = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+      const viewAccess = await LocalForageService.getItem("dataStore", "dataStore");
       const viewSearchFilter = await eventSearchFilter(programId, viewAccess);
       const extraFilter = viewSearchFilter?.filter || "";
       const buildQueryString = (deUid) => {
@@ -64896,7 +65273,7 @@ return rows.filter((row) => {
 const getProgramRowFilterConfig = async (programId, type = null) => {
   if (!programId) return null;
 
-  const store = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+  const store = await LocalForageService.getItem("dataStore", "dataStore");
   if (!store) return null;
 
   const rowFilterConfig =
@@ -64945,16 +65322,16 @@ const sortRowsByApproval = (rows, approvalFieldKey) => {
   return copy;
 };
 
-const {useEffect: useEffect$10,useState: useState$14} = await importShared('react');
+const {useEffect: useEffect$14,useState: useState$17} = await importShared('react');
 
 function useQrScanEnabled({
   menuItems,
   currentNavigationId,
   scanProgramId,
 }) {
-  const [qrScanEnabled, setQrScanEnabled] = useState$14(false);
+  const [qrScanEnabled, setQrScanEnabled] = useState$17(false);
 
-  useEffect$10(() => {
+  useEffect$14(() => {
     let cancelled = false;
 
     (async () => {
@@ -64978,7 +65355,7 @@ function useQrScanEnabled({
 const normalize$3 = (value) => String(value || "").trim().toLowerCase();
 
 async function getBlankPlaceholderGroups() {
-  const dataStore = await LocalForageServiceInstance.getItem(
+  const dataStore = await LocalForageService.getItem(
     "dataStore",
     "dataStore",
   );
@@ -65060,7 +65437,7 @@ function getBlankPlaceholderForDataElement(dataElements = [], deId) {
   );
 }
 
-const {useCallback: useCallback$j,useContext: useContext$z,useEffect: useEffect$$,useMemo: useMemo$z,useRef: useRef$f,useState: useState$13} = await importShared('react');
+const {useCallback: useCallback$l,useContext: useContext$B,useEffect: useEffect$13,useMemo: useMemo$B,useRef: useRef$g,useState: useState$16} = await importShared('react');
 function StageEvents({
   id,
   programId: programIdProp,
@@ -65070,40 +65447,40 @@ function StageEvents({
 }) {
   const navigate = useNavigate();
   const location = useLocation();
-  const { user } = useContext$z(MEMISContext.UserRolesContext);
-  const { menuItems } = useContext$z(MEMISContext.MenuContext);
-  const [rows, setRows] = useState$13([]);
-  const [priorities, setPriorities] = useState$13(null);
-  const [loading, setLoading] = useState$13(false);
-  const [loadingColumns, setLoadingColumns] = useState$13(false);
-  const [loadingRows, setLoadingRows] = useState$13(false);
-  const [searchText, setSearchText] = useState$13("");
-  const [rawRows, setRawRows] = useState$13([]);
-  const [filterOptions, setFilterOptions] = useState$13({ approval: null });
-  const [approvalFieldKey, setApprovalFieldKey] = useState$13(null);
-  const [approvalConfig, setApprovalConfig] = useState$13(null);
-  const orgUnitCacheRef = useRef$f(/* @__PURE__ */ new Map());
-  const [allColumnsOrdered, setAllColumnsOrdered] = useState$13([]);
-  const [visibleColumnKeys, setVisibleColumnKeys] = useState$13(/* @__PURE__ */ new Set());
-  const visibleColumns = useMemo$z(
+  const { user } = useContext$B(MEMISContext.UserRolesContext);
+  const { menuItems } = useContext$B(MEMISContext.MenuContext);
+  const [rows, setRows] = useState$16([]);
+  const [priorities, setPriorities] = useState$16(null);
+  const [loading, setLoading] = useState$16(false);
+  const [loadingColumns, setLoadingColumns] = useState$16(false);
+  const [loadingRows, setLoadingRows] = useState$16(false);
+  const [searchText, setSearchText] = useState$16("");
+  const [rawRows, setRawRows] = useState$16([]);
+  const [filterOptions, setFilterOptions] = useState$16({ approval: null });
+  const [approvalFieldKey, setApprovalFieldKey] = useState$16(null);
+  const [approvalConfig, setApprovalConfig] = useState$16(null);
+  const orgUnitCacheRef = useRef$g(/* @__PURE__ */ new Map());
+  const [allColumnsOrdered, setAllColumnsOrdered] = useState$16([]);
+  const [visibleColumnKeys, setVisibleColumnKeys] = useState$16(/* @__PURE__ */ new Set());
+  const visibleColumns = useMemo$B(
     () => allColumnsOrdered.filter((c) => visibleColumnKeys.has(c.key)),
     [allColumnsOrdered, visibleColumnKeys]
   );
-  const searchPlaceholder = useMemo$z(() => {
+  const searchPlaceholder = useMemo$B(() => {
     const labels = visibleColumns.map((c) => c.label).filter(Boolean);
     if (!labels.length) return "Search events...";
     const max = 10;
     const shown = labels.slice(0, max).join(", ");
     return `Search by ${shown}${labels.length > max ? "..." : ""}`;
   }, [visibleColumns]);
-  const [selectedRow, setSelectedRow] = useState$13(null);
-  const [selectedRowId, setSelectedRowId] = useState$13(null);
-  const [showActions, setShowActions] = useState$13(false);
-  const [pendingDelete, setPendingDelete] = useState$13(null);
-  const [deletingId, setDeletingId] = useState$13(null);
-  const [fallbackStageId, setFallbackStageId] = useState$13(null);
+  const [selectedRow, setSelectedRow] = useState$16(null);
+  const [selectedRowId, setSelectedRowId] = useState$16(null);
+  const [showActions, setShowActions] = useState$16(false);
+  const [pendingDelete, setPendingDelete] = useState$16(null);
+  const [deletingId, setDeletingId] = useState$16(null);
+  const [fallbackStageId, setFallbackStageId] = useState$16(null);
   const getRowId = (row) => row?.id || row?.event || row?.enrollment || row?.trackedEntity || null;
-  const { resolvedProgramId, resolvedStageId } = useMemo$z(() => {
+  const { resolvedProgramId, resolvedStageId } = useMemo$B(() => {
     const match = menuItems?.find((m) => m?.id === (stageIdProp || id)) || null;
     const stage = stageIdProp || match?.dependentStage || match?.id || id;
     const program = programIdProp || match?.dependentProgram || (match?.isProgram ? match?.id : null) || id;
@@ -65112,7 +65489,7 @@ function StageEvents({
       resolvedStageId: stage
     };
   }, [id, menuItems, programIdProp, stageIdProp]);
-  const effectiveProgramId = useMemo$z(
+  const effectiveProgramId = useMemo$B(
     () => resolvedProgramId || programIdProp || id || null,
     [id, programIdProp, resolvedProgramId]
   );
@@ -65121,16 +65498,16 @@ function StageEvents({
     currentNavigationId: id,
     scanProgramId: effectiveProgramId
   });
-  const effectiveStageId = useMemo$z(() => {
+  const effectiveStageId = useMemo$B(() => {
     const rawStage = stageIdProp || resolvedStageId;
     if (rawStage && rawStage !== effectiveProgramId) return rawStage;
     if (fallbackStageId) return fallbackStageId;
     return rawStage || null;
   }, [stageIdProp, resolvedStageId, fallbackStageId, effectiveProgramId]);
-  useEffect$$(() => {
+  useEffect$13(() => {
     setFallbackStageId(null);
   }, [effectiveProgramId, stageIdProp, resolvedStageId]);
-  useEffect$$(() => {
+  useEffect$13(() => {
     const needsLookup = !effectiveStageId || effectiveProgramId && effectiveStageId === effectiveProgramId;
     if (!effectiveProgramId || !needsLookup) return;
     (async () => {
@@ -65184,7 +65561,7 @@ function StageEvents({
           )
         };
       }).filter((c) => c.visible);
-      const navLayout = await LocalForageServiceInstance.getItem(
+      const navLayout = await LocalForageService.getItem(
         "dataStore",
         "dataStore"
       );
@@ -65239,7 +65616,7 @@ function StageEvents({
       setLoadingColumns(false);
     }
   };
-  const [pagination, setPagination] = useState$13({
+  const [pagination, setPagination] = useState$16({
     page: 1,
     pageCount: 1,
     pageSize: 100,
@@ -65253,7 +65630,7 @@ function StageEvents({
         (a, b) => a?.level - b?.level
       );
       const lowestOrgUnit = sortedOrgUnits[sortedOrgUnits.length - 1] || sortedOrgUnits[0];
-      const viewAccess = await LocalForageServiceInstance.getItem(
+      const viewAccess = await LocalForageService.getItem(
         "dataStore",
         "dataStore"
       );
@@ -65457,7 +65834,7 @@ function StageEvents({
   };
   const getPriorityColors = async (pId) => {
     if (!pId) return;
-    const response = await LocalForageServiceInstance.getItem(
+    const response = await LocalForageService.getItem(
       "dataStore",
       "dataStore"
     );
@@ -65466,7 +65843,7 @@ function StageEvents({
     );
     setPriorities(res);
   };
-  useEffect$$(() => {
+  useEffect$13(() => {
     setAllColumnsOrdered([]);
     setVisibleColumnKeys(/* @__PURE__ */ new Set());
     setRawRows([]);
@@ -65487,7 +65864,7 @@ function StageEvents({
       setPagination((prev) => ({ ...prev, page: 1 }));
     }
   }, [user, effectiveProgramId, effectiveStageId, location.pathname]);
-  useEffect$$(() => {
+  useEffect$13(() => {
     const filtered = filterRowsByApproval(
       rawRows,
       filterOptions.approval,
@@ -65500,7 +65877,7 @@ function StageEvents({
     const v = value || null;
     setFilterOptions((prev) => ({ ...prev, approval: v }));
   };
-  useEffect$$(() => {
+  useEffect$13(() => {
     if (!effectiveProgramId || !effectiveStageId || !user?.organisationUnits || allColumnsOrdered.length === 0)
       return;
     if ((searchText ?? "").trim().length < 2) {
@@ -65519,7 +65896,7 @@ function StageEvents({
     allColumnsOrdered
   ]);
   const isLoading = loading || loadingRows || loadingColumns;
-  const handleScanSearch = useCallback$j(
+  const handleScanSearch = useCallback$l(
     async (rawScannedValue) => {
       return resolveQrSearchQuery({
         rawScannedValue,
@@ -65637,7 +66014,7 @@ function StageEvents({
   ] });
 }
 
-const {useCallback: useCallback$i,useContext: useContext$y,useEffect: useEffect$_,useMemo: useMemo$y,useRef: useRef$e,useState: useState$12} = await importShared('react');
+const {useCallback: useCallback$k,useContext: useContext$A,useEffect: useEffect$12,useMemo: useMemo$A,useRef: useRef$f,useState: useState$15} = await importShared('react');
 function StageSectionsEvents({
   id,
   programId: programIdProp,
@@ -65647,41 +66024,41 @@ function StageSectionsEvents({
 }) {
   const navigate = useNavigate();
   const location = useLocation();
-  const { user } = useContext$y(MEMISContext.UserRolesContext);
-  const { menuItems } = useContext$y(MEMISContext.MenuContext);
+  const { user } = useContext$A(MEMISContext.UserRolesContext);
+  const { menuItems } = useContext$A(MEMISContext.MenuContext);
   const queryParams = new URLSearchParams(location.search);
-  const [rows, setRows] = useState$12([]);
-  const [priorities, setPriorities] = useState$12(null);
-  const [loading, setLoading] = useState$12(false);
-  const [loadingColumns, setLoadingColumns] = useState$12(false);
-  const [loadingRows, setLoadingRows] = useState$12(false);
-  const [searchText, setSearchText] = useState$12("");
-  const [rawRows, setRawRows] = useState$12([]);
-  const [filterOptions, setFilterOptions] = useState$12({ approval: null });
-  const [approvalFieldKey, setApprovalFieldKey] = useState$12(null);
-  const [approvalConfig, setApprovalConfig] = useState$12(null);
-  const orgUnitCacheRef = useRef$e(/* @__PURE__ */ new Map());
-  const [allColumnsOrdered, setAllColumnsOrdered] = useState$12([]);
-  const [visibleColumnKeys, setVisibleColumnKeys] = useState$12(/* @__PURE__ */ new Set());
-  const visibleColumns = useMemo$y(
+  const [rows, setRows] = useState$15([]);
+  const [priorities, setPriorities] = useState$15(null);
+  const [loading, setLoading] = useState$15(false);
+  const [loadingColumns, setLoadingColumns] = useState$15(false);
+  const [loadingRows, setLoadingRows] = useState$15(false);
+  const [searchText, setSearchText] = useState$15("");
+  const [rawRows, setRawRows] = useState$15([]);
+  const [filterOptions, setFilterOptions] = useState$15({ approval: null });
+  const [approvalFieldKey, setApprovalFieldKey] = useState$15(null);
+  const [approvalConfig, setApprovalConfig] = useState$15(null);
+  const orgUnitCacheRef = useRef$f(/* @__PURE__ */ new Map());
+  const [allColumnsOrdered, setAllColumnsOrdered] = useState$15([]);
+  const [visibleColumnKeys, setVisibleColumnKeys] = useState$15(/* @__PURE__ */ new Set());
+  const visibleColumns = useMemo$A(
     () => allColumnsOrdered?.filter((c) => visibleColumnKeys?.has(c?.key)),
     [allColumnsOrdered, visibleColumnKeys]
   );
-  const searchPlaceholder = useMemo$y(() => {
+  const searchPlaceholder = useMemo$A(() => {
     const labels = visibleColumns.map((c) => c.label).filter(Boolean);
     if (!labels.length) return "Search events...";
     const max = 10;
     const shown = labels.slice(0, max).join(", ");
     return `Search by ${shown}${labels.length > max ? "..." : ""}`;
   }, [visibleColumns]);
-  const [selectedRow, setSelectedRow] = useState$12(null);
-  const [selectedRowId, setSelectedRowId] = useState$12(null);
-  const [showActions, setShowActions] = useState$12(false);
-  const [pendingDelete, setPendingDelete] = useState$12(null);
-  const [deletingId, setDeletingId] = useState$12(null);
-  const [fallbackStageId, setFallbackStageId] = useState$12(null);
+  const [selectedRow, setSelectedRow] = useState$15(null);
+  const [selectedRowId, setSelectedRowId] = useState$15(null);
+  const [showActions, setShowActions] = useState$15(false);
+  const [pendingDelete, setPendingDelete] = useState$15(null);
+  const [deletingId, setDeletingId] = useState$15(null);
+  const [fallbackStageId, setFallbackStageId] = useState$15(null);
   const getRowId = (row) => row?.id || row?.event || row?.enrollment || row?.trackedEntity || null;
-  const { resolvedProgramId, resolvedStageId } = useMemo$y(() => {
+  const { resolvedProgramId, resolvedStageId } = useMemo$A(() => {
     const match = menuItems?.find((m) => m?.id === (stageIdProp || id)) || null;
     const stage = stageIdProp || match?.dependentStage || match?.id || id;
     const program = programIdProp || match?.dependentProgram || (match?.isProgram ? match?.id : null) || id;
@@ -65690,7 +66067,7 @@ function StageSectionsEvents({
       resolvedStageId: stage
     };
   }, [id, menuItems, programIdProp, stageIdProp]);
-  const effectiveProgramId = useMemo$y(
+  const effectiveProgramId = useMemo$A(
     () => resolvedProgramId || programIdProp || id || null,
     [id, programIdProp, resolvedProgramId]
   );
@@ -65699,16 +66076,16 @@ function StageSectionsEvents({
     currentNavigationId: id,
     scanProgramId: effectiveProgramId
   });
-  const effectiveStageId = useMemo$y(() => {
+  const effectiveStageId = useMemo$A(() => {
     const rawStage = stageIdProp || resolvedStageId;
     if (rawStage && rawStage !== effectiveProgramId) return rawStage;
     if (fallbackStageId) return fallbackStageId;
     return rawStage || null;
   }, [stageIdProp, resolvedStageId, fallbackStageId, effectiveProgramId]);
-  useEffect$_(() => {
+  useEffect$12(() => {
     setFallbackStageId(null);
   }, [effectiveProgramId, stageIdProp, resolvedStageId]);
-  useEffect$_(() => {
+  useEffect$12(() => {
     const needsLookup = !effectiveStageId || effectiveProgramId && effectiveStageId === effectiveProgramId;
     if (!effectiveProgramId || !needsLookup) return;
     (async () => {
@@ -65730,14 +66107,14 @@ function StageSectionsEvents({
     if (!programId || !programStageId) return;
     setLoadingColumns(true);
     try {
-      let res = await LocalForageServiceInstance.getItem(
+      let res = await LocalForageService.getItem(
         "programs",
         "programs"
       );
       const filtered = res?.find((p) => p?.id === programId);
       const stage = filtered?.programStages?.find((ps) => ps?.id === programStageId) || filtered?.programStages?.[0];
       const pdes = stage?.programStageDataElements || [];
-      let source = await LocalForageServiceInstance.getItem(
+      let source = await LocalForageService.getItem(
         "dataStore",
         "dataStore"
       );
@@ -65777,7 +66154,7 @@ function StageSectionsEvents({
       setLoadingColumns(false);
     }
   };
-  const [pagination, setPagination] = useState$12({
+  const [pagination, setPagination] = useState$15({
     page: 1,
     pageCount: 1,
     pageSize: 50,
@@ -65789,7 +66166,7 @@ function StageSectionsEvents({
     setLoading(true);
     try {
       const sortedOrgUnits = orgUnits?.sort((a, b) => a?.level - b?.level);
-      const viewAccess = await LocalForageServiceInstance.getItem(
+      const viewAccess = await LocalForageService.getItem(
         "dataStore",
         "dataStore"
       );
@@ -65859,7 +66236,7 @@ function StageSectionsEvents({
       setPagination(res?.data?.pager);
       const approvalCfg = await getProgramApprovalConfig(programId);
       setApprovalConfig(approvalCfg || null);
-      let program = await LocalForageServiceInstance.getItem(
+      let program = await LocalForageService.getItem(
         "programs",
         "programs"
       );
@@ -65970,7 +66347,7 @@ function StageSectionsEvents({
                   obj[dv?.dataElement] = orgUnitCacheRef.current.get(rawValue);
                 } else {
                   try {
-                    let ou = await LocalForageServiceInstance.getItem(
+                    let ou = await LocalForageService.getItem(
                       "userOrganisationUnits",
                       "userOrgUnits"
                     );
@@ -66030,7 +66407,7 @@ function StageSectionsEvents({
   };
   const getPriorityColors = async (pId) => {
     if (!pId) return;
-    const response = await LocalForageServiceInstance.getItem(
+    const response = await LocalForageService.getItem(
       "dataStore",
       "dataStore"
     );
@@ -66039,7 +66416,7 @@ function StageSectionsEvents({
     );
     setPriorities(res);
   };
-  useEffect$_(() => {
+  useEffect$12(() => {
     if (effectiveProgramId && effectiveStageId) {
       getProgramDE(effectiveProgramId, effectiveStageId);
       getPriorityColors(effectiveProgramId);
@@ -66058,7 +66435,7 @@ function StageSectionsEvents({
     const v = value || null;
     setFilterOptions((prev) => ({ ...prev, approval: v }));
   };
-  useEffect$_(() => {
+  useEffect$12(() => {
     if (!effectiveProgramId || !effectiveStageId || !user?.organisationUnits || allColumnsOrdered.length === 0)
       return;
     if ((searchText ?? "").trim().length < 2) {
@@ -66077,7 +66454,7 @@ function StageSectionsEvents({
     allColumnsOrdered
   ]);
   const isLoading = loading || loadingRows || loadingColumns;
-  const handleScanSearch = useCallback$i(
+  const handleScanSearch = useCallback$k(
     async (rawScannedValue) => {
       return resolveQrSearchQuery({
         rawScannedValue,
@@ -66165,8 +66542,8 @@ function StageSectionsEvents({
   ] });
 }
 
-const React$N = await importShared('react');
-const {useState: useState$11,useMemo: useMemo$x,useEffect: useEffect$Z} = React$N;
+const React$R = await importShared('react');
+const {useState: useState$14,useMemo: useMemo$z,useEffect: useEffect$11} = React$R;
 
 const {createPortal: createPortal$3} = await importShared('react-dom');
 function EquipmentPicker({
@@ -66179,13 +66556,13 @@ function EquipmentPicker({
   loading = false,
   error = null
 }) {
-  const [searchTerm, setSearchTerm] = useState$11("");
-  const [selectedItem, setSelectedItem] = useState$11(null);
-  const [wardsList, setWardsList] = useState$11([]);
-  const [selectedWard, setSelectedWard] = useState$11(null);
-  const [isLoading, setLoading] = useState$11(loading);
-  const [avEquipment, setAvailableEquipment] = useState$11(availableEquipment);
-  const filteredEquipment = useMemo$x(() => {
+  const [searchTerm, setSearchTerm] = useState$14("");
+  const [selectedItem, setSelectedItem] = useState$14(null);
+  const [wardsList, setWardsList] = useState$14([]);
+  const [selectedWard, setSelectedWard] = useState$14(null);
+  const [isLoading, setLoading] = useState$14(loading);
+  const [avEquipment, setAvailableEquipment] = useState$14(availableEquipment);
+  const filteredEquipment = useMemo$z(() => {
     if (!searchTerm.trim()) return avEquipment;
     const term = searchTerm.toLowerCase();
     return avEquipment.filter(
@@ -66216,7 +66593,7 @@ function EquipmentPicker({
   const handleWardSelect = async (ward) => {
     setLoading(true);
     try {
-      const ds = await LocalForageServiceInstance.getItem(
+      const ds = await LocalForageService.getItem(
         "dataStore",
         "dataStore"
       );
@@ -66314,14 +66691,14 @@ function EquipmentPicker({
       setLoading(false);
     }
   };
-  useEffect$Z(() => {
+  useEffect$11(() => {
     getWards();
   }, []);
-  useEffect$Z(() => {
+  useEffect$11(() => {
     setLoading(loading);
     console.log({ availableEquipment });
   }, [loading]);
-  useEffect$Z(() => {
+  useEffect$11(() => {
     setAvailableEquipment(availableEquipment);
     console.log({ availableEquipment });
   }, [availableEquipment]);
@@ -66853,7 +67230,7 @@ function EquipmentPicker({
   );
 }
 
-const {useEffect: useEffect$Y,useState: useState$10} = await importShared('react');
+const {useEffect: useEffect$10,useState: useState$13} = await importShared('react');
 
 const A$7 = (x) => Array.isArray(x) ? x : [];
 const RequiredLabel = ({ label, required }) => /* @__PURE__ */ jsxRuntimeExports.jsxs(IonLabel, { position: "stacked", className: "ion-text-wrap", children: [
@@ -66866,8 +67243,8 @@ function RenderField({ field, required, missing, formData, handleChange, getVal,
   const type = field?.valueType;
   const value = formData?.[field?.id] || getVal(field?.id) || "";
   const label = field?.formName || field?.name || field?.id;
-  const [options, setOptions] = useState$10([]);
-  useEffect$Y(() => {
+  const [options, setOptions] = useState$13([]);
+  useEffect$10(() => {
     if (!field?.optionSet) return;
     setOptions(field?.optionSet?.options || []);
   }, []);
@@ -66957,7 +67334,7 @@ function RenderField({ field, required, missing, formData, handleChange, getVal,
   }
 }
 
-const {useCallback: useCallback$h,useEffect: useEffect$X,useRef: useRef$d,useState: useState$$} = await importShared('react');
+const {useCallback: useCallback$j,useEffect: useEffect$$,useRef: useRef$e,useState: useState$12} = await importShared('react');
 const JOB_CARD_SOURCE_DE_ID = "GeM9XLFWC7d";
 const MAINTENANCE_TYPE_DE_ID = "EbJI5Loxjbl";
 const REQUESTER_DE_ID$1 = "M074NJAYjb6";
@@ -66975,20 +67352,20 @@ function MaintenanceEvents({
   program,
   user
 }) {
-  const [loading, setLoading] = useState$$(false);
-  const [loadingMessage, setLoadingMessage] = useState$$(
+  const [loading, setLoading] = useState$12(false);
+  const [loadingMessage, setLoadingMessage] = useState$12(
     "Fetching maintenance activities"
   );
-  const [events, setEvents] = useState$$([]);
-  const [page, setPage] = useState$$(1);
-  const [rows, setRows] = useState$$([]);
-  const [formData, setFormData] = useState$$();
-  const [tei, setTei] = useState$$([]);
-  const [selected, setSelected] = useState$$();
-  const [section, setSection] = useState$$();
-  const [programMeta, setProgramMeta] = useState$$({ id: program, name: "" });
-  const [standaloneRequest, setStandaloneRequest] = useState$$(null);
-  const standaloneCreateRef = useRef$d(null);
+  const [events, setEvents] = useState$12([]);
+  const [page, setPage] = useState$12(1);
+  const [rows, setRows] = useState$12([]);
+  const [formData, setFormData] = useState$12();
+  const [tei, setTei] = useState$12([]);
+  const [selected, setSelected] = useState$12();
+  const [section, setSection] = useState$12();
+  const [programMeta, setProgramMeta] = useState$12({ id: program, name: "" });
+  const [standaloneRequest, setStandaloneRequest] = useState$12(null);
+  const standaloneCreateRef = useRef$e(null);
   const {
     contextConfig,
     selectedEquipment,
@@ -67021,7 +67398,7 @@ function MaintenanceEvents({
       order: 3
     }
   ];
-  const getEvents = useCallback$h(async () => {
+  const getEvents = useCallback$j(async () => {
     setLoading(true);
     setLoadingMessage("Fetching maintenance activities");
     const sortedOrgUnits = user.organisationUnits?.sort(
@@ -67082,7 +67459,7 @@ function MaintenanceEvents({
       });
     });
   }, [program, stage, user]);
-  const getMetadata = useCallback$h(async () => {
+  const getMetadata = useCallback$j(async () => {
     await dataStore.get(`programStages/${stage}?fields=programStageSections[id,dataElements[*]]`).then((res) => {
       const jobCardSection = res.data.programStageSections.find(
         (entry) => entry.id === JOB_CARD_SECTION_ID
@@ -67090,7 +67467,7 @@ function MaintenanceEvents({
       setSection(jobCardSection);
     });
   }, [stage]);
-  const getProgramMeta = useCallback$h(async () => {
+  const getProgramMeta = useCallback$j(async () => {
     try {
       const res = await dataStore.get(`programs/${program}?fields=id,name`);
       const meta = res?.data || res;
@@ -67102,7 +67479,7 @@ function MaintenanceEvents({
     }
   }, [program]);
   const buildJobCardNumber = (serialSeed) => `${serialSeed || "Equipment"}-Job-Card-${(/* @__PURE__ */ new Date()).getTime()}`;
-  const resolveStandaloneSourceValue = useCallback$h(async () => {
+  const resolveStandaloneSourceValue = useCallback$j(async () => {
     const normalize = (value) => String(value || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
     const res = await dataStore.get(
       `dataElements/${JOB_CARD_SOURCE_DE_ID}?fields=id,optionSet[id,options[id,code,name]]`
@@ -67162,7 +67539,7 @@ function MaintenanceEvents({
       [fieldId]: value
     }));
   };
-  const createStandaloneEvent = useCallback$h(async (equipment) => {
+  const createStandaloneEvent = useCallback$j(async (equipment) => {
     const requestKey = standaloneRequest?.timestamp;
     if (!requestKey || standaloneCreateRef.current === requestKey) {
       return;
@@ -67354,12 +67731,12 @@ function MaintenanceEvents({
     setStandaloneRequest(null);
     handlePickerCancel();
   };
-  useEffect$X(() => {
+  useEffect$$(() => {
     getMetadata();
     getEvents();
     getProgramMeta();
   }, [getEvents, getMetadata, getProgramMeta, page]);
-  useEffect$X(() => {
+  useEffect$$(() => {
     if (!selectedEquipment || !standaloneRequest) return;
     createStandaloneEvent(selectedEquipment);
   }, [createStandaloneEvent, selectedEquipment, standaloneRequest]);
@@ -70679,7 +71056,7 @@ async function resolveOrgUnit(orgUnitId) {
   if (!orgUnitId) return null;
 
   try {
-    const cachedOrgUnits = await LocalForageServiceInstance.getItem(
+    const cachedOrgUnits = await LocalForageService.getItem(
       "userOganisationUnits",
       "userOrgUnits"
     );
@@ -70957,18 +71334,18 @@ function toLowerLabel(label) {
 }
 
 // src/hooks/useOptionSets.js
-const {useState: useState$_,useEffect: useEffect$W} = await importShared('react');
+const {useState: useState$11,useEffect: useEffect$_} = await importShared('react');
 
 /**
  * Hook to get all optionSets from cache
  * @returns {object} { optionSets, loading, error }
  */
 const useAllOptionSets = () => {
-  const [optionSets, setOptionSets] = useState$_([]);
-  const [loading, setLoading] = useState$_(true);
-  const [error, setError] = useState$_(null);
+  const [optionSets, setOptionSets] = useState$11([]);
+  const [loading, setLoading] = useState$11(true);
+  const [error, setError] = useState$11(null);
 
-  useEffect$W(() => {
+  useEffect$_(() => {
     const fetchAllOptionSets = async () => {
       setLoading(true);
       try {
@@ -71005,8 +71382,8 @@ const resolveOptionValue = (optionSet, value) => {
   return option?.name || value;
 };
 
-const React$M = await importShared('react');
-const {useEffect: useEffect$V,useState: useState$Z} = React$M;
+const React$Q = await importShared('react');
+const {useEffect: useEffect$Z,useState: useState$10} = React$Q;
 const todayYMD$1 = () => {
   const date = /* @__PURE__ */ new Date();
   const year = date.getFullYear();
@@ -71014,7 +71391,7 @@ const todayYMD$1 = () => {
   const day = String(date.getDate()).padStart(2, "0");
   return `${year}-${month}-${day}`;
 };
-const formatDate$1 = (date) => {
+const formatDate$2 = (date) => {
   if (!date) return "Not specified";
   try {
     return new Date(date).toLocaleDateString("en-GB", {
@@ -71035,19 +71412,19 @@ function MarkMaintenanceDoneModal({
   data,
   enrollmentDate
 }) {
-  const [completionDate, setCompletionDate] = useState$Z(todayYMD$1());
-  const [remarks, setRemarks] = useState$Z("");
-  const [saving, setSaving] = useState$Z(false);
-  const [completionStatus, setCompletionStatus] = useState$Z("YES");
-  const [consolidatedName, setConsolidatedName] = useState$Z(null);
-  const [orgUnitName, setOrgUnitName] = useState$Z(null);
-  const [users, setUsers] = useState$Z([]);
-  const [selectedUser, setSelectedUser] = useState$Z(null);
-  const [ward, setWard] = useState$Z(null);
+  const [completionDate, setCompletionDate] = useState$10(todayYMD$1());
+  const [remarks, setRemarks] = useState$10("");
+  const [saving, setSaving] = useState$10(false);
+  const [completionStatus, setCompletionStatus] = useState$10("YES");
+  const [consolidatedName, setConsolidatedName] = useState$10(null);
+  const [orgUnitName, setOrgUnitName] = useState$10(null);
+  const [users, setUsers] = useState$10([]);
+  const [selectedUser, setSelectedUser] = useState$10(null);
+  const [ward, setWard] = useState$10(null);
   const allocationStage = "X3yNvXvB14A";
   const allocationProgram = "X8V6omQYuW0";
   const wardDataElementId = "PpO3Iz7xRFR";
-  useEffect$V(() => {
+  useEffect$Z(() => {
     if (isOpen) {
       setCompletionDate(todayYMD$1());
       setRemarks("");
@@ -71078,15 +71455,17 @@ function MarkMaintenanceDoneModal({
     }
     try {
       setSaving(true);
-      await onConfirm({
+      const payload = {
         equipment,
         enrollment: data?.enrollment,
         ...event,
         completionDate,
         completionStatus,
         responsibleEngineer: selectedUser,
-        ward: ward?.name
-      });
+        ward: ward?.id
+      };
+      console.log({ payload });
+      await onConfirm(payload);
     } catch (error) {
       showToast(
         "Failed to mark preventive maintenance as completed.",
@@ -71123,13 +71502,13 @@ function MarkMaintenanceDoneModal({
   const scheduledDate = event?.date || event?.scheduledDate || event?.dueDate;
   const maintenanceType = event?.maintenanceType || event?.type || "Preventive Maintenance";
   const getEquipmentName = async () => {
-    const dStore = await LocalForageServiceInstance.getItem("optionSets", "metadata");
+    const dStore = await LocalForageService.getItem("optionSets", "metadata");
     const equip = dStore?.find((ds) => ds?.id === "VuKFOqg584G");
     const actualNAme = equip?.options?.find((opt) => opt?.code === data?.name);
     setConsolidatedName(actualNAme?.name);
   };
   const getOrgUnitName = async (org) => {
-    const dStore = await LocalForageServiceInstance.getItem("organisationUnits", "organisationUnits");
+    const dStore = await LocalForageService.getItem("organisationUnits", "organisationUnits");
     if (org) {
       const orgUnit2 = dStore?.find((ds) => ds?.id === org);
       return orgUnit2;
@@ -71158,7 +71537,7 @@ function MarkMaintenanceDoneModal({
       console.log({ error });
     }
   };
-  useEffect$V(() => {
+  useEffect$Z(() => {
     getWardAllocated();
     getEquipmentName();
     getOrgUnitName();
@@ -71361,7 +71740,7 @@ function MarkMaintenanceDoneModal({
                                 fontSize: 15,
                                 fontWeight: 500
                               },
-                              children: formatDate$1(scheduledDate)
+                              children: formatDate$2(scheduledDate)
                             }
                           ) })
                         ] })
@@ -71452,8 +71831,8 @@ function MarkMaintenanceDoneModal({
   );
 }
 
-const React$L = await importShared('react');
-const {useContext: useContext$x,useEffect: useEffect$U,useMemo: useMemo$w,useState: useState$Y} = React$L;
+const React$P = await importShared('react');
+const {useContext: useContext$z,useEffect: useEffect$Y,useMemo: useMemo$y,useState: useState$$} = React$P;
 function PreventiveMaintenanceView({
   id,
   programId: programIdProp,
@@ -71461,36 +71840,36 @@ function PreventiveMaintenanceView({
 }) {
   const location = useLocation();
   const navigate = useNavigate();
-  const { user } = useContext$x(
+  const { user } = useContext$z(
     MEMISContext.UserRolesContext
   );
-  const { menuItems } = useContext$x(
+  const { menuItems } = useContext$z(
     MEMISContext.MenuContext
   );
-  const [activeTab, setActiveTab] = useState$Y("maintenance");
-  const [showMarkDoneModal, setShowMarkDoneModal] = useState$Y(false);
-  const [selectedMaintenance, setSelectedMaintenance] = useState$Y(null);
+  const [activeTab, setActiveTab] = useState$$("maintenance");
+  const [showMarkDoneModal, setShowMarkDoneModal] = useState$$(false);
+  const [selectedMaintenance, setSelectedMaintenance] = useState$$(null);
   const { optionSets } = useAllOptionSets();
-  const equipmentOptionSet = useMemo$w(
+  const equipmentOptionSet = useMemo$y(
     () => optionSets?.find((os) => os.id === "VuKFOqg584G"),
     [optionSets]
   );
-  const [refreshKey, setRefreshKey] = useState$Y(0);
-  const queryParams = useMemo$w(
+  const [refreshKey, setRefreshKey] = useState$$(0);
+  const queryParams = useMemo$y(
     () => new URLSearchParams(location.search),
     [location.search]
   );
-  const menu = useMemo$w(
+  const menu = useMemo$y(
     () => menuItems?.find(
       (item) => item?.id === id
     ),
     [id, menuItems]
   );
-  const programId = useMemo$w(
+  const programId = useMemo$y(
     () => programIdProp || menu?.dependentProgram || id,
     [id, menu, programIdProp]
   );
-  const programStageId = useMemo$w(
+  const programStageId = useMemo$y(
     () => stageIdProp || menu?.dependentStage || menu?.id || null,
     [menu, stageIdProp]
   );
@@ -71556,6 +71935,11 @@ function PreventiveMaintenanceView({
                 {
                   //TEA for Equipment status
                   attribute: "KFZ35H4ZHrk",
+                  value: "NON_FUNCTIONAL"
+                },
+                {
+                  //TEA for Equipment state
+                  attribute: "rXIdO0bLQvD",
                   value: "UNDER_REPAIR"
                 }
               ]
@@ -71674,13 +72058,13 @@ function MaintenanceTabs({
   onView,
   equipmentOptionSet
 }) {
-  const [scheduleCount, setScheduleCount] = useState$Y(0);
-  const [activeCount, setActiveCount] = useState$Y(0);
-  const [isIncharge, setIsIncharge] = useState$Y(false);
-  const [ward, setWard] = useState$Y(null);
+  const [scheduleCount, setScheduleCount] = useState$$(0);
+  const [activeCount, setActiveCount] = useState$$(0);
+  const [isIncharge, setIsIncharge] = useState$$(false);
+  const [ward, setWard] = useState$$(null);
   const getIncharge = async () => {
     try {
-      const dStore = await LocalForageServiceInstance.getItem("userRes", "user");
+      const dStore = await LocalForageService.getItem("userRes", "user");
       const incharge = dStore?.userRoles?.find((ds) => ds?.id === "Ec6TZ5N1QeF");
       if (incharge) {
         const w = dStore?.organisationUnits?.length > 1 ? dStore?.organisationUnits[1] : dStore?.organisationUnits[0];
@@ -71691,7 +72075,7 @@ function MaintenanceTabs({
     } catch (error) {
     }
   };
-  useEffect$U(() => {
+  useEffect$Y(() => {
     getIncharge();
   }, [activeTab]);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
@@ -71784,12 +72168,12 @@ function ActiveMaintenances({
   ward,
   activeTab
 }) {
-  const [equipment, setEquipment] = useState$Y([]);
-  const [loading, setLoading] = useState$Y(false);
-  const [search, setSearch] = useState$Y("");
-  const [expanded, setExpanded] = useState$Y({});
+  const [equipment, setEquipment] = useState$$([]);
+  const [loading, setLoading] = useState$$(false);
+  const [search, setSearch] = useState$$("");
+  const [expanded, setExpanded] = useState$$({});
   const wardDataElementId = "PpO3Iz7xRFR";
-  useEffect$U(() => {
+  useEffect$Y(() => {
     let mounted = true;
     const loadActiveMaintenances = async () => {
       if (!programId || !orgUnit || !programStageId) {
@@ -72020,30 +72404,30 @@ function ActiveMaintenanceCard({
                   },
                   children: [
                     /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      InfoItem,
+                      InfoItem$1,
                       {
                         label: "Status",
                         value: "Active"
                       }
                     ),
                     /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      InfoItem,
+                      InfoItem$1,
                       {
                         label: "Maintenance History",
                         value: equipment.events.length
                       }
                     ),
                     /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      InfoItem,
+                      InfoItem$1,
                       {
                         label: "Latest Maintenance Activity",
-                        value: formatDate(
+                        value: formatDate$1(
                           equipment.events[0]?.date
                         )
                       }
                     ),
                     /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      InfoItem,
+                      InfoItem$1,
                       {
                         label: "Frequency",
                         value: formatFrequency(
@@ -72145,7 +72529,7 @@ function ActiveMaintenanceRow({
                     display: "block",
                     fontSize: 14
                   },
-                  children: formatDate(event.date)
+                  children: formatDate$1(event.date)
                 }
               ),
               /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { color: "medium", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -72189,12 +72573,12 @@ function ScheduleMaintenances({
   isIncharge,
   ward
 }) {
-  const [equipment, setEquipment] = useState$Y([]);
-  const [loading, setLoading] = useState$Y(false);
-  const [search, setSearch] = useState$Y("");
-  const [expanded, setExpanded] = useState$Y({});
+  const [equipment, setEquipment] = useState$$([]);
+  const [loading, setLoading] = useState$$(false);
+  const [search, setSearch] = useState$$("");
+  const [expanded, setExpanded] = useState$$({});
   const wardDataElementId = "PpO3Iz7xRFR";
-  useEffect$U(() => {
+  useEffect$Y(() => {
     let mounted = true;
     const loadSchedules = async () => {
       if (!programId || !orgUnit) {
@@ -72547,7 +72931,7 @@ function ScheduleEquipmentCard({
                   },
                   children: [
                     /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      InfoItem,
+                      InfoItem$1,
                       {
                         label: "Frequency",
                         value: formatFrequency(
@@ -72556,23 +72940,23 @@ function ScheduleEquipmentCard({
                       }
                     ),
                     /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      InfoItem,
+                      InfoItem$1,
                       {
                         label: "Next Maintenance",
-                        value: formatDate(
+                        value: formatDate$1(
                           equipment.nextDate
                         )
                       }
                     ),
                     /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      InfoItem,
+                      InfoItem$1,
                       {
                         label: "This Month",
                         value: equipment.thisMonthCount ? `${equipment.thisMonthCount} ${equipment.thisMonthCount === 1 ? "schedule" : "schedules"}` : "None"
                       }
                     ),
                     /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      InfoItem,
+                      InfoItem$1,
                       {
                         label: "Total Scheduled",
                         value: equipment.events.length
@@ -72824,7 +73208,7 @@ function ScheduleRow({
                     display: "block",
                     fontSize: 14
                   },
-                  children: formatDate(event.date)
+                  children: formatDate$1(event.date)
                 }
               ),
               /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { color: "medium", children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { style: { fontSize: 12 }, children: "Preventive maintenance" }) })
@@ -73004,7 +73388,7 @@ function SummaryCard({
     }
   );
 }
-function InfoItem({
+function InfoItem$1({
   label,
   value
 }) {
@@ -73208,7 +73592,7 @@ function startOfDay(date) {
   );
   return result;
 }
-function formatDate(value) {
+function formatDate$1(value) {
   const date = parseDate$1(value);
   if (!date) {
     return "-";
@@ -73263,7 +73647,7 @@ function formatFrequency(value) {
   );
 }
 
-const {useCallback: useCallback$g,useContext: useContext$w,useEffect: useEffect$T,useMemo: useMemo$v,useState: useState$X} = await importShared('react');
+const {useCallback: useCallback$i,useContext: useContext$y,useEffect: useEffect$X,useMemo: useMemo$x,useState: useState$_} = await importShared('react');
 const BUTTON_ICON_MAP = {
   addCircleOutline,
   removeCircleOutline
@@ -73280,50 +73664,50 @@ function readActiveProgramIdFromCookie() {
   }
 }
 function GeneralComponent({ programProp }) {
-  const { programs, loading: programsLoading } = useContext$w(
+  const { programs, loading: programsLoading } = useContext$y(
     MEMISContext.ProgramContext
   );
-  const { menuItems, loading: menuLoading } = useContext$w(
+  const { menuItems, loading: menuLoading } = useContext$y(
     MEMISContext.MenuContext
   );
-  const { user } = useContext$w(MEMISContext.UserRolesContext);
-  const [workflow, setapplicableDE] = useState$X({});
+  const { user } = useContext$y(MEMISContext.UserRolesContext);
+  const [workflow, setapplicableDE] = useState$_({});
   const { canModifyProgram } = usePermissions();
-  const [program, setProgram] = useState$X(null);
-  const [formActive, setFormActive] = useState$X(false);
-  const [query, setQuery] = useState$X("");
-  const [itemsData, setItemsData] = useState$X([]);
-  const [editData, setEditData] = useState$X(null);
-  const [crumbs, setCrumbs] = useState$X([]);
-  const [jobCard, setJobCard] = useState$X(false);
-  const [resolutionComplete, setResolutionComplete] = useState$X(false);
-  const [buttonConfig, setButtonConfig] = useState$X(null);
-  const [loadingButtonConfig, setLoadingButtonConfig] = useState$X(true);
-  const [postSaveQrPromptOpen, setPostSaveQrPromptOpen] = useState$X(false);
-  const [postSaveQrPreviewOpen, setPostSaveQrPreviewOpen] = useState$X(false);
-  const [postSaveQrRequest, setPostSaveQrRequest] = useState$X(null);
-  const [postSaveQrData, setPostSaveQrData] = useState$X(null);
-  const [postSaveQrPreviewUrl, setPostSaveQrPreviewUrl] = useState$X(null);
-  const [postSaveQrError, setPostSaveQrError] = useState$X("");
-  const [postSaveQrPreparing, setPostSaveQrPreparing] = useState$X(false);
-  const [qrBusy, setQrBusy] = useState$X(false);
-  const [dataStoreData, setDataStoreData] = useState$X({});
+  const [program, setProgram] = useState$_(null);
+  const [formActive, setFormActive] = useState$_(false);
+  const [query, setQuery] = useState$_("");
+  const [itemsData, setItemsData] = useState$_([]);
+  const [editData, setEditData] = useState$_(null);
+  const [crumbs, setCrumbs] = useState$_([]);
+  const [jobCard, setJobCard] = useState$_(false);
+  const [resolutionComplete, setResolutionComplete] = useState$_(false);
+  const [buttonConfig, setButtonConfig] = useState$_(null);
+  const [loadingButtonConfig, setLoadingButtonConfig] = useState$_(true);
+  const [postSaveQrPromptOpen, setPostSaveQrPromptOpen] = useState$_(false);
+  const [postSaveQrPreviewOpen, setPostSaveQrPreviewOpen] = useState$_(false);
+  const [postSaveQrRequest, setPostSaveQrRequest] = useState$_(null);
+  const [postSaveQrData, setPostSaveQrData] = useState$_(null);
+  const [postSaveQrPreviewUrl, setPostSaveQrPreviewUrl] = useState$_(null);
+  const [postSaveQrError, setPostSaveQrError] = useState$_("");
+  const [postSaveQrPreparing, setPostSaveQrPreparing] = useState$_(false);
+  const [qrBusy, setQrBusy] = useState$_(false);
+  const [dataStoreData, setDataStoreData] = useState$_({});
   const isNativeMobile = Capacitor.getPlatform() === "android" || Capacitor.getPlatform() === "ios";
-  const [isMobileView, setIsMobileView] = useState$X(() => {
+  const [isMobileView, setIsMobileView] = useState$_(() => {
     if (isNativeMobile) return true;
     return typeof window !== "undefined" ? window.innerWidth <= 600 : false;
   });
-  useEffect$T(() => {
+  useEffect$X(() => {
     if (!isNativeMobile) {
       const handleResize = () => setIsMobileView(window.innerWidth <= 600);
       window.addEventListener("resize", handleResize);
       return () => window.removeEventListener("resize", handleResize);
     }
   }, [isNativeMobile]);
-  useEffect$T(() => {
+  useEffect$X(() => {
     let mounted = true;
     const loadDataStore = async () => {
-      const cachedDataStore = await LocalForageServiceInstance.getItem(
+      const cachedDataStore = await LocalForageService.getItem(
         "dataStore",
         "dataStore"
       );
@@ -73336,8 +73720,8 @@ function GeneralComponent({ programProp }) {
       mounted = false;
     };
   }, []);
-  const [pendingAction, setPendingAction] = useState$X(null);
-  const [persistedEquipment, setPersistedEquipment] = useState$X(null);
+  const [pendingAction, setPendingAction] = useState$_(null);
+  const [persistedEquipment, setPersistedEquipment] = useState$_(null);
   const {
     contextConfig,
     selectedEquipment,
@@ -73357,7 +73741,7 @@ function GeneralComponent({ programProp }) {
   });
   const location = useLocation();
   const navigate = useNavigate();
-  const fetchButtonConfig = useCallback$g(
+  const fetchButtonConfig = useCallback$i(
     async (currentProgram) => {
       if (!currentProgram || !user) {
         setButtonConfig(null);
@@ -73366,7 +73750,7 @@ function GeneralComponent({ programProp }) {
       }
       try {
         setLoadingButtonConfig(true);
-        const responseData = await LocalForageServiceInstance.getItem(
+        const responseData = await LocalForageService.getItem(
           "dataStore",
           "dataStore"
         );
@@ -73431,7 +73815,7 @@ function GeneralComponent({ programProp }) {
     },
     [user]
   );
-  const resolveProgram = useCallback$g(() => {
+  const resolveProgram = useCallback$i(() => {
     const targetId = programProp?.id || readActiveProgramIdFromCookie();
     if (menuLoading || programsLoading) {
       setResolutionComplete(false);
@@ -73569,7 +73953,7 @@ function GeneralComponent({ programProp }) {
       extra.programId = buttonConfig.programId || currentProg?.id;
       extra.label = buttonConfig.label;
     }
-    const btn = await LocalForageServiceInstance.getItem(
+    const btn = await LocalForageService.getItem(
       "dataStore",
       "dataStore"
     );
@@ -73590,7 +73974,39 @@ function GeneralComponent({ programProp }) {
     }
     handleQuery("add", null, extra);
   };
-  useEffect$T(() => {
+  const fetchTeiEditData = useCallback$i(
+    async (teiId) => {
+      if (!teiId) return;
+      try {
+        const res = await dataStore.get(
+          `tracker/trackedEntities/${teiId}?fields=trackedEntity,orgUnit,attributes[attribute,value,valueType],enrollments[enrollment,enrolledAt,occurredAt]`
+        );
+        const tei = res?.data;
+        if (!tei) return;
+        const attributeValues = {};
+        (tei.attributes || []).forEach((attr) => {
+          if (attr.valueType === "MULTI_TEXT" && typeof attr.value === "string") {
+            attributeValues[attr.attribute] = attr.value.split(",");
+          } else {
+            attributeValues[attr.attribute] = attr.value;
+          }
+        });
+        const enrollment = tei.enrollments?.[0];
+        setEditData({
+          id: tei.trackedEntity,
+          trackedEntity: tei.trackedEntity,
+          attributes: attributeValues,
+          orgUnit: tei.orgUnit,
+          enrollmentDate: enrollment?.enrolledAt ? new Date(enrollment.enrolledAt).getTime() : Date.now(),
+          incidentDate: enrollment?.occurredAt ? new Date(enrollment.occurredAt).getTime() : Date.now()
+        });
+      } catch (err) {
+        console.log("[GeneralComponent] fetchTeiEditData error:", err);
+      }
+    },
+    []
+  );
+  useEffect$X(() => {
     const params2 = new URLSearchParams(location.search);
     const q = params2.get("q");
     const refId = params2.get("ref");
@@ -73608,10 +74024,12 @@ function GeneralComponent({ programProp }) {
     if (act.q === "edit" && refId && itemsData.length > 0) {
       const data = getItemById(refId);
       setEditData(data);
+    } else if (act.q === "edit" && refId && program?.programType === "WITH_REGISTRATION") {
+      fetchTeiEditData(refId);
     } else if (act.q !== "edit") {
       setEditData(null);
     }
-  }, [location.search, itemsData]);
+  }, [location.search, itemsData, program, fetchTeiEditData]);
   const getItemById = (id) => {
     if (!id) return null;
     const src = itemsData.find((item2) => item2.id === id);
@@ -73706,7 +74124,6 @@ function GeneralComponent({ programProp }) {
     if (!program) {
       return null;
     }
-    console.log({ program });
     const commonProps = {
       id: program?.id,
       onEdit: handleQuery,
@@ -73735,7 +74152,7 @@ function GeneralComponent({ programProp }) {
   };
   const getWorkflow = async () => {
     try {
-      const ds = await LocalForageServiceInstance.getItem(
+      const ds = await LocalForageService.getItem(
         "dataStore",
         "dataStore"
       );
@@ -73744,10 +74161,10 @@ function GeneralComponent({ programProp }) {
     } catch (error) {
     }
   };
-  useEffect$T(() => {
+  useEffect$X(() => {
     resolveProgram();
   }, [resolveProgram]);
-  useEffect$T(() => {
+  useEffect$X(() => {
     const isLoading = menuLoading || programsLoading;
     if (!isLoading && !program && resolutionComplete && menuItems !== void 0 && programs !== void 0 && !formActive) {
       navigate("/", { replace: true });
@@ -73762,20 +74179,20 @@ function GeneralComponent({ programProp }) {
     navigate,
     resolutionComplete
   ]);
-  useEffect$T(() => {
+  useEffect$X(() => {
     getProgramView();
     getWorkflow();
   }, [menuItems, programs, program]);
   const params = new URLSearchParams(location.search);
   const selectedStage = params.get("stage") || params.get("stageId") || null;
-  const addButtonLabel = useMemo$v(() => {
+  const addButtonLabel = useMemo$x(() => {
     return buttonConfig?.label || null;
   }, [buttonConfig]);
-  const addButtonIcon = useMemo$v(() => {
+  const addButtonIcon = useMemo$x(() => {
     const key = buttonConfig?.icon;
     return (key && BUTTON_ICON_MAP[key]) ?? addCircleOutline;
   }, [buttonConfig]);
-  useEffect$T(() => {
+  useEffect$X(() => {
     if (selectedEquipment && pendingAction) {
       setPersistedEquipment(selectedEquipment);
       const extraWithEquipment = {
@@ -73790,16 +74207,16 @@ function GeneralComponent({ programProp }) {
     setPendingAction(null);
     handlePickerCancel();
   };
-  const handleAddButtonClick = useMemo$v(() => {
+  const handleAddButtonClick = useMemo$x(() => {
     return handleActionButtonClick;
   }, [handleActionButtonClick]);
-  const clearFormUiState = useCallback$g(() => {
+  const clearFormUiState = useCallback$i(() => {
     setFormActive(false);
     setQuery("");
     setEditData(null);
     setPersistedEquipment(null);
   }, []);
-  const clearFormRouteState = useCallback$g(() => {
+  const clearFormRouteState = useCallback$i(() => {
     const p = new URLSearchParams(location?.search);
     p.delete("q");
     p.delete("ref");
@@ -73810,11 +74227,11 @@ function GeneralComponent({ programProp }) {
     p.delete("equipmentId");
     navigate({ search: p.toString() }, { replace: true });
   }, [location?.search, navigate]);
-  useCallback$g(() => {
+  useCallback$i(() => {
     clearFormUiState();
     clearFormRouteState();
   }, [clearFormRouteState, clearFormUiState]);
-  const resetPostSaveQrState = useCallback$g(() => {
+  const resetPostSaveQrState = useCallback$i(() => {
     setPostSaveQrPromptOpen(false);
     setPostSaveQrPreviewOpen(false);
     setPostSaveQrRequest(null);
@@ -73823,14 +74240,14 @@ function GeneralComponent({ programProp }) {
     setPostSaveQrError("");
     setPostSaveQrPreparing(false);
   }, []);
-  const closePostSaveQrFlow = useCallback$g(() => {
+  const closePostSaveQrFlow = useCallback$i(() => {
     resetPostSaveQrState();
   }, [resetPostSaveQrState]);
-  const getQrErrorMessage = useCallback$g((error, fallbackMessage) => {
+  const getQrErrorMessage = useCallback$i((error, fallbackMessage) => {
     const message = String(error?.message || "").trim();
     return message || fallbackMessage;
   }, []);
-  const handleFormSaveSuccess = useCallback$g(
+  const handleFormSaveSuccess = useCallback$i(
     async ({
       teiId,
       isEditMode,
@@ -73869,7 +74286,7 @@ function GeneralComponent({ programProp }) {
     },
     [clearFormRouteState, clearFormUiState]
   );
-  useEffect$T(() => {
+  useEffect$X(() => {
     let cancelled = false;
     if (!postSaveQrPromptOpen || !postSaveQrRequest?.teiId || !postSaveQrRequest?.program?.id) {
       return void 0;
@@ -73907,7 +74324,7 @@ function GeneralComponent({ programProp }) {
     postSaveQrPromptOpen,
     postSaveQrRequest
   ]);
-  const handlePostSaveQrPreview = useCallback$g(async () => {
+  const handlePostSaveQrPreview = useCallback$i(async () => {
     if (!postSaveQrData?.payloadStr) {
       showToast(
         postSaveQrError || "The QR code is not available for this equipment.",
@@ -73930,7 +74347,7 @@ function GeneralComponent({ programProp }) {
       setQrBusy(false);
     }
   }, [getQrErrorMessage, postSaveQrData, postSaveQrError]);
-  const handlePostSaveQrDownload = useCallback$g(async () => {
+  const handlePostSaveQrDownload = useCallback$i(async () => {
     const shouldReturnToPrompt = postSaveQrPreviewOpen;
     if (!postSaveQrData?.payloadStr || !postSaveQrData?.filename) {
       showToast(
@@ -73974,7 +74391,7 @@ function GeneralComponent({ programProp }) {
     postSaveQrError,
     postSaveQrPreviewOpen
   ]);
-  const handlePostSaveQrPrint = useCallback$g(async () => {
+  const handlePostSaveQrPrint = useCallback$i(async () => {
     if (!postSaveQrPreviewUrl) {
       showToast("Open the QR code preview before printing.", "warning");
       return;
@@ -74338,12 +74755,12 @@ function GeneralComponent({ programProp }) {
   ] });
 }
 
-const React$K = await importShared('react');
-const {useEffect: useEffect$S,useState: useState$W} = React$K;
+const React$O = await importShared('react');
+const {useEffect: useEffect$W,useState: useState$Z} = React$O;
 const Login = () => {
-  const [username, setUsername] = useState$W("");
-  const [password, setPassword] = useState$W("");
-  const [loading, setLoading] = useState$W(false);
+  const [username, setUsername] = useState$Z("");
+  const [password, setPassword] = useState$Z("");
+  const [loading, setLoading] = useState$Z(false);
   const navigate = useNavigate();
   const { reload: reloadDataStore } = useDataStore();
   const handleLogin = async (e) => {
@@ -74384,7 +74801,7 @@ const Login = () => {
       setLoading(false);
     }
   };
-  useEffect$S(() => {
+  useEffect$W(() => {
     const userData = localStorage.getItem("memisCredentials");
     const load = async () => {
       if (userData) {
@@ -74400,15 +74817,15 @@ const Login = () => {
           localStorage.removeItem("memisViewSettings");
           localStorage.removeItem("memisViewSettings");
           localStorage.removeItem("notificationConfigurations");
-          await LocalForageServiceInstance.clearStorage("memis");
-          await LocalForageServiceInstance.clearStorage("programs");
-          await LocalForageServiceInstance.clearStorage("programRules");
-          await LocalForageServiceInstance.clearStorage("sharingSettings");
-          await LocalForageServiceInstance.clearStorage("user");
-          await LocalForageServiceInstance.clearStorage("userRoles");
-          await LocalForageServiceInstance.clearStorage("userOrgUnits");
-          await LocalForageServiceInstance.clearStorage("dataStore");
-          await LocalForageServiceInstance.clearStorage("metadata");
+          await LocalForageService.clearStorage("memis");
+          await LocalForageService.clearStorage("programs");
+          await LocalForageService.clearStorage("programRules");
+          await LocalForageService.clearStorage("sharingSettings");
+          await LocalForageService.clearStorage("user");
+          await LocalForageService.clearStorage("userRoles");
+          await LocalForageService.clearStorage("userOrgUnits");
+          await LocalForageService.clearStorage("dataStore");
+          await LocalForageService.clearStorage("metadata");
         }
       }
     };
@@ -74476,11 +74893,11 @@ const Login = () => {
 };
 
 const stageAddButtonAccess = async (programId, stageId, userRoles) => {
-  const raw = await LocalForageServiceInstance.getItem(
+  const raw = await LocalForageService.getItem(
     "dataStore",
     "dataStore"
   );
-  const userData = await LocalForageServiceInstance.getItem(
+  const userData = await LocalForageService.getItem(
     "userRes",
     "user"
   );
@@ -74522,7 +74939,7 @@ const stageAddButtonAccess = async (programId, stageId, userRoles) => {
   return { access: true };
 };
 
-const {useEffect: useEffect$R,useState: useState$V,useContext: useContext$v} = await importShared('react');
+const {useEffect: useEffect$V,useState: useState$Y,useContext: useContext$x} = await importShared('react');
 function DeregistrationStage({
   id,
   program,
@@ -74533,16 +74950,16 @@ function DeregistrationStage({
   refreshEvents
   // Add refresh callback
 }) {
-  const [open, setOpen] = useState$V(false);
-  const [lastEventCount, setLastEventCount] = useState$V(0);
-  const [stage] = useState$V(pgStages);
-  const [evnts, setEvnts] = useState$V([]);
-  const [canAddNew, setCanAddNew] = useState$V(false);
-  const [canApprove, setCanApprove] = useState$V(false);
+  const [open, setOpen] = useState$Y(false);
+  const [lastEventCount, setLastEventCount] = useState$Y(0);
+  const [stage] = useState$Y(pgStages);
+  const [evnts, setEvnts] = useState$Y([]);
+  const [canAddNew, setCanAddNew] = useState$Y(false);
+  const [canApprove, setCanApprove] = useState$Y(false);
   const navigate = useNavigate();
-  const [addButton, setAddButton] = useState$V(false);
-  const { user } = useContext$v(MEMISContext.UserRolesContext);
-  const [equipmentState, setEquipmentState] = useState$V(null);
+  const [addButton, setAddButton] = useState$Y(false);
+  const { user } = useContext$x(MEMISContext.UserRolesContext);
+  const [equipmentState, setEquipmentState] = useState$Y(null);
   const fetchEquipmentState = async () => {
     try {
       const DataStore = (await __vitePreload(async () => { const {default: __vite_default__} = await import('./index2.js');return { default: __vite_default__ }},true              ?__vite__mapDeps([2,0,1]):void 0)).default;
@@ -74556,7 +74973,7 @@ function DeregistrationStage({
       setEquipmentState(null);
     }
   };
-  useEffect$R(() => {
+  useEffect$V(() => {
     const filteredEvents = (events || [])?.filter((e) => e.programStage === stage.id);
     const sortedEvents = filteredEvents.sort((a, b) => {
       const dateA = new Date(a.occurredAt || a.createdAt);
@@ -74567,12 +74984,12 @@ function DeregistrationStage({
     setEvnts(sortedEvents);
     setLastEventCount(filteredEvents.length);
   }, [stage.id, events, lastEventCount, open]);
-  useEffect$R(() => {
+  useEffect$V(() => {
     if (id && program) {
       fetchEquipmentState();
     }
   }, [id, program, events]);
-  useEffect$R(() => {
+  useEffect$V(() => {
     let intervalId;
     if (open && refreshEvents && typeof refreshEvents === "function") {
       intervalId = setInterval(() => {
@@ -74587,7 +75004,7 @@ function DeregistrationStage({
   }, [open, refreshEvents]);
   const getSectionAccess = async (sectionId) => {
     try {
-      const ds = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+      const ds = await LocalForageService.getItem("dataStore", "dataStore");
       const sharing = ds?.sharingSettings;
       const programSharing = sharing?.programs?.find((p) => p.id === program);
       const section = programSharing?.sections?.find((s) => s.id === sectionId);
@@ -74643,7 +75060,7 @@ function DeregistrationStage({
     const res = await stageAddButtonAccess(program, stage.id, user?.userRoles);
     setAddButton(res?.access || false);
   };
-  useEffect$R(() => {
+  useEffect$V(() => {
     addNewAndApproval();
     showAddButton();
   }, []);
@@ -74734,22 +75151,22 @@ function DeregistrationStage({
   ] });
 }
 
-const {useContext: useContext$u,useEffect: useEffect$Q,useState: useState$U} = await importShared('react');
+const {useContext: useContext$w,useEffect: useEffect$U,useState: useState$X} = await importShared('react');
 function Stages({ id, program, pgStages, events, handleAddEvent, formatDate, refreshEvents }) {
-  const [open, setOpen] = useState$U(false);
-  const [stage] = useState$U(pgStages);
-  const [evnts, setEvnts] = useState$U([]);
-  const [addButton, setAddButton] = useState$U(false);
+  const [open, setOpen] = useState$X(false);
+  const [stage] = useState$X(pgStages);
+  const [evnts, setEvnts] = useState$X([]);
+  const [addButton, setAddButton] = useState$X(false);
   const navigate = useNavigate();
-  const { user } = useContext$u(MEMISContext.UserRolesContext);
-  useEffect$Q(() => {
+  const { user } = useContext$w(MEMISContext.UserRolesContext);
+  useEffect$U(() => {
     setEvnts((events || [])?.filter((e) => e.programStage === stage.id));
   }, [stage.id, events]);
   const showAddButton = async () => {
     const res = await stageAddButtonAccess(program, stage.id, user?.userRoles);
     setAddButton(res?.access || false);
   };
-  useEffect$Q(() => {
+  useEffect$U(() => {
     showAddButton();
   }, [open]);
   if (isDeregistrationStage(stage.id, stage.name)) {
@@ -77072,9 +77489,9 @@ await importShared('react');
 
 await importShared('react');
 
-const {useContext: useContext$t} = await importShared('react');
+const {useContext: useContext$v} = await importShared('react');
 
-const {useCallback: useCallback$f,useMemo: useMemo$u} = await importShared('react');
+const {useCallback: useCallback$h,useMemo: useMemo$w} = await importShared('react');
 
 await importShared('react');
 
@@ -77103,26 +77520,26 @@ new QueryClient(queryClientOptions);
 
 await importShared('react');
 
-const {useContext: useContext$s} = await importShared('react');
+const {useContext: useContext$u} = await importShared('react');
 
-const {useState: useState$T,useEffect: useEffect$P,useRef: useRef$c,useDebugValue: useDebugValue$1} = await importShared('react');
+const {useState: useState$W,useEffect: useEffect$T,useRef: useRef$d,useDebugValue: useDebugValue$1} = await importShared('react');
 
-const {useState: useState$S,useCallback: useCallback$e,useRef: useRef$b,useEffect: useEffect$O} = await importShared('react');
+const {useState: useState$V,useCallback: useCallback$g,useRef: useRef$c,useEffect: useEffect$S} = await importShared('react');
 
-const {useCallback: useCallback$d} = await importShared('react');
+const {useCallback: useCallback$f} = await importShared('react');
 
-const {useState: useState$R,useRef: useRef$a,useCallback: useCallback$c,useDebugValue} = await importShared('react');
-
-await importShared('react');
+const {useState: useState$U,useRef: useRef$b,useCallback: useCallback$e,useDebugValue} = await importShared('react');
 
 await importShared('react');
 
-const React$J = await importShared('react');
-const {useState: useState$Q} = React$J;
+await importShared('react');
 
-const {useContext: useContext$r} = await importShared('react');
+const React$N = await importShared('react');
+const {useState: useState$T} = React$N;
 
-const {useContext: useContext$q,useRef: useRef$9,useCallback: useCallback$b} = await importShared('react');
+const {useContext: useContext$t} = await importShared('react');
+
+const {useContext: useContext$s,useRef: useRef$a,useCallback: useCallback$d} = await importShared('react');
 
 var propTypes = {exports: {}};
 
@@ -80372,15 +80789,15 @@ function requireIsEqual () {
 
 requireIsEqual();
 
-const React$I = await importShared('react');
-const {useEffect: useEffect$N,useCallback: useCallback$a,useContext: useContext$p,useState: useState$P,useMemo: useMemo$t} = React$I;
+const React$M = await importShared('react');
+const {useEffect: useEffect$R,useCallback: useCallback$c,useContext: useContext$r,useState: useState$S,useMemo: useMemo$v} = React$M;
 ({
   children: PropTypes.node,
   store: PropTypes.shape({})
 });
 
-const React$H = await importShared('react');
-const {createContext,useContext: useContext$o} = React$H;
+const React$L = await importShared('react');
+const {createContext,useContext: useContext$q} = React$L;
 ({
   children: PropTypes.node,
   offlineInterface: PropTypes.shape({
@@ -80388,8 +80805,8 @@ const {createContext,useContext: useContext$o} = React$H;
   })
 });
 
-const React$G = await importShared('react');
-const {useEffect: useEffect$M,useCallback: useCallback$9,useMemo: useMemo$s} = React$G;
+const React$K = await importShared('react');
+const {useEffect: useEffect$Q,useCallback: useCallback$b,useMemo: useMemo$u} = React$K;
 ({
   children: PropTypes.node
 });
@@ -97610,16 +98027,16 @@ if (shouldLog) {
   console.log('Logging for dhis2ConnectionStatus is enabled. Remove the `dhis2.debugConnectionStatus` item in localStorage to disable logging.');
 }
 
-const {useCallback: useCallback$8} = await importShared('react');
+const {useCallback: useCallback$a} = await importShared('react');
 
-const React$F = await importShared('react');
-const {useCallback: useCallback$7,useState: useState$O,useRef: useRef$8,useMemo: useMemo$r,useEffect: useEffect$L,useContext: useContext$n} = React$F;
+const React$J = await importShared('react');
+const {useCallback: useCallback$9,useState: useState$R,useRef: useRef$9,useMemo: useMemo$t,useEffect: useEffect$P,useContext: useContext$p} = React$J;
 ({
   children: PropTypes.node
 });
 
-const React$E = await importShared('react');
-const {useContext: useContext$m,useState: useState$N} = React$E;
+const React$I = await importShared('react');
+const {useContext: useContext$o,useState: useState$Q} = React$I;
 
 await importShared('react');
 ({
@@ -97629,8 +98046,8 @@ await importShared('react');
   })
 });
 
-const React$D = await importShared('react');
-const {useCallback: useCallback$6,useEffect: useEffect$K,useMemo: useMemo$q} = React$D;
+const React$H = await importShared('react');
+const {useCallback: useCallback$8,useEffect: useEffect$O,useMemo: useMemo$s} = React$H;
 
 const {flushSync} = await importShared('react-dom');
 ({
@@ -98041,49 +98458,49 @@ function requireDebounce () {
 
 requireDebounce();
 
-const {useState: useState$M,useEffect: useEffect$J,useCallback: useCallback$5,useMemo: useMemo$p} = await importShared('react');
+const {useState: useState$P,useEffect: useEffect$N,useCallback: useCallback$7,useMemo: useMemo$r} = await importShared('react');
 
 await importShared('react');
 
-const {useEffect: useEffect$I,useMemo: useMemo$o,useState: useState$L,useRef: useRef$7} = await importShared('react');
+const {useEffect: useEffect$M,useMemo: useMemo$q,useState: useState$O,useRef: useRef$8} = await importShared('react');
 const {createPortal: createPortal$2} = await importShared('react-dom');
 function TrackerPgStages() {
   const { program, id } = useParams();
   const navigate = useNavigate();
   const location = useLocation();
-  const [crumbs, setCrumbs] = useState$L([]);
-  const [showActions, setShowActions] = useState$L(false);
-  const [printOpen, setPrintOpen] = useState$L(false);
-  const canvasRef = useRef$7(null);
-  const [qrBusy, setQrBusy] = useState$L(false);
-  const [qrDataUrl, setQrDataUrl] = useState$L(null);
-  const [ev, setEvents] = useState$L([]);
-  const [tei, setTei] = useState$L({});
-  const [orgUnit, setOrgUnit] = useState$L(null);
-  const [primaryAttr, setPrimaryAttr] = useState$L(null);
-  const [listAttrs, setListAttrs] = useState$L([]);
-  const [pgStages, setPgStages] = useState$L([]);
-  const [attrWithOpt, setWithOpt] = useState$L([]);
-  const [options, setOptions] = useState$L([]);
-  const [qrCodeValuesToDisplay, setQRCodeValuesToDisplay] = useState$L([]);
-  const [showAllAttributes, setShowAllAttributes] = useState$L(false);
-  const [filePreviewOpen, setFilePreviewOpen] = useState$L(false);
-  const [selectedFile, setSelectedFile] = useState$L({
+  const [crumbs, setCrumbs] = useState$O([]);
+  const [showActions, setShowActions] = useState$O(false);
+  const [printOpen, setPrintOpen] = useState$O(false);
+  const canvasRef = useRef$8(null);
+  const [qrBusy, setQrBusy] = useState$O(false);
+  const [qrDataUrl, setQrDataUrl] = useState$O(null);
+  const [ev, setEvents] = useState$O([]);
+  const [tei, setTei] = useState$O({});
+  const [orgUnit, setOrgUnit] = useState$O(null);
+  const [primaryAttr, setPrimaryAttr] = useState$O(null);
+  const [listAttrs, setListAttrs] = useState$O([]);
+  const [pgStages, setPgStages] = useState$O([]);
+  const [attrWithOpt, setWithOpt] = useState$O([]);
+  const [options, setOptions] = useState$O([]);
+  const [qrCodeValuesToDisplay, setQRCodeValuesToDisplay] = useState$O([]);
+  const [showAllAttributes, setShowAllAttributes] = useState$O(false);
+  const [filePreviewOpen, setFilePreviewOpen] = useState$O(false);
+  const [selectedFile, setSelectedFile] = useState$O({
     fileId: null,
     fileName: null,
     valueType: null
   });
-  const [activeEnrollmentId, setActiveEnrollmentId] = useState$L(null);
-  const [pendingDelete, setPendingDelete] = useState$L(false);
-  const [deleting, setDeleting] = useState$L(false);
-  const [selectedStageId, setSelectedStageId] = useState$L("");
-  const [selectedStage, setSelectedStage] = useState$L({});
-  const [selectedProgram, setSelectedProgram] = useState$L({});
-  const [query, setQuery] = useState$L("");
-  const [formActive, setFormActive] = useState$L(false);
-  const [editData, setEditData] = useState$L(null);
-  const [resolvedPamAttributeId, setResolvedPamAttributeId] = useState$L("");
-  const pamAttributeIdFromProgram = useMemo$o(() => {
+  const [activeEnrollmentId, setActiveEnrollmentId] = useState$O(null);
+  const [pendingDelete, setPendingDelete] = useState$O(false);
+  const [deleting, setDeleting] = useState$O(false);
+  const [selectedStageId, setSelectedStageId] = useState$O("");
+  const [selectedStage, setSelectedStage] = useState$O({});
+  const [selectedProgram, setSelectedProgram] = useState$O({});
+  const [query, setQuery] = useState$O("");
+  const [formActive, setFormActive] = useState$O(false);
+  const [editData, setEditData] = useState$O(null);
+  const [resolvedPamAttributeId, setResolvedPamAttributeId] = useState$O("");
+  const pamAttributeIdFromProgram = useMemo$q(() => {
     const attrs = selectedProgram?.programTrackedEntityAttributes || [];
     const hit = attrs.find((progAttr) => {
       const tea = progAttr?.trackedEntityAttribute || {};
@@ -98120,7 +98537,7 @@ function TrackerPgStages() {
       withOption.map((e) => {
         optionID.push(e.trackedEntityAttribute.optionSet.id);
       });
-      const optData = await LocalForageServiceInstance.getItem("optionSets", "metadata");
+      const optData = await LocalForageService.getItem("optionSets", "metadata");
       const opt = optData?.find((op) => op?.id === optionID);
       setOptions(opt);
       setPrimaryAttr(nameAttr?.[0] || null);
@@ -98143,7 +98560,7 @@ function TrackerPgStages() {
       );
       setEvents(data?.data?.enrollments[0]?.events);
       setTei(data?.data);
-      const ouData = await LocalForageServiceInstance.getItem("userOganisationUnits", "userOrgUnits");
+      const ouData = await LocalForageService.getItem("userOganisationUnits", "userOrgUnits");
       const ou = ouData?.find((rog) => rog?.id === data?.data.orgUnit);
       setOrgUnit(ou || null);
       const enr = data?.enrollments?.find(
@@ -98153,11 +98570,11 @@ function TrackerPgStages() {
     } catch (e) {
     }
   };
-  useEffect$I(() => {
+  useEffect$M(() => {
     getAttr(program);
     getTEI(id, program);
   }, [program, id]);
-  useEffect$I(() => {
+  useEffect$M(() => {
     let cancelled = false;
     (async () => {
       const idFromConfig = await resolvePamAssetAttributeId(program);
@@ -98286,7 +98703,7 @@ function TrackerPgStages() {
     } catch (error) {
     }
   };
-  useEffect$I(() => {
+  useEffect$M(() => {
     const params = new URLSearchParams(location.search);
     const page = params.get("page");
     const stage = params.get("stage");
@@ -98334,7 +98751,7 @@ function TrackerPgStages() {
       setEditData(null);
     }
   }, [location.search, pgStages, ev]);
-  useEffect$I(() => {
+  useEffect$M(() => {
     if (!printOpen) return;
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
@@ -98342,7 +98759,7 @@ function TrackerPgStages() {
       document.body.style.overflow = prev;
     };
   }, [printOpen]);
-  const headerTitle = useMemo$o(() => {
+  const headerTitle = useMemo$q(() => {
     const displayLabel = primaryAttr?.trackedEntityAttribute?.displayFormName || "Name";
     return `${displayLabel} : ${tei ? getName() : ""}`;
   }, [tei, primaryAttr]);
@@ -98505,7 +98922,7 @@ function TrackerPgStages() {
       return error;
     }
   };
-  useEffect$I(() => {
+  useEffect$M(() => {
     if (!tei?.trackedEntity || !selectedProgram?.id) return;
     const breadcrumbs = buildProgramBreadcrumbs(selectedProgram, [
       {
@@ -99230,11 +99647,11 @@ const loadDataStore = async (key) => {
 
 const loadFlowRules$1 = () => loadDataStore("flowRules");
 
-const React$C = await importShared('react');
-const {useEffect: useEffect$H,useMemo: useMemo$n,useState: useState$K} = React$C;
+const React$G = await importShared('react');
+const {useEffect: useEffect$L,useMemo: useMemo$p,useState: useState$N} = React$G;
 const loadFlowRules = async () => {
   try {
-    let data = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+    let data = await LocalForageService.getItem("dataStore", "dataStore");
     return data?.flowRules || null;
   } catch {
     return null;
@@ -99258,18 +99675,18 @@ function ApproveModal({
   statusFieldId,
   statusOptions = {}
 }) {
-  const [fields, setFields] = useState$K([]);
-  const [formData, setFormData] = useState$K({});
-  const [loading, setLoading] = useState$K(true);
-  const [saving, setSaving] = useState$K(false);
-  const [error, setError] = useState$K(null);
-  const [openModal, setOpenModal] = useState$K(false);
-  const [visibleFields, setVisibleFields] = useState$K([]);
-  const [hideApprovalButton, setHideApprovalButton] = useState$K(false);
-  const [hideCheckDone, setHideCheckDone] = useState$K(false);
-  const [activeActionConfig, setActiveActionConfig] = useState$K(null);
-  const [equipmentNameOptionMap, setEquipmentNameOptionMap] = useState$K({});
-  useEffect$H(() => {
+  const [fields, setFields] = useState$N([]);
+  const [formData, setFormData] = useState$N({});
+  const [loading, setLoading] = useState$N(true);
+  const [saving, setSaving] = useState$N(false);
+  const [error, setError] = useState$N(null);
+  const [openModal, setOpenModal] = useState$N(false);
+  const [visibleFields, setVisibleFields] = useState$N([]);
+  const [hideApprovalButton, setHideApprovalButton] = useState$N(false);
+  const [hideCheckDone, setHideCheckDone] = useState$N(false);
+  const [activeActionConfig, setActiveActionConfig] = useState$N(null);
+  const [equipmentNameOptionMap, setEquipmentNameOptionMap] = useState$N({});
+  useEffect$L(() => {
     let cancelled = false;
     const loadOptionMap = async () => {
       try {
@@ -99337,7 +99754,7 @@ function ApproveModal({
   const getFields = async () => {
     setLoading(true);
     try {
-      let result = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+      let result = await LocalForageService.getItem("dataStore", "dataStore");
       result = result?.approvalProcesses;
       const data = result?.programApprovalFields?.find(
         (pg) => pg?.programId === program?.id
@@ -99401,7 +99818,7 @@ function ApproveModal({
         setHideCheckDone(true);
         return;
       }
-      const me = await LocalForageServiceInstance.getItem("userRes", "user");
+      const me = await LocalForageService.getItem("userRes", "user");
       const currentUsername = String(me?.username || "").toLowerCase();
       const requesterCandidates = [
         event?.storedBy,
@@ -99652,7 +100069,7 @@ function ApproveModal({
     }
   };
   const isTransferProgram = program?.id === TRANSFER_PROGRAM_ID;
-  const approvedFieldId = useMemo$n(
+  const approvedFieldId = useMemo$p(
     () => fields.find((f) => f.valueType === "BOOLEAN")?.id || null,
     [fields]
   );
@@ -99874,10 +100291,10 @@ function ApproveModal({
     });
     return initial;
   };
-  useEffect$H(() => {
+  useEffect$L(() => {
     getFields();
   }, []);
-  useEffect$H(() => {
+  useEffect$L(() => {
     if (openModal && fields.length > 0) {
       const initial = prefillFromEvent(fields, event);
       const approvedField = fields.find((f) => f.valueType === "BOOLEAN");
@@ -99886,7 +100303,7 @@ function ApproveModal({
       }
       const loadPrefill = async () => {
         try {
-          const me = await LocalForageServiceInstance.getItem("userRes", "user");
+          const me = await LocalForageService.getItem("userRes", "user");
           const usernameFields = fields.filter(
             (f) => f.valueType === "USERNAME"
           );
@@ -99921,7 +100338,7 @@ function ApproveModal({
     setFormData(nextData);
     setVisibleFields(Array.from(nextVisible));
   };
-  useEffect$H(() => {
+  useEffect$L(() => {
     setHideCheckDone(false);
     evaluateHideApprovalForRequester();
   }, [program?.id, event?.event]);
@@ -100023,7 +100440,7 @@ const getAvailableEquipmentCount = async (event) => {
         if (!event) return null;
 
         // Load full datastore config
-        const config = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+        const config = await LocalForageService.getItem("dataStore", "dataStore");
         const calculations = config?.calculations;
 
         // Find the specific program config
@@ -100120,7 +100537,7 @@ const getAvailableEquipmentCount = async (event) => {
     }
 };
 
-const {useEffect: useEffect$G,useRef: useRef$6} = await importShared('react');
+const {useEffect: useEffect$K,useRef: useRef$7} = await importShared('react');
 
 const AllocationCustomModal = ({
   isOpen,
@@ -100135,7 +100552,7 @@ const AllocationCustomModal = ({
   showFooter = true,
   showCloseButton = true
 }) => {
-  useEffect$G(() => {
+  useEffect$K(() => {
     const handleClick = (e) => {
       const path = e.composedPath?.() || [];
       for (let el of path) {
@@ -100187,8 +100604,8 @@ const AllocationCustomModal = ({
   );
 };
 
-const React$B = await importShared('react');
-const {useEffect: useEffect$F,useRef: useRef$5,useState: useState$J} = React$B;
+const React$F = await importShared('react');
+const {useEffect: useEffect$J,useRef: useRef$6,useState: useState$M} = React$F;
 const A$6 = (x) => Array.isArray(x) ? x : [];
 function MultiSelectField({
   field,
@@ -100197,19 +100614,19 @@ function MultiSelectField({
   handleChange,
   maxSelectQuantity
 }) {
-  const selectRef = useRef$5(null);
-  const selectAllBtnRef = useRef$5(null);
-  const [isRemounting, setIsRemounting] = useState$J(false);
+  const selectRef = useRef$6(null);
+  const selectAllBtnRef = useRef$6(null);
+  const [isRemounting, setIsRemounting] = useState$M(false);
   const optionsList = equipmentOptions[field?.id] || [];
   const currentSelected = A$6(formData[field?.id]);
   const selectableCount = maxSelectQuantity !== null ? Math.min(maxSelectQuantity, optionsList.length) : optionsList.length;
   const allSelected = optionsList.length > 0 && currentSelected.length === selectableCount && optionsList.slice(0, selectableCount).every((opt) => currentSelected.includes(opt?.trackedEntity));
-  useEffect$F(() => {
+  useEffect$J(() => {
     if (!isRemounting && selectRef.current && currentSelected.length > 0) {
       selectRef.current.value = [...currentSelected];
     }
   }, [isRemounting]);
-  useEffect$F(() => {
+  useEffect$J(() => {
     if (isRemounting) {
       const t = setTimeout(() => setIsRemounting(false), 0);
       return () => clearTimeout(t);
@@ -100220,7 +100637,7 @@ function MultiSelectField({
     handleChange(field.id, toSelect);
     setIsRemounting(true);
   };
-  useEffect$F(() => {
+  useEffect$J(() => {
     const btn = selectAllBtnRef.current;
     if (!btn) return;
     btn.addEventListener("click", handleSelectAll);
@@ -100323,8 +100740,8 @@ function MultiSelectField({
   ] });
 }
 
-const React$A = await importShared('react');
-const {useContext: useContext$l,useEffect: useEffect$E,useState: useState$I} = React$A;
+const React$E = await importShared('react');
+const {useContext: useContext$n,useEffect: useEffect$I,useState: useState$L} = React$E;
 const A$5 = (x) => Array.isArray(x) ? x : [];
 const _store = {
   fields: [],
@@ -100342,18 +100759,18 @@ function AllocateEquipmentModal({
   getEventDetails,
   buttonPositiveName = "Save"
 }) {
-  const [fields, setFields] = useState$I([]);
-  const [formData, setFormData] = useState$I({});
-  const [loading, setLoading] = useState$I(false);
-  const [saving, setSaving] = useState$I(false);
-  const [error, setError] = useState$I(null);
-  const [openModal, setOpenModal] = useState$I(false);
-  const [visibleFields, setVisibleFields] = useState$I([]);
-  const [targetProgram, setTargetProgram] = useState$I(null);
-  const [equipmentOptions, setEquipmentOptions] = useState$I({});
-  const [programDataTEI, setProgramDataTEI] = useState$I([]);
-  const [maxSelectQuantity, setMaxSelectQuantity] = useState$I(null);
-  const { userOrganisationUnits } = useContext$l(MEMISContext.UserContext);
+  const [fields, setFields] = useState$L([]);
+  const [formData, setFormData] = useState$L({});
+  const [loading, setLoading] = useState$L(false);
+  const [saving, setSaving] = useState$L(false);
+  const [error, setError] = useState$L(null);
+  const [openModal, setOpenModal] = useState$L(false);
+  const [visibleFields, setVisibleFields] = useState$L([]);
+  const [targetProgram, setTargetProgram] = useState$L(null);
+  const [equipmentOptions, setEquipmentOptions] = useState$L({});
+  const [programDataTEI, setProgramDataTEI] = useState$L([]);
+  const [maxSelectQuantity, setMaxSelectQuantity] = useState$L(null);
+  const { userOrganisationUnits } = useContext$n(MEMISContext.UserContext);
   _store.fields = fields;
   _store.targetProgram = targetProgram;
   _store.programDataTEI = programDataTEI;
@@ -100369,7 +100786,7 @@ function AllocateEquipmentModal({
     setLoading(true);
     setError(null);
     try {
-      const result = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+      const result = await LocalForageService.getItem("dataStore", "dataStore");
       const data = result?.allocationProcesses?.programAllocationFields?.find(
         (pg) => pg?.programId === program?.id
       );
@@ -100465,7 +100882,7 @@ function AllocateEquipmentModal({
           events: result?.data?.bundleReport?.typeReportMap?.EVENT?.objectReports?.map((b) => b?.uid)
         });
         showToast("Saved", "success");
-        const res = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+        const res = await LocalForageService.getItem("dataStore", "dataStore");
         const allocCfg = res?.allocationsStatus?.configuration;
         const appCond = allocCfg?.conditions?.find((c) => c?.key === "approved");
         const qtyCond = allocCfg?.conditions?.find((c) => c?.key === "quantityAllocated");
@@ -100512,7 +100929,7 @@ function AllocateEquipmentModal({
     setOpenModal(false);
     setMaxSelectQuantity(null);
   };
-  useEffect$E(() => {
+  useEffect$I(() => {
     if (openModal) {
       getFields();
     }
@@ -100648,7 +101065,7 @@ function AllocateEquipmentModal({
 
 const getRequestedApprovedCollectedQuantitiesId = async (programId, section) => {
     try {
-        const response = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+        const response = await LocalForageService.getItem("dataStore", "dataStore");
         const quantityApproved = response?.quantityApproved?.configurations?.find(config => config?.programId === programId && config?.section === section);
         const status = quantityApproved?.status;
         return status
@@ -100665,7 +101082,7 @@ const SPARE_PART_ATTRIBUTE_IDS = {
 
 const SPARE_PART_PROGRAM_ID = "kth8UcvwybE";
 
-const {useEffect: useEffect$D,useRef: useRef$4,useState: useState$H} = await importShared('react');
+const {useEffect: useEffect$H,useRef: useRef$5,useState: useState$K} = await importShared('react');
 
 const ATTR = SPARE_PART_ATTRIBUTE_IDS;
 
@@ -100696,11 +101113,11 @@ function useSparePartOptions({
   programId,
   selectedOrganisationUnit,
 } = {}) {
-  const cacheRef = useRef$4(new Map());
-  const [sparePartOptions, setSparePartOptions] = useState$H([]);
-  const [sparePartLoading, setSparePartLoading] = useState$H(false);
+  const cacheRef = useRef$5(new Map());
+  const [sparePartOptions, setSparePartOptions] = useState$K([]);
+  const [sparePartLoading, setSparePartLoading] = useState$K(false);
 
-  useEffect$D(() => {
+  useEffect$H(() => {
     let active = true;
 
     const load = async () => {
@@ -100713,7 +101130,7 @@ function useSparePartOptions({
 
       setSparePartLoading(true);
       try {
-        const sparePartCodeData = await LocalForageServiceInstance.getItem(
+        const sparePartCodeData = await LocalForageService.getItem(
           "dataStore",
           "dataStore",
         );
@@ -100783,13 +101200,13 @@ function useSparePartOptions({
 
 const getNameOfCollectorByFacilityOptionGroups = async ({ program, formName, payload }) => {
     try {
-        const optionGroups = await LocalForageServiceInstance.getItem("optionGroups", "optionGroups");
-        const dataStore = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+        const optionGroups = await LocalForageService.getItem("optionGroups", "optionGroups");
+        const dataStore = await LocalForageService.getItem("dataStore", "dataStore");
         const formNames = dataStore?.formNames;
         const trigger = dataStore?.nameOfCollectorOptionGroups.configurations?.find(prog => prog?.program === program?.id && prog?.formName === formNames?.forms?.find(fn => fn === formName));
 
         if (trigger?.useEventCreatedFacility) {
-            const facilities = await LocalForageServiceInstance.getItem("organisationUnits", "organisationUnits");
+            const facilities = await LocalForageService.getItem("organisationUnits", "organisationUnits");
             const facility = facilities?.find(fac => fac?.id === payload?.orgUnit);
             const optionsKeys = dataStore?.optionsKeys;
 
@@ -100817,8 +101234,8 @@ const getNameOfCollectorByFacilityOptionGroups = async ({ program, formName, pay
     }
 };
 
-const React$z = await importShared('react');
-const {useEffect: useEffect$C,useMemo: useMemo$m,useState: useState$G} = React$z;
+const React$D = await importShared('react');
+const {useEffect: useEffect$G,useMemo: useMemo$o,useState: useState$J} = React$D;
 function buildDeMetaById(program) {
   const m = /* @__PURE__ */ new Map();
   (program?.programStages || []).forEach(
@@ -100936,47 +101353,47 @@ function CollectionModal({
   flow,
   getEventDetails
 }) {
-  const [collectorDetails, setCollectorDetails] = useState$G(null);
+  const [collectorDetails, setCollectorDetails] = useState$J(null);
   const formSection = flow?.onApprove?.formSection || flow?.formSection || { fields: [] };
-  const [facilityUsers, setFacilityUsers] = useState$G([]);
+  const [facilityUsers, setFacilityUsers] = useState$J({});
   const fields = Array.isArray(formSection?.fields) ? formSection.fields : [];
   const prefillCfg = formSection?.prefill || null;
-  const formSectionSparePartFieldId = useMemo$m(
+  const formSectionSparePartFieldId = useMemo$o(
     () => findSparePartFieldIdFromSection(formSection),
     [formSection]
   );
-  const [formData, setFormData] = useState$G({});
-  const [loading, setLoading] = useState$G(true);
-  const [error, setError] = useState$G(null);
-  const [optionsCache, setOptionsCache] = useState$G(/* @__PURE__ */ new Map());
-  const [qtyError, setQtyError] = useState$G("");
-  const [saving, setSaving] = useState$G(false);
-  const [quantitiesId, setQuantitiesId] = useState$G({});
-  const [sparePartCollectionFieldId, setSparePartCollectionFieldId] = useState$G(
+  const [formData, setFormData] = useState$J({});
+  const [loading, setLoading] = useState$J(true);
+  const [error, setError] = useState$J(null);
+  const [optionsCache, setOptionsCache] = useState$J(/* @__PURE__ */ new Map());
+  const [qtyError, setQtyError] = useState$J("");
+  const [saving, setSaving] = useState$J(false);
+  const [quantitiesId, setQuantitiesId] = useState$J({});
+  const [sparePartCollectionFieldId, setSparePartCollectionFieldId] = useState$J(
     formSectionSparePartFieldId
   );
-  const [sparePartSelectedId, setSparePartSelectedId] = useState$G(null);
+  const [sparePartSelectedId, setSparePartSelectedId] = useState$J(null);
   const validationCfg = flow?.onApprove?.collectionValidation || flow?.collectionValidation || null;
-  const [collectionAllowed, setCollectionAllowed] = useState$G(true);
-  const [permissionChecked, setPermissionChecked] = useState$G(false);
-  const byKey = useMemo$m(() => {
+  const [collectionAllowed, setCollectionAllowed] = useState$J(true);
+  const [permissionChecked, setPermissionChecked] = useState$J(false);
+  const byKey = useMemo$o(() => {
     const m = /* @__PURE__ */ new Map();
     fields.forEach((f) => f?.key && m.set(f.key, f));
     return m;
   }, [fields]);
-  const deMetaById = useMemo$m(() => buildDeMetaById(program), [program]);
+  const deMetaById = useMemo$o(() => buildDeMetaById(program), [program]);
   const { sparePartOptions, sparePartLoading } = useSparePartOptions({
     programId: SPARE_PART_PROGRAM_ID,
     selectedOrganisationUnit: event?.orgUnit,
     data: event?.dataValues
   });
-  const existingByDE = useMemo$m(
+  const existingByDE = useMemo$o(
     () => new Map(
       (event?.dataValues || []).map((dv) => [dv.dataElement, dv.value])
     ),
     [event]
   );
-  useEffect$C(() => {
+  useEffect$G(() => {
     let active = true;
     setSparePartCollectionFieldId(formSectionSparePartFieldId);
     setSparePartSelectedId(null);
@@ -101003,7 +101420,7 @@ function CollectionModal({
       active = false;
     };
   }, [formSectionSparePartFieldId, program?.id]);
-  const requestedQty = useMemo$m(() => {
+  const requestedQty = useMemo$o(() => {
     const requestedDirect = toNumberOrNull(
       existingByDE?.get(quantitiesId["DE_QUANTITY_REQUESTED"])
     );
@@ -101019,14 +101436,14 @@ function CollectionModal({
     if (guessedN != null) return guessedN;
     return null;
   }, [deMetaById, event, validationCfg, existingByDE, quantitiesId]);
-  const approvedQty = useMemo$m(() => {
+  const approvedQty = useMemo$o(() => {
     const raw = existingByDE?.get(quantitiesId["DE_QUANTITY_APPROVED"]);
     return toNumberOrNull(raw);
   }, [existingByDE, quantitiesId]);
   const loadOptionSet = async (optionSetId) => {
     if (!optionSetId) return [];
     try {
-      const options = await LocalForageServiceInstance.getItem(
+      const options = await LocalForageService.getItem(
         "optionSets",
         "metadata"
       );
@@ -101129,7 +101546,7 @@ function CollectionModal({
     }
     return null;
   };
-  useEffect$C(() => {
+  useEffect$G(() => {
     const init = async () => {
       if (!isOpen) return;
       setLoading(true);
@@ -101137,7 +101554,7 @@ function CollectionModal({
       try {
         let username = "";
         try {
-          const me = await LocalForageServiceInstance.getItem(
+          const me = await LocalForageService.getItem(
             "userRes",
             "user"
           );
@@ -101242,7 +101659,7 @@ function CollectionModal({
     };
     init();
   }, [isOpen]);
-  useEffect$C(() => {
+  useEffect$G(() => {
     const fieldId = sparePartCollectionFieldId || formSectionSparePartFieldId;
     if (!fieldId) {
       if (sparePartSelectedId) setSparePartSelectedId(null);
@@ -101264,7 +101681,7 @@ function CollectionModal({
     formSectionSparePartFieldId,
     sparePartSelectedId
   ]);
-  useEffect$C(() => {
+  useEffect$G(() => {
     if (!isOpen) {
       setPermissionChecked(false);
       return;
@@ -101276,7 +101693,7 @@ function CollectionModal({
         return;
       }
       try {
-        const me = await LocalForageServiceInstance.getItem("userRes", "user");
+        const me = await LocalForageService.getItem("userRes", "user");
         const currentUsername = String(me?.username || "").toLowerCase();
         const requesterCandidates = [
           event?.storedBy,
@@ -101294,7 +101711,7 @@ function CollectionModal({
     };
     check();
   }, [isOpen, flow, event]);
-  useEffect$C(() => {
+  useEffect$G(() => {
     const load = async () => {
       const result = await getRequestedApprovedCollectedQuantitiesId(
         program?.id,
@@ -101358,7 +101775,7 @@ function CollectionModal({
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           SearchableSelect,
           {
-            data: Array.isArray(facilityUsers) && facilityUsers,
+            data: Array.isArray(facilityUsers[f.id]) ? facilityUsers[f.id] : [],
             itemTextField: "name",
             itemValueField: "username",
             value,
@@ -101564,7 +101981,7 @@ function CollectionModal({
             );
           }
         }
-        const reqSpares = await LocalForageServiceInstance.getItem(
+        const reqSpares = await LocalForageService.getItem(
           "dataStore",
           "dataStore"
         );
@@ -101636,7 +102053,7 @@ function CollectionModal({
   };
   const isSaveDisabled = loading || fields.length === 0 || !!qtyError;
   const disablePositive = isSaveDisabled || saving || flow?.collectionOnlyForRequester && (!permissionChecked || !collectionAllowed);
-  useEffect$C(() => {
+  useEffect$G(() => {
     (async () => {
       if (isOpen) {
         const results = await getNameOfCollectorByFacilityOptionGroups({
@@ -101648,11 +102065,24 @@ function CollectionModal({
       }
     })();
   }, [isOpen]);
-  useEffect$C(() => {
+  useEffect$G(() => {
     const load = async () => {
       try {
-        const res = await getUsersForAssignment();
-        setFacilityUsers(res);
+        const fieldKeys = {
+          collectorName: ["gQsCDQgxs2Z", "M7qyC25pfuc"],
+          dispatchOfficer: ["jms9aBe7M6Z", "RvNXBiZiIQr"]
+        };
+        const allFieldIds = Object.values(fieldKeys).flat();
+        const map = {};
+        await Promise.all(
+          allFieldIds.map(async (fieldId) => {
+            const roleIds = await resolveRoleIdsForField(fieldId);
+            map[fieldId] = await getUsersForAssignment(
+              roleIds.length > 0 ? roleIds : void 0
+            );
+          })
+        );
+        setFacilityUsers(map);
       } catch (error2) {
       }
     };
@@ -101707,8 +102137,8 @@ function CollectionModal({
   );
 }
 
-const React$y = await importShared('react');
-const {useEffect: useEffect$B,useState: useState$F} = React$y;
+const React$C = await importShared('react');
+const {useEffect: useEffect$F,useState: useState$I} = React$C;
 function TrainingFeedbackModal({
   program,
   event,
@@ -101717,10 +102147,10 @@ function TrainingFeedbackModal({
   buttonLabel = "Training Feedback",
   fields = []
 }) {
-  const [formData, setFormData] = useState$F({});
-  const [loading, setLoading] = useState$F(false);
-  const [openModal, setOpenModal] = useState$F(false);
-  const [visibleFields, setVisibleFields] = useState$F([]);
+  const [formData, setFormData] = useState$I({});
+  const [loading, setLoading] = useState$I(false);
+  const [openModal, setOpenModal] = useState$I(false);
+  const [visibleFields, setVisibleFields] = useState$I([]);
   const handleSubmit = async () => {
     try {
       setLoading(true);
@@ -101818,7 +102248,7 @@ function TrainingFeedbackModal({
     });
     return visible;
   };
-  useEffect$B(() => {
+  useEffect$F(() => {
     if (openModal && fields.length > 0) {
       const initial = prefillFromEvent();
       const trainingTookPlaceField = fields.find((f) => f.key === "trainingTookPlace");
@@ -144256,7 +144686,7 @@ const xlsIcon = "/assets/microfrontends/memis/assets/xls.png";
 
 const docIcon = "/assets/microfrontends/memis/assets/doc.png";
 
-const {useEffect: useEffect$A,useState: useState$E} = await importShared('react');
+const {useEffect: useEffect$E,useState: useState$H} = await importShared('react');
 const EXPORT_OPTIONS = [
   { value: "pdf", label: "PDF Document", icon: pdfIcon },
   { value: "excel", label: "Excel Spreadsheet", icon: xlsIcon },
@@ -144277,9 +144707,9 @@ const ReportActionButtons = ({
   isSensitiveStatus,
   reportStatus
 }) => {
-  const [selectedFormat, setSelectedFormat] = useState$E("pdf");
-  const [isDesktopWeb, setIsDesktopWeb] = useState$E(window.innerWidth >= 992);
-  useEffect$A(() => {
+  const [selectedFormat, setSelectedFormat] = useState$H("pdf");
+  const [isDesktopWeb, setIsDesktopWeb] = useState$H(window.innerWidth >= 992);
+  useEffect$E(() => {
     const handleResize = () => {
       setIsDesktopWeb(window.innerWidth >= 992);
     };
@@ -144415,7 +144845,7 @@ const ReportActionButtons = ({
 };
 
 var define_process_env_default$1 = {};
-const {useState: useState$D,useContext: useContext$k,useCallback: useCallback$4,useEffect: useEffect$z,useMemo: useMemo$l,useRef: useRef$3} = await importShared('react');
+const {useState: useState$G,useContext: useContext$m,useCallback: useCallback$6,useEffect: useEffect$D,useMemo: useMemo$n,useRef: useRef$4} = await importShared('react');
 const DHIS_UID_REGEX$1 = /^[A-Za-z0-9]{11}$/;
 const TRACKER_PROGRAM_FIELDS = PROGRAM_STAGES_FIELDS + ",programTrackedEntityAttributes[mandatory,trackedEntityAttribute[id,name,formName,displayName,code,valueType,optionSetValue,optionSet[id,name,code,options[id,name,code]]]]";
 const PROGRAM_STAGE_FIELDS_PARAM = encodeURIComponent(TRACKER_PROGRAM_FIELDS);
@@ -144555,7 +144985,7 @@ const ReportExportButtons = ({
   program,
   isApprover = false
 }) => {
-  useCallback$4(
+  useCallback$6(
     (dataElementId) => {
       if (!dataElementId) return "";
       const rawValue = reportData?.dataValues?.[dataElementId];
@@ -144564,33 +144994,33 @@ const ReportExportButtons = ({
     },
     [reportData?.dataValues]
   );
-  const { programs } = useContext$k(MEMISContext.ProgramContext);
-  const [isGenerating, setIsGenerating] = useState$D(false);
-  const [showProgress, setShowProgress] = useState$D(false);
-  const [progressStage, setProgressStage] = useState$D("");
-  const [progressPercent, setProgressPercent] = useState$D(0);
-  const [analyticsData, setAnalyticsData] = useState$D(null);
-  const [error, setError] = useState$D(null);
-  const [isPreviewOpen, setIsPreviewOpen] = useState$D(false);
-  const [previewHtml, setPreviewHtml] = useState$D("");
-  const [isPreviewLoading, setIsPreviewLoading] = useState$D(false);
-  const [previewLoadingMessage, setPreviewLoadingMessage] = useState$D(
+  const { programs } = useContext$m(MEMISContext.ProgramContext);
+  const [isGenerating, setIsGenerating] = useState$G(false);
+  const [showProgress, setShowProgress] = useState$G(false);
+  const [progressStage, setProgressStage] = useState$G("");
+  const [progressPercent, setProgressPercent] = useState$G(0);
+  const [analyticsData, setAnalyticsData] = useState$G(null);
+  const [error, setError] = useState$G(null);
+  const [isPreviewOpen, setIsPreviewOpen] = useState$G(false);
+  const [previewHtml, setPreviewHtml] = useState$G("");
+  const [isPreviewLoading, setIsPreviewLoading] = useState$G(false);
+  const [previewLoadingMessage, setPreviewLoadingMessage] = useState$G(
     "Preparing preview..."
   );
-  const [reportRequiresApproval, setReportRequiresApproval] = useState$D(false);
+  const [reportRequiresApproval, setReportRequiresApproval] = useState$G(false);
   const normalizedStatus = (reportData?.status || "").trim().toLowerCase();
-  const [isDesktopWeb, setIsDesktopWeb] = useState$D(window.innerWidth >= 992);
-  useEffect$z(() => {
+  const [isDesktopWeb, setIsDesktopWeb] = useState$G(window.innerWidth >= 992);
+  useEffect$D(() => {
     const handleResize = () => {
       setIsDesktopWeb(window.innerWidth >= 992);
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-  useEffect$z(() => {
+  useEffect$D(() => {
     const checkReportApprovalRequirement = async () => {
       try {
-        const dataStoreData = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+        const dataStoreData = await LocalForageService.getItem("dataStore", "dataStore");
         const reports = dataStoreData?.reportTypesConfigurations?.reports || [];
         const normalizeString = (str) => {
           return (str || "").toLowerCase().replace(/[\u2010-\u2015\u2212\uFE58\uFE63\uFF0D]/g, "-").replace(/\s+/g, " ").trim();
@@ -144634,7 +145064,7 @@ const ReportExportButtons = ({
     );
     return reportNameType;
   };
-  const reportNameTypeValue = useMemo$l(
+  const reportNameTypeValue = useMemo$n(
     () => extractReportNameType(),
     [reportData?.dataValues, reportData?.fieldNames]
   );
@@ -144649,11 +145079,11 @@ const ReportExportButtons = ({
     );
     return reportName;
   };
-  const reportNameValue = useMemo$l(
+  const reportNameValue = useMemo$n(
     () => extractReportName(),
     [reportData?.dataValues, reportData?.fieldNames]
   );
-  const programReferenceCandidates = useMemo$l(() => {
+  const programReferenceCandidates = useMemo$n(() => {
     const refs = [];
     const pushRef = (value) => {
       if (!value) return;
@@ -144690,13 +145120,13 @@ const ReportExportButtons = ({
     reportData?.programId,
     reportData?.programCode
   ]);
-  const programMetadataCacheRef = useRef$3(/* @__PURE__ */ new Map());
-  const programList = useMemo$l(() => {
+  const programMetadataCacheRef = useRef$4(/* @__PURE__ */ new Map());
+  const programList = useMemo$n(() => {
     if (Array.isArray(programs?.programs)) return programs.programs;
     if (Array.isArray(programs)) return programs;
     return [];
   }, [programs]);
-  const findProgramByReference = useCallback$4(
+  const findProgramByReference = useCallback$6(
     (programRef) => {
       if (!programRef) return null;
       const normalizedRef = typeof programRef === "string" ? programRef.trim().toLowerCase() : programRef;
@@ -144719,7 +145149,7 @@ const ReportExportButtons = ({
     },
     [programList]
   );
-  const fetchProgramDetails = useCallback$4(async (programId) => {
+  const fetchProgramDetails = useCallback$6(async (programId) => {
     if (!programId) {
       return null;
     }
@@ -144740,7 +145170,7 @@ const ReportExportButtons = ({
     }
     return null;
   }, []);
-  const ensureProgramMetadata = useCallback$4(
+  const ensureProgramMetadata = useCallback$6(
     async (candidateProgram) => {
       if (!candidateProgram) {
         return null;
@@ -144771,7 +145201,7 @@ const ReportExportButtons = ({
     },
     [fetchProgramDetails]
   );
-  const resolveProgramReference = useCallback$4(
+  const resolveProgramReference = useCallback$6(
     async (programRef) => {
       const referenceValueRaw = typeof programRef === "string" ? programRef : programRef?.id || programRef?.uid || programRef?.code || programRef?.name;
       const referenceValue = typeof referenceValueRaw === "string" ? referenceValueRaw.trim() : referenceValueRaw;
@@ -144801,7 +145231,7 @@ const ReportExportButtons = ({
       fetchProgramDetails
     ]
   );
-  const resetProgressState = useCallback$4(() => {
+  const resetProgressState = useCallback$6(() => {
     setShowProgress(false);
     setIsGenerating(false);
     setError(null);
@@ -146726,8 +147156,8 @@ const ReportExportButtons = ({
 
 const taskController = async (event) => {
   try {
-    const data = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
-    const loggedInUser = await LocalForageServiceInstance.getItem("userRes", "user");
+    const data = await LocalForageService.getItem("dataStore", "dataStore");
+    const loggedInUser = await LocalForageService.getItem("userRes", "user");
 
     const canRegister =
       data?.showTaskRegisterButtonByUserRole?.userRoles?.some(role =>
@@ -146766,8 +147196,8 @@ const taskController = async (event) => {
   }
 };
 
-const React$x = await importShared('react');
-const {useEffect: useEffect$y,useState: useState$C} = React$x;
+const React$B = await importShared('react');
+const {useEffect: useEffect$C,useState: useState$F} = React$B;
 function ScheduleTrainingModal({
   program,
   event,
@@ -146776,9 +147206,9 @@ function ScheduleTrainingModal({
   buttonLabel = "Schedule",
   trainingDateFieldId
 }) {
-  const [trainingDate, setTrainingDate] = useState$C("");
-  const [loading, setLoading] = useState$C(false);
-  const [openModal, setOpenModal] = useState$C(false);
+  const [trainingDate, setTrainingDate] = useState$F("");
+  const [loading, setLoading] = useState$F(false);
+  const [openModal, setOpenModal] = useState$F(false);
   const handleSubmit = async () => {
     try {
       setLoading(true);
@@ -146829,7 +147259,7 @@ function ScheduleTrainingModal({
     setTrainingDate("");
     setOpenModal(false);
   };
-  useEffect$y(() => {
+  useEffect$C(() => {
     if (openModal) {
       const existingDate = event?.dataValues?.find(
         (dv) => dv.dataElement === trainingDateFieldId
@@ -146908,7 +147338,7 @@ const hasApprovalStatus = (programId, approvalStatusConfig) => {
     );
 };
 
-const {useMemo: useMemo$k} = await importShared('react');
+const {useMemo: useMemo$m} = await importShared('react');
 
 
 /**
@@ -146923,7 +147353,7 @@ const {useMemo: useMemo$k} = await importShared('react');
  * @returns {Object} - Validation state and message
  */
 const useTrainingApprovalValidation = (event, flowMain, allFlows = []) => {
-    const validationResult = useMemo$k(() => {
+    const validationResult = useMemo$m(() => {
 
         // CRITICAL: Find the flow with approvalValidation for this program
         let validationConfig = flowMain?.approvalValidation;
@@ -147002,7 +147432,7 @@ function WarningMessage({ message }) {
 const reportRequireApprovalController = async (event, result, byDE) => {
     try {
         // Check if this is a report that requires approval
-        const reportTypesConfig = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+        const reportTypesConfig = await LocalForageService.getItem("dataStore", "dataStore");
         const program = reportTypesConfig?.reportTypesConfigurations?.programId;
         if (event?.program === program) {
             const reports = reportTypesConfig?.reportTypesConfigurations?.reports || [];
@@ -147043,8 +147473,15 @@ const reportRequireApprovalController = async (event, result, byDE) => {
 
 };
 
-await importShared('react');
+const React$A = await importShared('react');
+const {useEffect: useEffect$B,useState: useState$E} = React$A;
 function FormTitle({ title, crumbs }) {
+  const [name, setName] = useState$E("");
+  console.log({ crumbs, title });
+  useEffect$B(() => {
+    const n = crumbs?.length > 0 ? crumbs?.pop() : [0];
+    setName(n?.label === title ? title : n?.label);
+  }, [crumbs]);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     IonHeader,
     {
@@ -147056,7 +147493,7 @@ function FormTitle({ title, crumbs }) {
           {
             className: "ion-padding custom-toolbar-data",
             children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "form-page-title", children: title || "Form" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "form-page-title", children: name }),
               /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "form-title-divider" })
             ]
           }
@@ -147083,7 +147520,7 @@ const hideCollectionIfHasValue = (event, section,) => {
 const hideApprovalButtonBasedOnTransferType = async (event, user) => {
     if (!event || !user) return false;
 
-    const store = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+    const store = await LocalForageService.getItem("dataStore", "dataStore");
 
     const configs =
         store?.transferShowApprovalButtonAccess?.configurations;
@@ -147176,7 +147613,7 @@ const WardParticipantsDisplay = ({ value }) => {
   ] });
 };
 
-const {useEffect: useEffect$x,useState: useState$B,useMemo: useMemo$j} = await importShared('react');
+const {useEffect: useEffect$A,useState: useState$D,useMemo: useMemo$l} = await importShared('react');
 
 /**
  * Hook to load section visibility rules for event detail pages
@@ -147184,23 +147621,23 @@ const {useEffect: useEffect$x,useState: useState$B,useMemo: useMemo$j} = await i
  * @returns {Array} Array of visibility rules for the program
  */
 function useEventSectionVisibility(programId) {
-    const [config, setConfig] = useState$B(null);
-    const [tick, setTick] = useState$B(0);
+    const [config, setConfig] = useState$D(null);
+    const [tick, setTick] = useState$D(0);
 
     // Listen for external updates
-    useEffect$x(() => {
+    useEffect$A(() => {
         const onUpdate = () => setTick((n) => n + 1);
         window.addEventListener("memis:eventSectionVisibility:updated", onUpdate);
         return () => window.removeEventListener("memis:eventSectionVisibility:updated", onUpdate);
     }, []);
 
     // Fetch configuration from datastore
-    useEffect$x(() => {
+    useEffect$A(() => {
         let mounted = true;
         
         const fetchConfig = async () => {
             try {
-                const dataStore = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+                const dataStore = await LocalForageService.getItem("dataStore", "dataStore");
                 const visibilityConfig = dataStore?.eventDetailSectionVisibilityConfig;
                 
                 if (mounted) {
@@ -147222,7 +147659,7 @@ function useEventSectionVisibility(programId) {
     }, [tick]);
 
     // Extract rules for the current program
-    const programRules = useMemo$j(() => {
+    const programRules = useMemo$l(() => {
         if (!programId || !config) return [];
         
         try {
@@ -147356,7 +147793,7 @@ function SectionNavButtons({ currentSection, prevSection, nextSection, onNavigat
   );
 }
 
-const {useState: useState$A} = await importShared('react');
+const {useState: useState$C} = await importShared('react');
 
 
 /**
@@ -147379,7 +147816,7 @@ const {useState: useState$A} = await importShared('react');
  *   // Pass them straight to <SectionNavButtons />.
  */
 function useExpandableSections() {
-    const [expandedSections, setExpandedSections] = useState$A({});
+    const [expandedSections, setExpandedSections] = useState$C({});
 
     /** Toggle a single section open / closed. */
     const toggleSection = (id) => {
@@ -147405,7 +147842,7 @@ function useExpandableSections() {
     return { expandedSections, toggleSection, navigateToSection };
 }
 
-const {useContext: useContext$j,useEffect: useEffect$w,useMemo: useMemo$i,useState: useState$z} = await importShared('react');
+const {useContext: useContext$l,useEffect: useEffect$z,useMemo: useMemo$k,useState: useState$B} = await importShared('react');
 const norm$1 = (s) => String(s ?? "").trim().toLowerCase();
 const truthy = (v) => {
   if (v === true) return true;
@@ -147444,51 +147881,51 @@ function EventPage() {
   const [
     showApprovalButtonBasedOnTransferType,
     setShowApprovalButtonBasedOnTransferType
-  ] = useState$z(false);
+  ] = useState$B(false);
   const { event: eventId } = useParams();
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const navigate = useNavigate();
-  const [isApproved, setIsApproved] = useState$z(false);
-  const [uid] = useState$z(queryParams.get("uid") || "");
-  const [allocationTag] = useState$z(queryParams.get("q") || "");
-  const { programs } = useContext$j(MEMISContext.ProgramContext);
-  const [openModal, setOpenModal] = useState$z(false);
-  const [pg, setPg] = useState$z(null);
-  const [event, setEvent] = useState$z(null);
-  const [orgUnit, setOu] = useState$z({});
-  const [orgUnitNames, setOrgUnitNames] = useState$z({});
-  const [crumbs, setCrumbs] = useState$z([]);
-  const [user, setUser] = useState$z(null);
-  const [isUserCreateEvent, setIsUserCreateEvent] = useState$z(false);
-  const [userApprovalConfig, setUserApprovalConfig] = useState$z(null);
-  const [hideApproveButton, setHideApproveButton] = useState$z([]);
-  const [allocationsUserRoles, setAllocationsUserRoles] = useState$z({});
-  const [isAllocated, setIsAllocated] = useState$z(false);
-  const [allocationSection, setAllocationSection] = useState$z(null);
-  const [approvalStatusConfig, setApprovalStatusConfig] = useState$z(null);
-  const [loading, setLoading] = useState$z(true);
-  const [error, setError] = useState$z(null);
-  const [flowRules, setFlowRules] = useState$z(null);
-  const [openCollection, setOpenCollection] = useState$z(false);
-  const [programIndicatorAvailableCount, setProgramIndicatorAvailableCount] = useState$z(0);
-  const [declineReasonFieldId, setDeclineReasonFieldId] = useState$z(null);
-  const [fieldNames, setFieldNames] = useState$z({});
-  const [statusFieldId, setStatusFieldId] = useState$z(null);
-  const [statusOptionMap, setStatusOptionMap] = useState$z({});
-  const [programApprovalButtons, setProgramApprovalButtons] = useState$z([]);
-  const [reportRequiresApproval, setReportRequiresApproval] = useState$z(null);
-  const [dataStoreRaw, setDataStoreRaw] = useState$z(null);
-  const [infoCardExpanded, setInfoCardExpanded] = useState$z(false);
+  const [isApproved, setIsApproved] = useState$B(false);
+  const [uid] = useState$B(queryParams.get("uid") || "");
+  const [allocationTag] = useState$B(queryParams.get("q") || "");
+  const { programs } = useContext$l(MEMISContext.ProgramContext);
+  const [openModal, setOpenModal] = useState$B(false);
+  const [pg, setPg] = useState$B(null);
+  const [event, setEvent] = useState$B(null);
+  const [orgUnit, setOu] = useState$B({});
+  const [orgUnitNames, setOrgUnitNames] = useState$B({});
+  const [crumbs, setCrumbs] = useState$B([]);
+  const [user, setUser] = useState$B(null);
+  const [isUserCreateEvent, setIsUserCreateEvent] = useState$B(false);
+  const [userApprovalConfig, setUserApprovalConfig] = useState$B(null);
+  const [hideApproveButton, setHideApproveButton] = useState$B([]);
+  const [allocationsUserRoles, setAllocationsUserRoles] = useState$B({});
+  const [isAllocated, setIsAllocated] = useState$B(false);
+  const [allocationSection, setAllocationSection] = useState$B(null);
+  const [approvalStatusConfig, setApprovalStatusConfig] = useState$B(null);
+  const [loading, setLoading] = useState$B(true);
+  const [error, setError] = useState$B(null);
+  const [flowRules, setFlowRules] = useState$B(null);
+  const [openCollection, setOpenCollection] = useState$B(false);
+  const [programIndicatorAvailableCount, setProgramIndicatorAvailableCount] = useState$B(0);
+  const [declineReasonFieldId, setDeclineReasonFieldId] = useState$B(null);
+  const [fieldNames, setFieldNames] = useState$B({});
+  const [statusFieldId, setStatusFieldId] = useState$B(null);
+  const [statusOptionMap, setStatusOptionMap] = useState$B({});
+  const [programApprovalButtons, setProgramApprovalButtons] = useState$B([]);
+  const [reportRequiresApproval, setReportRequiresApproval] = useState$B(null);
+  const [dataStoreRaw, setDataStoreRaw] = useState$B(null);
+  const [infoCardExpanded, setInfoCardExpanded] = useState$B(false);
   const { expandedSections, toggleSection, navigateToSection } = useExpandableSections();
-  const [showRegisterButton, setShowRegisterButton] = useState$z(false);
-  const [showRegisterButtonByUserRole, setShowRegisterButtonByUserRole] = useState$z(false);
+  const [showRegisterButton, setShowRegisterButton] = useState$B(false);
+  const [showRegisterButtonByUserRole, setShowRegisterButtonByUserRole] = useState$B(false);
   const [
     openApprovalButtonWhenInNoFlowRules,
     setOpenApprovalButtonWhenInNoFlowRules
-  ] = useState$z(false);
-  const [filePreviewOpen, setFilePreviewOpen] = useState$z(false);
-  const [selectedFile, setSelectedFile] = useState$z({
+  ] = useState$B(false);
+  const [filePreviewOpen, setFilePreviewOpen] = useState$B(false);
+  const [selectedFile, setSelectedFile] = useState$B({
     fileId: null,
     fileName: null,
     valueType: null,
@@ -147506,7 +147943,7 @@ function EventPage() {
     setFilePreviewOpen(true);
   };
   const getUser = async () => {
-    const me = await LocalForageServiceInstance.getItem("userRes", "user");
+    const me = await LocalForageService.getItem("userRes", "user");
     setUser(me);
   };
   const getEventDetails = async (event_id) => {
@@ -147527,20 +147964,20 @@ function EventPage() {
         (evv?.data?.dataValues || []).map((dv) => [dv.dataElement, dv.value])
       );
       let fetchedFlowRules = null;
-      let fr = await LocalForageServiceInstance.getItem(
+      let fr = await LocalForageService.getItem(
         "dataStore",
         "dataStore"
       );
       fr = fr?.flowRules;
       fetchedFlowRules = fr || null;
       setFlowRules(fr || null);
-      const orgUnits = await LocalForageServiceInstance.getItem(
+      const orgUnits = await LocalForageService.getItem(
         "userOrganisationUnits",
         "userOrgUnits"
       );
       const ou = orgUnits?.find((org) => org?.id === evv?.data?.orgUnit);
       setOu(ou);
-      let result = await LocalForageServiceInstance.getItem(
+      let result = await LocalForageService.getItem(
         "programs",
         "programs"
       );
@@ -147591,7 +148028,7 @@ function EventPage() {
       const statusField = findStatusField(result);
       setStatusFieldId(statusField);
       setStatusOptionMap(buildStatusOptionMap(result, statusField));
-      const response = await LocalForageServiceInstance.getItem(
+      const response = await LocalForageService.getItem(
         "dataStore",
         "dataStore"
       );
@@ -147820,12 +148257,12 @@ function EventPage() {
     if (statusLower === "under review") return "var(--ion-color-warning)";
     return "var(--ion-color-medium)";
   };
-  useEffect$w(() => {
+  useEffect$z(() => {
     if (eventId) {
       getEventDetails(eventId);
     }
   }, [eventId]);
-  useEffect$w(() => {
+  useEffect$z(() => {
     getUser();
   }, []);
   const getVal = (de) => {
@@ -147897,7 +148334,7 @@ function EventPage() {
     );
     return progData?.id ?? "";
   };
-  const sections = useMemo$i(
+  const sections = useMemo$k(
     () => (pg?.programStages || []).flatMap((ps) => ps?.programStageSections || []),
     [pg]
   );
@@ -148064,14 +148501,14 @@ function EventPage() {
   const isRegistrationTask = (event?.dataValues || []).some(
     (d) => d?.value === "EQUIPMENT_REGISTRATION"
   );
-  const dataValuesObj = useMemo$i(() => {
+  const dataValuesObj = useMemo$k(() => {
     const map = {};
     (event?.dataValues || []).forEach((dv) => {
       map[dv.dataElement] = dv.value;
     });
     return map;
   }, [event?.dataValues]);
-  const maintenanceTriggerAt = useMemo$i(() => {
+  const maintenanceTriggerAt = useMemo$k(() => {
     return dataValuesObj["EbJI5Loxjbl"] || null;
   }, [dataValuesObj]);
   const trainingValidation = useTrainingApprovalValidation(
@@ -148087,11 +148524,11 @@ function EventPage() {
     formData: dataValuesObj
   });
   const assignedApproverValue = approvingOfficerFieldId ? dataValuesObj[approvingOfficerFieldId] : null;
-  const normalizedApproverTokens = useMemo$i(() => {
+  const normalizedApproverTokens = useMemo$k(() => {
     if (!assignedApproverValue) return [];
     return assignedApproverValue.split(/[,/|]+/).map((token) => token.trim().toLowerCase()).filter(Boolean);
   }, [assignedApproverValue]);
-  const isAssignedApprover = useMemo$i(() => {
+  const isAssignedApprover = useMemo$k(() => {
     if (!normalizedApproverTokens.length) return true;
     if (!user) return false;
     const candidateTokens = /* @__PURE__ */ new Set();
@@ -148108,18 +148545,18 @@ function EventPage() {
     });
     return normalizedApproverTokens.some((token) => candidateTokens.has(token));
   }, [normalizedApproverTokens, user]);
-  const approvalConfigList = useMemo$i(() => {
+  const approvalConfigList = useMemo$k(() => {
     if (!userApprovalConfig) return [];
     return Array.isArray(userApprovalConfig) ? userApprovalConfig : [userApprovalConfig];
   }, [userApprovalConfig]);
-  const sectionApprovalConfigById = useMemo$i(() => {
+  const sectionApprovalConfigById = useMemo$k(() => {
     const map = {};
     approvalConfigList.forEach((config) => {
       if (config?.sectionId) map[config.sectionId] = config;
     });
     return map;
   }, [approvalConfigList]);
-  const userHasApprovalRole = useMemo$i(() => {
+  const userHasApprovalRole = useMemo$k(() => {
     if (!approvalConfigList.length || !user?.userRoles) return false;
     return approvalConfigList.some(
       (config) => (config?.userRoles || []).some(
@@ -148127,7 +148564,7 @@ function EventPage() {
       )
     );
   }, [approvalConfigList, user]);
-  useEffect$w(() => {
+  useEffect$z(() => {
     const rs = async () => {
       const gg = await hideApprovalButtonBasedOnTransferType(event, user);
       setShowApprovalButtonBasedOnTransferType(gg);
@@ -148690,8 +149127,8 @@ function EventPage() {
   ] });
 }
 
-const React$w = await importShared('react');
-const {useEffect: useEffect$v,useState: useState$y} = React$w;
+const React$z = await importShared('react');
+const {useEffect: useEffect$y,useState: useState$A} = React$z;
 function AccessDenied503({
   title = "Service Unavailable",
   message = "You do not have permissions to access this program.",
@@ -148699,8 +149136,8 @@ function AccessDenied503({
   actionText = "Go to Dashboard"
 }) {
   const navigate = useNavigate();
-  const [loading, setLoading] = useState$y(true);
-  useEffect$v(() => {
+  const [loading, setLoading] = useState$A(true);
+  useEffect$y(() => {
     const timer = setTimeout(() => {
       setLoading(false);
     }, 1e4);
@@ -148751,8 +149188,8 @@ function AccessDenied503({
   ) }) });
 }
 
-const React$v = await importShared('react');
-const {useEffect: useEffect$u} = React$v;
+const React$y = await importShared('react');
+const {useEffect: useEffect$x} = React$y;
 const NotFoundHandler = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     AccessDenied503,
@@ -148765,34 +149202,34 @@ const NotFoundHandler = () => {
   );
 };
 
+const React$x = await importShared('react');
+const {useState: useState$z} = React$x;
+
+const React$w = await importShared('react');
+const {useContext: useContext$k,useState: useState$y} = React$w;
+
+const React$v = await importShared('react');
+const {useEffect: useEffect$w,useMemo: useMemo$j,useState: useState$x} = React$v;
+
 const React$u = await importShared('react');
-const {useState: useState$x} = React$u;
+const {useContext: useContext$j,useState: useState$w,useEffect: useEffect$v,useMemo: useMemo$i} = React$u;
 
 const React$t = await importShared('react');
-const {useContext: useContext$i,useState: useState$w} = React$t;
+const {useState: useState$v,useEffect: useEffect$u,useMemo: useMemo$h} = React$t;
 
 const React$s = await importShared('react');
-const {useEffect: useEffect$t,useMemo: useMemo$h,useState: useState$v} = React$s;
-
-const React$r = await importShared('react');
-const {useContext: useContext$h,useState: useState$u,useEffect: useEffect$s,useMemo: useMemo$g} = React$r;
-
-const React$q = await importShared('react');
-const {useState: useState$t,useEffect: useEffect$r,useMemo: useMemo$f} = React$q;
-
-const React$p = await importShared('react');
-const {useEffect: useEffect$q,useMemo: useMemo$e,useState: useState$s} = React$p;
+const {useEffect: useEffect$t,useMemo: useMemo$g,useState: useState$u} = React$s;
 const ViewProgramSectionsAccess = ({ onEdit }) => {
-  const [confirmOpen, setConfirmOpen] = useState$s(false);
-  const [rowToDelete, setRowToDelete] = useState$s(null);
-  const [deleting, setDeleting] = useState$s(false);
-  const [sharingSettings, setSharingSettings] = useState$s([]);
-  const [rawData, seRawData] = useState$s(null);
-  const [loading, setLoading] = useState$s(true);
-  const [isMobile, setIsMobile] = useState$s(
+  const [confirmOpen, setConfirmOpen] = useState$u(false);
+  const [rowToDelete, setRowToDelete] = useState$u(null);
+  const [deleting, setDeleting] = useState$u(false);
+  const [sharingSettings, setSharingSettings] = useState$u([]);
+  const [rawData, seRawData] = useState$u(null);
+  const [loading, setLoading] = useState$u(true);
+  const [isMobile, setIsMobile] = useState$u(
     () => typeof window !== "undefined" ? window.matchMedia("(max-width: 576px)").matches : false
   );
-  useEffect$q(() => {
+  useEffect$t(() => {
     const mq = window.matchMedia("(max-width: 576px)");
     const handler = (e) => setIsMobile(e.matches);
     setIsMobile(mq.matches);
@@ -148801,7 +149238,7 @@ const ViewProgramSectionsAccess = ({ onEdit }) => {
       mq.removeEventListener?.("change", handler);
     };
   }, []);
-  const columns = useMemo$e(
+  const columns = useMemo$g(
     () => [
       { key: "program", label: "Program" },
       { key: "section", label: "Section" },
@@ -148813,7 +149250,7 @@ const ViewProgramSectionsAccess = ({ onEdit }) => {
   const getSharingSettings = async () => {
     setLoading(true);
     try {
-      let result = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+      let result = await LocalForageService.getItem("dataStore", "dataStore");
       result = result?.sharingSettings || null;
       seRawData(result);
       const rows = result?.programs?.flatMap(
@@ -148857,11 +149294,11 @@ const ViewProgramSectionsAccess = ({ onEdit }) => {
     try {
       setDeleting(true);
       const updatedData = buildUpdatedData(rawData, selectedRow);
-      const dd = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+      const dd = await LocalForageService.getItem("dataStore", "dataStore");
       dd.sharingSettings = updatedData;
       await dataStore.mutate("dataStore/memis/sharingSettings", "PUT", updatedData);
       showToast("Deleted", "success");
-      await LocalForageServiceInstance.setItem("dataStore", dd, "dataStore");
+      await LocalForageService.setItem("dataStore", dd, "dataStore");
       await getSharingSettings();
     } catch (err) {
       console.log(err);
@@ -148872,7 +149309,7 @@ const ViewProgramSectionsAccess = ({ onEdit }) => {
       setRowToDelete(null);
     }
   };
-  useEffect$q(() => {
+  useEffect$t(() => {
     getSharingSettings();
   }, []);
   const openDeleteConfirm = (idx) => {
@@ -149049,15 +149486,15 @@ const ViewProgramSectionsAccess = ({ onEdit }) => {
   ] }) });
 };
 
-const React$o = await importShared('react');
-const {useContext: useContext$g,useEffect: useEffect$p,useState: useState$r} = React$o;
+const React$r = await importShared('react');
+const {useContext: useContext$i,useEffect: useEffect$s,useState: useState$t} = React$r;
 function SectionAccessUserRoles() {
-  const { programs } = useContext$g(MEMISContext.ProgramContext);
-  const { userRoles } = useContext$g(MEMISContext.UserRolesContext);
-  const [sections, setSections] = useState$r([]);
-  const [formActive, setFormActive] = useState$r(false);
-  const [isLoading, setIsLoading] = useState$r(false);
-  const [query, setQuery] = useState$r("");
+  const { programs } = useContext$i(MEMISContext.ProgramContext);
+  const { userRoles } = useContext$i(MEMISContext.UserRolesContext);
+  const [sections, setSections] = useState$t([]);
+  const [formActive, setFormActive] = useState$t(false);
+  const [isLoading, setIsLoading] = useState$t(false);
+  const [query, setQuery] = useState$t("");
   const location = useLocation();
   const navigate = useNavigate();
   const accessRights = [
@@ -149066,10 +149503,10 @@ function SectionAccessUserRoles() {
     { id: "update", name: "Update" },
     { id: "delete", name: "Delete" }
   ];
-  const [programId, setProgramId] = useState$r("");
-  const [sectionId, setSectionId] = useState$r("");
-  const [userRole, setUserRole] = useState$r("");
-  const [selectedRights, setSelectedRights] = useState$r([]);
+  const [programId, setProgramId] = useState$t("");
+  const [sectionId, setSectionId] = useState$t("");
+  const [userRole, setUserRole] = useState$t("");
+  const [selectedRights, setSelectedRights] = useState$t([]);
   const sectionsData = (programIdToUse, preselectSectionId = null) => {
     if (!programIdToUse) return;
     const program = programs?.find((p) => p.id === programIdToUse);
@@ -149100,7 +149537,7 @@ function SectionAccessUserRoles() {
       return;
     }
     try {
-      const dd = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+      const dd = await LocalForageService.getItem("dataStore", "dataStore");
       const availableSharingSettings = dd?.sharingSettings || { programs: [] };
       const programById = availableSharingSettings?.programs?.find((p) => p.id === programId);
       let isUpdate = false;
@@ -149151,7 +149588,7 @@ function SectionAccessUserRoles() {
         });
       }
       dd.sharingSettings = availableSharingSettings;
-      await LocalForageServiceInstance.setItem("dataStore", dd, "dataStore");
+      await LocalForageService.setItem("dataStore", dd, "dataStore");
       try {
         const res = await dataStore.mutate(
           "dataStore/memis/sharingSettings",
@@ -149178,7 +149615,7 @@ function SectionAccessUserRoles() {
       setIsLoading(false);
     }
   };
-  useEffect$p(() => {
+  useEffect$s(() => {
     if (programId) sectionsData(programId);
   }, [programs, programId]);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(IonPage, { className: "section-access-user-roles", children: [
@@ -149323,8 +149760,8 @@ function SectionAccessUserRoles() {
   ] });
 }
 
-const React$n = await importShared('react');
-const {useContext: useContext$f,useState: useState$q,useEffect: useEffect$o,useMemo: useMemo$d} = React$n;
+const React$q = await importShared('react');
+const {useContext: useContext$h,useState: useState$s,useEffect: useEffect$r,useMemo: useMemo$f} = React$q;
 
 const {createPortal: createPortal$1} = await importShared('react-dom');
 const DS_KEY = "enrollmentAccessSettings";
@@ -149332,35 +149769,35 @@ const DS_PATH = `dataStore/memis/${DS_KEY}`;
 const TEXT_MD = { color: "#000", fontSize: 15, lineHeight: 1.35 };
 const HEAD_MD = { color: "#000", fontSize: 17, lineHeight: 1.3, margin: 0 };
 function InlineEditor({ open, onClose, onSave, programs, roles, initial, usedProgramIds }) {
-  const [programId, setProgramId] = useState$q(initial?.programId || "");
-  const [roleIds, setRoleIds] = useState$q(initial?.roleIds || []);
-  const [query, setQuery] = useState$q("");
-  const [isMobile, setIsMobile] = useState$q(() => window.innerWidth <= 576);
-  useEffect$o(() => {
+  const [programId, setProgramId] = useState$s(initial?.programId || "");
+  const [roleIds, setRoleIds] = useState$s(initial?.roleIds || []);
+  const [query, setQuery] = useState$s("");
+  const [isMobile, setIsMobile] = useState$s(() => window.innerWidth <= 576);
+  useEffect$r(() => {
     const onResize = () => setIsMobile(window.innerWidth <= 576);
     window.addEventListener("resize", onResize);
     return () => window.removeEventListener("resize", onResize);
   }, []);
-  useEffect$o(() => {
+  useEffect$r(() => {
     setProgramId(initial?.programId || "");
     setRoleIds(initial?.roleIds || []);
     setQuery("");
   }, [initial, open]);
   const isEdit = !!initial;
-  const eligiblePrograms = useMemo$d(() => {
+  const eligiblePrograms = useMemo$f(() => {
     if (isEdit) return programs;
     return programs.filter((p) => !usedProgramIds?.has(p.id));
   }, [programs, usedProgramIds, isEdit]);
   const noChange = isEdit && initial.programId === programId && JSON.stringify([...roleIds].sort()) === JSON.stringify([...initial.roleIds || []].sort());
-  const sortedPrograms = useMemo$d(
+  const sortedPrograms = useMemo$f(
     () => eligiblePrograms.slice().sort((a, b) => (a?.name || "").localeCompare(b?.name || "")),
     [eligiblePrograms]
   );
-  const sortedRoles = useMemo$d(
+  const sortedRoles = useMemo$f(
     () => roles.slice().sort((a, b) => (a?.name || "").localeCompare(b?.name || "")),
     [roles]
   );
-  const filteredRoles = useMemo$d(() => {
+  const filteredRoles = useMemo$f(() => {
     const q = query.trim().toLowerCase();
     if (!q) return sortedRoles;
     return sortedRoles.filter((r) => (r.name || r.displayName || "").toLowerCase().includes(q));
@@ -149561,26 +149998,26 @@ function InlineEditor({ open, onClose, onSave, programs, roles, initial, usedPro
   );
 }
 function EnrollmentAccessSettings() {
-  const [rows, setRows] = useState$q([]);
-  const [loading, setLoading] = useState$q(true);
-  const [confirmIdx, setConfirmIdx] = useState$q(null);
-  const [editorOpen, setEditorOpen] = useState$q(false);
-  const [editRow, setEditRow] = useState$q(null);
-  const programsCtx = useContext$f(MEMISContext.ProgramContext);
-  const rolesCtx = useContext$f(MEMISContext.UserRolesContext);
+  const [rows, setRows] = useState$s([]);
+  const [loading, setLoading] = useState$s(true);
+  const [confirmIdx, setConfirmIdx] = useState$s(null);
+  const [editorOpen, setEditorOpen] = useState$s(false);
+  const [editRow, setEditRow] = useState$s(null);
+  const programsCtx = useContext$h(MEMISContext.ProgramContext);
+  const rolesCtx = useContext$h(MEMISContext.UserRolesContext);
   const programsReady = !!programsCtx?.programs?.length;
   const rolesReady = !!rolesCtx?.userRoles?.length;
-  const [isMobile, setIsMobile] = useState$q(() => window.innerWidth <= 576);
-  useEffect$o(() => {
+  const [isMobile, setIsMobile] = useState$s(() => window.innerWidth <= 576);
+  useEffect$r(() => {
     const onResize = () => setIsMobile(window.innerWidth <= 576);
     window.addEventListener("resize", onResize);
     return () => window.removeEventListener("resize", onResize);
   }, []);
-  const allPrograms = useMemo$d(
+  const allPrograms = useMemo$f(
     () => (programsCtx?.programs || []).slice().sort((a, b) => (a?.name || "").localeCompare(b?.name || "")),
     [programsCtx?.programs]
   );
-  const allRoles = useMemo$d(
+  const allRoles = useMemo$f(
     () => (rolesCtx?.userRoles || []).slice().sort((a, b) => (a?.name || "").localeCompare(b?.name || "")),
     [rolesCtx?.userRoles]
   );
@@ -149610,7 +150047,7 @@ function EnrollmentAccessSettings() {
       return null;
     }
   };
-  useEffect$o(() => {
+  useEffect$r(() => {
     const load = async () => {
       if (!programsReady || !rolesReady) return;
       const cached = readCache();
@@ -149639,8 +150076,8 @@ function EnrollmentAccessSettings() {
     load();
   }, [programsReady, rolesReady]);
   const broadcastChange = (next) => window.dispatchEvent(new CustomEvent("memis:enrollmentAccessChanged", { detail: next }));
-  const usedProgramIds = useMemo$d(() => new Set(rows.map((r) => r.programId)), [rows]);
-  const remainingProgramsCount = useMemo$d(
+  const usedProgramIds = useMemo$f(() => new Set(rows.map((r) => r.programId)), [rows]);
+  const remainingProgramsCount = useMemo$f(
     () => allPrograms.filter((p) => !usedProgramIds.has(p.id)).length,
     [allPrograms, usedProgramIds]
   );
@@ -149726,7 +150163,7 @@ function EnrollmentAccessSettings() {
       setConfirmIdx(null);
     }
   };
-  useMemo$d(
+  useMemo$f(
     () => [
       { key: "program", label: "Program" },
       { key: "roles", label: "Allowed Roles" }
@@ -149884,30 +150321,30 @@ const Geolocation = registerPlugin('Geolocation', {
 });
 f$4();
 
-const React$m = await importShared('react');
-const {useContext: useContext$e,useEffect: useEffect$n,useMemo: useMemo$c,useState: useState$p} = React$m;
+const React$p = await importShared('react');
+const {useContext: useContext$g,useEffect: useEffect$q,useMemo: useMemo$e,useState: useState$r} = React$p;
 const PAGE_SIZE$3 = 50;
 const MOBILE_BREAKPOINT$3 = 768;
 const WardsSettings = () => {
   const userRoleCanAdd = "vGr0Exf3SRX";
-  const { fetchOrgUnits } = useContext$e(MEMISContext.UserContext);
-  const { refreshUser } = useContext$e(MEMISContext.UserRolesContext);
-  const [wards, setWards] = useState$p([]);
-  const [memisFacilities, setMemisFacilities] = useState$p([]);
-  const [availableFacilities, setAvailableFacilities] = useState$p([]);
-  const [memisGroupId, setMemisGroupId] = useState$p(null);
-  const [parentFacilities, setParentFacilities] = useState$p([]);
-  const [hasAdminRole, setHasAdminRole] = useState$p(false);
-  const [isLoading, setIsLoading] = useState$p(false);
-  const [openModal, setOpenModal] = useState$p(false);
-  const [openFacilityModal, setOpenFacilityModal] = useState$p(false);
-  const [search, setSearch] = useState$p("");
-  const [page, setPage] = useState$p(1);
-  const [locating, setLocating] = useState$p(false);
-  const [isMobile, setIsMobile] = useState$p(
+  const { fetchOrgUnits } = useContext$g(MEMISContext.UserContext);
+  const { refreshUser } = useContext$g(MEMISContext.UserRolesContext);
+  const [wards, setWards] = useState$r([]);
+  const [memisFacilities, setMemisFacilities] = useState$r([]);
+  const [availableFacilities, setAvailableFacilities] = useState$r([]);
+  const [memisGroupId, setMemisGroupId] = useState$r(null);
+  const [parentFacilities, setParentFacilities] = useState$r([]);
+  const [hasAdminRole, setHasAdminRole] = useState$r(false);
+  const [isLoading, setIsLoading] = useState$r(false);
+  const [openModal, setOpenModal] = useState$r(false);
+  const [openFacilityModal, setOpenFacilityModal] = useState$r(false);
+  const [search, setSearch] = useState$r("");
+  const [page, setPage] = useState$r(1);
+  const [locating, setLocating] = useState$r(false);
+  const [isMobile, setIsMobile] = useState$r(
     window.innerWidth < MOBILE_BREAKPOINT$3
   );
-  const [form, setForm] = useState$p({
+  const [form, setForm] = useState$r({
     name: "",
     code: "",
     shortName: "",
@@ -149916,38 +150353,38 @@ const WardsSettings = () => {
     latitude: "",
     longitude: ""
   });
-  const [saving, setSaving] = useState$p(false);
-  const [toast, setToast] = useState$p({
+  const [saving, setSaving] = useState$r(false);
+  const [toast, setToast] = useState$r({
     open: false,
     message: "",
     color: "success"
   });
-  const [selectedUser, setSelectedUser] = useState$p(null);
-  const [selectedWard, setSelectedWard] = useState$p(null);
-  const [selectedFacility, setSelectedFacility] = useState$p(null);
-  const [errors, setErrors] = useState$p({});
-  const [submitted, setSubmitted] = useState$p(false);
-  const [viewMode, setViewMode] = useState$p("user");
+  const [selectedUser, setSelectedUser] = useState$r(null);
+  const [selectedWard, setSelectedWard] = useState$r(null);
+  const [selectedFacility, setSelectedFacility] = useState$r(null);
+  const [errors, setErrors] = useState$r({});
+  const [submitted, setSubmitted] = useState$r(false);
+  const [viewMode, setViewMode] = useState$r("user");
   const navigate = useNavigate();
-  const [users, setUsers] = useState$p([]);
-  const [wardUsers, setWardUsers] = useState$p([]);
-  const [usersToRemove, setUsersToRemove] = useState$p([]);
-  const [confirmDelete, setConfirmDelete] = useState$p({
+  const [users, setUsers] = useState$r([]);
+  const [wardUsers, setWardUsers] = useState$r([]);
+  const [usersToRemove, setUsersToRemove] = useState$r([]);
+  const [confirmDelete, setConfirmDelete] = useState$r({
     open: false,
     facility: null
   });
   const getOrganisationUnits = async () => {
     try {
       setIsLoading(true);
-      const res = await LocalForageServiceInstance.getItem(
+      const res = await LocalForageService.getItem(
         "orgUnitGroups",
         "orgUnitGroups"
       );
-      const oUnits = await LocalForageServiceInstance.getItem(
+      const oUnits = await LocalForageService.getItem(
         "organisationUnits",
         "organisationUnits"
       );
-      const userData = await LocalForageServiceInstance.getItem(
+      const userData = await LocalForageService.getItem(
         "userRes",
         "user"
       );
@@ -149991,34 +150428,34 @@ const WardsSettings = () => {
       console.log({ error });
     }
   };
-  useEffect$n(() => {
+  useEffect$q(() => {
     getOrganisationUnits();
   }, []);
-  useEffect$n(() => {
+  useEffect$q(() => {
     if (selectedFacility) {
       getUsers();
     }
   }, [selectedFacility]);
-  useEffect$n(() => {
+  useEffect$q(() => {
     const resize = () => {
       setIsMobile(window.innerWidth < MOBILE_BREAKPOINT$3);
     };
     window.addEventListener("resize", resize);
     return () => window.removeEventListener("resize", resize);
   }, []);
-  const filteredWards = useMemo$c(() => {
+  const filteredWards = useMemo$e(() => {
     return wards.filter((item) => {
       const value = search.toLowerCase();
       return item?.name?.toLowerCase().includes(value) || item?.parent?.name?.toLowerCase().includes(value) || item?.code?.toLowerCase().includes(value) || String(item?.level || "").toLowerCase().includes(value);
     });
   }, [wards, search]);
   const totalPages = Math.ceil(filteredWards.length / PAGE_SIZE$3);
-  useMemo$c(() => {
+  useMemo$e(() => {
     const start = (page - 1) * PAGE_SIZE$3;
     const end = start + PAGE_SIZE$3;
     return filteredWards.slice(start, end);
   }, [filteredWards, page]);
-  useEffect$n(() => {
+  useEffect$q(() => {
     setPage(1);
   }, [search]);
   const nextPage = () => {
@@ -150224,7 +150661,7 @@ const WardsSettings = () => {
   const addFacilityToMemis = async (facility) => {
     try {
       const facilityId = facility.id;
-      const programStore = await LocalForageServiceInstance.getItem(
+      const programStore = await LocalForageService.getItem(
         "programs",
         "programs"
       );
@@ -150279,7 +150716,7 @@ const WardsSettings = () => {
     const facility = confirmDelete.facility;
     if (!facility) return;
     try {
-      const programStore = await LocalForageServiceInstance.getItem(
+      const programStore = await LocalForageService.getItem(
         "programs",
         "programs"
       );
@@ -150348,14 +150785,14 @@ const WardsSettings = () => {
       setWardUsers([]);
     }
   };
-  useEffect$n(() => {
+  useEffect$q(() => {
     if (selectedWard) {
       getWardUsers(selectedWard);
     }
   }, [selectedWard]);
-  useEffect$n(() => {
+  useEffect$q(() => {
     const load = async () => {
-      const res = await LocalForageServiceInstance.getItem("userRes", "user");
+      const res = await LocalForageService.getItem("userRes", "user");
       const hasRole = res?.userRoles?.some(
         (role) => role?.id === userRoleCanAdd
       );
@@ -151121,8 +151558,8 @@ const cardRow = {
   fontSize: "14px"
 };
 
-const React$l = await importShared('react');
-const {useEffect: useEffect$m,useMemo: useMemo$b,useState: useState$o} = React$l;
+const React$o = await importShared('react');
+const {useEffect: useEffect$p,useMemo: useMemo$d,useState: useState$q} = React$o;
 const MOBILE_BREAKPOINT$2 = 992;
 const PAGE_SIZE$2 = 50;
 const MetadataSettings = () => {
@@ -151138,25 +151575,25 @@ const MetadataSettings = () => {
       position: "top"
     });
   };
-  const [optionSets, setOptionSets] = useState$o([]);
-  const [selectedSetId, setSelectedSetId] = useState$o(null);
-  const [searchOptionSet, setSearchOptionSet] = useState$o("");
-  const [searchOptions, setSearchOptions] = useState$o("");
-  const [isLoading, setIsLoading] = useState$o(false);
-  const [isSubmitting, setIsSubmitting] = useState$o(false);
-  const [loadingMessage, setLoadingMessage] = useState$o("");
-  const [page, setPage] = useState$o(1);
-  const [isMobile, setIsMobile] = useState$o(
+  const [optionSets, setOptionSets] = useState$q([]);
+  const [selectedSetId, setSelectedSetId] = useState$q(null);
+  const [searchOptionSet, setSearchOptionSet] = useState$q("");
+  const [searchOptions, setSearchOptions] = useState$q("");
+  const [isLoading, setIsLoading] = useState$q(false);
+  const [isSubmitting, setIsSubmitting] = useState$q(false);
+  const [loadingMessage, setLoadingMessage] = useState$q("");
+  const [page, setPage] = useState$q(1);
+  const [isMobile, setIsMobile] = useState$q(
     window.innerWidth < MOBILE_BREAKPOINT$2
   );
-  const [showAddModal, setShowAddModal] = useState$o(false);
-  const [showBulkModal, setShowBulkModal] = useState$o(false);
-  const [newOption, setNewOption] = useState$o({
+  const [showAddModal, setShowAddModal] = useState$q(false);
+  const [showBulkModal, setShowBulkModal] = useState$q(false);
+  const [newOption, setNewOption] = useState$q({
     name: "",
     code: ""
   });
-  const [bulkText, setBulkText] = useState$o("");
-  useEffect$m(() => {
+  const [bulkText, setBulkText] = useState$q("");
+  useEffect$p(() => {
     const resize = () => {
       setIsMobile(window.innerWidth < MOBILE_BREAKPOINT$2);
     };
@@ -151168,8 +151605,8 @@ const MetadataSettings = () => {
   const loadMetadata = async () => {
     try {
       setIsLoading(true);
-      const result = await LocalForageServiceInstance.getItem("optionSets", "metadata");
-      const dataStore2 = await LocalForageServiceInstance.getItem(
+      const result = await LocalForageService.getItem("optionSets", "metadata");
+      const dataStore2 = await LocalForageService.getItem(
         "dataStore",
         "dataStore"
       );
@@ -151199,28 +151636,28 @@ const MetadataSettings = () => {
       setIsLoading(false);
     }
   };
-  useEffect$m(() => {
+  useEffect$p(() => {
     loadMetadata();
   }, []);
   const persistOptionSets = async (data) => {
     try {
-      await LocalForageServiceInstance.setItem("optionSets", data, "metadata");
+      await LocalForageService.setItem("optionSets", data, "metadata");
     } catch (error) {
       console.log("Error saving metadata:", error);
       showToast("Failed to save metadata", "danger");
     }
   };
-  const optionSetMap = useMemo$b(() => {
+  const optionSetMap = useMemo$d(() => {
     return Object.fromEntries(optionSets.map((x) => [x.id, x]));
   }, [optionSets]);
   const selectedOptionSet = optionSetMap[selectedSetId];
-  const filteredOptionSets = useMemo$b(() => {
+  const filteredOptionSets = useMemo$d(() => {
     const value = searchOptionSet.toLowerCase();
     return optionSets.filter((item) => {
       return item?.name?.toLowerCase()?.includes(value) || item?.code?.toLowerCase()?.includes(value);
     });
   }, [optionSets, searchOptionSet]);
-  const filteredOptions = useMemo$b(() => {
+  const filteredOptions = useMemo$d(() => {
     if (!selectedOptionSet?.options) return [];
     const value = searchOptions.toLowerCase();
     return selectedOptionSet.options.filter((item) => {
@@ -151228,15 +151665,15 @@ const MetadataSettings = () => {
     });
   }, [selectedOptionSet, searchOptions]);
   const totalPages = Math.ceil(filteredOptions.length / PAGE_SIZE$2);
-  const paginatedOptions = useMemo$b(() => {
+  const paginatedOptions = useMemo$d(() => {
     const start = (page - 1) * PAGE_SIZE$2;
     const end = start + PAGE_SIZE$2;
     return filteredOptions.slice(start, end);
   }, [filteredOptions, page]);
-  useEffect$m(() => {
+  useEffect$p(() => {
     setPage(1);
   }, [searchOptions, selectedSetId]);
-  const totalOptions = useMemo$b(() => {
+  const totalOptions = useMemo$d(() => {
     return optionSets.reduce(
       (acc, curr) => acc + (curr?.options?.length || 0),
       0
@@ -152015,24 +152452,24 @@ const DatasetGeneralForm = ({
   );
 };
 
-const React$k = await importShared('react');
-const {useState: useState$n,useEffect: useEffect$l,useMemo: useMemo$a} = React$k;
+const React$n = await importShared('react');
+const {useState: useState$p,useEffect: useEffect$o,useMemo: useMemo$c} = React$n;
 const StockThresholdSettings = () => {
-  const [loading, setLoading] = useState$n(true);
-  const [dataSets, setDataSets] = useState$n([]);
-  const [selectedDataSet, setSelectedDataSet] = useState$n("");
-  const [selectedFacility, setSelectedFacility] = useState$n("");
-  const [selectedPeriod, setSelectedPeriod] = useState$n("");
-  const [formData, setFormData] = useState$n({});
-  const [userFacility, setUserFacility] = useState$n([]);
-  const selectedDatasetObject = useMemo$a(() => {
+  const [loading, setLoading] = useState$p(true);
+  const [dataSets, setDataSets] = useState$p([]);
+  const [selectedDataSet, setSelectedDataSet] = useState$p("");
+  const [selectedFacility, setSelectedFacility] = useState$p("");
+  const [selectedPeriod, setSelectedPeriod] = useState$p("");
+  const [formData, setFormData] = useState$p({});
+  const [userFacility, setUserFacility] = useState$p([]);
+  const selectedDatasetObject = useMemo$c(() => {
     return dataSets.find((dts) => dts?.id === selectedDataSet);
   }, [selectedDataSet, dataSets]);
   const loadData = async () => {
     setLoading(true);
     try {
-      const data = await LocalForageServiceInstance.getItem("dataSets", "dataSets");
-      const user = await LocalForageServiceInstance.getItem("userRes", "user");
+      const data = await LocalForageService.getItem("dataSets", "dataSets");
+      const user = await LocalForageService.getItem("userRes", "user");
       setUserFacility(user?.organisationUnits || []);
       setDataSets(data || []);
     } catch (e) {
@@ -152042,7 +152479,7 @@ const StockThresholdSettings = () => {
       setLoading(false);
     }
   };
-  useEffect$l(() => {
+  useEffect$o(() => {
     loadData();
   }, []);
   const handleChange = (id, value) => {
@@ -152199,8 +152636,8 @@ const StockThresholdSettings = () => {
   ] });
 };
 
-const React$j = await importShared('react');
-const {useEffect: useEffect$k,useMemo: useMemo$9,useState: useState$m} = React$j;
+const React$m = await importShared('react');
+const {useEffect: useEffect$n,useMemo: useMemo$b,useState: useState$o} = React$m;
 const MOBILE_BREAKPOINT$1 = 992;
 const PAGE_SIZE$1 = 20;
 const TRANSFER_OUTSIDE_FACILITY_ID = "JatHbI81626";
@@ -152208,18 +152645,18 @@ const UsersSettings = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const queryParams = new URLSearchParams(location.search);
-  const [users, setUsers] = useState$m([]);
-  const [userRoles, setUserRoles] = useState$m([]);
-  const [selectedRoleId, setSelectedRoleId] = useState$m(null);
-  const [processingUserId, setProcessingUserId] = useState$m(null);
-  const [searchRole, setSearchRole] = useState$m("");
-  const [searchUser, setSearchUser] = useState$m("");
-  const [isLoading, setIsLoading] = useState$m(false);
-  const [page, setPage] = useState$m(1);
-  const [isMobile, setIsMobile] = useState$m(
+  const [users, setUsers] = useState$o([]);
+  const [userRoles, setUserRoles] = useState$o([]);
+  const [selectedRoleId, setSelectedRoleId] = useState$o(null);
+  const [processingUserId, setProcessingUserId] = useState$o(null);
+  const [searchRole, setSearchRole] = useState$o("");
+  const [searchUser, setSearchUser] = useState$o("");
+  const [isLoading, setIsLoading] = useState$o(false);
+  const [page, setPage] = useState$o(1);
+  const [isMobile, setIsMobile] = useState$o(
     window.innerWidth < MOBILE_BREAKPOINT$1
   );
-  useEffect$k(() => {
+  useEffect$n(() => {
     const resize = () => setIsMobile(window.innerWidth < MOBILE_BREAKPOINT$1);
     window.addEventListener("resize", resize);
     return () => window.removeEventListener("resize", resize);
@@ -152227,7 +152664,7 @@ const UsersSettings = () => {
   const loadUsers = async () => {
     try {
       setIsLoading(true);
-      const roles = await LocalForageServiceInstance.getItem("userRoles", "userRoles");
+      const roles = await LocalForageService.getItem("userRoles", "userRoles");
       const res = await dataStore.get(
         "users?fields=*&paging=false"
       );
@@ -152242,7 +152679,7 @@ const UsersSettings = () => {
       setIsLoading(false);
     }
   };
-  useEffect$k(() => {
+  useEffect$n(() => {
     loadUsers();
   }, [location]);
   const canManageTransferOutside = (user) => {
@@ -152250,29 +152687,29 @@ const UsersSettings = () => {
       (org) => org.id === TRANSFER_OUTSIDE_FACILITY_ID
     );
   };
-  const filteredRoles = useMemo$9(() => {
+  const filteredRoles = useMemo$b(() => {
     const value = searchRole.toLowerCase();
     return userRoles.filter(
       (role) => role?.name?.toLowerCase()?.includes(value) || role?.code?.toLowerCase()?.includes(value)
     );
   }, [userRoles, searchRole]);
-  const selectedUsers = useMemo$9(() => {
+  const selectedUsers = useMemo$b(() => {
     return users.filter(
       (user) => user?.userRoles?.some((role) => role?.id === selectedRoleId)
     );
   }, [users, selectedRoleId]);
-  const filteredUsers = useMemo$9(() => {
+  const filteredUsers = useMemo$b(() => {
     const value = searchUser.toLowerCase();
     return selectedUsers.filter(
       (user) => user?.name?.toLowerCase()?.includes(value) || user?.username?.toLowerCase()?.includes(value)
     );
   }, [selectedUsers, searchUser]);
   const totalPages = Math.ceil(filteredUsers.length / PAGE_SIZE$1);
-  const paginatedUsers = useMemo$9(() => {
+  const paginatedUsers = useMemo$b(() => {
     const start = (page - 1) * PAGE_SIZE$1;
     return filteredUsers.slice(start, start + PAGE_SIZE$1);
   }, [filteredUsers, page]);
-  useEffect$k(() => {
+  useEffect$n(() => {
     setPage(1);
   }, [searchUser, selectedRoleId]);
   const handleManageTransferOutside = async (user) => {
@@ -152564,12 +153001,12 @@ const loaderStyle = {
   height: "100%"
 };
 
-const React$i = await importShared('react');
-const {useEffect: useEffect$j,useState: useState$l} = React$i;
+const React$l = await importShared('react');
+const {useEffect: useEffect$m,useState: useState$n} = React$l;
 function Settings() {
   const navigate = useNavigate();
-  const [hasAccess, setHasAccess] = useState$l(null);
-  useEffect$j(() => {
+  const [hasAccess, setHasAccess] = useState$n(null);
+  useEffect$m(() => {
     const loadAccess = async () => {
       try {
         const res = await canAccessSettings();
@@ -152627,13 +153064,13 @@ function Settings() {
   ] });
 }
 
-const React$h = await importShared('react');
-const {useContext: useContext$d,useMemo: useMemo$8} = React$h;
+const React$k = await importShared('react');
+const {useContext: useContext$f,useMemo: useMemo$a} = React$k;
 function ProgramAccessGuard({ children, programId }) {
   const { program } = useParams();
-  const permissions = useContext$d(MEMISContext.PermissionContext);
+  const permissions = useContext$f(MEMISContext.PermissionContext);
   const isPermissionsReady = !!permissions && typeof permissions.hasProgramRight === "function";
-  const hasRead = useMemo$8(() => {
+  const hasRead = useMemo$a(() => {
     const pid = programId || program;
     if (!pid) return true;
     const roleRead = permissions?.hasProgramRight?.(pid, "read");
@@ -152657,8 +153094,8 @@ function ProgramAccessGuard({ children, programId }) {
   return children;
 }
 
-const React$g = await importShared('react');
-const {useContext: useContext$c,useEffect: useEffect$i,useState: useState$k} = React$g;
+const React$j = await importShared('react');
+const {useContext: useContext$e,useEffect: useEffect$l,useState: useState$m} = React$j;
 const ON_BEHALF_CHECKBOX_ID = "FZ6Ok8cxUAK";
 const ON_BEHALF_FIELDS = ["nqyZpADgXvK", "l9p0GYnmzpm"];
 const A$3 = (x) => Array.isArray(x) ? x : [];
@@ -152671,21 +153108,21 @@ function UpdateCollectionStatus({
   buttonPositiveName = "Save"
 }) {
   const { program, tei, stage, evnt } = useParams();
-  const [fields, setFields] = useState$k([]);
-  const [formData, setFormData] = useState$k({});
-  const [loading, setLoading] = useState$k(true);
-  const [saving, setSaving] = useState$k(false);
-  const [error, setError] = useState$k(null);
-  const [openModal, setOpenModal] = useState$k(false);
-  const [visibleFields, setVisibleFields] = useState$k([]);
-  const [targetProgram, setTargetProgram] = useState$k(null);
-  const [equipmentOptions, setEquipmentOptions] = useState$k({});
-  const [programDataTEI, setProgramDataTEI] = useState$k([]);
-  const [facilityUsers, setFacilityUsers] = useState$k([]);
-  const [currentUsername, setCurrentUsername] = useState$k("");
-  const [autofillConfig, setAutofillConfig] = useState$k(null);
-  const [collectingOnBehalf, setCollectingOnBehalf] = useState$k(false);
-  useEffect$i(() => {
+  const [fields, setFields] = useState$m([]);
+  const [formData, setFormData] = useState$m({});
+  const [loading, setLoading] = useState$m(true);
+  const [saving, setSaving] = useState$m(false);
+  const [error, setError] = useState$m(null);
+  const [openModal, setOpenModal] = useState$m(false);
+  const [visibleFields, setVisibleFields] = useState$m([]);
+  const [targetProgram, setTargetProgram] = useState$m(null);
+  const [equipmentOptions, setEquipmentOptions] = useState$m({});
+  const [programDataTEI, setProgramDataTEI] = useState$m([]);
+  const [facilityUsers, setFacilityUsers] = useState$m([]);
+  const [currentUsername, setCurrentUsername] = useState$m("");
+  const [autofillConfig, setAutofillConfig] = useState$m(null);
+  const [collectingOnBehalf, setCollectingOnBehalf] = useState$m(false);
+  useEffect$l(() => {
     const userData = localStorage.getItem("memisCredentials");
     if (userData) {
       try {
@@ -152821,7 +153258,7 @@ function UpdateCollectionStatus({
   };
   const getUsers = async () => {
     try {
-      const org = await LocalForageServiceInstance.getItem("userRes", "user");
+      const org = await LocalForageService.getItem("userRes", "user");
       const units = org?.organisationUnits?.length > 1 ? org?.organisationUnits.sort((a, b) => a?.level - b?.level) : org?.organisationUnits;
       const ouId = units[0]?.id;
       const params = `fields=name,id,username,firstName,surname,userRoles[id,name]&ou=${ouId}&paging=false`;
@@ -152998,13 +153435,13 @@ function UpdateCollectionStatus({
     setOpenModal(false);
     setCollectingOnBehalf(false);
   };
-  useEffect$i(() => {
+  useEffect$l(() => {
     getFields();
   }, []);
-  useEffect$i(() => {
+  useEffect$l(() => {
     getUsers();
   }, [fields]);
-  useEffect$i(() => {
+  useEffect$l(() => {
     if (openModal && fields.length > 0 && autofillConfig) {
       setVisibleFields(fields.map((f) => f.id));
       const initialData = {};
@@ -153075,7 +153512,7 @@ function UpdateCollectionStatus({
 
 const prefillAcknowledgingReceiver = async (allocationData) => {
   try {
-    const data = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+    const data = await LocalForageService.getItem("dataStore", "dataStore");
 
     if (!data || !data?.prefillReceiverNameEquipment) return { value: null };
     const task = data?.prefillReceiverNameEquipment;
@@ -153093,8 +153530,8 @@ const prefillAcknowledgingReceiver = async (allocationData) => {
   }
 };
 
-const React$f = await importShared('react');
-const {useContext: useContext$b,useEffect: useEffect$h,useState: useState$j} = React$f;
+const React$i = await importShared('react');
+const {useContext: useContext$d,useEffect: useEffect$k,useState: useState$l} = React$i;
 const A$2 = (x) => Array.isArray(x) ? x : [];
 function AcknowledgeCollectionStatus({
   program,
@@ -153105,23 +153542,25 @@ function AcknowledgeCollectionStatus({
   buttonPositiveName = "Save",
   prefillReceiverName
 }) {
-  const [fields, setFields] = useState$j([]);
-  const [formData, setFormData] = useState$j({});
-  const [loading, setLoading] = useState$j(true);
-  const [disabledList, setDisabledList] = useState$j([]);
-  const [saving, setSaving] = useState$j(false);
-  const [error, setError] = useState$j(null);
-  const [openModal, setOpenModal] = useState$j(false);
-  const [visibleFields, setVisibleFields] = useState$j([]);
-  const [targetProgram, setTargetProgram] = useState$j(null);
-  const [equipmentOptions, setEquipmentOptions] = useState$j({});
-  const [programDataTEI, setProgramDataTEI] = useState$j([]);
-  const [facilityUsers, setFacilityUsers] = useState$j([]);
-  useEffect$h(() => {
+  const [fields, setFields] = useState$l([]);
+  const [formData, setFormData] = useState$l({});
+  const [loading, setLoading] = useState$l(true);
+  const [disabledList, setDisabledList] = useState$l([]);
+  const [saving, setSaving] = useState$l(false);
+  const [error, setError] = useState$l(null);
+  const [openModal, setOpenModal] = useState$l(false);
+  const [visibleFields, setVisibleFields] = useState$l([]);
+  const [targetProgram, setTargetProgram] = useState$l(null);
+  const [equipmentOptions, setEquipmentOptions] = useState$l({});
+  const [programDataTEI, setProgramDataTEI] = useState$l([]);
+  const [facilityUsers, setFacilityUsers] = useState$l({});
+  useEffect$k(() => {
     const load = async () => {
       try {
         const res = await getUsersForAssignment();
-        setFacilityUsers(res);
+        const roleIds = await resolveRoleIdsForField("fEAUIdnrfw1");
+        const filtered = await getUsersForAssignment(roleIds.length > 0 ? roleIds : void 0);
+        setFacilityUsers((prev) => ({ ...prev, fEAUIdnrfw1: filtered, _all: res }));
       } catch (_) {
       }
     };
@@ -153130,7 +153569,7 @@ function AcknowledgeCollectionStatus({
   const getFields = async () => {
     setLoading(true);
     try {
-      const result = await LocalForageServiceInstance.getItem(
+      const result = await LocalForageService.getItem(
         "dataStore",
         "dataStore"
       );
@@ -153272,7 +153711,7 @@ function AcknowledgeCollectionStatus({
             /* @__PURE__ */ jsxRuntimeExports.jsx(
               SearchableSelect,
               {
-                data: A$2(facilityUsers),
+                data: A$2(facilityUsers[field?.id] || facilityUsers._all || []),
                 itemTextField: "name",
                 itemValueField: "username",
                 value,
@@ -153346,10 +153785,10 @@ function AcknowledgeCollectionStatus({
     setError(null);
     setOpenModal(false);
   };
-  useEffect$h(() => {
+  useEffect$k(() => {
     getFields();
   }, []);
-  useEffect$h(() => {
+  useEffect$k(() => {
     const load = async () => {
       if (openModal && fields.length > 0) {
         const initial = {};
@@ -153398,41 +153837,41 @@ function AcknowledgeCollectionStatus({
   ] });
 }
 
-const {useContext: useContext$a,useEffect: useEffect$g,useState: useState$i} = await importShared('react');
+const {useContext: useContext$c,useEffect: useEffect$j,useState: useState$k} = await importShared('react');
 const {createPortal} = await importShared('react-dom');
 const displayVal = (val) => val === null || val === void 0 || val === "" ? "N/A" : val;
 function DeregistrationEventView() {
   const { program, tei, stage, evnt } = useParams();
   useSearchParams();
   const navigate = useNavigate();
-  const [pg, setPg] = useState$i();
-  const [event, setEvent] = useState$i();
-  const [orgUnit, setOu] = useState$i();
-  const [programData, setProgramData] = useState$i(null);
-  const [ouName, setName] = useState$i();
-  const [crumbs, setCrumbs] = useState$i([{
+  const [pg, setPg] = useState$k();
+  const [event, setEvent] = useState$k();
+  const [orgUnit, setOu] = useState$k();
+  const [programData, setProgramData] = useState$k(null);
+  const [ouName, setName] = useState$k();
+  const [crumbs, setCrumbs] = useState$k([{
     label: "Home",
     ref: "/memis"
   }]);
-  const { user } = useContext$a(MEMISContext.UserRolesContext);
-  const [currentUser, setCurrentUser] = useState$i(null);
-  const [confirmingDeregistration, setConfirmingDeregistration] = useState$i(false);
-  const [showConfirmAlert, setShowConfirmAlert] = useState$i(false);
-  const [equipmentState, setEquipmentState] = useState$i(null);
-  const [activeSectionModal, setActiveSectionModal] = useState$i(null);
-  const [modalSectionData, setModalSectionData] = useState$i(null);
-  const [sectionFormData, setSectionFormData] = useState$i({});
-  const [savingSectionData, setSavingSectionData] = useState$i(false);
-  const [filePreviewOpen, setFilePreviewOpen] = useState$i(false);
-  const [previewFileId, setPreviewFileId] = useState$i(null);
-  const [previewFileName, setPreviewFileName] = useState$i(null);
-  const [previewValueType, setPreviewValueType] = useState$i(null);
-  const [previewAttributeId, setPreviewAttributeId] = useState$i(null);
-  const [infoCardExpanded, setInfoCardExpanded] = useState$i(false);
-  const [expandedSections, setExpandedSections] = useState$i({});
-  const [dataStoreData, setDataStoreData] = useState$i({});
-  const [programsLocalData, setProgramsLocalData] = useState$i([]);
-  const [userOrganisationUnits, setUserOrganisationUnits] = useState$i([]);
+  const { user } = useContext$c(MEMISContext.UserRolesContext);
+  const [currentUser, setCurrentUser] = useState$k(null);
+  const [confirmingDeregistration, setConfirmingDeregistration] = useState$k(false);
+  const [showConfirmAlert, setShowConfirmAlert] = useState$k(false);
+  const [equipmentState, setEquipmentState] = useState$k(null);
+  const [activeSectionModal, setActiveSectionModal] = useState$k(null);
+  const [modalSectionData, setModalSectionData] = useState$k(null);
+  const [sectionFormData, setSectionFormData] = useState$k({});
+  const [savingSectionData, setSavingSectionData] = useState$k(false);
+  const [filePreviewOpen, setFilePreviewOpen] = useState$k(false);
+  const [previewFileId, setPreviewFileId] = useState$k(null);
+  const [previewFileName, setPreviewFileName] = useState$k(null);
+  const [previewValueType, setPreviewValueType] = useState$k(null);
+  const [previewAttributeId, setPreviewAttributeId] = useState$k(null);
+  const [infoCardExpanded, setInfoCardExpanded] = useState$k(false);
+  const [expandedSections, setExpandedSections] = useState$k({});
+  const [dataStoreData, setDataStoreData] = useState$k({});
+  const [programsLocalData, setProgramsLocalData] = useState$k([]);
+  const [userOrganisationUnits, setUserOrganisationUnits] = useState$k([]);
   const formatDate = (isoString) => {
     if (!isoString) return "";
     const date = new Date(isoString);
@@ -153581,12 +154020,12 @@ function DeregistrationEventView() {
       [id]: !prev[id]
     }));
   };
-  useEffect$g(() => {
+  useEffect$j(() => {
     getEventDetails(evnt, stage);
     getCurrentUser();
     fetchEquipmentState();
   }, [evnt, stage, dataStoreData, programsLocalData, userOrganisationUnits]);
-  useEffect$g(() => {
+  useEffect$j(() => {
     fetchOuValues();
   }, [event, pg]);
   const getSectionAccess = (sectionId) => {
@@ -154046,13 +154485,13 @@ function DeregistrationEventView() {
     return { status: "pending", label: "Pending Review", color: "medium", icon: timeOutline };
   };
   const eventStatus = getEventStatus();
-  useEffect$g(() => {
+  useEffect$j(() => {
     const load = async () => {
       try {
         const [dataStoreResponse, programsResponse, userOrganisationUnitsResponse] = await Promise.all([
-          await LocalForageServiceInstance.getItem("dataStore", "dataStore"),
-          await LocalForageServiceInstance.getItem("programs", "programs"),
-          await LocalForageServiceInstance.getItem("userOrganisationUnits", "userOrgUnits")
+          await LocalForageService.getItem("dataStore", "dataStore"),
+          await LocalForageService.getItem("programs", "programs"),
+          await LocalForageService.getItem("userOrganisationUnits", "userOrgUnits")
         ]);
         setProgramsLocalData(programsResponse || []);
         setDataStoreData(dataStoreResponse || {});
@@ -154341,17 +154780,17 @@ function DeregistrationEventView() {
   ] });
 }
 
-const React$e = await importShared('react');
-const {useCallback: useCallback$3,useEffect: useEffect$f,useMemo: useMemo$7,useState: useState$h} = React$e;
+const React$h = await importShared('react');
+const {useCallback: useCallback$5,useEffect: useEffect$i,useMemo: useMemo$9,useState: useState$j} = React$h;
 function ConfirmMaintenanceModal({ program, event, section, getEventDetails, buttonLabel }) {
-  const [open, setOpen] = useState$h(false);
-  const [matches, setMatches] = useState$h([]);
-  const [saving, setSaving] = useState$h(false);
-  const [loading, setLoading] = useState$h(true);
-  const [decisionValue, setDecisionValue] = useState$h("");
-  const [user, setUser] = useState$h(null);
-  const [maintenanceCfg, setMaintenanceCfg] = useState$h(null);
-  useEffect$f(() => {
+  const [open, setOpen] = useState$j(false);
+  const [matches, setMatches] = useState$j([]);
+  const [saving, setSaving] = useState$j(false);
+  const [loading, setLoading] = useState$j(true);
+  const [decisionValue, setDecisionValue] = useState$j("");
+  const [user, setUser] = useState$j(null);
+  const [maintenanceCfg, setMaintenanceCfg] = useState$j(null);
+  useEffect$i(() => {
     (async () => {
       setLoading(true);
       try {
@@ -154366,7 +154805,7 @@ function ConfirmMaintenanceModal({ program, event, section, getEventDetails, but
       }
     })();
   }, [program?.id, section?.id, event?.programStage]);
-  useEffect$f(() => {
+  useEffect$i(() => {
     (async () => {
       try {
         const me = await dataStore.get(
@@ -154378,7 +154817,7 @@ function ConfirmMaintenanceModal({ program, event, section, getEventDetails, but
       }
     })();
   }, []);
-  const cfg = useMemo$7(() => {
+  const cfg = useMemo$9(() => {
     if (!matches?.length) return null;
     const meRoles = new Set((user?.userRoles || []).map((r) => r.id));
     const requirementsOk = (c) => {
@@ -154398,14 +154837,14 @@ function ConfirmMaintenanceModal({ program, event, section, getEventDetails, but
     });
     return visibleToMe[0] || pool[0];
   }, [matches, user?.userRoles, event]);
-  const canSeeButton = useMemo$7(() => {
+  const canSeeButton = useMemo$9(() => {
     if (!cfg) return false;
     const allowed = cfg.rolesAllowed || [];
     if (allowed.length === 0) return true;
     const meRoleIds = new Set((user?.userRoles || []).map((r) => r.id));
     return allowed.some((r) => meRoleIds.has(r.id));
   }, [cfg, user?.userRoles]);
-  const decisionDE = useMemo$7(() => {
+  const decisionDE = useMemo$9(() => {
     if (!cfg?.decisionFieldRef) return null;
     const needle = String(cfg.decisionFieldRef.value).trim().toLowerCase();
     const by = String(cfg.decisionFieldRef.matchBy || "id").toLowerCase();
@@ -154428,7 +154867,7 @@ function ConfirmMaintenanceModal({ program, event, section, getEventDetails, but
     const viaPDE = pdes.find((p) => String(p?.dataElement?.id || "").toLowerCase() === needle);
     return viaPDE?.dataElement || null;
   }, [section, cfg?.decisionFieldRef]);
-  const currentDecision = useMemo$7(() => {
+  const currentDecision = useMemo$9(() => {
     if (!decisionDE) return "";
     const m = new Map((event?.dataValues || []).map((d) => [d.dataElement, d.value]));
     const raw = m.get(decisionDE.id);
@@ -154437,7 +154876,7 @@ function ConfirmMaintenanceModal({ program, event, section, getEventDetails, but
   const approvedVal = String(cfg?.approveValue ?? "true").toLowerCase();
   const approveSelected = decisionValue === approvedVal;
   const showButton = !!cfg && !!decisionDE && canSeeButton && currentDecision !== approvedVal;
-  const saveDecision = useCallback$3(async (withPrint = false) => {
+  const saveDecision = useCallback$5(async (withPrint = false) => {
     if (!event || !decisionDE || !decisionValue) return;
     setSaving(true);
     try {
@@ -154551,7 +154990,7 @@ function ConfirmMaintenanceModal({ program, event, section, getEventDetails, but
 
 const hideUpdateButtonAfterEquipmentIsCollected = async (field) => {
   try {
-    const data = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+    const data = await LocalForageService.getItem("dataStore", "dataStore");
     if (!data || !data?.equipmentCollectionHideUpdate)
       return {
         showButton: true,
@@ -154592,7 +155031,7 @@ const hideUpdateButtonAfterEquipmentIsCollected = async (field) => {
 
 const hideAcknowledgeButton = async (allocationData) => {
   try {
-    const data = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+    const data = await LocalForageService.getItem("dataStore", "dataStore");
     if (!data || !data?.prefillReceiverNameEquipment)
       return { showButton: true };
 
@@ -154624,8 +155063,8 @@ const hideAcknowledgeButton = async (allocationData) => {
   }
 };
 
-const React$d = await importShared('react');
-const {useEffect: useEffect$e,useState: useState$g} = React$d;
+const React$g = await importShared('react');
+const {useEffect: useEffect$h,useState: useState$i} = React$g;
 const A$1 = (x) => Array.isArray(x) ? x : [];
 function Asseng({
   event,
@@ -154634,12 +155073,12 @@ function Asseng({
   getVal,
   elements
 }) {
-  const [openModal, setOpenModal] = useState$g(false);
-  const [formData, setFormData] = useState$g({});
-  const [options, setOptions] = useState$g([]);
-  const [saving, setSaving] = useState$g(false);
-  const [error, setError] = useState$g(null);
-  const [facilityUsers, setFacilityUsers] = useState$g([]);
+  const [openModal, setOpenModal] = useState$i(false);
+  const [formData, setFormData] = useState$i({});
+  const [options, setOptions] = useState$i([]);
+  const [saving, setSaving] = useState$i(false);
+  const [error, setError] = useState$i(null);
+  const [facilityUsers, setFacilityUsers] = useState$i([]);
   let buttonPositiveName = "Save";
   const responsibleEngineer = section?.dataElements.find(
     (e) => e.id === "ikEZkhoaTTU"
@@ -154702,13 +155141,16 @@ function Asseng({
       setSaving(false);
     }
   };
-  useEffect$e(() => {
+  useEffect$h(() => {
     setOptions(responsibleEngineer?.optionSet?.options || []);
   }, [responsibleEngineer]);
-  useEffect$e(() => {
+  useEffect$h(() => {
     const load = async () => {
       try {
-        const res = await getUsersForAssignment();
+        const roleIds = await resolveRoleIdsForField("ikEZkhoaTTU");
+        const res = await getUsersForAssignment(
+          roleIds.length > 0 ? roleIds : void 0
+        );
         setFacilityUsers(res);
       } catch (error2) {
       }
@@ -154721,7 +155163,7 @@ function Asseng({
     const label = field?.formName || field?.name || field?.id;
     let attr = null;
     if (field?.attributeValues?.length > 0) {
-      attr = field?.attributeValues?.find((att) => att?.value === "ENGINEERS");
+      attr = field?.attributeValues?.find((att) => att?.value === "ALL");
     }
     switch (type) {
       case "BOOLEAN":
@@ -154834,7 +155276,7 @@ function Asseng({
         isOpen: openModal,
         onClose: () => setOpenModal(false),
         onSave: handleSubmit,
-        height: "40%",
+        height: "50%",
         width: "30%",
         positiveButtonText: saving ? /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { style: { display: "flex", alignItems: "center", gap: "6px" }, children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(IonSpinner, { name: "crescent" }),
@@ -154847,8 +155289,8 @@ function Asseng({
   ] });
 }
 
-const React$c = await importShared('react');
-const {useEffect: useEffect$d,useState: useState$f} = React$c;
+const React$f = await importShared('react');
+const {useEffect: useEffect$g,useState: useState$h} = React$f;
 function Schedule({
   event,
   section,
@@ -154856,10 +155298,10 @@ function Schedule({
   getVal,
   elements
 }) {
-  const [openModal, setOpenModal] = useState$f(false);
-  const [formData, setFormData] = useState$f({});
-  const [saving, setSaving] = useState$f(false);
-  const [dataElements, setDataElements] = useState$f([]);
+  const [openModal, setOpenModal] = useState$h(false);
+  const [formData, setFormData] = useState$h({});
+  const [saving, setSaving] = useState$h(false);
+  const [dataElements, setDataElements] = useState$h([]);
   let buttonPositiveName = "Save";
   const handleChange = (fieldId, value) => {
     setFormData((prev) => ({
@@ -154887,6 +155329,32 @@ function Schedule({
       const result = await dataStore.post("tracker?async=false&importStrategy=UPDATE", { events: [payload] });
       if (result?.status === 200) {
         showToast("Saved", "success");
+        const RESPONSIBLE = "ikEZkhoaTTU";
+        const isMaintened = String(formData[RESPONSIBLE] || getVal(RESPONSIBLE) || "").trim().toLowerCase();
+        const canSchedule = isMaintened !== null || isMaintened?.trim() !== "" || isMaintened !== void 0;
+        console.log({ formData, canSchedule });
+        if (canSchedule) {
+          const teiRes = await dataStore.get(`tracker/trackedEntities/${event.trackedEntity}?program=${event.program}&fields=trackedEntityType,orgUnit,attributes[*]`);
+          if (teiRes?.data) {
+            const { trackedEntityType, orgUnit, attributes: existingAttributes = [] } = teiRes.data;
+            const updatedAttributes = [...existingAttributes];
+            const attrState = updatedAttributes.findIndex((a) => a.attribute === "rXIdO0bLQvD");
+            if (attrState !== -1) {
+              updatedAttributes[attrState] = { ...updatedAttributes[attrState], value: "SCHEDULED_FOR_MAINTENANCE" };
+            } else {
+              updatedAttributes.push({ attribute: "rXIdO0bLQvD", value: "SCHEDULED_FOR_MAINTENANCE" });
+            }
+            const tePayload = {
+              trackedEntities: [{
+                trackedEntity: event.trackedEntity,
+                trackedEntityType,
+                orgUnit,
+                attributes: updatedAttributes
+              }]
+            };
+            await dataStore.post("tracker?async=false&importStrategy=UPDATE", tePayload);
+          }
+        }
         try {
           const configData = await getNotificationEvent(event?.program, "MAINTENANCE_SCHEDULE");
           console.log("MAINTENANCE_SCHEDULE config:", configData);
@@ -154913,7 +155381,7 @@ function Schedule({
       setSaving(false);
     }
   };
-  useEffect$d(() => {
+  useEffect$g(() => {
     setDataElements(section?.dataElements.filter((de) => elements.some((el) => el === de.id)));
   }, [openModal]);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
@@ -154960,8 +155428,8 @@ function Schedule({
   ] });
 }
 
-const React$b = await importShared('react');
-const {useContext: useContext$9,useEffect: useEffect$c,useState: useState$e} = React$b;
+const React$e = await importShared('react');
+const {useContext: useContext$b,useEffect: useEffect$f,useState: useState$g} = React$e;
 const COMPLAINT_BY_DE_ID = "W51uFi0iMbu";
 const REQUESTER_DE_ID = "M074NJAYjb6";
 const COMMENTS_DE_ID = "UtJtorxMNgT";
@@ -154981,11 +155449,11 @@ function JobCardGenerate({
   elements,
   maintenanceCfg
 }) {
-  const [openModal, setOpenModal] = useState$e(false);
-  const [formData, setFormData] = useState$e({});
-  const [saving, setSaving] = useState$e(false);
-  const [error, setError] = useState$e(null);
-  const [dataElements, setDataElements] = useState$e([]);
+  const [openModal, setOpenModal] = useState$g(false);
+  const [formData, setFormData] = useState$g({});
+  const [saving, setSaving] = useState$g(false);
+  const [error, setError] = useState$g(null);
+  const [dataElements, setDataElements] = useState$g([]);
   let buttonPositiveName = "Save";
   const handleChange = (fieldId, value) => {
     setFormData((prev) => ({
@@ -155016,31 +155484,6 @@ function JobCardGenerate({
       const res = await dataStore.post("tracker?async=false&importStrategy=UPDATE", { events: [payload] });
       if (res?.status === 200 || res?.status === "OK" || res?.data?.status === "OK") {
         getEventDetails(event?.event, event?.programStage);
-        const JOB_CARD_FUNCTION = "GzItPqhKIUO";
-        const functionVal = String(formData[JOB_CARD_FUNCTION] || getVal(JOB_CARD_FUNCTION) || "").trim().toLowerCase();
-        const isFunctional = functionVal === "true" || functionVal === "yes" || functionVal === "1" || formData[JOB_CARD_FUNCTION] === true;
-        if (isFunctional) {
-          const teiRes = await dataStore.get(`tracker/trackedEntities/${event.trackedEntity}?program=${event.program}&fields=trackedEntityType,orgUnit,attributes[*]`);
-          if (teiRes?.data) {
-            const { trackedEntityType, orgUnit, attributes: existingAttributes = [] } = teiRes.data;
-            const updatedAttributes = [...existingAttributes];
-            const attrIndex = updatedAttributes.findIndex((a) => a.attribute === "KFZ35H4ZHrk");
-            if (attrIndex !== -1) {
-              updatedAttributes[attrIndex] = { ...updatedAttributes[attrIndex], value: "FULLY_FUNCTIONAL" };
-            } else {
-              updatedAttributes.push({ attribute: "KFZ35H4ZHrk", value: "FULLY_FUNCTIONAL" });
-            }
-            const tePayload = {
-              trackedEntities: [{
-                trackedEntity: event.trackedEntity,
-                trackedEntityType,
-                orgUnit,
-                attributes: updatedAttributes
-              }]
-            };
-            const teUpdateRes = await dataStore.post("tracker?async=false&importStrategy=UPDATE", tePayload);
-          }
-        }
         showToast("Saved", "success");
         setOpenModal(false);
       } else {
@@ -155054,16 +155497,16 @@ function JobCardGenerate({
     }
   };
   const getOptions = async (optionSet) => {
-    const options = await LocalForageServiceInstance.getItem("optionSets", "metadata");
+    const options = await LocalForageService.getItem("optionSets", "metadata");
     const opt = options.find((opti) => opti?.id === optionSet);
     return opt.options || [];
   };
-  useEffect$c(() => {
-    const des = section?.dataElements.filter((de) => elements.some((el) => el === de.id));
+  useEffect$f(() => {
+    const des = section?.dataElements?.filter((de) => elements?.some((el) => el === de.id));
     setDataElements(des);
     if (openModal) {
-      const requester = event?.dataValues?.find((dv) => dv.dataElement === REQUESTER_DE_ID)?.value || event?.createdBy?.username || "";
-      const existingJCN = event?.dataValues?.find((dv) => dv.dataElement === JOB_CARD_NUMBER_DE)?.value;
+      const requester = event?.dataValues?.find((dv) => dv?.dataElement === REQUESTER_DE_ID)?.value || event?.createdBy?.username || "";
+      const existingJCN = event?.dataValues?.find((dv) => dv?.dataElement === JOB_CARD_NUMBER_DE)?.value;
       const jcn = existingJCN || `JC-${event?.trackedEntity?.slice(0, 6)}-${Date.now()}`;
       setFormData((prev) => ({
         ...prev,
@@ -155142,19 +155585,19 @@ function JobCardGenerate({
   ] });
 }
 
-const React$a = await importShared('react');
-const {useContext: useContext$8,useEffect: useEffect$b,useState: useState$d} = React$a;
+const React$d = await importShared('react');
+const {useContext: useContext$a,useEffect: useEffect$e,useState: useState$f} = React$d;
 function Approve({
   event,
   section,
   getEventDetails,
   getVal
 }) {
-  const [openModal, setOpenModal] = useState$d(false);
-  const [formData, setFormData] = useState$d({});
-  const [saving, setSaving] = useState$d(false);
-  const [error, setError] = useState$d(null);
-  const [dataElements, setDataElements] = useState$d([]);
+  const [openModal, setOpenModal] = useState$f(false);
+  const [formData, setFormData] = useState$f({});
+  const [saving, setSaving] = useState$f(false);
+  const [error, setError] = useState$f(null);
+  const [dataElements, setDataElements] = useState$f([]);
   let buttonPositiveName = "Save";
   const handleChange = (fieldId, value) => {
     setFormData((prev) => ({
@@ -155214,7 +155657,7 @@ function Approve({
     const opt = await dataStore.query(`optionSets/${optionSet}?fields=options[id,code,name]`);
     return opt.options || [];
   };
-  useEffect$b(() => {
+  useEffect$e(() => {
     setDataElements(section?.dataElements);
   }, [openModal]);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
@@ -155265,8 +155708,8 @@ function Approve({
   ] });
 }
 
-const React$9 = await importShared('react');
-const {useContext: useContext$7,useEffect: useEffect$a,useState: useState$c} = React$9;
+const React$c = await importShared('react');
+const {useContext: useContext$9,useEffect: useEffect$d,useState: useState$e} = React$c;
 function ConfirmMaintenance({
   event,
   section,
@@ -155274,11 +155717,11 @@ function ConfirmMaintenance({
   getVal,
   elements
 }) {
-  const [openModal, setOpenModal] = useState$c(false);
-  const [formData, setFormData] = useState$c({});
-  const [saving, setSaving] = useState$c(false);
-  const [error, setError] = useState$c(null);
-  const [dataElements, setDataElements] = useState$c([]);
+  const [openModal, setOpenModal] = useState$e(false);
+  const [formData, setFormData] = useState$e({});
+  const [saving, setSaving] = useState$e(false);
+  const [error, setError] = useState$e(null);
+  const [dataElements, setDataElements] = useState$e([]);
   let buttonPositiveName = "Save";
   const handleChange = (fieldId, value) => {
     setFormData((prev) => ({
@@ -155303,6 +155746,36 @@ function ConfirmMaintenance({
         status: "ACTIVE",
         dataValues: values
       };
+      const JOB_CARD_FUNCTION = "GzItPqhKIUO";
+      const functionVal = String(formData[JOB_CARD_FUNCTION] || getVal(JOB_CARD_FUNCTION) || "").trim().toLowerCase();
+      const isMaintened = String(formData[JOB_CARD_FUNCTION] || getVal(JOB_CARD_FUNCTION) || "").trim().toLowerCase();
+      const isFunctional = functionVal === "true" || functionVal === "yes" || functionVal === "1" || formData[JOB_CARD_FUNCTION] === true;
+      const isConfirmed = isMaintened === "true" || isMaintened === "yes" || isMaintened === "1" || formData[JOB_CARD_FUNCTION] === true;
+      if (isFunctional && isConfirmed) {
+        const teiRes = await dataStore.get(`tracker/trackedEntities/${event.trackedEntity}?program=${event.program}&fields=trackedEntityType,orgUnit,attributes[*]`);
+        if (teiRes?.data) {
+          const { trackedEntityType, orgUnit, attributes: existingAttributes = [] } = teiRes.data;
+          const updatedAttributes = [...existingAttributes];
+          const attrIndex = updatedAttributes.findIndex((a) => a.attribute === "KFZ35H4ZHrk");
+          const attrState = updatedAttributes.findIndex((a) => a.attribute === "rXIdO0bLQvD");
+          if (attrIndex !== -1) {
+            updatedAttributes[attrIndex] = { ...updatedAttributes[attrIndex], value: "FULLY_FUNCTIONAL" };
+            updatedAttributes[attrState] = { ...updatedAttributes[attrState], value: "ACTIVE" };
+          } else {
+            updatedAttributes.push({ attribute: "KFZ35H4ZHrk", value: "FULLY_FUNCTIONAL" });
+            updatedAttributes.push({ attribute: "rXIdO0bLQvD", value: "ACTIVE" });
+          }
+          const tePayload = {
+            trackedEntities: [{
+              trackedEntity: event.trackedEntity,
+              trackedEntityType,
+              orgUnit,
+              attributes: updatedAttributes
+            }]
+          };
+          await dataStore.post("tracker?async=false&importStrategy=UPDATE", tePayload);
+        }
+      }
       const result = await dataStore.post("tracker?async=false&importStrategy=UPDATE", { events: [payload] });
       if (result?.status === 200) {
         showToast("Saved", "success");
@@ -155316,7 +155789,7 @@ function ConfirmMaintenance({
       setSaving(false);
     }
   };
-  useEffect$a(() => {
+  useEffect$d(() => {
     setDataElements(section?.dataElements?.filter((de) => elements?.some((el) => el === de?.id)));
   }, [openModal]);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
@@ -155341,7 +155814,6 @@ function ConfirmMaintenance({
             className: "ion-padding",
             style: { position: "relative", minHeight: 300 },
             children: dataElements.map((de) => {
-              console.log("de", de?.optionSet?.options);
               if (getVal("EbJI5Loxjbl") === "Corrective_maintenance" && de.id === "rq944zY0g89") {
                 return null;
               }
@@ -184595,7 +185067,7 @@ function inspect$1$1(obj, opts) {
   if (isUndefined$1(ctx.colors)) ctx.colors = false;
   if (isUndefined$1(ctx.customInspect)) ctx.customInspect = true;
   if (ctx.colors) ctx.stylize = stylizeWithColor$1;
-  return formatValue$1(ctx, obj, ctx.depth);
+  return formatValue$2(ctx, obj, ctx.depth);
 }
 
 // http://en.wikipedia.org/wiki/ANSI_escape_code#graphics
@@ -184657,7 +185129,7 @@ function arrayToHash$1(array) {
 }
 
 
-function formatValue$1(ctx, value, recurseTimes) {
+function formatValue$2(ctx, value, recurseTimes) {
   // Provide a hook for user-specified inspect functions.
   // Check that value is an object with an inspect function on it
   if (ctx.customInspect &&
@@ -184669,7 +185141,7 @@ function formatValue$1(ctx, value, recurseTimes) {
       !(value.constructor && value.constructor.prototype === value)) {
     var ret = value.inspect(recurseTimes, ctx);
     if (!isString$3(ret)) {
-      ret = formatValue$1(ctx, ret, recurseTimes);
+      ret = formatValue$2(ctx, ret, recurseTimes);
     }
     return ret;
   }
@@ -184834,9 +185306,9 @@ function formatProperty$1(ctx, value, recurseTimes, visibleKeys, key, array) {
   if (!str) {
     if (ctx.seen.indexOf(desc.value) < 0) {
       if (isNull$1(recurseTimes)) {
-        str = formatValue$1(ctx, desc.value, null);
+        str = formatValue$2(ctx, desc.value, null);
       } else {
-        str = formatValue$1(ctx, desc.value, recurseTimes - 1);
+        str = formatValue$2(ctx, desc.value, recurseTimes - 1);
       }
       if (str.indexOf('\n') > -1) {
         if (array) {
@@ -197209,7 +197681,7 @@ function inspect$1(obj, opts) {
   if (isUndefined(ctx.colors)) ctx.colors = false;
   if (isUndefined(ctx.customInspect)) ctx.customInspect = true;
   if (ctx.colors) ctx.stylize = stylizeWithColor;
-  return formatValue(ctx, obj, ctx.depth);
+  return formatValue$1(ctx, obj, ctx.depth);
 }
 
 // http://en.wikipedia.org/wiki/ANSI_escape_code#graphics
@@ -197271,7 +197743,7 @@ function arrayToHash(array) {
 }
 
 
-function formatValue(ctx, value, recurseTimes) {
+function formatValue$1(ctx, value, recurseTimes) {
   // Provide a hook for user-specified inspect functions.
   // Check that value is an object with an inspect function on it
   if (ctx.customInspect &&
@@ -197283,7 +197755,7 @@ function formatValue(ctx, value, recurseTimes) {
       !(value.constructor && value.constructor.prototype === value)) {
     var ret = value.inspect(recurseTimes, ctx);
     if (!isString$2(ret)) {
-      ret = formatValue(ctx, ret, recurseTimes);
+      ret = formatValue$1(ctx, ret, recurseTimes);
     }
     return ret;
   }
@@ -197448,9 +197920,9 @@ function formatProperty(ctx, value, recurseTimes, visibleKeys, key, array) {
   if (!str) {
     if (ctx.seen.indexOf(desc.value) < 0) {
       if (isNull(recurseTimes)) {
-        str = formatValue(ctx, desc.value, null);
+        str = formatValue$1(ctx, desc.value, null);
       } else {
-        str = formatValue(ctx, desc.value, recurseTimes - 1);
+        str = formatValue$1(ctx, desc.value, recurseTimes - 1);
       }
       if (str.indexOf('\n') > -1) {
         if (array) {
@@ -268793,9 +269265,9 @@ function r(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"de
  */
 i=a).exports=function n(r){var l=e,a=t,o=u;function f(e){for(var t="https://reactjs.org/docs/error-decoder.html?invariant="+e,n=1;n<arguments.length;n++)t+="&args[]="+encodeURIComponent(arguments[n]);return "Minified React error #"+e+"; visit "+t+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}var c=a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;c.hasOwnProperty("ReactCurrentDispatcher")||(c.ReactCurrentDispatcher={current:null}),c.hasOwnProperty("ReactCurrentBatchConfig")||(c.ReactCurrentBatchConfig={suspense:null});var s="function"==typeof Symbol&&Symbol.for,d=s?Symbol.for("react.element"):60103,p=s?Symbol.for("react.portal"):60106,m=s?Symbol.for("react.fragment"):60107,h=s?Symbol.for("react.strict_mode"):60108,g=s?Symbol.for("react.profiler"):60114,b=s?Symbol.for("react.provider"):60109,y=s?Symbol.for("react.context"):60110,v=s?Symbol.for("react.concurrent_mode"):60111,T=s?Symbol.for("react.forward_ref"):60112,x=s?Symbol.for("react.suspense"):60113,E=s?Symbol.for("react.suspense_list"):60120,k=s?Symbol.for("react.memo"):60115,S=s?Symbol.for("react.lazy"):60116,C="function"==typeof Symbol&&Symbol.iterator;function w(e){return null===e||"object"!=typeof e?null:"function"==typeof(e=C&&e[C]||e["@@iterator"])?e:null}function z(e){if(null==e)return null;if("function"==typeof e)return e.displayName||e.name||null;if("string"==typeof e)return e;switch(e){case m:return "Fragment";case p:return "Portal";case g:return "Profiler";case h:return "StrictMode";case x:return "Suspense";case E:return "SuspenseList"}if("object"==typeof e)switch(e.$$typeof){case y:return "Context.Consumer";case b:return "Context.Provider";case T:var t=e.render;return t=t.displayName||t.name||"",e.displayName||(""!==t?"ForwardRef("+t+")":"ForwardRef");case k:return z(e.type);case S:if(e=1===e._status?e._result:null)return z(e)}return null}function P(e){var t=e,n=e;if(e.alternate)for(;t.return;)t=t.return;else {e=t;do{0!=(1026&(t=e).effectTag)&&(n=t.return),e=t.return;}while(e)}return 3===t.tag?n:null}function _(e){if(P(e)!==e)throw Error(f(188))}function N(e){var t=e.alternate;if(!t){if(null===(t=P(e)))throw Error(f(188));return t!==e?null:e}for(var n=e,r=t;;){var l=n.return;if(null===l)break;var i=l.alternate;if(null===i){if(null!==(r=l.return)){n=r;continue}break}if(l.child===i.child){for(i=l.child;i;){if(i===n)return _(l),e;if(i===r)return _(l),t;i=i.sibling;}throw Error(f(188))}if(n.return!==r.return)n=l,r=i;else {for(var a=false,u=l.child;u;){if(u===n){a=true,n=l,r=i;break}if(u===r){a=true,r=l,n=i;break}u=u.sibling;}if(!a){for(u=i.child;u;){if(u===n){a=true,n=i,r=l;break}if(u===r){a=true,r=i,n=l;break}u=u.sibling;}if(!a)throw Error(f(189))}}if(n.alternate!==r)throw Error(f(190))}if(3!==n.tag)throw Error(f(188));return n.stateNode.current===n?e:t}function U(e){if(!(e=N(e)))return null;for(var t=e;;){if(5===t.tag||6===t.tag)return t;if(t.child)t.child.return=t,t=t.child;else {if(t===e)break;for(;!t.sibling;){if(!t.return||t.return===e)return null;t=t.return;}t.sibling.return=t.return,t=t.sibling;}}return null}var R=r.getPublicInstance,I=r.getRootHostContext,M=r.getChildHostContext,F=r.prepareForCommit,Q=r.resetAfterCommit,D=r.createInstance,W=r.appendInitialChild,j=r.finalizeInitialChildren,O=r.prepareUpdate,B=r.shouldSetTextContent,H=r.createTextInstance,A=null,L=null,$=r.noTimeout,q=true,V=null,K=r.appendChild,G=r.appendChildToContainer,Y=r.commitTextUpdate,J=null,X=r.commitUpdate,Z=r.insertBefore,ee=null,te=r.removeChild,ne=r.removeChildFromContainer,re=r.resetTextContent,le=null,ie=null,ae=null,ue=null,oe=null,fe=null,ce=/^(.*)[\\\/]/;function se(e){var t="";do{e:switch(e.tag){case 3:case 4:case 6:case 7:case 10:case 9:var n="";break e;default:var r=e._debugOwner,l=e._debugSource,i=z(e.type);n=null,r&&(n=z(r.type)),r=i,i="",l?i=" (at "+l.fileName.replace(ce,"")+":"+l.lineNumber+")":n&&(i=" (created by "+n+")"),n="\n    in "+(r||"Unknown")+i;}t+=n,e=e.return;}while(e);return t}var de=[],pe=-1;function me(e){0>pe||(e.current=de[pe],de[pe]=null,pe--);}function he(e,t){pe++,de[pe]=e.current,e.current=t;}var ge={},be={current:ge},ye={current:false},ve=ge;function Te(e,t){var n=e.type.contextTypes;if(!n)return ge;var r=e.stateNode;if(r&&r.__reactInternalMemoizedUnmaskedChildContext===t)return r.__reactInternalMemoizedMaskedChildContext;var l,i={};for(l in n)i[l]=t[l];return r&&((e=e.stateNode).__reactInternalMemoizedUnmaskedChildContext=t,e.__reactInternalMemoizedMaskedChildContext=i),i}function xe(e){return null!=(e=e.childContextTypes)}function Ee(e){me(ye),me(be);}function ke(e){me(ye),me(be);}function Se(e,t,n){if(be.current!==ge)throw Error(f(168));he(be,t),he(ye,n);}function Ce(e,t,n){var r=e.stateNode;if(e=t.childContextTypes,"function"!=typeof r.getChildContext)return n;for(var i in r=r.getChildContext())if(!(i in e))throw Error(f(108,z(t)||"Unknown",i));return l({},n,{},r)}function we(e){var t=e.stateNode;return t=t&&t.__reactInternalMemoizedMergedChildContext||ge,ve=be.current,he(be,t),he(ye,ye.current),true}function ze(e,t,n){var r=e.stateNode;if(!r)throw Error(f(169));n?(t=Ce(e,t,ve),r.__reactInternalMemoizedMergedChildContext=t,me(ye),me(be),he(be,t)):me(ye),he(ye,n);}var Pe=o.unstable_runWithPriority,_e=o.unstable_scheduleCallback,Ne=o.unstable_cancelCallback,Ue=o.unstable_shouldYield,Re=o.unstable_requestPaint,Ie=o.unstable_now,Me=o.unstable_getCurrentPriorityLevel,Fe=o.unstable_ImmediatePriority,Qe=o.unstable_UserBlockingPriority,De=o.unstable_NormalPriority,We=o.unstable_LowPriority,je=o.unstable_IdlePriority,Oe={},Be=void 0!==Re?Re:function(){},He=null,Ae=null,Le=false,$e=Ie(),qe=1e4>$e?Ie:function(){return Ie()-$e};function Ve(){switch(Me()){case Fe:return 99;case Qe:return 98;case De:return 97;case We:return 96;case je:return 95;default:throw Error(f(332))}}function Ke(e){switch(e){case 99:return Fe;case 98:return Qe;case 97:return De;case 96:return We;case 95:return je;default:throw Error(f(332))}}function Ge(e,t){return e=Ke(e),Pe(e,t)}function Ye(e,t,n){return e=Ke(e),_e(e,t,n)}function Je(e){return null===He?(He=[e],Ae=_e(Fe,Ze)):He.push(e),Oe}function Xe(){if(null!==Ae){var e=Ae;Ae=null,Ne(e);}Ze();}function Ze(){if(!Le&&null!==He){Le=true;var e=0;try{var t=He;Ge(99,(function(){for(;e<t.length;e++){var n=t[e];do{n=n(!0);}while(null!==n)}})),He=null;}catch(t){throw null!==He&&(He=He.slice(e+1)),_e(Fe,Xe),t}finally{Le=false;}}}var et=3;function tt(e,t,n){return 1073741821-(1+((1073741821-e+t/10)/(n/=10)|0))*n}var nt="function"==typeof Object.is?Object.is:function(e,t){return e===t&&(0!==e||1/e==1/t)||e!=e&&t!=t},rt=Object.prototype.hasOwnProperty;function lt(e,t){if(nt(e,t))return  true;if("object"!=typeof e||null===e||"object"!=typeof t||null===t)return  false;var n=Object.keys(e),r=Object.keys(t);if(n.length!==r.length)return  false;for(r=0;r<n.length;r++)if(!rt.call(t,n[r])||!nt(e[n[r]],t[n[r]]))return  false;return  true}function it(e,t){if(e&&e.defaultProps)for(var n in t=l({},t),e=e.defaultProps) void 0===t[n]&&(t[n]=e[n]);return t}var at={current:null},ut=null,ot=null,ft=null;function ct(){ft=ot=ut=null;}function st(e,t){var n=e.type._context;he(at,n._currentValue2),n._currentValue2=t;}function dt(e){var t=at.current;me(at),(e=e.type._context)._currentValue2=t;}function pt(e,t){for(;null!==e;){var n=e.alternate;if(e.childExpirationTime<t)e.childExpirationTime=t,null!==n&&n.childExpirationTime<t&&(n.childExpirationTime=t);else {if(!(null!==n&&n.childExpirationTime<t))break;n.childExpirationTime=t;}e=e.return;}}function mt(e,t){ut=e,ft=ot=null,null!==(e=e.dependencies)&&null!==e.firstContext&&(e.expirationTime>=t&&(On=true),e.firstContext=null);}function ht(e,t){if(ft!==e&&false!==t&&0!==t)if("number"==typeof t&&1073741823!==t||(ft=e,t=1073741823),t={context:e,observedBits:t,next:null},null===ot){if(null===ut)throw Error(f(308));ot=t,ut.dependencies={expirationTime:0,firstContext:t,responders:null};}else ot=ot.next=t;return e._currentValue2}var gt=false;function bt(e){return {baseState:e,firstUpdate:null,lastUpdate:null,firstCapturedUpdate:null,lastCapturedUpdate:null,firstEffect:null,lastEffect:null,firstCapturedEffect:null,lastCapturedEffect:null}}function yt(e){return {baseState:e.baseState,firstUpdate:e.firstUpdate,lastUpdate:e.lastUpdate,firstCapturedUpdate:null,lastCapturedUpdate:null,firstEffect:null,lastEffect:null,firstCapturedEffect:null,lastCapturedEffect:null}}function vt(e,t){return {expirationTime:e,suspenseConfig:t,tag:0,payload:null,callback:null,next:null,nextEffect:null}}function Tt(e,t){null===e.lastUpdate?e.firstUpdate=e.lastUpdate=t:(e.lastUpdate.next=t,e.lastUpdate=t);}function xt(e,t){var n=e.alternate;if(null===n){var r=e.updateQueue,l=null;null===r&&(r=e.updateQueue=bt(e.memoizedState));}else r=e.updateQueue,l=n.updateQueue,null===r?null===l?(r=e.updateQueue=bt(e.memoizedState),l=n.updateQueue=bt(n.memoizedState)):r=e.updateQueue=yt(l):null===l&&(l=n.updateQueue=yt(r));null===l||r===l?Tt(r,t):null===r.lastUpdate||null===l.lastUpdate?(Tt(r,t),Tt(l,t)):(Tt(r,t),l.lastUpdate=t);}function Et(e,t){var n=e.updateQueue;null===(n=null===n?e.updateQueue=bt(e.memoizedState):kt(e,n)).lastCapturedUpdate?n.firstCapturedUpdate=n.lastCapturedUpdate=t:(n.lastCapturedUpdate.next=t,n.lastCapturedUpdate=t);}function kt(e,t){var n=e.alternate;return null!==n&&t===n.updateQueue&&(t=e.updateQueue=yt(t)),t}function St(e,t,n,r,i,a){switch(n.tag){case 1:return "function"==typeof(e=n.payload)?e.call(a,r,i):e;case 3:e.effectTag=-4097&e.effectTag|64;case 0:if(null==(i="function"==typeof(e=n.payload)?e.call(a,r,i):e))break;return l({},r,i);case 2:gt=true;}return r}function Ct(e,t,n,r,l){gt=false;for(var i=(t=kt(e,t)).baseState,a=null,u=0,o=t.firstUpdate,f=i;null!==o;){var c=o.expirationTime;c<l?(null===a&&(a=o,i=f),u<c&&(u=c)):(El(c,o.suspenseConfig),f=St(e,0,o,f,n,r),null!==o.callback&&(e.effectTag|=32,o.nextEffect=null,null===t.lastEffect?t.firstEffect=t.lastEffect=o:(t.lastEffect.nextEffect=o,t.lastEffect=o))),o=o.next;}for(c=null,o=t.firstCapturedUpdate;null!==o;){var s=o.expirationTime;s<l?(null===c&&(c=o,null===a&&(i=f)),u<s&&(u=s)):(f=St(e,0,o,f,n,r),null!==o.callback&&(e.effectTag|=32,o.nextEffect=null,null===t.lastCapturedEffect?t.firstCapturedEffect=t.lastCapturedEffect=o:(t.lastCapturedEffect.nextEffect=o,t.lastCapturedEffect=o))),o=o.next;}null===a&&(t.lastUpdate=null),null===c?t.lastCapturedUpdate=null:e.effectTag|=32,null===a&&null===c&&(i=f),t.baseState=i,t.firstUpdate=a,t.firstCapturedUpdate=c,kl(u),e.expirationTime=u,e.memoizedState=f;}function wt(e,t,n){null!==t.firstCapturedUpdate&&(null!==t.lastUpdate&&(t.lastUpdate.next=t.firstCapturedUpdate,t.lastUpdate=t.lastCapturedUpdate),t.firstCapturedUpdate=t.lastCapturedUpdate=null),zt(t.firstEffect,n),t.firstEffect=t.lastEffect=null,zt(t.firstCapturedEffect,n),t.firstCapturedEffect=t.lastCapturedEffect=null;}function zt(e,t){for(;null!==e;){var n=e.callback;if(null!==n){e.callback=null;var r=t;if("function"!=typeof n)throw Error(f(191,n));n.call(r);}e=e.nextEffect;}}var Pt=c.ReactCurrentBatchConfig,_t=(new a.Component).refs;function Nt(e,t,n,r){n=null==(n=n(r,t=e.memoizedState))?t:l({},t,n),e.memoizedState=n,null!==(r=e.updateQueue)&&0===e.expirationTime&&(r.baseState=n);}var Ut={isMounted:function(e){return !!(e=e._reactInternalFiber)&&P(e)===e},enqueueSetState:function(e,t,n){e=e._reactInternalFiber;var r=cl(),l=Pt.suspense;(l=vt(r=sl(r,e,l),l)).payload=t,null!=n&&(l.callback=n),xt(e,l),dl(e,r);},enqueueReplaceState:function(e,t,n){e=e._reactInternalFiber;var r=cl(),l=Pt.suspense;(l=vt(r=sl(r,e,l),l)).tag=1,l.payload=t,null!=n&&(l.callback=n),xt(e,l),dl(e,r);},enqueueForceUpdate:function(e,t){e=e._reactInternalFiber;var n=cl(),r=Pt.suspense;(r=vt(n=sl(n,e,r),r)).tag=2,null!=t&&(r.callback=t),xt(e,r),dl(e,n);}};function Rt(e,t,n,r,l,i,a){return "function"==typeof(e=e.stateNode).shouldComponentUpdate?e.shouldComponentUpdate(r,i,a):!(t.prototype&&t.prototype.isPureReactComponent&&lt(n,r)&&lt(l,i))}function It(e,t,n){var r=false,l=ge,i=t.contextType;return "object"==typeof i&&null!==i?i=ht(i):(l=xe(t)?ve:be.current,i=(r=null!=(r=t.contextTypes))?Te(e,l):ge),t=new t(n,i),e.memoizedState=null!==t.state&&void 0!==t.state?t.state:null,t.updater=Ut,e.stateNode=t,t._reactInternalFiber=e,r&&((e=e.stateNode).__reactInternalMemoizedUnmaskedChildContext=l,e.__reactInternalMemoizedMaskedChildContext=i),t}function Mt(e,t,n,r){e=t.state,"function"==typeof t.componentWillReceiveProps&&t.componentWillReceiveProps(n,r),"function"==typeof t.UNSAFE_componentWillReceiveProps&&t.UNSAFE_componentWillReceiveProps(n,r),t.state!==e&&Ut.enqueueReplaceState(t,t.state,null);}function Ft(e,t,n,r){var l=e.stateNode;l.props=n,l.state=e.memoizedState,l.refs=_t;var i=t.contextType;"object"==typeof i&&null!==i?l.context=ht(i):(i=xe(t)?ve:be.current,l.context=Te(e,i)),null!==(i=e.updateQueue)&&(Ct(e,i,n,l,r),l.state=e.memoizedState),"function"==typeof(i=t.getDerivedStateFromProps)&&(Nt(e,t,i,n),l.state=e.memoizedState),"function"==typeof t.getDerivedStateFromProps||"function"==typeof l.getSnapshotBeforeUpdate||"function"!=typeof l.UNSAFE_componentWillMount&&"function"!=typeof l.componentWillMount||(t=l.state,"function"==typeof l.componentWillMount&&l.componentWillMount(),"function"==typeof l.UNSAFE_componentWillMount&&l.UNSAFE_componentWillMount(),t!==l.state&&Ut.enqueueReplaceState(l,l.state,null),null!==(i=e.updateQueue)&&(Ct(e,i,n,l,r),l.state=e.memoizedState)),"function"==typeof l.componentDidMount&&(e.effectTag|=4);}var Qt=Array.isArray;function Dt(e,t,n){if(null!==(e=n.ref)&&"function"!=typeof e&&"object"!=typeof e){if(n._owner){if(n=n._owner){if(1!==n.tag)throw Error(f(309));var r=n.stateNode;}if(!r)throw Error(f(147,e));var l=""+e;return null!==t&&null!==t.ref&&"function"==typeof t.ref&&t.ref._stringRef===l?t.ref:(t=function(e){var t=r.refs;t===_t&&(t=r.refs={}),null===e?delete t[l]:t[l]=e;},t._stringRef=l,t)}if("string"!=typeof e)throw Error(f(284));if(!n._owner)throw Error(f(290,e))}return e}function Wt(e,t){if("textarea"!==e.type)throw Error(f(31,"[object Object]"===Object.prototype.toString.call(t)?"object with keys {"+Object.keys(t).join(", ")+"}":t,""))}function jt(e){function t(t,n){if(e){var r=t.lastEffect;null!==r?(r.nextEffect=n,t.lastEffect=n):t.firstEffect=t.lastEffect=n,n.nextEffect=null,n.effectTag=8;}}function n(n,r){if(!e)return null;for(;null!==r;)t(n,r),r=r.sibling;return null}function r(e,t){for(e=new Map;null!==t;)null!==t.key?e.set(t.key,t):e.set(t.index,t),t=t.sibling;return e}function l(e,t,n){return (e=Al(e,t)).index=0,e.sibling=null,e}function i(t,n,r){return t.index=r,e?null!==(r=t.alternate)?(r=r.index)<n?(t.effectTag=2,n):r:(t.effectTag=2,n):n}function a(t){return e&&null===t.alternate&&(t.effectTag=2),t}function u(e,t,n,r){return null===t||6!==t.tag?((t=ql(n,e.mode,r)).return=e,t):((t=l(t,n)).return=e,t)}function o(e,t,n,r){return null!==t&&t.elementType===n.type?((r=l(t,n.props)).ref=Dt(e,t,n),r.return=e,r):((r=Ll(n.type,n.key,n.props,null,e.mode,r)).ref=Dt(e,t,n),r.return=e,r)}function c(e,t,n,r){return null===t||4!==t.tag||t.stateNode.containerInfo!==n.containerInfo||t.stateNode.implementation!==n.implementation?((t=Vl(n,e.mode,r)).return=e,t):((t=l(t,n.children||[])).return=e,t)}function s(e,t,n,r,i){return null===t||7!==t.tag?((t=$l(n,e.mode,r,i)).return=e,t):((t=l(t,n)).return=e,t)}function h(e,t,n){if("string"==typeof t||"number"==typeof t)return (t=ql(""+t,e.mode,n)).return=e,t;if("object"==typeof t&&null!==t){switch(t.$$typeof){case d:return (n=Ll(t.type,t.key,t.props,null,e.mode,n)).ref=Dt(e,null,t),n.return=e,n;case p:return (t=Vl(t,e.mode,n)).return=e,t}if(Qt(t)||w(t))return (t=$l(t,e.mode,n,null)).return=e,t;Wt(e,t);}return null}function g(e,t,n,r){var l=null!==t?t.key:null;if("string"==typeof n||"number"==typeof n)return null!==l?null:u(e,t,""+n,r);if("object"==typeof n&&null!==n){switch(n.$$typeof){case d:return n.key===l?n.type===m?s(e,t,n.props.children,r,l):o(e,t,n,r):null;case p:return n.key===l?c(e,t,n,r):null}if(Qt(n)||w(n))return null!==l?null:s(e,t,n,r,null);Wt(e,n);}return null}function b(e,t,n,r,l){if("string"==typeof r||"number"==typeof r)return u(t,e=e.get(n)||null,""+r,l);if("object"==typeof r&&null!==r){switch(r.$$typeof){case d:return e=e.get(null===r.key?n:r.key)||null,r.type===m?s(t,e,r.props.children,l,r.key):o(t,e,r,l);case p:return c(t,e=e.get(null===r.key?n:r.key)||null,r,l)}if(Qt(r)||w(r))return s(t,e=e.get(n)||null,r,l,null);Wt(t,r);}return null}function y(l,a,u,o){for(var f=null,c=null,s=a,d=a=0,p=null;null!==s&&d<u.length;d++){s.index>d?(p=s,s=null):p=s.sibling;var m=g(l,s,u[d],o);if(null===m){null===s&&(s=p);break}e&&s&&null===m.alternate&&t(l,s),a=i(m,a,d),null===c?f=m:c.sibling=m,c=m,s=p;}if(d===u.length)return n(l,s),f;if(null===s){for(;d<u.length;d++)null!==(s=h(l,u[d],o))&&(a=i(s,a,d),null===c?f=s:c.sibling=s,c=s);return f}for(s=r(l,s);d<u.length;d++)null!==(p=b(s,l,d,u[d],o))&&(e&&null!==p.alternate&&s.delete(null===p.key?d:p.key),a=i(p,a,d),null===c?f=p:c.sibling=p,c=p);return e&&s.forEach((function(e){return t(l,e)})),f}function v(l,a,u,o){var c=w(u);if("function"!=typeof c)throw Error(f(150));if(null==(u=c.call(u)))throw Error(f(151));for(var s=c=null,d=a,p=a=0,m=null,y=u.next();null!==d&&!y.done;p++,y=u.next()){d.index>p?(m=d,d=null):m=d.sibling;var v=g(l,d,y.value,o);if(null===v){null===d&&(d=m);break}e&&d&&null===v.alternate&&t(l,d),a=i(v,a,p),null===s?c=v:s.sibling=v,s=v,d=m;}if(y.done)return n(l,d),c;if(null===d){for(;!y.done;p++,y=u.next())null!==(y=h(l,y.value,o))&&(a=i(y,a,p),null===s?c=y:s.sibling=y,s=y);return c}for(d=r(l,d);!y.done;p++,y=u.next())null!==(y=b(d,l,p,y.value,o))&&(e&&null!==y.alternate&&d.delete(null===y.key?p:y.key),a=i(y,a,p),null===s?c=y:s.sibling=y,s=y);return e&&d.forEach((function(e){return t(l,e)})),c}return function(e,r,i,u){var o="object"==typeof i&&null!==i&&i.type===m&&null===i.key;o&&(i=i.props.children);var c="object"==typeof i&&null!==i;if(c)switch(i.$$typeof){case d:e:{for(c=i.key,o=r;null!==o;){if(o.key===c){if(7===o.tag?i.type===m:o.elementType===i.type){n(e,o.sibling),(r=l(o,i.type===m?i.props.children:i.props)).ref=Dt(e,o,i),r.return=e,e=r;break e}n(e,o);break}t(e,o),o=o.sibling;}i.type===m?((r=$l(i.props.children,e.mode,u,i.key)).return=e,e=r):((u=Ll(i.type,i.key,i.props,null,e.mode,u)).ref=Dt(e,r,i),u.return=e,e=u);}return a(e);case p:e:{for(o=i.key;null!==r;){if(r.key===o){if(4===r.tag&&r.stateNode.containerInfo===i.containerInfo&&r.stateNode.implementation===i.implementation){n(e,r.sibling),(r=l(r,i.children||[])).return=e,e=r;break e}n(e,r);break}t(e,r),r=r.sibling;}(r=Vl(i,e.mode,u)).return=e,e=r;}return a(e)}if("string"==typeof i||"number"==typeof i)return i=""+i,null!==r&&6===r.tag?(n(e,r.sibling),(r=l(r,i)).return=e,e=r):(n(e,r),(r=ql(i,e.mode,u)).return=e,e=r),a(e);if(Qt(i))return y(e,r,i,u);if(w(i))return v(e,r,i,u);if(c&&Wt(e,i),void 0===i&&!o)switch(e.tag){case 1:case 0:throw e=e.type,Error(f(152,e.displayName||e.name||"Component"))}return n(e,r)}}var Ot=jt(true),Bt=jt(false),Ht={},At={current:Ht},Lt={current:Ht},$t={current:Ht};function qt(e){if(e===Ht)throw Error(f(174));return e}function Vt(e,t){he($t,t),he(Lt,e),he(At,Ht),t=I(t),me(At),he(At,t);}function Kt(e){me(At),me(Lt),me($t);}function Gt(e){var t=qt($t.current),n=qt(At.current);n!==(t=M(n,e.type,t))&&(he(Lt,e),he(At,t));}function Yt(e){Lt.current===e&&(me(At),me(Lt));}var Jt={current:0};function Xt(e){for(var t=e;null!==t;){if(13===t.tag){var n=t.memoizedState;if(null!==n&&(null===(n=n.dehydrated)||oe(n)||fe(n)))return t}else if(19===t.tag&&void 0!==t.memoizedProps.revealOrder){if(0!=(64&t.effectTag))return t}else if(null!==t.child){t.child.return=t,t=t.child;continue}if(t===e)break;for(;null===t.sibling;){if(null===t.return||t.return===e)return null;t=t.return;}t.sibling.return=t.return,t=t.sibling;}return null}function Zt(e,t){return {responder:e,props:t}}var en=c.ReactCurrentDispatcher,tn=c.ReactCurrentBatchConfig,nn=0,rn=null,ln=null,an=null,un=null,on=null,fn=null,cn=0,sn=null,dn=0,pn=false,mn=null,hn=0;function gn(){throw Error(f(321))}function bn(e,t){if(null===t)return  false;for(var n=0;n<t.length&&n<e.length;n++)if(!nt(e[n],t[n]))return  false;return  true}function yn(e,t,n,r,l,i){if(nn=i,rn=t,an=null!==e?e.memoizedState:null,en.current=null===an?Dn:Wn,t=n(r,l),pn){do{pn=false,hn+=1,an=null!==e?e.memoizedState:null,fn=un,sn=on=ln=null,en.current=Wn,t=n(r,l);}while(pn);mn=null,hn=0;}if(en.current=Qn,(e=rn).memoizedState=un,e.expirationTime=cn,e.updateQueue=sn,e.effectTag|=dn,e=null!==ln&&null!==ln.next,nn=0,fn=on=un=an=ln=rn=null,cn=0,sn=null,dn=0,e)throw Error(f(300));return t}function vn(){en.current=Qn,nn=0,fn=on=un=an=ln=rn=null,cn=0,sn=null,dn=0,pn=false,mn=null,hn=0;}function Tn(){var e={memoizedState:null,baseState:null,queue:null,baseUpdate:null,next:null};return null===on?un=on=e:on=on.next=e,on}function xn(){if(null!==fn)fn=(on=fn).next,an=null!==(ln=an)?ln.next:null;else {if(null===an)throw Error(f(310));var e={memoizedState:(ln=an).memoizedState,baseState:ln.baseState,queue:ln.queue,baseUpdate:ln.baseUpdate,next:null};on=null===on?un=e:on.next=e,an=ln.next;}return on}function En(e,t){return "function"==typeof t?t(e):t}function kn(e){var t=xn(),n=t.queue;if(null===n)throw Error(f(311));if(n.lastRenderedReducer=e,0<hn){var r=n.dispatch;if(null!==mn){var l=mn.get(n);if(void 0!==l){mn.delete(n);var i=t.memoizedState;do{i=e(i,l.action),l=l.next;}while(null!==l);return nt(i,t.memoizedState)||(On=true),t.memoizedState=i,t.baseUpdate===n.last&&(t.baseState=i),n.lastRenderedState=i,[i,r]}}return [t.memoizedState,r]}r=n.last;var a=t.baseUpdate;if(i=t.baseState,null!==a?(null!==r&&(r.next=null),r=a.next):r=null!==r?r.next:null,null!==r){var u=l=null,o=r,c=false;do{var s=o.expirationTime;s<nn?(c||(c=true,u=a,l=i),s>cn&&kl(cn=s)):(El(s,o.suspenseConfig),i=o.eagerReducer===e?o.eagerState:e(i,o.action)),a=o,o=o.next;}while(null!==o&&o!==r);c||(u=a,l=i),nt(i,t.memoizedState)||(On=true),t.memoizedState=i,t.baseUpdate=u,t.baseState=l,n.lastRenderedState=i;}return [t.memoizedState,n.dispatch]}function Sn(e){var t=Tn();return "function"==typeof e&&(e=e()),t.memoizedState=t.baseState=e,e=(e=t.queue={last:null,dispatch:null,lastRenderedReducer:En,lastRenderedState:e}).dispatch=Fn.bind(null,rn,e),[t.memoizedState,e]}function Cn(e){return kn(En)}function wn(e,t,n,r){return e={tag:e,create:t,destroy:n,deps:r,next:null},null===sn?(sn={lastEffect:null}).lastEffect=e.next=e:null===(t=sn.lastEffect)?sn.lastEffect=e.next=e:(n=t.next,t.next=e,e.next=n,sn.lastEffect=e),e}function zn(e,t,n,r){var l=Tn();dn|=e,l.memoizedState=wn(t,n,void 0,void 0===r?null:r);}function Pn(e,t,n,r){var l=xn();r=void 0===r?null:r;var i=void 0;if(null!==ln){var a=ln.memoizedState;if(i=a.destroy,null!==r&&bn(r,a.deps))return void wn(0,n,i,r)}dn|=e,l.memoizedState=wn(t,n,i,r);}function _n(e,t){return zn(516,192,e,t)}function Nn(e,t){return Pn(516,192,e,t)}function Un(e,t){return "function"==typeof t?(e=e(),t(e),function(){t(null);}):null!=t?(e=e(),t.current=e,function(){t.current=null;}):void 0}function Rn(){}function In(e,t){return Tn().memoizedState=[e,void 0===t?null:t],e}function Mn(e,t){var n=xn();t=void 0===t?null:t;var r=n.memoizedState;return null!==r&&null!==t&&bn(t,r[1])?r[0]:(n.memoizedState=[e,t],e)}function Fn(e,t,n){if(!(25>hn))throw Error(f(301));var r=e.alternate;if(e===rn||null!==r&&r===rn)if(pn=true,e={expirationTime:nn,suspenseConfig:null,action:n,eagerReducer:null,eagerState:null,next:null},null===mn&&(mn=new Map),void 0===(n=mn.get(t)))mn.set(t,e);else {for(t=n;null!==t.next;)t=t.next;t.next=e;}else {var l=cl(),i=Pt.suspense;i={expirationTime:l=sl(l,e,i),suspenseConfig:i,action:n,eagerReducer:null,eagerState:null,next:null};var a=t.last;if(null===a)i.next=i;else {var u=a.next;null!==u&&(i.next=u),a.next=i;}if(t.last=i,0===e.expirationTime&&(null===r||0===r.expirationTime)&&null!==(r=t.lastRenderedReducer))try{var o=t.lastRenderedState,c=r(o,n);if(i.eagerReducer=r,i.eagerState=c,nt(c,o))return}catch(e){}dl(e,l);}}var Qn={readContext:ht,useCallback:gn,useContext:gn,useEffect:gn,useImperativeHandle:gn,useLayoutEffect:gn,useMemo:gn,useReducer:gn,useRef:gn,useState:gn,useDebugValue:gn,useResponder:gn,useDeferredValue:gn,useTransition:gn},Dn={readContext:ht,useCallback:In,useContext:ht,useEffect:_n,useImperativeHandle:function(e,t,n){return n=null!=n?n.concat([e]):null,zn(4,36,Un.bind(null,t,e),n)},useLayoutEffect:function(e,t){return zn(4,36,e,t)},useMemo:function(e,t){var n=Tn();return t=void 0===t?null:t,e=e(),n.memoizedState=[e,t],e},useReducer:function(e,t,n){var r=Tn();return t=void 0!==n?n(t):t,r.memoizedState=r.baseState=t,e=(e=r.queue={last:null,dispatch:null,lastRenderedReducer:e,lastRenderedState:t}).dispatch=Fn.bind(null,rn,e),[r.memoizedState,e]},useRef:function(e){return e={current:e},Tn().memoizedState=e},useState:Sn,useDebugValue:Rn,useResponder:Zt,useDeferredValue:function(e,t){var n=Sn(e),r=n[0],l=n[1];return _n((function(){o.unstable_next((function(){var n=tn.suspense;tn.suspense=void 0===t?null:t;try{l(e);}finally{tn.suspense=n;}}));}),[e,t]),r},useTransition:function(e){var t=Sn(false),n=t[0],r=t[1];return [In((function(t){r(true),o.unstable_next((function(){var n=tn.suspense;tn.suspense=void 0===e?null:e;try{r(!1),t();}finally{tn.suspense=n;}}));}),[e,n]),n]}},Wn={readContext:ht,useCallback:Mn,useContext:ht,useEffect:Nn,useImperativeHandle:function(e,t,n){return n=null!=n?n.concat([e]):null,Pn(4,36,Un.bind(null,t,e),n)},useLayoutEffect:function(e,t){return Pn(4,36,e,t)},useMemo:function(e,t){var n=xn();t=void 0===t?null:t;var r=n.memoizedState;return null!==r&&null!==t&&bn(t,r[1])?r[0]:(e=e(),n.memoizedState=[e,t],e)},useReducer:kn,useRef:function(){return xn().memoizedState},useState:Cn,useDebugValue:Rn,useResponder:Zt,useDeferredValue:function(e,t){var n=Cn(),r=n[0],l=n[1];return Nn((function(){o.unstable_next((function(){var n=tn.suspense;tn.suspense=void 0===t?null:t;try{l(e);}finally{tn.suspense=n;}}));}),[e,t]),r},useTransition:function(e){var t=Cn(),n=t[0],r=t[1];return [Mn((function(t){r(true),o.unstable_next((function(){var n=tn.suspense;tn.suspense=void 0===e?null:e;try{r(!1),t();}finally{tn.suspense=n;}}));}),[e,n]),n]}},jn=c.ReactCurrentOwner,On=false;function Bn(e,t,n,r){t.child=null===e?Bt(t,null,n,r):Ot(t,e.child,n,r);}function Hn(e,t,n,r,l){n=n.render;var i=t.ref;return mt(t,l),r=yn(e,t,n,r,i,l),null===e||On?(t.effectTag|=1,Bn(e,t,r,l),t.child):(t.updateQueue=e.updateQueue,t.effectTag&=-517,e.expirationTime<=l&&(e.expirationTime=0),ir(e,t,l))}function An(e,t,n,r,l,i){if(null===e){var a=n.type;return "function"!=typeof a||Hl(a)||void 0!==a.defaultProps||null!==n.compare||void 0!==n.defaultProps?((e=Ll(n.type,null,r,null,t.mode,i)).ref=t.ref,e.return=t,t.child=e):(t.tag=15,t.type=a,Ln(e,t,a,r,l,i))}return a=e.child,l<i&&(l=a.memoizedProps,(n=null!==(n=n.compare)?n:lt)(l,r)&&e.ref===t.ref)?ir(e,t,i):(t.effectTag|=1,(e=Al(a,r)).ref=t.ref,e.return=t,t.child=e)}function Ln(e,t,n,r,l,i){return null!==e&&lt(e.memoizedProps,r)&&e.ref===t.ref&&(On=false,l<i)?ir(e,t,i):qn(e,t,n,r,i)}function $n(e,t){var n=t.ref;(null===e&&null!==n||null!==e&&e.ref!==n)&&(t.effectTag|=128);}function qn(e,t,n,r,l){var i=xe(n)?ve:be.current;return i=Te(t,i),mt(t,l),n=yn(e,t,n,r,i,l),null===e||On?(t.effectTag|=1,Bn(e,t,n,l),t.child):(t.updateQueue=e.updateQueue,t.effectTag&=-517,e.expirationTime<=l&&(e.expirationTime=0),ir(e,t,l))}function Vn(e,t,n,r,l){if(xe(n)){var i=true;we(t);}else i=false;if(mt(t,l),null===t.stateNode)null!==e&&(e.alternate=null,t.alternate=null,t.effectTag|=2),It(t,n,r),Ft(t,n,r,l),r=true;else if(null===e){var a=t.stateNode,u=t.memoizedProps;a.props=u;var o=a.context,f=n.contextType;f="object"==typeof f&&null!==f?ht(f):Te(t,f=xe(n)?ve:be.current);var c=n.getDerivedStateFromProps,s="function"==typeof c||"function"==typeof a.getSnapshotBeforeUpdate;s||"function"!=typeof a.UNSAFE_componentWillReceiveProps&&"function"!=typeof a.componentWillReceiveProps||(u!==r||o!==f)&&Mt(t,a,r,f),gt=false;var d=t.memoizedState;o=a.state=d;var p=t.updateQueue;null!==p&&(Ct(t,p,r,a,l),o=t.memoizedState),u!==r||d!==o||ye.current||gt?("function"==typeof c&&(Nt(t,n,c,r),o=t.memoizedState),(u=gt||Rt(t,n,u,r,d,o,f))?(s||"function"!=typeof a.UNSAFE_componentWillMount&&"function"!=typeof a.componentWillMount||("function"==typeof a.componentWillMount&&a.componentWillMount(),"function"==typeof a.UNSAFE_componentWillMount&&a.UNSAFE_componentWillMount()),"function"==typeof a.componentDidMount&&(t.effectTag|=4)):("function"==typeof a.componentDidMount&&(t.effectTag|=4),t.memoizedProps=r,t.memoizedState=o),a.props=r,a.state=o,a.context=f,r=u):("function"==typeof a.componentDidMount&&(t.effectTag|=4),r=false);}else a=t.stateNode,u=t.memoizedProps,a.props=t.type===t.elementType?u:it(t.type,u),o=a.context,f="object"==typeof(f=n.contextType)&&null!==f?ht(f):Te(t,f=xe(n)?ve:be.current),(s="function"==typeof(c=n.getDerivedStateFromProps)||"function"==typeof a.getSnapshotBeforeUpdate)||"function"!=typeof a.UNSAFE_componentWillReceiveProps&&"function"!=typeof a.componentWillReceiveProps||(u!==r||o!==f)&&Mt(t,a,r,f),gt=false,o=t.memoizedState,d=a.state=o,null!==(p=t.updateQueue)&&(Ct(t,p,r,a,l),d=t.memoizedState),u!==r||o!==d||ye.current||gt?("function"==typeof c&&(Nt(t,n,c,r),d=t.memoizedState),(c=gt||Rt(t,n,u,r,o,d,f))?(s||"function"!=typeof a.UNSAFE_componentWillUpdate&&"function"!=typeof a.componentWillUpdate||("function"==typeof a.componentWillUpdate&&a.componentWillUpdate(r,d,f),"function"==typeof a.UNSAFE_componentWillUpdate&&a.UNSAFE_componentWillUpdate(r,d,f)),"function"==typeof a.componentDidUpdate&&(t.effectTag|=4),"function"==typeof a.getSnapshotBeforeUpdate&&(t.effectTag|=256)):("function"!=typeof a.componentDidUpdate||u===e.memoizedProps&&o===e.memoizedState||(t.effectTag|=4),"function"!=typeof a.getSnapshotBeforeUpdate||u===e.memoizedProps&&o===e.memoizedState||(t.effectTag|=256),t.memoizedProps=r,t.memoizedState=d),a.props=r,a.state=d,a.context=f,r=c):("function"!=typeof a.componentDidUpdate||u===e.memoizedProps&&o===e.memoizedState||(t.effectTag|=4),"function"!=typeof a.getSnapshotBeforeUpdate||u===e.memoizedProps&&o===e.memoizedState||(t.effectTag|=256),r=false);return Kn(e,t,n,r,i,l)}function Kn(e,t,n,r,l,i){$n(e,t);var a=0!=(64&t.effectTag);if(!r&&!a)return l&&ze(t,n,false),ir(e,t,i);r=t.stateNode,jn.current=t;var u=a&&"function"!=typeof n.getDerivedStateFromError?null:r.render();return t.effectTag|=1,null!==e&&a?(t.child=Ot(t,e.child,null,i),t.child=Ot(t,null,u,i)):Bn(e,t,u,i),t.memoizedState=r.state,l&&ze(t,n,true),t.child}function Gn(e){var t=e.stateNode;t.pendingContext?Se(0,t.pendingContext,t.pendingContext!==t.context):t.context&&Se(0,t.context,false),Vt(e,t.containerInfo);}var Yn,Jn,Xn,Zn,er={dehydrated:null,retryTime:0};function tr(e,t,n){var r,l=t.mode,i=t.pendingProps,a=Jt.current,u=false;if((r=0!=(64&t.effectTag))||(r=0!=(2&a)&&(null===e||null!==e.memoizedState)),r?(u=true,t.effectTag&=-65):null!==e&&null===e.memoizedState||void 0===i.fallback||true===i.unstable_avoidThisFallback||(a|=1),he(Jt,1&a),null===e){if(i.fallback,u){if(u=i.fallback,(i=$l(null,l,0,null)).return=t,0==(2&t.mode))for(e=null!==t.memoizedState?t.child.child:t.child,i.child=e;null!==e;)e.return=i,e=e.sibling;return (n=$l(u,l,n,null)).return=t,i.sibling=n,t.memoizedState=er,t.child=i,n}return l=i.children,t.memoizedState=null,t.child=Bt(t,null,l,n)}if(null!==e.memoizedState){if(l=(e=e.child).sibling,u){if(i=i.fallback,(n=Al(e,e.pendingProps)).return=t,0==(2&t.mode)&&(u=null!==t.memoizedState?t.child.child:t.child)!==e.child)for(n.child=u;null!==u;)u.return=n,u=u.sibling;return (l=Al(l,i,l.expirationTime)).return=t,n.sibling=l,n.childExpirationTime=0,t.memoizedState=er,t.child=n,l}return n=Ot(t,e.child,i.children,n),t.memoizedState=null,t.child=n}if(e=e.child,u){if(u=i.fallback,(i=$l(null,l,0,null)).return=t,i.child=e,null!==e&&(e.return=i),0==(2&t.mode))for(e=null!==t.memoizedState?t.child.child:t.child,i.child=e;null!==e;)e.return=i,e=e.sibling;return (n=$l(u,l,n,null)).return=t,i.sibling=n,n.effectTag|=2,i.childExpirationTime=0,t.memoizedState=er,t.child=i,n}return t.memoizedState=null,t.child=Ot(t,e,i.children,n)}function nr(e,t){e.expirationTime<t&&(e.expirationTime=t);var n=e.alternate;null!==n&&n.expirationTime<t&&(n.expirationTime=t),pt(e.return,t);}function rr(e,t,n,r,l,i){var a=e.memoizedState;null===a?e.memoizedState={isBackwards:t,rendering:null,last:r,tail:n,tailExpiration:0,tailMode:l,lastEffect:i}:(a.isBackwards=t,a.rendering=null,a.last=r,a.tail=n,a.tailExpiration=0,a.tailMode=l,a.lastEffect=i);}function lr(e,t,n){var r=t.pendingProps,l=r.revealOrder,i=r.tail;if(Bn(e,t,r.children,n),0!=(2&(r=Jt.current)))r=1&r|2,t.effectTag|=64;else {if(null!==e&&0!=(64&e.effectTag))e:for(e=t.child;null!==e;){if(13===e.tag)null!==e.memoizedState&&nr(e,n);else if(19===e.tag)nr(e,n);else if(null!==e.child){e.child.return=e,e=e.child;continue}if(e===t)break e;for(;null===e.sibling;){if(null===e.return||e.return===t)break e;e=e.return;}e.sibling.return=e.return,e=e.sibling;}r&=1;}if(he(Jt,r),0==(2&t.mode))t.memoizedState=null;else switch(l){case "forwards":for(n=t.child,l=null;null!==n;)null!==(e=n.alternate)&&null===Xt(e)&&(l=n),n=n.sibling;null===(n=l)?(l=t.child,t.child=null):(l=n.sibling,n.sibling=null),rr(t,false,l,n,i,t.lastEffect);break;case "backwards":for(n=null,l=t.child,t.child=null;null!==l;){if(null!==(e=l.alternate)&&null===Xt(e)){t.child=l;break}e=l.sibling,l.sibling=n,n=l,l=e;}rr(t,true,n,null,i,t.lastEffect);break;case "together":rr(t,false,null,null,void 0,t.lastEffect);break;default:t.memoizedState=null;}return t.child}function ir(e,t,n){null!==e&&(t.dependencies=e.dependencies);var r=t.expirationTime;if(0!==r&&kl(r),t.childExpirationTime<n)return null;if(null!==e&&t.child!==e.child)throw Error(f(153));if(null!==t.child){for(n=Al(e=t.child,e.pendingProps,e.expirationTime),t.child=n,n.return=t;null!==e.sibling;)e=e.sibling,(n=n.sibling=Al(e,e.pendingProps,e.expirationTime)).return=t;n.sibling=null;}return t.child}function ar(e){e.effectTag|=4;}function ur(e,t){switch(e.tailMode){case "hidden":t=e.tail;for(var n=null;null!==t;)null!==t.alternate&&(n=t),t=t.sibling;null===n?e.tail=null:n.sibling=null;break;case "collapsed":n=e.tail;for(var r=null;null!==n;)null!==n.alternate&&(r=n),n=n.sibling;null===r?t||null===e.tail?e.tail=null:e.tail.sibling=null:r.sibling=null;}}function or(e){switch(e.tag){case 1:xe(e.type)&&Ee();var t=e.effectTag;return 4096&t?(e.effectTag=-4097&t|64,e):null;case 3:if(Kt(),ke(),0!=(64&(t=e.effectTag)))throw Error(f(285));return e.effectTag=-4097&t|64,e;case 5:return Yt(e),null;case 13:return me(Jt),4096&(t=e.effectTag)?(e.effectTag=-4097&t|64,e):null;case 19:return me(Jt),null;case 4:return Kt(),null;case 10:return dt(e),null;default:return null}}function fr(e,t){return {value:e,source:t,stack:se(t)}}Yn=function(e,t){for(var n=t.child;null!==n;){if(5===n.tag||6===n.tag)W(e,n.stateNode);else if(4!==n.tag&&null!==n.child){n.child.return=n,n=n.child;continue}if(n===t)break;for(;null===n.sibling;){if(null===n.return||n.return===t)return;n=n.return;}n.sibling.return=n.return,n=n.sibling;}},Jn=function(){},Xn=function(e,t,n,r,l){if((e=e.memoizedProps)!==r){var i=t.stateNode,a=qt(At.current);n=O(i,n,e,r,l,a),(t.updateQueue=n)&&ar(t);}},Zn=function(e,t,n,r){n!==r&&ar(t);};var cr="function"==typeof WeakSet?WeakSet:Set;function sr(e,t){var n=t.source,r=t.stack;null===r&&null!==n&&(r=se(n)),null!==n&&z(n.type),t=t.value,null!==e&&1===e.tag&&z(e.type);try{console.error(t);}catch(e){setTimeout((function(){throw e}));}}function dr(e){var t=e.ref;if(null!==t)if("function"==typeof t)try{t(null);}catch(t){Fl(e,t);}else t.current=null;}function pr(e,t){switch(t.tag){case 0:case 11:case 15:mr(2,0,t);break;case 1:if(256&t.effectTag&&null!==e){var n=e.memoizedProps,r=e.memoizedState;t=(e=t.stateNode).getSnapshotBeforeUpdate(t.elementType===t.type?n:it(t.type,n),r),e.__reactInternalSnapshotBeforeUpdate=t;}break;case 3:case 5:case 6:case 4:case 17:break;default:throw Error(f(163))}}function mr(e,t,n){if(null!==(n=null!==(n=n.updateQueue)?n.lastEffect:null)){var r=n=n.next;do{if(0!=(r.tag&e)){var l=r.destroy;r.destroy=void 0,void 0!==l&&l();}0!=(r.tag&t)&&(l=r.create,r.destroy=l()),r=r.next;}while(r!==n)}}function hr(e,t,n){switch("function"==typeof jl&&jl(t),t.tag){case 0:case 11:case 14:case 15:if(null!==(e=t.updateQueue)&&null!==(e=e.lastEffect)){var r=e.next;Ge(97<n?97:n,(function(){var e=r;do{var n=e.destroy;if(void 0!==n){var l=t;try{n();}catch(e){Fl(l,e);}}e=e.next;}while(e!==r)}));}break;case 1:dr(t),"function"==typeof(n=t.stateNode).componentWillUnmount&&function(e,t){try{t.props=e.memoizedProps,t.state=e.memoizedState,t.componentWillUnmount();}catch(t){Fl(e,t);}}(t,n);break;case 5:dr(t);break;case 4:Tr(e,t,n);}}function gr(e,t,n){for(var r=t;;)if(hr(e,r,n),null===r.child||4===r.tag){if(r===t)break;for(;null===r.sibling;){if(null===r.return||r.return===t)return;r=r.return;}r.sibling.return=r.return,r=r.sibling;}else r.child.return=r,r=r.child;}function br(e){var t=e.alternate;e.return=null,e.child=null,e.memoizedState=null,e.updateQueue=null,e.dependencies=null,e.alternate=null,e.firstEffect=null,e.lastEffect=null,e.pendingProps=null,e.memoizedProps=null,null!==t&&br(t);}function yr(e){return 5===e.tag||3===e.tag||4===e.tag}function vr(e){e:{for(var t=e.return;null!==t;){if(yr(t)){var n=t;break e}t=t.return;}throw Error(f(160))}switch(t=n.stateNode,n.tag){case 5:var r=false;break;case 3:case 4:t=t.containerInfo,r=true;break;default:throw Error(f(161))}16&n.effectTag&&(re(t),n.effectTag&=-17);e:t:for(n=e;;){for(;null===n.sibling;){if(null===n.return||yr(n.return)){n=null;break e}n=n.return;}for(n.sibling.return=n.return,n=n.sibling;5!==n.tag&&6!==n.tag&&18!==n.tag;){if(2&n.effectTag)continue t;if(null===n.child||4===n.tag)continue t;n.child.return=n,n=n.child;}if(!(2&n.effectTag)){n=n.stateNode;break e}}for(var l=e;;){var i=5===l.tag||6===l.tag;if(i)i=i?l.stateNode:l.stateNode.instance,n?r?ee(t,i,n):Z(t,i,n):r?G(t,i):K(t,i);else if(4!==l.tag&&null!==l.child){l.child.return=l,l=l.child;continue}if(l===e)break;for(;null===l.sibling;){if(null===l.return||l.return===e)return;l=l.return;}l.sibling.return=l.return,l=l.sibling;}}function Tr(e,t,n){for(var r,l,i=t,a=false;;){if(!a){a=i.return;e:for(;;){if(null===a)throw Error(f(160));switch(r=a.stateNode,a.tag){case 5:l=false;break e;case 3:case 4:r=r.containerInfo,l=true;break e}a=a.return;}a=true;}if(5===i.tag||6===i.tag)gr(e,i,n),l?ne(r,i.stateNode):te(r,i.stateNode);else if(4===i.tag){if(null!==i.child){r=i.stateNode.containerInfo,l=true,i.child.return=i,i=i.child;continue}}else if(hr(e,i,n),null!==i.child){i.child.return=i,i=i.child;continue}if(i===t)break;for(;null===i.sibling;){if(null===i.return||i.return===t)return;4===(i=i.return).tag&&(a=false);}i.sibling.return=i.return,i=i.sibling;}}function xr(e,t){switch(t.tag){case 0:case 11:case 14:case 15:mr(4,8,t);break;case 1:case 3:case 12:case 17:case 20:case 21:break;case 5:var n=t.stateNode;if(null!=n){var r=t.memoizedProps;e=null!==e?e.memoizedProps:r;var l=t.type,i=t.updateQueue;t.updateQueue=null,null!==i&&X(n,i,l,e,r,t);}break;case 6:if(null===t.stateNode)throw Error(f(162));n=t.memoizedProps,Y(t.stateNode,null!==e?e.memoizedProps:n,n);break;case 13:!function(e){var t=e;if(null===e.memoizedState)var n=false;else n=true,t=e.child,Jr=qe();if(null!==t)e:if(e=t,q)for(t=e;;){if(5===t.tag){var r=t.stateNode;n?le(r):ae(t.stateNode,t.memoizedProps);}else if(6===t.tag)r=t.stateNode,n?ie(r):ue(r,t.memoizedProps);else {if(13===t.tag&&null!==t.memoizedState&&null===t.memoizedState.dehydrated){(r=t.child.sibling).return=t,t=r;continue}if(null!==t.child){t.child.return=t,t=t.child;continue}}if(t===e)break e;for(;null===t.sibling;){if(null===t.return||t.return===e)break e;t=t.return;}t.sibling.return=t.return,t=t.sibling;}}(t),Er(t);break;case 19:Er(t);break;default:throw Error(f(163))}}function Er(e){var t=e.updateQueue;if(null!==t){e.updateQueue=null;var n=e.stateNode;null===n&&(n=e.stateNode=new cr),t.forEach((function(t){var r=Dl.bind(null,e,t);n.has(t)||(n.add(t),t.then(r,r));}));}}var kr="function"==typeof WeakMap?WeakMap:Map;function Sr(e,t,n){(n=vt(n,null)).tag=3,n.payload={element:null};var r=t.value;return n.callback=function(){el||(el=true,tl=r),sr(e,t);},n}function Cr(e,t,n){(n=vt(n,null)).tag=3;var r=e.type.getDerivedStateFromError;if("function"==typeof r){var l=t.value;n.payload=function(){return sr(e,t),r(l)};}var i=e.stateNode;return null!==i&&"function"==typeof i.componentDidCatch&&(n.callback=function(){"function"!=typeof r&&(null===nl?nl=new Set([this]):nl.add(this),sr(e,t));var n=t.stack;this.componentDidCatch(t.value,{componentStack:null!==n?n:""});}),n}var wr,zr=Math.ceil,Pr=c.ReactCurrentDispatcher,_r=c.ReactCurrentOwner,Nr=0,Ur=8,Rr=16,Ir=32,Mr=0,Fr=1,Qr=2,Dr=3,Wr=4,jr=5,Or=Nr,Br=null,Hr=null,Ar=0,Lr=Mr,$r=null,qr=1073741823,Vr=1073741823,Kr=null,Gr=0,Yr=false,Jr=0,Xr=500,Zr=null,el=false,tl=null,nl=null,rl=false,ll=null,il=90,al=null,ul=0,ol=null,fl=0;function cl(){return (Or&(Rr|Ir))!==Nr?1073741821-(qe()/10|0):0!==fl?fl:fl=1073741821-(qe()/10|0)}function sl(e,t,n){if(0==(2&(t=t.mode)))return 1073741823;var r=Ve();if(0==(4&t))return 99===r?1073741823:1073741822;if((Or&Rr)!==Nr)return Ar;if(null!==n)e=tt(e,0|n.timeoutMs||5e3,250);else switch(r){case 99:e=1073741823;break;case 98:e=tt(e,150,100);break;case 97:case 96:e=tt(e,5e3,250);break;case 95:e=2;break;default:throw Error(f(326))}return null!==Br&&e===Ar&&--e,e}function dl(e,t){if(50<ul)throw ul=0,ol=null,Error(f(185));if(null!==(e=pl(e,t))){var n=Ve();1073741823===t?(Or&Ur)!==Nr&&(Or&(Rr|Ir))===Nr?bl(e):(hl(e),Or===Nr&&Xe()):hl(e),(4&Or)===Nr||98!==n&&99!==n||(null===al?al=new Map([[e,t]]):(void 0===(n=al.get(e))||n>t)&&al.set(e,t));}}function pl(e,t){e.expirationTime<t&&(e.expirationTime=t);var n=e.alternate;null!==n&&n.expirationTime<t&&(n.expirationTime=t);var r=e.return,l=null;if(null===r&&3===e.tag)l=e.stateNode;else for(;null!==r;){if(n=r.alternate,r.childExpirationTime<t&&(r.childExpirationTime=t),null!==n&&n.childExpirationTime<t&&(n.childExpirationTime=t),null===r.return&&3===r.tag){l=r.stateNode;break}r=r.return;}return null!==l&&(Br===l&&(kl(t),Lr===Wr&&Yl(l,Ar)),Jl(l,t)),l}function ml(e){var t=e.lastExpiredTime;return 0!==t?t:Gl(e,t=e.firstPendingTime)?(t=e.lastPingedTime)>(e=e.nextKnownPendingLevel)?t:e:t}function hl(e){if(0!==e.lastExpiredTime)e.callbackExpirationTime=1073741823,e.callbackPriority=99,e.callbackNode=Je(bl.bind(null,e));else {var t=ml(e),n=e.callbackNode;if(0===t)null!==n&&(e.callbackNode=null,e.callbackExpirationTime=0,e.callbackPriority=90);else {var r=cl();if(r=1073741823===t?99:1===t||2===t?95:0>=(r=10*(1073741821-t)-10*(1073741821-r))?99:250>=r?98:5250>=r?97:95,null!==n){var l=e.callbackPriority;if(e.callbackExpirationTime===t&&l>=r)return;n!==Oe&&Ne(n);}e.callbackExpirationTime=t,e.callbackPriority=r,t=1073741823===t?Je(bl.bind(null,e)):Ye(r,gl.bind(null,e),{timeout:10*(1073741821-t)-qe()}),e.callbackNode=t;}}}function gl(e,t){if(fl=0,t)return Xl(e,t=cl()),hl(e),null;var n=ml(e);if(0!==n){if(t=e.callbackNode,(Or&(Rr|Ir))!==Nr)throw Error(f(327));if(Rl(),e===Br&&n===Ar||vl(e,n),null!==Hr){var r=Or;Or|=Rr;for(var l=xl();;)try{Cl();break}catch(t){Tl(e,t);}if(ct(),Or=r,Pr.current=l,Lr===Fr)throw t=$r,vl(e,n),Yl(e,n),hl(e),t;if(null===Hr)switch(l=e.finishedWork=e.current.alternate,e.finishedExpirationTime=n,r=Lr,Br=null,r){case Mr:case Fr:throw Error(f(345));case Qr:Xl(e,2<n?2:n);break;case Dr:if(Yl(e,n),n===(r=e.lastSuspendedTime)&&(e.nextKnownPendingLevel=Pl(l)),1073741823===qr&&10<(l=Jr+Xr-qe())){if(Yr){var i=e.lastPingedTime;if(0===i||i>=n){e.lastPingedTime=n,vl(e,n);break}}if(0!==(i=ml(e))&&i!==n)break;if(0!==r&&r!==n){e.lastPingedTime=r;break}e.timeoutHandle=A(_l.bind(null,e),l);break}_l(e);break;case Wr:if(Yl(e,n),n===(r=e.lastSuspendedTime)&&(e.nextKnownPendingLevel=Pl(l)),Yr&&(0===(l=e.lastPingedTime)||l>=n)){e.lastPingedTime=n,vl(e,n);break}if(0!==(l=ml(e))&&l!==n)break;if(0!==r&&r!==n){e.lastPingedTime=r;break}if(1073741823!==Vr?r=10*(1073741821-Vr)-qe():1073741823===qr?r=0:(r=10*(1073741821-qr)-5e3,0>(r=(l=qe())-r)&&(r=0),(n=10*(1073741821-n)-l)<(r=(120>r?120:480>r?480:1080>r?1080:1920>r?1920:3e3>r?3e3:4320>r?4320:1960*zr(r/1960))-r)&&(r=n)),10<r){e.timeoutHandle=A(_l.bind(null,e),r);break}_l(e);break;case jr:if(1073741823!==qr&&null!==Kr){i=qr;var a=Kr;if(0>=(r=0|a.busyMinDurationMs)?r=0:(l=0|a.busyDelayMs,r=(i=qe()-(10*(1073741821-i)-(0|a.timeoutMs||5e3)))<=l?0:l+r-i),10<r){Yl(e,n),e.timeoutHandle=A(_l.bind(null,e),r);break}}_l(e);break;default:throw Error(f(329))}if(hl(e),e.callbackNode===t)return gl.bind(null,e)}}return null}function bl(e){var t=e.lastExpiredTime;if(t=0!==t?t:1073741823,e.finishedExpirationTime===t)_l(e);else {if((Or&(Rr|Ir))!==Nr)throw Error(f(327));if(Rl(),e===Br&&t===Ar||vl(e,t),null!==Hr){var n=Or;Or|=Rr;for(var r=xl();;)try{Sl();break}catch(t){Tl(e,t);}if(ct(),Or=n,Pr.current=r,Lr===Fr)throw n=$r,vl(e,t),Yl(e,t),hl(e),n;if(null!==Hr)throw Error(f(261));e.finishedWork=e.current.alternate,e.finishedExpirationTime=t,Br=null,_l(e),hl(e);}}return null}function yl(e,t){if((Or&(Rr|Ir))!==Nr)throw Error(f(187));var n=Or;Or|=1;try{return Ge(99,e.bind(null,t))}finally{Or=n,Xe();}}function vl(e,t){e.finishedWork=null,e.finishedExpirationTime=0;var n=e.timeoutHandle;if(n!==$&&(e.timeoutHandle=$,L(n)),null!==Hr)for(n=Hr.return;null!==n;){var r=n;switch(r.tag){case 1:var l=r.type.childContextTypes;null!=l&&Ee();break;case 3:Kt(),ke();break;case 5:Yt(r);break;case 4:Kt();break;case 13:case 19:me(Jt);break;case 10:dt(r);}n=n.return;}Br=e,Hr=Al(e.current,null),Ar=t,Lr=Mr,$r=null,Vr=qr=1073741823,Kr=null,Gr=0,Yr=false;}function Tl(e,t){for(;;){try{if(ct(),vn(),null===Hr||null===Hr.return)return Lr=Fr,$r=t,null;e:{var n=e,r=Hr.return,l=Hr,i=t;if(t=Ar,l.effectTag|=2048,l.firstEffect=l.lastEffect=null,null!==i&&"object"==typeof i&&"function"==typeof i.then){var a=i,u=0!=(1&Jt.current),o=r;do{var f;if(f=13===o.tag){var c=o.memoizedState;if(null!==c)f=null!==c.dehydrated;else {var s=o.memoizedProps;f=void 0!==s.fallback&&(!0!==s.unstable_avoidThisFallback||!u);}}if(f){var d=o.updateQueue;if(null===d){var p=new Set;p.add(a),o.updateQueue=p;}else d.add(a);if(0==(2&o.mode)){if(o.effectTag|=64,l.effectTag&=-2981,1===l.tag)if(null===l.alternate)l.tag=17;else {var m=vt(1073741823,null);m.tag=2,xt(l,m);}l.expirationTime=1073741823;break e}i=void 0,l=t;var h=n.pingCache;if(null===h?(h=n.pingCache=new kr,i=new Set,h.set(a,i)):void 0===(i=h.get(a))&&(i=new Set,h.set(a,i)),!i.has(l)){i.add(l);var g=Ql.bind(null,n,a,l);a.then(g,g);}o.effectTag|=4096,o.expirationTime=t;break e}o=o.return;}while(null!==o);i=Error((z(l.type)||"A React component")+" suspended while rendering, but no fallback UI was specified.\n\nAdd a <Suspense fallback=...> component higher in the tree to provide a loading indicator or placeholder to display."+se(l));}Lr!==jr&&(Lr=Qr),i=fr(i,l),o=r;do{switch(o.tag){case 3:a=i,o.effectTag|=4096,o.expirationTime=t,Et(o,Sr(o,a,t));break e;case 1:a=i;var b=o.type,y=o.stateNode;if(0==(64&o.effectTag)&&("function"==typeof b.getDerivedStateFromError||null!==y&&"function"==typeof y.componentDidCatch&&(null===nl||!nl.has(y)))){o.effectTag|=4096,o.expirationTime=t,Et(o,Cr(o,a,t));break e}}o=o.return;}while(null!==o)}Hr=zl(Hr);}catch(e){t=e;continue}break}}function xl(){var e=Pr.current;return Pr.current=Qn,null===e?Qn:e}function El(e,t){e<qr&&2<e&&(qr=e),null!==t&&e<Vr&&2<e&&(Vr=e,Kr=t);}function kl(e){e>Gr&&(Gr=e);}function Sl(){for(;null!==Hr;)Hr=wl(Hr);}function Cl(){for(;null!==Hr&&!Ue();)Hr=wl(Hr);}function wl(e){var t=wr(e.alternate,e,Ar);return e.memoizedProps=e.pendingProps,null===t&&(t=zl(e)),_r.current=null,t}function zl(e){Hr=e;do{var t=Hr.alternate;if(e=Hr.return,0==(2048&Hr.effectTag)){e:{var n=t,r=Ar,l=(t=Hr).pendingProps;switch(t.tag){case 2:case 16:case 15:case 0:case 11:case 7:case 8:case 12:case 9:case 14:case 20:case 21:break;case 1:case 17:xe(t.type)&&Ee();break;case 3:Kt(),ke(),(l=t.stateNode).pendingContext&&(l.context=l.pendingContext,l.pendingContext=null),null===n||n.child,Jn(t);break;case 5:Yt(t);var i=qt($t.current);if(r=t.type,null!==n&&null!=t.stateNode)Xn(n,t,r,l,i),n.ref!==t.ref&&(t.effectTag|=128);else if(l){n=qt(At.current);var a=D(r,l,i,n,t);Yn(a,t,false,false),t.stateNode=a,j(a,r,l,i,n)&&ar(t),null!==t.ref&&(t.effectTag|=128);}else if(null===t.stateNode)throw Error(f(166));break;case 6:if(n&&null!=t.stateNode)Zn(n,t,n.memoizedProps,l);else {if("string"!=typeof l&&null===t.stateNode)throw Error(f(166));n=qt($t.current),i=qt(At.current),t.stateNode=H(l,n,i,t);}break;case 13:if(me(Jt),l=t.memoizedState,0!=(64&t.effectTag)){t.expirationTime=r;break e}l=null!==l,i=false,null===n?t.memoizedProps.fallback:(i=null!==(r=n.memoizedState),l||null===r||null!==(r=n.child.sibling)&&(null!==(a=t.firstEffect)?(t.firstEffect=r,r.nextEffect=a):(t.firstEffect=t.lastEffect=r,r.nextEffect=null),r.effectTag=8)),l&&!i&&0!=(2&t.mode)&&(null===n&&true!==t.memoizedProps.unstable_avoidThisFallback||0!=(1&Jt.current)?Lr===Mr&&(Lr=Dr):(Lr!==Mr&&Lr!==Dr||(Lr=Wr),0!==Gr&&null!==Br&&(Yl(Br,Ar),Jl(Br,Gr)))),(l||i)&&(t.effectTag|=4);break;case 4:Kt(),Jn(t);break;case 10:dt(t);break;case 19:if(me(Jt),null===(l=t.memoizedState))break;if(i=0!=(64&t.effectTag),null===(a=l.rendering)){if(i)ur(l,false);else if(Lr!==Mr||null!==n&&0!=(64&n.effectTag))for(n=t.child;null!==n;){if(null!==(a=Xt(n))){for(t.effectTag|=64,ur(l,false),null!==(n=a.updateQueue)&&(t.updateQueue=n,t.effectTag|=4),null===l.lastEffect&&(t.firstEffect=null),t.lastEffect=l.lastEffect,n=r,l=t.child;null!==l;)r=n,(i=l).effectTag&=2,i.nextEffect=null,i.firstEffect=null,i.lastEffect=null,null===(a=i.alternate)?(i.childExpirationTime=0,i.expirationTime=r,i.child=null,i.memoizedProps=null,i.memoizedState=null,i.updateQueue=null,i.dependencies=null):(i.childExpirationTime=a.childExpirationTime,i.expirationTime=a.expirationTime,i.child=a.child,i.memoizedProps=a.memoizedProps,i.memoizedState=a.memoizedState,i.updateQueue=a.updateQueue,r=a.dependencies,i.dependencies=null===r?null:{expirationTime:r.expirationTime,firstContext:r.firstContext,responders:r.responders}),l=l.sibling;he(Jt,1&Jt.current|2),t=t.child;break e}n=n.sibling;}}else {if(!i)if(null!==(n=Xt(a))){if(t.effectTag|=64,i=true,null!==(n=n.updateQueue)&&(t.updateQueue=n,t.effectTag|=4),ur(l,true),null===l.tail&&"hidden"===l.tailMode){null!==(t=t.lastEffect=l.lastEffect)&&(t.nextEffect=null);break}}else qe()>l.tailExpiration&&1<r&&(t.effectTag|=64,i=true,ur(l,false),t.expirationTime=t.childExpirationTime=r-1);l.isBackwards?(a.sibling=t.child,t.child=a):(null!==(n=l.last)?n.sibling=a:t.child=a,l.last=a);}if(null!==l.tail){0===l.tailExpiration&&(l.tailExpiration=qe()+500),n=l.tail,l.rendering=n,l.tail=n.sibling,l.lastEffect=t.lastEffect,n.sibling=null,l=Jt.current,he(Jt,l=i?1&l|2:1&l),t=n;break e}break;default:throw Error(f(156,t.tag))}t=null;}if(n=Hr,1===Ar||1!==n.childExpirationTime){for(l=0,i=n.child;null!==i;)(r=i.expirationTime)>l&&(l=r),(a=i.childExpirationTime)>l&&(l=a),i=i.sibling;n.childExpirationTime=l;}if(null!==t)return t;null!==e&&0==(2048&e.effectTag)&&(null===e.firstEffect&&(e.firstEffect=Hr.firstEffect),null!==Hr.lastEffect&&(null!==e.lastEffect&&(e.lastEffect.nextEffect=Hr.firstEffect),e.lastEffect=Hr.lastEffect),1<Hr.effectTag&&(null!==e.lastEffect?e.lastEffect.nextEffect=Hr:e.firstEffect=Hr,e.lastEffect=Hr));}else {if(null!==(t=or(Hr)))return t.effectTag&=2047,t;null!==e&&(e.firstEffect=e.lastEffect=null,e.effectTag|=2048);}if(null!==(t=Hr.sibling))return t;Hr=e;}while(null!==Hr);return Lr===Mr&&(Lr=jr),null}function Pl(e){var t=e.expirationTime;return t>(e=e.childExpirationTime)?t:e}function _l(e){var t=Ve();return Ge(99,Nl.bind(null,e,t)),null}function Nl(e,t){if(Rl(),(Or&(Rr|Ir))!==Nr)throw Error(f(327));var n=e.finishedWork,r=e.finishedExpirationTime;if(null===n)return null;if(e.finishedWork=null,e.finishedExpirationTime=0,n===e.current)throw Error(f(177));e.callbackNode=null,e.callbackExpirationTime=0,e.callbackPriority=90,e.nextKnownPendingLevel=0;var l=Pl(n);if(e.firstPendingTime=l,r<=e.lastSuspendedTime?e.firstSuspendedTime=e.lastSuspendedTime=e.nextKnownPendingLevel=0:r<=e.firstSuspendedTime&&(e.firstSuspendedTime=r-1),r<=e.lastPingedTime&&(e.lastPingedTime=0),r<=e.lastExpiredTime&&(e.lastExpiredTime=0),e===Br&&(Hr=Br=null,Ar=0),1<n.effectTag?null!==n.lastEffect?(n.lastEffect.nextEffect=n,l=n.firstEffect):l=n:l=n.firstEffect,null!==l){var i=Or;Or|=Ir,_r.current=null,F(e.containerInfo),Zr=l;do{try{Ul();}catch(e){if(null===Zr)throw Error(f(330));Fl(Zr,e),Zr=Zr.nextEffect;}}while(null!==Zr);Zr=l;do{try{for(var a=e,u=t;null!==Zr;){var o=Zr.effectTag;if(16&o&&q&&re(Zr.stateNode),128&o){var c=Zr.alternate;if(null!==c){var s=c.ref;null!==s&&("function"==typeof s?s(null):s.current=null);}}switch(1038&o){case 2:vr(Zr),Zr.effectTag&=-3;break;case 6:vr(Zr),Zr.effectTag&=-3,xr(Zr.alternate,Zr);break;case 1024:Zr.effectTag&=-1025;break;case 1028:Zr.effectTag&=-1025,xr(Zr.alternate,Zr);break;case 4:xr(Zr.alternate,Zr);break;case 8:var d=a,p=Zr,m=u;q?Tr(d,p,m):gr(d,p,m),br(p);}Zr=Zr.nextEffect;}}catch(e){if(null===Zr)throw Error(f(330));Fl(Zr,e),Zr=Zr.nextEffect;}}while(null!==Zr);Q(e.containerInfo),e.current=n,Zr=l;do{try{for(o=r;null!==Zr;){var h=Zr.effectTag;if(36&h){var g=Zr.alternate;switch(s=o,(c=Zr).tag){case 0:case 11:case 15:mr(16,32,c);break;case 1:var b=c.stateNode;if(4&c.effectTag)if(null===g)b.componentDidMount();else {var y=c.elementType===c.type?g.memoizedProps:it(c.type,g.memoizedProps);b.componentDidUpdate(y,g.memoizedState,b.__reactInternalSnapshotBeforeUpdate);}var v=c.updateQueue;null!==v&&wt(0,v,b);break;case 3:var T=c.updateQueue;if(null!==T){if(a=null,null!==c.child)switch(c.child.tag){case 5:a=R(c.child.stateNode);break;case 1:a=c.child.stateNode;}wt(0,T,a);}break;case 5:var x=c.stateNode;null===g&&4&c.effectTag&&J(x,c.type,c.memoizedProps,c);break;case 6:case 4:case 12:case 19:case 17:case 20:case 21:break;case 13:V&&c.memoizedState;break;default:throw Error(f(163))}}if(128&h){c=void 0;var E=Zr.ref;if(null!==E){var k=Zr.stateNode;c=5===Zr.tag?R(k):k,"function"==typeof E?E(c):E.current=c;}}Zr=Zr.nextEffect;}}catch(e){if(null===Zr)throw Error(f(330));Fl(Zr,e),Zr=Zr.nextEffect;}}while(null!==Zr);Zr=null,Be(),Or=i;}else e.current=n;if(rl)rl=false,ll=e,il=t;else for(Zr=l;null!==Zr;)t=Zr.nextEffect,Zr.nextEffect=null,Zr=t;if(0===(t=e.firstPendingTime)&&(nl=null),1073741823===t?e===ol?ul++:(ul=0,ol=e):ul=0,"function"==typeof Wl&&Wl(n.stateNode,r),hl(e),el)throw el=false,e=tl,tl=null,e;return (Or&Ur)!==Nr||Xe(),null}function Ul(){for(;null!==Zr;){var e=Zr.effectTag;0!=(256&e)&&pr(Zr.alternate,Zr),0==(512&e)||rl||(rl=true,Ye(97,(function(){return Rl(),null}))),Zr=Zr.nextEffect;}}function Rl(){if(90!==il){var e=97<il?97:il;return il=90,Ge(e,Il)}}function Il(){if(null===ll)return  false;var e=ll;if(ll=null,(Or&(Rr|Ir))!==Nr)throw Error(f(331));var t=Or;for(Or|=Ir,e=e.current.firstEffect;null!==e;){try{var n=e;if(0!=(512&n.effectTag))switch(n.tag){case 0:case 11:case 15:mr(128,0,n),mr(0,64,n);}}catch(t){if(null===e)throw Error(f(330));Fl(e,t);}n=e.nextEffect,e.nextEffect=null,e=n;}return Or=t,Xe(),true}function Ml(e,t,n){xt(e,t=Sr(e,t=fr(n,t),1073741823)),null!==(e=pl(e,1073741823))&&hl(e);}function Fl(e,t){if(3===e.tag)Ml(e,e,t);else for(var n=e.return;null!==n;){if(3===n.tag){Ml(n,e,t);break}if(1===n.tag){var r=n.stateNode;if("function"==typeof n.type.getDerivedStateFromError||"function"==typeof r.componentDidCatch&&(null===nl||!nl.has(r))){xt(n,e=Cr(n,e=fr(t,e),1073741823)),null!==(n=pl(n,1073741823))&&hl(n);break}}n=n.return;}}function Ql(e,t,n){var r=e.pingCache;null!==r&&r.delete(t),Br===e&&Ar===n?Lr===Wr||Lr===Dr&&1073741823===qr&&qe()-Jr<Xr?vl(e,Ar):Yr=true:Gl(e,n)&&(0!==(t=e.lastPingedTime)&&t<n||(e.lastPingedTime=n,e.finishedExpirationTime===n&&(e.finishedExpirationTime=0,e.finishedWork=null),hl(e)));}function Dl(e,t){var n=e.stateNode;null!==n&&n.delete(t),0==(t=0)&&(t=sl(t=cl(),e,null)),null!==(e=pl(e,t))&&hl(e);}wr=function(e,t,n){var r=t.expirationTime;if(null!==e){var l=t.pendingProps;if(e.memoizedProps!==l||ye.current)On=true;else {if(r<n){switch(On=false,t.tag){case 3:Gn(t);break;case 5:if(Gt(t),4&t.mode&&1!==n&&null(t.type,l))return t.expirationTime=t.childExpirationTime=1,null;break;case 1:xe(t.type)&&we(t);break;case 4:Vt(t,t.stateNode.containerInfo);break;case 10:st(t,t.memoizedProps.value);break;case 13:if(null!==t.memoizedState)return 0!==(r=t.child.childExpirationTime)&&r>=n?tr(e,t,n):(he(Jt,1&Jt.current),null!==(t=ir(e,t,n))?t.sibling:null);he(Jt,1&Jt.current);break;case 19:if(r=t.childExpirationTime>=n,0!=(64&e.effectTag)){if(r)return lr(e,t,n);t.effectTag|=64;}if(null!==(l=t.memoizedState)&&(l.rendering=null,l.tail=null),he(Jt,Jt.current),!r)return null}return ir(e,t,n)}On=false;}}else On=false;switch(t.expirationTime=0,t.tag){case 2:if(r=t.type,null!==e&&(e.alternate=null,t.alternate=null,t.effectTag|=2),e=t.pendingProps,l=Te(t,be.current),mt(t,n),l=yn(null,t,r,e,l,n),t.effectTag|=1,"object"==typeof l&&null!==l&&"function"==typeof l.render&&void 0===l.$$typeof){if(t.tag=1,vn(),xe(r)){var i=true;we(t);}else i=false;t.memoizedState=null!==l.state&&void 0!==l.state?l.state:null;var a=r.getDerivedStateFromProps;"function"==typeof a&&Nt(t,r,a,e),l.updater=Ut,t.stateNode=l,l._reactInternalFiber=t,Ft(t,r,e,n),t=Kn(null,t,r,true,i,n);}else t.tag=0,Bn(null,t,l,n),t=t.child;return t;case 16:if(l=t.elementType,null!==e&&(e.alternate=null,t.alternate=null,t.effectTag|=2),e=t.pendingProps,function(e){if(-1===e._status){e._status=0;var t=e._ctor;t=t(),e._result=t,t.then((function(t){0===e._status&&(t=t.default,e._status=1,e._result=t);}),(function(t){0===e._status&&(e._status=2,e._result=t);}));}}(l),1!==l._status)throw l._result;switch(l=l._result,t.type=l,i=t.tag=function(e){if("function"==typeof e)return Hl(e)?1:0;if(null!=e){if((e=e.$$typeof)===T)return 11;if(e===k)return 14}return 2}(l),e=it(l,e),i){case 0:t=qn(null,t,l,e,n);break;case 1:t=Vn(null,t,l,e,n);break;case 11:t=Hn(null,t,l,e,n);break;case 14:t=An(null,t,l,it(l.type,e),r,n);break;default:throw Error(f(306,l,""))}return t;case 0:return r=t.type,l=t.pendingProps,qn(e,t,r,l=t.elementType===r?l:it(r,l),n);case 1:return r=t.type,l=t.pendingProps,Vn(e,t,r,l=t.elementType===r?l:it(r,l),n);case 3:if(Gn(t),null===(r=t.updateQueue))throw Error(f(282));if(l=null!==(l=t.memoizedState)?l.element:null,Ct(t,r,t.pendingProps,null,n),(r=t.memoizedState.element)===l)t=ir(e,t,n);else {if((l=t.stateNode.hydrate)&&(l=false),l)for(n=Bt(t,null,r,n),t.child=n;n;)n.effectTag=-3&n.effectTag|1024,n=n.sibling;else Bn(e,t,r,n);t=t.child;}return t;case 5:return Gt(t),r=t.type,l=t.pendingProps,i=null!==e?e.memoizedProps:null,a=l.children,B(r,l)?a=null:null!==i&&B(r,i)&&(t.effectTag|=16),$n(e,t),4&t.mode&&1!==n&&null(r,l)?(t.expirationTime=t.childExpirationTime=1,t=null):(Bn(e,t,a,n),t=t.child),t;case 6:return null;case 13:return tr(e,t,n);case 4:return Vt(t,t.stateNode.containerInfo),r=t.pendingProps,null===e?t.child=Ot(t,null,r,n):Bn(e,t,r,n),t.child;case 11:return r=t.type,l=t.pendingProps,Hn(e,t,r,l=t.elementType===r?l:it(r,l),n);case 7:return Bn(e,t,t.pendingProps,n),t.child;case 8:case 12:return Bn(e,t,t.pendingProps.children,n),t.child;case 10:e:{if(r=t.type._context,l=t.pendingProps,a=t.memoizedProps,st(t,i=l.value),null!==a){var u=a.value;if(0==(i=nt(u,i)?0:0|("function"==typeof r._calculateChangedBits?r._calculateChangedBits(u,i):1073741823))){if(a.children===l.children&&!ye.current){t=ir(e,t,n);break e}}else for(null!==(u=t.child)&&(u.return=t);null!==u;){var o=u.dependencies;if(null!==o){a=u.child;for(var c=o.firstContext;null!==c;){if(c.context===r&&0!=(c.observedBits&i)){1===u.tag&&((c=vt(n,null)).tag=2,xt(u,c)),u.expirationTime<n&&(u.expirationTime=n),null!==(c=u.alternate)&&c.expirationTime<n&&(c.expirationTime=n),pt(u.return,n),o.expirationTime<n&&(o.expirationTime=n);break}c=c.next;}}else a=10===u.tag&&u.type===t.type?null:u.child;if(null!==a)a.return=u;else for(a=u;null!==a;){if(a===t){a=null;break}if(null!==(u=a.sibling)){u.return=a.return,a=u;break}a=a.return;}u=a;}}Bn(e,t,l.children,n),t=t.child;}return t;case 9:return l=t.type,r=(i=t.pendingProps).children,mt(t,n),r=r(l=ht(l,i.unstable_observedBits)),t.effectTag|=1,Bn(e,t,r,n),t.child;case 14:return i=it(l=t.type,t.pendingProps),An(e,t,l,i=it(l.type,i),r,n);case 15:return Ln(e,t,t.type,t.pendingProps,r,n);case 17:return r=t.type,l=t.pendingProps,l=t.elementType===r?l:it(r,l),null!==e&&(e.alternate=null,t.alternate=null,t.effectTag|=2),t.tag=1,xe(r)?(e=true,we(t)):e=false,mt(t,n),It(t,r,l),Ft(t,r,l,n),Kn(null,t,r,true,e,n);case 19:return lr(e,t,n)}throw Error(f(156,t.tag))};var Wl=null,jl=null;function Ol(e,t,n,r){this.tag=e,this.key=n,this.sibling=this.child=this.return=this.stateNode=this.type=this.elementType=null,this.index=0,this.ref=null,this.pendingProps=t,this.dependencies=this.memoizedState=this.updateQueue=this.memoizedProps=null,this.mode=r,this.effectTag=0,this.lastEffect=this.firstEffect=this.nextEffect=null,this.childExpirationTime=this.expirationTime=0,this.alternate=null;}function Bl(e,t,n,r){return new Ol(e,t,n,r)}function Hl(e){return !(!(e=e.prototype)||!e.isReactComponent)}function Al(e,t){var n=e.alternate;return null===n?((n=Bl(e.tag,t,e.key,e.mode)).elementType=e.elementType,n.type=e.type,n.stateNode=e.stateNode,n.alternate=e,e.alternate=n):(n.pendingProps=t,n.effectTag=0,n.nextEffect=null,n.firstEffect=null,n.lastEffect=null),n.childExpirationTime=e.childExpirationTime,n.expirationTime=e.expirationTime,n.child=e.child,n.memoizedProps=e.memoizedProps,n.memoizedState=e.memoizedState,n.updateQueue=e.updateQueue,t=e.dependencies,n.dependencies=null===t?null:{expirationTime:t.expirationTime,firstContext:t.firstContext,responders:t.responders},n.sibling=e.sibling,n.index=e.index,n.ref=e.ref,n}function Ll(e,t,n,r,l,i){var a=2;if(r=e,"function"==typeof e)Hl(e)&&(a=1);else if("string"==typeof e)a=5;else e:switch(e){case m:return $l(n.children,l,i,t);case v:a=8,l|=7;break;case h:a=8,l|=1;break;case g:return (e=Bl(12,n,t,8|l)).elementType=g,e.type=g,e.expirationTime=i,e;case x:return (e=Bl(13,n,t,l)).type=x,e.elementType=x,e.expirationTime=i,e;case E:return (e=Bl(19,n,t,l)).elementType=E,e.expirationTime=i,e;default:if("object"==typeof e&&null!==e)switch(e.$$typeof){case b:a=10;break e;case y:a=9;break e;case T:a=11;break e;case k:a=14;break e;case S:a=16,r=null;break e}throw Error(f(130,null==e?e:typeof e,""))}return (t=Bl(a,n,t,l)).elementType=e,t.type=r,t.expirationTime=i,t}function $l(e,t,n,r){return (e=Bl(7,e,r,t)).expirationTime=n,e}function ql(e,t,n){return (e=Bl(6,e,null,t)).expirationTime=n,e}function Vl(e,t,n){return (t=Bl(4,null!==e.children?e.children:[],e.key,t)).expirationTime=n,t.stateNode={containerInfo:e.containerInfo,pendingChildren:null,implementation:e.implementation},t}function Kl(e,t,n){this.tag=t,this.current=null,this.containerInfo=e,this.pingCache=this.pendingChildren=null,this.finishedExpirationTime=0,this.finishedWork=null,this.timeoutHandle=$,this.pendingContext=this.context=null,this.hydrate=n,this.callbackNode=null,this.callbackPriority=90,this.lastExpiredTime=this.lastPingedTime=this.nextKnownPendingLevel=this.lastSuspendedTime=this.firstSuspendedTime=this.firstPendingTime=0;}function Gl(e,t){var n=e.firstSuspendedTime;return e=e.lastSuspendedTime,0!==n&&n>=t&&e<=t}function Yl(e,t){var n=e.firstSuspendedTime,r=e.lastSuspendedTime;n<t&&(e.firstSuspendedTime=t),(r>t||0===n)&&(e.lastSuspendedTime=t),t<=e.lastPingedTime&&(e.lastPingedTime=0),t<=e.lastExpiredTime&&(e.lastExpiredTime=0);}function Jl(e,t){t>e.firstPendingTime&&(e.firstPendingTime=t);var n=e.firstSuspendedTime;0!==n&&(t>=n?e.firstSuspendedTime=e.lastSuspendedTime=e.nextKnownPendingLevel=0:t>=e.lastSuspendedTime&&(e.lastSuspendedTime=t+1),t>e.nextKnownPendingLevel&&(e.nextKnownPendingLevel=t));}function Xl(e,t){var n=e.lastExpiredTime;(0===n||n>t)&&(e.lastExpiredTime=t);}function Zl(e){var t=e._reactInternalFiber;if(void 0===t){if("function"==typeof e.render)throw Error(f(188));throw Error(f(268,Object.keys(e)))}return null===(e=U(t))?null:e.stateNode}function ei(e,t){null!==(e=e.memoizedState)&&null!==e.dehydrated&&e.retryTime<t&&(e.retryTime=t);}function ti(e,t){ei(e,t),(e=e.alternate)&&ei(e,t);}var ni={createContainer:function(e,t,n){return e=new Kl(e,t,n),t=Bl(3,null,null,2===t?7:1===t?3:0),e.current=t,t.stateNode=e},updateContainer:function(e,t,n,r){var l=t.current,i=cl(),a=Pt.suspense;i=sl(i,l,a);e:if(n){t:{if(P(n=n._reactInternalFiber)!==n||1!==n.tag)throw Error(f(170));var u=n;do{switch(u.tag){case 3:u=u.stateNode.context;break t;case 1:if(xe(u.type)){u=u.stateNode.__reactInternalMemoizedMergedChildContext;break t}}u=u.return;}while(null!==u);throw Error(f(171))}if(1===n.tag){var o=n.type;if(xe(o)){n=Ce(n,o,u);break e}}n=u;}else n=ge;return null===t.context?t.context=n:t.pendingContext=n,(t=vt(i,a)).payload={element:e},null!==(r=void 0===r?null:r)&&(t.callback=r),xt(l,t),dl(l,i),i},batchedEventUpdates:function(e,t){var n=Or;Or|=2;try{return e(t)}finally{(Or=n)===Nr&&Xe();}},batchedUpdates:function(e,t){var n=Or;Or|=1;try{return e(t)}finally{(Or=n)===Nr&&Xe();}},unbatchedUpdates:function(e,t){var n=Or;Or&=-2,Or|=Ur;try{return e(t)}finally{(Or=n)===Nr&&Xe();}},deferredUpdates:function(e){return Ge(97,e)},syncUpdates:function(e,t,n,r){return Ge(99,e.bind(null,t,n,r))},discreteUpdates:function(e,t,n,r){var l=Or;Or|=4;try{return Ge(98,e.bind(null,t,n,r))}finally{(Or=l)===Nr&&Xe();}},flushDiscreteUpdates:function(){(Or&(1|Rr|Ir))===Nr&&(function(){if(null!==al){var e=al;al=null,e.forEach((function(e,t){Xl(t,e),hl(t);})),Xe();}}(),Rl());},flushControlled:function(e){var t=Or;Or|=1;try{Ge(99,e);}finally{(Or=t)===Nr&&Xe();}},flushSync:yl,flushPassiveEffects:Rl,IsThisRendererActing:{current:false},getPublicRootInstance:function(e){return (e=e.current).child?5===e.child.tag?R(e.child.stateNode):e.child.stateNode:null},attemptSynchronousHydration:function(e){switch(e.tag){case 3:var t=e.stateNode;t.hydrate&&function(e,t){Xl(e,t),hl(e),(Or&(Rr|Ir))===Nr&&Xe();}(t,t.firstPendingTime);break;case 13:yl((function(){return dl(e,1073741823)})),t=tt(cl(),150,100),ti(e,t);}},attemptUserBlockingHydration:function(e){if(13===e.tag){var t=tt(cl(),150,100);dl(e,t),ti(e,t);}},attemptContinuousHydration:function(e){if(13===e.tag){cl();var t=et++;dl(e,t),ti(e,t);}},attemptHydrationAtCurrentPriority:function(e){if(13===e.tag){var t=cl();dl(e,t=sl(t,e,null)),ti(e,t);}},findHostInstance:Zl,findHostInstanceWithWarning:function(e){return Zl(e)},findHostInstanceWithNoPortals:function(e){return null===(e=function(e){if(!(e=N(e)))return null;for(var t=e;;){if(5===t.tag||6===t.tag)return t;if(t.child&&4!==t.tag)t.child.return=t,t=t.child;else {if(t===e)break;for(;!t.sibling;){if(!t.return||t.return===e)return null;t=t.return;}t.sibling.return=t.return,t=t.sibling;}}return null}(e))?null:20===e.tag?e.stateNode.instance:e.stateNode},shouldSuspend:function(){return  false},injectIntoDevTools:function(e){var t=e.findFiberByHostInstance;return function(e){if("undefined"==typeof __REACT_DEVTOOLS_GLOBAL_HOOK__)return  false;var t=__REACT_DEVTOOLS_GLOBAL_HOOK__;if(t.isDisabled||!t.supportsFiber)return  true;try{var n=t.inject(e);Wl=function(e){try{t.onCommitFiberRoot(n,e,void 0,64==(64&e.current.effectTag));}catch(e){}},jl=function(e){try{t.onCommitFiberUnmount(n,e);}catch(e){}};}catch(e){}return  true}(l({},e,{overrideHookState:null,overrideProps:null,setSuspenseHandler:null,scheduleUpdate:null,currentDispatcherRef:c.ReactCurrentDispatcher,findHostInstanceByFiber:function(e){return null===(e=U(e))?null:e.stateNode},findFiberByHostInstance:function(e){return t?t(e):null},findHostInstancesForRefresh:null,scheduleRefresh:null,scheduleRoot:null,setRefreshHandler:null,getCurrentFiber:null}))}};i.exports=ni.default||ni;var ri=i.exports;return i.exports=n,ri};var o=r(a.exports);const f=(e,t)=>{const n=Object.keys(e),r=Object.keys(t);if(n.length!==r.length)return  false;for(let r=0;r<n.length;r+=1){const l=n[r];if("render"===l&&!e[l]!=!t[l])return  false;if("children"!==l&&e[l]!==t[l]){if("object"==typeof e[l]&&"object"==typeof t[l]&&f(e[l],t[l]))continue;return  false}if("children"===l&&("string"==typeof e[l]||"string"==typeof t[l]))return e[l]===t[l]}return  true},c={},s=({appendChild:e,appendChildToContainer:t,commitTextUpdate:n,commitUpdate:r,createInstance:l,createTextInstance:i,insertBefore:a,removeChild:u,removeChildFromContainer:s,resetAfterCommit:d})=>o({appendChild:e,appendChildToContainer:t,appendInitialChild:e,createInstance:l,createTextInstance:i,insertBefore:a,commitUpdate:r,commitTextUpdate:n,removeChild:u,removeChildFromContainer:s,resetAfterCommit:d,shouldSetTextContent:()=>false,finalizeInitialChildren:()=>false,getPublicInstance:e=>e,getRootHostContext:()=>c,getChildHostContext:()=>c,prepareForCommit(){},clearContainer(){},resetTextContent(){},prepareUpdate:(e,t,n,r)=>!f(n,r)});
 
-const React$8 = await importShared('react');
+const React$b = await importShared('react');
 
-const [major, minor] = React$8.version.split('.').map((v) => parseInt(v, 10));
+const [major, minor] = React$b.version.split('.').map((v) => parseInt(v, 10));
 let renderer$1;
 if (major >= 20 || (major === 19 && minor >= 2)) {
     // Use the reconciler built for 19.2, assuming it's compatible with later versions.
@@ -268811,7 +269283,7 @@ else {
 }
 var renderer$1$1 = renderer$1;
 
-const {useRef: useRef$2,useState: useState$b,useEffect: useEffect$9,useCallback: useCallback$2,forwardRef} = await importShared('react');
+const {useRef: useRef$3,useState: useState$d,useEffect: useEffect$c,useCallback: useCallback$4,forwardRef} = await importShared('react');
 const omitNils = (object) => Object.fromEntries(Object.entries(object).filter((_ref) => {
   let [, value] = _ref;
   return value !== void 0;
@@ -269057,14 +269529,14 @@ const usePDF = function(_temp) {
   let {
     document
   } = _temp === void 0 ? {} : _temp;
-  const pdfInstance = useRef$2(null);
-  const [state, setState] = useState$b({
+  const pdfInstance = useRef$3(null);
+  const [state, setState] = useState$d({
     url: null,
     blob: null,
     error: null,
     loading: !!document
   });
-  useEffect$9(() => {
+  useEffect$c(() => {
     const renderQueue = queue$2({
       autostart: true,
       concurrency: 1
@@ -269104,14 +269576,14 @@ const usePDF = function(_temp) {
       pdfInstance.current.removeListener("change", queueDocumentRender);
     };
   }, []);
-  useEffect$9(() => {
+  useEffect$c(() => {
     return () => {
       if (state.url) {
         URL.revokeObjectURL(state.url);
       }
     };
   }, [state.url]);
-  const update = useCallback$2((newDoc) => {
+  const update = useCallback$4((newDoc) => {
     pdfInstance.current.updateContainer(newDoc);
   }, []);
   return [state, update];
@@ -269127,7 +269599,7 @@ const PDFViewer = (_ref) => {
     ...props
   } = _ref;
   const [instance, updateInstance] = usePDF();
-  useEffect$9(() => updateInstance(children), [children]);
+  useEffect$c(() => updateInstance(children), [children]);
   const src = instance.url ? `${instance.url}#toolbar=${showToolbar ? 1 : 0}` : null;
   return /* @__PURE__ */ jsxRuntimeExports.jsx("iframe", {
     src,
@@ -269261,17 +269733,17 @@ const JobCardDocument = ({ data }) => {
   ] }) });
 };
 
-const React$7 = await importShared('react');
-const {useEffect: useEffect$8,useState: useState$a} = React$7;
+const React$a = await importShared('react');
+const {useEffect: useEffect$b,useState: useState$c} = React$a;
 const A = (x) => Array.isArray(x) ? x : [];
 function PrintJobCard({ event, section, elements }) {
-  const [openModal, setOpenModal] = useState$a(false);
-  const [formData, setFormData] = useState$a(null);
-  const [loading, setLoading] = useState$a(false);
-  const [downloading, setDownloading] = useState$a(false);
+  const [openModal, setOpenModal] = useState$c(false);
+  const [formData, setFormData] = useState$c(null);
+  const [loading, setLoading] = useState$c(false);
+  const [downloading, setDownloading] = useState$c(false);
   const [presentToast] = useIonToast();
   const isNative = () => typeof Capacitor?.isNativePlatform === "function" ? Capacitor.isNativePlatform() : false;
-  useEffect$8(() => {
+  useEffect$b(() => {
     if (!openModal || !event || !elements || !section?.dataElements) return;
     const prepareData = async () => {
       setLoading(true);
@@ -269423,54 +269895,242 @@ function PrintJobCard({ event, section, elements }) {
   ] });
 }
 
-const {useCallback: useCallback$1,useEffect: useEffect$7,useState: useState$9,useMemo: useMemo$6} = await importShared('react');
+const React$9 = await importShared('react');
+const {useEffect: useEffect$a,useState: useState$b} = React$9;
+function ActivateMaintenance({
+  event,
+  getEventDetails
+}) {
+  const [openModal, setOpenModal] = useState$b(false);
+  const [saving, setSaving] = useState$b(false);
+  const [hasScheduledMaintenance, setHasScheduledMaintenance] = useState$b(false);
+  const [maintenanceInProgress, setMaintenanceInProgress] = useState$b("");
+  const buttonPositiveName = "Save";
+  const handleSubmit = async () => {
+    if (!maintenanceInProgress) {
+      showToast(
+        "Please confirm whether the maintenance is currently in progress.",
+        "warning"
+      );
+      return;
+    }
+    if (!event) {
+      showToast("Event data missing.", "danger");
+      return;
+    }
+    setSaving(true);
+    try {
+      const teiRes = await dataStore.get(`tracker/trackedEntities/${event.trackedEntity}?program=${event.program}&fields=trackedEntityType,orgUnit`);
+      if (teiRes?.data) {
+        const { trackedEntityType, orgUnit } = teiRes.data;
+        const payload = {
+          trackedEntities: [{
+            trackedEntity: event?.trackedEntity,
+            trackedEntityType,
+            orgUnit,
+            attributes: [{
+              attribute: "rXIdO0bLQvD",
+              value: maintenanceInProgress === "YES" ? "UNDER_REPAIR" : "SCHEDULED_FOR_MAINTENANCE"
+            }]
+          }]
+        };
+        const result = await dataStore.post(
+          "tracker?async=false&importStrategy=UPDATE",
+          payload
+        );
+        if (result?.status === 200) {
+          showToast("Maintenance status activated successfully.", "success");
+          setOpenModal(false);
+          setMaintenanceInProgress("");
+          getEventDetails(
+            event?.event,
+            event?.programStage
+          );
+        }
+      }
+    } catch (err) {
+      showToast(
+        err?.message || "An error occurred while saving.",
+        "danger"
+      );
+    } finally {
+      setSaving(false);
+    }
+  };
+  const checkScheduledMaintenance = async () => {
+    try {
+      const isScheduled = event?.dataValues?.find(
+        (dv) => dv?.dataElement === "vXT4KkXeRus"
+      )?.value;
+      if (!isScheduled) {
+        setHasScheduledMaintenance(false);
+        return;
+      }
+      const teiRes = await dataStore.get(
+        `tracker/trackedEntities/${event.trackedEntity}?program=${event.program}&fields=trackedEntityType,orgUnit,attributes[*]`
+      );
+      if (teiRes?.data) {
+        const {
+          attributes: existingAttributes = []
+        } = teiRes.data;
+        const equipmentState = existingAttributes.find(
+          (attribute) => attribute.attribute === "rXIdO0bLQvD"
+        );
+        setHasScheduledMaintenance(
+          equipmentState?.value === "SCHEDULED_FOR_MAINTENANCE"
+        );
+      } else {
+        setHasScheduledMaintenance(false);
+      }
+    } catch (err) {
+      setHasScheduledMaintenance(false);
+    }
+  };
+  useEffect$a(() => {
+    checkScheduledMaintenance();
+  }, [event]);
+  const handleOpenModal = () => {
+    setMaintenanceInProgress("");
+    setOpenModal(true);
+  };
+  const handleCloseModal = () => {
+    if (saving) return;
+    setMaintenanceInProgress("");
+    setOpenModal(false);
+  };
+  if (!hasScheduledMaintenance) {
+    return null;
+  }
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "div",
+    {
+      className: "form-section-card ion-padding",
+      style: { marginBottom: 20 },
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(IonButton, { onClick: handleOpenModal, children: "Activate Maintenance" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          CustomModal,
+          {
+            title: "Activate Maintenance",
+            isOpen: openModal,
+            onClose: handleCloseModal,
+            height: "60%",
+            width: "50%",
+            onSave: handleSubmit,
+            positiveButtonText: saving ? /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "div",
+              {
+                style: {
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "6px"
+                },
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(IonSpinner, { name: "crescent" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Saving..." })
+                ]
+              }
+            ) : buttonPositiveName,
+            children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+              IonContent,
+              {
+                className: "ion-padding",
+                style: {
+                  position: "relative",
+                  minHeight: 300
+                },
+                children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(IonText, { children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { children: "Confirm Maintenance Status" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Is the maintenance currently in progress?" })
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    IonRadioGroup,
+                    {
+                      value: maintenanceInProgress,
+                      onIonChange: (e) => setMaintenanceInProgress(e.detail.value),
+                      children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsxs(IonItem, { lines: "full", children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            IonRadio,
+                            {
+                              slot: "start",
+                              value: "YES"
+                            }
+                          ),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(IonLabel, { children: "Yes" })
+                        ] }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsxs(IonItem, { lines: "full", children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            IonRadio,
+                            {
+                              slot: "start",
+                              value: "NO"
+                            }
+                          ),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(IonLabel, { children: "No" })
+                        ] })
+                      ]
+                    }
+                  )
+                ] })
+              }
+            )
+          }
+        )
+      ]
+    }
+  );
+}
+
+const {useCallback: useCallback$3,useEffect: useEffect$9,useState: useState$a,useMemo: useMemo$8} = await importShared('react');
 function TeiEvents() {
   const { program, tei, stage, evnt } = useParams();
-  const [loadingPage, setLoadingPage] = useState$9(true);
-  const [pg, setPg] = useState$9();
-  const [event, setEvent] = useState$9();
-  const [orgUnit, setOu] = useState$9();
-  const [programData, setProgramData] = useState$9(null);
-  const [isMaintenanceSection, setIsMaintenanceSection] = useState$9(false);
-  const [ouName, setName] = useState$9();
-  const [ouNameMap, setOuNameMap] = useState$9({});
-  const [crumbs, setCrumbs] = useState$9([
+  const [loadingPage, setLoadingPage] = useState$a(true);
+  const [pg, setPg] = useState$a();
+  const [event, setEvent] = useState$a();
+  const [orgUnit, setOu] = useState$a();
+  const [programData, setProgramData] = useState$a(null);
+  const [isMaintenanceSection, setIsMaintenanceSection] = useState$a(false);
+  const [ouName, setName] = useState$a();
+  const [ouNameMap, setOuNameMap] = useState$a({});
+  const [crumbs, setCrumbs] = useState$a([
     {
       label: "Home",
       ref: "/memis"
     }
   ]);
-  const [allocationsUserRoles, setAllocationsUserRoles] = useState$9({});
-  const [acknowledgesUserRoles, setAcknowledgesUserRoles] = useState$9({});
-  const [isCollected, setIsCollected] = useState$9(false);
-  const [isAllocated, setIsAllocated] = useState$9(false);
-  const [user, setUser] = useState$9(null);
-  const [openModal, setOpenModal] = useState$9(false);
-  const [openModalAck, setOpenModalAck] = useState$9(false);
-  const [maintenanceCfg, setMaintenanceCfg] = useState$9(null);
-  const [maintenanceButtons, setMaintenanceButtons] = useState$9([]);
-  const [maintenanceRoles, setMaintenanceRoles] = useState$9([]);
-  const [dataStoreRaw, setDataStoreRaw] = useState$9(null);
-  const [workFlow, setWorkFlows] = useState$9();
-  const [de, setDe] = useState$9([]);
+  const [allocationsUserRoles, setAllocationsUserRoles] = useState$a({});
+  const [acknowledgesUserRoles, setAcknowledgesUserRoles] = useState$a({});
+  const [isCollected, setIsCollected] = useState$a(false);
+  const [isAllocated, setIsAllocated] = useState$a(false);
+  const [user, setUser] = useState$a(null);
+  const [openModal, setOpenModal] = useState$a(false);
+  const [openModalAck, setOpenModalAck] = useState$a(false);
+  const [maintenanceCfg, setMaintenanceCfg] = useState$a(null);
+  const [maintenanceButtons, setMaintenanceButtons] = useState$a([]);
+  const [maintenanceRoles, setMaintenanceRoles] = useState$a([]);
+  const [dataStoreRaw, setDataStoreRaw] = useState$a(null);
+  const [workFlow, setWorkFlows] = useState$a();
+  const [de, setDe] = useState$a([]);
   useLocation();
-  const maintenanceTriggerAt = useMemo$6(() => {
+  const maintenanceTriggerAt = useMemo$8(() => {
     const code = event?.dataValues?.find(
       (dv) => dv.dataElement === "EbJI5Loxjbl"
     )?.value;
     return code || null;
   }, [event?.dataValues]);
-  const [infoCardExpanded, setInfoCardExpanded] = useState$9(false);
+  const [infoCardExpanded, setInfoCardExpanded] = useState$a(false);
   const { expandedSections, toggleSection, navigateToSection } = useExpandableSections();
-  const [filePreviewOpen, setFilePreviewOpen] = useState$9(false);
-  const [selectedFile, setSelectedFile] = useState$9({
+  const [filePreviewOpen, setFilePreviewOpen] = useState$a(false);
+  const [selectedFile, setSelectedFile] = useState$a({
     fileId: null,
     fileName: null,
     valueType: null,
     eventId: null,
     dataElementId: null
   });
-  const [hasAccess, setHasAccess] = useState$9(false);
+  const [hasAccess, setHasAccess] = useState$a(false);
   const handleFilePreview = (fileId, valueType, dataElementId, fileName) => {
     setSelectedFile({
       fileId,
@@ -269510,13 +270170,14 @@ function TeiEvents() {
     )
   );
   const userCanConfirmMaintenance = (sect) => {
+    console.log({ sect });
     const userRoles = user?.userRoles || [];
     const orgUnits = user?.organisationUnits || [];
     const buttons = maintenanceButtons || [];
     const targetOrgId = event?.dataValues?.find(
-      (dv) => dv?.dataElement === "mxqD92TfUg8"
+      (dv) => dv?.dataElement === "mxqD92TfUg8" || dv?.dataElement === "bGiXZlgMgQU"
     )?.value;
-    console.log({ orgUnits, event, targetOrgId });
+    console.log({ orgUnits, dv: event?.dataValues, event, targetOrgId });
     const hasRoleAccess = userRoles.some(
       (role) => buttons.some(
         (button) => button?.sectionId === sect && (button?.rolesAllowed || []).some(
@@ -269524,7 +270185,7 @@ function TeiEvents() {
         )
       )
     );
-    const belongsToOrg = orgUnits.some((org) => org?.id === targetOrgId);
+    const belongsToOrg = orgUnits.some((org) => org?.id === targetOrgId || org?.name === targetOrgId);
     const authorise = hasRoleAccess && belongsToOrg;
     return { authorise };
   };
@@ -269566,15 +270227,15 @@ function TeiEvents() {
     });
   };
   const getUser = async () => {
-    const me = await LocalForageServiceInstance.getItem("userRes", "user");
+    const me = await LocalForageService.getItem("userRes", "user");
     setUser(me);
   };
-  const getEventDetails = useCallback$1(
+  const getEventDetails = useCallback$3(
     async (id, stage2) => {
       setLoadingPage(true);
       try {
         const progEvent = await dataStore.get(`tracker/events/${evnt}`);
-        const orgUnts = await LocalForageServiceInstance.getItem(
+        const orgUnts = await LocalForageService.getItem(
           "userOrganisationUnits",
           "userOrgUnits"
         );
@@ -269586,7 +270247,7 @@ function TeiEvents() {
         const progEventStage = await dataStore.get(
           `programStages/${stage2}?fields=name,id,programStageDataElements[id,dataElement[id,name,formName,displayName,attributeValues[value,attribute[id,code,name]]]],programStageSections[id,name,description,dataElements[id,formName,valueType,optionSet[name,options[*]],attributeValues[value,attribute[id,code,name]],optionSetValues[*]]],displayName`
         );
-        const programs = await LocalForageServiceInstance.getItem(
+        const programs = await LocalForageService.getItem(
           "programs",
           "programs"
         );
@@ -269594,12 +270255,13 @@ function TeiEvents() {
           (prg) => prg?.id === progEvent?.data?.program
         );
         setProgramData(result);
+        console.log({ data: progEventStage?.data });
         setPg(progEventStage?.data);
         setCrmbs({
           label: progEventStage?.data?.name,
           ref: `/memis/program/${program}/${tei}/${stage2}/${evnt}`
         });
-        const results = await LocalForageServiceInstance.getItem(
+        const results = await LocalForageService.getItem(
           "dataStore",
           "dataStore"
         );
@@ -269635,7 +270297,7 @@ function TeiEvents() {
     [PROGRAMS_FIELDS, program, tei]
   );
   const getWorkflow = async (program2) => {
-    let mt = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+    let mt = await LocalForageService.getItem("dataStore", "dataStore");
     mt = mt?.MaintainanceWorkflows;
     if (mt?.program === program2) {
       setIsMaintenanceSection(true);
@@ -269683,7 +270345,7 @@ function TeiEvents() {
         const ouId = getVal(de2?.id);
         if (ouId) {
           try {
-            const cached = await LocalForageServiceInstance.getItem(
+            const cached = await LocalForageService.getItem(
               "userOrganisationUnits",
               "userOrgUnits"
             );
@@ -269719,20 +270381,20 @@ function TeiEvents() {
     }
     return true;
   });
-  useEffect$7(() => {
+  useEffect$9(() => {
     (async () => {
       await getUser();
       await getEventDetails(evnt, stage);
     })();
   }, [evnt, stage, getEventDetails]);
-  useEffect$7(() => {
+  useEffect$9(() => {
     getUser();
   }, [evnt]);
-  useEffect$7(() => {
+  useEffect$9(() => {
     fetchOuValues();
     getWorkflow(pg?.id);
   }, [event, pg]);
-  useEffect$7(() => {
+  useEffect$9(() => {
     const load = async () => {
       const res = await hideUpdateButtonAfterEquipmentIsCollected(event);
       if (res) {
@@ -269743,7 +270405,7 @@ function TeiEvents() {
     };
     load();
   }, [event]);
-  useEffect$7(() => {
+  useEffect$9(() => {
     const load = async () => {
       const res = await hideAcknowledgeButton(event);
       if (res) {
@@ -269780,7 +270442,8 @@ function TeiEvents() {
   };
   const buttonGaurd = (sectionId, Wrkflow) => {
     const btn = maintenanceButtons?.find((b) => b?.sectionId === sectionId);
-    if (userHasAllowedRole(user, btn)) {
+    const isAllowed = userHasAllowedRole(user, btn);
+    if (isAllowed) {
       const btns = Wrkflow?.buttons?.filter((e) => e?.section === sectionId);
       const bool = [];
       btns?.forEach((b) => {
@@ -269892,6 +270555,13 @@ function TeiEvents() {
           ]
         }
       ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+        ActivateMaintenance,
+        {
+          event,
+          getEventDetails
+        }
+      ) }),
       visibleSections.map((section, sectionIndex) => {
         const wf = wfForSections;
         const isFirst = sectionIndex === 0;
@@ -270026,8 +270696,7 @@ function TeiEvents() {
                     getVal
                   }
                 ),
-                getValForButtonGuard() && getVal("AnJ695Tt41W") && // section?.id === "fdK9OHcaIcV" &&
-                userCanConfirmMaintenance(section?.id)?.authorise && /* @__PURE__ */ jsxRuntimeExports.jsx(
+                getValForButtonGuard() && getVal("AnJ695Tt41W") && section?.id === "fdK9OHcaIcV" && userCanConfirmMaintenance(section?.id)?.authorise && /* @__PURE__ */ jsxRuntimeExports.jsx(
                   ConfirmMaintenance,
                   {
                     event,
@@ -270041,17 +270710,17 @@ function TeiEvents() {
                   PrintJobCard,
                   {
                     event,
-                    elements: wf?.dataElements,
+                    elements: section?.dataElements,
                     section,
                     maintenanceCfg,
                     getEventDetails,
                     getVal
                   }
-                ) : buttonGaurd(section?.id, wf) && /* @__PURE__ */ jsxRuntimeExports.jsx(
+                ) : /* @__PURE__ */ jsxRuntimeExports.jsx(
                   JobCardGenerate,
                   {
                     event,
-                    elements: wf?.dataElements,
+                    elements: section?.dataElements?.map((d) => d?.id),
                     section,
                     maintenanceCfg,
                     getEventDetails,
@@ -270116,18 +270785,18 @@ function TeiEvents() {
   ] });
 }
 
-const React$6 = await importShared('react');
-const {useContext: useContext$6,useEffect: useEffect$6,useState: useState$8} = React$6;
+const React$8 = await importShared('react');
+const {useContext: useContext$8,useEffect: useEffect$8,useState: useState$9} = React$8;
 const MessageView = () => {
   const navigate = useNavigate();
-  const [messages, setMessages] = useState$8([]);
-  const [loading, setLoading] = useState$8(true);
-  const [error, setError] = useState$8(null);
-  const { programs } = useContext$6(MEMISContext.ProgramContext);
+  const [messages, setMessages] = useState$9([]);
+  const [loading, setLoading] = useState$9(true);
+  const [error, setError] = useState$9(null);
+  const { programs } = useContext$8(MEMISContext.ProgramContext);
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   const initialQuery = params.get("q") || "";
-  const [search, setSearch] = useState$8(initialQuery);
+  const [search, setSearch] = useState$9(initialQuery);
   const fetchMessages = async (showLoading = true) => {
     try {
       if (showLoading) setLoading(true);
@@ -270189,16 +270858,16 @@ const MessageView = () => {
     );
     return subjectMatch || messageTextMatch;
   });
-  useEffect$6(() => {
+  useEffect$8(() => {
     fetchMessages();
   }, [location.search]);
-  useEffect$6(() => {
+  useEffect$8(() => {
     const intervalId = setInterval(() => {
       fetchMessages(false);
     }, 6e4);
     return () => clearInterval(intervalId);
   }, []);
-  useEffect$6(() => {
+  useEffect$8(() => {
     const params2 = new URLSearchParams(location.search);
     const q = params2.get("q") || "";
     setSearch(q);
@@ -270301,7 +270970,7 @@ const MessageView = () => {
   ] });
 };
 
-const {useContext: useContext$5,useEffect: useEffect$5,useState: useState$7} = await importShared('react');
+const {useContext: useContext$7,useEffect: useEffect$7,useState: useState$8} = await importShared('react');
 
 /**
  * Loads analyticsReportsConfig from the datastore and filters
@@ -270313,19 +270982,19 @@ const {useContext: useContext$5,useEffect: useEffect$5,useState: useState$7} = a
  *   - omitted / empty → visible to all
  */
 function useAnalyticsReportsConfig() {
-  const { user } = useContext$5(MEMISContext.UserRolesContext) || {};
-  const [reports, setReports] = useState$7([]);
-  const [loading, setLoading] = useState$7(true);
-  const [error, setError] = useState$7(null);
+  const { user } = useContext$7(MEMISContext.UserRolesContext) || {};
+  const [reports, setReports] = useState$8([]);
+  const [loading, setLoading] = useState$8(true);
+  const [error, setError] = useState$8(null);
 
-  useEffect$5(() => {
+  useEffect$7(() => {
     let mounted = true;
 
     const load = async () => {
       setLoading(true);
       setError(null);
       try {
-        const ds = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+        const ds = await LocalForageService.getItem("dataStore", "dataStore");
         let config = ds?.analyticsReportsConfig;
 
         // If cache is empty or has no reports, fetch live from API
@@ -270334,7 +271003,7 @@ function useAnalyticsReportsConfig() {
           if (res?.data?.reports?.length) {
             config = res.data;
             if (ds) {
-              await LocalForageServiceInstance.setItem(
+              await LocalForageService.setItem(
                 "dataStore",
                 { ...ds, analyticsReportsConfig: config },
                 "dataStore"
@@ -270346,7 +271015,7 @@ function useAnalyticsReportsConfig() {
         const allReports = config?.reports || [];
 
         // Build a name→id map from cached user roles for resolving string-based accessRoles
-        const allRoles = await LocalForageServiceInstance.getItem("userRoles", "userRoles") || [];
+        const allRoles = await LocalForageService.getItem("userRoles", "userRoles") || [];
         const roleNameToId = {};
         allRoles.forEach(r => {
           if (r?.name && r?.id) roleNameToId[r.name.trim().toLowerCase()] = r.id;
@@ -270393,8 +271062,8 @@ function useAnalyticsReportsConfig() {
   return { reports, loading, error };
 }
 
-const React$5 = await importShared('react');
-const {useMemo: useMemo$5,useState: useState$6} = React$5;
+const React$7 = await importShared('react');
+const {useMemo: useMemo$7,useState: useState$7} = React$7;
 const CRUMBS$1 = [
   { label: "Home", ref: "/memis" },
   { label: "Reports", ref: "/memis/reports-analytics" }
@@ -270402,8 +271071,8 @@ const CRUMBS$1 = [
 function ReportsListPage() {
   const navigate = useNavigate();
   const { reports, loading, error } = useAnalyticsReportsConfig();
-  const [search, setSearch] = useState$6("");
-  const filtered = useMemo$5(() => {
+  const [search, setSearch] = useState$7("");
+  const filtered = useMemo$7(() => {
     const q = search.trim().toLowerCase();
     const visible = reports.filter((r) => r.disabled !== true);
     if (!q || q.length <= 1) return visible;
@@ -270519,7 +271188,7 @@ function ReportsListPage() {
   ] });
 }
 
-const {useState: useState$5,useCallback,useRef: useRef$1,useMemo: useMemo$4} = await importShared('react');
+const {useState: useState$6,useCallback: useCallback$2,useRef: useRef$2,useMemo: useMemo$6} = await importShared('react');
 
 /**
  * useReportAnalytics — Tracker API implementation
@@ -270637,16 +271306,16 @@ function useReportAnalytics({
   endDate,
   filterValues = {},
 }) {
-  const [loading, setLoading] = useState$5(false);
-  const [error, setError] = useState$5(null);
-  const [data, setData] = useState$5(null);
-  const [progress, setProgress] = useState$5({ percent: 0, stage: "" });
+  const [loading, setLoading] = useState$6(false);
+  const [error, setError] = useState$6(null);
+  const [data, setData] = useState$6(null);
+  const [progress, setProgress] = useState$6({ percent: 0, stage: "" });
 
-  const setStage = useCallback((stage, percent) => setProgress({ stage, percent }), []);
+  const setStage = useCallback$2((stage, percent) => setProgress({ stage, percent }), []);
 
   // ── Fetch all pages from tracker/events ──────────────────────────────────
 
-  const fetchAllEvents = useCallback(async (params) => {
+  const fetchAllEvents = useCallback$2(async (params) => {
     const url = `tracker/events?${params}`;
     const res = await dataStore.get(url);
     if (res?.status && res.status !== 200)
@@ -270656,7 +271325,7 @@ function useReportAnalytics({
 
   // ── Fetch all pages from tracker/trackedEntities ──────────────────────────
 
-  const fetchAllTrackedEntities = useCallback(async ({ programId, orgUnitId, ouMode = "DESCENDANTS", startDate, endDate, ignoreDateFilter = false }) => {
+  const fetchAllTrackedEntities = useCallback$2(async ({ programId, orgUnitId, ouMode = "DESCENDANTS", startDate, endDate, ignoreDateFilter = false }) => {
     const p = new URLSearchParams({
       program: programId,
       orgUnits: orgUnitId,           // NOTE: tracked entities endpoint uses "orgUnits" (plural)
@@ -270678,7 +271347,7 @@ function useReportAnalytics({
 
   // ── Apply filterValues to a list of events ────────────────────────────────
 
-  const applyEventFilters = useCallback((events) => {
+  const applyEventFilters = useCallback$2((events) => {
     const activeFilters = Object.entries(filterValues).filter(([, v]) => v);
     if (!activeFilters.length) return events;
     return events.filter((ev) =>
@@ -270689,7 +271358,7 @@ function useReportAnalytics({
     );
   }, [filterValues]);
 
-  const applyTEIFilters = useCallback((teis) => {
+  const applyTEIFilters = useCallback$2((teis) => {
     const activeFilters = Object.entries(filterValues).filter(([, v]) => v);
     if (!activeFilters.length) return teis;
     return teis.filter((tei) =>
@@ -270713,7 +271382,7 @@ function useReportAnalytics({
 
   // ── Non-aggregated: event program (WITHOUT_REGISTRATION) ─────────────────
 
-  const fetchEventReport = useCallback(async () => {
+  const fetchEventReport = useCallback$2(async () => {
     const fields = reportConfig.fields || [];
     const cfg = reportConfig.aggregationConfig || {};
     // stageId from aggregationConfig takes priority, fall back to field-level stage key
@@ -270850,7 +271519,7 @@ function useReportAnalytics({
   // ── Non-aggregated: tracker program (WITH_REGISTRATION) ──────────────────
   // Handles reports that mix TEAs + stage data elements (e.g. Report 6, 8, 9, 14)
 
-  const fetchTrackerReport = useCallback(async () => {
+  const fetchTrackerReport = useCallback$2(async () => {
     const fields = reportConfig.fields || [];
     const cfg = reportConfig.aggregationConfig || {};
     const ouMode = reportConfig.ouMode || "DESCENDANTS";
@@ -271016,7 +271685,7 @@ function useReportAnalytics({
   // Equipment Name from TEA, Ward from DE resolved to display name,
   // Technician username resolved to full name via getUserMap().
 
-  const fetchPreventiveMaintenanceReport = useCallback(async () => {
+  const fetchPreventiveMaintenanceReport = useCallback$2(async () => {
     const cfg = reportConfig.aggregationConfig || {};
     const {
       stageId,
@@ -271233,7 +271902,7 @@ function useReportAnalytics({
   // Filters to Corrective_maintenance where YjhRG2PMTMG != true.
   // Days Open computed from occurredAt. Assigned To resolved to full name.
 
-  const fetchMaintenanceBacklogReport = useCallback(async () => {
+  const fetchMaintenanceBacklogReport = useCallback$2(async () => {
     const cfg = reportConfig.aggregationConfig || {};
     const {
       stageId,
@@ -271376,7 +272045,7 @@ function useReportAnalytics({
   // Joins with requisition program (s915Ym5Yoxq) for Total Requested & Collected.
   // Stock Status = Current Stock <= Min Threshold → "Low Stock", else "Adequate".
 
-  const fetchPartsInventoryReport = useCallback(async () => {
+  const fetchPartsInventoryReport = useCallback$2(async () => {
     const cfg = reportConfig.aggregationConfig || {};
     const {
       sparePartAttrId,
@@ -271484,7 +272153,7 @@ function useReportAnalytics({
 
   // ── Aggregated: equipment summary / PM compliance ─────────────────────────
 
-  const fetchAggregationSummary = useCallback(async () => {
+  const fetchAggregationSummary = useCallback$2(async () => {
     const cfg = reportConfig.aggregationConfig;
     const { aggregationType, statusFieldId, stageId, priorityFieldId, maintenanceTypeFieldId } = cfg;
     const ouMode = reportConfig.ouMode || "DESCENDANTS";
@@ -272335,7 +273004,7 @@ function useReportAnalytics({
 
   // ── Aggregated: priority trends ───────────────────────────────────────────
 
-  const fetchAggregationTrends = useCallback(async () => {
+  const fetchAggregationTrends = useCallback$2(async () => {
     const cfg = reportConfig.aggregationConfig;
     const { priorityFieldId, wardFieldId, stageId } = cfg;
     const ouMode = reportConfig.ouMode || "DESCENDANTS";
@@ -272459,7 +273128,7 @@ function useReportAnalytics({
 
   // ── Main generate ─────────────────────────────────────────────────────────
 
-    const generate = useCallback(async () => {
+    const generate = useCallback$2(async () => {
     if (!reportConfig) { setError("No report configuration provided"); return; }
     if (!orgUnitId) { setError("Please select an organisation unit"); return; }
 
@@ -272526,7 +273195,7 @@ function useReportAnalytics({
   return { data, loading, error, progress, generate };
 }
 
-const {useContext: useContext$4,useEffect: useEffect$4,useState: useState$4} = await importShared('react');
+const {useContext: useContext$6,useEffect: useEffect$6,useState: useState$5} = await importShared('react');
 
 /**
  * Resolves org unit options and defaults for a report based on its orgUnitScope.
@@ -272550,29 +273219,29 @@ const {useContext: useContext$4,useEffect: useEffect$4,useState: useState$4} = a
  *   "NATIONAL"           — full hierarchy selector
  */
 function useReportOrgUnit(orgUnitScope) {
-  const { user } = useContext$4(MEMISContext.UserRolesContext) || {};
+  const { user } = useContext$6(MEMISContext.UserRolesContext) || {};
 
-  const [facilityOptions, setFacilityOptions] = useState$4([]);
-  const [wardOptions, setWardOptions] = useState$4([]);
-  const [allOrgUnitOptions, setAllOrgUnitOptions] = useState$4([]);
-  const [defaultFacilityId, setDefaultFacilityId] = useState$4("");
-  const [defaultWardId, setDefaultWardId] = useState$4("");
-  const [loading, setLoading] = useState$4(true);
+  const [facilityOptions, setFacilityOptions] = useState$5([]);
+  const [wardOptions, setWardOptions] = useState$5([]);
+  const [allOrgUnitOptions, setAllOrgUnitOptions] = useState$5([]);
+  const [defaultFacilityId, setDefaultFacilityId] = useState$5("");
+  const [defaultWardId, setDefaultWardId] = useState$5("");
+  const [loading, setLoading] = useState$5(true);
 
-  useEffect$4(() => {
+  useEffect$6(() => {
     let mounted = true;
 
     const load = async () => {
       setLoading(true);
       try {
         // userOnlyOrgUnits — OUs directly assigned to this user (from /users/{id})
-        const userOus = await LocalForageServiceInstance.getItem(
+        const userOus = await LocalForageService.getItem(
           "userOnlyOrgUnits",
           "userOnlyOrgUnits"
         ) || [];
 
         // userOrganisationUnits — full descendant tree under the user's root OU
-        const allOus = await LocalForageServiceInstance.getItem(
+        const allOus = await LocalForageService.getItem(
           "userOrganisationUnits",
           "userOrgUnits"
         ) || [];
@@ -272874,8 +273543,8 @@ const exportReportToWord = async ({
   }
 };
 
-const React$4 = await importShared('react');
-const {useContext: useContext$3,useEffect: useEffect$3,useMemo: useMemo$3,useState: useState$3} = React$4;
+const React$6 = await importShared('react');
+const {useContext: useContext$5,useEffect: useEffect$5,useMemo: useMemo$5,useState: useState$4} = React$6;
 const today$1 = () => (/* @__PURE__ */ new Date()).toISOString().split("T")[0];
 const oneYearAgo$1 = () => {
   const d = /* @__PURE__ */ new Date();
@@ -272885,9 +273554,9 @@ const oneYearAgo$1 = () => {
 function ReportDetailPage() {
   const { reportNumber } = useParams();
   const navigate = useNavigate();
-  const { user } = useContext$3(MEMISContext.UserRolesContext) || {};
+  const { user } = useContext$5(MEMISContext.UserRolesContext) || {};
   const { reports, loading: configLoading } = useAnalyticsReportsConfig();
-  const report = useMemo$3(
+  const report = useMemo$5(
     () => reports.find(
       (r) => String(r.reportNumber) === decodeURIComponent(reportNumber)
     ) || null,
@@ -272900,28 +273569,28 @@ function ReportDetailPage() {
     defaultFacilityId,
     loading: ouLoading
   } = useReportOrgUnit(report?.orgUnitScope);
-  const [selectedFacility, setSelectedFacility] = useState$3("");
-  const [startDate, setStartDate] = useState$3(oneYearAgo$1());
-  const [endDate, setEndDate] = useState$3(today$1());
-  const [dateError, setDateError] = useState$3("");
-  const [filterValues, setFilterValues] = useState$3({});
-  const [optionSets, setOptionSets] = useState$3([]);
-  const [exporting, setExporting] = useState$3(null);
-  const wardFilter = useMemo$3(
+  const [selectedFacility, setSelectedFacility] = useState$4("");
+  const [startDate, setStartDate] = useState$4(oneYearAgo$1());
+  const [endDate, setEndDate] = useState$4(today$1());
+  const [dateError, setDateError] = useState$4("");
+  const [filterValues, setFilterValues] = useState$4({});
+  const [optionSets, setOptionSets] = useState$4([]);
+  const [exporting, setExporting] = useState$4(null);
+  const wardFilter = useMemo$5(
     () => (report?.filters || []).find((f) => f.filterType === "WARD" && f.dataelement),
     [report]
   );
-  const isWardInCharge = useMemo$3(
+  const isWardInCharge = useMemo$5(
     () => (user?.userRoles || []).some((r) => r.name === "Ward InCharge"),
     [user]
   );
-  const userWards = useMemo$3(() => {
+  const userWards = useMemo$5(() => {
     const ous = user?.organisationUnits || [];
     if (ous.length === 0) return [];
     const maxLevel = Math.max(...ous.map((ou) => ou.level || 0));
     return ous.filter((ou) => (ou.level || 0) === maxLevel);
   }, [user]);
-  useEffect$3(() => {
+  useEffect$5(() => {
     if (!ouLoading && wardFilter && isWardInCharge && userWards.length > 0) {
       setFilterValues((prev) => ({
         ...prev,
@@ -272929,13 +273598,13 @@ function ReportDetailPage() {
       }));
     }
   }, [ouLoading, wardFilter, isWardInCharge, userWards]);
-  useEffect$3(() => {
+  useEffect$5(() => {
     if (!ouLoading) {
       if (defaultFacilityId) setSelectedFacility(defaultFacilityId);
     }
   }, [ouLoading, defaultFacilityId]);
-  useEffect$3(() => {
-    LocalForageServiceInstance.getItem("optionSets", "metadata").then(
+  useEffect$5(() => {
+    LocalForageService.getItem("optionSets", "metadata").then(
       (data2) => setOptionSets(data2 || [])
     );
   }, []);
@@ -272971,7 +273640,7 @@ function ReportDetailPage() {
     setEndDate(value);
     validateDates(startDate, value);
   };
-  const orgUnitId = useMemo$3(() => {
+  const orgUnitId = useMemo$5(() => {
     const scope2 = report?.orgUnitScope;
     if (scope2 === "NATIONAL") return selectedFacility;
     return selectedFacility;
@@ -272983,7 +273652,7 @@ function ReportDetailPage() {
     endDate,
     filterValues
   });
-  const facilityName = useMemo$3(() => {
+  const facilityName = useMemo$5(() => {
     const allOpts = [...facilityOptions, ...wardOptions, ...allOrgUnitOptions];
     const facName = allOpts.find((o) => o.id === orgUnitId)?.name || orgUnitId || "";
     if (wardFilter) {
@@ -272995,7 +273664,7 @@ function ReportDetailPage() {
     }
     return facName;
   }, [facilityOptions, wardOptions, allOrgUnitOptions, orgUnitId, wardFilter, filterValues, userWards]);
-  useEffect$3(() => {
+  useEffect$5(() => {
     if (genError) showToast(genError, "error");
   }, [genError]);
   const handleExport = async (format) => {
@@ -273470,34 +274139,34 @@ function DataPreview({ headers, rows }) {
   ] });
 }
 
-const React$3 = await importShared('react');
-const {useContext: useContext$2,useEffect: useEffect$2,useMemo: useMemo$2,useState: useState$2} = React$3;
+const React$5 = await importShared('react');
+const {useContext: useContext$4,useEffect: useEffect$4,useMemo: useMemo$4,useState: useState$3} = React$5;
 const PAGE_SIZE = 20;
 const MOBILE_BREAKPOINT = 768;
 const ViewWardSettingsDetails = () => {
   const [params] = useSearchParams();
   const navigate = useNavigate();
-  const { fetchOrgUnits } = useContext$2(MEMISContext.UserContext);
+  const { fetchOrgUnits } = useContext$4(MEMISContext.UserContext);
   const id = params.get("id");
   const name = params.get("name");
-  const [locating, setLocating] = useState$2(false);
-  const [units, setUnits] = useState$2([]);
-  const [facility, setFacility] = useState$2(null);
-  const [showDatePicker, setShowDatePicker] = useState$2(false);
-  const [search, setSearch] = useState$2("");
-  const [page, setPage] = useState$2(1);
-  const [loading, setLoading] = useState$2(false);
-  const [isMemisReportingFacility, setIsMemisReportingFacility] = useState$2(false);
-  const [memisGroup, setMemisGroup] = useState$2(null);
-  const [memisFacilities, setMemisFacilities] = useState$2([]);
-  const [memisLoading, setMemisLoading] = useState$2(false);
-  const [facilitySearch, setFacilitySearch] = useState$2("");
-  const [openModal, setOpenModal] = useState$2(false);
-  const [showCoordModal, setShowCoordModal] = useState$2(false);
-  const [isMobile, setIsMobile] = useState$2(
+  const [locating, setLocating] = useState$3(false);
+  const [units, setUnits] = useState$3([]);
+  const [facility, setFacility] = useState$3(null);
+  const [showDatePicker, setShowDatePicker] = useState$3(false);
+  const [search, setSearch] = useState$3("");
+  const [page, setPage] = useState$3(1);
+  const [loading, setLoading] = useState$3(false);
+  const [isMemisReportingFacility, setIsMemisReportingFacility] = useState$3(false);
+  const [memisGroup, setMemisGroup] = useState$3(null);
+  const [memisFacilities, setMemisFacilities] = useState$3([]);
+  const [memisLoading, setMemisLoading] = useState$3(false);
+  const [facilitySearch, setFacilitySearch] = useState$3("");
+  const [openModal, setOpenModal] = useState$3(false);
+  const [showCoordModal, setShowCoordModal] = useState$3(false);
+  const [isMobile, setIsMobile] = useState$3(
     window.innerWidth < MOBILE_BREAKPOINT
   );
-  const [form, setForm] = useState$2({
+  const [form, setForm] = useState$3({
     name: "",
     code: "",
     shortName: "",
@@ -273505,14 +274174,14 @@ const ViewWardSettingsDetails = () => {
     latitude: "",
     longitude: ""
   });
-  const [saving, setSaving] = useState$2(false);
-  const [toast, setToast] = useState$2({
+  const [saving, setSaving] = useState$3(false);
+  const [toast, setToast] = useState$3({
     open: false,
     message: "",
     color: "success"
   });
-  const [errors, setErrors] = useState$2({});
-  const [submitted, setSubmitted] = useState$2(false);
+  const [errors, setErrors] = useState$3({});
+  const [submitted, setSubmitted] = useState$3(false);
   const validateForm = () => {
     const newErrors = {};
     if (!form.name?.trim()) newErrors.name = "Name is required";
@@ -273527,11 +274196,11 @@ const ViewWardSettingsDetails = () => {
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
-  useEffect$2(() => {
+  useEffect$4(() => {
     const load = async () => {
       try {
         setLoading(true);
-        const res = await LocalForageServiceInstance.getItem(
+        const res = await LocalForageService.getItem(
           "userOrganisationUnits",
           "userOrgUnits"
         );
@@ -273547,29 +274216,29 @@ const ViewWardSettingsDetails = () => {
     };
     if (id) load();
   }, [id, name]);
-  useEffect$2(() => {
+  useEffect$4(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < MOBILE_BREAKPOINT);
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-  const children = useMemo$2(() => {
+  const children = useMemo$4(() => {
     if (!id) return [];
     return units.filter((u) => u?.parent?.id === id);
   }, [units, id]);
-  const filtered = useMemo$2(() => {
+  const filtered = useMemo$4(() => {
     const q = search.toLowerCase();
     return children.filter((c) => {
       return c?.name?.toLowerCase().includes(q) || c?.code?.toLowerCase().includes(q) || String(c?.level || "").includes(q);
     });
   }, [children, search]);
   const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
-  const paginated = useMemo$2(() => {
+  const paginated = useMemo$4(() => {
     const start = (page - 1) * PAGE_SIZE;
     return filtered.slice(start, start + PAGE_SIZE);
   }, [filtered, page]);
-  useEffect$2(() => setPage(1), [search]);
+  useEffect$4(() => setPage(1), [search]);
   const getCurrentCoordinates = async () => {
     try {
       let position;
@@ -273670,7 +274339,7 @@ const ViewWardSettingsDetails = () => {
     }
   };
   const refreshUnits = async () => {
-    const res = await LocalForageServiceInstance.getItem(
+    const res = await LocalForageService.getItem(
       "userOrganisationUnits",
       "userOrgUnits"
     );
@@ -274001,8 +274670,8 @@ const pagination = {
   alignItems: "center"
 };
 
-const React$2 = await importShared('react');
-const {useMemo: useMemo$1,useState: useState$1} = React$2;
+const React$4 = await importShared('react');
+const {useMemo: useMemo$3,useState: useState$2} = React$4;
 const CRUMBS = [
   { label: "Home", ref: "/memis" },
   { label: "Import-Export", ref: "/memis/import-export" }
@@ -274042,8 +274711,8 @@ const importExportTypes$1 = [
 function ImportExportPage() {
   const navigate = useNavigate();
   const { loading, error } = useAnalyticsReportsConfig();
-  const [search, setSearch] = useState$1("");
-  const filtered = useMemo$1(() => {
+  const [search, setSearch] = useState$2("");
+  const filtered = useMemo$3(() => {
     const q = search.trim().toLowerCase();
     const visible = importExportTypes$1.filter((r) => r.disabled !== true);
     if (!q || q.length <= 1) return visible;
@@ -274186,8 +274855,8 @@ function ImportExportPage() {
   ] });
 }
 
-const React$1 = await importShared('react');
-const {useContext: useContext$1,useEffect: useEffect$1,useMemo,useState} = React$1;
+const React$3 = await importShared('react');
+const {useContext: useContext$3,useEffect: useEffect$3,useMemo: useMemo$2,useState: useState$1} = React$3;
 const today = () => (/* @__PURE__ */ new Date()).toISOString().split("T")[0];
 const oneYearAgo = () => {
   const d = /* @__PURE__ */ new Date();
@@ -274249,20 +274918,20 @@ const importExportTypes = [
 function ImportExportDetailPage() {
   const { id } = useParams();
   const importExportType = importExportTypes.find((imp) => imp?.id === id);
-  const [selectedFacility, setSelectedFacility] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [exportTransformed, setExportTransformed] = useState(true);
-  const [startDate, setStartDate] = useState(oneYearAgo());
-  const [endDate, setEndDate] = useState(today());
-  const [dateError, setDateError] = useState("");
-  const [filterValues, setFilterValues] = useState({});
-  const [optionSets, setOptionSets] = useState([]);
-  const [exporting, setExporting] = useState(null);
-  const [facilities, setFacilities] = useState([]);
-  const { reload: getEquipmentList, equipmentList } = useContext$1(
+  const [selectedFacility, setSelectedFacility] = useState$1("");
+  const [loading, setLoading] = useState$1(false);
+  const [exportTransformed, setExportTransformed] = useState$1(true);
+  const [startDate, setStartDate] = useState$1(oneYearAgo());
+  const [endDate, setEndDate] = useState$1(today());
+  const [dateError, setDateError] = useState$1("");
+  const [filterValues, setFilterValues] = useState$1({});
+  const [optionSets, setOptionSets] = useState$1([]);
+  const [exporting, setExporting] = useState$1(null);
+  const [facilities, setFacilities] = useState$1([]);
+  const { reload: getEquipmentList, equipmentList } = useContext$3(
     MEMISContext.TrackedEntitiesContext
   );
-  const { reload: getEventsList, eventsList } = useContext$1(
+  const { reload: getEventsList, eventsList } = useContext$3(
     MEMISContext.EventsContext
   );
   useNavigate();
@@ -274322,13 +274991,13 @@ function ImportExportDetailPage() {
       }
     );
   }
-  useEffect$1(() => {
+  useEffect$3(() => {
     const loadFacilities = async () => {
-      const res = await LocalForageServiceInstance.getItem(
+      const res = await LocalForageService.getItem(
         "orgUnitGroups",
         "orgUnitGroups"
       );
-      const userOrgs = await LocalForageServiceInstance.getItem(
+      const userOrgs = await LocalForageService.getItem(
         "userOrganisationUnits",
         "userOrgUnits"
       );
@@ -274341,7 +275010,7 @@ function ImportExportDetailPage() {
     loadFacilities();
   }, [id]);
   const transformData = async (values, prog) => {
-    const progs = await LocalForageServiceInstance.getItem(
+    const progs = await LocalForageService.getItem(
       "programs",
       "programs"
     );
@@ -274704,6 +275373,1514 @@ function ImportExportDetailPage() {
   ] });
 }
 
+const React$2 = await importShared('react');
+const {useCallback: useCallback$1,useContext: useContext$2,useEffect: useEffect$2,useMemo: useMemo$1,useRef: useRef$1,useState} = React$2;
+const ARCHIVED_EQUIPMENT_OU_MODES = [
+  {
+    value: "SELECTED",
+    label: "Selected Facility"
+  },
+  {
+    value: "CHILDREN",
+    label: "Child Facilities"
+  },
+  {
+    value: "DESCENDANTS",
+    label: "Facilities Below"
+  },
+  {
+    value: "ACCESSIBLE",
+    label: "Accessible Facilities"
+  }
+];
+const PROGRAM_ID = "X8V6omQYuW0";
+const FILTER_KEY = "rXIdO0bLQvD";
+const FILTER_VALUE = "DEREGISTERED";
+const EQUIPMENT_STATUS_KEY = "KFZ35H4ZHrk";
+const EQUIPMENT_STATUS_VALUE = "NON_FUNCTIONAL";
+const SERIAL_NUMBER_KEY = "W5SNKqBFLgb";
+const USER_STORAGE_NAME = "userRes";
+const USER_STORAGE_KEY = "user";
+const HOSPITAL_ADMIN_ROLE_ID = "lZf03hJRqlC";
+const getOrganisationUnitId = (organisationUnit) => {
+  if (!organisationUnit) {
+    return "";
+  }
+  return String(
+    organisationUnit.id || organisationUnit.uid || organisationUnit.value || organisationUnit.organisationUnit || organisationUnit.orgUnit || ""
+  ).trim();
+};
+const getOrganisationUnitName = (organisationUnit) => {
+  if (!organisationUnit) {
+    return "";
+  }
+  return String(
+    organisationUnit.name || organisationUnit.displayName || organisationUnit.label || organisationUnit.shortName || organisationUnit.code || ""
+  ).trim();
+};
+const getSelectedOrganisationUnitId = (selected) => {
+  if (Array.isArray(selected)) {
+    if (selected.length === 0) {
+      return "";
+    }
+    const first = selected[0];
+    if (first && typeof first === "object") {
+      return String(
+        first.id || first.value || first.organisationUnit || first.orgUnit || ""
+      ).trim();
+    }
+    return String(
+      first || ""
+    ).trim();
+  }
+  if (selected && typeof selected === "object") {
+    return String(
+      selected.id || selected.value || selected.organisationUnit || selected.orgUnit || ""
+    ).trim();
+  }
+  return String(
+    selected || ""
+  ).trim();
+};
+const extractOrganisationUnits = (response) => {
+  if (!response) {
+    return [];
+  }
+  if (Array.isArray(
+    response.organisationUnits
+  )) {
+    return response.organisationUnits;
+  }
+  if (Array.isArray(
+    response?.data?.organisationUnits
+  )) {
+    return response.data.organisationUnits;
+  }
+  if (Array.isArray(response.data)) {
+    return response.data;
+  }
+  if (Array.isArray(response)) {
+    return response;
+  }
+  return [];
+};
+function ArchivedPage() {
+  const navigate = useNavigate();
+  const {
+    archivedEquipment = [],
+    archivedEquipmentCount = 0,
+    loading,
+    error,
+    getArchivedEquipment
+  } = useContext$2(
+    MEMISContext.ArchivedEquipment
+  );
+  const [
+    rootOrganisationUnit,
+    setRootOrganisationUnit
+  ] = useState(null);
+  const [
+    organisationUnits,
+    setOrganisationUnits
+  ] = useState([]);
+  const [
+    selectedOrgUnit,
+    setSelectedOrgUnit
+  ] = useState("");
+  const [
+    loadingOrganisationUnits,
+    setLoadingOrganisationUnits
+  ] = useState(true);
+  const [
+    organisationUnitError,
+    setOrganisationUnitError
+  ] = useState(null);
+  const [search, setSearch] = useState("");
+  const [ouMode, setOuMode] = useState("DESCENDANTS");
+  const searchTimerRef = useRef$1(null);
+  const requestSequenceRef = useRef$1(0);
+  useEffect$2(() => {
+    let mounted = true;
+    const loadUserOrganisationUnit = async () => {
+      setLoadingOrganisationUnits(
+        true
+      );
+      setOrganisationUnitError(
+        null
+      );
+      try {
+        const user = await LocalForageService.getItem(
+          USER_STORAGE_NAME,
+          USER_STORAGE_KEY
+        );
+        const userOrganisationUnits = Array.isArray(
+          user?.organisationUnits
+        ) ? [
+          ...user.organisationUnits
+        ] : [];
+        if (userOrganisationUnits.length === 0) {
+          return;
+        }
+        const hasHospitalAdminRole = Array.isArray(
+          user?.userRoles
+        ) && user.userRoles.some(
+          (role) => String(role?.id) === String(
+            HOSPITAL_ADMIN_ROLE_ID
+          )
+        );
+        const sortedOrganisationUnits = [...userOrganisationUnits].sort(
+          (a, b) => Number(
+            a?.level || 0
+          ) - Number(
+            b?.level || 0
+          )
+        );
+        const resolvedRoot = hasHospitalAdminRole && sortedOrganisationUnits.length > 1 ? sortedOrganisationUnits[1] : sortedOrganisationUnits[0];
+        const rootId = getOrganisationUnitId(
+          resolvedRoot
+        );
+        const rootName = getOrganisationUnitName(
+          resolvedRoot
+        );
+        if (!rootId) {
+          return;
+        }
+        const normalizedRoot = {
+          ...resolvedRoot,
+          id: rootId,
+          name: rootName || rootId
+        };
+        if (!mounted) {
+          return;
+        }
+        setRootOrganisationUnit(
+          normalizedRoot
+        );
+        setSelectedOrgUnit(
+          rootId
+        );
+      } catch (err) {
+        if (!mounted) {
+          return;
+        }
+        setRootOrganisationUnit(
+          null
+        );
+        setOrganisationUnits(
+          []
+        );
+        setSelectedOrgUnit("");
+        setOrganisationUnitError(
+          err
+        );
+      }
+    };
+    loadUserOrganisationUnit();
+    return () => {
+      mounted = false;
+    };
+  }, []);
+  useEffect$2(() => {
+    if (!rootOrganisationUnit?.id) {
+      return;
+    }
+    let mounted = true;
+    const loadOrganisationUnits = async () => {
+      setLoadingOrganisationUnits(
+        true
+      );
+      setOrganisationUnitError(
+        null
+      );
+      try {
+        const rootId = getOrganisationUnitId(
+          rootOrganisationUnit
+        );
+        const response = await dataStore.get(
+          `organisationUnits/${rootId}?includeDescendants=true`
+        );
+        const stored = extractOrganisationUnits(
+          response
+        );
+        const combined = [
+          rootOrganisationUnit,
+          ...stored
+        ];
+        const normalized = combined.filter(Boolean).map((item) => {
+          const id = getOrganisationUnitId(
+            item
+          );
+          const name = getOrganisationUnitName(
+            item
+          );
+          return {
+            ...item,
+            id,
+            name: name || id
+          };
+        }).filter(
+          (item) => item.id && item.name
+        );
+        const unique = Array.from(
+          new Map(
+            normalized.map(
+              (item) => [
+                item.id,
+                item
+              ]
+            )
+          ).values()
+        );
+        unique.sort(
+          (a, b) => String(
+            a.name
+          ).localeCompare(
+            String(
+              b.name
+            )
+          )
+        );
+        if (!mounted) {
+          return;
+        }
+        setOrganisationUnits(
+          unique
+        );
+        setSelectedOrgUnit(
+          (current) => {
+            if (current && unique.some(
+              (item) => item.id === current
+            )) {
+              return current;
+            }
+            return rootId;
+          }
+        );
+      } catch (err) {
+        if (!mounted) {
+          return;
+        }
+        const rootId = getOrganisationUnitId(
+          rootOrganisationUnit
+        );
+        setOrganisationUnits([
+          rootOrganisationUnit
+        ]);
+        setSelectedOrgUnit(
+          rootId
+        );
+        setOrganisationUnitError(
+          err
+        );
+      } finally {
+        if (mounted) {
+          setLoadingOrganisationUnits(
+            false
+          );
+        }
+      }
+    };
+    loadOrganisationUnits();
+    return () => {
+      mounted = false;
+    };
+  }, [
+    rootOrganisationUnit
+  ]);
+  const selectedOrganisationUnit = useMemo$1(() => {
+    if (!selectedOrgUnit) {
+      return null;
+    }
+    return organisationUnits.find(
+      (item) => String(item.id) === String(selectedOrgUnit)
+    ) || null;
+  }, [
+    organisationUnits,
+    selectedOrgUnit
+  ]);
+  const fetchArchivedEquipment = useCallback$1(
+    (searchValue = "", selectedOuMode = "DESCENDANTS", organisationUnitId = "") => {
+      const trimmedSearch = String(
+        searchValue || ""
+      ).trim();
+      const organisationUnit = String(
+        organisationUnitId || ""
+      ).trim();
+      if (!organisationUnit) {
+        return Promise.resolve({
+          success: false,
+          data: [],
+          totalCount: 0,
+          error: new Error(
+            "programId and organisationUnit are required"
+          )
+        });
+      }
+      ++requestSequenceRef.current;
+      return getArchivedEquipment({
+        programId: PROGRAM_ID,
+        /*
+         * This is the SELECTED FACILITY.
+         */
+        orgUnit: organisationUnit,
+        /*
+         * This determines whether the backend
+         * queries the selected facility, children,
+         * descendants or accessible OUs.
+         */
+        orgUnitMode: selectedOuMode,
+        filterKey: FILTER_KEY,
+        filterValue: FILTER_VALUE,
+        equipmentStatusKey: EQUIPMENT_STATUS_KEY,
+        equipmentStatusValue: EQUIPMENT_STATUS_VALUE,
+        serialNumberKey: SERIAL_NUMBER_KEY,
+        serialNumber: trimmedSearch
+      });
+    },
+    [
+      getArchivedEquipment
+    ]
+  );
+  useEffect$2(() => {
+    if (!selectedOrgUnit) {
+      return;
+    }
+    fetchArchivedEquipment(
+      "",
+      ouMode,
+      selectedOrgUnit
+    );
+  }, [
+    selectedOrgUnit,
+    ouMode,
+    fetchArchivedEquipment
+  ]);
+  useEffect$2(() => {
+    if (!selectedOrgUnit) {
+      return;
+    }
+    const trimmedSearch = String(search || "").trim();
+    if (!trimmedSearch) {
+      return;
+    }
+    if (searchTimerRef.current) {
+      clearTimeout(
+        searchTimerRef.current
+      );
+      searchTimerRef.current = null;
+    }
+    searchTimerRef.current = setTimeout(() => {
+      fetchArchivedEquipment(
+        trimmedSearch,
+        ouMode,
+        selectedOrgUnit
+      );
+      searchTimerRef.current = null;
+    }, 500);
+    return () => {
+      if (searchTimerRef.current) {
+        clearTimeout(
+          searchTimerRef.current
+        );
+        searchTimerRef.current = null;
+      }
+    };
+  }, [
+    search,
+    selectedOrgUnit,
+    ouMode,
+    fetchArchivedEquipment
+  ]);
+  useEffect$2(() => {
+    return () => {
+      if (searchTimerRef.current) {
+        clearTimeout(
+          searchTimerRef.current
+        );
+        searchTimerRef.current = null;
+      }
+    };
+  }, []);
+  const handleFacilityChange = useCallback$1((value) => {
+    if (searchTimerRef.current) {
+      clearTimeout(
+        searchTimerRef.current
+      );
+      searchTimerRef.current = null;
+    }
+    const organisationUnitId = String(value || "").trim();
+    setSearch("");
+    setSelectedOrgUnit(
+      organisationUnitId
+    );
+  }, []);
+  const handleSearchableFacilityChange = useCallback$1(
+    (selected) => {
+      const value = getSelectedOrganisationUnitId(
+        selected
+      );
+      handleFacilityChange(
+        value
+      );
+    },
+    [
+      handleFacilityChange
+    ]
+  );
+  const handleOuModeChange = useCallback$1((event) => {
+    if (searchTimerRef.current) {
+      clearTimeout(
+        searchTimerRef.current
+      );
+      searchTimerRef.current = null;
+    }
+    const value = event?.detail?.value || "DESCENDANTS";
+    setSearch("");
+    setOuMode(value);
+  }, []);
+  const handleSearchChange = useCallback$1((event) => {
+    const value = event?.detail?.value ?? "";
+    setSearch(String(value));
+  }, []);
+  const handleClearSearch = useCallback$1(() => {
+    if (searchTimerRef.current) {
+      clearTimeout(
+        searchTimerRef.current
+      );
+      searchTimerRef.current = null;
+    }
+    setSearch("");
+    if (selectedOrgUnit) {
+      fetchArchivedEquipment(
+        "",
+        ouMode,
+        selectedOrgUnit
+      );
+    }
+  }, [
+    fetchArchivedEquipment,
+    ouMode,
+    selectedOrgUnit
+  ]);
+  const selectedOuModeLabel = useMemo$1(() => {
+    return ARCHIVED_EQUIPMENT_OU_MODES.find(
+      (item) => item.value === ouMode
+    )?.label || ouMode;
+  }, [ouMode]);
+  const columns = useMemo$1(
+    () => [
+      {
+        key: "trackedEntity",
+        label: "Equipment",
+        width: "3",
+        sortable: true
+      },
+      {
+        key: "createdAt",
+        label: "Archived On",
+        width: "3",
+        sortable: true
+      },
+      {
+        key: "orgUnit",
+        label: "Facility",
+        width: "3",
+        sortable: true
+      },
+      {
+        key: "reasonForIsolation",
+        label: "Reason",
+        width: "3",
+        sortable: true
+      }
+    ],
+    []
+  );
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(IonPage, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+    IonContent,
+    {
+      fullscreen: true,
+      className: "memis-archived-page",
+      children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        "div",
+        {
+          style: {
+            width: "100%",
+            padding: "16px"
+          },
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "div",
+              {
+                style: {
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  gap: "16px",
+                  marginBottom: "20px",
+                  paddingBottom: "16px",
+                  borderBottom: "1px solid var(--ion-color-light-shade)"
+                },
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "div",
+                    {
+                      style: {
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "12px"
+                      },
+                      children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(
+                          "div",
+                          {
+                            style: {
+                              width: "42px",
+                              height: "42px",
+                              borderRadius: "10px",
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                              background: "rgba(99, 102, 241, 0.10)",
+                              color: "#4f46e5"
+                            },
+                            children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                              IonIcon,
+                              {
+                                icon: archiveOutline,
+                                style: {
+                                  fontSize: "21px"
+                                }
+                              }
+                            )
+                          }
+                        ),
+                        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "h1",
+                            {
+                              style: {
+                                margin: 0,
+                                fontSize: "23px",
+                                fontWeight: 700,
+                                lineHeight: "1.25"
+                              },
+                              children: "Archived Equipment"
+                            }
+                          ) }),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { color: "medium", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "p",
+                            {
+                              style: {
+                                margin: "4px 0 0",
+                                fontSize: "13px"
+                              },
+                              children: "Equipment records that have been archived."
+                            }
+                          ) })
+                        ] })
+                      ]
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "div",
+                    {
+                      style: {
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "flex-end",
+                        padding: "6px 14px",
+                        borderRadius: "10px",
+                        background: "var(--ion-color-light)"
+                      },
+                      children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { color: "medium", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                          "span",
+                          {
+                            style: {
+                              fontSize: "11px",
+                              fontWeight: 600,
+                              textTransform: "uppercase",
+                              letterSpacing: "0.5px"
+                            },
+                            children: "Total"
+                          }
+                        ) }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(
+                          "span",
+                          {
+                            style: {
+                              fontSize: "22px",
+                              lineHeight: "1.2",
+                              fontWeight: 700
+                            },
+                            children: archivedEquipmentCount
+                          }
+                        )
+                      ]
+                    }
+                  )
+                ]
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "div",
+              {
+                style: {
+                  display: "grid",
+                  gridTemplateColumns: "minmax(250px, 1fr) minmax(220px, 300px) minmax(220px, 300px)",
+                  gap: "12px",
+                  marginBottom: "18px"
+                },
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    IonItem,
+                    {
+                      fill: "outline",
+                      lines: "none",
+                      style: {
+                        "--background": "var(--ion-color-light)",
+                        "--border-radius": "8px",
+                        "--padding-start": "12px",
+                        "--inner-padding-end": "8px"
+                      },
+                      children: loadingOrganisationUnits ? /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                        "div",
+                        {
+                          style: {
+                            width: "100%",
+                            minHeight: "48px",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "8px",
+                            color: "var(--ion-color-medium)",
+                            fontSize: "14px"
+                          },
+                          children: [
+                            /* @__PURE__ */ jsxRuntimeExports.jsx(
+                              IonSpinner,
+                              {
+                                name: "crescent"
+                              }
+                            ),
+                            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Loading facilities..." })
+                          ]
+                        }
+                      ) : /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        "div",
+                        {
+                          style: {
+                            width: "100%"
+                          },
+                          children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            SearchableSelect,
+                            {
+                              data: organisationUnits,
+                              itemTextField: "name",
+                              itemValueField: "id",
+                              multiple: false,
+                              value: selectedOrgUnit,
+                              onChange: handleSearchableFacilityChange
+                            }
+                          )
+                        }
+                      )
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                      "div",
+                      {
+                        style: {
+                          position: "relative",
+                          width: "100%"
+                        },
+                        children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            IonIcon,
+                            {
+                              icon: searchOutline,
+                              style: {
+                                position: "absolute",
+                                left: "14px",
+                                top: "50%",
+                                transform: "translateY(-50%)",
+                                zIndex: 2,
+                                fontSize: "20px",
+                                color: "var(--ion-color-medium)",
+                                pointerEvents: "none"
+                              }
+                            }
+                          ),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            IonInput,
+                            {
+                              value: search,
+                              onIonInput: handleSearchChange,
+                              placeholder: "Search by serial number...",
+                              clearInput: false,
+                              fill: "outline",
+                              disabled: !selectedOrgUnit,
+                              style: {
+                                "--padding-start": "44px",
+                                "--padding-end": "44px",
+                                fontSize: "15px"
+                              }
+                            }
+                          ),
+                          search && /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            IonIcon,
+                            {
+                              icon: closeCircleOutline,
+                              onClick: handleClearSearch,
+                              style: {
+                                position: "absolute",
+                                right: "14px",
+                                top: "50%",
+                                transform: "translateY(-50%)",
+                                zIndex: 3,
+                                fontSize: "20px",
+                                color: "var(--ion-color-medium)",
+                                cursor: "pointer"
+                              }
+                            }
+                          )
+                        ]
+                      }
+                    ),
+                    search && /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { color: "medium", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                      "div",
+                      {
+                        style: {
+                          marginTop: "6px",
+                          fontSize: "12px"
+                        },
+                        children: [
+                          "Searching by serial number:",
+                          " ",
+                          /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: search })
+                        ]
+                      }
+                    ) })
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    IonItem,
+                    {
+                      fill: "outline",
+                      lines: "none",
+                      style: {
+                        "--background": "var(--ion-color-light)",
+                        "--border-radius": "8px"
+                      },
+                      children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsxs(IonLabel, { children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "div",
+                            {
+                              style: {
+                                fontSize: "11px",
+                                color: "var(--ion-color-medium)",
+                                marginBottom: "2px"
+                              },
+                              children: "Organisation Unit Scope"
+                            }
+                          ),
+                          /* @__PURE__ */ jsxRuntimeExports.jsx(
+                            "div",
+                            {
+                              style: {
+                                fontSize: "13px",
+                                fontWeight: 500
+                              },
+                              children: selectedOuModeLabel
+                            }
+                          )
+                        ] }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(
+                          IonSelect,
+                          {
+                            value: ouMode,
+                            onIonChange: handleOuModeChange,
+                            interface: "popover",
+                            "aria-label": "Organisation unit scope",
+                            children: ARCHIVED_EQUIPMENT_OU_MODES.map(
+                              (mode) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+                                IonSelectOption,
+                                {
+                                  value: mode.value,
+                                  children: mode.label
+                                },
+                                mode.value
+                              )
+                            )
+                          }
+                        )
+                      ]
+                    }
+                  )
+                ]
+              }
+            ),
+            organisationUnitError && /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "div",
+              {
+                style: {
+                  padding: "12px 16px",
+                  marginBottom: "16px",
+                  borderRadius: "8px",
+                  background: "#fff1f2"
+                },
+                children: /* @__PURE__ */ jsxRuntimeExports.jsxs(IonText, { color: "danger", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "Unable to load facilities." }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "div",
+                    {
+                      style: {
+                        marginTop: "4px",
+                        fontSize: "14px"
+                      },
+                      children: organisationUnitError?.message || "Organisation units could not be loaded."
+                    }
+                  )
+                ] })
+              }
+            ),
+            !loadingOrganisationUnits && !organisationUnitError && organisationUnits.length === 0 && /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "div",
+              {
+                style: {
+                  padding: "18px",
+                  marginBottom: "16px",
+                  borderRadius: "8px",
+                  background: "var(--ion-color-light)",
+                  textAlign: "center"
+                },
+                children: /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { color: "medium", children: "No organisation units are available." })
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "div",
+              {
+                style: {
+                  display: "flex",
+                  alignItems: "center",
+                  flexWrap: "wrap",
+                  gap: "8px",
+                  marginBottom: "16px"
+                },
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "span",
+                    {
+                      style: {
+                        fontSize: "12px",
+                        color: "var(--ion-color-medium)"
+                      },
+                      children: "Filters:"
+                    }
+                  ),
+                  selectedOrganisationUnit && /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "span",
+                    {
+                      style: {
+                        padding: "5px 9px",
+                        borderRadius: "6px",
+                        background: "var(--ion-color-light)",
+                        fontSize: "12px",
+                        fontWeight: 600
+                      },
+                      children: selectedOrganisationUnit.name
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "span",
+                    {
+                      style: {
+                        padding: "5px 9px",
+                        borderRadius: "6px",
+                        background: "var(--ion-color-light)",
+                        fontSize: "12px",
+                        fontWeight: 600
+                      },
+                      children: selectedOuModeLabel
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "span",
+                    {
+                      style: {
+                        padding: "5px 9px",
+                        borderRadius: "6px",
+                        background: "var(--ion-color-light)",
+                        fontSize: "12px",
+                        fontWeight: 600
+                      },
+                      children: "Deregistered"
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "span",
+                    {
+                      style: {
+                        padding: "5px 9px",
+                        borderRadius: "6px",
+                        background: "var(--ion-color-light)",
+                        fontSize: "12px",
+                        fontWeight: 600
+                      },
+                      children: "Non-functional"
+                    }
+                  )
+                ]
+              }
+            ),
+            error && /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "div",
+              {
+                style: {
+                  padding: "12px 16px",
+                  marginBottom: "16px",
+                  borderRadius: "8px",
+                  background: "#fff1f2"
+                },
+                children: /* @__PURE__ */ jsxRuntimeExports.jsxs(IonText, { color: "danger", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "Unable to load archived equipment." }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "div",
+                    {
+                      style: {
+                        marginTop: "4px",
+                        fontSize: "14px"
+                      },
+                      children: error?.message || "An unexpected error occurred."
+                    }
+                  )
+                ] })
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              DataTable,
+              {
+                columns,
+                rows: selectedOrgUnit ? archivedEquipment : [],
+                loading: loading || loadingOrganisationUnits,
+                page: 1,
+                pageCount: 1,
+                pageSize: archivedEquipment.length || 10,
+                totalCount: selectedOrgUnit ? archivedEquipmentCount : 0,
+                clientSideSort: true,
+                striped: true,
+                gridLines: true,
+                selectable: false,
+                getRowId: (item) => item?.trackedEntity || item?.trackedEntityInstance || item?.id,
+                rowClick: (row) => {
+                  navigate(
+                    `/memis/archive/${row?.id || row?.trackedEntity}?stage=${encodeURIComponent(row?.stage || "")}&program=${encodeURIComponent(row?.program || "")}&orgUnit=${encodeURIComponent(row?.orgUnit || "")}`
+                  );
+                },
+                onOpenRowActions: (row) => {
+                },
+                showActions: false
+              }
+            )
+          ]
+        }
+      )
+    }
+  ) });
+}
+
+const React$1 = await importShared('react');
+const {useCallback,useContext: useContext$1,useEffect: useEffect$1,useMemo} = React$1;
+const formatDate = (value) => {
+  if (!value) {
+    return "Not recorded";
+  }
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) {
+    return value;
+  }
+  return new Intl.DateTimeFormat("en-GB", {
+    day: "2-digit",
+    month: "long",
+    year: "numeric"
+  }).format(date);
+};
+const formatValue = (value) => {
+  if (value === null || value === void 0 || value === "") {
+    return "Not recorded";
+  }
+  return String(value);
+};
+const getBooleanValue = (value) => {
+  if (typeof value === "boolean") {
+    return value;
+  }
+  if (typeof value === "string") {
+    return [
+      "true",
+      "yes",
+      "1",
+      "completed"
+    ].includes(value.toLowerCase());
+  }
+  return Boolean(value);
+};
+const InfoItem = ({
+  icon,
+  label,
+  value,
+  large = false
+}) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+  "div",
+  {
+    className: `archived-info-item ${large ? "large" : ""}`,
+    children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "archived-info-icon", children: /* @__PURE__ */ jsxRuntimeExports.jsx(IonIcon, { icon }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "archived-info-content", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { className: "archived-info-label", children: label }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { className: "archived-info-value", children: formatValue(value) })
+      ] })
+    ]
+  }
+);
+const SectionHeader = ({
+  icon,
+  title,
+  description
+}) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "archived-section-header", children: [
+  /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "archived-section-icon", children: /* @__PURE__ */ jsxRuntimeExports.jsx(IonIcon, { icon }) }),
+  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { children: title }),
+    description && /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: description })
+  ] })
+] });
+function ArchivedEquipmentDetails() {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const params = useParams();
+  const queryParams = useMemo(() => {
+    return new URLSearchParams(
+      location?.search || ""
+    );
+  }, [location?.search]);
+  const equipmentId = params?.id || null;
+  const programId = queryParams.get("program") || null;
+  const {
+    selectedArchivedEquipment,
+    detailLoading,
+    detailError,
+    getArchivedEquipmentById,
+    clearSelectedArchivedEquipment
+  } = useContext$1(
+    MEMISContext.ArchivedEquipment
+  );
+  useEffect$1(() => {
+    if (!equipmentId || !programId) {
+      return;
+    }
+    getArchivedEquipmentById({
+      id: equipmentId,
+      programId
+    });
+    return () => {
+      clearSelectedArchivedEquipment();
+    };
+  }, [
+    equipmentId,
+    programId,
+    getArchivedEquipmentById,
+    clearSelectedArchivedEquipment
+  ]);
+  const handleBack = useCallback(() => {
+    if (typeof window !== "undefined" && window.history.length > 1) {
+      navigate(-1);
+      return;
+    }
+    navigate("/memis/archive", {
+      replace: true
+    });
+  }, [navigate]);
+  if (!equipmentId || !programId) {
+    return /* @__PURE__ */ jsxRuntimeExports.jsxs(IonPage, { className: "archived-equipment-page", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(IonHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(IonToolbar, { children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(IonButtons, { slot: "start", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+          IonBackButton,
+          {
+            defaultHref: "/memis/archive"
+          }
+        ) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(IonTitle, { children: "Deregistered Equipment" })
+      ] }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(IonContent, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "archived-not-found", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "archived-not-found-icon", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+          IonIcon,
+          {
+            icon: informationCircleOutline
+          }
+        ) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { children: "Equipment information missing" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: !equipmentId ? "The equipment identifier was not supplied." : "The program identifier was not supplied." }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          IonButton,
+          {
+            onClick: handleBack,
+            fill: "solid",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                IonIcon,
+                {
+                  slot: "start",
+                  icon: arrowBackOutline
+                }
+              ),
+              "Back to Archive"
+            ]
+          }
+        )
+      ] }) })
+    ] });
+  }
+  if (detailLoading) {
+    return /* @__PURE__ */ jsxRuntimeExports.jsxs(IonPage, { className: "archived-equipment-page", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(IonHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(IonToolbar, { children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(IonButtons, { slot: "start", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+          IonBackButton,
+          {
+            defaultHref: "/memis/archive"
+          }
+        ) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(IonTitle, { children: "Deregistered Equipment" })
+      ] }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(IonContent, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "archived-loading", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(IonSpinner, { name: "crescent" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { children: "Loading equipment details..." })
+      ] }) })
+    ] });
+  }
+  if (detailError || !selectedArchivedEquipment) {
+    return /* @__PURE__ */ jsxRuntimeExports.jsxs(IonPage, { className: "archived-equipment-page", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(IonHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(IonToolbar, { children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(IonButtons, { slot: "start", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+          IonBackButton,
+          {
+            defaultHref: "/memis/archive"
+          }
+        ) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(IonTitle, { children: "Deregistered Equipment" })
+      ] }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(IonContent, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "archived-not-found", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "archived-not-found-icon", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+          IonIcon,
+          {
+            icon: hardwareChipOutline
+          }
+        ) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { children: "Equipment not found" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: detailError?.message || "The deregistered equipment record could not be found." }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          IonButton,
+          {
+            onClick: handleBack,
+            fill: "solid",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                IonIcon,
+                {
+                  slot: "start",
+                  icon: arrowBackOutline
+                }
+              ),
+              "Back to Archive"
+            ]
+          }
+        )
+      ] }) })
+    ] });
+  }
+  const equipment = selectedArchivedEquipment;
+  const isDeregistered = getBooleanValue(
+    equipment?.isDeregistered
+  );
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(IonPage, { className: "archived-equipment-page", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+    IonContent,
+    {
+      fullscreen: true,
+      className: "ion-padding archived-equipment-content",
+      children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "archived-equipment-container", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "archived-page-heading", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "archived-breadcrumb", children: [
+              "Equipment Archive",
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "/" }),
+              "Details"
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { children: "Deregistered Equipment" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "View the historical record and deregistration information for this equipment." })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            IonButton,
+            {
+              fill: "outline",
+              className: "archived-back-button",
+              onClick: handleBack,
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  IonIcon,
+                  {
+                    slot: "start",
+                    icon: arrowBackOutline
+                  }
+                ),
+                "Back to Archive"
+              ]
+            }
+          )
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(IonCard, { className: "archived-section-card", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(IonCardContent, { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            SectionHeader,
+            {
+              icon: hardwareChipOutline,
+              title: "Equipment Information",
+              description: "Basic identification and lifecycle information."
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(IonGrid, { className: "archived-info-grid", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(IonRow, { children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              IonCol,
+              {
+                size: "12",
+                sizeMd: "6",
+                sizeLg: "4",
+                children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  InfoItem,
+                  {
+                    icon: hardwareChipOutline,
+                    label: "Equipment Name",
+                    value: equipment?.equipmentName,
+                    large: true
+                  }
+                )
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              IonCol,
+              {
+                size: "12",
+                sizeMd: "6",
+                sizeLg: "4",
+                children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  InfoItem,
+                  {
+                    icon: documentTextOutline,
+                    label: "Serial Number",
+                    value: equipment?.serialNumber,
+                    large: true
+                  }
+                )
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              IonCol,
+              {
+                size: "12",
+                sizeMd: "6",
+                sizeLg: "4",
+                children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  InfoItem,
+                  {
+                    icon: timeOutline,
+                    label: "Expected Lifespan(Years)",
+                    value: equipment?.lifespan,
+                    large: true
+                  }
+                )
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              IonCol,
+              {
+                size: "12",
+                sizeMd: "6",
+                sizeLg: "4",
+                children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  InfoItem,
+                  {
+                    icon: layersOutline,
+                    label: "Nature of Procurement",
+                    value: equipment?.natureOfProcurement
+                  }
+                )
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              IonCol,
+              {
+                size: "12",
+                sizeMd: "6",
+                sizeLg: "4",
+                children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  InfoItem,
+                  {
+                    icon: businessOutline,
+                    label: "Facility",
+                    value: equipment?.orgUnit
+                  }
+                )
+              }
+            )
+          ] }) })
+        ] }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(IonCard, { className: "archived-section-card", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(IonCardContent, { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            SectionHeader,
+            {
+              icon: documentTextOutline,
+              title: "Deregistration Details",
+              description: "Information recorded when the equipment was removed from service."
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(IonGrid, { className: "archived-info-grid", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(IonRow, { children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              IonCol,
+              {
+                size: "12",
+                sizeMd: "6",
+                sizeLg: "4",
+                children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  InfoItem,
+                  {
+                    icon: calendarOutline,
+                    label: "Deregistration Date",
+                    value: equipment?.createdAt ? formatDate(
+                      equipment.createdAt
+                    ) : null
+                  }
+                )
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              IonCol,
+              {
+                size: "12",
+                sizeMd: "6",
+                sizeLg: "4",
+                children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  InfoItem,
+                  {
+                    icon: calendarOutline,
+                    label: "Isolation Date",
+                    value: equipment?.isolationDate ? formatDate(
+                      equipment.isolationDate
+                    ) : null
+                  }
+                )
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              IonCol,
+              {
+                size: "12",
+                sizeMd: "6",
+                sizeLg: "4",
+                children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  InfoItem,
+                  {
+                    icon: isDeregistered ? checkmarkCircleOutline : closeCircleOutline,
+                    label: "Deregistered",
+                    value: isDeregistered ? "Yes" : "No"
+                  }
+                )
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(IonCol, { size: "12", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "archived-reason-box", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "archived-reason-icon", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                IonIcon,
+                {
+                  icon: informationCircleOutline
+                }
+              ) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { className: "archived-info-label", children: "Reason for Deregistration" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(IonText, { className: "archived-reason-text", children: formatValue(
+                  equipment?.reasonForIsolation
+                ) })
+              ] })
+            ] }) })
+          ] }) })
+        ] }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(IonCard, { className: "archived-section-card", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(IonCardContent, { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            SectionHeader,
+            {
+              icon: personOutline,
+              title: "Responsibility & Approval",
+              description: "Personnel associated with the equipment isolation and deregistration process."
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(IonGrid, { className: "archived-info-grid", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(IonRow, { children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              IonCol,
+              {
+                size: "12",
+                sizeMd: "6",
+                sizeLg: "6",
+                children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  InfoItem,
+                  {
+                    icon: personOutline,
+                    label: "Isolated By",
+                    value: equipment?.isolatedBy,
+                    large: true
+                  }
+                )
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              IonCol,
+              {
+                size: "12",
+                sizeMd: "6",
+                sizeLg: "6",
+                children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  InfoItem,
+                  {
+                    icon: checkmarkCircleOutline,
+                    label: "Approved By",
+                    value: equipment?.approvedBy,
+                    large: true
+                  }
+                )
+              }
+            )
+          ] }) })
+        ] }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(IonCard, { className: "archived-record-card", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(IonCardContent, { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "archived-record-header", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              IonIcon,
+              {
+                icon: informationCircleOutline
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { children: "Record Information" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "This is a read-only historical equipment record." })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "archived-record-id", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Equipment Record ID" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: formatValue(
+              equipment?.id
+            ) })
+          ] })
+        ] }) })
+      ] })
+    }
+  ) });
+}
+
 const React = await importShared('react');
 const {useContext,useEffect,useRef} = React;
 const MyPage = () => {
@@ -274746,6 +276923,8 @@ const MyPage = () => {
         }
       ),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/memis/settings", element: /* @__PURE__ */ jsxRuntimeExports.jsx(Settings, {}) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/memis/archive", element: /* @__PURE__ */ jsxRuntimeExports.jsx(ArchivedPage, {}) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/memis/archive/:id", element: /* @__PURE__ */ jsxRuntimeExports.jsx(ArchivedEquipmentDetails, {}) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/memis/settings/view", element: /* @__PURE__ */ jsxRuntimeExports.jsx(ViewWardSettingsDetails, {}) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         Route,

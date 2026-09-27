@@ -1591,7 +1591,7 @@ html.ios, html.md {
 .form-title-divider {
     height: 3px;
     background-color: #1e9c20;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
     width: 100%;
     border-radius: 4px;
 }
@@ -2777,4 +2777,367 @@ body {
   --color-hover: var(--ion-color-primary, #006401) !important;
   --border-width: 1px !important;
   font-weight: 500;
+}/* =========================================================
+   ARCHIVED EQUIPMENT DETAILS
+   FLEXIBLE INFORMATION GRID
+========================================================= */
+
+.archived-info-grid {
+    width: 100%;
+    padding: 0;
+}
+
+.archived-info-grid ion-row {
+    width: 100%;
+    margin: 0;
+}
+
+.archived-info-grid ion-col {
+    min-width: 0;
+    padding: 8px;
+}
+
+
+/* =========================================================
+   INFORMATION ITEM
+========================================================= */
+
+.archived-info-item {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+
+    padding: 16px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+
+    /*
+     * Important:
+     * Allows the item to shrink correctly inside
+     * Ionic's responsive grid.
+     */
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   INFORMATION ICON
+========================================================= */
+
+.archived-info-icon {
+    flex: 0 0 40px;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #f1f5f9;
+
+    box-sizing: border-box;
+}
+
+.archived-info-icon ion-icon {
+    font-size: 21px;
+}
+
+
+/* =========================================================
+   INFORMATION CONTENT
+========================================================= */
+
+.archived-info-content {
+    /*
+     * This is critical for flex children inside
+     * responsive Ionic columns.
+     */
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.archived-info-label {
+    display: block;
+
+    width: 100%;
+    min-width: 0;
+
+    font-size: 0.82rem;
+    font-weight: 600;
+
+    line-height: 1.35;
+
+    color: #64748b;
+
+    /*
+     * Labels can wrap if they become long.
+     */
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+
+/* =========================================================
+   VALUE
+========================================================= */
+
+.archived-info-value {
+    display: block;
+
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    line-height: 1.45;
+
+    color: #1e293b;
+
+    /*
+     * Do NOT use nowrap here.
+     *
+     * Long equipment names, facility names,
+     * personnel names, etc. should use the
+     * available width and wrap naturally.
+     */
+    white-space: normal;
+
+    overflow-wrap: anywhere;
+    word-break: break-word;
+
+    /*
+     * Prevent long unbroken strings from
+     * expanding the grid column.
+     */
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   LARGE INFORMATION ITEM
+========================================================= */
+
+.archived-info-item.large {
+    padding: 18px;
+}
+
+.archived-info-item.large .archived-info-icon {
+    flex-basis: 44px;
+    width: 44px;
+    height: 44px;
+}
+
+.archived-info-item.large .archived-info-value {
+    font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   REASON BOX
+========================================================= */
+
+.archived-reason-box {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 14px;
+
+    padding: 18px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+
+    background: #f8fafc;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+.archived-reason-icon {
+    flex: 0 0 40px;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #e2e8f0;
+}
+
+.archived-reason-icon ion-icon {
+    font-size: 21px;
+}
+
+.archived-reason-box > div:last-child {
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+.archived-reason-text {
+    display: block;
+
+    width: 100%;
+    min-width: 0;
+
+    color: #334155;
+
+    font-size: 0.98rem;
+    line-height: 1.55;
+
+    white-space: normal;
+
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .archived-info-item {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .archived-info-value {
+        font-size: 0.98rem;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .archived-info-grid ion-col {
+        padding: 6px 0;
+    }
+
+    .archived-info-item {
+        padding: 14px;
+
+        gap: 12px;
+    }
+
+    .archived-info-icon {
+        flex-basis: 38px;
+
+        width: 38px;
+        height: 38px;
+    }
+
+    .archived-info-icon ion-icon {
+        font-size: 19px;
+    }
+
+    .archived-info-label {
+        font-size: 0.8rem;
+    }
+
+    .archived-info-value {
+        font-size: 0.95rem;
+    }
+
+    .archived-info-item.large .archived-info-value {
+        font-size: 1rem;
+    }
+
+    .archived-reason-box {
+        padding: 15px;
+
+        gap: 12px;
+    }
+
+    .archived-reason-icon {
+        flex-basis: 38px;
+
+        width: 38px;
+        height: 38px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL SCREENS
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .archived-info-item {
+        padding: 12px;
+
+        /*
+         * Let the icon reduce slightly rather than
+         * squeezing the text area.
+         */
+        gap: 10px;
+    }
+
+    .archived-info-icon {
+        flex-basis: 34px;
+
+        width: 34px;
+        height: 34px;
+    }
+
+    .archived-info-icon ion-icon {
+        font-size: 18px;
+    }
+
+    .archived-info-value {
+        font-size: 0.92rem;
+    }
+
+    .archived-info-label {
+        font-size: 0.78rem;
+    }
+
 }

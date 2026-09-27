@@ -3,7 +3,7 @@ import { importShared } from './__federation_fn_import.js';
 import { j as jsxRuntimeExports, M as MEMISContext, d as documentText, P as PROGRAMS_FIELDS, a as PROGRAM_RULES_FIELDS, U as USER_ORGANISATION_UNITS, O as ORGANISATION_UNITS_DESCENDANTS, u as useLocation, r as renderListByUserRole, D as DataStoreProvider, b as PermissionsProvider, s as sendNotification, c as setupIonicReact, _ as __vitePreload, e as setActiveProgramCookie, B as BrowserRouter, T as ToastItem, S as SuspenseLoader, f as clearMemisStorage } from './breadCrumb.js';
 import { r as requireReactDom } from './index.js';
 import dataStore from './index2.js';
-import { L as LocalForageServiceInstance } from './LocalForageService.js';
+import { L as LocalForageService } from './LocalForageService.js';
 
 var client = {};
 
@@ -22,13 +22,13 @@ function requireClient () {
 
 var clientExports = requireClient();
 
-const React$6 = await importShared('react');
-const {useEffect: useEffect$6,useState: useState$7,useCallback: useCallback$7} = React$6;
+const React$7 = await importShared('react');
+const {useEffect: useEffect$6,useState: useState$8,useCallback: useCallback$8} = React$7;
 const UserRolesProvider = ({ children }) => {
-  const [userRoles, setUserRoles] = useState$7(null);
-  const [user, setUser] = useState$7(null);
-  const [loading, setLoading] = useState$7(true);
-  const computeUserPermissions = useCallback$7((userRes, storeRes) => {
+  const [userRoles, setUserRoles] = useState$8(null);
+  const [user, setUser] = useState$8(null);
+  const [loading, setLoading] = useState$8(true);
+  const computeUserPermissions = useCallback$8((userRes, storeRes) => {
     if (!userRes || !userRes.userRoles || !storeRes || !storeRes.programs) {
       return { ...userRes, permissions: [] };
     }
@@ -55,14 +55,14 @@ const UserRolesProvider = ({ children }) => {
     }
     return { ...userRes, permissions };
   }, []);
-  const fetchUserOnline = useCallback$7(async () => {
+  const fetchUserOnline = useCallback$8(async () => {
     try {
       const userRes = await dataStore.get(
         "me?fields=id,username,name,organisationUnits[id,name,code,path,parent[id,name,code,level],level],userRoles[id,name,authorities],programs[id,name]"
       );
       const storeRes = await dataStore.get("dataStore/memis/sharingSettings");
-      await LocalForageServiceInstance.setItem("userRes", userRes?.data, "user");
-      await LocalForageServiceInstance.setItem("sharingSettings", storeRes?.data, "sharingSettings");
+      await LocalForageService.setItem("userRes", userRes?.data, "user");
+      await LocalForageService.setItem("sharingSettings", storeRes?.data, "sharingSettings");
       const userObj = computeUserPermissions(userRes?.data, storeRes?.data);
       setUser(userObj);
       return userObj;
@@ -71,11 +71,11 @@ const UserRolesProvider = ({ children }) => {
       return null;
     }
   }, [computeUserPermissions]);
-  const fetchRolesOnline = useCallback$7(async () => {
+  const fetchRolesOnline = useCallback$8(async () => {
     try {
       const result = await dataStore.get("userRoles?fields=id,name");
       const roles = result?.data?.userRoles || [];
-      await LocalForageServiceInstance.setItem("userRoles", roles, "userRoles");
+      await LocalForageService.setItem("userRoles", roles, "userRoles");
       setUserRoles(roles);
       return roles;
     } catch (err) {
@@ -83,9 +83,9 @@ const UserRolesProvider = ({ children }) => {
       return [];
     }
   }, []);
-  const loadUserOfflineFirst = useCallback$7(async () => {
-    const cachedUser = await LocalForageServiceInstance.getItem("userRes", "user");
-    const cachedSharing = await LocalForageServiceInstance.getItem("sharingSettings", "sharingSettings");
+  const loadUserOfflineFirst = useCallback$8(async () => {
+    const cachedUser = await LocalForageService.getItem("userRes", "user");
+    const cachedSharing = await LocalForageService.getItem("sharingSettings", "sharingSettings");
     if (cachedUser && cachedSharing) {
       const userObj = computeUserPermissions(cachedUser, cachedSharing);
       setUser(userObj);
@@ -93,8 +93,8 @@ const UserRolesProvider = ({ children }) => {
     }
     return fetchUserOnline();
   }, [computeUserPermissions, fetchUserOnline]);
-  const loadRolesOfflineFirst = useCallback$7(async () => {
-    const cached = await LocalForageServiceInstance.getItem("userRoles", "userRoles");
+  const loadRolesOfflineFirst = useCallback$8(async () => {
+    const cached = await LocalForageService.getItem("userRoles", "userRoles");
     if (cached) {
       setUserRoles(cached);
       return cached;
@@ -133,28 +133,28 @@ const UserRolesProvider = ({ children }) => {
   );
 };
 
-const {useContext,useEffect: useEffect$5,useMemo: useMemo$6,useState: useState$6,useCallback: useCallback$6} = await importShared('react');
+const {useContext,useEffect: useEffect$5,useMemo: useMemo$7,useState: useState$7,useCallback: useCallback$7} = await importShared('react');
 const toNum = (v) => {
   const n = Number(v);
   return Number.isFinite(n) ? n : Number.POSITIVE_INFINITY;
 };
 const isTrue = (value) => value === true || value === "true";
 function MenuProvider({ children }) {
-  const [activeLink, setActiveLink] = useState$6("/");
-  const [navigationMenu, setNavigationMenu] = useState$6([]);
-  const [menuLoaded, setMenuLoaded] = useState$6(false);
-  const [menuError, setMenuError] = useState$6(null);
-  const [userAccessData, setUserAccessData] = useState$6(null);
-  const [userAccessLoaded, setUserAccessLoaded] = useState$6(false);
-  const [programs, setPrograms] = useState$6([]);
-  const [programsLoaded, setProgramsLoaded] = useState$6(false);
-  const [datastoreReady, setDatastoreReady] = useState$6(false);
+  const [activeLink, setActiveLink] = useState$7("/");
+  const [navigationMenu, setNavigationMenu] = useState$7([]);
+  const [menuLoaded, setMenuLoaded] = useState$7(false);
+  const [menuError, setMenuError] = useState$7(null);
+  const [userAccessData, setUserAccessData] = useState$7(null);
+  const [userAccessLoaded, setUserAccessLoaded] = useState$7(false);
+  const [programs, setPrograms] = useState$7([]);
+  const [programsLoaded, setProgramsLoaded] = useState$7(false);
+  const [datastoreReady, setDatastoreReady] = useState$7(false);
   const { user } = useContext(MEMISContext.UserRolesContext) || {};
   useContext(MEMISContext.PermissionContext) || {};
-  const getUserAccessData = useCallback$6(async () => {
+  const getUserAccessData = useCallback$7(async () => {
     try {
       setUserAccessLoaded(false);
-      const userData = await LocalForageServiceInstance.getItem("userRes", "user");
+      const userData = await LocalForageService.getItem("userRes", "user");
       setUserAccessData(userData);
       setUserAccessLoaded(true);
     } catch (error) {
@@ -163,11 +163,11 @@ function MenuProvider({ children }) {
       setUserAccessLoaded(true);
     }
   }, []);
-  const getNavMenu = useCallback$6(async () => {
+  const getNavMenu = useCallback$7(async () => {
     setMenuLoaded(false);
     setMenuError(null);
     try {
-      let menu = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+      let menu = await LocalForageService.getItem("dataStore", "dataStore");
       menu = menu?.navigationLayout?.configuration;
       setNavigationMenu(menu || []);
       setMenuLoaded(true);
@@ -182,7 +182,7 @@ function MenuProvider({ children }) {
     if (!id) return null;
     return id.split("?")[0];
   };
-  const hasAccessToMenuItem = useCallback$6((item) => {
+  const hasAccessToMenuItem = useCallback$7((item) => {
     if (!userAccessData) return false;
     const userRoleIds = (userAccessData?.userRoles || []).map((role) => role.id);
     if (item.isConsole) {
@@ -226,7 +226,7 @@ function MenuProvider({ children }) {
     }
     return true;
   }, [userAccessData]);
-  const mergedPrograms = useMemo$6(() => {
+  const mergedPrograms = useMemo$7(() => {
     if (Array.isArray(navigationMenu) && navigationMenu.length > 0) {
       const programsById = new Map((programs || []).map((p) => [p.id, p]));
       return navigationMenu.map((cfg) => {
@@ -239,7 +239,7 @@ function MenuProvider({ children }) {
     }
     return Array.isArray(programs) ? programs : [];
   }, [navigationMenu, programs]);
-  const allPrograms = useMemo$6(() => {
+  const allPrograms = useMemo$7(() => {
     const raw = Array.isArray(mergedPrograms) ? mergedPrograms : [];
     const seen = /* @__PURE__ */ new Set();
     return raw.filter((p) => {
@@ -248,13 +248,13 @@ function MenuProvider({ children }) {
       return true;
     });
   }, [mergedPrograms]);
-  const visiblePrograms = useMemo$6(() => {
+  const visiblePrograms = useMemo$7(() => {
     if (!userAccessLoaded || !userAccessData) {
       return [];
     }
     return allPrograms.filter((item) => hasAccessToMenuItem(item));
   }, [allPrograms, userAccessLoaded, userAccessData, hasAccessToMenuItem]);
-  const menuModel = useMemo$6(() => {
+  const menuModel = useMemo$7(() => {
     const groupsMap = /* @__PURE__ */ new Map();
     const ungrouped = [];
     const placed = /* @__PURE__ */ new Set();
@@ -318,7 +318,7 @@ function MenuProvider({ children }) {
     return { groups, ungrouped, flat };
   }, [visiblePrograms]);
   const menuItems = menuModel.flat;
-  const refresh = useCallback$6(async () => {
+  const refresh = useCallback$7(async () => {
     setMenuLoaded(false);
     setUserAccessLoaded(false);
     await Promise.all([getNavMenu(), getUserAccessData()]);
@@ -329,14 +329,14 @@ function MenuProvider({ children }) {
   useEffect$5(() => {
     if (!user || !datastoreReady) return;
     (async () => {
-      const progr = await LocalForageServiceInstance.getItem("programs", "programs");
+      const progr = await LocalForageService.getItem("programs", "programs");
       setPrograms(Array.isArray(progr) ? progr : []);
       setProgramsLoaded(true);
     })();
   }, [user, datastoreReady]);
   useEffect$5(() => {
     const tryLoad = async () => {
-      const cached = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+      const cached = await LocalForageService.getItem("dataStore", "dataStore");
       if (cached && Object.keys(cached).length > 0) {
         setDatastoreReady(true);
         getNavMenu();
@@ -372,8 +372,8 @@ function MenuProvider({ children }) {
   );
 }
 
-const React$5 = await importShared('react');
-const {useCallback: useCallback$5,useEffect: useEffect$4,useMemo: useMemo$5,useRef,useState: useState$5} = React$5;
+const React$6 = await importShared('react');
+const {useCallback: useCallback$6,useEffect: useEffect$4,useMemo: useMemo$6,useRef: useRef$1,useState: useState$6} = React$6;
 function readActiveProgramIdFromCookie() {
   try {
     const rawPair = document.cookie.split(";").find((c) => c.trim().startsWith("memis_cookie="));
@@ -386,12 +386,12 @@ function readActiveProgramIdFromCookie() {
   }
 }
 function ProgramStageProvider({ children }) {
-  const [programId, setProgramId] = useState$5(() => readActiveProgramIdFromCookie());
-  const [programStages, setProgramStages] = useState$5([]);
-  const [loading, setLoading] = useState$5(false);
-  const [error, setError] = useState$5(null);
-  const reqSeq = useRef(0);
-  const fetchProgramStages = useCallback$5(async (id) => {
+  const [programId, setProgramId] = useState$6(() => readActiveProgramIdFromCookie());
+  const [programStages, setProgramStages] = useState$6([]);
+  const [loading, setLoading] = useState$6(false);
+  const [error, setError] = useState$6(null);
+  const reqSeq = useRef$1(0);
+  const fetchProgramStages = useCallback$6(async (id) => {
     if (!id) {
       setProgramStages([]);
       return [];
@@ -400,11 +400,11 @@ function ProgramStageProvider({ children }) {
     setLoading(true);
     setError(null);
     try {
-      const cachedPrograms = await LocalForageServiceInstance.getItem(
+      const cachedPrograms = await LocalForageService.getItem(
         "programs",
         "programs"
       );
-      const menu = await LocalForageServiceInstance.getItem(
+      const menu = await LocalForageService.getItem(
         "dataStore",
         "dataStore"
       );
@@ -433,19 +433,19 @@ function ProgramStageProvider({ children }) {
     if (programId) fetchProgramStages(programId);
     else setProgramStages([]);
   }, [programId, fetchProgramStages]);
-  const refresh = useCallback$5(() => {
+  const refresh = useCallback$6(() => {
     const id = readActiveProgramIdFromCookie();
     setProgramId(id);
     return id ? fetchProgramStages(id) : Promise.resolve([]);
   }, [fetchProgramStages]);
-  const setActiveProgramIdLocal = useCallback$5(
+  const setActiveProgramIdLocal = useCallback$6(
     (id) => {
       setProgramId(id);
       return id ? fetchProgramStages(id) : Promise.resolve([]);
     },
     [fetchProgramStages]
   );
-  const value = useMemo$5(
+  const value = useMemo$6(
     () => ({
       programId,
       programStages,
@@ -460,15 +460,15 @@ function ProgramStageProvider({ children }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(MEMISContext.ProgramStageContext.Provider, { value, children });
 }
 
-const {useCallback: useCallback$4,useEffect: useEffect$3,useState: useState$4,useMemo: useMemo$4} = await importShared('react');
+const {useCallback: useCallback$5,useEffect: useEffect$3,useState: useState$5,useMemo: useMemo$5} = await importShared('react');
 function ProgramProvider({ children }) {
-  const [programs, setPrograms] = useState$4([]);
-  const [enrollmentPrograms, setEnrollmentPrograms] = useState$4([]);
-  const [loading, setLoading] = useState$4(true);
-  const [programsReady, setProgramsReady] = useState$4(false);
-  const [error, setError] = useState$4(null);
+  const [programs, setPrograms] = useState$5([]);
+  const [enrollmentPrograms, setEnrollmentPrograms] = useState$5([]);
+  const [loading, setLoading] = useState$5(true);
+  const [programsReady, setProgramsReady] = useState$5(false);
+  const [error, setError] = useState$5(null);
   const encodeFields = (fields) => encodeURIComponent(fields || "");
-  const fetchProgramsFromOnline = useCallback$4(async () => {
+  const fetchProgramsFromOnline = useCallback$5(async () => {
     setLoading(true);
     setProgramsReady(false);
     try {
@@ -481,8 +481,8 @@ function ProgramProvider({ children }) {
       const asArray = (p, key) => Array.isArray(p?.[key]) ? p[key] : Array.isArray(p) ? p : [];
       const programList = asArray(programPayload?.data, "programs");
       const rulesList = asArray(rulesPayload?.data, "programRules");
-      await LocalForageServiceInstance.setItem("programs", programList, "programs");
-      await LocalForageServiceInstance.setItem("programRules", rulesList, "programRules");
+      await LocalForageService.setItem("programs", programList, "programs");
+      await LocalForageService.setItem("programRules", rulesList, "programRules");
       const rulesByProgram = rulesList.reduce((acc, rule) => {
         const id = rule?.program?.id;
         if (id) (acc[id] = acc[id] || []).push(rule);
@@ -504,15 +504,15 @@ function ProgramProvider({ children }) {
       return [];
     }
   }, []);
-  const fetchPrograms = useCallback$4(async () => {
+  const fetchPrograms = useCallback$5(async () => {
     setLoading(true);
     setProgramsReady(false);
     try {
-      const cachedPrograms = await LocalForageServiceInstance.getItem(
+      const cachedPrograms = await LocalForageService.getItem(
         "programs",
         "programs"
       );
-      const cachedRules = await LocalForageServiceInstance.getItem(
+      const cachedRules = await LocalForageService.getItem(
         "programRules",
         "programRules"
       );
@@ -540,9 +540,9 @@ function ProgramProvider({ children }) {
       return [];
     }
   }, [fetchProgramsFromOnline]);
-  const fetchEnrollmentPrograms = useCallback$4(async () => {
+  const fetchEnrollmentPrograms = useCallback$5(async () => {
     try {
-      const cached = await LocalForageServiceInstance.getItem(
+      const cached = await LocalForageService.getItem(
         "enrollmentPrograms",
         "programs"
       );
@@ -550,13 +550,13 @@ function ProgramProvider({ children }) {
         setEnrollmentPrograms(cached);
         return cached;
       }
-      const remoteData = await LocalForageServiceInstance.getItem(
+      const remoteData = await LocalForageService.getItem(
         "dataStore",
         "dataStore"
       );
       const remote = remoteData?.enrollmentPrograms;
       const programs2 = remote?.programs || [];
-      await LocalForageServiceInstance.setItem(
+      await LocalForageService.setItem(
         "enrollmentPrograms",
         programs2,
         "programs"
@@ -574,10 +574,10 @@ function ProgramProvider({ children }) {
       await fetchEnrollmentPrograms();
     })();
   }, []);
-  const refresh = useCallback$4(() => fetchProgramsFromOnline(), [
+  const refresh = useCallback$5(() => fetchProgramsFromOnline(), [
     fetchProgramsFromOnline
   ]);
-  const value = useMemo$4(
+  const value = useMemo$5(
     () => ({
       programs,
       enrollmentPrograms,
@@ -594,12 +594,12 @@ function ProgramProvider({ children }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(MEMISContext.ProgramContext.Provider, { value, children });
 }
 
-const React$4 = await importShared('react');
-const {useCallback: useCallback$3,useEffect: useEffect$2,useMemo: useMemo$3,useState: useState$3} = React$4;
+const React$5 = await importShared('react');
+const {useCallback: useCallback$4,useEffect: useEffect$2,useMemo: useMemo$4,useState: useState$4} = React$5;
 function UserProvider({ children }) {
-  const [userOrganisationUnits, setUserOrganisationUnits] = useState$3([]);
-  const [loading, setLoading] = useState$3(true);
-  const fetchOrgUnitsOnline = useCallback$3(async () => {
+  const [userOrganisationUnits, setUserOrganisationUnits] = useState$4([]);
+  const [loading, setLoading] = useState$4(true);
+  const fetchOrgUnitsOnline = useCallback$4(async () => {
     try {
       setLoading(true);
       const root = await dataStore.get(
@@ -621,21 +621,21 @@ function UserProvider({ children }) {
       const allOrgUnits = await dataStore.get(
         `organisationUnits.json?fields=id,name,code,,parent(id,name,level,code),level&paging=false`
       );
-      await LocalForageServiceInstance.setItem(
+      await LocalForageService.setItem(
         "userOrganisationUnits",
         orgUnits,
         "userOrgUnits"
       );
-      await LocalForageServiceInstance.setItem(
+      await LocalForageService.setItem(
         "organisationUnits",
         allOrgUnits?.data?.organisationUnits || [],
         "organisationUnits"
       );
-      const cachedUser = await LocalForageServiceInstance.getItem("userRes", "user");
+      const cachedUser = await LocalForageService.getItem("userRes", "user");
       const userOnlyOrgUnits = await dataStore.get(
         `users/${cachedUser?.id}?fields=organisationUnits[id,name,code,parent(id,name,level,code),displayName,level]`
       );
-      await LocalForageServiceInstance.setItem(
+      await LocalForageService.setItem(
         "userOnlyOrgUnits",
         userOnlyOrgUnits?.data?.organisationUnits || [],
         "userOnlyOrgUnits"
@@ -653,7 +653,7 @@ function UserProvider({ children }) {
     let mounted = true;
     const load = async () => {
       setLoading(true);
-      const cached = await LocalForageServiceInstance.getItem(
+      const cached = await LocalForageService.getItem(
         "userOrganisationUnits",
         "userOrgUnits"
       );
@@ -668,7 +668,7 @@ function UserProvider({ children }) {
     load();
     return () => mounted = false;
   }, [fetchOrgUnitsOnline]);
-  const value = useMemo$3(
+  const value = useMemo$4(
     () => ({
       userOrganisationUnits,
       loading,
@@ -680,13 +680,13 @@ function UserProvider({ children }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(MEMISContext.UserContext.Provider, { value, children });
 }
 
-const React$3 = await importShared('react');
-const {useEffect: useEffect$1,useState: useState$2,useMemo: useMemo$2,useCallback: useCallback$2} = React$3;
+const React$4 = await importShared('react');
+const {useEffect: useEffect$1,useState: useState$3,useMemo: useMemo$3,useCallback: useCallback$3} = React$4;
 const DashboardProvider = ({ children }) => {
-  const [dashboardConfigs, setDashboardConfigs] = useState$2([]);
-  const [isLoading, setIsLoading] = useState$2(true);
-  const [error, setError] = useState$2(null);
-  const loadDashboardConfigurations = useCallback$2(async () => {
+  const [dashboardConfigs, setDashboardConfigs] = useState$3([]);
+  const [isLoading, setIsLoading] = useState$3(true);
+  const [error, setError] = useState$3(null);
+  const loadDashboardConfigurations = useCallback$3(async () => {
     setIsLoading(true);
     setError(null);
     let attempts = 0;
@@ -694,7 +694,7 @@ const DashboardProvider = ({ children }) => {
     let configurations = null;
     try {
       while (!configurations && attempts < maxAttempts) {
-        const response = await LocalForageServiceInstance.getItem(
+        const response = await LocalForageService.getItem(
           "dataStore",
           "dataStore"
         );
@@ -720,7 +720,7 @@ const DashboardProvider = ({ children }) => {
   useEffect$1(() => {
     loadDashboardConfigurations();
   }, [loadDashboardConfigurations]);
-  const value = useMemo$2(
+  const value = useMemo$3(
     () => ({
       dashboardConfigs,
       isLoading,
@@ -733,296 +733,495 @@ const DashboardProvider = ({ children }) => {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(MEMISContext.DashboardContext.Provider, { value, children });
 };
 
-const React$2 = await importShared('react');
-const {useState: useState$1,useMemo: useMemo$1,useCallback: useCallback$1} = React$2;
-let _inFlightProgramId$1 = null;
+const React$3 = await importShared('react');
+const {useState: useState$2,useMemo: useMemo$2,useCallback: useCallback$2,useRef} = React$3;
+const _inFlightRequests = /* @__PURE__ */ new Set();
 const TrackedEntitiesProvider = ({ children }) => {
-  const [isLoading, setIsLoading] = useState$1(false);
-  const [error, setError] = useState$1(null);
-  const [equipmentList, setEquipmentList] = useState$1([]);
-  const location = useLocation();
-  const queryParams = new URLSearchParams(location.search);
-  const [pagination, setPagination] = useState$1({
+  const [isLoading, setIsLoading] = useState$2(false);
+  const [error, setError] = useState$2(null);
+  const [equipmentList, setEquipmentList] = useState$2([]);
+  const [columns, setColumns] = useState$2([]);
+  const [pagination, setPagination] = useState$2({
     page: 1,
     pageSize: 50,
     totalPages: 1
   });
-  const [columns, setColumns] = useState$1([]);
-  const getEquipmentList = useCallback$1(
-    async ({ programId, options = {}, page = 1, pageSize = 50 }) => {
-      if (!programId) return [];
-      if (_inFlightProgramId$1 === programId) {
+  const requestIdRef = useRef(0);
+  const location = useLocation();
+  const queryParams = useMemo$2(() => {
+    return new URLSearchParams(location?.search || "");
+  }, [location?.search]);
+  const urlFilters = useMemo$2(() => {
+    const filters = queryParams.get("filters");
+    if (!filters) {
+      return null;
+    }
+    try {
+      return JSON.parse(filters);
+    } catch (error2) {
+      console.warn(
+        "[TrackedEntities] Unable to parse filters query parameter:",
+        error2
+      );
+      return null;
+    }
+  }, [queryParams]);
+  const statusQuery = useMemo$2(() => {
+    const value2 = queryParams.get("status");
+    if (!value2 || value2 === "null" || value2 === "undefined") {
+      return null;
+    }
+    return value2;
+  }, [queryParams]);
+  const statusQueryKey = useMemo$2(() => {
+    const value2 = queryParams.get("statusKey");
+    if (!value2 || value2 === "null" || value2 === "undefined") {
+      return null;
+    }
+    return value2;
+  }, [queryParams]);
+  const pagingQueryKey = useMemo$2(() => {
+    const value2 = queryParams.get("paging");
+    if (!value2 || value2 === "null" || value2 === "undefined") {
+      return null;
+    }
+    return value2;
+  }, [queryParams]);
+  const getEquipmentList = useCallback$2(
+    async ({
+      programId,
+      options = {},
+      page = 1,
+      pageSize = 50
+    }) => {
+      if (!programId) {
+        console.warn(
+          "[TrackedEntities] getEquipmentList called without programId"
+        );
         return [];
       }
-      _inFlightProgramId$1 = programId;
-      setIsLoading(true);
+      const requestId = ++requestIdRef.current;
+      setEquipmentList([]);
       setError(null);
-      try {
-        const params = new URLSearchParams();
-        params.append("program", programId);
-        const filters = queryParams?.get("filters");
-        const statusQuery = queryParams?.get("status");
-        let parsed = null;
-        parsed = filters ? JSON.parse(filters) : null;
-        if (parsed) {
-          const { startDate, endDate, department } = parsed;
-          if (department) {
-            options.orgUnit = department;
-          }
-          if (statusQuery && (statusQuery !== null || statusQuery !== "null")) {
-            params.append("filter", `KFZ35H4ZHrk:like:${statusQuery}`);
-          }
-          if (startDate) params.append("updatedAfter", startDate);
-          if (endDate) params.append("updatedBefore", endDate);
+      setIsLoading(true);
+      const filters = urlFilters;
+      const status = statusQuery;
+      const statusKey = statusQueryKey;
+      const urlPaging = pagingQueryKey;
+      const requestOptions = {
+        ...options
+      };
+      if (filters) {
+        const {
+          startDate,
+          endDate,
+          department
+        } = filters;
+        if (department) {
+          requestOptions.orgUnit = department;
         }
-        if (options?.startDate)
-          params.append("updatedAfter", options?.startDate);
-        if (options?.endDate) params.append("updatedBefore", options?.endDate);
-        const fields = [
-          "trackedEntity",
-          "orgUnit",
-          "attributes[attribute,value]",
-          "enrollments[events[programStage,dataValues[dataElement,value]]]"
-        ];
-        if (options.filterType && options?.filterType?.trim() !== "" && options?.filterValue) {
-          params.append(
-            "filter",
-            `${options?.filterType}:like:${options?.filterValue}`
-          );
+        if (startDate) {
+          requestOptions.startDate = startDate;
         }
-        const dStore = await LocalForageServiceInstance.getItem(
-          "dataStore",
-          "dataStore"
+        if (endDate) {
+          requestOptions.endDate = endDate;
+        }
+      }
+      const params = new URLSearchParams();
+      params.append("program", programId);
+      if (status && statusKey) {
+        params.append(
+          "filter",
+          `${statusKey}:like:${status}`
         );
-        const user = await LocalForageServiceInstance.getItem("userRes", "user");
-        const roles = user?.userRoles.map((role) => role?.id);
-        const programAttributesDisplay = dStore?.programAttributesDisplay.configuration?.find(
-          (conf) => conf?.programId === programId
+      }
+      if (requestOptions?.startDate) {
+        params.append(
+          "updatedAfter",
+          requestOptions.startDate
         );
-        const defaultFilters = programAttributesDisplay?.defaultFilters?.filter(
-          (filter) => filter?.roles?.some(
-            (dfr) => roles?.some((role) => role === dfr?.id)
+      }
+      if (requestOptions?.endDate) {
+        params.append(
+          "updatedBefore",
+          requestOptions.endDate
+        );
+      }
+      if (requestOptions?.filterType && requestOptions.filterType.trim() !== "" && requestOptions?.filterValue !== void 0 && requestOptions?.filterValue !== null && String(requestOptions.filterValue).trim() !== "") {
+        params.append(
+          "filter",
+          `${requestOptions.filterType}:like:${requestOptions.filterValue}`
+        );
+      }
+      const dStore = await LocalForageService.getItem(
+        "dataStore",
+        "dataStore"
+      );
+      if (requestId !== requestIdRef.current) {
+        return [];
+      }
+      const loggedInUser = await LocalForageService.getItem(
+        "userRes",
+        "user"
+      );
+      if (requestId !== requestIdRef.current) {
+        return [];
+      }
+      const roles = loggedInUser?.userRoles?.map(
+        (role) => role?.id
+      ) || [];
+      const programAttributesDisplay = dStore?.programAttributesDisplay?.configuration?.find(
+        (conf) => conf?.programId === programId
+      );
+      const defaultFilters = programAttributesDisplay?.defaultFilters?.filter(
+        (filter) => filter?.roles?.some(
+          (dfr) => roles?.some(
+            (role) => role === dfr?.id
           )
-        );
-        if (defaultFilters?.length) {
-          for (let index = 0; index < defaultFilters?.length; index++) {
-            const element = defaultFilters[index];
-            if (!options?.filterType || options?.filterType !== element?.element) {
+        )
+      ) || [];
+      if (defaultFilters.length) {
+        defaultFilters.forEach((element) => {
+          if (!requestOptions?.filterType || requestOptions.filterType !== element?.element) {
+            if (element?.attribute && element?.value !== void 0 && element?.value !== null) {
               params.append(
                 "filter",
-                `${element?.attribute}:like:${element?.value}`
+                `${element.attribute}:like:${element.value}`
               );
             }
           }
-        }
-        if (options.orgUnit) {
-          params.append("orgUnits", options.orgUnit);
-          params.append("orgUnitMode", "DESCENDANTS");
-        }
-        params.append("fields", fields.join(","));
-        params.append("totalPages", "true");
-        params.append("pageSize", pageSize);
-        params.append("page", page);
-        const serial = options?.searchWithSerialNumber;
-        if (typeof serial === "string" && serial.trim()) {
-          const key = options?.searchKey;
-          if (!key) {
-            console.warn("Missing searchKey in options");
-            return;
-          }
-          const value2 = serial.trim();
-          params.append("filter", `${key}:ilike:${value2}`);
-        }
-        const loggedInUser = await LocalForageServiceInstance.getItem(
-          "userRes",
-          "user"
+        });
+      }
+      if (requestOptions?.orgUnit) {
+        params.append(
+          "orgUnits",
+          requestOptions.orgUnit
         );
-        const useAllocated = loggedInUser.userRoles?.some(
+        params.append(
+          "orgUnitMode",
+          "DESCENDANTS"
+        );
+      }
+      const fields = [
+        "trackedEntity",
+        "orgUnit",
+        "attributes[attribute,value]",
+        "enrollments[events[programStage,dataValues[dataElement,value]]]"
+      ];
+      params.append(
+        "fields",
+        fields.join(",")
+      );
+      const serial = requestOptions?.searchWithSerialNumber;
+      if (typeof serial === "string" && serial.trim()) {
+        const key = requestOptions?.searchKey;
+        if (!key) {
+          console.warn(
+            "[TrackedEntities] Missing searchKey in options"
+          );
+        } else {
+          params.append(
+            "filter",
+            `${key}:ilike:${serial.trim()}`
+          );
+        }
+      }
+      if (urlPaging === "false") {
+        params.append(
+          "paging",
+          "false"
+        );
+      } else {
+        params.append(
+          "totalPages",
+          "true"
+        );
+        params.append(
+          "pageSize",
+          pageSize
+        );
+        params.append(
+          "page",
+          page
+        );
+      }
+      const requestUrl = `tracker/trackedEntities?${params.toString()}`;
+      const requestSignature = requestUrl;
+      if (_inFlightRequests.has(
+        requestSignature
+      )) {
+        return [];
+      }
+      _inFlightRequests.add(
+        requestSignature
+      );
+      try {
+        const useAllocated = loggedInUser?.userRoles?.some(
           (role) => role?.id === "Ec6TZ5N1QeF"
         );
         let response = null;
         if (useAllocated) {
           const newParams = new URLSearchParams({
             program: programId,
-            paging: false,
+            paging: "false",
             fields: "trackedEntity,orgUnit,attributes,enrollments[events,program,orgUnit]"
           });
-          const user2 = await LocalForageServiceInstance.getItem("userRes", "user");
-          if (parsed) {
-            const { startDate, endDate, department } = parsed;
-            if (department) {
-              options.orgUnit = department;
-            }
-            if (statusQuery && (statusQuery !== null || statusQuery !== "null")) {
-              newParams.append("filter", `KFZ35H4ZHrk:like:${statusQuery}`);
-            }
-            if (startDate) newParams.append("updatedAfter", startDate);
-            if (endDate) newParams.append("updatedBefore", endDate);
-            if (options.filterType && options?.filterType?.trim() !== "" && options?.filterValue) {
-              newParams.append(
-                "filter",
-                `${options?.filterType}:like:${options?.filterValue}`
-              );
-            }
-            if (defaultFilters?.length > 0) {
-              response = await renderListByUserRole({
-                user: user2,
-                programId,
-                orgUnit: department,
-                params: newParams
-              });
-            } else {
-              response = await dataStore.get(
-                `tracker/trackedEntities?${params.toString()}`
-              );
-            }
+          if (status && statusKey) {
+            newParams.append(
+              "filter",
+              `${statusKey}:like:${status}`
+            );
+          }
+          if (requestOptions?.startDate) {
+            newParams.append(
+              "updatedAfter",
+              requestOptions.startDate
+            );
+          }
+          if (requestOptions?.endDate) {
+            newParams.append(
+              "updatedBefore",
+              requestOptions.endDate
+            );
+          }
+          if (requestOptions?.filterType && requestOptions.filterType.trim() !== "" && requestOptions?.filterValue !== void 0 && requestOptions?.filterValue !== null && String(
+            requestOptions.filterValue
+          ).trim() !== "") {
+            newParams.append(
+              "filter",
+              `${requestOptions.filterType}:like:${requestOptions.filterValue}`
+            );
+          }
+          if (requestOptions?.orgUnit) {
+            newParams.append(
+              "orgUnits",
+              requestOptions.orgUnit
+            );
+            newParams.append(
+              "orgUnitMode",
+              "DESCENDANTS"
+            );
+          }
+          if (defaultFilters.length > 0) {
+            response = await renderListByUserRole({
+              user: loggedInUser,
+              programId,
+              orgUnit: requestOptions?.orgUnit,
+              params: newParams
+            });
           } else {
-            if (defaultFilters?.length > 0) {
-              response = await renderListByUserRole({
-                user: user2,
-                programId,
-                orgUnit: options?.orgUnit,
-                params: newParams
-              });
-            } else {
-              response = await dataStore.get(
-                `tracker/trackedEntities?${params.toString()}`
-              );
-            }
+            response = await dataStore.get(
+              `tracker/trackedEntities?${newParams.toString()}`
+            );
           }
         } else {
           response = await dataStore.get(
-            `tracker/trackedEntities?${params.toString()}`
+            requestUrl
           );
         }
+        if (requestId !== requestIdRef.current) {
+          return [];
+        }
         const trackedEntities = response?.data?.trackedEntities || [];
-        setPagination((prev) => ({ ...prev, ...response?.data?.pager }));
+        console.log({
+          response,
+          trackedEntities
+        });
+        if (requestId === requestIdRef.current && response?.data?.pager) {
+          setPagination((prev) => ({
+            ...prev,
+            ...response.data.pager
+          }));
+        }
         const optionSetMap = {};
         const columnsMeta = await dataStore.get(
           `programs/${programId}?fields=programTrackedEntityAttributes[trackedEntityAttribute[id,displayName,formName,optionSetValue,optionSet[options[code,name]]]]`
         );
+        if (requestId !== requestIdRef.current) {
+          return [];
+        }
         const programAttributes = columnsMeta?.data?.programTrackedEntityAttributes || [];
-        programAttributes.forEach((attr) => {
-          const a = attr.trackedEntityAttribute;
-          if (a?.optionSetValue && a?.optionSet?.options) {
-            optionSetMap[a.id] = {};
-            a.optionSet.options.forEach((opt) => {
-              optionSetMap[a.id][opt.code] = opt.name;
-            });
+        programAttributes.forEach(
+          (attr) => {
+            const attribute = attr?.trackedEntityAttribute;
+            if (attribute?.optionSetValue && attribute?.optionSet?.options) {
+              optionSetMap[attribute.id] = {};
+              attribute.optionSet.options.forEach(
+                (option) => {
+                  optionSetMap[attribute.id][option.code] = option.name;
+                }
+              );
+            }
           }
-        });
-        const programAttributesResult = await LocalForageServiceInstance.getItem(
+        );
+        const programAttributesResult = await LocalForageService.getItem(
           "dataStore",
           "dataStore"
         );
+        if (requestId !== requestIdRef.current) {
+          return [];
+        }
         const navLayout = programAttributesResult;
         const attributesResult = programAttributesResult?.programAttributesDisplay?.configuration;
-        const attributes = attributesResult?.find((att) => att?.programId === programId)?.attributes || [];
+        const attributes = attributesResult?.find(
+          (att) => att?.programId === programId
+        )?.attributes || [];
         const configArray = navLayout?.navigationLayout?.configuration || [];
-        const currentConfig = configArray.find((item) => item.id === programId);
+        const currentConfig = configArray.find(
+          (item) => item.id === programId
+        );
         const excludeStageId = currentConfig?.excludeByStage;
-        const filteredTEIs = trackedEntities.filter((tei) => {
-          if (!excludeStageId) return true;
-          const enrollments = tei.enrollments || [];
-          return !enrollments.some(
-            (enrollment) => (enrollment.events || []).some(
-              (event) => event.programStage === excludeStageId
-            )
-          );
-        });
-        const transformed = filteredTEIs.map((tei) => {
-          const obj = {
-            trackedentity: tei.trackedEntity,
-            orgUnit: tei.orgUnit
-          };
-          tei.attributes?.forEach((attr) => {
-            const key = attr.attribute;
-            if (!attributes.includes(key)) return;
-            let value2 = attr.value;
-            if (optionSetMap[key]) {
-              value2 = optionSetMap[key][value2] ?? value2;
+        const filteredTEIs = trackedEntities.filter(
+          (tei) => {
+            if (!excludeStageId) {
+              return true;
             }
-            obj[key] = value2 === "" || value2 == null ? null : value2;
-          });
-          return obj;
-        });
-        setEquipmentList(transformed);
+            if (!currentConfig?.isStage) {
+              return true;
+            }
+            const enrollments = tei.enrollments || [];
+            return !enrollments.some(
+              (enrollment) => (enrollment.events || []).some(
+                (event) => event.programStage === excludeStageId
+              )
+            );
+          }
+        );
+        const transformed = filteredTEIs.map(
+          (tei) => {
+            const obj = {
+              trackedentity: tei.trackedEntity,
+              orgUnit: tei.orgUnit
+            };
+            tei.attributes?.forEach(
+              (attr) => {
+                const key = attr.attribute;
+                if (!attributes.includes(
+                  key
+                )) {
+                  return;
+                }
+                let value2 = attr.value;
+                if (optionSetMap[key]) {
+                  value2 = optionSetMap[key][value2] ?? value2;
+                }
+                obj[key] = value2 === "" || value2 == null ? null : value2;
+              }
+            );
+            return obj;
+          }
+        );
         const customColumns = currentConfig?.customColumns || [];
         if (customColumns.length > 0) {
-          filteredTEIs.forEach((tei, index) => {
-            customColumns.forEach((customCol) => {
-              const attr = tei.attributes?.find(
-                (a) => a.attribute === customCol.key
-              );
-              if (attr !== void 0) {
-                transformed[index][customCol.key] = attr.value === "" || attr.value == null ? null : attr.value;
-                return;
-              }
-              let dataValue = null;
-              const enrollments = tei.enrollments || [];
-              outer: for (const enrollment of enrollments) {
-                for (const event of enrollment.events || []) {
-                  if (customCol.programStage && event.programStage !== customCol.programStage)
-                    continue;
-                  const dv = event.dataValues?.find(
-                    (d) => d.dataElement === customCol.key
+          filteredTEIs.forEach(
+            (tei, index) => {
+              customColumns.forEach(
+                (customCol) => {
+                  const attr = tei.attributes?.find(
+                    (a) => a.attribute === customCol.key
                   );
-                  if (dv !== void 0) {
-                    dataValue = dv.value === "" || dv.value == null ? null : dv.value;
-                    break outer;
+                  if (attr !== void 0) {
+                    transformed[index][customCol.key] = attr.value === "" || attr.value == null ? null : attr.value;
+                    return;
                   }
+                  let dataValue = null;
+                  const enrollments = tei.enrollments || [];
+                  outer:
+                    for (const enrollment of enrollments) {
+                      for (const event of enrollment.events || []) {
+                        if (customCol.programStage && event.programStage !== customCol.programStage) {
+                          continue;
+                        }
+                        const dv = event.dataValues?.find(
+                          (d) => d.dataElement === customCol.key
+                        );
+                        if (dv !== void 0) {
+                          dataValue = dv.value === "" || dv.value == null ? null : dv.value;
+                          break outer;
+                        }
+                      }
+                    }
+                  transformed[index][customCol.key] = dataValue;
                 }
-              }
-              transformed[index][customCol.key] = dataValue;
-            });
-          });
-        }
-        const dynamicColumns = attributes.map((id) => {
-          const meta = programAttributes.find(
-            (a) => a.trackedEntityAttribute.id === id
-          )?.trackedEntityAttribute;
-          return {
-            key: id,
-            label: meta?.formName || meta?.displayName || id,
-            order: 0,
-            valueType: meta?.valueType || "TEXT"
-          };
-        });
-        customColumns.forEach((customCol) => {
-          const existingIdx = dynamicColumns.findIndex(
-            (c) => c.key === customCol.key
+              );
+            }
           );
-          const targetOrder = customCol.position === "start" ? -100 : 9999;
-          if (existingIdx === -1) {
-            dynamicColumns.push({
-              key: customCol.key,
-              label: customCol.label,
-              order: targetOrder,
-              valueType: "TEXT"
-            });
-          } else {
-            dynamicColumns[existingIdx].order = targetOrder;
-            if (customCol.label) {
-              dynamicColumns[existingIdx].label = customCol.label;
+        }
+        const dynamicColumns = attributes.map(
+          (id) => {
+            const meta = programAttributes.find(
+              (a) => a?.trackedEntityAttribute?.id === id
+            )?.trackedEntityAttribute;
+            return {
+              key: id,
+              label: meta?.formName || meta?.displayName || id,
+              order: 0,
+              valueType: meta?.valueType || "TEXT"
+            };
+          }
+        );
+        customColumns.forEach(
+          (customCol) => {
+            const existingIdx = dynamicColumns.findIndex(
+              (column) => column.key === customCol.key
+            );
+            const targetOrder = customCol.position === "start" ? -100 : 9999;
+            if (existingIdx === -1) {
+              dynamicColumns.push({
+                key: customCol.key,
+                label: customCol.label,
+                order: targetOrder,
+                valueType: "TEXT"
+              });
+            } else {
+              dynamicColumns[existingIdx].order = targetOrder;
+              if (customCol.label) {
+                dynamicColumns[existingIdx].label = customCol.label;
+              }
             }
           }
-        });
-        dynamicColumns.sort((a, b) => a.order - b.order);
-        setColumns(dynamicColumns);
+        );
+        dynamicColumns.sort(
+          (a, b) => a.order - b.order
+        );
+        if (requestId !== requestIdRef.current) {
+          return [];
+        }
+        setColumns(
+          dynamicColumns
+        );
+        setEquipmentList(
+          transformed
+        );
         return transformed;
       } catch (e) {
-        console.log("[TrackedEntities] fetch error:", e);
-        setError(e);
-        setEquipmentList([]);
+        console.log(
+          "[TrackedEntities] fetch error:",
+          e
+        );
+        if (requestId === requestIdRef.current) {
+          setError(e);
+          setEquipmentList([]);
+        }
         return [];
       } finally {
-        setIsLoading(false);
-        _inFlightProgramId$1 = null;
+        _inFlightRequests.delete(
+          requestSignature
+        );
+        if (requestId === requestIdRef.current) {
+          setIsLoading(false);
+        }
       }
     },
-    []
+    [
+      location?.search,
+      urlFilters,
+      statusQuery,
+      statusQueryKey,
+      pagingQueryKey
+    ]
   );
-  const value = useMemo$1(
+  const value = useMemo$2(
     () => ({
       equipmentList,
       columns,
@@ -1038,27 +1237,32 @@ const TrackedEntitiesProvider = ({ children }) => {
       isLoading,
       error,
       getEquipmentList,
-      pagination,
-      setPagination
+      pagination
     ]
   );
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(MEMISContext.TrackedEntitiesContext.Provider, { value, children });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    MEMISContext.TrackedEntitiesContext.Provider,
+    {
+      value,
+      children
+    }
+  );
 };
 
-const React$1 = await importShared('react');
-const {useState,useMemo,useCallback} = React$1;
+const React$2 = await importShared('react');
+const {useState: useState$1,useMemo: useMemo$1,useCallback: useCallback$1} = React$2;
 let _inFlightProgramId = null;
 const EventsProvider = ({ children }) => {
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
-  const [eventsList, setEventsList] = useState([]);
-  const [pagination, setPagination] = useState({
+  const [isLoading, setIsLoading] = useState$1(false);
+  const [error, setError] = useState$1(null);
+  const [eventsList, setEventsList] = useState$1([]);
+  const [pagination, setPagination] = useState$1({
     page: 1,
     pageSize: 50,
     totalPages: 1
   });
-  const [columns, setColumns] = useState([]);
-  const getEventsList = useCallback(
+  const [columns, setColumns] = useState$1([]);
+  const getEventsList = useCallback$1(
     async ({ programId, options = {}, page = 1, pageSize = 50 }) => {
       if (!programId) return [];
       if (_inFlightProgramId === programId) {
@@ -1083,11 +1287,11 @@ const EventsProvider = ({ children }) => {
             params.append("filter", `${element?.id}:like:${element?.value}`);
           }
         }
-        const dStore = await LocalForageServiceInstance.getItem(
+        const dStore = await LocalForageService.getItem(
           "dataStore",
           "dataStore"
         );
-        const user = await LocalForageServiceInstance.getItem("userRes", "user");
+        const user = await LocalForageService.getItem("userRes", "user");
         const roles = user?.userRoles.map((role) => role?.id);
         const programAttributesDisplay = dStore?.programAttributesDisplay.configuration?.find(
           (conf) => conf?.programId === programId
@@ -1182,7 +1386,7 @@ const EventsProvider = ({ children }) => {
             });
           }
         });
-        const programAttributesResult = await LocalForageServiceInstance.getItem(
+        const programAttributesResult = await LocalForageService.getItem(
           "dataStore",
           "dataStore"
         );
@@ -1229,7 +1433,7 @@ const EventsProvider = ({ children }) => {
     },
     []
   );
-  const value = useMemo(
+  const value = useMemo$1(
     () => ({
       eventsList,
       columns,
@@ -1252,6 +1456,452 @@ const EventsProvider = ({ children }) => {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(MEMISContext.EventsContext.Provider, { value, children });
 };
 
+const processArchivedEquipment = (data, columns) => {
+    const programStage = "Nov4XZzv0UI";
+    const isolationDateDataElement = "Aonhj6wFZiQ";
+    const equipmentNameAttribute = "RiiMQRa0S8v";
+    const reasonForIsolationDataElement = "VFtANNTJUgC";
+    const isDeregistered = "zFrnBMhJyfd";
+    const serialNumberAttribute = "W5SNKqBFLgb";
+    const lifespanDataElement = "Lwk0SBBLM9o";
+    const natureOfProcurementDataElement = "JCbhANLv4Eb";
+    const isolatedBy = "Uw5xGRM16Ns";
+    const approvedBy = "zFrnBMhJyfd";
+
+    const getDataValue = (event, dataElement) =>
+        event?.dataValues?.find(
+            (dv) => dv?.dataElement === dataElement
+        )?.value ?? null;
+    const getDataValueAtt = (attributes, attribute) =>
+        attributes?.find(
+            (dv) => dv?.attribute === attribute
+        )?.value ?? null;
+    const getUser = (event, dataElement) => {
+        const check = event?.dataValues?.find(
+            (dv) => dv?.dataElement === dataElement
+        ) ?? null;
+        const user = check?.createdBy?.username;
+        return user
+    };
+    const isDeregisteredValue = (event, dataElement) => {
+        const check = event?.dataValues?.find(
+            (dv) => dv?.dataElement === dataElement
+        )?.createdAt ?? null;
+        return check
+    };
+
+    return (Array.isArray(data) ? data : []).map((tei) => {
+        const archiveEvent = tei?.enrollments[0]?.events?.find(
+            (event) => event?.programStage === programStage
+        );
+        const archiveAttributes = tei?.enrollments[0]?.attributes;
+
+        return {
+            trackedEntity: tei?.trackedEntity ?? null,
+            orgUnit: tei?.orgUnit ?? null,
+            program: archiveEvent?.program,
+            id: tei?.trackedEntity,
+            createdAt: isDeregisteredValue(
+                archiveEvent,
+                isDeregistered
+            ),
+            stage: programStage,
+            isolationDate: getDataValue(
+                archiveEvent,
+                isolationDateDataElement
+            ),
+            isolatedBy: getDataValue(archiveEvent, isolatedBy),
+            approvedBy: getUser(archiveEvent, approvedBy),
+
+            equipmentName: getDataValueAtt(
+                archiveAttributes,
+                equipmentNameAttribute
+            ),
+
+            reasonForIsolation: getDataValue(
+                archiveEvent,
+                reasonForIsolationDataElement
+            ),
+
+            isDeregistered: getDataValue(
+                archiveEvent,
+                isDeregistered
+            ),
+
+            serialNumber: getDataValueAtt(
+                archiveAttributes,
+                serialNumberAttribute
+            ),
+
+            lifespan: getDataValue(
+                archiveEvent,
+                lifespanDataElement
+            ),
+
+            natureOfProcurement: getDataValue(
+                archiveEvent,
+                natureOfProcurementDataElement
+            ),
+        };
+    });
+};
+
+const React$1 = await importShared('react');
+const {useCallback,useMemo,useState} = React$1;
+const A = (value) => Array.isArray(value) ? value : [];
+const ORG_UNIT_REQUIRED_MODES = /* @__PURE__ */ new Set([
+  "SELECTED",
+  "CHILDREN",
+  "DESCENDANTS"
+]);
+const ORG_UNIT_OPTIONAL_MODES = /* @__PURE__ */ new Set([
+  "CAPTURE",
+  "ACCESSIBLE",
+  "ALL"
+]);
+const normalizeOrgUnitMode = (mode) => {
+  const normalized = String(
+    mode || "DESCENDANTS"
+  ).trim().toUpperCase();
+  if (ORG_UNIT_REQUIRED_MODES.has(normalized) || ORG_UNIT_OPTIONAL_MODES.has(normalized)) {
+    return normalized;
+  }
+  return "DESCENDANTS";
+};
+const TRACKER_FIELDS = "id,program,trackedEntity,createdAt,occurredAt,updatedAt,orgUnit,enrollments[*]";
+function ArchivedEquipmentProvider({
+  children
+}) {
+  const [
+    archivedEquipment,
+    setArchivedEquipment
+  ] = useState([]);
+  const [
+    selectedArchivedEquipment,
+    setSelectedArchivedEquipment
+  ] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [
+    detailLoading,
+    setDetailLoading
+  ] = useState(false);
+  const [error, setError] = useState(null);
+  const [
+    detailError,
+    setDetailError
+  ] = useState(null);
+  const getArchivedEquipment = useCallback(
+    async ({
+      filterKey,
+      filterValue,
+      programId,
+      orgUnit,
+      equipmentStatusKey,
+      equipmentStatusValue,
+      serialNumberKey,
+      serialNumber,
+      orgUnitMode = "DESCENDANTS"
+    } = {}) => {
+      if (!programId) {
+        const err = new Error(
+          "programId is required"
+        );
+        setError(err);
+        setArchivedEquipment([]);
+        return {
+          success: false,
+          data: [],
+          response: null,
+          error: err
+        };
+      }
+      const mode = normalizeOrgUnitMode(
+        orgUnitMode
+      );
+      const normalizedOrgUnit = String(
+        orgUnit || ""
+      ).trim();
+      if (ORG_UNIT_REQUIRED_MODES.has(
+        mode
+      ) && !normalizedOrgUnit) {
+        const err = new Error(
+          `orgUnit is required for orgUnitMode=${mode}`
+        );
+        setError(err);
+        setArchivedEquipment([]);
+        return {
+          success: false,
+          data: [],
+          response: null,
+          error: err
+        };
+      }
+      setLoading(true);
+      setError(null);
+      try {
+        const params = new URLSearchParams();
+        params.set(
+          "program",
+          programId
+        );
+        if (ORG_UNIT_REQUIRED_MODES.has(
+          mode
+        )) {
+          params.set(
+            "orgUnits",
+            normalizedOrgUnit
+          );
+          params.set(
+            "orgUnitMode",
+            mode
+          );
+        } else if (ORG_UNIT_OPTIONAL_MODES.has(
+          mode
+        )) {
+          params.set(
+            "orgUnitMode",
+            mode
+          );
+        }
+        if (filterKey && filterValue !== void 0 && filterValue !== null && filterValue !== "") {
+          params.append(
+            "filter",
+            `${filterKey}:like:${filterValue}`
+          );
+        }
+        if (serialNumberKey && serialNumber !== void 0 && serialNumber !== null && serialNumber !== "") {
+          params.append(
+            "filter",
+            `${serialNumberKey}:like:${serialNumber}`
+          );
+        }
+        if (equipmentStatusKey && equipmentStatusValue !== void 0 && equipmentStatusValue !== null && equipmentStatusValue !== "") {
+          params.append(
+            "filter",
+            `${equipmentStatusKey}:like:${equipmentStatusValue}`
+          );
+        }
+        params.set(
+          "fields",
+          TRACKER_FIELDS
+        );
+        const url = `tracker/trackedEntities?${params.toString()}`;
+        console.log(
+          "[ArchivedEquipmentProvider] Loading archive:",
+          url
+        );
+        const res = await dataStore.get(url);
+        const resolved = A(
+          res?.data?.trackedEntities
+        );
+        const processed = processArchivedEquipment(
+          resolved
+        );
+        setArchivedEquipment(
+          processed
+        );
+        return {
+          success: true,
+          data: processed,
+          response: res,
+          error: null
+        };
+      } catch (err) {
+        console.error(
+          "[ArchivedEquipmentProvider] Failed to load archived equipment:",
+          err
+        );
+        setArchivedEquipment([]);
+        setError(err);
+        return {
+          success: false,
+          data: [],
+          response: null,
+          error: err
+        };
+      } finally {
+        setLoading(false);
+      }
+    },
+    []
+  );
+  const getArchivedEquipmentById = useCallback(
+    async ({
+      id,
+      programId
+    } = {}) => {
+      const trackedEntityId = String(
+        id || ""
+      ).trim();
+      if (!trackedEntityId) {
+        const err = new Error(
+          "id is required"
+        );
+        setDetailError(err);
+        setSelectedArchivedEquipment(
+          null
+        );
+        return {
+          success: false,
+          data: null,
+          response: null,
+          error: err
+        };
+      }
+      if (!programId) {
+        const err = new Error(
+          "programId is required"
+        );
+        setDetailError(err);
+        setSelectedArchivedEquipment(
+          null
+        );
+        return {
+          success: false,
+          data: null,
+          response: null,
+          error: err
+        };
+      }
+      setDetailLoading(true);
+      setDetailError(null);
+      try {
+        const params = new URLSearchParams();
+        params.set(
+          "program",
+          programId
+        );
+        params.set(
+          "fields",
+          TRACKER_FIELDS
+        );
+        const url = `tracker/trackedEntities/${encodeURIComponent(
+          trackedEntityId
+        )}?${params.toString()}`;
+        console.log(
+          "[ArchivedEquipmentProvider] Loading equipment:",
+          url
+        );
+        const res = await dataStore.get(url);
+        const rawEquipment = res?.data;
+        if (!rawEquipment || typeof rawEquipment !== "object") {
+          const err = new Error(
+            "Archived equipment record was not found"
+          );
+          setSelectedArchivedEquipment(
+            null
+          );
+          setDetailError(err);
+          return {
+            success: false,
+            data: null,
+            response: res,
+            error: err
+          };
+        }
+        const processed = processArchivedEquipment([
+          rawEquipment
+        ]);
+        const equipment = processed?.[0] || null;
+        setSelectedArchivedEquipment(
+          equipment
+        );
+        return {
+          success: true,
+          data: equipment,
+          response: res,
+          error: null
+        };
+      } catch (err) {
+        console.error(
+          "[ArchivedEquipmentProvider] Failed to load equipment:",
+          err
+        );
+        setSelectedArchivedEquipment(
+          null
+        );
+        setDetailError(err);
+        return {
+          success: false,
+          data: null,
+          response: null,
+          error: err
+        };
+      } finally {
+        setDetailLoading(false);
+      }
+    },
+    []
+  );
+  const clearArchivedEquipment = useCallback(() => {
+    setArchivedEquipment([]);
+    setError(null);
+  }, []);
+  const clearSelectedArchivedEquipment = useCallback(() => {
+    setSelectedArchivedEquipment(
+      null
+    );
+    setDetailError(null);
+  }, []);
+  const archivedEquipmentCount = archivedEquipment.length;
+  const value = useMemo(
+    () => ({
+      /*
+       * Archive list
+       */
+      archivedEquipment,
+      archivedEquipmentCount,
+      /*
+       * Selected equipment
+       */
+      selectedArchivedEquipment,
+      /*
+       * Loading
+       */
+      loading,
+      detailLoading,
+      /*
+       * Errors
+       */
+      error,
+      detailError,
+      /*
+       * List API
+       */
+      getArchivedEquipment,
+      /*
+       * Single-record API
+       */
+      getArchivedEquipmentById,
+      /*
+       * Clear methods
+       */
+      clearArchivedEquipment,
+      clearSelectedArchivedEquipment
+    }),
+    [
+      archivedEquipment,
+      archivedEquipmentCount,
+      selectedArchivedEquipment,
+      loading,
+      detailLoading,
+      error,
+      detailError,
+      getArchivedEquipment,
+      getArchivedEquipmentById,
+      clearArchivedEquipment,
+      clearSelectedArchivedEquipment
+    ]
+  );
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    MEMISContext.ArchivedEquipment.Provider,
+    {
+      value,
+      children
+    }
+  );
+}
+
 await importShared('react');
 const providers = [
   DataStoreProvider,
@@ -1271,7 +1921,8 @@ const providers = [
   MenuProvider,
   // 6. LAST: depends on user + roles + permissions + programs
   TrackedEntitiesProvider,
-  EventsProvider
+  EventsProvider,
+  ArchivedEquipmentProvider
 ];
 function ProviderController({ children }) {
   return providers.reduceRight(

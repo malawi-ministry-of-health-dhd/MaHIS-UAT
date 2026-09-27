@@ -2891,11 +2891,11 @@ class LocalForageServiceInstance {
   }
 }
 
-const LocalForageServiceInstance$1 = new LocalForageServiceInstance();
+const LocalForageService = new LocalForageServiceInstance();
 
-const LocalForageService = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const LocalForageService$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
-	default: LocalForageServiceInstance$1
+	default: LocalForageService
 }, Symbol.toStringTag, { value: 'Module' }));
 
-export { LocalForageServiceInstance$1 as L, LocalForageService as a, commonjsRequire as c };
+export { LocalForageService as L, LocalForageService$1 as a, commonjsRequire as c };

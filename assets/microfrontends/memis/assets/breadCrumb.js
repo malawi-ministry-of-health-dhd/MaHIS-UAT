@@ -1,6 +1,6 @@
 import { importShared } from './__federation_fn_import.js';
 import dataStore from './index2.js';
-import { L as LocalForageServiceInstance } from './LocalForageService.js';
+import { L as LocalForageService } from './LocalForageService.js';
 import { r as requireReact } from './index3.js';
 
 var jsxRuntime = {exports: {}};
@@ -36135,7 +36135,7 @@ const MEMISContext = {
   DashboardContext: React$2.createContext(),
   TrackedEntitiesContext: React$2.createContext(),
   EventsContext: React$2.createContext(),
-
+  ArchivedEquipment: React$2.createContext(),
 };
 
 const {useMemo: useMemo$1,useCallback} = await importShared('react');
@@ -39307,7 +39307,7 @@ const dataStoreInit = async (forceRefresh = false) => {
   try {
     // Check for cached data (unless forcing refresh)
     if (!forceRefresh) {
-      const cachedData = await LocalForageServiceInstance.getItem("dataStore", "dataStore");
+      const cachedData = await LocalForageService.getItem("dataStore", "dataStore");
       if (cachedData && Object.keys(cachedData).length > 0) {
         console.log("DataStore loaded from cache");
         return null;
@@ -39332,7 +39332,7 @@ const dataStoreInit = async (forceRefresh = false) => {
       }
 
       // Store final object to LocalForage
-      await LocalForageServiceInstance.setItem(
+      await LocalForageService.setItem(
         "dataStore",
         results,
         "dataStore"
@@ -39342,7 +39342,7 @@ const dataStoreInit = async (forceRefresh = false) => {
     }
 
     // "memis" namespace missing → ensure LocalForage still gets empty structure
-    await LocalForageServiceInstance.setItem("dataStore", {}, "dataStore");
+    await LocalForageService.setItem("dataStore", {}, "dataStore");
     console.log("DataStore initialized but 'memis' namespace missing");
     return null;
   } catch (error) {
@@ -39361,7 +39361,7 @@ const metadataInit = async (forceRefresh = false) => {
   try {
     // Check if we already have cached metadata (unless forcing refresh)
     if (!forceRefresh) {
-      const cachedOptionSets = await LocalForageServiceInstance.getItem("optionSets", "metadata");
+      const cachedOptionSets = await LocalForageService.getItem("optionSets", "metadata");
       if (cachedOptionSets && Array.isArray(cachedOptionSets) && cachedOptionSets.length > 0) {
         console.log("Metadata loaded from cache:", cachedOptionSets.length, "optionSets");
         return null;
@@ -39378,7 +39378,7 @@ const metadataInit = async (forceRefresh = false) => {
     const optionSets = optionSetsResponse?.data?.optionSets || [];
 
     // Cache optionSets
-    await LocalForageServiceInstance.setItem("optionSets", optionSets, "metadata");
+    await LocalForageService.setItem("optionSets", optionSets, "metadata");
 
     console.log("Metadata initialized and cached:", optionSets.length, "optionSets");
     return null;
@@ -39394,7 +39394,7 @@ const metadataInit = async (forceRefresh = false) => {
  */
 const getAllOptionSetsFromCache = async () => {
   try {
-    const cachedOptionSets = await LocalForageServiceInstance.getItem("optionSets", "metadata");
+    const cachedOptionSets = await LocalForageService.getItem("optionSets", "metadata");
     return cachedOptionSets || [];
   } catch (error) {
     console.log("Error getting all optionSets from cache:", error);
@@ -39413,7 +39413,7 @@ const programsMetadata = async (forceRefresh = false) => {
     // Check if we already have cached metadata (unless forcing refresh)
     if (!forceRefresh) {
 
-      const cachedPrograms = await LocalForageServiceInstance.getItem("programs", "programs");
+      const cachedPrograms = await LocalForageService.getItem("programs", "programs");
       if (cachedPrograms && Array.isArray(cachedPrograms) && cachedPrograms.length > 0) {
         console.log("Programs loaded from cache:", cachedPrograms.length, "programs");
         // return cachedPrograms;
@@ -39442,8 +39442,8 @@ const programsMetadata = async (forceRefresh = false) => {
     const rulesList = asArray(rulesPayload?.data, "programRules");
 
     // Cache results
-    await LocalForageServiceInstance.setItem("programs", programList, "programs");
-    await LocalForageServiceInstance.setItem("programRules", rulesList, "programRules");
+    await LocalForageService.setItem("programs", programList, "programs");
+    await LocalForageService.setItem("programRules", rulesList, "programRules");
 
     console.log("Programs metadata initialized and cached:", programs.length, "programs");
     return null;
@@ -39464,7 +39464,7 @@ const optionsGroupsInit = async (forceRefresh = false) => {
   try {
     // Check if we already have cached optionGroups (unless forcing refresh)
     if (!forceRefresh) {
-      const cachedoptionGroups = await LocalForageServiceInstance.getItem("optionGroups", "optionGroups");
+      const cachedoptionGroups = await LocalForageService.getItem("optionGroups", "optionGroups");
       if (cachedoptionGroups && Array.isArray(cachedoptionGroups) && cachedoptionGroups.length > 0) {
         console.log("optionGroups loaded from cache:", cachedoptionGroups.length, "optionGroups");
         return null;
@@ -39481,7 +39481,7 @@ const optionsGroupsInit = async (forceRefresh = false) => {
     const optionGroups = optionGroupsResponse?.data?.optionGroups || [];
 
     // Cache optionGroups
-    await LocalForageServiceInstance.setItem("optionGroups", optionGroups, "optionGroups");
+    await LocalForageService.setItem("optionGroups", optionGroups, "optionGroups");
 
     console.log("optionGroups initialized and cached:", optionGroups.length, "optionGroups");
     return null;
@@ -39502,7 +39502,7 @@ const orgUnitGroupsInit = async (forceRefresh = false) => {
   try {
     // Check if we already have cached orgUnitGroups (unless forcing refresh)
     if (!forceRefresh) {
-      const cachedorgUnitGroups = await LocalForageServiceInstance.getItem(
+      const cachedorgUnitGroups = await LocalForageService.getItem(
         "orgUnitGroups",
         "orgUnitGroups",
       );
@@ -39530,7 +39530,7 @@ const orgUnitGroupsInit = async (forceRefresh = false) => {
     const orgUnitGroups = orgUnitGroupsResponse?.data?.organisationUnitGroups || [];
 
     // Cache orgUnitGroups
-    await LocalForageServiceInstance.setItem(
+    await LocalForageService.setItem(
       "orgUnitGroups",
       orgUnitGroups,
       "orgUnitGroups",
@@ -39660,7 +39660,7 @@ const renderListByUserRole = async ({ user, programId, orgUnit, params }) => {
     let res = null;
 
     const loggedInUserRoles = user?.userRoles || [];
-    let listAccessRoles = await LocalForageServiceInstance.getItem(
+    let listAccessRoles = await LocalForageService.getItem(
         "dataStore",
         "dataStore",
     );
@@ -40226,4 +40226,4 @@ async function clearMemisStorage() {
   MEMIS_COOKIE_NAMES.forEach(clearCookie);
 }
 
-export { closeCircle as $, IonAccordion as A, BrowserRouter as B, albumsOutline as C, DataStoreProvider as D, IonButtons as E, IonMenuButton as F, IonButton as G, mailOutline as H, IonMenuToggle as I, notificationsOutline as J, IonBadge as K, Link as L, MEMISContext as M, personCircleOutline as N, ORGANISATION_UNITS_DESCENDANTS as O, PROGRAMS_FIELDS as P, logOutOutline as Q, showToast as R, SuspenseLoader as S, ToastItem as T, USER_ORGANISATION_UNITS as U, Outlet as V, closeOutline as W, chevronDownOutline as X, searchOutline as Y, checkmarkOutline as Z, __vitePreload as _, PROGRAM_RULES_FIELDS as a, useParams as a$, IonGrid as a0, IonRow as a1, IonCol as a2, chevronUpOutline as a3, IonInput as a4, IonRadioGroup as a5, IonRadio as a6, IonCard as a7, IonCardContent as a8, warningOutline as a9, ellipsisVertical as aA, arrowUp as aB, arrowDown as aC, removeOutline as aD, IonSearchbar as aE, filterOutline as aF, qrCodeOutline as aG, IonModal as aH, IonSelect as aI, IonSelectOption as aJ, api as aK, businessOutline as aL, getAllOptionSetsFromCache as aM, calendarOutline as aN, locationOutline as aO, personOutline as aP, timeOutline as aQ, usePermissions as aR, removeCircleOutline as aS, addCircleOutline as aT, useDataStore as aU, IonInputPasswordToggle as aV, checkmarkDoneOutline as aW, createOutline as aX, IonBreadcrumbs as aY, IonBreadcrumb as aZ, chevronForward as a_, constructOutline as aa, arrowForward as ab, chevronForwardOutline as ac, IonPage as ad, metadataInit as ae, hardwareChipOutline as af, settingsOutline as ag, addOutline as ah, y as ai, IonSpinner as aj, close as ak, imageOutline as al, document$1 as am, IonText as an, alertCircleOutline as ao, arrowBackCircleOutline as ap, chevronBackOutline as aq, saveOutline as ar, IonLoading as as, IonCheckbox as at, IonPopover as au, IonDatetime as av, IonTextarea as aw, IonCardHeader as ax, IonCardTitle as ay, useSearchParams as az, PermissionsProvider as b, IonAvatar as b0, IonActionSheet as b1, IonFooter as b2, downloadOutline as b3, eyeOutline as b4, printOutline as b5, IonCardSubtitle as b6, PROGRAM_STAGES_FIELDS as b7, informationCircleOutline as b8, homeOutline as b9, Routes as bA, Route as bB, Navigate as bC, isRTL$1 as bD, createGesture as bE, clamp as bF, doc as bG, pointerCoord as bH, readTask as bI, findClosestIonContent as bJ, componentOnReady as bK, writeTask$1 as bL, scrollToTop as bM, Keyboard as bN, addEventListener$1 as bO, removeEventListener as bP, KeyboardResize as bQ, win$2 as bR, raf as bS, getScrollElement as bT, scrollByPoint as bU, createAnimation as bV, getIonPageElement as bW, arrowBackOutline as ba, trash as bb, IonAlert as bc, addCircle as bd, refresh as be, orgUnitGroupsInit as bf, useIonToast as bg, IonToggle as bh, IonTabs as bi, IonTabBar as bj, IonTabButton as bk, settings as bl, lockClosed as bm, documentLock as bn, business as bo, informationCircle as bp, barChart as bq, IonTab as br, checkmarkCircleOutline as bs, chatbubbleOutline as bt, analyticsOutline as bu, lockClosedOutline as bv, refreshOutline as bw, peopleOutline as bx, add as by, IonToast as bz, setupIonicReact as c, documentText as d, setActiveProgramCookie as e, clearMemisStorage as f, useNavigate as g, IonItem as h, icons as i, jsxRuntimeExports as j, IonIcon as k, IonLabel as l, IonRefresher as m, IonRefresherContent as n, isPlatform as o, IonMenu as p, IonHeader as q, renderListByUserRole as r, sendNotification as s, IonToolbar as t, useLocation as u, IonTitle as v, IonContent as w, IonList as x, home as y, IonAccordionGroup as z };
+export { checkmarkOutline as $, IonAccordion as A, BrowserRouter as B, albumsOutline as C, DataStoreProvider as D, IonButtons as E, IonMenuButton as F, IonButton as G, mailOutline as H, IonMenuToggle as I, notificationsOutline as J, IonBadge as K, Link as L, MEMISContext as M, personCircleOutline as N, ORGANISATION_UNITS_DESCENDANTS as O, PROGRAMS_FIELDS as P, reloadCircle as Q, logOutOutline as R, SuspenseLoader as S, ToastItem as T, USER_ORGANISATION_UNITS as U, showToast as V, Outlet as W, closeOutline as X, chevronDownOutline as Y, searchOutline as Z, __vitePreload as _, PROGRAM_RULES_FIELDS as a, chevronForward as a$, closeCircle as a0, IonGrid as a1, IonRow as a2, IonCol as a3, chevronUpOutline as a4, IonInput as a5, IonRadioGroup as a6, IonRadio as a7, IonCard as a8, IonCardContent as a9, useSearchParams as aA, createOutline as aB, ellipsisVertical as aC, arrowUp as aD, arrowDown as aE, removeOutline as aF, IonSearchbar as aG, filterOutline as aH, qrCodeOutline as aI, IonModal as aJ, IonSelect as aK, IonSelectOption as aL, api as aM, businessOutline as aN, getAllOptionSetsFromCache as aO, calendarOutline as aP, locationOutline as aQ, personOutline as aR, timeOutline as aS, usePermissions as aT, removeCircleOutline as aU, addCircleOutline as aV, useDataStore as aW, IonInputPasswordToggle as aX, checkmarkDoneOutline as aY, IonBreadcrumbs as aZ, IonBreadcrumb as a_, warningOutline as aa, constructOutline as ab, arrowForward as ac, chevronForwardOutline as ad, IonPage as ae, metadataInit as af, hardwareChipOutline as ag, settingsOutline as ah, addOutline as ai, y as aj, IonSpinner as ak, close as al, imageOutline as am, document$1 as an, IonText as ao, alertCircleOutline as ap, arrowBackCircleOutline as aq, chevronBackOutline as ar, saveOutline as as, IonLoading as at, IonCheckbox as au, IonPopover as av, IonDatetime as aw, IonTextarea as ax, IonCardHeader as ay, IonCardTitle as az, PermissionsProvider as b, createAnimation as b$, useParams as b0, IonAvatar as b1, IonActionSheet as b2, IonFooter as b3, downloadOutline as b4, eyeOutline as b5, printOutline as b6, IonCardSubtitle as b7, PROGRAM_STAGES_FIELDS as b8, informationCircleOutline as b9, IonToast as bA, archiveOutline as bB, closeCircleOutline as bC, IonBackButton as bD, documentTextOutline as bE, layersOutline as bF, Routes as bG, Route as bH, Navigate as bI, isRTL$1 as bJ, createGesture as bK, clamp as bL, doc as bM, pointerCoord as bN, readTask as bO, findClosestIonContent as bP, componentOnReady as bQ, writeTask$1 as bR, scrollToTop as bS, Keyboard as bT, addEventListener$1 as bU, removeEventListener as bV, KeyboardResize as bW, win$2 as bX, raf as bY, getScrollElement as bZ, scrollByPoint as b_, homeOutline as ba, arrowBackOutline as bb, trash as bc, IonAlert as bd, addCircle as be, refresh as bf, orgUnitGroupsInit as bg, useIonToast as bh, IonToggle as bi, IonTabs as bj, IonTabBar as bk, IonTabButton as bl, settings as bm, lockClosed as bn, documentLock as bo, business as bp, informationCircle as bq, barChart as br, IonTab as bs, checkmarkCircleOutline as bt, chatbubbleOutline as bu, analyticsOutline as bv, lockClosedOutline as bw, refreshOutline as bx, peopleOutline as by, add as bz, setupIonicReact as c, getIonPageElement as c0, documentText as d, setActiveProgramCookie as e, clearMemisStorage as f, useNavigate as g, IonItem as h, icons as i, jsxRuntimeExports as j, IonIcon as k, IonLabel as l, IonRefresher as m, IonRefresherContent as n, isPlatform as o, IonMenu as p, IonHeader as q, renderListByUserRole as r, sendNotification as s, IonToolbar as t, useLocation as u, IonTitle as v, IonContent as w, IonList as x, home as y, IonAccordionGroup as z };
