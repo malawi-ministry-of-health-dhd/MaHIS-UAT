@@ -21583,7 +21583,7 @@ const getUsersForAssignment = async (roleIds) => {
         : org?.organisationUnits;
     const ouId = units[0]?.id;
 
-    const params = `fields=name,id,username,firstName,surname,organisationUnits,userRoles[id,name]&ou=${ouId}&includeChildren=true&paging=false`;
+    const params = `fields=filter=name,id,username,firstName,surname,organisationUnits,userRoles[id,name]&ou=${ouId}&includeChildren=true&paging=false`;
     const userResponse = await dataStore?.get(`users?${params}`);
 
     const allUsers = userResponse?.data?.users || [];
@@ -24003,7 +24003,7 @@ function useEquipmentContext({
         const getAttr = (id) =>
           equipment.attributes?.find((a) => a.attribute === id)?.value || "";
         const nameRaw = primaryAttrId ? getAttr(primaryAttrId) : "";
-        const serial   = secondaryAttrId ? getAttr(secondaryAttrId) : "N/A";
+        const serial   = secondaryAttrId ? getAttr(secondaryAttrId) : "";
         const stateRaw = statusAttrId ? getAttr(statusAttrId) : "";
         const name  = primaryAttrId ? resolveOptionSetValue(primaryAttrId, nameRaw) : nameRaw;
         const state = statusAttrId  ? resolveOptionSetValue(statusAttrId, stateRaw) : stateRaw;
@@ -24012,7 +24012,7 @@ function useEquipmentContext({
           orgUnit: equipment.orgUnit,
           enrollment: equipment.enrollments?.[0]?.enrollment,
           name: name || `Equipment ${equipment.trackedEntity.substring(0, 8)}`,
-          serialNumber: serial || "N/A",
+          serialNumber: serial || "",
           state,
           attributes: equipment.attributes,
           displayText: name
@@ -29263,11 +29263,11 @@ const equipmentCollectionStatus = async (config, options) => {
 
     const subject = isAcknowledgment
       ? `Collection of ${equipmentNameText} ${serialNumberText} acknowledged | ${options?.program}.${options?.tei}.${stageId}.${eventId}`
-      : `Acknowledge receipt of ${equipmentNameText} ${serialNumberText} | ${options?.program}.${options?.tei}.${stageId}.${eventId}`;
+      : `Equipment has been collected. Acknowledgement is pending. | ${options?.program}.${options?.tei}.${stageId}.${eventId}`;
 
     const body = isAcknowledgment
       ? `Ward-incharge has acknowledged receipt of the allocated ${equipmentNameText} ${serialNumberText}.`
-      : `Acknowledge receipt of the allocated equipment ${serialNumberText}.`;
+      : `Equipment has been collected. Acknowledgement is pending. ${equipmentNameText} ${serialNumberText}.`;
     let usersId = [];
     const roleUsers = await getUsersForRoles(
       config?.userRoles || [],
@@ -32622,23 +32622,24 @@ async function programWithRegistrationEvent(
           (importStrategy = "STAGE_CREATE"),
           programStage,
         );
-
-        await notificationSendTrigger(configData?.event, {
-          orgUnit: selectedOrgUnit,
-          program: program?.id,
-          event: null,
-          count: 1,
-          teiId,
-          payload,
-          trackedEntity,
-          events:
-            response?.data?.bundleReport?.typeReportMap?.EVENT?.objectReports.map(
-              (b) => b?.uid,
-            ),
-          equipmentDetails: equipmentDetails?.data,
-        });
-
-
+        if (programStage === "VlwQGgBvd9i" && sectionData === "EAfmOCCCBwY") {
+          
+        } else {
+          await notificationSendTrigger(configData?.event, {
+            orgUnit: selectedOrgUnit,
+            program: program?.id,
+            event: null,
+            count: 1,
+            teiId,
+            payload,
+            trackedEntity,
+            events:
+              response?.data?.bundleReport?.typeReportMap?.EVENT?.objectReports.map(
+                (b) => b?.uid,
+              ),
+            equipmentDetails: equipmentDetails?.data,
+          });
+        }
       }
     }
     if (programStage === "VlwQGgBvd9i" && sectionData === "EAfmOCCCBwY") {
@@ -34575,6 +34576,56 @@ const generateUniquePamAssetNumber = async ({
   throw new Error("PAM_GENERATION_EXHAUSTED");
 };
 
+/**
+ * Checks whether a TEI already exists in the given program with the same
+ * combination of attribute values defined in duplicateDetectionConfig.
+ *
+ * Returns { isDuplicate: false } if:
+ *   - no config is provided
+ *   - any of the configured attributes is missing from the payload
+ *   - the API call fails (fail-open)
+ *
+ * @param {object} payload        - Form data object (attribute IDs as keys)
+ * @param {string} orgUnit        - Selected org unit ID
+ * @param {object} programConfig  - Single program entry from duplicateDetectionConfig
+ * @returns {Promise<{ isDuplicate: boolean, existing: object|null }>}
+ */
+async function checkEquipmentDuplicate(payload, orgUnit, programConfig) {
+  if (!programConfig?.programId || !Array.isArray(programConfig?.attributes)) {
+    return { isDuplicate: false, existing: null };
+  }
+
+  // All configured attributes must be present in the payload to form a meaningful check
+  const allPresent = programConfig.attributes.every((id) => !!payload?.[id]);
+  if (!allPresent) {
+    return { isDuplicate: false, existing: null };
+  }
+
+  try {
+    const filters = programConfig.attributes
+      .map((id) => `filter=${id}:eq:${encodeURIComponent(payload[id])}`)
+      .join("&");
+
+    const response = await dataStore.get(
+      `tracker/trackedEntities?program=${programConfig.programId}&orgUnitMode=ACCESSIBLE&${filters}&fields=trackedEntity,attributes&skipPaging=true`,
+    );
+
+    const entities =
+      response?.data?.trackedEntities ||
+      response?.data?.instances ||
+      [];
+
+    if (entities.length > 0) {
+      return { isDuplicate: true, existing: entities[0] };
+    }
+
+    return { isDuplicate: false, existing: null };
+  } catch (err) {
+    console.warn("[checkEquipmentDuplicate] Search failed, allowing save:", err);
+    return { isDuplicate: false, existing: null };
+  }
+}
+
 const {useContext: useContext$F,useEffect: useEffect$1c,useState: useState$1e,useMemo: useMemo$H,useRef: useRef$l} = await importShared('react');
 const A$8 = (x) => Array.isArray(x) ? x : [];
 function collectBundleUids(value, seen = /* @__PURE__ */ new Set()) {
@@ -34650,6 +34701,7 @@ function FormComponent({
     editData?.trackedEntity || editData?.id || null
   );
   const [ackModalOpen, setAckModalOpen] = useState$1e(false);
+  const [duplicateAlert, setDuplicateAlert] = useState$1e({ isOpen: false, existingTeiId: null, existingAttributes: [], configuredIds: [] });
   const autoFillFacilityAppliedRef = useRef$l(false);
   const isEditMode = useMemo$H(() => {
     return query === "edit" || !!editData;
@@ -35118,6 +35170,27 @@ function FormComponent({
             return;
           }
         }
+        if (isEnrollmentCreate) {
+          const dsConfig = await LocalForageService.getItem("dataStore", "dataStore");
+          const dupProgramConfig = dsConfig?.duplicateDetectionConfig?.programs?.find((p) => p.programId === program?.id);
+          if (dupProgramConfig) {
+            const { isDuplicate, existing } = await checkEquipmentDuplicate(
+              payload,
+              selectedOrganisationUnit,
+              dupProgramConfig
+            );
+            if (isDuplicate) {
+              setLoading(false);
+              setDuplicateAlert({
+                isOpen: true,
+                existingTeiId: existing?.trackedEntity || null,
+                existingAttributes: existing?.attributes || [],
+                configuredIds: dupProgramConfig.attributes
+              });
+              return;
+            }
+          }
+        }
         const fileAttributes = program?.programTrackedEntityAttributes?.map((a) => a?.trackedEntityAttribute)?.filter(
           (tea) => ["IMAGE", "FILE_RESOURCE"].includes(
             (tea?.valueType || "").toUpperCase()
@@ -35537,6 +35610,58 @@ function FormComponent({
           setAckModalOpen(false);
           navigate(window.location.pathname, { replace: true });
         }
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      CustomModal,
+      {
+        isOpen: duplicateAlert.isOpen,
+        onClose: () => setDuplicateAlert({ isOpen: false, existingTeiId: null, existingAttributes: [], configuredIds: [] }),
+        title: "Equipment Already Registered",
+        cancelButton: "Dismiss",
+        positiveButtonText: "View Existing Record",
+        positiveButtonIonicThemeColor: "primary",
+        disabledPositiveButtonController: !duplicateAlert.existingTeiId,
+        onSave: () => {
+          if (duplicateAlert.existingTeiId) {
+            navigate(`/memis/program/${program?.id}/${duplicateAlert.existingTeiId}`);
+          }
+        },
+        width: "480px",
+        height: "auto",
+        children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { style: { padding: "16px 20px" }, children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { style: { margin: "0 0 16px", color: "var(--ion-color-medium)" }, children: "An equipment record matching what you entered already exists in the system. Please review the details below before proceeding." }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { style: { borderRadius: 8, overflow: "hidden", border: "1px solid #e0e0e0" }, children: (() => {
+            const configuredSet = new Set(duplicateAlert.configuredIds || []);
+            const labelMap = Object.fromEntries(
+              (program?.programTrackedEntityAttributes || []).map((ptea) => {
+                const tea = ptea?.trackedEntityAttribute;
+                return [tea?.id, tea?.formName || tea?.displayName || tea?.name || tea?.id];
+              })
+            );
+            const rows = (duplicateAlert.existingAttributes || []).filter(
+              (a) => configuredSet.has(a.attribute)
+            );
+            return rows.map((a, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "div",
+              {
+                style: {
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  padding: "12px 16px",
+                  background: i % 2 === 0 ? "#f5f5f5" : "#ffffff",
+                  gap: 12
+                },
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { style: { color: "#666", fontSize: "0.875rem", flexShrink: 0 }, children: labelMap[a.attribute] || a.displayName || a.attribute }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { style: { fontWeight: 600, textAlign: "right", wordBreak: "break-word" }, children: a.value || "—" })
+                ]
+              },
+              a.attribute
+            ));
+          })() })
+        ] })
       }
     )
   ] });
@@ -66002,7 +66127,7 @@ function StageEvents({
                 newRow[equipmentNameKey]
               );
             }
-            newRow.created = newRow.created || row.eventDate || "N/A";
+            newRow.created = newRow.created || row.eventDate || "";
             return newRow;
           });
           setRawRows(processedRows);
@@ -66668,7 +66793,7 @@ function EquipmentPicker({
       }).map((equipment) => {
         const getAttr = (id) => equipment.attributes?.find((a) => a.attribute === id)?.value || "";
         const nameRaw = primaryAttrId ? getAttr(primaryAttrId) : "";
-        const serial = secondaryAttrId ? getAttr(secondaryAttrId) : "N/A";
+        const serial = secondaryAttrId ? getAttr(secondaryAttrId) : "";
         const stateRaw = statusAttrId ? getAttr(statusAttrId) : "";
         const name = primaryAttrId ? resolveOptionSetValue(primaryAttrId, nameRaw) : nameRaw;
         const state = statusAttrId ? resolveOptionSetValue(statusAttrId, stateRaw) : stateRaw;
@@ -66677,7 +66802,7 @@ function EquipmentPicker({
           orgUnit: equipment.orgUnit,
           enrollment: equipment.enrollments?.[0]?.enrollment,
           name: name || `Equipment ${equipment.trackedEntity.substring(0, 8)}`,
-          serialNumber: serial || "N/A",
+          serialNumber: serial || "",
           state,
           attributes: equipment.attributes,
           displayText: name ? `${name} (${serial})` : `Equipment ${equipment.trackedEntity.substring(0, 8)} (${serial})`
@@ -67131,7 +67256,7 @@ function EquipmentPicker({
                             },
                             children: /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
                               "Serial #: ",
-                              equipment.serialNumber || "N/A"
+                              equipment.serialNumber || ""
                             ] })
                           }
                         )
@@ -71464,7 +71589,6 @@ function MarkMaintenanceDoneModal({
         responsibleEngineer: selectedUser,
         ward: ward?.id
       };
-      console.log({ payload });
       await onConfirm(payload);
     } catch (error) {
       showToast(
@@ -71484,10 +71608,15 @@ function MarkMaintenanceDoneModal({
   const getUsers = async () => {
     if (!isOpen) return;
     try {
-      const resp = await dataStore.get(
-        `users?fields=*&ou=${data?.event?.orgUnit}&includeChildren=true&paging=false`
+      const ouResp = await dataStore.get(
+        `users?fields=*,userRoles[id,name]&ou=${data?.event?.orgUnit}&includeChildren=true&paging=false`
       );
-      const organisedUsers = resp?.data?.users && resp?.data?.users?.map((uss) => ({
+      let useRoleFromConfig = await LocalForageService.getItem("dataStore", "dataStore");
+      useRoleFromConfig = useRoleFromConfig?.userPickerRoleFilter;
+      const filteredUsers = ouResp?.data?.users?.filter(
+        (u) => u.userRoles?.some((role) => role.id === "gCEVDazs2nM")
+      );
+      const organisedUsers = filteredUsers?.map((uss) => ({
         ...uss,
         name: `${uss?.name}(${uss?.username})`,
         id: uss?.id
@@ -71811,8 +71940,8 @@ function MarkMaintenanceDoneModal({
                     /* @__PURE__ */ jsxRuntimeExports.jsx(
                       SearchableSelect,
                       {
-                        title: "User",
-                        placeholder: "Select user",
+                        title: "Engineer",
+                        placeholder: "Select engineer",
                         itemTextField: "name",
                         itemValueField: "username",
                         data: users,
@@ -71830,6 +71959,52 @@ function MarkMaintenanceDoneModal({
     }
   );
 }
+
+const sendMaintenanceNotification = async (data) => {
+    const wardDePreventive = "bGiXZlgMgQU";
+    const wardDeCorrective = "mxqD92TfUg8";
+    const bmeManagerRole = "k1WdUq2TczD";
+    const bmeOrgUnit = data?.orgUnit;
+
+    const eventData = await dataStore.get(`tracker/events/${data?.event}`);
+    const wardDe = data?.type === "Corrective" ? wardDeCorrective : wardDePreventive;
+    const wardD = eventData?.data?.dataValues.find(d => d?.dataElement === wardDe);
+
+    let wardName = await LocalForageService.getItem("organisationUnits", "organisationUnits");
+    wardName = wardName?.find(org => org?.id === wardD?.value);
+
+    const users = await dataStore.get(
+        `users?fields=id,name,organisationUnits,userRoles&paging=false`
+    );
+
+    const us = users?.data?.users?.filter(u => u?.organisationUnits?.some(t =>
+        t?.id === wardName?.id) && u?.userRoles.some(r => r?.id === data?.userRole));
+
+    const bme = users?.data?.users?.filter(u => u?.organisationUnits?.some(t =>
+        t?.id === bmeOrgUnit) && u?.userRoles.some(r => r?.id === bmeManagerRole));
+
+    const messageSubject = `${data?.type} maintenance inprogress at ${wardName?.name} | ${data?.programId}.${data?.trackedEntity}.${data?.stage}.${data?.event}`;
+
+    const recipients = [
+        ...(bme || []).map(b => ({ id: b?.id })),
+        ...(us || []).map(p => ({ id: p?.id }))
+    ];
+
+    if (recipients.length === 0) return;
+
+    const messagePayload = {
+        subject: messageSubject,
+        text: `${data?.type} maintenance inprogress at ${wardName?.name}.`,
+        users: recipients
+    };
+
+    try {
+        await dataStore.post("messageConversations", messagePayload);
+        showToast("Notification is sent.", "success");
+    } catch (error) {
+        console.log("Failed to send message notification:", error);
+    }
+};
 
 const React$P = await importShared('react');
 const {useContext: useContext$z,useEffect: useEffect$Y,useMemo: useMemo$y,useState: useState$$} = React$P;
@@ -71925,7 +72100,7 @@ function PreventiveMaintenanceView({
         payload
       );
       if (result?.status === 200) {
-        await dataStore.post("tracker?async=false&importStrategy=UPDATE", {
+        const results = await dataStore.post("tracker?async=false&importStrategy=UPDATE", {
           trackedEntities: [
             {
               trackedEntity: data?.equipment,
@@ -71946,6 +72121,17 @@ function PreventiveMaintenanceView({
             }
           ]
         });
+        await sendMaintenanceNotification({
+          responsibleEngineer: data?.responsibleEngineer,
+          ward: data?.ward,
+          orgUnit: data?.orgUnit,
+          trackedEntity: data?.equipment,
+          stage: data?.programStage,
+          userRole: "Ec6TZ5N1QeF",
+          event: data?.event,
+          programId,
+          type: "Preventive"
+        });
       }
       setShowMarkDoneModal(false);
       setSelectedMaintenance(null);
@@ -71957,7 +72143,6 @@ function PreventiveMaintenanceView({
         "Failed to mark maintenance as done:",
         error
       );
-      throw error;
     }
   };
   const onView = (data, a, b) => {
@@ -72173,6 +72358,8 @@ function ActiveMaintenances({
   const [search, setSearch] = useState$$("");
   const [expanded, setExpanded] = useState$$({});
   const wardDataElementId = "PpO3Iz7xRFR";
+  const maintenanceTypeIdSource = "EbJI5Loxjbl";
+  const maintenanceTypeValue = "Preventive_maintenance";
   useEffect$Y(() => {
     let mounted = true;
     const loadActiveMaintenances = async () => {
@@ -72188,7 +72375,8 @@ function ActiveMaintenances({
           `tracker/trackedEntities?orgUnits=${orgUnit}&program=${programId}&programStage=${programStageId}&fields=trackedEntity,attributes,enrollments[enrollment,events[event,dataValues,trackedEntity,programStage,orgUnit,program,updatedAt,createdAt,scheduledAt,status]]&eventStatus=ACTIVE&eventOccurredAfter=${eventOccurredAfter}&eventOccurredBefore=${eventOccurredBefore}`
         );
         if (!mounted) return;
-        const trackedEntities = (response?.data?.trackedEntities || []).map((te) => ({
+        const ppmOnly = (response?.data?.trackedEntities || []).filter((te) => te.enrollments?.some((enrollment) => enrollment.events?.some((event) => event.dataValues?.some((dv) => dv.dataElement === maintenanceTypeIdSource && dv.value === maintenanceTypeValue))));
+        const trackedEntities = (ppmOnly || []).map((te) => ({
           ...te,
           enrollments: te.enrollments?.map((enrollment) => ({
             ...enrollment,
@@ -72197,7 +72385,7 @@ function ActiveMaintenances({
             ) || []
           })) || []
         }));
-        const allocatedTrackedEntities = (response?.data?.trackedEntities || []).filter(
+        const allocatedTrackedEntities = (ppmOnly || []).filter(
           (te) => te?.enrollments?.some(
             (en) => en?.events?.some(
               (event) => event?.dataValues?.some(
@@ -72592,10 +72780,35 @@ function ScheduleMaintenances({
         const eventOccurredAfter = `${currentYear}-01-01`;
         const eventOccurredBefore = `${currentYear}-12-31`;
         const response = await dataStore.get(
-          `tracker/trackedEntities?orgUnit=${orgUnit}&program=${programId}&fields=trackedEntity,program,attributes,enrollments[enrollment,events[event,dataValues,programStage,orgUnit,scheduledAt,status]]&eventStatus=SCHEDULE&eventOccurredAfter=${eventOccurredAfter}&eventOccurredBefore=${eventOccurredBefore}`
+          `tracker/trackedEntities?orgUnit=${orgUnit}&program=${programId}&fields=trackedEntity,program,attributes,enrollments[enrollment,events[event,dataValues,programStage,orgUnit,scheduledAt,status]]&paging=false`
+          // +
+          // `&eventStatus=SCHEDULE` +
+          // `&eventOccurredAfter=${eventOccurredAfter}` +
+          // `&eventOccurredBefore=${eventOccurredBefore}`
         );
         if (!mounted) return;
-        const trackedEntities = response?.data?.trackedEntities || [];
+        const scheduledTrackedEntities = response?.data?.trackedEntities.map((trackedEntity) => {
+          const enrollments = trackedEntity.enrollments?.map((enrollment) => {
+            const scheduledEvents = enrollment.events?.filter(
+              (event) => event.status === "SCHEDULE"
+            );
+            if (!scheduledEvents?.length) {
+              return null;
+            }
+            return {
+              ...enrollment,
+              events: scheduledEvents
+            };
+          }).filter(Boolean);
+          if (!enrollments?.length) {
+            return null;
+          }
+          return {
+            ...trackedEntity,
+            enrollments
+          };
+        }).filter(Boolean);
+        const trackedEntities = scheduledTrackedEntities || [];
         const allocatedTrackedEntities = (trackedEntities || []).filter(
           (te) => te?.enrollments?.some(
             (en) => en?.events?.some(
@@ -72621,7 +72834,6 @@ function ScheduleMaintenances({
           )
         );
         const listItems = isIncharge ? trackedEntities?.filter((tei) => allocated?.some((t) => t?.trackedEntity === tei?.trackedEntity)) : trackedEntities;
-        console.log({ ward, wardDataElementId, listItems, trackedEntities, allocated, allocatedTrackedEntities });
         const grouped = buildEquipment(
           trackedEntities,
           {
@@ -73493,6 +73705,9 @@ function buildEquipment(trackedEntities = [], {
       return;
     }
     const trackedEntity = tei?.trackedEntity;
+    if (!trackedEntity) {
+      return;
+    }
     if (!trackedEntity) {
       return;
     }
@@ -145286,7 +145501,7 @@ const ReportExportButtons = ({
       doc.setFontSize(12);
       doc.text(`Generated on ${(/* @__PURE__ */ new Date()).toLocaleString()}`, 14, yPos);
       yPos += 7;
-      doc.text(`${reportData.orgUnitName || "N/A"}`, 14, yPos);
+      doc.text(`${reportData.orgUnitName || ""}`, 14, yPos);
       yPos += 7;
       doc.text(
         `Report Date: ${new Date(reportData.occurredAt || Date.now()).toLocaleDateString()}`,
@@ -145295,7 +145510,7 @@ const ReportExportButtons = ({
       );
       yPos += 7;
       if (reportRequiresApproval) {
-        doc.text(`Status: ${reportData.status || "N/A"}`, 14, yPos);
+        doc.text(`Status: ${reportData.status || ""}`, 14, yPos);
         yPos += 7;
       }
       yPos += 1;
@@ -145326,7 +145541,7 @@ const ReportExportButtons = ({
           if (!groupedData[fieldName]) {
             groupedData[fieldName] = [];
           }
-          groupedData[fieldName].push(indicator.value || "N/A");
+          groupedData[fieldName].push(indicator.value || "");
         });
         const maxRows = Math.max(
           ...Object.values(groupedData).map((arr) => arr.length)
@@ -146371,15 +146586,15 @@ const ReportExportButtons = ({
   };
   const buildBaseRows = () => {
     const rows = [
-      ["Program", program?.name || "N/A"],
-      ["Facility", reportData?.orgUnitName || "N/A"]
+      ["Program", program?.name || ""],
+      ["Facility", reportData?.orgUnitName || ""]
     ];
     if (reportRequiresApproval) {
-      rows.push(["Status", reportData?.status || "N/A"]);
+      rows.push(["Status", reportData?.status || ""]);
     }
     rows.push([
       "Report Date",
-      reportData?.occurredAt ? new Date(reportData.occurredAt).toLocaleDateString() : "N/A"
+      reportData?.occurredAt ? new Date(reportData.occurredAt).toLocaleDateString() : ""
     ]);
     return rows;
   };
@@ -146400,7 +146615,7 @@ const ReportExportButtons = ({
         groupedData[fieldName] = [];
         headersOrder.push(fieldName);
       }
-      groupedData[fieldName].push(indicator.value || "N/A");
+      groupedData[fieldName].push(indicator.value || "");
     });
     const headers = headersOrder;
     const maxRows = Math.max(
@@ -146753,11 +146968,11 @@ const ReportExportButtons = ({
         ...reportNameValue ? [[reportNameValue]] : [],
         [`Generated on ${(/* @__PURE__ */ new Date()).toLocaleString()}`],
         [],
-        ["Program", program?.name || "N/A"],
-        ["Facility", reportData?.orgUnitName || "N/A"],
+        ["Program", program?.name || ""],
+        ["Facility", reportData?.orgUnitName || ""],
         // Only include Status if report requires approval
-        ...reportRequiresApproval ? [["Status", reportData?.status || "N/A"]] : [],
-        ["Report Date", reportData?.occurredAt ? new Date(reportData.occurredAt).toLocaleDateString() : "N/A"],
+        ...reportRequiresApproval ? [["Status", reportData?.status || ""]] : [],
+        ["Report Date", reportData?.occurredAt ? new Date(reportData.occurredAt).toLocaleDateString() : ""],
         [],
         ["Report Details"],
         ["Field", "Value"],
@@ -147876,7 +148091,7 @@ const isCollectionCompletedDynamic = (event, formSection) => {
   }
   return hasCollector && hasDate && qtyOk;
 };
-const displayVal$1 = (val) => val === null || val === void 0 || val === "" ? "N/A" : val;
+const displayVal$1 = (val) => val === null || val === void 0 || val === "" ? "" : val;
 function EventPage() {
   const [
     showApprovalButtonBasedOnTransferType,
@@ -148723,7 +148938,7 @@ function EventPage() {
               ] }),
               /* @__PURE__ */ jsxRuntimeExports.jsxs(IonCol, { size: "12", sizeMd: "6", children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "form-field-label", children: "Time" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "form-field-value", children: formatTime(event?.occurredAt) || "N/A" })
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "form-field-value", children: formatTime(event?.occurredAt) || "" })
               ] }),
               /* @__PURE__ */ jsxRuntimeExports.jsxs(IonCol, { size: "12", sizeMd: "6", children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "form-field-label", children: "Facility" }),
@@ -149022,7 +149237,7 @@ function EventPage() {
                   const isFileType = de?.valueType === "FILE_RESOURCE" || de?.valueType === "IMAGE";
                   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { style: { marginBottom: 18 }, children: [
                     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "form-field-label", children: getFieldLabelOverride(dataStoreRaw, de?.id, maintenanceTriggerAt) || de?.formName || de?.displayName || de?.name || de?.id }),
-                    isWardMap ? /* @__PURE__ */ jsxRuntimeExports.jsx(WardParticipantsDisplay, { value: rawValue }) : isFileType && rawValue && rawValue !== "N/A" ? /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    isWardMap ? /* @__PURE__ */ jsxRuntimeExports.jsx(WardParticipantsDisplay, { value: rawValue }) : isFileType && rawValue && rawValue !== "" ? /* @__PURE__ */ jsxRuntimeExports.jsx(
                       IonButton,
                       {
                         fill: "clear",
@@ -149089,7 +149304,7 @@ function EventPage() {
         {
           reportData: {
             dataValues: dataValuesObj,
-            orgUnitName: orgUnit?.parent ? `${orgUnit?.parent?.name} - ${orgUnit?.name}` : orgUnit?.name || "N/A",
+            orgUnitName: orgUnit?.parent ? `${orgUnit?.parent?.name} - ${orgUnit?.name}` : orgUnit?.name || "",
             orgUnitId: orgUnit?.id || event?.orgUnit,
             occurredAt: event?.occurredAt,
             status: statusValue,
@@ -153118,7 +153333,7 @@ function UpdateCollectionStatus({
   const [targetProgram, setTargetProgram] = useState$m(null);
   const [equipmentOptions, setEquipmentOptions] = useState$m({});
   const [programDataTEI, setProgramDataTEI] = useState$m([]);
-  const [facilityUsers, setFacilityUsers] = useState$m([]);
+  const [facilityUsers, setFacilityUsers] = useState$m({});
   const [currentUsername, setCurrentUsername] = useState$m("");
   const [autofillConfig, setAutofillConfig] = useState$m(null);
   const [collectingOnBehalf, setCollectingOnBehalf] = useState$m(false);
@@ -153254,20 +153469,20 @@ function UpdateCollectionStatus({
   const isFieldDisabled = (fieldId) => {
     const autofillType = autofillConfig?.[fieldId];
     if (!autofillType) return false;
-    return autofillType === "CURRENT_USER";
+    return autofillType === "CURRENT_USER" || autofillType === "WARD_INCHARGE";
   };
   const getUsers = async () => {
     try {
-      const org = await LocalForageService.getItem("userRes", "user");
-      const units = org?.organisationUnits?.length > 1 ? org?.organisationUnits.sort((a, b) => a?.level - b?.level) : org?.organisationUnits;
-      const ouId = units[0]?.id;
-      const params = `fields=name,id,username,firstName,surname,userRoles[id,name]&ou=${ouId}&paging=false`;
-      const userResponse = await dataStore.get(`users?${params}`);
-      const usersConsolidated = userResponse?.data?.users?.map((user) => ({
-        ...user,
-        name: `${user?.name}(${user?.username})`
-      }));
-      setFacilityUsers(usersConsolidated || []);
+      const allUsers = await getUsersForAssignment();
+      const perField = { _all: allUsers };
+      for (const field of fields) {
+        if (field?.valueType !== "USERNAME" && field?.valueType !== "TEXT") continue;
+        const roleIds = await resolveRoleIdsForField(field.id);
+        if (roleIds.length > 0) {
+          perField[field.id] = await getUsersForAssignment(roleIds);
+        }
+      }
+      setFacilityUsers(perField);
     } catch (error2) {
       console.log({ error: error2 });
     }
@@ -153306,6 +153521,8 @@ function UpdateCollectionStatus({
         (att) => att?.attribute?.code === "USERNAMES_TYPE"
       );
     }
+    const fieldUsers = facilityUsers[field?.id];
+    const hasRoleUsers = Array.isArray(fieldUsers) && fieldUsers.length > 0;
     switch (type) {
       case "BOOLEAN":
         return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "ion-w-full", children: [
@@ -153356,13 +153573,13 @@ function UpdateCollectionStatus({
               }
             )
           ] }, field?.id);
-        } else if (attr) {
+        } else if (hasRoleUsers || attr) {
           return /* @__PURE__ */ jsxRuntimeExports.jsxs(IonItem, { children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(IonLabel, { position: "stacked", children: label }),
             /* @__PURE__ */ jsxRuntimeExports.jsx(
               SearchableSelect,
               {
-                data: A$3(facilityUsers),
+                data: hasRoleUsers ? fieldUsers : A$3(facilityUsers._all),
                 itemTextField: "name",
                 itemValueField: "username",
                 value,
@@ -153458,6 +153675,9 @@ function UpdateCollectionStatus({
             initialData[fieldId] = todayYMD();
           } else if (autofillType === "CURRENT_USER") {
             initialData[fieldId] = currentUsername;
+          } else if (autofillType === "WARD_INCHARGE") {
+            const wardInChargeUsername = existingValues.get("gYGi2v2Aa6I") || "";
+            initialData[fieldId] = wardInChargeUsername;
           } else {
             initialData[fieldId] = "";
           }
@@ -153839,7 +154059,7 @@ function AcknowledgeCollectionStatus({
 
 const {useContext: useContext$c,useEffect: useEffect$j,useState: useState$k} = await importShared('react');
 const {createPortal} = await importShared('react-dom');
-const displayVal = (val) => val === null || val === void 0 || val === "" ? "N/A" : val;
+const displayVal = (val) => val === null || val === void 0 || val === "" ? "" : val;
 function DeregistrationEventView() {
   const { program, tei, stage, evnt } = useParams();
   useSearchParams();
@@ -154549,7 +154769,7 @@ function DeregistrationEventView() {
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs(IonCol, { size: "12", sizeMd: "6", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "form-field-label", children: "Time" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "form-field-value", children: formatTime(event?.occurredAt) || "N/A" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "form-field-value", children: formatTime(event?.occurredAt) || "" })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs(IonCol, { size: "12", sizeMd: "6", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "form-field-label", children: "Facility" }),
@@ -269643,7 +269863,7 @@ const JobCardDocument = ({ data }) => {
   const formatValue = (val) => {
     if (val === "true") return "YES";
     if (val === "false") return "NO";
-    return val || "N/A";
+    return val || "";
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsx(Document, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Page, { size: "A4", style: styles.page, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs(View, { style: styles.header, children: [
@@ -269662,7 +269882,7 @@ const JobCardDocument = ({ data }) => {
         /* @__PURE__ */ jsxRuntimeExports.jsx(Text, { style: styles.jobCardTitle, children: "JOB CARD" }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs(Text, { children: [
           "Job #: ",
-          data["Job Card Number"] || "N/A"
+          data["Job Card Number"] || ""
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs(Text, { children: [
           "Date: ",
@@ -269674,7 +269894,7 @@ const JobCardDocument = ({ data }) => {
       /* @__PURE__ */ jsxRuntimeExports.jsx(Text, { style: styles.sectionTitle, children: "Maintenance Information" }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs(View, { style: styles.row, children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(Text, { style: styles.label, children: "Maintenance Type:" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Text, { style: styles.value, children: data["Maintenance Type"] || "N/A" })
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Text, { style: styles.value, children: data["Maintenance Type"] || "" })
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs(View, { style: styles.row, children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(Text, { style: styles.label, children: "Confirmed:" }),
@@ -269682,7 +269902,7 @@ const JobCardDocument = ({ data }) => {
       ] }),
       data["Maintenance Type"] !== "Preventive maintenance" && /* @__PURE__ */ jsxRuntimeExports.jsxs(View, { style: styles.row, children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(Text, { style: styles.label, children: "Requested By (Dept):" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Text, { style: styles.value, children: data["Requested By (Dept)"] || data["Complaint by"] || "N/A" })
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Text, { style: styles.value, children: data["Requested By (Dept)"] || data["Complaint by"] || "" })
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs(View, { style: styles.row, children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(Text, { style: styles.label, children: "Reported By:" }),
@@ -269697,11 +269917,11 @@ const JobCardDocument = ({ data }) => {
       /* @__PURE__ */ jsxRuntimeExports.jsx(Text, { style: styles.sectionTitle, children: "Equipment Status & Safety" }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs(View, { style: styles.row, children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(Text, { style: styles.label, children: "Functional:" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Text, { style: styles.value, children: formatValue(data["Function"]) })
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Text, { style: styles.value, children: formatValue(data["Functional?"]) })
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs(View, { style: styles.row, children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(Text, { style: styles.label, children: "Safety Verified:" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Text, { style: styles.value, children: formatValue(data["Safety"]) })
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Text, { style: styles.value, children: formatValue(data["Safety?"]) })
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs(View, { style: styles.row, children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(Text, { style: styles.label, children: "Days Open:" }),
@@ -269755,9 +269975,11 @@ function PrintJobCard({ event, section, elements }) {
         Referral_maintenance: "Referral maintenance"
       };
       const mapped = {};
-      A(elements).forEach((id) => {
-        const meta = A(section.dataElements).find((de) => de.id === id);
-        const dataValue = A(event.dataValues).find((dv) => dv.dataElement === id);
+      A(elements).forEach((el) => {
+        const deId = typeof el === "string" ? el : el?.id;
+        if (!deId) return;
+        const meta = A(section.dataElements).find((de) => de.id === deId);
+        const dataValue = A(event.dataValues).find((dv) => dv.dataElement === deId);
         if (meta && dataValue) {
           const key = meta.id === "UtJtorxMNgT" ? "Additional comments" : meta.formName;
           mapped[key] = dataValue.value;
@@ -269791,7 +270013,7 @@ function PrintJobCard({ event, section, elements }) {
         }
       } catch {
       }
-      let resolvedOuName = "N/A";
+      let resolvedOuName = "";
       if (event.orgUnit) {
         try {
           const ou = await dataStore.get(`organisationUnits/${event.orgUnit}?fields=id,displayName,name`);
@@ -269905,6 +270127,7 @@ function ActivateMaintenance({
   const [saving, setSaving] = useState$b(false);
   const [hasScheduledMaintenance, setHasScheduledMaintenance] = useState$b(false);
   const [maintenanceInProgress, setMaintenanceInProgress] = useState$b("");
+  const [canActivate, setCanActivate] = useState$b(false);
   const buttonPositiveName = "Save";
   const handleSubmit = async () => {
     if (!maintenanceInProgress) {
@@ -269939,7 +270162,16 @@ function ActivateMaintenance({
           payload
         );
         if (result?.status === 200) {
-          showToast("Maintenance status activated successfully.", "success");
+          const data = {};
+          showToast("Corrective Maintenance inprogress.", "success");
+          await sendMaintenanceNotification({
+            trackedEntity: event?.trackedEntity,
+            stage: event?.programStage,
+            userRole: "Ec6TZ5N1QeF",
+            event: event?.event,
+            programId: event?.program,
+            type: "Corrective"
+          });
           setOpenModal(false);
           setMaintenanceInProgress("");
           getEventDetails(
@@ -269966,6 +270198,9 @@ function ActivateMaintenance({
         setHasScheduledMaintenance(false);
         return;
       }
+      let allowedRoles = await LocalForageService.get("userRes", "user");
+      allowedRoles = allowedRoles?.userRoles.find((usr) => usr?.id === "gCEVDazs2nM");
+      setCanActivate(allowedRoles && allowedRoles);
       const teiRes = await dataStore.get(
         `tracker/trackedEntities/${event.trackedEntity}?program=${event.program}&fields=trackedEntityType,orgUnit,attributes[*]`
       );
@@ -269998,7 +270233,7 @@ function ActivateMaintenance({
     setMaintenanceInProgress("");
     setOpenModal(false);
   };
-  if (!hasScheduledMaintenance) {
+  if (!hasScheduledMaintenance || !canActivate) {
     return null;
   }
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
@@ -270373,7 +270608,7 @@ function TeiEvents() {
     const fl = workFlow?.workflows.find((w) => getVal(w.source) === w.value);
     return fl;
   };
-  const displayVal = (val) => val === null || val === void 0 || val === "" ? "N/A" : val;
+  const displayVal = (val) => val === null || val === void 0 || val === "" ? "" : val;
   const wfForSections = appworkFlow();
   const visibleSections = (pg?.programStageSections || []).filter((section) => {
     if (wfForSections) {
@@ -270420,9 +270655,9 @@ function TeiEvents() {
     return /* @__PURE__ */ jsxRuntimeExports.jsx(DeregistrationEventView, {});
   }
   function userHasAllowedRole(user2, btn) {
-    if (!user2?.userRoles?.length || !btn?.rolesAllowed?.length) {
-      return false;
-    }
+    if (!btn) return true;
+    if (!btn?.rolesAllowed?.length) return true;
+    if (!user2?.userRoles?.length) return false;
     const userRoleIds = new Set(user2?.userRoles?.map((role) => role?.id));
     return btn?.rolesAllowed?.some(
       (allowedRole) => userRoleIds?.has(allowedRole?.id)
@@ -270543,7 +270778,7 @@ function TeiEvents() {
                   ] }),
                   /* @__PURE__ */ jsxRuntimeExports.jsxs(IonCol, { size: "12", sizeMd: "6", children: [
                     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "form-field-label", children: "Time" }),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "form-field-value", children: formatTime(event?.occurredAt) || "N/A" })
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "form-field-value", children: formatTime(event?.occurredAt) || "" })
                   ] }),
                   /* @__PURE__ */ jsxRuntimeExports.jsxs(IonCol, { size: "12", sizeMd: "6", children: [
                     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "form-field-label", children: "Facility" }),
@@ -270555,7 +270790,12 @@ function TeiEvents() {
           ]
         }
       ),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: userHasAllowedRole(
+        user,
+        (maintenanceButtons || []).find(
+          (b) => b.sectionId === "activateMaintenance"
+        )
+      ) && /* @__PURE__ */ jsxRuntimeExports.jsx(
         ActivateMaintenance,
         {
           event,
@@ -270613,7 +270853,7 @@ function TeiEvents() {
                   ) || de2?.formName;
                   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { style: { marginBottom: 18 }, children: [
                     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "form-field-label", children: fieldLabel }),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "form-field-value", children: isFileType && val && val !== "N/A" ? /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "form-field-value", children: isFileType && val && val !== "" ? /* @__PURE__ */ jsxRuntimeExports.jsx(
                       IonButton,
                       {
                         fill: "clear",
@@ -270666,7 +270906,12 @@ function TeiEvents() {
                     buttonNegativeName: "Cancel"
                   }
                 ),
-                buttonGaurd(section.id, wf) && section.id === "Kcnbi9Tov00" && /* @__PURE__ */ jsxRuntimeExports.jsx(
+                buttonGaurd(section.id, wf) && section.id === "Kcnbi9Tov00" && userHasAllowedRole(
+                  user,
+                  (maintenanceButtons || []).find(
+                    (b) => b.sectionId === "Kcnbi9Tov00"
+                  )
+                ) && /* @__PURE__ */ jsxRuntimeExports.jsx(
                   Asseng,
                   {
                     event,
@@ -270706,7 +270951,12 @@ function TeiEvents() {
                     getVal
                   }
                 ),
-                section?.id === "s8LwpQzWeNc" && (getVal("AnJ695Tt41W") ? /* @__PURE__ */ jsxRuntimeExports.jsx(
+                section?.id === "s8LwpQzWeNc" && userHasAllowedRole(
+                  user,
+                  (maintenanceButtons || []).find(
+                    (b) => b.sectionId === "s8LwpQzWeNc"
+                  )
+                ) && (getVal("AnJ695Tt41W") ? /* @__PURE__ */ jsxRuntimeExports.jsx(
                   PrintJobCard,
                   {
                     event,
