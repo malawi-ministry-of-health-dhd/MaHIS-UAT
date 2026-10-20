@@ -1,0 +1,1 @@
+const n=t=>{const e=String(t??"").trim().toLowerCase();return e?e.startsWith("positive")||e.includes("new positive")||e.includes("known positive")||e==="reactive"||e==="yes"?"reactive":e.startsWith("negative")||e.includes("recent negative")||e.includes("new negative")||e==="non-reactive"||e==="non reactive"||e==="no"?"non-reactive":"default":"default"};export{n as g};

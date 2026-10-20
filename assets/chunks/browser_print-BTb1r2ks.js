@@ -1,0 +1,9 @@
+const s=a=>String(a??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;"),d=a=>new Promise((o,n)=>{const e=document.createElement("iframe");e.setAttribute("aria-hidden","true"),Object.assign(e.style,{position:"fixed",right:"0",bottom:"0",width:"1px",height:"1px",border:"0",opacity:"0",pointerEvents:"none"});const c=()=>window.setTimeout(()=>e.remove(),500);e.onload=async()=>{try{const r=e.contentWindow,i=e.contentDocument;if(!r||!i)throw new Error("Unable to open browser print dialog");await Promise.all(Array.from(i.images).map(t=>t.complete?Promise.resolve():typeof t.decode=="function"?t.decode().catch(()=>{}):new Promise(l=>{t.onload=()=>l(),t.onerror=()=>l()}))),r.focus(),r.print(),c(),o()}catch(r){e.remove(),n(r)}},e.onerror=()=>{e.remove(),n(new Error("Unable to prepare browser label"))},e.srcdoc=a,document.body.appendChild(e)}),h=(a,o={})=>{const n=a.filter(Boolean);if(!n.length)return Promise.reject(new Error("No generated label image is available"));const e=Math.max(1,Number(o.width)||582),c=Math.max(1,Number(o.height)||302),r=Math.max(1,Number(o.copies)||1),i=e/8,t=c/8,l=Array.from({length:r},()=>n).flat().map(m=>`<section class="label"><img src="${s(m)}" alt="Printed label"></section>`).join("");return d(`<!doctype html>
+<html><head><meta charset="utf-8"><title>${s(o.title||"Label")}</title>
+<style>
+@page { size: ${i}mm ${t}mm; margin: 0; }
+html, body { margin: 0; padding: 0; background: #fff; }
+.label { box-sizing: border-box; width: ${i}mm; height: ${t}mm; margin: 0; overflow: hidden; break-after: page; page-break-after: always; }
+.label:last-child { break-after: auto; page-break-after: auto; }
+.label img { display: block; width: 100%; height: 100%; object-fit: contain; }
+</style></head><body>${l}</body></html>`)};export{d as a,h as p};
