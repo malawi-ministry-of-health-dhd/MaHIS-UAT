@@ -1,0 +1,1 @@
+import{toastWarning as e}from"./toasts-DhCJeCTD.js";import{l as t,a as l,b as n,i as s}from"./controlled_medicine_service-DdtmKcdn.js";import{o as a}from"../index-q3GoMR34.js";const m=()=>(a(()=>{t()}),{allowDrug:r=>{const o=l({...r,controlled:s(r)},n());return o?(e(o.message,8e3),o.allowed):!0}});export{m as u};

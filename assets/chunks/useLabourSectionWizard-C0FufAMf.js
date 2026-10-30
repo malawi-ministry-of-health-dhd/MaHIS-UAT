@@ -1,1 +1,0 @@
-import{u as r}from"./useAncSectionWizard-RxnvUpmL.js";function a(e){return r({...e,homeButtonText:e.homeButtonText??"Return to Labour Home",reviewOnlyWhenSaved:e.reviewOnlyWhenSaved??!0,allowSavedSectionEdit:e.allowSavedSectionEdit??!1,preserveDraftsOnReopen:e.preserveDraftsOnReopen??!0,resumeAfterSaveAndLeave:e.resumeAfterSaveAndLeave??!0})}export{a as u};
