@@ -1,0 +1,1 @@
+import{R as r}from"./report_service-C-I1x-7B.js";class s extends r{pepfar;constructor(){super(),this.pepfar=!0}setIsPepfar(e){this.pepfar=e}getDefaulters(){return this.getReport("defaulter_list",{pepfar:this.pepfar})}}export{s as D};
