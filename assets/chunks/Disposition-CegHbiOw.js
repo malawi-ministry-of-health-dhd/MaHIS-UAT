@@ -1,0 +1,1 @@
+import o from"./Disposition-CawgJMow.js";import{d as t,A as i,o as s}from"../index-Cqy-hc6f.js";const c=t({__name:"Disposition",setup(e){return(p,n)=>(s(),i(o,{"completion-route":"/ipd/disposition-list","show-specialty-option":!1}))}});export{c as default};

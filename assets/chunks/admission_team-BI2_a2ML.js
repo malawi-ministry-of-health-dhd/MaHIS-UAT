@@ -1,1 +1,0 @@
-const a=["A","B","C","D"],n=e=>{const t=`${e?.medicalTeam??""}`.trim().toUpperCase();return a.includes(t)?t:""},i="Medical team",o=(e,t)=>[["Clinician notes",`${e??""}`.trim()],[i,t??""]].filter(([,s])=>s.trim()!=="");export{a as M,o as a,n as t};

@@ -1,0 +1,1 @@
+const e=t=>`${t??""}`.trim().toLowerCase(),i=(t,o)=>{const n=e(o);if(n)return(t||[]).find(r=>e(r?.name)===n)},s=async(t,o)=>{if(e(t?.county_district)||!t?.location_id)return t;const n=Number(t.location_id);if(!Number.isFinite(n)||n<=0)return t;const r=await o(n);return r?{...t,...r}:t};export{i as f,s as w};
