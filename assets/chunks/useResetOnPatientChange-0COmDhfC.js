@@ -1,0 +1,1 @@
+import{useDemographicsStore as n}from"./DemographicStore-DDcjjRf_.js";import{w as r}from"../index-LsXCTrho.js";const s=t=>`${t?.ID||t?.patientID||""}`.trim(),p=t=>{const e=n();r(()=>s(e.patient),(o,i)=>{o!==i&&t()})};export{p as u};
