@@ -1,0 +1,1 @@
+const t=/failed to fetch|networkerror|network error|load failed|^\s*$/i,n=(r,s)=>{const e=typeof r?.message=="string"?r.message.trim():"";return!e||t.test(e)||s.includes(e)?s:`${s.replace(/[.\s]*Please try again[.\s]*$/i,"").replace(/[.\s]+$/,"")}: ${e}`};export{n as f};
