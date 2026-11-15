@@ -1,51 +1,511 @@
-var react = {exports: {}};
+import { L as LocalForageService } from './LocalForageService.js';
 
-var react_production_min = {};
+const MEMIS_STORAGE_KEYS = [
+  "memisAuthData",
+  "memisAuthPending",
+  "memisCredentials",
+  "memisViewSettings",
+  "memis_events_endpoint_v4",
+  "memis_events_endpoint_v4_oumode",
+  "memis_reminders_autostart",
+  "memis_reminders_debug",
+  "memis_reminders_dedup_v1",
+  "dataStore",
+  "notificationConfigurations",
+  "qrCodesConfig",
+];
 
-/**
- * @license React
- * react.production.min.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
+const MEMIS_COOKIE_NAMES = ["memis_cookie"];
 
-var hasRequiredReact_production_min;
+const isMemisStorageKey = (key) =>
+  key.toLowerCase().includes("memis") ||
+  key.startsWith("localforage/memiscache/") ||
+  MEMIS_STORAGE_KEYS.includes(key);
 
-function requireReact_production_min () {
-	if (hasRequiredReact_production_min) return react_production_min;
-	hasRequiredReact_production_min = 1;
-var l=Symbol.for("react.element"),n=Symbol.for("react.portal"),p=Symbol.for("react.fragment"),q=Symbol.for("react.strict_mode"),r=Symbol.for("react.profiler"),t=Symbol.for("react.provider"),u=Symbol.for("react.context"),v=Symbol.for("react.forward_ref"),w=Symbol.for("react.suspense"),x=Symbol.for("react.memo"),y=Symbol.for("react.lazy"),z=Symbol.iterator;function A(a){if(null===a||"object"!==typeof a)return null;a=z&&a[z]||a["@@iterator"];return "function"===typeof a?a:null}
-	var B={isMounted:function(){return  false},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}},C=Object.assign,D={};function E(a,b,e){this.props=a;this.context=b;this.refs=D;this.updater=e||B;}E.prototype.isReactComponent={};
-	E.prototype.setState=function(a,b){if("object"!==typeof a&&"function"!==typeof a&&null!=a)throw Error("setState(...): takes an object of state variables to update or a function which returns an object of state variables.");this.updater.enqueueSetState(this,a,b,"setState");};E.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate");};function F(){}F.prototype=E.prototype;function G(a,b,e){this.props=a;this.context=b;this.refs=D;this.updater=e||B;}var H=G.prototype=new F;
-	H.constructor=G;C(H,E.prototype);H.isPureReactComponent=true;var I=Array.isArray,J=Object.prototype.hasOwnProperty,K={current:null},L={key:true,ref:true,__self:true,__source:true};
-	function M(a,b,e){var d,c={},k=null,h=null;if(null!=b)for(d in void 0!==b.ref&&(h=b.ref),void 0!==b.key&&(k=""+b.key),b)J.call(b,d)&&!L.hasOwnProperty(d)&&(c[d]=b[d]);var g=arguments.length-2;if(1===g)c.children=e;else if(1<g){for(var f=Array(g),m=0;m<g;m++)f[m]=arguments[m+2];c.children=f;}if(a&&a.defaultProps)for(d in g=a.defaultProps,g) void 0===c[d]&&(c[d]=g[d]);return {$$typeof:l,type:a,key:k,ref:h,props:c,_owner:K.current}}
-	function N(a,b){return {$$typeof:l,type:a.type,key:b,ref:a.ref,props:a.props,_owner:a._owner}}function O(a){return "object"===typeof a&&null!==a&&a.$$typeof===l}function escape(a){var b={"=":"=0",":":"=2"};return "$"+a.replace(/[=:]/g,function(a){return b[a]})}var P=/\/+/g;function Q(a,b){return "object"===typeof a&&null!==a&&null!=a.key?escape(""+a.key):b.toString(36)}
-	function R(a,b,e,d,c){var k=typeof a;if("undefined"===k||"boolean"===k)a=null;var h=false;if(null===a)h=true;else switch(k){case "string":case "number":h=true;break;case "object":switch(a.$$typeof){case l:case n:h=true;}}if(h)return h=a,c=c(h),a=""===d?"."+Q(h,0):d,I(c)?(e="",null!=a&&(e=a.replace(P,"$&/")+"/"),R(c,b,e,"",function(a){return a})):null!=c&&(O(c)&&(c=N(c,e+(!c.key||h&&h.key===c.key?"":(""+c.key).replace(P,"$&/")+"/")+a)),b.push(c)),1;h=0;d=""===d?".":d+":";if(I(a))for(var g=0;g<a.length;g++){k=
-	a[g];var f=d+Q(k,g);h+=R(k,b,e,f,c);}else if(f=A(a),"function"===typeof f)for(a=f.call(a),g=0;!(k=a.next()).done;)k=k.value,f=d+Q(k,g++),h+=R(k,b,e,f,c);else if("object"===k)throw b=String(a),Error("Objects are not valid as a React child (found: "+("[object Object]"===b?"object with keys {"+Object.keys(a).join(", ")+"}":b)+"). If you meant to render a collection of children, use an array instead.");return h}
-	function S(a,b,e){if(null==a)return a;var d=[],c=0;R(a,d,"","",function(a){return b.call(e,a,c++)});return d}function T(a){if(-1===a._status){var b=a._result;b=b();b.then(function(b){if(0===a._status||-1===a._status)a._status=1,a._result=b;},function(b){if(0===a._status||-1===a._status)a._status=2,a._result=b;});-1===a._status&&(a._status=0,a._result=b);}if(1===a._status)return a._result.default;throw a._result;}
-	var U={current:null},V={transition:null},W={ReactCurrentDispatcher:U,ReactCurrentBatchConfig:V,ReactCurrentOwner:K};function X(){throw Error("act(...) is not supported in production builds of React.");}
-	react_production_min.Children={map:S,forEach:function(a,b,e){S(a,function(){b.apply(this,arguments);},e);},count:function(a){var b=0;S(a,function(){b++;});return b},toArray:function(a){return S(a,function(a){return a})||[]},only:function(a){if(!O(a))throw Error("React.Children.only expected to receive a single React element child.");return a}};react_production_min.Component=E;react_production_min.Fragment=p;react_production_min.Profiler=r;react_production_min.PureComponent=G;react_production_min.StrictMode=q;react_production_min.Suspense=w;
-	react_production_min.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED=W;react_production_min.act=X;
-	react_production_min.cloneElement=function(a,b,e){if(null===a||void 0===a)throw Error("React.cloneElement(...): The argument must be a React element, but you passed "+a+".");var d=C({},a.props),c=a.key,k=a.ref,h=a._owner;if(null!=b){ void 0!==b.ref&&(k=b.ref,h=K.current);void 0!==b.key&&(c=""+b.key);if(a.type&&a.type.defaultProps)var g=a.type.defaultProps;for(f in b)J.call(b,f)&&!L.hasOwnProperty(f)&&(d[f]=void 0===b[f]&&void 0!==g?g[f]:b[f]);}var f=arguments.length-2;if(1===f)d.children=e;else if(1<f){g=Array(f);
-	for(var m=0;m<f;m++)g[m]=arguments[m+2];d.children=g;}return {$$typeof:l,type:a.type,key:c,ref:k,props:d,_owner:h}};react_production_min.createContext=function(a){a={$$typeof:u,_currentValue:a,_currentValue2:a,_threadCount:0,Provider:null,Consumer:null,_defaultValue:null,_globalName:null};a.Provider={$$typeof:t,_context:a};return a.Consumer=a};react_production_min.createElement=M;react_production_min.createFactory=function(a){var b=M.bind(null,a);b.type=a;return b};react_production_min.createRef=function(){return {current:null}};
-	react_production_min.forwardRef=function(a){return {$$typeof:v,render:a}};react_production_min.isValidElement=O;react_production_min.lazy=function(a){return {$$typeof:y,_payload:{_status:-1,_result:a},_init:T}};react_production_min.memo=function(a,b){return {$$typeof:x,type:a,compare:void 0===b?null:b}};react_production_min.startTransition=function(a){var b=V.transition;V.transition={};try{a();}finally{V.transition=b;}};react_production_min.unstable_act=X;react_production_min.useCallback=function(a,b){return U.current.useCallback(a,b)};react_production_min.useContext=function(a){return U.current.useContext(a)};
-	react_production_min.useDebugValue=function(){};react_production_min.useDeferredValue=function(a){return U.current.useDeferredValue(a)};react_production_min.useEffect=function(a,b){return U.current.useEffect(a,b)};react_production_min.useId=function(){return U.current.useId()};react_production_min.useImperativeHandle=function(a,b,e){return U.current.useImperativeHandle(a,b,e)};react_production_min.useInsertionEffect=function(a,b){return U.current.useInsertionEffect(a,b)};react_production_min.useLayoutEffect=function(a,b){return U.current.useLayoutEffect(a,b)};
-	react_production_min.useMemo=function(a,b){return U.current.useMemo(a,b)};react_production_min.useReducer=function(a,b,e){return U.current.useReducer(a,b,e)};react_production_min.useRef=function(a){return U.current.useRef(a)};react_production_min.useState=function(a){return U.current.useState(a)};react_production_min.useSyncExternalStore=function(a,b,e){return U.current.useSyncExternalStore(a,b,e)};react_production_min.useTransition=function(){return U.current.useTransition()};react_production_min.version="18.3.1";
-	return react_production_min;
+const removeMatchingStorageKeys = (storage) => {
+  Object.keys(storage).forEach((key) => {
+    if (isMemisStorageKey(key)) {
+      storage.removeItem(key);
+    }
+  });
+
+  MEMIS_STORAGE_KEYS.forEach((key) => storage.removeItem(key));
+};
+
+const clearCookie = (name) => {
+  ["/", "/memis"].forEach((path) => {
+    document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=${path};`;
+  });
+};
+
+const deleteIndexedDb = (name) =>
+  new Promise((resolve) => {
+    const request = indexedDB.deleteDatabase(name);
+    request.onsuccess = () => resolve();
+    request.onerror = () => resolve();
+    request.onblocked = () => resolve();
+  });
+
+const clearIndexedDbStores = (name) =>
+  new Promise((resolve) => {
+    const request = indexedDB.open(name);
+
+    request.onerror = () => resolve();
+    request.onupgradeneeded = () => {
+      request.transaction?.abort();
+      resolve();
+    };
+    request.onsuccess = () => {
+      const db = request.result;
+      const storeNames = Array.from(db.objectStoreNames);
+
+      if (!storeNames.length) {
+        db.close();
+        resolve();
+        return;
+      }
+
+      const transaction = db.transaction(storeNames, "readwrite");
+      storeNames.forEach((storeName) => transaction.objectStore(storeName).clear());
+      transaction.oncomplete = () => {
+        db.close();
+        resolve();
+      };
+      transaction.onerror = () => {
+        db.close();
+        resolve();
+      };
+      transaction.onabort = () => {
+        db.close();
+        resolve();
+      };
+    };
+  });
+
+async function clearMemisStorage() {
+  const databaseNames = new Set(["memiscache"]);
+
+  if (indexedDB.databases) {
+    const databases = await indexedDB.databases();
+    databases.forEach((db) => {
+      if (db.name?.toLowerCase().includes("memis")) {
+        databaseNames.add(db.name);
+      }
+    });
+  }
+
+  await Promise.all(Array.from(databaseNames).map(clearIndexedDbStores));
+  await Promise.all(Array.from(databaseNames).map(deleteIndexedDb));
+  removeMatchingStorageKeys(localStorage);
+  removeMatchingStorageKeys(sessionStorage);
+  MEMIS_COOKIE_NAMES.forEach(clearCookie);
 }
 
-var hasRequiredReact;
-
-function requireReact () {
-	if (hasRequiredReact) return react.exports;
-	hasRequiredReact = 1;
-	{
-	  react.exports = requireReact_production_min();
-	}
-	return react.exports;
+const SESSION_STORAGE_KEY = "memisSession";
+const CREDENTIALS_STORAGE_KEY = "memisCredentials";
+class DataStore {
+  constructor() {
+    this.defaultCredentials = this.getSavedCredentials();
+    this.sessionToken = this.getSavedSessionToken();
+    this.baseUrl = "https://memis.health.gov.mw/api-testing";
+  }
+  getSavedCredentials() {
+    try {
+      const saved = localStorage.getItem(CREDENTIALS_STORAGE_KEY);
+      return saved ? JSON.parse(saved) : null;
+    } catch {
+      return null;
+    }
+  }
+  getSavedSessionToken() {
+    try {
+      const saved = localStorage.getItem(SESSION_STORAGE_KEY);
+      return saved ? JSON.parse(saved)?.token || null : null;
+    } catch {
+      return null;
+    }
+  }
+  buildUrl(endpoint) {
+    const base = this.baseUrl.replace(/\/+$/, "");
+    const path = String(endpoint || "").replace(/^\/+/, "");
+    return `${base}/memis/${path}`;
+  }
+  loginBuildUrl(endpoint) {
+    const base = this.baseUrl.replace(/\/+$/, "");
+    const path = String(endpoint || "").replace(/^\/+/, "");
+    return `${base}/${path}`;
+  }
+  saveSession(credentials, session) {
+    this.defaultCredentials = credentials;
+    this.sessionToken = session.token;
+    localStorage.setItem(
+      CREDENTIALS_STORAGE_KEY,
+      JSON.stringify(credentials)
+    );
+    localStorage.setItem(
+      SESSION_STORAGE_KEY,
+      JSON.stringify({
+        token: session.token,
+        expiresAt: Date.now() + session.expiresIn * 1e3,
+        user: session.user
+      })
+    );
+  }
+  clearSession() {
+    this.defaultCredentials = null;
+    this.sessionToken = null;
+    localStorage.removeItem(CREDENTIALS_STORAGE_KEY);
+    localStorage.removeItem(SESSION_STORAGE_KEY);
+  }
+  async getAuth() {
+    const { username, password } = this.defaultCredentials || {};
+    if (!username || !password) {
+      throw new Error("Authentication credentials are missing");
+    }
+    return { username, password };
+  }
+  async getHeaders(credentials, data, { includeSession = true } = {}) {
+    const authCredentials = credentials || await this.getAuth();
+    const { username, password } = authCredentials;
+    if (!username || !password) {
+      throw new Error("Authentication credentials are missing.");
+    }
+    const encoded = btoa(`${username}:${password}`);
+    const headers = {
+      Authorization: `Basic ${encoded}`,
+      Accept: "application/json"
+    };
+    if (!(data instanceof FormData)) {
+      headers["Content-Type"] = "application/json";
+    }
+    if (includeSession) {
+      const savedSession = localStorage.getItem("memisSession");
+      if (!savedSession) {
+        throw new Error("Your session has expired. Please log in again.");
+      }
+      let session;
+      try {
+        session = JSON.parse(savedSession);
+      } catch {
+        localStorage.removeItem("memisSession");
+        throw new Error("Invalid session. Please log in again.");
+      }
+      if (!session.token || !session.expiresAt || Date.now() >= session.expiresAt) {
+        localStorage.removeItem("memisSession");
+        throw new Error("Your session has expired. Please log in again.");
+      }
+      headers["X-App-Session"] = session.token;
+    }
+    return headers;
+  }
+  getSavedSession() {
+    try {
+      const saved = localStorage.getItem(SESSION_STORAGE_KEY);
+      return saved ? JSON.parse(saved) : null;
+    } catch {
+      return null;
+    }
+  }
+  async switchUser(credentials) {
+    try {
+      const { username, password } = credentials || {};
+      if (!username || !password) {
+        return {
+          status: 400,
+          message: "Username and password are required."
+        };
+      }
+      const session = await this.login("/auth/login", credentials, {});
+      if (!session?.token) {
+        return {
+          status: session?.status || 401,
+          message: session?.message || "Login failed"
+        };
+      }
+      this.saveSession(credentials, session);
+      const endpoint = "me?fields=id,username,surname,teiSearchOrganisationUnits,firstName,userGroups[id,name],userRoles[id,name],authorities[*],dataViewOrganisationUnits,organisationUnits[id,name,level,parent[id,name,level,parent[id,name,level]]]";
+      const profileResponse = await this.get(endpoint);
+      if (profileResponse.status < 200 || profileResponse.status >= 300) {
+        return profileResponse;
+      }
+      return {
+        status: profileResponse.status,
+        statusText: profileResponse.statusText,
+        data: profileResponse.data
+      };
+    } catch (error) {
+      return {
+        status: error?.status || 500,
+        message: error?.message || "Login failed"
+      };
+    }
+  }
+  async createAuthConfig({ data = {}, params = {} } = {}) {
+    const auth = await this.getAuth();
+    const headers = await this.getHeaders(auth, data);
+    return {
+      headers,
+      params: params || {}
+    };
+  }
+  async request(method, endpoint, data = {}, options = {}) {
+    const { params = {} } = options;
+    try {
+      const config = await this.createAuthConfig({ data, params });
+      const url = new URL(this.buildUrl(endpoint));
+      Object.keys(config.params).forEach((key) => {
+        const value = config.params[key];
+        if (value !== void 0 && value !== null) {
+          if (Array.isArray(value)) {
+            value.forEach((item) => url.searchParams.append(key, item));
+          } else {
+            url.searchParams.append(key, value);
+          }
+        }
+      });
+      const upperMethod = method.toUpperCase();
+      const fetchOptions = {
+        method: upperMethod,
+        headers: config.headers
+      };
+      if (!["GET", "HEAD"].includes(upperMethod)) {
+        fetchOptions.body = data instanceof FormData ? data : JSON.stringify(data ?? {});
+      }
+      const response = await fetch(url.toString(), fetchOptions);
+      const status = response.status;
+      const statusText = response.statusText;
+      const contentType = response.headers.get("content-type") || "";
+      if (status === 401) {
+        this.clearSession();
+        await clearMemisStorage();
+      }
+      if (!response.ok) {
+        const errorText = await response.text();
+        return {
+          status,
+          statusText,
+          message: errorText
+        };
+      }
+      if (status === 204 || response.headers.get("content-length") === "0") {
+        return {
+          status,
+          statusText,
+          data: null
+        };
+      }
+      if (contentType.includes("application/json")) {
+        return {
+          status,
+          statusText,
+          data: await response.json()
+        };
+      }
+      if (contentType.includes("application/octet-stream") || contentType.includes("application/pdf") || contentType.startsWith("image/") || contentType.includes("application/zip")) {
+        return {
+          status,
+          statusText,
+          data: await response.blob()
+        };
+      }
+      return {
+        status,
+        statusText,
+        data: await response.text()
+      };
+    } catch (error) {
+      return {
+        status: error?.status || 500,
+        message: error?.message || "Request failed"
+      };
+    }
+  }
+  async get(endpoint, params = {}, options = {}) {
+    return this.request("GET", endpoint, {}, { ...options, params });
+  }
+  async post(endpoint, data = {}, options = {}) {
+    return this.request("POST", endpoint, data, options);
+  }
+  async put(endpoint, data = {}, options = {}) {
+    return this.request("PUT", endpoint, data, options);
+  }
+  async patch(endpoint, data = {}, options = {}) {
+    return this.request("PATCH", endpoint, data, options);
+  }
+  async delete(endpoint, options = {}) {
+    return this.request("DELETE", endpoint, {}, options);
+  }
+  async login(endpoint, credentials, payload = {}) {
+    try {
+      const headers = await this.getHeaders(credentials, payload, {
+        includeSession: false
+      });
+      const url = this.loginBuildUrl(endpoint);
+      const response = await fetch(url, {
+        method: "POST",
+        headers,
+        body: payload instanceof FormData ? payload : JSON.stringify(payload ?? {})
+      });
+      const contentType = response.headers.get("content-type") || "";
+      const result = contentType.includes("application/json") ? await response.json() : await response.text();
+      if (!response.ok || !result?.success) {
+        return {
+          success: false,
+          status: response.status,
+          message: result?.message || (typeof result === "string" ? result : "Login failed")
+        };
+      }
+      const session = {
+        token: result.token,
+        expiresAt: Date.now() + result.expiresIn * 1e3,
+        user: result.user
+      };
+      localStorage.setItem("memisSession", JSON.stringify(session));
+      this.defaultCredentials = credentials;
+      localStorage.setItem(
+        "memisCredentials",
+        JSON.stringify(credentials)
+      );
+      return result;
+    } catch (error) {
+      return {
+        success: false,
+        status: error?.status || 500,
+        message: error?.message || "Unable to connect to the login service."
+      };
+    }
+  }
+  async downloadFile(endpoint) {
+    try {
+      const auth = await this.getAuth();
+      const headers = await this.getHeaders(auth, {});
+      const response = await fetch(this.buildUrl(endpoint), {
+        method: "GET",
+        headers
+      });
+      if (!response.ok) {
+        throw new Error(`File download failed: HTTP ${response.status}`);
+      }
+      return await response.blob();
+    } catch (error) {
+      throw error;
+    }
+  }
+  async logout() {
+    try {
+      const endpoint = "auth/logout";
+      const url = this.loginBuildUrl(endpoint);
+      const headers = await this.getHeaders(this.defaultCredentials, null, {
+        includeSession: true
+      });
+      const response = await fetch(url, {
+        method: "POST",
+        headers
+      });
+      const contentType = response.headers.get("content-type") || "";
+      console.log({ url, contentType });
+      const result = contentType.includes("application/json") ? await response.json() : await response.text();
+      return {
+        success: response.ok,
+        status: response.status,
+        message: result?.message || (response.ok ? "Logout successful." : "Logout failed.")
+      };
+    } catch (error) {
+      console.log({ error });
+      return {
+        success: false,
+        status: error?.status || 500,
+        message: error?.message || "Unable to complete logout."
+      };
+    } finally {
+      this.clearSession();
+      await clearMemisStorage();
+    }
+  }
 }
+class QRConfigService extends DataStore {
+  async getJsonObject(path) {
+    return this.get(path);
+  }
+  async getQrConfig(programId) {
+    try {
+      let config = await LocalForageService.getItem(
+        "dataStore",
+        "dataStore"
+      );
+      config = config?.qrCodesConfigurations;
+      const qr = config?.configurations?.find(
+        (item) => item?.source?.programId === programId
+      );
+      return qr || null;
+    } catch (error) {
+      return null;
+    }
+  }
+  extractAttributeValues(attributes = [], requestedAttributes = {}) {
+    try {
+      const result = Object.keys(requestedAttributes).reduce(
+        (acc, attributeId) => {
+          const attribute = attributes.find(
+            (item) => item.attribute === attributeId
+          );
+          acc[attributeId] = attribute?.value || null;
+          return acc;
+        },
+        {}
+      );
+      return Object.keys(result).map((key) => ({
+        [requestedAttributes[key].name]: result[key]
+      }));
+    } catch (error) {
+      return [];
+    }
+  }
+  getSearchKeyValue(attributes = [], searchKeyId) {
+    try {
+      if (!searchKeyId) return null;
+      const searchAttribute = attributes.find(
+        (item) => item.attribute === searchKeyId
+      );
+      return searchAttribute?.value || null;
+    } catch (error) {
+      return null;
+    }
+  }
+  buildQrPayload({ program, tei, orgUnit, config }) {
+    try {
+      if (!program?.id || !tei?.trackedEntity || !config) return null;
+      const attributes = tei.attributes || [];
+      const requestedAttributes = config.source?.values || {};
+      const jsonData = {
+        data: this.extractAttributeValues(attributes, requestedAttributes),
+        Facility: orgUnit ? orgUnit.name : null,
+        GeneratedAt: (/* @__PURE__ */ new Date()).toISOString()
+      };
+      let plainText = `Facility: ${jsonData.Facility}
+Generated At: ${jsonData.GeneratedAt}
+Equipment Details:
+`;
+      jsonData.data.forEach((item) => {
+        const [key, value] = Object.entries(item)[0];
+        plainText += `${key.trim()}: ${value}
+`;
+      });
+      return plainText;
+    } catch (error) {
+      return null;
+    }
+  }
+}
+const dataStore = new DataStore();
+const qrConfigService = new QRConfigService();
 
-export { requireReact as r };
+const index = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  DataStore,
+  QRConfigService,
+  default: dataStore,
+  qrConfigService
+}, Symbol.toStringTag, { value: 'Module' }));
+
+export { clearMemisStorage as c, dataStore as d, index as i, qrConfigService as q };

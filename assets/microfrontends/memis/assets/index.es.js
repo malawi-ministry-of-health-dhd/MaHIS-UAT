@@ -73,7 +73,7 @@ function requireFunctionBindNative () {
 
 	functionBindNative = !fails(function () {
 	  // eslint-disable-next-line es/no-function-prototype-bind -- safe
-	  var test = (function () { /* empty */ }).bind();
+	  var test = function () { /* empty */ }.bind();
 	  // eslint-disable-next-line no-prototype-builtins -- safe
 	  return typeof test != 'function' || test.hasOwnProperty('prototype');
 	});
@@ -552,10 +552,10 @@ function requireSharedStore () {
 	var store = sharedStore.exports = globalThis[SHARED] || defineGlobalProperty(SHARED, {});
 
 	(store.versions || (store.versions = [])).push({
-	  version: '3.45.0',
+	  version: '3.50.0',
 	  mode: IS_PURE ? 'pure' : 'global',
-	  copyright: '© 2014-2025 Denis Pushkarev (zloirock.ru)',
-	  license: 'https://github.com/zloirock/core-js/blob/v3.45.0/LICENSE',
+	  copyright: '© 2013–2025 Denis Pushkarev (zloirock.ru), 2025–2026 CoreJS Company (core-js.io). All rights reserved.',
+	  license: 'https://github.com/zloirock/core-js/blob/v3.50.0/LICENSE',
 	  source: 'https://github.com/zloirock/core-js'
 	});
 	return sharedStore.exports;
@@ -568,9 +568,11 @@ function requireShared () {
 	if (hasRequiredShared) return shared;
 	hasRequiredShared = 1;
 	var store = requireSharedStore();
+	// eslint-disable-next-line es/no-object-create -- safe
+	var create = Object.create || Object;
 
 	shared = function (key, value) {
-	  return store[key] || (store[key] = value || {});
+	  return store[key] || (store[key] = value || create(null));
 	};
 	return shared;
 }
@@ -908,7 +910,7 @@ function requireFunctionName () {
 
 	var EXISTS = hasOwn(FunctionPrototype, 'name');
 	// additional protection from minified / mangled / dropped function names
-	var PROPER = EXISTS && (function something() { /* empty */ }).name === 'something';
+	var PROPER = EXISTS && function something() { /* empty */ }.name === 'something';
 	var CONFIGURABLE = EXISTS && (!DESCRIPTORS || (DESCRIPTORS && getDescriptor(FunctionPrototype, 'name').configurable));
 
 	functionName = {
@@ -1750,7 +1752,7 @@ function requireToStringTagSupport () {
 
 	var TO_STRING_TAG = wellKnownSymbol('toStringTag');
 	var test = {};
-
+	// eslint-disable-next-line unicorn/no-immediate-mutation -- ES3 syntax limitation
 	test[TO_STRING_TAG] = 'z';
 
 	toStringTagSupport = String(test) === '[object z]';
@@ -2003,8 +2005,7 @@ function requireEnvironmentIsIos () {
 	hasRequiredEnvironmentIsIos = 1;
 	var userAgent = requireEnvironmentUserAgent();
 
-	// eslint-disable-next-line redos/no-vulnerable -- safe
-	environmentIsIos = /(?:ipad|iphone|ipod).*applewebkit/i.test(userAgent);
+	environmentIsIos = /ipad|iphone|ipod/i.test(userAgent) && /applewebkit/i.test(userAgent);
 	return environmentIsIos;
 }
 
@@ -2734,7 +2735,7 @@ var hasRequiredIterators;
 function requireIterators () {
 	if (hasRequiredIterators) return iterators;
 	hasRequiredIterators = 1;
-	iterators = {};
+	iterators = Object.create ? Object.create(null) : {};
 	return iterators;
 }
 
@@ -2757,48 +2758,48 @@ function requireIsArrayIteratorMethod () {
 	return isArrayIteratorMethod;
 }
 
-var getIteratorMethod;
-var hasRequiredGetIteratorMethod;
+var getIteratorMethodInternal;
+var hasRequiredGetIteratorMethodInternal;
 
-function requireGetIteratorMethod () {
-	if (hasRequiredGetIteratorMethod) return getIteratorMethod;
-	hasRequiredGetIteratorMethod = 1;
-	var classof = requireClassof();
-	var getMethod = requireGetMethod();
+function requireGetIteratorMethodInternal () {
+	if (hasRequiredGetIteratorMethodInternal) return getIteratorMethodInternal;
+	hasRequiredGetIteratorMethodInternal = 1;
+	var classof = requireClassofRaw();
 	var isNullOrUndefined = requireIsNullOrUndefined();
-	var Iterators = requireIterators();
+	var getMethod = requireGetMethod();
 	var wellKnownSymbol = requireWellKnownSymbol();
 
 	var ITERATOR = wellKnownSymbol('iterator');
+	var ArrayPrototype = Array.prototype;
 
-	getIteratorMethod = function (it) {
+	getIteratorMethodInternal = function (it) {
 	  if (!isNullOrUndefined(it)) return getMethod(it, ITERATOR)
 	    || getMethod(it, '@@iterator')
-	    || Iterators[classof(it)];
+	    || (classof(it) === 'Arguments' ? ArrayPrototype[ITERATOR] : undefined);
 	};
-	return getIteratorMethod;
+	return getIteratorMethodInternal;
 }
 
-var getIterator;
-var hasRequiredGetIterator;
+var getIteratorInternal;
+var hasRequiredGetIteratorInternal;
 
-function requireGetIterator () {
-	if (hasRequiredGetIterator) return getIterator;
-	hasRequiredGetIterator = 1;
+function requireGetIteratorInternal () {
+	if (hasRequiredGetIteratorInternal) return getIteratorInternal;
+	hasRequiredGetIteratorInternal = 1;
 	var call = requireFunctionCall();
-	var aCallable = requireACallable();
+	var isCallable = requireIsCallable();
 	var anObject = requireAnObject();
 	var tryToString = requireTryToString();
-	var getIteratorMethod = requireGetIteratorMethod();
+	var getIteratorMethod = requireGetIteratorMethodInternal();
 
 	var $TypeError = TypeError;
 
-	getIterator = function (argument, usingIterator) {
+	getIteratorInternal = function (argument, usingIterator) {
 	  var iteratorMethod = arguments.length < 2 ? getIteratorMethod(argument) : usingIterator;
-	  if (aCallable(iteratorMethod)) return anObject(call(iteratorMethod, argument));
+	  if (isCallable(iteratorMethod)) return anObject(call(iteratorMethod, argument));
 	  throw new $TypeError(tryToString(argument) + ' is not iterable');
 	};
-	return getIterator;
+	return getIteratorInternal;
 }
 
 var iteratorClose;
@@ -2846,8 +2847,8 @@ function requireIterate () {
 	var isArrayIteratorMethod = requireIsArrayIteratorMethod();
 	var lengthOfArrayLike = requireLengthOfArrayLike();
 	var isPrototypeOf = requireObjectIsPrototypeOf();
-	var getIterator = requireGetIterator();
-	var getIteratorMethod = requireGetIteratorMethod();
+	var getIterator = requireGetIteratorInternal();
+	var getIteratorMethod = requireGetIteratorMethodInternal();
 	var iteratorClose = requireIteratorClose();
 
 	var $TypeError = TypeError;
@@ -2869,7 +2870,9 @@ function requireIterate () {
 	  var iterator, iterFn, index, length, result, next, step;
 
 	  var stop = function (condition) {
-	    if (iterator) iteratorClose(iterator, 'normal');
+	    var $iterator = iterator;
+	    iterator = undefined;
+	    if ($iterator) iteratorClose($iterator, 'normal');
 	    return new Result(true, condition);
 	  };
 
@@ -2899,10 +2902,13 @@ function requireIterate () {
 
 	  next = IS_RECORD ? iterable.next : iterator.next;
 	  while (!(step = call(next, iterator)).done) {
+	    // `IteratorValue` errors should propagate without closing the iterator
+	    var value = step.value;
 	    try {
-	      result = callFn(step.value);
+	      result = callFn(value);
 	    } catch (error) {
-	      iteratorClose(iterator, 'throw', error);
+	      if (iterator) iteratorClose(iterator, 'throw', error);
+	      else throw error;
 	    }
 	    if (typeof result == 'object' && result && isPrototypeOf(ResultPrototype, result)) return result;
 	  } return new Result(false);
@@ -2931,6 +2937,7 @@ function requireCheckCorrectnessOfIteration () {
 	      SAFE_CLOSING = true;
 	    }
 	  };
+	  // eslint-disable-next-line unicorn/no-immediate-mutation -- ES3 syntax limitation
 	  iteratorWithReturn[ITERATOR] = function () {
 	    return this;
 	  };
@@ -2945,6 +2952,7 @@ function requireCheckCorrectnessOfIteration () {
 	  var ITERATION_SUPPORT = false;
 	  try {
 	    var object = {};
+	    // eslint-disable-next-line unicorn/no-immediate-mutation -- ES3 syntax limitation
 	    object[ITERATOR] = function () {
 	      return {
 	        next: function () {
@@ -3514,18 +3522,29 @@ function requireRegexpExec () {
 
 	var PATCH = UPDATES_LAST_INDEX_WRONG || NPCG_INCLUDED || UNSUPPORTED_Y || UNSUPPORTED_DOT_ALL || UNSUPPORTED_NCG;
 
+	var setGroups = function (re, groups) {
+	  var object = re.groups = create(null);
+	  for (var i = 0; i < groups.length; i++) {
+	    var group = groups[i];
+	    object[group[0]] = re[group[1]];
+	  }
+	};
+
 	if (PATCH) {
 	  patchedExec = function exec(string) {
 	    var re = this;
 	    var state = getInternalState(re);
 	    var str = toString(string);
 	    var raw = state.raw;
-	    var result, reCopy, lastIndex, match, i, object, group;
+	    var result, reCopy, lastIndex;
 
 	    if (raw) {
 	      raw.lastIndex = re.lastIndex;
 	      result = call(patchedExec, raw, str);
 	      re.lastIndex = raw.lastIndex;
+
+	      if (result && state.groups) setGroups(result, state.groups);
+
 	      return result;
 	    }
 
@@ -3544,8 +3563,10 @@ function requireRegexpExec () {
 
 	      strCopy = stringSlice(str, re.lastIndex);
 	      // Support anchored sticky behavior.
-	      if (re.lastIndex > 0 && (!re.multiline || re.multiline && charAt(str, re.lastIndex - 1) !== '\n')) {
-	        source = '(?: ' + source + ')';
+	      var prevChar = re.lastIndex > 0 && charAt(str, re.lastIndex - 1);
+	      if (re.lastIndex > 0 &&
+	        (!re.multiline || re.multiline && prevChar !== '\n' && prevChar !== '\r' && prevChar !== '\u2028' && prevChar !== '\u2029')) {
+	        source = '(?: (?:' + source + '))';
 	        strCopy = ' ' + strCopy;
 	        charsAdded++;
 	      }
@@ -3559,11 +3580,11 @@ function requireRegexpExec () {
 	    }
 	    if (UPDATES_LAST_INDEX_WRONG) lastIndex = re.lastIndex;
 
-	    match = call(nativeExec, sticky ? reCopy : re, strCopy);
+	    var match = call(nativeExec, sticky ? reCopy : re, strCopy);
 
 	    if (sticky) {
 	      if (match) {
-	        match.input = stringSlice(match.input, charsAdded);
+	        match.input = str;
 	        match[0] = stringSlice(match[0], charsAdded);
 	        match.index = re.lastIndex;
 	        re.lastIndex += match[0].length;
@@ -3575,19 +3596,13 @@ function requireRegexpExec () {
 	      // Fix browsers whose `exec` methods don't consistently return `undefined`
 	      // for NPCG, like IE8. NOTE: This doesn't work for /(.?)?/
 	      call(nativeReplace, match[0], reCopy, function () {
-	        for (i = 1; i < arguments.length - 2; i++) {
+	        for (var i = 1; i < arguments.length - 2; i++) {
 	          if (arguments[i] === undefined) match[i] = undefined;
 	        }
 	      });
 	    }
 
-	    if (match && groups) {
-	      match.groups = object = create(null);
-	      for (i = 0; i < groups.length; i++) {
-	        group = groups[i];
-	        object[group[0]] = match[group[1]];
-	      }
-	    }
+	    if (match && groups) setGroups(match, groups);
 
 	    return match;
 	  };
@@ -3637,6 +3652,7 @@ function requireFixRegexpWellKnownSymbolLogic () {
 	  var DELEGATES_TO_SYMBOL = !fails(function () {
 	    // String methods call symbol-named RegExp methods
 	    var O = {};
+	    // eslint-disable-next-line unicorn/no-immediate-mutation -- ES3 syntax limitation
 	    O[SYMBOL] = function () { return 7; };
 	    return ''[KEY](O) !== 7;
 	  });
@@ -3650,12 +3666,13 @@ function requireFixRegexpWellKnownSymbolLogic () {
 	      // We can't use real regex here since it causes deoptimization
 	      // and serious performance degradation in V8
 	      // https://github.com/zloirock/core-js/issues/306
-	      re = {};
 	      // RegExp[@@split] doesn't call the regex's exec method, but first creates
 	      // a new one. We need to return the patched regex when creating the new one.
-	      re.constructor = {};
-	      re.constructor[SPECIES] = function () { return re; };
-	      re.flags = '';
+	      var constructor = {};
+	      // eslint-disable-next-line unicorn/no-immediate-mutation -- ES3 syntax limitation
+	      constructor[SPECIES] = function () { return re; };
+	      re = { constructor: constructor, flags: '' };
+	      // eslint-disable-next-line unicorn/no-immediate-mutation -- ES3 syntax limitation
 	      re[SYMBOL] = /./[SYMBOL];
 	    }
 
@@ -3753,7 +3770,7 @@ function requireAdvanceStringIndex () {
 	// `AdvanceStringIndex` abstract operation
 	// https://tc39.es/ecma262/#sec-advancestringindex
 	advanceStringIndex = function (S, index, unicode) {
-	  return index + (unicode ? charAt(S, index).length : 1);
+	  return index + (unicode ? charAt(S, index).length || 1 : 1);
 	};
 	return advanceStringIndex;
 }
@@ -3894,7 +3911,9 @@ function requireEs_string_match () {
 	    function match(regexp) {
 	      var O = requireObjectCoercible(this);
 	      var matcher = isObject(regexp) ? getMethod(regexp, MATCH) : undefined;
-	      return matcher ? call(matcher, regexp, O) : new RegExp(regexp)[MATCH](toString(O));
+	      if (matcher) return call(matcher, regexp, O);
+	      var S = toString(O);
+	      return new RegExp(regexp)[MATCH](S);
 	    },
 	    // `RegExp.prototype[@@match]` method
 	    // https://tc39.es/ecma262/#sec-regexp.prototype-@@match
@@ -3907,9 +3926,9 @@ function requireEs_string_match () {
 
 	      var flags = toString(getRegExpFlags(rx));
 
-	      if (stringIndexOf(flags, 'g') === -1) return regExpExec(rx, S);
+	      if (!~stringIndexOf(flags, 'g')) return regExpExec(rx, S);
 
-	      var fullUnicode = stringIndexOf(flags, 'u') !== -1;
+	      var fullUnicode = !!~stringIndexOf(flags, 'u') || !!~stringIndexOf(flags, 'v');
 	      rx.lastIndex = 0;
 	      var A = [];
 	      var n = 0;
@@ -4067,23 +4086,24 @@ function requireEs_string_replace () {
 	      var rx = anObject(this);
 	      var S = toString(string);
 
+	      var functionalReplace = isCallable(replaceValue);
+	      if (!functionalReplace) replaceValue = toString(replaceValue);
+	      var flags = toString(getRegExpFlags(rx));
+
 	      if (
 	        typeof replaceValue == 'string' &&
-	        stringIndexOf(replaceValue, UNSAFE_SUBSTITUTE) === -1 &&
-	        stringIndexOf(replaceValue, '$<') === -1
+	        !~stringIndexOf(replaceValue, UNSAFE_SUBSTITUTE) &&
+	        !~stringIndexOf(replaceValue, '$<') &&
+	        !~stringIndexOf(flags, 'y')
 	      ) {
 	        var res = maybeCallNative(nativeReplace, rx, S, replaceValue);
 	        if (res.done) return res.value;
 	      }
 
-	      var functionalReplace = isCallable(replaceValue);
-	      if (!functionalReplace) replaceValue = toString(replaceValue);
-
-	      var flags = toString(getRegExpFlags(rx));
-	      var global = stringIndexOf(flags, 'g') !== -1;
+	      var global = !!~stringIndexOf(flags, 'g');
 	      var fullUnicode;
 	      if (global) {
-	        fullUnicode = stringIndexOf(flags, 'u') !== -1;
+	        fullUnicode = !!~stringIndexOf(flags, 'u') || !!~stringIndexOf(flags, 'v');
 	        rx.lastIndex = 0;
 	      }
 
@@ -4234,8 +4254,8 @@ function requireEs_string_startsWith () {
 	  startsWith: function startsWith(searchString /* , position = 0 */) {
 	    var that = toString(requireObjectCoercible(this));
 	    notARegExp(searchString);
-	    var index = toLength(min(arguments.length > 1 ? arguments[1] : undefined, that.length));
 	    var search = toString(searchString);
+	    var index = toLength(min(arguments.length > 1 ? arguments[1] : undefined, that.length));
 	    return stringSlice(that, index, index + search.length) === search;
 	  }
 	});
@@ -4705,15 +4725,15 @@ function requireWeb_domCollections_iterator () {
 
 requireWeb_domCollections_iterator();
 
-function toPrimitive(t, r) {
+function toPrimitive(t, e) {
   if ("object" != _typeof$1(t) || !t) return t;
-  var e = t[Symbol.toPrimitive];
-  if (void 0 !== e) {
-    var i = e.call(t, r);
+  var r;
+  if ("undefined" != typeof Symbol && void 0 !== (r = t[Symbol.toPrimitive])) {
+    var i = r.call(t, e);
     if ("object" != _typeof$1(i)) return i;
     throw new TypeError("@@toPrimitive must return a primitive value.");
   }
-  return ("string" === r ? String : Number)(t);
+  return ("string" === e ? String : Number)(t);
 }
 
 function toPropertyKey(t) {
@@ -4866,10 +4886,10 @@ function requireEs_string_endsWith () {
 	  endsWith: function endsWith(searchString /* , endPosition = @length */) {
 	    var that = toString(requireObjectCoercible(this));
 	    notARegExp(searchString);
+	    var search = toString(searchString);
 	    var endPosition = arguments.length > 1 ? arguments[1] : undefined;
 	    var len = that.length;
 	    var end = endPosition === undefined ? len : min(toLength(endPosition), len);
-	    var search = toString(searchString);
 	    return slice(that, end - search.length, end) === search;
 	  }
 	});
@@ -4896,6 +4916,7 @@ function requireEs_string_split () {
 	var toLength = requireToLength();
 	var toString = requireToString();
 	var getMethod = requireGetMethod();
+	var getRegExpFlags = requireRegexpGetFlags();
 	var regExpExec = requireRegexpExecAbstract();
 	var stickyHelpers = requireRegexpStickyHelpers();
 	var fails = requireFails();
@@ -4905,6 +4926,7 @@ function requireEs_string_split () {
 	var min = Math.min;
 	var push = uncurryThis([].push);
 	var stringSlice = uncurryThis(''.slice);
+	var stringIndexOf = uncurryThis(''.indexOf);
 
 	// Chrome 51 has a buggy "split" implementation when RegExp#exec !== nativeExec
 	// Weex JS has frozen built-in prototypes, so use try / catch wrapper
@@ -4957,11 +4979,11 @@ function requireEs_string_split () {
 	      }
 
 	      var C = speciesConstructor(rx, RegExp);
-	      var unicodeMatching = rx.unicode;
-	      var flags = (rx.ignoreCase ? 'i' : '') +
-	                  (rx.multiline ? 'm' : '') +
-	                  (rx.unicode ? 'u' : '') +
-	                  (UNSUPPORTED_Y ? 'g' : 'y');
+	      var flags = toString(getRegExpFlags(rx));
+	      var unicodeMatching = !!~stringIndexOf(flags, 'u') || !!~stringIndexOf(flags, 'v');
+	      if (UNSUPPORTED_Y) {
+	        if (!~stringIndexOf(flags, 'g')) flags += 'g';
+	      } else if (!~stringIndexOf(flags, 'y')) flags += 'y';
 	      // ^(? + rx + ) is needed, in combination with some S slicing, to
 	      // simulate the 'y' flag.
 	      var splitter = new C(UNSUPPORTED_Y ? '^(?:' + rx.source + ')' : rx, flags);

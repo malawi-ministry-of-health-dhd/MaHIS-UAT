@@ -18,8 +18,8 @@ var hasRequiredLocalforage;
 function requireLocalforage () {
 	if (hasRequiredLocalforage) return localforage$1.exports;
 	hasRequiredLocalforage = 1;
-	(function (module, exports$1) {
-		(function(f){{module.exports=f();}})(function(){return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof commonjsRequire=="function"&&commonjsRequire;if(!u&&a)return a(o,true);if(i)return i(o,true);var f=new Error("Cannot find module '"+o+"'");throw (f.code="MODULE_NOT_FOUND", f)}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r);}return n[o].exports}var i=typeof commonjsRequire=="function"&&commonjsRequire;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports$1){
+	(function (module, exports) {
+		(function(f){{module.exports=f();}})(function(){return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof commonjsRequire=="function"&&commonjsRequire;if(!u&&a)return a(o,true);if(i)return i(o,true);var f=new Error("Cannot find module '"+o+"'");throw (f.code="MODULE_NOT_FOUND", f)}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r);}return n[o].exports}var i=typeof commonjsRequire=="function"&&commonjsRequire;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
 		(function (global){
 		var Mutation = global.MutationObserver || global.WebKitMutationObserver;
 
@@ -91,7 +91,7 @@ function requireLocalforage () {
 		}
 
 		}).call(this,typeof commonjsGlobal !== "undefined" ? commonjsGlobal : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {});
-		},{}],2:[function(_dereq_,module,exports$1){
+		},{}],2:[function(_dereq_,module,exports){
 		var immediate = _dereq_(1);
 
 		/* istanbul ignore next */
@@ -345,14 +345,14 @@ function requireLocalforage () {
 		  }
 		}
 
-		},{"1":1}],3:[function(_dereq_,module,exports$1){
+		},{"1":1}],3:[function(_dereq_,module,exports){
 		(function (global){
 		if (typeof global.Promise !== 'function') {
 		  global.Promise = _dereq_(2);
 		}
 
 		}).call(this,typeof commonjsGlobal !== "undefined" ? commonjsGlobal : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {});
-		},{"2":2}],4:[function(_dereq_,module,exports$1){
+		},{"2":2}],4:[function(_dereq_,module,exports){
 
 		var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -2832,23 +2832,23 @@ function requireLocalforage () {
 var localforageExports = requireLocalforage();
 const localforage = /*@__PURE__*/getDefaultExportFromCjs(localforageExports);
 
+// import localforage from "localforage";
+
+
 class LocalForageServiceInstance {
   constructor(defaultStore = "memis") {
     this.defaultStore = defaultStore;
     this.stores = new Map();
+    this.initializations = new Map();
   }
 
-  /**
-   * Get or create a LocalForage store by name.
-   * Ensures a single instance per store.
-   */
   getStore(storeName = this.defaultStore) {
     if (!this.stores.has(storeName)) {
       const store = localforage.createInstance({
-        name: "memiscache",
-        storeName,
+        name: `memiscache_${storeName}`,
+        storeName: "keyvaluepairs",
         version: 1,
-        description: "Local CacheStorage for memis",
+        description: `Local cache for MEMIS: ${storeName}`,
         driver: [
           localforage.INDEXEDDB,
           localforage.LOCALSTORAGE,
@@ -2857,37 +2857,62 @@ class LocalForageServiceInstance {
 
       this.stores.set(storeName, store);
 
-      // Optional but very useful in production
-      store.ready().then(() => {
-        store.driver().then(d =>
+      const initialization = store.ready()
+        .then(() => {
           console.info(
-            `[LocalForage] Store "${storeName}" using driver:`,
-            d
-          )
-        );
-      }).catch(err => {
-        // console.log(`[LocalForage] Store "${storeName}" failed to initialize`, err);
-        return err
-      });
+            `[LocalForage] "${storeName}" initialized:`,
+            store.driver()
+          );
+          return store;
+        })
+        .catch(error => {
+          this.stores.delete(storeName);
+          this.initializations.delete(storeName);
+          throw error;
+        });
+
+      this.initializations.set(storeName, initialization);
     }
 
     return this.stores.get(storeName);
   }
 
+  async getInitializedStore(storeName) {
+    this.getStore(storeName);
+
+    return this.initializations.get(storeName);
+  }
+
   async setItem(key, value, storeName) {
-    return this.getStore(storeName).setItem(key, value);
+    const store = await this.getInitializedStore(
+      storeName || this.defaultStore
+    );
+
+    return store.setItem(key, value);
   }
 
   async getItem(key, storeName) {
-    return this.getStore(storeName).getItem(key);
+    const store = await this.getInitializedStore(
+      storeName || this.defaultStore
+    );
+
+    return store.getItem(key);
   }
 
   async removeItem(key, storeName) {
-    return this.getStore(storeName).removeItem(key);
+    const store = await this.getInitializedStore(
+      storeName || this.defaultStore
+    );
+
+    return store.removeItem(key);
   }
 
   async clearStorage(storeName) {
-    return this.getStore(storeName).clear();
+    const store = await this.getInitializedStore(
+      storeName || this.defaultStore
+    );
+
+    return store.clear();
   }
 }
 

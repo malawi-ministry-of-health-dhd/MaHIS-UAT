@@ -1,0 +1,8 @@
+import { bM as o$1, bN as x } from './breadCrumb.js';
+
+/*!
+ * (C) Ionic http://ionicframework.com - MIT License
+ */
+const i=i=>{if(void 0===o$1)return;let s,p,u,l=0;const d=i.getBoolean("animated",true)&&i.getBoolean("rippleEffect",true),v=new WeakMap,m=()=>{u&&clearTimeout(u),u=void 0,s&&(b(false),s=void 0);},j=(t,i)=>{if(t&&t===s)return;u&&clearTimeout(u),u=void 0;const{x:o,y:r}=x(i);if(s){if(v.has(s))throw new Error("internal error");s.classList.contains(a)||w(s,o,r),b(true);}if(t){const e=v.get(t);e&&(clearTimeout(e),v.delete(t)),t.classList.remove(a);const i=()=>{w(t,o,r),u=void 0;};n(t)?i():u=setTimeout(i,c);}s=t;},w=(t,e,i)=>{if(l=Date.now(),t.classList.add(a),!d)return;const o=r(t);null!==o&&(T(),p=o.addRipple(e,i));},T=()=>{ void 0!==p&&(p.then((t=>t())),p=void 0);},b=t=>{T();const e=s;if(!e)return;const i=f-Date.now()+l;if(t&&i>0&&!n(e)){const t=setTimeout((()=>{e.classList.remove(a),v.delete(e);}),f);v.set(e,t);}else e.classList.remove(a);};o$1.addEventListener("ionGestureCaptured",m),o$1.addEventListener("pointerdown",(t=>{s||2===t.button||j(o(t),t);}),true),o$1.addEventListener("pointerup",(t=>{j(void 0,t);}),true),o$1.addEventListener("pointercancel",m,true);},o=t=>{if(void 0===t.composedPath)return t.target.closest(".ion-activatable");{const e=t.composedPath();for(let t=0;t<e.length-2;t++){const i=e[t];if(!(i instanceof ShadowRoot)&&i.classList.contains("ion-activatable"))return i}}},n=t=>t.classList.contains("ion-activatable-instant"),r=t=>{if(t.shadowRoot){const e=t.shadowRoot.querySelector("ion-ripple-effect");if(e)return e}return t.querySelector("ion-ripple-effect")},a="ion-activated",c=100,f=150;
+
+export { i as startTapClick };

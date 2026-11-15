@@ -1,6 +1,5 @@
 import { W as WebPlugin, C as CapacitorBarcodeScannerScanOrientation, H as Html5Qrcode, a as CapacitorBarcodeScannerTypeHint } from './Layout.js';
 
-/* eslint-env browser */
 /**
  * Implements OSBarcodePlugin to provide web functionality for barcode scanning.
  */

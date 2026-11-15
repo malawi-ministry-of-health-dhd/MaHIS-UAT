@@ -1,8 +1,8 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/Layout.js","assets/__federation_fn_import.js","assets/breadCrumb.js","assets/index2.js","assets/LocalForageService.js","assets/_commonjsHelpers.js","assets/index3.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/Layout.js","assets/__federation_fn_import.js","assets/breadCrumb.js","assets/index3.js","assets/LocalForageService.js","assets/_commonjsHelpers.js","assets/index2.js"])))=>i.map(i=>d[i]);
 import { importShared } from './__federation_fn_import.js';
-import { j as jsxRuntimeExports, M as MEMISContext, d as documentText, P as PROGRAMS_FIELDS, a as PROGRAM_RULES_FIELDS, U as USER_ORGANISATION_UNITS, O as ORGANISATION_UNITS_DESCENDANTS, u as useLocation, r as renderListByUserRole, D as DataStoreProvider, b as PermissionsProvider, s as sendNotification, c as setupIonicReact, _ as __vitePreload, e as setActiveProgramCookie, B as BrowserRouter, T as ToastItem, S as SuspenseLoader, f as clearMemisStorage } from './breadCrumb.js';
+import { j as jsxRuntimeExports, M as MEMISContext, d as documentText, P as PROGRAMS_FIELDS, a as PROGRAM_RULES_FIELDS, U as USER_ORGANISATION_UNITS, O as ORGANISATION_UNITS_DESCENDANTS, u as useLocation, r as renderListByUserRole, D as DataStoreProvider, b as PermissionsProvider, s as sendNotification, c as setupIonicReact, _ as __vitePreload, e as setActiveProgramCookie, B as BrowserRouter, T as ToastItem, S as SuspenseLoader } from './breadCrumb.js';
 import { r as requireReactDom } from './index.js';
-import dataStore from './index2.js';
+import { d as dataStore, c as clearMemisStorage } from './index3.js';
 import { L as LocalForageService } from './LocalForageService.js';
 
 var client = {};
@@ -478,6 +478,7 @@ function ProgramProvider({ children }) {
       const rulesPayload = await dataStore.get(
         `programRules?fields=${encodeFields(PROGRAM_RULES_FIELDS)}&paging=false`
       );
+      console.log({ programPayload });
       const asArray = (p, key) => Array.isArray(p?.[key]) ? p[key] : Array.isArray(p) ? p : [];
       const programList = asArray(programPayload?.data, "programs");
       const rulesList = asArray(rulesPayload?.data, "programRules");
@@ -516,7 +517,7 @@ function ProgramProvider({ children }) {
         "programRules",
         "programRules"
       );
-      if (cachedPrograms && cachedRules) {
+      if (cachedPrograms && cachedPrograms?.length > 0 && cachedRules) {
         const rulesByProgram = cachedRules.reduce((acc, rule) => {
           const id = rule?.program?.id;
           if (id) (acc[id] = acc[id] || []).push(rule);
@@ -829,7 +830,7 @@ const TrackedEntitiesProvider = ({ children }) => {
       }
       const params = new URLSearchParams();
       params.append("program", programId);
-      if (status && statusKey) {
+      if (status && statusKey && status !== "REGISTERED") {
         params.append(
           "filter",
           `${statusKey}:like:${status}`
@@ -845,12 +846,6 @@ const TrackedEntitiesProvider = ({ children }) => {
         params.append(
           "updatedBefore",
           requestOptions.endDate
-        );
-      }
-      if (requestOptions?.filterType && requestOptions.filterType.trim() !== "" && requestOptions?.filterValue !== void 0 && requestOptions?.filterValue !== null && String(requestOptions.filterValue).trim() !== "") {
-        params.append(
-          "filter",
-          `${requestOptions.filterType}:like:${requestOptions.filterValue}`
         );
       }
       const dStore = await LocalForageService.getItem(
@@ -870,6 +865,21 @@ const TrackedEntitiesProvider = ({ children }) => {
       const roles = loggedInUser?.userRoles?.map(
         (role) => role?.id
       ) || [];
+      const rowFilterCfg = dStore?.rowFilterConfig?.data ?? dStore?.rowFilterConfig ?? null;
+      const equipFilterEntry = (rowFilterCfg?.programs || []).find(
+        (p) => p?.programId === programId && p?.type === "WITH_REGISTRATION"
+      );
+      const equipFilterConfig = equipFilterEntry?.equipmentFilter || null;
+      const allocationStageId = equipFilterConfig?.allocationStageId || null;
+      const deregistrationStageId = equipFilterConfig?.deregistrationStageId || null;
+      const eventPresenceValue = equipFilterConfig?.eventPresenceFilterValue || null;
+      const isEventPresenceFilter = eventPresenceValue != null && allocationStageId !== null && String(requestOptions?.filterValue || "").toUpperCase() === eventPresenceValue.toUpperCase();
+      if (!isEventPresenceFilter && requestOptions?.filterType && requestOptions.filterType.trim() !== "" && requestOptions?.filterValue !== void 0 && requestOptions?.filterValue !== null && requestOptions?.filterValue !== "REGISTERED" && String(requestOptions.filterValue).trim() !== "") {
+        params.append(
+          "filter",
+          `${requestOptions.filterType}:like:${requestOptions.filterValue}`
+        );
+      }
       const programAttributesDisplay = dStore?.programAttributesDisplay?.configuration?.find(
         (conf) => conf?.programId === programId
       );
@@ -883,7 +893,8 @@ const TrackedEntitiesProvider = ({ children }) => {
       if (defaultFilters.length) {
         defaultFilters.forEach((element) => {
           if (!requestOptions?.filterType || requestOptions.filterType !== element?.element) {
-            if (element?.attribute && element?.value !== void 0 && element?.value !== null) {
+            const isDefaultEventPresence = eventPresenceValue != null && allocationStageId !== null && String(element?.value || "").toUpperCase() === eventPresenceValue.toUpperCase();
+            if (!isDefaultEventPresence && element?.attribute && element?.value !== void 0 && element?.value !== null) {
               params.append(
                 "filter",
                 `${element.attribute}:like:${element.value}`
@@ -926,7 +937,7 @@ const TrackedEntitiesProvider = ({ children }) => {
           );
         }
       }
-      if (urlPaging === "false") {
+      if (urlPaging === "false" || options?.startDate?.trim() && options?.endDate?.trim()) {
         params.append(
           "paging",
           "false"
@@ -964,7 +975,7 @@ const TrackedEntitiesProvider = ({ children }) => {
           const newParams = new URLSearchParams({
             program: programId,
             paging: "false",
-            fields: "trackedEntity,orgUnit,attributes,enrollments[events,program,orgUnit]"
+            fields: "trackedEntity,orgUnit,attributes,enrollments[events[enrollment,programStage,dataValues,occurredAt,createdAt,trackedEntity,orgUnit],program,orgUnit]"
           });
           if (status && statusKey) {
             newParams.append(
@@ -984,7 +995,7 @@ const TrackedEntitiesProvider = ({ children }) => {
               requestOptions.endDate
             );
           }
-          if (requestOptions?.filterType && requestOptions.filterType.trim() !== "" && requestOptions?.filterValue !== void 0 && requestOptions?.filterValue !== null && String(
+          if (requestOptions?.filterType && requestOptions.filterType.trim() !== "" && requestOptions?.filterValue !== void 0 && requestOptions?.filterValue !== null && requestOptions.filterValue !== "REGISTERED" && String(
             requestOptions.filterValue
           ).trim() !== "") {
             newParams.append(
@@ -1023,10 +1034,6 @@ const TrackedEntitiesProvider = ({ children }) => {
           return [];
         }
         const trackedEntities = response?.data?.trackedEntities || [];
-        console.log({
-          response,
-          trackedEntities
-        });
         if (requestId === requestIdRef.current && response?.data?.pager) {
           setPagination((prev) => ({
             ...prev,
@@ -1071,7 +1078,7 @@ const TrackedEntitiesProvider = ({ children }) => {
           (item) => item.id === programId
         );
         const excludeStageId = currentConfig?.excludeByStage;
-        const filteredTEIs = trackedEntities.filter(
+        const excludedTEIs = trackedEntities.filter(
           (tei) => {
             if (!excludeStageId) {
               return true;
@@ -1087,7 +1094,19 @@ const TrackedEntitiesProvider = ({ children }) => {
             );
           }
         );
-        const transformed = filteredTEIs.map(
+        const filteredTEIs = requestOptions?.filterValue === "REGISTERED" || status === "REGISTERED" ? excludedTEIs?.filter((tei) => {
+          const events = (tei?.enrollments || [])?.flatMap(
+            (enr) => enr?.events || []
+          );
+          const hasAllocation = events?.some(
+            (e) => e?.programStage === allocationStageId
+          );
+          const hasDeregistration = deregistrationStageId ? events?.some(
+            (e) => e?.programStage === deregistrationStageId
+          ) : false;
+          return !hasAllocation;
+        }) : excludedTEIs;
+        const transformed = filteredTEIs?.map(
           (tei) => {
             const obj = {
               trackedentity: tei.trackedEntity,
@@ -1707,10 +1726,6 @@ function ArchivedEquipmentProvider({
           error: null
         };
       } catch (err) {
-        console.error(
-          "[ArchivedEquipmentProvider] Failed to load archived equipment:",
-          err
-        );
         setArchivedEquipment([]);
         setError(err);
         return {
@@ -1813,10 +1828,6 @@ function ArchivedEquipmentProvider({
           error: null
         };
       } catch (err) {
-        console.error(
-          "[ArchivedEquipmentProvider] Failed to load equipment:",
-          err
-        );
         setSelectedArchivedEquipment(
           null
         );
