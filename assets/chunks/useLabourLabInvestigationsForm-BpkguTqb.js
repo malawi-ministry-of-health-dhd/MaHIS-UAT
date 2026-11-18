@@ -1,0 +1,1 @@
+import{u as t}from"./useLabourLabInvestigationsPrefill-Buw9Dy-Q.js";import{f as n}from"../index-B_NpdBnf.js";const e=()=>{const{labInvestigationsFormSection:o}=t();return{labourLabInvestigationsFormSection:n(()=>o.value)}};export{e as u};
