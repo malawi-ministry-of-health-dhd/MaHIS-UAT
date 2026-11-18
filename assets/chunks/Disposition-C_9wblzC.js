@@ -1,1 +1,0 @@
-import o from"./Disposition-BME82fmx.js";import{d as t,A as i,o as s}from"../index-B_NpdBnf.js";const c=t({__name:"Disposition",setup(e){return(p,n)=>(s(),i(o,{"completion-route":"/ipd/disposition-list","show-specialty-option":!1}))}});export{c as default};

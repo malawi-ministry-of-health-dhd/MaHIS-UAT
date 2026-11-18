@@ -1,3 +1,21 @@
+function mergeRadiology(existing, outgoing) {
+    if (!existing && !outgoing) return undefined;
+    const snapshots = new Map();
+    for (const request of [...(existing?.saved || []), ...(outgoing?.saved || [])]) {
+        const previous = snapshots.get(request.request_id);
+        if (!previous || Number(request.version) >= Number(previous.version)) snapshots.set(request.request_id, request);
+    }
+    const conflicts = new Map();
+    for (const event of [...(existing?.conflicts || []), ...(outgoing?.conflicts || [])]) conflicts.set(event.operation_id, event);
+    const acknowledged = new Set(conflicts.keys());
+    for (const request of snapshots.values()) for (const event of request.history || []) if (event.operation_id) acknowledged.add(event.operation_id);
+    const operations = new Map();
+    for (const operation of [...(existing?.operations || []), ...(outgoing?.operations || [])]) {
+        if (!acknowledged.has(operation.operation_id)) operations.set(operation.operation_id, operation);
+    }
+    return { saved: [...snapshots.values()], operations: [...operations.values()], conflicts: [...conflicts.values()] };
+}
+
 // Initialize PouchDB instances
 importScripts("../script/pouchdb.min.js", "../script/pouchdb.find.min.js");
 
@@ -125,6 +143,7 @@ const normalizePatientRecordSearchFields = (storeName, doc) => {
     doc.family_name_search = familySearch;
     doc.full_name_search = joinSearchParts(givenSearch, familySearch);
     doc.full_name_with_middle_search = joinSearchParts(givenSearch, middleSearch, familySearch);
+    doc.has_radiology_requests = Boolean(doc.radiology?.saved?.length || doc.radiology?.operations?.length);
     doc.gender_search = normalizePatientSearchText(firstPresent(info.gender, doc.gender, person.gender));
     doc.location_id_search = String(firstPresent(doc.location_id, doc.deleted_location_id) || "").trim();
 
@@ -545,7 +564,7 @@ const DatabaseManager = {
                 delete existingDocWithoutConflictMetadata._conflicts;
 
                 const mergedData =
-                    storeName === PATIENT_RECORDS_DB ? mergePatientRecordLabOrders(existingDocWithoutConflictMetadata, data) : data;
+                    storeName === PATIENT_RECORDS_DB ? mergePatientRecordLabOrders(existingDocWithoutConflictMetadata, { ...data, radiology: mergeRadiology(existingDocWithoutConflictMetadata?.radiology, data?.radiology), has_radiology_requests: Boolean(existingDocWithoutConflictMetadata?.has_radiology_requests || data?.has_radiology_requests) }) : data;
                 const updatedDoc = {
                     ...existingDocWithoutConflictMetadata,
                     ...mergedData,
