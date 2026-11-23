@@ -21212,7 +21212,7 @@ const Dashboard = () => {
       }
       let data = null;
       const loggedInUser = await LocalForageService.getItem("userRes", "user");
-      const useAllocated = loggedInUser.userRoles?.some(
+      const useAllocated = loggedInUser?.userRoles?.some(
         (role) => role?.id === "Ec6TZ5N1QeF"
       );
       if (brand) {
@@ -31686,11 +31686,10 @@ const getUsers$5 = async ({ targetOrgUnitId, userRoleId, mode }) => {
 };
 
 const reportCreationNotification = async (config, options) => {
-  console.log({config, options});
   try {
     
     const loggedInUser = await LocalForageService.getItem("userRes", "user");
-    const userRole = loggedInUser?.userRoles.find(us => us?.id === config?.userAtLowerLevel?.id);
+    const userRole = loggedInUser?.userRoles?.find(us => us?.id === config?.userAtLowerLevel?.id);
     let users = [];
     for (let index = 0; index < config?.userRoles.length; index++) {
       const element = config?.userRoles[index];
@@ -34469,7 +34468,7 @@ const getUsers = async ({ targetOrgUnitId, userRoleId, mode }) => {
 const referralApprovalNotification = async (config, options) => {
   try {
     const loggedInUser = await LocalForageService.getItem("userRes", "user");
-    const userRole = loggedInUser?.userRoles.find(us => us?.id === config?.userAtLowerLevel?.id);
+    const userRole = loggedInUser?.userRoles?.find(us => us?.id === config?.userAtLowerLevel?.id);
     let users = [];
     for (let index = 0; index < config?.userRoles.length; index++) {
       const element = config?.userRoles[index];
