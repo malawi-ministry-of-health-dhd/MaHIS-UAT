@@ -1,0 +1,1 @@
+import{useDemographicsStore as n}from"./DemographicStore-_Mesey4R.js";import{w as r}from"../index-DDv07Moy.js";const s=t=>`${t?.ID||t?.patientID||""}`.trim(),p=t=>{const e=n();r(()=>s(e.patient),(o,i)=>{o!==i&&t()})};export{p as u};
