@@ -1,0 +1,1 @@
+import{d as a}from"./workerStore-C2BVaD-S.js";import{S as l,au as r}from"../index-1dJPXL1s.js";function d(o,i=300){let t=null,e=null;l(()=>{t=a(n=>{`${(n?.detail||{})?.dbName||""}`.trim().toLowerCase()==="mnh_stats"&&(e&&window.clearTimeout(e),e=window.setTimeout(()=>{e=null,o()},i))})}),r(()=>{t?.(),t=null,e&&(window.clearTimeout(e),e=null)})}export{d as u};

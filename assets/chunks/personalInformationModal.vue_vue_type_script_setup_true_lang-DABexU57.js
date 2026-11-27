@@ -1,0 +1,1 @@
+import{R as o}from"./Registration-CzntRNA6.js";import{H as e,o as r,f as t}from"../index-1dJPXL1s.js";const c=e({__name:"personalInformationModal",setup(a){return(n,s)=>(r(),t(o,{editMode:!0}))}});export{c as _};

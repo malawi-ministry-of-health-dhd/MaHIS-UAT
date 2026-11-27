@@ -1,1 +1,0 @@
-import{d as a}from"./workerStore-D8woWRhP.js";import{k as l,Y as r}from"../index-DDv07Moy.js";function d(o,i=300){let t=null,e=null;l(()=>{t=a(n=>{`${(n?.detail||{})?.dbName||""}`.trim().toLowerCase()==="mnh_stats"&&(e&&window.clearTimeout(e),e=window.setTimeout(()=>{e=null,o()},i))})}),r(()=>{t?.(),t=null,e&&(window.clearTimeout(e),e=null)})}export{d as u};
